@@ -23,7 +23,7 @@ steps:
   build:
     image: debian:stable
     commands:
-      - apt update && apt install -q mkdocs mkdocs-material
+      - apt-get update && apt-get install -y mkdocs mkdocs-material
       - mkdocs build
 
   # this is still the legacy v2 pages systm
