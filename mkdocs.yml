@@ -3,3 +3,54 @@ site_name: Mesh Montréal
 site_url: https://lora.reseaulibre.ca
 theme:
   name: material
+  # logo: assets/logo.png
+  # features:
+  #   - navigation.tabs
+  #   - navigation.sections
+  # disable the roboto font download from google
+  font: false
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+# should we translate everything?
+# extra:
+#   alternate:
+#     - name: English
+#       link: /en/
+#       lang: en
+#     - name: Français
+#       link: /fr/
+#       lang: fr
+plugins:
+  # make a nice card for social media
+  - social
+  # a bunch more possible plugins
+  # blog posts
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/
+  # - blog
+  # page tagging
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
+  # - tags
+  # update dates from git
+  # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#document-dates
+  # not packaged in Debian
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+copyright: Copyleft &copy; CC-BY-SA 4.0
+repo_url: https://codeberg.org/anarcat/lora-reseaulibre-ca/
+edit_uri: edit/main/docs/
