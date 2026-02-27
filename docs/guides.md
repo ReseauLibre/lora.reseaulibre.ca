@@ -1,6 +1,11 @@
 # Guides
 ## Getting started with Meshtastic
 
+!!! warning
+
+    Meshtastic exposes your location by default! At least reduce the
+    [Position precision][] or set the [GPS Mode][] to `DISABLED`.
+
 ### Hardware
 
 Those all require a phone with the Meshtastic app to operate:
@@ -41,41 +46,47 @@ flash multiple devices, use at your own risk.
 
 ### Settings
 
-!!! warning
+This section describes various settings we advise in the Meshtastic
+app.
 
-    Meshtastic exposes your location by default! Change at least the
-    "position" setting if you care at all about your privacy.
+!!! info
 
-Those "settings" are crucial to connect to the mesh and *may change in
-the future* to adjust with the network conditions:
+    The two settings below are crucial to connect to the mesh. If
+    those are not configured properly, you will not be able to see anything.
 
-- In the [LoRa](https://meshtastic.org/docs/configuration/radio/lora/) section of the Meshtastic app:
-  - [preset](https://meshtastic.org/docs/overview/radio-settings/#presets): `LongFast` (default, don't change it)
-  - [Region](https://meshtastic.org/docs/configuration/radio/lora/#region): `US`, even though we're in Canada, pick the US preset
-    because those are the frequencies (902.0 - 928.0 MHz) that apply
-    here as well
+| Setting          | Value       | Note                                                                                                                          |
+|------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------|
+| [Modem preset][] | `LONG_FAST` | default, don't change it (for now)                                                                                            |
+| [Region][]       | `US`        | even though we're in Canada, pick the US preset because those are the frequencies (902.0 - 928.0 MHz) that apply here as well |
 
-You should also review those settings:
+ [Region]: https://meshtastic.org/docs/configuration/radio/lora/#region
+ [Modem preset]: https://meshtastic.org/docs/overview/radio-settings/#presets
 
- - [Bluetooth](https://meshtastic.org/docs/configuration/radio/bluetooth/): change the [default PIN](https://meshtastic.org/docs/configuration/radio/bluetooth/#fixed-pin) to some random value and
-   keep it in your password manager
- - [Device](https://meshtastic.org/docs/configuration/radio/device/): generally do *not* change the [Role](https://meshtastic.org/docs/configuration/tips/#roles): `CLIENT` is
-   fine, consider `CLIENT_BASE` if you run a relay, don't change the
-   role without reading the [Choosing The Right Device Role](https://meshtastic.org/blog/choosing-the-right-device-role/) guide
- 
- - [LoRa](https://meshtastic.org/docs/configuration/radio/lora/): set [Ignore MQTT](https://meshtastic.org/docs/configuration/radio/lora/#ignore-mqtt) to `false`, keep "OK to MQTT" to
-   `false`. This keeps traffic from the wider mesh from entering the
-   network and reduces overall noise.
+!!! note
 
- - [Position](https://meshtastic.org/docs/configuration/radio/position/): set GPS Mode to `DISABLE`! or [reduce precision](https://meshtastic.org/docs/configuration/radio/channels/#position-precision)
-   in the [Channel configuration](https://meshtastic.org/docs/configuration/radio/channels/#position-precision), otherwise you leak your position
-   to the network by default
- - [User](https://meshtastic.org/docs/configuration/radio/user/):
+    Those settings are optional, but recommended.
 
-    - set the "Short Name" to something easy to remember, this is what's
-      visible on the map and chats
-    - set the "Long Name" to something useful, but not offensive, ham
-      operators can set their call sign here
+| Setting                    | Value       | Note                                                                                                                                  |
+|----------------------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| [Bluetooth][]: PIN         | (random)    | change the [default PIN][] to some random value and keep it in your password manager                                                  |
+| [Device][]:  [Role][]      | `CLIENT`    | consider `CLIENT_BASE` if you run a relay, don't change the role without reading the [Choosing The Right Device Role][] guide         |
+| [LoRa][]: [Ignore MQTT][]  | `false`     | also keep keep "OK to MQTT" to `false`. This keeps traffic from the wider mesh from entering the   network and reduces overall noise. |
+| [Position][]: [GPS Mode][] | `DISABLE`   | or reduce the [Position precision][] in the [Channel configuration][], otherwise you leak your position to the network by default     |
+| [User][]: "Short Name"     | (arbitrary) | only 4 characters, set to something easy to remember, this is what's visible on the map and chats                                     |
+| User: "Long Name"          | (arbitrary) | set to something useful, but not offensive, ham operators can set their call sign here                                                |
+
+ [Bluetooth]: https://meshtastic.org/docs/configuration/radio/bluetooth/
+ [Channel configuration]: https://meshtastic.org/docs/configuration/radio/channels/#position-precision
+ [Choosing The Right Device Role]: https://meshtastic.org/blog/choosing-the-right-device-role/
+ [Device]: https://meshtastic.org/docs/configuration/radio/device/
+ [LoRa]: https://meshtastic.org/docs/configuration/radio/lora/
+ [Position]: https://meshtastic.org/docs/configuration/radio/position/
+ [Role]: https://meshtastic.org/docs/configuration/tips/#roles
+ [User]: https://meshtastic.org/docs/configuration/radio/user/
+ [default PIN]: https://meshtastic.org/docs/configuration/radio/bluetooth/#fixed-pin
+ [Position precision]: https://meshtastic.org/docs/configuration/radio/channels/#position-precision
+ [Ignore MQTT]: https://meshtastic.org/docs/configuration/radio/lora/#ignore-mqtt
+[GPS Mode]: https://meshtastic.org/docs/configuration/radio/position/#gps-mode
 
 ## Other guides
 
