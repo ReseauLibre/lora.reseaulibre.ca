@@ -1,0 +1,52 @@
+# Takes a repository with mnkdocs source, generates the static site and
+# pushes the result to Codeberg pages
+#
+# Needs a codeberg access token (codeberg_token) as a secret in
+# Woodpecker config Also uses another secret (mail) with email address
+# for git config
+#
+# .domains file in the repository is copied to the output branch so
+# custom domains work
+#
+# this file was copied from
+# https://codeberg.org/Codeberg-CI/examples/src/branch/main/Mdbook/.woodpecker.yaml
+---
+clone:
+  git:
+    image: woodpeckerci/plugin-git
+
+when:
+  branch: ${CI_REPO_DEFAULT_BRANCH}
+  event: [push, cron]
+
+steps:
+  build:
+    image: debian:stable
+    commands:
+      - apt update && apt install -q mkdocs mkdocs-material
+      - mkdocs build
+
+  # this is still the legacy v2 pages systm
+  #
+  # the new system is based on an action but does not support custom
+  # domains yet, see:
+  # https://codeberg.org/git-pages/action
+  # https://docs.codeberg.org/codeberg-pages/forgejo-actions/
+  publish:
+    image: alpine/git
+    environment:
+      OUTPUT_DIR: site
+      # secrets must be set in Woodpecker configuration
+      MAIL:
+        from_secret: mail
+      CODEBERG_TOKEN:
+        from_secret: codeberg_token
+    commands:
+      - git config --global user.email $MAIL
+      - git config --global user.name "Woodpecker CI"
+      - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git $CI_REPO_NAME
+      - cp -ar $OUTPUT_DIR/. $CI_REPO_NAME/
+      - cp .domains $CI_REPO_NAME || true
+      - cd $CI_REPO_NAME
+      - git add .
+      - if ! git diff --cached --quiet; then git commit -m "Woodpecker CI ${CI_BUILD_CREATED}" && git push; fi
