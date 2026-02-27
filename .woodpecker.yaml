@@ -44,6 +44,7 @@ steps:
       CODEBERG_TOKEN:
         from_secret: codeberg_token
     commands:
+      - apt-get update && apt-get install -y git
       - git config --global user.email $MAIL
       - git config --global user.name "Woodpecker CI"
       # cache using git while we wait for a woodpecker cache:
