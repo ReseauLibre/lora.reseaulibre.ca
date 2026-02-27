@@ -26,6 +26,29 @@ steps:
       - zensical
       - build
 
+  checklinks:
+    image: containers.torproject.org/tpo/web/container-images/lychee
+    environment:
+      OUTPUT_DIR: site
+      # secrets must be set in Woodpecker configuration
+      MAIL:
+        from_secret: mail
+      CODEBERG_TOKEN:
+        from_secret: codeberg_token
+    script:
+      - git config --global user.email $MAIL
+      - git config --global user.name "Woodpecker CI"
+      # cache using git while we wait for a woodpecker cache:
+      # https://github.com/woodpecker-ci/woodpecker/discussions/2296
+      # this could be fixed with a Forgejo "cache" action or artifacts:
+      # https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/
+      # https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts
+      - git clone -b cache https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git .lycheecache
+      - lychee site --root-dir site/ --include-fragments --index-files index.html --no-progress --cache --cache-exclude-status "401,429,500.." --max-cache-age 30d --scheme http --scheme https --require-https
+      - cd .lycheecache
+      - git add .
+      - if ! git diff --cached --quiet; then git commit -m "Woodpecker CI cache update ${CI_BUILD_CREATED}" && git push; fi
+
   # this is still the legacy v2 pages systm
   #
   # the new system is based on an action but does not support custom
