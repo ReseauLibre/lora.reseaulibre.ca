@@ -20,9 +20,11 @@ pages" and "actions" in Codeberg. So, essentially, it works like this:
 
 If you want to participate here, agreed with the [Code of Conduct](CODE_OF_CONDUCT.MD)
 ([Contributor Covenant 3.0 Code](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)), and edit the files in [docs](docs/)
-which should bring you into a pull request workflow.
+which should bring you into a [pull request workflow](https://docs.codeberg.org/git/clone-commit-via-web/#edit).
 
-Once the request is approved, your changes will go live.
+Once the request is approved, your changes will go live. Changes take
+a "few minuets" to show up, see [this troubleshooting section
+otherwise](https://docs.codeberg.org/codeberg-pages/troubleshooting/#my-content-is-not-updated).
 
 ## First setup
 
@@ -59,8 +61,6 @@ use [Codeberg CI](https://docs.codeberg.org/ci/) to build and publish the site a
 
 At this point, changes to the repository automatically rebuild and
 publish the changes.
-
-Changes take a "few minuets" to show up, see [this troubleshooting section](https://docs.codeberg.org/codeberg-pages/troubleshooting/#my-content-is-not-updated).
 
 We should probably hook this onto [Forgejo Actions](https://docs.codeberg.org/ci/actions/) instead, but
 the [guide for that](https://docs.codeberg.org/codeberg-pages/forgejo-actions/) explicitly says it does not work for custom
