@@ -43,7 +43,7 @@ steps:
         from_secret: mail
       CODEBERG_TOKEN:
         from_secret: codeberg_token
-    script:
+    commands:
       - git config --global user.email $MAIL
       - git config --global user.name "Woodpecker CI"
       # cache using git while we wait for a woodpecker cache:
