@@ -1,12 +1,21 @@
 ---
 site_name: Mesh Montréal
 site_url: https://lora.reseaulibre.ca
+# nav:
+#   - About: index.md
+#   - Guides: guides.md
+#   - References: references.md
 theme:
   name: material
   # logo: assets/logo.png
-  # features:
-  #   - navigation.tabs
-  #   - navigation.sections
+  features:
+    #- navigation.prune
+    #- navigation.sections
+    #- navigation.expand
+    #- navigation.tabs
+    #- navigation.tabs.sticky
+    #- navigation.top
+    #- navigation.tracking
   # disable the roboto font download from google
   font: false
   palette:
