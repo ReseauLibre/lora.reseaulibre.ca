@@ -56,6 +56,7 @@ steps:
       # we *must* go in the cache directory because we can't relocate
       # the lychee cache, see:
       # https://github.com/lycheeverse/lychee/issues/1700
+      - cp .lycheeignore cache
       - cd cache
       - lychee ../site --root-dir ../site/ --include-fragments --index-files index.html --no-progress --cache --cache-exclude-status "401,429,500.." --max-cache-age 30d --scheme http --scheme https --require-https
       - git add .
