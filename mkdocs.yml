@@ -5,7 +5,7 @@ site_description: The Montreal mesh project"
 site_author: Anarcat and others
 copyright: Copyleft &copy; CC-BY-SA 4.0
 repo_url: https://codeberg.org/anarcat/lora-reseaulibre-ca
-edit_uri: edit/main/docs/
+edit_uri: _edit/main/docs/
 # nav:
 #   - About: index.md
 #   - Guides: guides.md
