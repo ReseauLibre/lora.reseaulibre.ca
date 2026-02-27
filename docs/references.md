@@ -1,3 +1,5 @@
+# References
+
 Here's some links while we populate this site:
 
 - [Anarcat's meshtastic docs](https://anarc.at/services/meshtastic/)
@@ -7,19 +9,19 @@ Here's some links while we populate this site:
 
 [LWN review]: https://lwn.net/Articles/1009782/
 
-# Contact
+## Contact
 
 - [Matrix](https://matrix.to/#/#reseaulibre:matrix.org)
 - [Mailing list](mailto:nodes@reseaulibre.ca)
 
-# Maps
+## Maps
 
 - [meshmap.net](https://meshmap.net/)
 - [Liam Cottle's map](https://meshtastic.liamcottle.net/) (now advertising meshcore)
 - [Canada mesh map](https://map.mt.gt/)
 - [Site planner](https://site.meshtastic.org/)
 
-# Neighbors
+## Neighbors
 
 - [Canadaverse mesh wiki](https://wiki.mt.gt/)
 - [Puget Mesh](https://pugetmesh.org/): US west coast
@@ -30,7 +32,7 @@ Here's some links while we populate this site:
 
 See also the [official list of local groups](https://meshtastic.org/docs/community/local-groups/).
 
-# Previous mesh
+## Previous mesh
 
 If you're looking for the "old" wifi mesh (2010-2019), see
 <https://wiki.reseaulibre.ca>.

@@ -5,6 +5,10 @@ site_url: https://lora.reseaulibre.ca
 #   - About: index.md
 #   - Guides: guides.md
 #   - References: references.md
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 theme:
   name: material
   logo: assets/logo.jpg
