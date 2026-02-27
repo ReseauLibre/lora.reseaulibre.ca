@@ -34,6 +34,31 @@ steps:
       - pacman -Sy --noconfirm typos
       - typos
 
+  # this is still the legacy v2 pages systm
+  #
+  # the new system is based on an action but does not support custom
+  # domains yet, see:
+  # https://codeberg.org/git-pages/action
+  # https://docs.codeberg.org/codeberg-pages/forgejo-actions/
+  publish:
+    image: alpine/git
+    environment:
+      OUTPUT_DIR: site
+      # secrets must be set in Woodpecker configuration
+      MAIL:
+        from_secret: mail
+      CODEBERG_TOKEN:
+        from_secret: codeberg_token
+    commands:
+      - git config --global user.email $MAIL
+      - git config --global user.name "Woodpecker CI"
+      - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git $CI_REPO_NAME
+      - cp -ar $OUTPUT_DIR/. $CI_REPO_NAME/
+      - cp .domains $CI_REPO_NAME || true
+      - cd $CI_REPO_NAME
+      - git add .
+      - if ! git diff --cached --quiet; then git commit -m "Woodpecker CI ${CI_BUILD_CREATED}" && git push; fi
+
   checklinks:
     image: containers.torproject.org/tpo/web/container-images/lychee
     environment:
@@ -62,27 +87,3 @@ steps:
       - git add .
       - if ! git diff --cached --quiet; then git commit -m "Woodpecker CI cache update ${CI_BUILD_CREATED}" && git push; fi
 
-  # this is still the legacy v2 pages systm
-  #
-  # the new system is based on an action but does not support custom
-  # domains yet, see:
-  # https://codeberg.org/git-pages/action
-  # https://docs.codeberg.org/codeberg-pages/forgejo-actions/
-  publish:
-    image: alpine/git
-    environment:
-      OUTPUT_DIR: site
-      # secrets must be set in Woodpecker configuration
-      MAIL:
-        from_secret: mail
-      CODEBERG_TOKEN:
-        from_secret: codeberg_token
-    commands:
-      - git config --global user.email $MAIL
-      - git config --global user.name "Woodpecker CI"
-      - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git $CI_REPO_NAME
-      - cp -ar $OUTPUT_DIR/. $CI_REPO_NAME/
-      - cp .domains $CI_REPO_NAME || true
-      - cd $CI_REPO_NAME
-      - git add .
-      - if ! git diff --cached --quiet; then git commit -m "Woodpecker CI ${CI_BUILD_CREATED}" && git push; fi
