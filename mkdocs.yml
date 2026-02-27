@@ -7,7 +7,8 @@ site_url: https://lora.reseaulibre.ca
 #   - References: references.md
 theme:
   name: material
-  # logo: assets/logo.png
+  logo: assets/logo.jpg
+  favicon: assets/logo.jpg
   features:
     #- navigation.prune
     #- navigation.sections
