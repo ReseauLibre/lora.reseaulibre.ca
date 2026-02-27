@@ -607,6 +607,11 @@
 
 <h1 id="guides">Guides</h1>
 <h2 id="getting-started-with-meshtastic">Getting started with Meshtastic</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Meshtastic exposes your location by default! At least reduce the
+<a href="https://meshtastic.org/docs/configuration/radio/channels/#position-precision">Position precision</a> or set the <a href="https://meshtastic.org/docs/configuration/radio/position/#gps-mode">GPS Mode</a> to <code>DISABLED</code>.</p>
+</div>
 <h3 id="hardware">Hardware</h3>
 <p>Those all require a phone with the Meshtastic app to operate:</p>
 <ul>
@@ -639,49 +644,79 @@ Chrome-derived web browser.</p>
 <p>Anarcat wrote an <a href="https://gitlab.com/anarcat/scripts/-/blob/846a0f46978ae7ebb726004b2653e9a25a5e955c/reflashtic.py">advanced batch-flashing tool</a> if you need to
 flash multiple devices, use at your own risk.</p>
 <h3 id="settings">Settings</h3>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Meshtastic exposes your location by default! Change at least the
-"position" setting if you care at all about your privacy.</p>
+<p>This section describes various settings we advise in the Meshtastic
+app.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The two settings below are crucial to connect to the mesh. If
+those are not configured properly, you will not be able to see anything.</p>
 </div>
-<p>Those "settings" are crucial to connect to the mesh and <em>may change in
-the future</em> to adjust with the network conditions:</p>
-<ul>
-<li>In the <a href="https://meshtastic.org/docs/configuration/radio/lora/">LoRa</a> section of the Meshtastic app:</li>
-<li><a href="https://meshtastic.org/docs/overview/radio-settings/#presets">preset</a>: <code>LongFast</code> (default, don't change it)</li>
-<li><a href="https://meshtastic.org/docs/configuration/radio/lora/#region">Region</a>: <code>US</code>, even though we're in Canada, pick the US preset
-    because those are the frequencies (902.0 - 928.0 MHz) that apply
-    here as well</li>
-</ul>
-<p>You should also review those settings:</p>
-<ul>
-<li><a href="https://meshtastic.org/docs/configuration/radio/bluetooth/">Bluetooth</a>: change the <a href="https://meshtastic.org/docs/configuration/radio/bluetooth/#fixed-pin">default PIN</a> to some random value and
-   keep it in your password manager</li>
-<li>
-<p><a href="https://meshtastic.org/docs/configuration/radio/device/">Device</a>: generally do <em>not</em> change the <a href="https://meshtastic.org/docs/configuration/tips/#roles">Role</a>: <code>CLIENT</code> is
-   fine, consider <code>CLIENT_BASE</code> if you run a relay, don't change the
-   role without reading the <a href="https://meshtastic.org/blog/choosing-the-right-device-role/">Choosing The Right Device Role</a> guide</p>
-</li>
-<li>
-<p><a href="https://meshtastic.org/docs/configuration/radio/lora/">LoRa</a>: set <a href="https://meshtastic.org/docs/configuration/radio/lora/#ignore-mqtt">Ignore MQTT</a> to <code>false</code>, keep "OK to MQTT" to
-   <code>false</code>. This keeps traffic from the wider mesh from entering the
-   network and reduces overall noise.</p>
-</li>
-<li>
-<p><a href="https://meshtastic.org/docs/configuration/radio/position/">Position</a>: set GPS Mode to <code>DISABLE</code>! or <a href="https://meshtastic.org/docs/configuration/radio/channels/#position-precision">reduce precision</a>
-   in the <a href="https://meshtastic.org/docs/configuration/radio/channels/#position-precision">Channel configuration</a>, otherwise you leak your position
-   to the network by default</p>
-</li>
-<li>
-<p><a href="https://meshtastic.org/docs/configuration/radio/user/">User</a>:</p>
-<ul>
-<li>set the "Short Name" to something easy to remember, this is what's
-  visible on the map and chats</li>
-<li>set the "Long Name" to something useful, but not offensive, ham
-  operators can set their call sign here</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://meshtastic.org/docs/overview/radio-settings/#presets">Modem preset</a></td>
+<td><code>LONG_FAST</code></td>
+<td>default, don't change it (for now)</td>
+</tr>
+<tr>
+<td><a href="https://meshtastic.org/docs/configuration/radio/lora/#region">Region</a></td>
+<td><code>US</code></td>
+<td>even though we're in Canada, pick the US preset because those are the frequencies (902.0 - 928.0 MHz) that apply here as well</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Those settings are optional, but recommended.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://meshtastic.org/docs/configuration/radio/bluetooth/">Bluetooth</a>: PIN</td>
+<td>(random)</td>
+<td>change the <a href="https://meshtastic.org/docs/configuration/radio/bluetooth/#fixed-pin">default PIN</a> to some random value and keep it in your password manager</td>
+</tr>
+<tr>
+<td><a href="https://meshtastic.org/docs/configuration/radio/device/">Device</a>:  <a href="https://meshtastic.org/docs/configuration/tips/#roles">Role</a></td>
+<td><code>CLIENT</code></td>
+<td>consider <code>CLIENT_BASE</code> if you run a relay, don't change the role without reading the <a href="https://meshtastic.org/blog/choosing-the-right-device-role/">Choosing The Right Device Role</a> guide</td>
+</tr>
+<tr>
+<td><a href="https://meshtastic.org/docs/configuration/radio/lora/">LoRa</a>: <a href="https://meshtastic.org/docs/configuration/radio/lora/#ignore-mqtt">Ignore MQTT</a></td>
+<td><code>false</code></td>
+<td>also keep keep "OK to MQTT" to <code>false</code>. This keeps traffic from the wider mesh from entering the   network and reduces overall noise.</td>
+</tr>
+<tr>
+<td><a href="https://meshtastic.org/docs/configuration/radio/position/">Position</a>: <a href="https://meshtastic.org/docs/configuration/radio/position/#gps-mode">GPS Mode</a></td>
+<td><code>DISABLE</code></td>
+<td>or reduce the <a href="https://meshtastic.org/docs/configuration/radio/channels/#position-precision">Position precision</a> in the <a href="https://meshtastic.org/docs/configuration/radio/channels/#position-precision">Channel configuration</a>, otherwise you leak your position to the network by default</td>
+</tr>
+<tr>
+<td><a href="https://meshtastic.org/docs/configuration/radio/user/">User</a>: "Short Name"</td>
+<td>(arbitrary)</td>
+<td>only 4 characters, set to something easy to remember, this is what's visible on the map and chats</td>
+</tr>
+<tr>
+<td>User: "Long Name"</td>
+<td>(arbitrary)</td>
+<td>set to something useful, but not offensive, ham operators can set their call sign here</td>
+</tr>
+</tbody>
+</table>
 <h2 id="other-guides">Other guides</h2>
 <p>The above is only a primer. Anarcat wrote a <a href="https://anarc.at/services/meshtastic/">lot more</a> that should
 probably be progressively migrated here.</p>
