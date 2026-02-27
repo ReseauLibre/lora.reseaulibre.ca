@@ -52,9 +52,12 @@ steps:
       # this could be fixed with a Forgejo "cache" action or artifacts:
       # https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/
       # https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts
-      - git clone -b cache https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git .lycheecache
-      - lychee site --root-dir site/ --include-fragments --index-files index.html --no-progress --cache --cache-exclude-status "401,429,500.." --max-cache-age 30d --scheme http --scheme https --require-https
-      - cd .lycheecache
+      - git clone -b cache https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git cache
+      # we *must* go in the cache directory because we can't relocate
+      # the lychee cache, see:
+      # https://github.com/lycheeverse/lychee/issues/1700
+      - cd cache
+      - lychee ../site --root-dir ../site/ --include-fragments --index-files index.html --no-progress --cache --cache-exclude-status "401,429,500.." --max-cache-age 30d --scheme http --scheme https --require-https
       - git add .
       - if ! git diff --cached --quiet; then git commit -m "Woodpecker CI cache update ${CI_BUILD_CREATED}" && git push; fi
 
