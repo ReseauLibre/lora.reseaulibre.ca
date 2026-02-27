@@ -26,6 +26,10 @@ Once the request is approved, your changes will go live. Changes take
 a "few minuets" to show up, see [this troubleshooting section
 otherwise](https://docs.codeberg.org/codeberg-pages/troubleshooting/#my-content-is-not-updated).
 
+The site was originally build on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) but eventually
+switched to [Zensical](https://zensical.org/). See their [authoring guide](https://zensical.org/docs/authoring/markdown/) for more
+information.
+
 ## First setup
 
 To set this up, I had to first [follow the manual pushing guide](https://docs.codeberg.org/codeberg-pages/pushing-output/):
