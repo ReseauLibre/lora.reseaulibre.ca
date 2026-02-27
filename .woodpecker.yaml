@@ -22,8 +22,9 @@ when:
 steps:
   build:
     image: zensical/zensical
-    commands:
-      - zensical build
+    entrypoint:
+      - zensical
+      - build
 
   # this is still the legacy v2 pages systm
   #
