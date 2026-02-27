@@ -26,7 +26,7 @@ See also the [official hardware list](https://meshtastic.org/docs/hardware/devic
 
 !!! tip
 
-    If the device you pickd comes with a removeable antenna, make sure
+    If the device you picked comes with a removable antenna, make sure
     you connect the antenna before powering up the device. A radio
     that transmits without an antenna can damage itself!
 
