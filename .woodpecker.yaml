@@ -26,6 +26,14 @@ steps:
       - zensical
       - build
 
+  spellcheck:
+    # while we wait for an upstream image:
+    # https://github.com/crate-ci/typos/issues/427
+    image: archlinux
+    commands:
+      - pacman -Sy --noconfirm typos
+      - typos
+
   checklinks:
     image: containers.torproject.org/tpo/web/container-images/lychee
     environment:
