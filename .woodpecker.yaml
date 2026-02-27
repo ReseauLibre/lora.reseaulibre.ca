@@ -21,9 +21,9 @@ when:
 
 steps:
   build:
-    image: squidfunk/mkdocs-material
+    image: zensical/zensical
     commands:
-      - mkdocs build
+      - zensical build
 
   # this is still the legacy v2 pages systm
   #
