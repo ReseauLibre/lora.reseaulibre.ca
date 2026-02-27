@@ -66,14 +66,14 @@ app.
 
     Those settings are optional, but recommended.
 
-| Setting                    | Value       | Note                                                                                                                                  |
-|----------------------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| [Bluetooth][]: PIN         | (random)    | change the [default PIN][] to some random value and keep it in your password manager                                                  |
-| [Device][]:  [Role][]      | `CLIENT`    | consider `CLIENT_BASE` if you run a relay, don't change the role without reading the [Choosing The Right Device Role][] guide         |
-| [LoRa][]: [Ignore MQTT][]  | `false`     | also keep keep "OK to MQTT" to `false`. This keeps traffic from the wider mesh from entering the   network and reduces overall noise. |
-| [Position][]: [GPS Mode][] | `DISABLE`   | or reduce the [Position precision][] in the [Channel configuration][], otherwise you leak your position to the network by default     |
-| [User][]: "Short Name"     | (arbitrary) | only 4 characters, set to something easy to remember, this is what's visible on the map and chats                                     |
-| User: "Long Name"          | (arbitrary) | set to something useful, but not offensive, ham operators can set their call sign here                                                |
+| Setting                    | Value       | Note                                                                                                                              |
+|----------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| [Bluetooth][]: PIN         | (random)    | change the [default PIN][] to some random value and keep it in your password manager                                              |
+| [Device][]:  [Role][]      | `CLIENT`    | consider `CLIENT_BASE` if you run a relay, don't change the role without reading the [Choosing The Right Device Role][] guide     |
+| [LoRa][]: [Ignore MQTT][]  | `false`     | this keeps traffic from the wider mesh from entering the   network and reduces overall noise.                                     |
+| [Position][]: [GPS Mode][] | `DISABLE`   | or reduce the [Position precision][] in the [Channel configuration][], otherwise you leak your position to the network by default |
+| [User][]: "Short Name"     | (arbitrary) | only 4 characters, set to something easy to remember, this is what's visible on the map and chats                                 |
+| User: "Long Name"          | (arbitrary) | set to something useful, but not offensive, ham operators can set their call sign here                                            |
 
  [Bluetooth]: https://meshtastic.org/docs/configuration/radio/bluetooth/
  [Channel configuration]: https://meshtastic.org/docs/configuration/radio/channels/#position-precision
