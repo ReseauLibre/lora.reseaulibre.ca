@@ -28,7 +28,8 @@ theme:
     # - navigation.top
     # - navigation.tracking
     - content.action.edit  # Edit this page
-    - content.action.view  # View source of this page
+    # broken, it points to _raw, it's raw in codeberg
+    #- content.action.view  # View source of this page
   # disable the roboto font download from google
   font: false
   palette:
