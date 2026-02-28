@@ -20,13 +20,17 @@ when:
   event: [push, manual]
 
 steps:
-  build:
-    image: zensical/zensical
-    entrypoint:
-      - zensical
-      - build
+  aspell:
+    image: debian
+    commands:
+      - spellcheck.sh fr
 
-  spellcheck:
+  build:
+    image: squidfunk/mkdocs-material
+    commands:
+      - mkdocs build
+
+  typos:
     # while we wait for an upstream image:
     # https://github.com/crate-ci/typos/issues/427
     image: archlinux
