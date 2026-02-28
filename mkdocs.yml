@@ -91,7 +91,7 @@ plugins:
       type: iso_datetime
       enable_creation_date: true
   # show page authors at the bottom
-  - git-authors
+  #- git-authors
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?
 #   - social
