@@ -86,8 +86,11 @@ plugins:
           name: Français
           build: true
   - search
+  # show git modification date
   - git-revision-date-localized:
+      type: iso_datetime
       enable_creation_date: true
+  # show page authors at the bottom
   - git-authors
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?
