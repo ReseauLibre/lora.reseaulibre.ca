@@ -70,7 +70,7 @@ app.
 |----------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | [Bluetooth][]: PIN         | (random)    | change the [default PIN][] to some random value and keep it in your password manager                                              |
 | [Device][]:  [Role][]      | `CLIENT`    | consider `CLIENT_BASE` if you run a relay, don't change the role without reading the [Choosing The Right Device Role][] guide     |
-| [LoRa][]: [Ignore MQTT][]  | `false`     | this keeps traffic from the wider mesh from entering the   network and reduces overall noise.                                     |
+| [LoRa][]: [Ignore MQTT][]  | `true`      | this keeps traffic from the wider mesh from entering the   network and reduces overall noise.                                     |
 | [Position][]: [GPS Mode][] | `DISABLE`   | or reduce the [Position precision][] in the [Channel configuration][], otherwise you leak your position to the network by default |
 | [User][]: "Short Name"     | (arbitrary) | only 4 characters, set to something easy to remember, this is what's visible on the map and chats                                 |
 | User: "Long Name"          | (arbitrary) | set to something useful, but not offensive, ham operators can set their call sign here                                            |
