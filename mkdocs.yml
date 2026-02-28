@@ -74,6 +74,9 @@ theme:
 #       lang: fr
 plugins:
   - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-authors
   - i18n:
       docs_structure: suffix
       reconfigure_material: true
