@@ -1,12 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      <url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
         <loc>https://lora.reseaulibre.ca/</loc>
-      </url>
-      <url>
+        <lastmod>2026-02-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lora.reseaulibre.ca/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lora.reseaulibre.ca/fr/"/>
+    </url>
+    <url>
         <loc>https://lora.reseaulibre.ca/guides/</loc>
-      </url>
-      <url>
+        <lastmod>2026-02-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lora.reseaulibre.ca/guides/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lora.reseaulibre.ca/fr/guides/"/>
+    </url>
+    <url>
         <loc>https://lora.reseaulibre.ca/references/</loc>
-      </url>
+        <lastmod>2026-02-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lora.reseaulibre.ca/references/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lora.reseaulibre.ca/fr/references/"/>
+    </url>
+    <url>
+        <loc>https://lora.reseaulibre.ca/fr/</loc>
+        <lastmod>2026-02-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lora.reseaulibre.ca/fr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lora.reseaulibre.ca/"/>
+    </url>
+    <url>
+        <loc>https://lora.reseaulibre.ca/fr/guides/</loc>
+        <lastmod>2026-02-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lora.reseaulibre.ca/fr/guides/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lora.reseaulibre.ca/guides/"/>
+    </url>
+    <url>
+        <loc>https://lora.reseaulibre.ca/fr/references/</loc>
+        <lastmod>2026-02-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lora.reseaulibre.ca/fr/references/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lora.reseaulibre.ca/references/"/>
+    </url>
 </urlset>
