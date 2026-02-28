@@ -23,7 +23,7 @@ steps:
   aspell:
     image: debian
     commands:
-      - spellcheck.sh fr
+      - ./spellcheck.sh fr
 
   build:
     image: squidfunk/mkdocs-material
