@@ -49,7 +49,20 @@ theme:
       toggle:
         icon: lucide/moon
         name: Switch to system preference
-# should we translate everything?
+  # the site is in english
+  language: en
+
+# i thought this would help in translating it all, but it's not the
+# way: those are just fixed links.
+#
+# in mkdocs, this is done with the mkdocs-static-i18n plugin:
+# https://ultrabug.github.io/mkdocs-static-i18n/
+#
+# in zensical, this is the first issue in the backlog:
+# https://github.com/zensical/backlog/issues/1
+#
+# it's blocked by the second one, the design of the module system:
+# https://github.com/zensical/backlog/issues/41
 # extra:
 #   alternate:
 #     - name: English
