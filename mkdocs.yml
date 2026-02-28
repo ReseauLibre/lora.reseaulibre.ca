@@ -73,10 +73,6 @@ theme:
 #       link: /fr/
 #       lang: fr
 plugins:
-  - search
-  - git-revision-date-localized:
-      enable_creation_date: true
-  - git-authors
   - i18n:
       docs_structure: suffix
       reconfigure_material: true
@@ -89,6 +85,10 @@ plugins:
         - locale: fr
           name: Français
           build: true
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-authors
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?
 #   - social
