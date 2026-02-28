@@ -75,6 +75,7 @@ theme:
 plugins:
   - i18n:
       docs_structure: suffix
+      reconfigure_material: true
       languages:
         - locale: en
           default: true
