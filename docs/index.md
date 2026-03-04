@@ -14,4 +14,6 @@ infrastructure for disaster preparedness, emergency response and local
 events. We also want to foster collaboration among our members and
 reclaim ownership of the Network.
 
-This site aims at documenting the project and our knowledge.
+This site aims at documenting the project and our knowledge. You can
+change this site through the [Git repository](https://codeberg.org/anarcat/lora-reseaulibre-ca) and by hitting the
+"edit" icon on any page.

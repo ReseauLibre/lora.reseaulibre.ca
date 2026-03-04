@@ -14,4 +14,6 @@ préparation au désastre, les urgences et évènements locaux. Nous
 cherchons à stimuler la collaboration dans notre communauté et
 reprendre le contrôle du Réseau.
 
-Ce site vise à documenter le projet et nos connaissances.
+Ce site vise à documenter le projet et nos connaissances. Vous pouvez
+modifier le site par le [dépôt Git](https://codeberg.org/anarcat/lora-reseaulibre-ca) ou en tapant l'icône "éditer"
+en haut de chaque page.
