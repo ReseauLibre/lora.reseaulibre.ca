@@ -29,7 +29,7 @@ theme:
     # - navigation.tracking
     - content.action.edit  # Edit this page
     # broken, it points to _raw, it's raw in codeberg
-    #- content.action.view  # View source of this page
+    # - content.action.view  # View source of this page
   # disable the roboto font download from google
   font: false
   palette:
@@ -92,8 +92,8 @@ plugins:
   - git-revision-date-localized:
       type: iso_datetime
       enable_creation_date: true
-  # show page authors at the bottom
-  #- git-authors
+#   # show page authors at the bottom
+#   - git-authors
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?
 #   - social
@@ -105,7 +105,7 @@ plugins:
 #   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
 #   - tags
 #   # update dates from git
-#   # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#document-dates
+#   # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/
 #   # not packaged in Debian
 #   # - git-revision-date-localized:
 #   #     enable_creation_date: true
