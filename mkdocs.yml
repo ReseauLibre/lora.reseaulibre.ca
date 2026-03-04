@@ -17,8 +17,8 @@ markdown_extensions:
   - tables
 theme:
   name: material
-  logo: assets/logo.jpg
-  favicon: assets/logo.jpg
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
   features:
     # - navigation.prune
     # - navigation.sections
