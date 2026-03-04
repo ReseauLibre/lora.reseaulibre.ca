@@ -90,13 +90,6 @@ plugins:
   # https://github.com/ultrabug/mkdocs-static-i18n/issues/283
   # https://github.com/squidfunk/mkdocs-material/issues/4863
   - blog
-  - rss:
-      match_path: blog/posts/.*
-      date_from_meta:
-        as_creation: date
-      categories:
-        - categories
-        - tags
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?
 #   - social
