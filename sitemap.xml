@@ -8,6 +8,13 @@
         <xhtml:link rel="alternate" hreflang="fr" href="https://lora.reseaulibre.ca/fr/"/>
     </url>
     <url>
+        <loc>https://lora.reseaulibre.ca/events/</loc>
+        <lastmod>2026-03-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lora.reseaulibre.ca/events/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lora.reseaulibre.ca/fr/events/"/>
+    </url>
+    <url>
         <loc>https://lora.reseaulibre.ca/guides/</loc>
         <lastmod>2026-03-04</lastmod>
         <changefreq>daily</changefreq>
@@ -27,6 +34,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="fr" href="https://lora.reseaulibre.ca/fr/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://lora.reseaulibre.ca/"/>
+    </url>
+    <url>
+        <loc>https://lora.reseaulibre.ca/fr/events/</loc>
+        <lastmod>2026-03-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://lora.reseaulibre.ca/fr/events/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lora.reseaulibre.ca/events/"/>
     </url>
     <url>
         <loc>https://lora.reseaulibre.ca/fr/guides/</loc>
