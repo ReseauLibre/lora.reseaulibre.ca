@@ -1,0 +1,16 @@
+---
+date: 2026-03-04
+title: Let's meet at Foulab's mesh night
+description: >
+  Insiders adds Chinese language support for the built-in search plugin – a
+  feature that has been requested many times
+---
+
+Every month, [Foulab](https://foulab.org/), the Montreal hacker space,
+holds a mesh night, and [this month is no exception](https://foulab.org/news/events-march-2026/).
+
+So let's meet there! [Foulab's location](https://foulab.org//location/) is [Suite 33B, 999 du
+Collège, Montréal, Quebec, Canada, H4C 2S3](https://www.openstreetmap.org/node/717702812) ([Google maps
+link](https://www.google.com/maps/place/999+Rue+du+Coll%C3%A8ge,+Montr%C3%A9al,+QC+H4C+2S2,+Canada)). We'll be there from 19:00 to 22:00.
+
+We'll be discussing summer projects, process and who we are.

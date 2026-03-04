@@ -27,6 +27,7 @@ theme:
     - navigation.tabs.sticky
     # - navigation.top
     # - navigation.tracking
+    - navigation.indexes
     - content.action.edit  # Edit this page
     # broken, it points to _raw, it's raw in codeberg
     # - content.action.view  # View source of this page
@@ -75,18 +76,6 @@ theme:
 #       link: /fr/
 #       lang: fr
 plugins:
-  - i18n:
-      docs_structure: suffix
-      reconfigure_material: true
-      reconfigure_search: true
-      languages:
-        - locale: en
-          default: true
-          name: English
-          build: true
-        - locale: fr
-          name: Français
-          build: true
   - search
   # show page authors at the bottom
   # disabled because for now we only have a single author
@@ -95,13 +84,16 @@ plugins:
   - git-revision-date-localized:
       type: iso_datetime
       enable_creation_date: true
+  # blog posts
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/
+  # note that the blog plugin is incompatible with the i18n one, see:
+  # https://github.com/ultrabug/mkdocs-static-i18n/issues/283
+  # https://github.com/squidfunk/mkdocs-material/issues/4863
+  - blog
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?
 #   - social
 #   # a bunch more possible plugins
-#   # blog posts
-#   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/
-#   - blog
 #   # page tagging
 #   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
 #   - tags
