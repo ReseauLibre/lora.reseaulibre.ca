@@ -24,6 +24,61 @@ The site was originally build on [mkdocs-material](https://squidfunk.github.io/m
 switched to [Zensical](https://zensical.org/). See their [authoring guide](https://zensical.org/docs/authoring/markdown/) for more
 information.
 
+## Translations
+
+Translations used to be made with the [mkdocs-static-i18n](https://github.com/ultrabug/mkdocs-static-i18n)
+plugin. That approach has been abandoned because it conflicts with the
+[blog plugin](https://squidfunk.github.io/mkdocs-material/plugins/blog/) (see upstream issues on [both](https://github.com/ultrabug/mkdocs-static-i18n/issues/283) [projects](https://github.com/squidfunk/mkdocs-material/issues/4863)). We
+have therefore adopted a "two-site" approach where each language is
+its own site.
+
+This is done by having the translation in separate
+branches. Concretely, we only translate to "French" right now, which
+lives in the `fr` branch. The way this works is by merging the `main`
+branch into the `fr` branch whenever we update the main branch. This
+is a clunky, manual process, but given we don't have many
+translations, it feels like a good deal.
+
+What this implies is that updates to existing pages will necessarily
+result in conflicts in the translation. That's a feature: one needs to
+know when a section needs an update.
+
+### Translating pages
+
+ 1. First pull the repository to have all branches up to date:
+
+        git pull
+
+ 2. Switch to the translation branch:
+
+        git switch fr
+
+ 3. Update it with the main branch:
+
+        git merge main
+
+    If this is an update on an existing page, this will result in a
+    merge conflict. Don't panic.
+
+ 4. Translate a given page:
+
+        $EDITOR docs/foo.md
+
+    If this is an existing page, you will need to resolve the merge
+    conflict. See the [Codeberg merge conflict instructions](https://docs.codeberg.org/collaborating/resolve-conflicts/) for a
+    tutorial. When the conflict is resolved, you mark the file as
+    resolved with:
+
+        git add docs/foo.md
+
+ 5. Commit the result and push:
+
+        git commit -m'translate page foo'
+        git push
+
+The last step will require you to setup a remote to your own fork if
+you don't have access to the repository.
+
 # CI build workflow details
 
 This section explains how the site is built. You don't need to read
