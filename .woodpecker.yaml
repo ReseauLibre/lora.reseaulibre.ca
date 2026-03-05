@@ -26,6 +26,7 @@ steps:
   aspell:
     image: debian
     commands:
+      - git switch fr
       - ./spellcheck.sh fr
 
   build:
@@ -33,6 +34,7 @@ steps:
     commands:
       - pip install -r requirements.txt
       - mkdocs build
+      - git worktree add fr/ fr
 
   typos:
     # while we wait for an upstream image:
