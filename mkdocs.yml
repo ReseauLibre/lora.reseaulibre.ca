@@ -97,6 +97,9 @@ plugins:
       categories:
         - categories
         - tags
+  - redirects:
+      redirect_maps:
+        'events.md': 'blog/category/events.md'
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?
 #   - social
