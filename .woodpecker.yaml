@@ -23,6 +23,14 @@ when:
   event: [push, manual]
 
 steps:
+  typos:
+    # while we wait for an upstream image:
+    # https://github.com/crate-ci/typos/issues/427
+    image: archlinux
+    commands:
+      - pacman -Sy --noconfirm typos
+      - typos
+
   build:
     image: squidfunk/mkdocs-material
     commands:
@@ -31,14 +39,6 @@ steps:
       - git fetch --all
       - git worktree add fr/ fr
       - cd fr && mkdocs build -d ../site/fr
-
-  typos:
-    # while we wait for an upstream image:
-    # https://github.com/crate-ci/typos/issues/427
-    image: archlinux
-    commands:
-      - pacman -Sy --noconfirm typos
-      - typos
 
   # this is still the legacy v2 pages systm
   #
