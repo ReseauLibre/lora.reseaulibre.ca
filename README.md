@@ -43,6 +43,11 @@ What this implies is that updates to existing pages will necessarily
 result in conflicts in the translation. That's a feature: one needs to
 know when a section needs an update.
 
+Note that the translation branch has a copy of *all* the files here,
+even though a lot of those are superfluous (like the
+`.woodpecker.yaml` file). The `mkdocs.yml` *is* relevant, however, and
+differs between the two because the `site_url` needs the `fr` suffix.
+
 ### Translating pages
 
  1. First pull the repository to have all branches up to date:
@@ -78,6 +83,39 @@ know when a section needs an update.
 
 The last step will require you to setup a remote to your own fork if
 you don't have access to the repository.
+
+## Link checks
+
+The `checklinks` job uses the [Lychee link checker](https://github.com/lycheeverse/lychee/) to check the
+site for dead links.
+
+Checks sometimes fail because of transient errors like:
+
+    [ERROR] https://lora.reseaulibre.ca/fr/blog/archive/2026/ | Network error: HTTP/2 protocol error. Server may not support HTTP/2 properly (error sending request for url (https://lora.reseaulibre.ca/fr/blog/archive/2026/)): HTTP/2 protocol error. Server may not support HTTP/2 properly
+
+Rerunning the pipeline fixes this issue. I assume this is a problem
+internal to Codeberg pages, but I haven't debugged the issue any
+further.
+
+## Spell checking
+
+Two spell checkers are in use. [Typos](https://github.com/crate-ci/typos/) is used to check the English
+version and good old [Aspell](https://en.wikipedia.org/wiki/GNU_Aspell) for other languages.
+
+To fix false positives found by Typos, follow [this guide](https://github.com/crate-ci/typos/?tab=readme-ov-file#false-positives).
+
+To fix false positives found by Aspell, install the `aspell` package
+and run the command recommended by CI, which should be something like:
+
+    aspell --mode=markdown --lang=fr --home-dir=. --personal=aspell.fr.pws --encoding=utf-8 foo.md
+
+... where `foo.md` is the file with a problem. It will run a text
+interface that will allow you to correct or accept the words.
+
+Alternatively, you can add the word to the list in `aspell.fr.pws`
+following the [peculiar file format](http://aspell.net/man-html/Format-of-the-Personal-and-Replacement-Dictionaries.html#Format-of-the-Personal-and-Replacement-Dictionaries). Essentially, you need to add
+the word on its own line and increment the line count on the first
+line.
 
 # CI build workflow details
 

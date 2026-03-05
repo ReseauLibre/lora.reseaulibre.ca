@@ -23,17 +23,13 @@ when:
   event: [push, manual]
 
 steps:
-  aspell:
-    image: debian
-    commands:
-      - git worktree add fr/ fr
-      - cd fr && ./spellcheck.sh fr
-
   build:
     image: squidfunk/mkdocs-material
     commands:
       - pip install -r requirements.txt
       - mkdocs build
+      - git fetch --all
+      - git worktree add fr/ fr
       - cd fr && mkdocs build -d ../site/fr
 
   typos:
@@ -65,6 +61,11 @@ steps:
       - cd $CI_REPO_NAME
       - git add .
       - if ! git diff --cached --quiet; then git commit -m "Woodpecker CI ${CI_BUILD_CREATED}" && git push; fi
+
+  aspell:
+    image: debian
+    commands:
+      - cd fr && ./spellcheck.sh fr
 
   checklinks:
     image: containers.torproject.org/tpo/web/container-images/lychee
