@@ -26,16 +26,15 @@ steps:
   aspell:
     image: debian
     commands:
-      - git switch fr
-      - ./spellcheck.sh fr
+      - git worktree add fr/ fr
+      - cd fr && ./spellcheck.sh fr
 
   build:
     image: squidfunk/mkdocs-material
     commands:
       - pip install -r requirements.txt
       - mkdocs build
-      - git worktree add fr/ fr
-      - cd fr && mkdocs build
+      - cd fr && mkdocs build -d ../site/fr
 
   typos:
     # while we wait for an upstream image:
