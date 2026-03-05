@@ -43,6 +43,11 @@ What this implies is that updates to existing pages will necessarily
 result in conflicts in the translation. That's a feature: one needs to
 know when a section needs an update.
 
+Note that the translation branch has a copy of *all* the files here,
+even though a lot of those are superfluous (like the
+`.woodpecker.yaml` file). The `mkdocs.yml` *is* relevant, however, and
+differs between the two because the `site_url` needs the `fr` suffix.
+
 ### Translating pages
 
  1. First pull the repository to have all branches up to date:
