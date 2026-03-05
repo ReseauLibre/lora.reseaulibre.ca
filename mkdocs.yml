@@ -27,6 +27,7 @@ theme:
     - navigation.tabs.sticky
     # - navigation.top
     # - navigation.tracking
+    - navigation.indexes
     - content.action.edit  # Edit this page
     # broken, it points to _raw, it's raw in codeberg
     # - content.action.view  # View source of this page
@@ -66,27 +67,15 @@ theme:
 #
 # it's blocked by the second one, the design of the module system:
 # https://github.com/zensical/backlog/issues/41
-# extra:
-#   alternate:
-#     - name: English
-#       link: /en/
-#       lang: en
-#     - name: Français
-#       link: /fr/
-#       lang: fr
+extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: Français
+      link: /fr/
+      lang: fr
 plugins:
-  - i18n:
-      docs_structure: suffix
-      reconfigure_material: true
-      reconfigure_search: true
-      languages:
-        - locale: en
-          default: true
-          name: English
-          build: true
-        - locale: fr
-          name: Français
-          build: true
   - search
   # show page authors at the bottom
   # disabled because for now we only have a single author
@@ -95,13 +84,30 @@ plugins:
   - git-revision-date-localized:
       type: iso_datetime
       enable_creation_date: true
+  # blog posts
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/
+  # note that the blog plugin is incompatible with the i18n one, see:
+  # https://github.com/ultrabug/mkdocs-static-i18n/issues/283
+  # https://github.com/squidfunk/mkdocs-material/issues/4863
+  - blog:
+      categories_allowed:
+        - events
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
+  - redirects:
+      redirect_maps:
+        # can't redirect to blog/category/events/index.md, as
+        # redirects thinks it doesn't exist, boooouuuh.
+        'events.md': 'blog/index.md'
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?
 #   - social
 #   # a bunch more possible plugins
-#   # blog posts
-#   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/
-#   - blog
 #   # page tagging
 #   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
 #   - tags

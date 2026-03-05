@@ -3,7 +3,87 @@ hosted at <https://lora.reseaulibre.ca>.
 
 Most contents are in [docs](docs/index.md).
 
-# Meta
+# Contributing
+
+If you want to participate here, agree with the [Code of Conduct](CODE_OF_CONDUCT.MD)
+([Contributor Covenant 3.0 Code](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)), and edit the files in [docs](docs/)
+which should bring you into a [pull request workflow](https://docs.codeberg.org/git/clone-commit-via-web/#edit).
+
+> 💡 Tip
+>
+> That can be done through the web interface directly, even though the
+> linked documentation above doesn't make that obvious. The
+> documentation seems to favor a local, git-based workflow which is
+> more complicated, but also supported.
+
+Once the request is approved, your changes will go live. Changes take
+a "few minuets" to show up, see [this troubleshooting section
+otherwise](https://docs.codeberg.org/codeberg-pages/troubleshooting/#my-content-is-not-updated).
+
+The site was originally build on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) but eventually
+switched to [Zensical](https://zensical.org/). See their [authoring guide](https://zensical.org/docs/authoring/markdown/) for more
+information.
+
+## Translations
+
+Translations used to be made with the [mkdocs-static-i18n](https://github.com/ultrabug/mkdocs-static-i18n)
+plugin. That approach has been abandoned because it conflicts with the
+[blog plugin](https://squidfunk.github.io/mkdocs-material/plugins/blog/) (see upstream issues on [both](https://github.com/ultrabug/mkdocs-static-i18n/issues/283) [projects](https://github.com/squidfunk/mkdocs-material/issues/4863)). We
+have therefore adopted a "two-site" approach where each language is
+its own site.
+
+This is done by having the translation in separate
+branches. Concretely, we only translate to "French" right now, which
+lives in the `fr` branch. The way this works is by merging the `main`
+branch into the `fr` branch whenever we update the main branch. This
+is a clunky, manual process, but given we don't have many
+translations, it feels like a good deal.
+
+What this implies is that updates to existing pages will necessarily
+result in conflicts in the translation. That's a feature: one needs to
+know when a section needs an update.
+
+### Translating pages
+
+ 1. First pull the repository to have all branches up to date:
+
+        git pull
+
+ 2. Switch to the translation branch:
+
+        git switch fr
+
+ 3. Update it with the main branch:
+
+        git merge main
+
+    If this is an update on an existing page, this will result in a
+    merge conflict. Don't panic.
+
+ 4. Translate a given page:
+
+        $EDITOR docs/foo.md
+
+    If this is an existing page, you will need to resolve the merge
+    conflict. See the [Codeberg merge conflict instructions](https://docs.codeberg.org/collaborating/resolve-conflicts/) for a
+    tutorial. When the conflict is resolved, you mark the file as
+    resolved with:
+
+        git add docs/foo.md
+
+ 5. Commit the result and push:
+
+        git commit -m'translate page foo'
+        git push
+
+The last step will require you to setup a remote to your own fork if
+you don't have access to the repository.
+
+# CI build workflow details
+
+This section explains how the site is built. You don't need to read
+this unless you want to debug the continuous integration (CI) process
+or website build.
 
 The way this is setup is rather convoluted because we need to have a
 custom domain and this is still not yet well supported by the new "git
@@ -15,20 +95,6 @@ pages" and "actions" in Codeberg. So, essentially, it works like this:
    result to the `pages` branch
 3. woodpecker pushes the branch back to codeberg
 4. codeberg fires off a webhook to publish the site to git pages
-
-## Contributing
-
-If you want to participate here, agreed with the [Code of Conduct](CODE_OF_CONDUCT.MD)
-([Contributor Covenant 3.0 Code](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)), and edit the files in [docs](docs/)
-which should bring you into a [pull request workflow](https://docs.codeberg.org/git/clone-commit-via-web/#edit).
-
-Once the request is approved, your changes will go live. Changes take
-a "few minuets" to show up, see [this troubleshooting section
-otherwise](https://docs.codeberg.org/codeberg-pages/troubleshooting/#my-content-is-not-updated).
-
-The site was originally build on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) but eventually
-switched to [Zensical](https://zensical.org/). See their [authoring guide](https://zensical.org/docs/authoring/markdown/) for more
-information.
 
 ## First setup
 
@@ -66,6 +132,19 @@ use [Codeberg CI](https://docs.codeberg.org/ci/) to build and publish the site a
 At this point, changes to the repository automatically rebuild and
 publish the changes.
 
-We should probably hook this onto [Forgejo Actions](https://docs.codeberg.org/ci/actions/) instead, but
-the [guide for that](https://docs.codeberg.org/codeberg-pages/forgejo-actions/) explicitly says it does not work for custom
-domains.
+## Alternatives
+
+We should probably hook this onto [Forgejo Actions](https://docs.codeberg.org/ci/actions/) and the
+[git-pages action](https://codeberg.org/git-pages/action), instead, but the [guide for that](https://docs.codeberg.org/codeberg-pages/forgejo-actions/) explicitly
+says it does not work for custom domains.
+
+There was a one day downtime on Codeberg on 2026-03-04 that cause the
+site to go down almost entirely. If this happens again, we can
+consider hosting the static site somewhere else. I was recommended
+[statichost.eu](https://www.statichost.eu/) (see [this guide](https://www.arscyni.cc/file/codeberg.html)) or [grebedoc.dev](https://grebedoc.dev/)
+("codeberg" backwards). This might be difficult to deploy while the
+site is down, unless another Git hosting platform is used.
+
+We also use the `cache` branch to carry around the Lychee cache. This
+could be fixed if [Woodpecker supported caches](https://github.com/woodpecker-ci/woodpecker/discussions/2296) or with a Forgejo
+["cache" action](https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/) or [artifacts](https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts).
