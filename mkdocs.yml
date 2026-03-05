@@ -89,7 +89,9 @@ plugins:
   # note that the blog plugin is incompatible with the i18n one, see:
   # https://github.com/ultrabug/mkdocs-static-i18n/issues/283
   # https://github.com/squidfunk/mkdocs-material/issues/4863
-  - blog
+  - blog:
+      categories_allowed:
+        - events
   - rss:
       match_path: blog/posts/.*
       date_from_meta:
@@ -99,7 +101,9 @@ plugins:
         - tags
   - redirects:
       redirect_maps:
-        'events.md': 'blog/category/events.md'
+        # can't redirect to blog/category/events/index.md, as
+        # redirects thinks it doesn't exist, boooouuuh.
+        'events.md': 'blog/index.md'
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?
 #   - social
