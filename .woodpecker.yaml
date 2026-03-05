@@ -28,6 +28,7 @@ steps:
     commands:
       - pip install -r requirements.txt
       - mkdocs build
+      - git fetch --all
       - git worktree add fr/ fr
       - cd fr && mkdocs build -d ../site/fr
 
