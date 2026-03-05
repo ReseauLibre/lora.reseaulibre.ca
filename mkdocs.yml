@@ -75,18 +75,6 @@ extra:
       link: /fr/
       lang: fr
 plugins:
-  - i18n:
-      docs_structure: suffix
-      reconfigure_material: true
-      reconfigure_search: true
-      languages:
-        - locale: en
-          default: true
-          name: English
-          build: true
-        - locale: fr
-          name: Français
-          build: true
   - search
   # show page authors at the bottom
   # disabled because for now we only have a single author
