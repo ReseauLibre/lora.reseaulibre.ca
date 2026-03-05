@@ -1,13 +1,14 @@
-# Events
+# Évènements
 
-## 2026-03-04: Let's meet at Foulab's mesh night
+## 2026-03-04: Soirée mesh à Foulab
 
-Every month, [Foulab](https://foulab.org/), the Montreal hacker space,
-holds a mesh night, and [this March is no exception](https://foulab.org/news/events-march-2026/).
+Chaque mois, [Foulab](https://foulab.org/), le "hacker space" de Montréal, tient une
+soirée "mesh" et [ce mois de mars n'y fait pas exception](https://foulab.org/news/events-march-2026/).
 
-So let's meet there! [Foulab's location](https://foulab.org//location/) is [Suite 33B, 999 du
-Collège, Montréal, Quebec, Canada, H4C 2S3](https://www.openstreetmap.org/node/717702812) ([Google maps
-link](https://www.google.com/maps/place/999+Rue+du+Coll%C3%A8ge,+Montr%C3%A9al,+QC+H4C+2S2,+Canada)). We'll be there from 19:00 to 22:00.
+Alors faisons-en une rencontre du Mesh! [Foulab se trouve](https://foulab.org//location/) à la
+[Suite 33B, 999 du Collège, Montréal, Quebec, Canada, H4C 2S3](https://www.openstreetmap.org/node/717702812)
+([lien Google maps](https://www.google.com/maps/place/999+Rue+du+Coll%C3%A8ge,+Montr%C3%A9al,+QC+H4C+2S2,+Canada)). Nous y serons de 19:00 à 22:00.
 
-We'll be discussing summer projects, process and who we are, on top of
-talking about technology, as usual!
+Nous allons discuter de nos projets de cet été, de nos processus et de
+qui nous sommes, en plus d'échanger sur la technologie, comme
+d'habitude!

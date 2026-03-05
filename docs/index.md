@@ -1,19 +1,19 @@
-# About
+# À propos
 
-The [LoRa](https://en.wikipedia.org/wiki/LoRa) `reseaulibre.ca` project is a community group building a
-[mesh network](https://en.wikipedia.org/wiki/Mesh_networking) in the greater Montreal area.
+Le projet [LoRa](https://en.wikipedia.org/wiki/LoRa) `reseaulibre.ca` est une communauté construisant
+un [réseau "mesh"](https://fr.wikipedia.org/wiki/R%C3%A9seau_maill%C3%A9) dans la région de Montréal.
 
-We are a group of makers, tech enthusiasts and amateur radio operators
-dedicated to the deployment and support of off-grid communication.
+Nous sommes un groupe de patenteux, enthousiastes de la technologie et
+opérateurs de radio amateur.
 
-We are currently focused on [Meshtastic](https://meshtastic.org/) but are also researching
-Meshcore, Reticulum and amateur radio.
+Nous travaillons pour l'instant sur [Meshtastic](https://meshtastic.org/) mais faisons aussi
+des recherches sur Meshcore, Reticulum et radio amateur.
 
-Our mission is to provide community-owned resilient communication
-infrastructure for disaster preparedness, emergency response and local
-events. We also want to foster collaboration among our members and
-reclaim ownership of the Network.
+Notre mission est de fournir des communications robustes pour la
+préparation au désastre, les urgences et évènements locaux. Nous
+cherchons à stimuler la collaboration dans notre communauté et
+reprendre le contrôle du Réseau.
 
-This site aims at documenting the project and our knowledge. You can
-change this site through the [Git repository](https://codeberg.org/anarcat/lora-reseaulibre-ca) and by hitting the
-"edit" icon on any page.
+Ce site vise à documenter le projet et nos connaissances. Vous pouvez
+modifier le site par le [dépôt Git](https://codeberg.org/anarcat/lora-reseaulibre-ca) ou en tapant l'icône "éditer"
+en haut de chaque page.
