@@ -9,12 +9,12 @@ If you want to participate here, agree with the [Code of Conduct](CODE_OF_CONDUC
 ([Contributor Covenant 3.0 Code](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)), and edit the files in [docs](docs/)
 which should bring you into a [pull request workflow](https://docs.codeberg.org/git/clone-commit-via-web/#edit).
 
-    💡 Tip
-    
-    That can be done through the web interface directly, even though the
-    linked documentation above doesn't make that obvious. The
-    documentation seems to favor a local, git-based workflow which is more
-    complicated, but also supported.
+> 💡 Tip
+>
+> That can be done through the web interface directly, even though the
+> linked documentation above doesn't make that obvious. The
+> documentation seems to favor a local, git-based workflow which is
+> more complicated, but also supported.
 
 Once the request is approved, your changes will go live. Changes take
 a "few minuets" to show up, see [this troubleshooting section
