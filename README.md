@@ -3,7 +3,32 @@ hosted at <https://lora.reseaulibre.ca>.
 
 Most contents are in [docs](docs/index.md).
 
-# Meta
+# Contributing
+
+If you want to participate here, agree with the [Code of Conduct](CODE_OF_CONDUCT.MD)
+([Contributor Covenant 3.0 Code](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)), and edit the files in [docs](docs/)
+which should bring you into a [pull request workflow](https://docs.codeberg.org/git/clone-commit-via-web/#edit).
+
+    💡 Tip
+    
+    That can be done through the web interface directly, even though the
+    linked documentation above doesn't make that obvious. The
+    documentation seems to favor a local, git-based workflow which is more
+    complicated, but also supported.
+
+Once the request is approved, your changes will go live. Changes take
+a "few minuets" to show up, see [this troubleshooting section
+otherwise](https://docs.codeberg.org/codeberg-pages/troubleshooting/#my-content-is-not-updated).
+
+The site was originally build on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) but eventually
+switched to [Zensical](https://zensical.org/). See their [authoring guide](https://zensical.org/docs/authoring/markdown/) for more
+information.
+
+# CI build workflow details
+
+This section explains how the site is built. You don't need to read
+this unless you want to debug the continuous integration (CI) process
+or website build.
 
 The way this is setup is rather convoluted because we need to have a
 custom domain and this is still not yet well supported by the new "git
@@ -15,20 +40,6 @@ pages" and "actions" in Codeberg. So, essentially, it works like this:
    result to the `pages` branch
 3. woodpecker pushes the branch back to codeberg
 4. codeberg fires off a webhook to publish the site to git pages
-
-## Contributing
-
-If you want to participate here, agreed with the [Code of Conduct](CODE_OF_CONDUCT.MD)
-([Contributor Covenant 3.0 Code](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)), and edit the files in [docs](docs/)
-which should bring you into a [pull request workflow](https://docs.codeberg.org/git/clone-commit-via-web/#edit).
-
-Once the request is approved, your changes will go live. Changes take
-a "few minuets" to show up, see [this troubleshooting section
-otherwise](https://docs.codeberg.org/codeberg-pages/troubleshooting/#my-content-is-not-updated).
-
-The site was originally build on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) but eventually
-switched to [Zensical](https://zensical.org/). See their [authoring guide](https://zensical.org/docs/authoring/markdown/) for more
-information.
 
 ## First setup
 
