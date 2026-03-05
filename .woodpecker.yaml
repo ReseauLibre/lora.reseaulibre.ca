@@ -46,10 +46,7 @@ steps:
 
   # this is still the legacy v2 pages systm
   #
-  # the new system is based on an action but does not support custom
-  # domains yet, see:
-  # https://codeberg.org/git-pages/action
-  # https://docs.codeberg.org/codeberg-pages/forgejo-actions/
+  # see the README file for a discussion
   publish:
     image: alpine/git
     environment:
@@ -82,11 +79,8 @@ steps:
       - apt-get update && apt-get install -y git
       - git config --global user.email $MAIL
       - git config --global user.name "Woodpecker CI"
-      # cache using git while we wait for a woodpecker cache:
-      # https://github.com/woodpecker-ci/woodpecker/discussions/2296
-      # this could be fixed with a Forgejo "cache" action or artifacts:
-      # https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/
-      # https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts
+      # cache using git while we wait for a woodpecker cache, see the
+      # README for a discussion
       - git clone -b cache https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git cache
       # we *must* go in the cache directory because we can't relocate
       # the lychee cache, see:

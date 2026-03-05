@@ -132,6 +132,19 @@ use [Codeberg CI](https://docs.codeberg.org/ci/) to build and publish the site a
 At this point, changes to the repository automatically rebuild and
 publish the changes.
 
-We should probably hook this onto [Forgejo Actions](https://docs.codeberg.org/ci/actions/) instead, but
-the [guide for that](https://docs.codeberg.org/codeberg-pages/forgejo-actions/) explicitly says it does not work for custom
-domains.
+## Alternatives
+
+We should probably hook this onto [Forgejo Actions](https://docs.codeberg.org/ci/actions/) and the
+[git-pages action](https://codeberg.org/git-pages/action), instead, but the [guide for that](https://docs.codeberg.org/codeberg-pages/forgejo-actions/) explicitly
+says it does not work for custom domains.
+
+There was a one day downtime on Codeberg on 2026-03-04 that cause the
+site to go down almost entirely. If this happens again, we can
+consider hosting the static site somewhere else. I was recommended
+[statichost.eu](https://www.statichost.eu/) (see [this guide](https://www.arscyni.cc/file/codeberg.html)) or [grebedoc.dev](https://grebedoc.dev/)
+("codeberg" backwards). This might be difficult to deploy while the
+site is down, unless another Git hosting platform is used.
+
+We also use the `cache` branch to carry around the Lychee cache. This
+could be fixed if [Woodpecker supported caches](https://github.com/woodpecker-ci/woodpecker/discussions/2296) or with a Forgejo
+["cache" action](https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/) or [artifacts](https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts).
