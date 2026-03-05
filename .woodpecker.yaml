@@ -35,6 +35,7 @@ steps:
       - pip install -r requirements.txt
       - mkdocs build
       - git worktree add fr/ fr
+      - cd fr && mkdocs build
 
   typos:
     # while we wait for an upstream image:
