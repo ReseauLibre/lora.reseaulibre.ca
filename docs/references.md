@@ -14,6 +14,10 @@ Here's some links while we populate this site:
 - [Matrix](https://matrix.to/#/#reseaulibre:matrix.org)
 - [Mailing list](mailto:nodes@reseaulibre.ca)
 
+## Meetups
+
+Every month, [Foulab](https://foulab.org/), the Montreal hacker space, holds a mesh night. It is [located](https://foulab.org/location/) just a few minutes away from Place-Saint-Henri metro station. Check the [News pages](https://foulab.org/news/) to confirm the specific date each month.
+
 ## Maps
 
 - [meshmap.net](https://meshmap.net/)
