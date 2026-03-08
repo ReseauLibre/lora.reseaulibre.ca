@@ -90,6 +90,7 @@ plugins:
   # https://github.com/ultrabug/mkdocs-static-i18n/issues/283
   # https://github.com/squidfunk/mkdocs-material/issues/4863
   - blog:
+      blog_dir: news
       categories_allowed:
         - events
   - rss:
@@ -103,7 +104,8 @@ plugins:
       redirect_maps:
         # can't redirect to blog/category/events/index.md, as
         # redirects thinks it doesn't exist, boooouuuh.
-        'events.md': 'blog/index.md'
+        'events.md': 'news/index.md'
+        'blog/index.md': 'news/index.md'
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?
 #   - social
