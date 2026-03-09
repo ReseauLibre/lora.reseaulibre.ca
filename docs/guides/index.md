@@ -1,12 +1,11 @@
-# Guides
-## Getting started with Meshtastic
+# Getting started with Meshtastic
 
 !!! warning
 
     Meshtastic exposes your location by default! At least reduce the
     [Position precision][] or set the [GPS Mode][] to `DISABLED`.
 
-### Hardware
+## Hardware
 
 Those all require a phone with the Meshtastic app to operate:
 
@@ -22,7 +21,7 @@ Those all require a phone with the Meshtastic app to operate:
 Those are not formally recommended, but should give you a good
 start. Let us know if you want to buy a lot so we can organize.
 
-See also the [official hardware list](https://meshtastic.org/docs/hardware/devices/) and [anarcat's review](https://anarc.at/services/meshtastic/#hardware).
+See also the [official hardware list](https://meshtastic.org/docs/hardware/devices/) and [our hardware review notes](hardware.md).
 
 !!! tip
 
@@ -30,7 +29,7 @@ See also the [official hardware list](https://meshtastic.org/docs/hardware/devic
     you connect the antenna before powering up the device. A radio
     that transmits without an antenna can damage itself!
 
-### Software
+## Software
 
 Once you have some hardware, you need to operate it. Typically, you
 [download an app on your phone](https://meshtastic.org/downloads/) ([Android](https://meshtastic.org/docs/software/android/installation/), [iOS](https://meshtastic.org/docs/software/apple/installation/)) and
@@ -44,7 +43,7 @@ Chrome-derived web browser.
 Anarcat wrote an [advanced batch-flashing tool](https://gitlab.com/anarcat/scripts/-/blob/846a0f46978ae7ebb726004b2653e9a25a5e955c/reflashtic.py) if you need to
 flash multiple devices, use at your own risk.
 
-### Settings
+## Settings
 
 This section describes various settings we advise in the Meshtastic
 app.
@@ -88,7 +87,3 @@ app.
  [Ignore MQTT]: https://meshtastic.org/docs/configuration/radio/lora/#ignore-mqtt
 [GPS Mode]: https://meshtastic.org/docs/configuration/radio/position/#gps-mode
 
-## Other guides
-
-The above is only a primer. Anarcat wrote a [lot more](https://anarc.at/services/meshtastic/) that should
-probably be progressively migrated here.

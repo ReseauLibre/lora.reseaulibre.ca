@@ -27,7 +27,7 @@ theme:
     - navigation.tabs.sticky
     # - navigation.top
     # - navigation.tracking
-    - navigation.indexes
+    #- navigation.indexes
     - content.action.edit  # Edit this page
     # broken, it points to _raw, it's raw in codeberg
     # - content.action.view  # View source of this page
