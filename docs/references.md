@@ -5,13 +5,9 @@ Here's some links while we populate this site:
 - [Anarcat's meshtastic docs](https://anarc.at/services/meshtastic/)
 - [Official meshtastic site](https://www.meshtastic.org/) and [documentation](https://meshtastic.org/docs/introduction/)
 - [LWN review][] (2025)
-- [Another meshtastic guide](https://anarchosolarpunk.substack.com/p/encryptedcomms)
+- [Anarcho solarpunk meshtastic guide](https://anarchosolarpunk.substack.com/p/encryptedcomms)
 
 [LWN review]: https://lwn.net/Articles/1009782/
-
-## Contact
-
-See the [contact](contact.md) page.
 
 ## Maps
 
@@ -23,15 +19,21 @@ See the [contact](contact.md) page.
 ## Neighbors
 
 - [Canadaverse mesh wiki](https://wiki.mt.gt/)
-- [Puget Mesh](https://pugetmesh.org/): US west coast
 - [mtnme.sh](https://mtnme.sh/): Tennessee
 - [nyme.sh](https://nyme.sh/): New York city
 - [upstatemesh.org](https://www.upstatemesh.org/): "Capital district" (Albany, NY)
 - [NHMesh](https://nhmesh.com/): New Hampshire
+- [Puget Mesh](https://pugetmesh.org/): US west coast (not actually neighbours, but their
+  mesh is massive and their site is great inspiration for this one)
 
 See also the [official list of local groups](https://meshtastic.org/docs/community/local-groups/).
+
+## Contact
+
+See the [contact](contact.md) page.
 
 ## Previous mesh
 
 If you're looking for the "old" wifi mesh (2010-2019), see
 <https://wiki.reseaulibre.ca>.
+
