@@ -9,10 +9,9 @@
 
 Those all require a phone with the Meshtastic app to operate:
 
-- **Cheapest**: [Heltec v3](https://heltec.org/project/wifi-lora-32-v3/), make sure to get a case and the
+- **Cheapest**: [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/), make sure to get a case and the
   902-928MHz, you need to provide power over USB, any USB-C charger
-  will do (v4 untested and out of stock as of 2026-02-26, v3 common),
-  20$USD
+  will do, 20$USD
 - **Next best**: [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158), doesn't ship with a case,
   25$USD, [90$ with a case and battery](https://store.rakwireless.com/products/wismesh-pocket)
 - **Standalone**: [T-Deck plus](https://lilygo.cc/products/t-deck-plus-1), looks like a blackberry, 80$
