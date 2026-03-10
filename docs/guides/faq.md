@@ -72,6 +72,81 @@ case, perfectly legal to *use* LoRa devices as a end-user, but this
 means that someone might not have the right to reimplement the LoRa
 protocol on its own hardware, for example.
 
+## Are my messages secret?
+
+It depends.
+
+First off, communications on the main "shared" channel ("LongFast")
+are encrypted, but with a pre-defined, shared key. So conversations
+there are definitely not secret and should be treated as a public
+billboard.
+
+Second, Meshtastic is [encrypted](https://meshtastic.org/docs/overview/encryption/) but lack other key features like
+authentication, integrity and perfect-forward secrecy. Only the
+message contents are encrypted too, not the routing headers.
+
+This means that you essentially get *some* secrecy; a neighbour might
+not be able to tell what you are talking about in some other secret
+channel you have setup, but they will be able to:
+
+- see which nodes you are talking to
+- replay a message
+- pretend they are someone else in your private group if they have
+  access to the secret key
+- record your messages and decrypt them later if they get access to
+  your private key
+
+This sounds minor, but those are significant threats as, for example,
+if someone knows you wrote "hi" to a channel, even if they don't have
+the encryption key, they can replay that "hi" by sending the exact
+same encrypted packet.
+
+Security is hard. Projects like [Reticulum](https://reticulum.network/) [handle this
+better](https://reticulum.network/crypto.html).
+
+Physical access to the devices also likely leads to full compromise as
+devices can generally be put in "DFU" ([Device firmware upgrade](https://en.wikipedia.org/wiki/USB#Device_Firmware_Upgrade_mechanism))
+mode relatively easily. Treat encryption keys from a physically
+compromised device to be equally compromised.
+
+## Why not Reticulum?
+
+We *are* experimenting with Reticulum. Some of us have worked on
+[Debian packaging](https://github.com/markqvist/Reticulum/discussions/781), [microReticulum](https://github.com/attermann/microReticulum_Firmware) (to run Reticulum natively
+on chip without a second computer), [transport nodes](https://github.com/jrl290/RTNode-HeltecV4) (same, as a
+gateway to the Internet), Reticulum-over-Meshtastic, and more!
+
+But Reticulum, while being more advanced in terms of routing and
+cryptography, lacks the "ready-made" aspect of Meshtastatic. You can,
+today, buy a [hardware pre-installed with Meshtastic](hardware.md) and it just
+works, without anything else. Reticulum is just not there
+yet. Reticulum has also [switched to a in-house, non-free license in
+April 2025](https://github.com/markqvist/Reticulum/commit/e7daceec820850d397e6bf9aa585ef7222977891) and ultimately become "private source", where the
+GitHub repository is a "[public mirror](https://github.com/markqvist/Reticulum/blob/master/MIRROR.md)" but development "happens
+elsewhere".
+
+Right now the focus is on organizing the mesh that already exists on
+the island, and that is mostly made up of Meshtastic nodes. Reticulum
+could be a backhaul for the network or the future of the network,
+we'll see!
+
+## Why not Meshcore?
+
+We're also considering Meshcore! Many mesh projects including [Puget
+mesh](https://pugetmesh.org/meshcore/) and Boston have started experimenting with it.
+
+Right now, they main reason we're not using Meshcore is similar to
+Reticulum: the devices and critical mass is on Meshtastic. Meshcore
+brings interesting scalability properties to the table, but it's
+unclear what improvements it brings to the table in terms of security.
+
+Furthermore, while some of the Meshcore firmware is free, there are [no
+official free software apps and the T-Deck firmware is
+proprietary](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#57-q-is-meshcore-open-source). There are a [number of third-party applications](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#514-q-are-there-are-projects-built-around-meshcore)
+but Meshcore is generally not as well integrated as Meshtastic.
+
+We'll scale the mesh when we get there.
+
 ## My question is not here
 
 That is not a question, but ask us, [contact us!](../contact.md)
