@@ -148,6 +148,17 @@ integrated as Meshtastic.
 
 We'll scale the mesh when we get there.
 
+## Why LongFast?
+
+We currently stay close to the default Meshtastic settings, which
+includes 3 hops limits and the LongFast default. For now, we are not
+saturating.
+
+When the time comes, we *will* need to change those defaults, as
+others have done in [Tenessee (USA)](https://mtnme.sh/mediumfast/), [Puget Mesh (USA)](https://pugetmesh.org/meshtastic/may2025/) the bay
+area (USA) and Wellington (NZ), see the [official blog post](https://meshtastic.org/blog/why-your-mesh-should-switch-from-longfast/) for a
+conversation about this.
+
 ## My question is not here
 
 That is not a question, but ask us, [contact us!](../contact.md)
