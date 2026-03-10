@@ -2,8 +2,8 @@
 
 Here's some links while we populate this site:
 
-- [Anarcat's meshtastic docs](https://anarc.at/services/meshtastic/)
 - [Official meshtastic site](https://www.meshtastic.org/) and [documentation](https://meshtastic.org/docs/introduction/)
+- [Anarcat's meshtastic docs](https://anarc.at/services/meshtastic/)
 - [LWN review][] (2025)
 - [Anarcho solarpunk meshtastic guide](https://anarchosolarpunk.substack.com/p/encryptedcomms)
 
