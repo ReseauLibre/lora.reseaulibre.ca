@@ -6,10 +6,16 @@ site_author: Anarcat and others
 copyright: Copyleft &copy; CC-BY-SA 4.0
 repo_url: https://codeberg.org/anarcat/lora-reseaulibre-ca
 edit_uri: _edit/main/docs/
-# nav:
-#   - About: index.md
-#   - Guides: guides.md
-#   - References: references.md
+nav:
+  - About:
+    - index.md
+    - Contact: contact.md
+  - Getting started:
+    - guides/index.md
+    - guides/hardware.md
+    - guides/faq.md
+  - References: references.md
+  - News: news/index.md
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -27,7 +33,7 @@ theme:
     - navigation.tabs.sticky
     # - navigation.top
     # - navigation.tracking
-    #- navigation.indexes
+    - navigation.indexes
     - content.action.edit  # Edit this page
     # broken, it points to _raw, it's raw in codeberg
     # - content.action.view  # View source of this page
