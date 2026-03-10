@@ -21,3 +21,8 @@ minutes away from Place-Saint-Henri metro station.
 
 Check the [News pages](https://foulab.org/news/) to confirm the specific date each month, but
 it is typically on the first Wednesday of the month.
+
+## Issues
+
+If you find an issue with this website, or fail to use all the above
+options, [file an issue](https://codeberg.org/anarcat/lora-reseaulibre-ca/issues/new).
