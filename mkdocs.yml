@@ -87,8 +87,10 @@ plugins:
       categories_allowed:
         - events
   # regroup third-party plugins to make them easier to disable
+  #
+  # use, say, `env MKDOCS_THIRD_PARTY=false mkdocs serve` to disable
   - group:
-      enabled: true
+      enabled: !ENV [MKDOCS_THIRD_PARTY, true]
       plugins:
         # build an RSS feed, requires mkdocs-rss-plugin
         - rss:
