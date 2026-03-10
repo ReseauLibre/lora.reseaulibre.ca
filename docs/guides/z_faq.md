@@ -6,6 +6,20 @@ title: FAQ
 
 Here are a couple of questions we have frequently been asked.
 
+## Which device should I buy?
+
+It depends! In general, follow the [guide](index.md), which has devices we
+have actually tested.
+
+When in doubt, and starting, get a cheap one (e.g. [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)) and
+experiment.
+
+If you want to put something on your roof or outside, consider a
+self-contained solar node instead of running power all the way out
+there.
+
+See also our full [hardware guide](hardware.md).
+
 ## Do I need something on my roof?
 
 No. Plenty of people are running relays from their homes, living
