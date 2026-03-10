@@ -97,6 +97,9 @@ Rerunning the pipeline fixes this issue. I assume this is a problem
 internal to Codeberg pages, but I haven't debugged the issue any
 further.
 
+Links truly being mismatched by Lychee can be added to the
+`.lycheeignore` file.
+
 ## Spell checking
 
 Two spell checkers are in use. [Typos](https://github.com/crate-ci/typos/) is used to check the English
