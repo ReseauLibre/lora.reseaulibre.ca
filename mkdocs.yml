@@ -86,27 +86,33 @@ plugins:
       blog_dir: news
       categories_allowed:
         - events
-  - rss:
-      match_path: blog/posts/.*
-      date_from_meta:
-        as_creation: date
-      categories:
-        - categories
-        - tags
-  # show page authors at the bottom
-  # disabled because for now we only have a single author
-  # - git-authors
-  # show git modification date
-  # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/
-  - git-revision-date-localized:
-      type: iso_datetime
-      enable_creation_date: true
-  - redirects:
-      redirect_maps:
-        # can't redirect to blog/category/events/index.md, as
-        # redirects thinks it doesn't exist, boooouuuh.
-        'events.md': 'news/index.md'
-        'blog/index.md': 'news/index.md'
+  # regroup third-party plugins to make them easier to disable
+  - group:
+      enabled: true
+      plugins:
+        # build an RSS feed, requires mkdocs-rss-plugin
+        - rss:
+            match_path: blog/posts/.*
+            date_from_meta:
+              as_creation: date
+            categories:
+              - categories
+              - tags
+        # show page authors at the bottom
+        # disabled because for now we only have a single author
+        # - git-authors
+        # show git modification date, requires mkdocs-git-revision-date-localized-plugin
+        # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/
+        - git-revision-date-localized:
+            type: iso_datetime
+            enable_creation_date: true
+        # set some redirects, requires mkdocs-redirects
+        - redirects:
+            redirect_maps:
+              # can't redirect to blog/category/events/index.md, as
+              # redirects thinks it doesn't exist, boooouuuh.
+              'events.md': 'news/index.md'
+              'blog/index.md': 'news/index.md'
 #   # a bunch more possible plugins
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?
