@@ -8,27 +8,10 @@ you towards specific purchases to simplify your life.
 Also, in the main [guide](index.md), we *recommend* specific devices, while
 here we are more open to suggestions.
 
-## Boards
-
-- [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/) ([v3](https://heltec.org/project/wifi-lora-32-v3/)) is the cheapest option, 20$ with the case
-  (but no battery, and battery doesn't fit in the case), they also
-  have an [eink dev board](https://heltec.org/project/vision-master-e290/)
-- the [RAK19003 base kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) (28$), *without* a case which [can be
-  printed](https://www.printables.com/model/286664-rak19003-micro-case-for-meshtastic) but it's tricky because there are many (83!) design
-  files in there, useful if you already order from RAK wireless and
-  need extra kits and know your way around DIY builds. you need to
-  also buy:
-    - 4 × M3x20mm socket head cap screws ([this kit](https://abra-electronics.com/hardware/metric-hardware-kits/nuts/sc-h-m-ss-kit-m2-m3-m4-stainless-steel-hex-socket-cap-head-screws-washers-nuts-assortment-kit-1080pcs.html) covers this and
-      the nuts)
-    - 4 × M3 nuts
-    - 2 × M2.5 screws (*not* part of the above kit, [length unclear](https://www.printables.com/model/286664-rak19003-micro-case-for-meshtastic/comments/2516182),
-      [here are M2.5x6mm](https://abra-electronics.com/hardware/metric-hardware-round-phillips-head-screws/1968p-machine-screw-m2.5-6mm-length-phillips-25-pack.html) or [this kit](https://abra-electronics.com/hardware/metric-hardware-kits/screws-bolts/repair-kit-for-eyeglasses-watches-screws-and-nuts-caps-m1m2m2.5-stainless.html))
-    - 1 × battery ([Amazon](https://www.amazon.com/gp/product/B091FKGW8H), possibly the same as [Abra](https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/1578-ada-lithium-ion-polymer-battery-37v-500mah-1578-ada.html),
-      optional?)
-    - there's also an optional [battery cutoff switch](https://www.amazon.com/gp/product/B086L2GPGX), couldn't find
-      an [equivalent on Abra](https://abra-electronics.com/electromechanical/switches/pushbutton-switches/)
-
 ## Pocket-sized
+
+Those are day-to-day use device, can you can easily carry in a pocket
+or a pouch. Those generally have a battery.
 
 - [Heltec v4 pre-built kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/), see also this [Aliexpress
   Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
@@ -59,6 +42,10 @@ here we are more open to suggestions.
 
 ## Base stations and solar
 
+Those are bulkier devices that are mounted on a mast or are used as a
+back-haul, possibly with a special [antenna](#antennas). The devices may or
+many not have batteries.
+
 - [WishMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini): solar, battery, mast-mountable,
   cheaper than the full repeater below, 100$
 
@@ -76,6 +63,31 @@ here we are more open to suggestions.
   through Bluetooth, but monitoring is possible over MQTT, and of
   course the gateway receives and relays messages over
   LoRa/Meshtastic!
+
+## Development boards
+
+Those are bare-bones circuit boards that *work* standalone but cannot
+really be used in production as they lack a proper case.
+
+The devices here generally do not have a battery.
+
+- [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/) ([v3](https://heltec.org/project/wifi-lora-32-v3/)) is the cheapest option, 20$ with the case
+  (but no battery, and battery doesn't fit in the case), they also
+  have an [eink dev board](https://heltec.org/project/vision-master-e290/)
+- the [RAK19003 base kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) (28$), *without* a case which [can be
+  printed](https://www.printables.com/model/286664-rak19003-micro-case-for-meshtastic) but it's tricky because there are many (83!) design
+  files in there, useful if you already order from RAK wireless and
+  need extra kits and know your way around DIY builds. you need to
+  also buy:
+    - 4 × M3x20mm socket head cap screws ([this kit](https://abra-electronics.com/hardware/metric-hardware-kits/nuts/sc-h-m-ss-kit-m2-m3-m4-stainless-steel-hex-socket-cap-head-screws-washers-nuts-assortment-kit-1080pcs.html) covers this and
+      the nuts)
+    - 4 × M3 nuts
+    - 2 × M2.5 screws (*not* part of the above kit, [length unclear](https://www.printables.com/model/286664-rak19003-micro-case-for-meshtastic/comments/2516182),
+      [here are M2.5x6mm](https://abra-electronics.com/hardware/metric-hardware-round-phillips-head-screws/1968p-machine-screw-m2.5-6mm-length-phillips-25-pack.html) or [this kit](https://abra-electronics.com/hardware/metric-hardware-kits/screws-bolts/repair-kit-for-eyeglasses-watches-screws-and-nuts-caps-m1m2m2.5-stainless.html))
+    - 1 × battery ([Amazon](https://www.amazon.com/gp/product/B091FKGW8H), possibly the same as [Abra](https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/1578-ada-lithium-ion-polymer-battery-37v-500mah-1578-ada.html),
+      optional?)
+    - there's also an optional [battery cutoff switch](https://www.amazon.com/gp/product/B086L2GPGX), couldn't find
+      an [equivalent on Abra](https://abra-electronics.com/electromechanical/switches/pushbutton-switches/)
 
 ## Power
 
@@ -107,7 +119,10 @@ batteries](https://wiki.why2025.org/Badge/Fire_hazard), for example.
 It's best to buy "protected" cells, which are typically sold in ["vape
 shops"](https://www.openstreetmap.org/search?query=vape+shop&zoom=12&minlon=-74.07085418701173&minlat=45.36975515764875&maxlon=-73.19263458251955&maxlat=45.662286836234586#map=12/45.4999/-73.5775).
 
-## Other
+## Antennas
+
+- [Antennas](https://meshtastic.org/docs/hardware/antennas/)
+
+## Hacks
 
 - [Lamp hack](https://hackaday.io/project/194509-harbor-breeze-meshtastic-hack)
-- [Antennas](https://meshtastic.org/docs/hardware/antennas/)
