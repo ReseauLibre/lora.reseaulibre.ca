@@ -15,7 +15,7 @@ Even if you do set up a relay and you don't see neighbours, it's still
 useful to experiment with this technology locally. And besides, this
 is how a mesh start: with one node, and then a second...
 
-## Which device should I buy?
+## What should I buy?
 
 It depends! In general, follow the [guide](meshtastic.md), which has devices we
 have actually tested.
@@ -37,7 +37,7 @@ rooms, attics, and even cars or backpacks.
 But yes, if you *do* have access to a more elevated structure like a
 roof, tree or mast, it will reach farther.
 
-## How far can this LoRa thing reach?
+## How far can I communicate?
 
 As far as the eye can see.
 
@@ -50,7 +50,7 @@ kilometers or more, even from inside your house. A node on a rooftop
 can reach much further, easily a dozen kilometers, depending on how
 clear the view is.
 
-## How many nodes are there in the network?
+## How many nodes in the network?
 
 Hard to tell. The [maps](../references.md#maps
 ) seem to show somewhere between 20 and 40
