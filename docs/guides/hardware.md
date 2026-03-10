@@ -73,7 +73,9 @@ The devices here generally do not have a battery.
 
 - [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/) ([v3](https://heltec.org/project/wifi-lora-32-v3/)) is the cheapest option, 20$ with the case
   (but no battery, and battery doesn't fit in the case), they also
-  have an [eink dev board](https://heltec.org/project/vision-master-e290/)
+  have an [eink dev board](https://heltec.org/project/vision-master-e290/). one advantage Heltec has over the below
+  RAK kits is that you can connect to them over wifi, the downside is
+  they use more power because they are ESP32 based instead of NRF5280
 - the [RAK19003 base kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) (28$), *without* a case which [can be
   printed](https://www.printables.com/model/286664-rak19003-micro-case-for-meshtastic) but it's tricky because there are many (83!) design
   files in there, useful if you already order from RAK wireless and
