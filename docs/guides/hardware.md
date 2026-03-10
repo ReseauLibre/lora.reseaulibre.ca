@@ -22,23 +22,23 @@ or a pouch. Those generally have a battery.
 - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket): GNSS, 1.3" OLED, acceleration sensor, power
   button, 3200mAh battery, USB-C powered, 100$
 
-### Untested
+!!! example "Untested"
 
-- [T-Echo](https://lilygo.cc/products/t-echo-lilygo): e-ink display, GPS, BT 5.0, no wifi, only three
-  buttons, NFC, 850mAh battery, temperature/pressure sensor, 55$
-- [T-Beam Supreme](https://lilygo.cc/products/t-beam-supreme?variant=43067944173749): 1.3" OLED display, 18650 battery socket,
-  magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, 52$, the [T-Beam
-  SoftRF](https://lilygo.cc/products/t-beam-softrf?variant=43170158477493) is similar but without a display and cheaper, 30$
-- [T-Deck Pro](https://lilygo.cc/products/t-deck-pro): 3.1" e-ink touch screen, 4G module, WiFi 2.4GHz,
-  BLE 5, GPS, TF Card, mic, speaker, keypad, see also the [T5 e-paper
-  s3 pro](https://lilygo.cc/products/t5-e-paper-s3-pro)
-- [Muzi](https://muzi.works/) has builds on top of the Heltec, e.g. [this H2T](https://muzi.works/products/h2t-complete-device-heltec-t114-with-gps-running-meshtastic)
-  (137CAD) made with a Heltec T114, [this R1 Neo](https://muzi.works/products/r1-neo-complete-meshtastic-device) (123CAD) is
-  similar to the WisMesh Pocket, but smaller, better sealed, but more
-  expensive
-- Seeedstudio [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, cheap, - 40℃ ~
-  100℃, WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm,
-  37g, exposed GPIO ports, unclear if has a battery, 20$
+    - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): e-ink display, GPS, BT 5.0, no wifi, only three
+      buttons, NFC, 850mAh battery, temperature/pressure sensor, 55$
+    - [T-Beam Supreme](https://lilygo.cc/products/t-beam-supreme?variant=43067944173749): 1.3" OLED display, 18650 battery socket,
+      magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, 52$, the [T-Beam
+      SoftRF](https://lilygo.cc/products/t-beam-softrf?variant=43170158477493) is similar but without a display and cheaper, 30$
+    - [T-Deck Pro](https://lilygo.cc/products/t-deck-pro): 3.1" e-ink touch screen, 4G module, WiFi 2.4GHz,
+      BLE 5, GPS, TF Card, mic, speaker, keypad, see also the [T5 e-paper
+      s3 pro](https://lilygo.cc/products/t5-e-paper-s3-pro)
+    - [Muzi](https://muzi.works/) has builds on top of the Heltec, e.g. [this H2T](https://muzi.works/products/h2t-complete-device-heltec-t114-with-gps-running-meshtastic)
+      (137CAD) made with a Heltec T114, [this R1 Neo](https://muzi.works/products/r1-neo-complete-meshtastic-device) (123CAD) is
+      similar to the WisMesh Pocket, but smaller, better sealed, but more
+      expensive
+    - Seeedstudio [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, cheap, - 40℃ ~
+      100℃, WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm,
+      37g, exposed GPIO ports, unclear if has a battery, 20$
 
 ## Base stations and solar
 
@@ -49,20 +49,20 @@ many not have batteries.
 - [WishMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini): solar, battery, mast-mountable,
   cheaper than the full repeater below, 100$
 
-### Untested
+!!! example "Untested"
 
-- [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html): 90$USD, outdoors solar-powered relay
-  with 4x18650 batteries, nRF4840, GNSS, BT 5.0, 3 power buttons, 5
-  LEDs, USB-C for debug, [recommended by nyme.sh](https://nyme.sh/faq/)
-- [WisMesh Solar Repeater](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater): solar, battery, mast-mountable, unclear
-  if it can be setup without solar and if it supports MQTT/ethernet,
-  300$, SenseCAP Solar Node P1 (below) might be sturdier and cheaper
-- [WisMesh Ethernet Gateway](https://store.rakwireless.com/products/wismesh-ethernet-gateway): no battery, no solar ([might be
-  convertible](https://forum.rakwireless.com/t/ethernet-gateway-with-batteries-solar/14601), but ethernet and PoE, note that [HTTP-based
-  management not possible](https://github.com/meshtastic/firmware/issues/2908), so configuration still has to go
-  through Bluetooth, but monitoring is possible over MQTT, and of
-  course the gateway receives and relays messages over
-  LoRa/Meshtastic!
+    - [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html): 90$USD, outdoors solar-powered relay
+      with 4x18650 batteries, nRF4840, GNSS, BT 5.0, 3 power buttons, 5
+      LEDs, USB-C for debug, [recommended by nyme.sh](https://nyme.sh/faq/)
+    - [WisMesh Solar Repeater](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater): solar, battery, mast-mountable, unclear
+      if it can be setup without solar and if it supports MQTT/ethernet,
+      300$, SenseCAP Solar Node P1 (below) might be sturdier and cheaper
+    - [WisMesh Ethernet Gateway](https://store.rakwireless.com/products/wismesh-ethernet-gateway): no battery, no solar ([might be
+      convertible](https://forum.rakwireless.com/t/ethernet-gateway-with-batteries-solar/14601), but ethernet and PoE, note that [HTTP-based
+      management not possible](https://github.com/meshtastic/firmware/issues/2908), so configuration still has to go
+      through Bluetooth, but monitoring is possible over MQTT, and of
+      course the gateway receives and relays messages over
+      LoRa/Meshtastic!
 
 ## Development boards
 
