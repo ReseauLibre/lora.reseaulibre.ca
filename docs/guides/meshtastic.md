@@ -1,5 +1,11 @@
 # Getting started with Meshtastic
 
+Getting started with running a Meshtastic relay is easy. You need to
+buy some hardware, install an app, and tweak some settings.
+
+You can expect to communicate through text with other relays within a
+few kilometres without even setting up a special antenna or location.
+
 !!! warning
 
     Meshtastic exposes your location by default! At least reduce the
@@ -16,7 +22,7 @@ use:
 - **Next best**: [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158), doesn't ship with a case,
   25$USD, [90$ with a case and battery](https://store.rakwireless.com/products/wismesh-pocket), also needs a phone
 - **Standalone**: [T-Deck plus](https://lilygo.cc/products/t-deck-plus-1), has keyboard and screen (yes, like
-  a[BlackBerry](https://en.wikipedia.org/wiki/BlackBerry)), useful if you don't want to use your phone, 80$
+  a [BlackBerry](https://en.wikipedia.org/wiki/BlackBerry)), useful if you don't want to use your phone, 80$
 - **Solar relay**: [WishMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini), 100$USD, to put
   on your roof or in a tree, also consider the (untested) [SenseCAP
   Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html)
@@ -54,7 +60,8 @@ app.
 !!! info
 
     The two settings below are crucial to connect to the mesh. If
-    those are not configured properly, you will not be able to see anything.
+    those are not configured properly, you will not be able to talk to
+    anyone else.
 
 | Setting          | Value       | Note                                                                                                                          |
 |------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -64,18 +71,18 @@ app.
  [Region]: https://meshtastic.org/docs/configuration/radio/lora/#region
  [Modem preset]: https://meshtastic.org/docs/overview/radio-settings/#presets
 
-!!! note
+!!! note "Optional"
 
     Those settings are optional, but recommended.
 
-| Setting                    | Value       | Note                                                                                                                              |
-|----------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [Bluetooth][]: PIN         | (random)    | change the [default PIN][] to some random value and keep it in your password manager                                              |
-| [Device][]:  [Role][]      | `CLIENT`    | consider `CLIENT_BASE` if you run a relay, don't change the role without reading the [Choosing The Right Device Role][] guide     |
-| [LoRa][]: [Ignore MQTT][]  | `true`      | this keeps traffic from the wider mesh from entering the   network and reduces overall noise.                                     |
-| [Position][]: [GPS Mode][] | `DISABLE`   | or reduce the [Position precision][] in the [Channel configuration][], otherwise you leak your position to the network by default |
-| [User][]: "Short Name"     | (arbitrary) | only 4 characters, set to something easy to remember, this is what's visible on the map and chats                                 |
-| User: "Long Name"          | (arbitrary) | set to something useful, but not offensive, ham operators can set their call sign here                                            |
+    | Setting                    | Value       | Note                                                                                                                              |
+    |----------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------|
+    | [Bluetooth][]: PIN         | (random)    | change the [default PIN][] to some random value and keep it in your password manager                                              |
+    | [Device][]:  [Role][]      | `CLIENT`    | consider `CLIENT_BASE` if you run a relay, don't change the role without reading the [Choosing The Right Device Role][] guide     |
+    | [LoRa][]: [Ignore MQTT][]  | `true`      | this keeps traffic from the wider mesh from entering the   network and reduces overall noise.                                     |
+    | [Position][]: [GPS Mode][] | `DISABLE`   | or reduce the [Position precision][] in the [Channel configuration][], otherwise you leak your position to the network by default |
+    | [User][]: "Short Name"     | (arbitrary) | only 4 characters, set to something easy to remember, this is what's visible on the map and chats                                 |
+    | User: "Long Name"          | (arbitrary) | set to something useful, but not offensive, ham operators can set their call sign here                                            |
 
  [Bluetooth]: https://meshtastic.org/docs/configuration/radio/bluetooth/
  [Channel configuration]: https://meshtastic.org/docs/configuration/radio/channels/#position-precision
