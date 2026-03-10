@@ -30,8 +30,8 @@ use:
 - **Cheapest**: [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/), make sure to get a case and the
   902-928MHz, you need to provide power over USB, any USB-C charger
   will do, 20$USD, needs a separate app, for example on your phone
-- **Next best**: [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158), doesn't ship with a case,
-  25$USD, [90$ with a case and battery](https://store.rakwireless.com/products/wismesh-pocket), also needs a phone
+- **Low-power**: [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158), longer battery life than
+  HELTEC, 25$USD, [90$ with a case and battery](https://store.rakwireless.com/products/wismesh-pocket), also needs a phone
 - **Standalone**: [T-Deck plus](https://lilygo.cc/products/t-deck-plus-1), has keyboard and screen (yes, like
   a [BlackBerry](https://en.wikipedia.org/wiki/BlackBerry)), useful if you don't want to use your phone, 80$
 - **Solar relay**: [WishMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini), 100$USD, to put
