@@ -47,10 +47,23 @@ to provide information, storage, etc.
 A "gateway" is a server that will connect Meshtastic to another
 service or network.
 
- - [aprstastic](https://github.com/afourney/aprstastic): [APRS](https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System) gateway (one of the [Puget mesh
-   projects](https://pugetmesh.org/meshtastic/#member-projects))
+ - Gateways:
+     - [aprstastic](https://github.com/afourney/aprstastic): [APRS](https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System) gateway (one of the [Puget mesh
+       projects](https://pugetmesh.org/meshtastic/#member-projects))
+     - [siltamesh](https://codeberg.org/tpikonen/siltamesh): [XMPP](https://en.wikipedia.org/wiki/XMPP) bridge
+    - [jeremiah-k/meshtastic-matrix-relay](https://github.com/jeremiah-k/meshtastic-matrix-relay): [Matrix](https://matrix.org) bridge
 
-## Other tools
+ - Monitoring:
+     - [hacktegic/meshtastic-prometheus-exporter](https://github.com/hacktegic/meshtastic-prometheus-exporter): Prometheus metrics
+       exporter, counts packets, signal levels, sensor data, last report
+       time per node
+     - [cordelster/mesh-metrics](https://github.com/cordelster/mesh-metrics/): metrics sent over a Prometheus push
+       gateway, odd design
+     - [tcivie/meshtastic-metrics-exporter](https://github.com/tcivie/meshtastic-metrics-exporter): MQTT to
+       TimescaleDB/Grafana monitoring, behind [dash.mt.gt](https://dash.mt.gt/)
+     - [Meshmonitor](https://meshmonitor.org/): maps, analytics, traceroutes, triggers
+
+## Flashing tools
 
 - [reflashtic](https://gitlab.com/anarcat/scripts/-/blob/main/reflashtic.py?ref_type=heads): batch flashing tool I wrote, derived from work a
   friend did on a similar bash script
