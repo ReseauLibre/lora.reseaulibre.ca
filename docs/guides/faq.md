@@ -25,6 +25,29 @@ See also our full [hardware guide](hardware.md).
 No. Plenty of people are running relays from their homes, living
 rooms, attics, and even cars or backpacks.
 
+## How far can this LoRa thing reach?
+
+As far as the eye can see.
+
+The current Meshtastic record is [330km](https://www.reddit.com/r/meshtastic/comments/1fnduwo/mountain_to_mountain_331_km/) over the Adriatic sea and
+LoRa has been recorded as reaching [1336km](https://hackaday.com/2023/09/15/new-lora-distance-record-830-miles/) over the ocean, thanks
+to tropospheric conditions.
+
+More practically, you can still expect to reach stations a couple of
+kilometers or more, even from inside your house. A node on a rooftop
+can reach much further, easily a dozen kilometers, depending on how
+clear the view is.
+
+## How many nodes are there in the network?
+
+Hard to tell. The [maps](references.md#maps) seem to show somewhere between 20 and 40
+nodes on any given day, but we don't have good metrics of this.
+
+As of 2026-03-09, "from my house", I see about 10 to 20 relays on a
+daily basis, with perhaps half a dozen direct contacts.
+
+There are daily messages.
+
 ## Is this legal?
 
 Yes. Meshtastic -- or more specifically LoRa -- transmits over [ISM
