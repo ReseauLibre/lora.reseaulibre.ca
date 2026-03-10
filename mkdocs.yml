@@ -14,6 +14,7 @@ nav:
   - Guides:
     - guides/meshtastic.md
     - guides/hardware.md
+    - FAQ: guides/faq.md
   - References: references.md
   - News: news/index.md
 markdown_extensions:
