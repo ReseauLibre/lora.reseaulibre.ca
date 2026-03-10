@@ -1,4 +1,4 @@
-# Hardware reviews and listings
+# Hardware options
 
 This page documents a certain number of LoRa and Meshtastic hardware
 devices we have tested or somehow evaluated. It is of course not
