@@ -77,6 +77,36 @@ here we are more open to suggestions.
   course the gateway receives and relays messages over
   LoRa/Meshtastic!
 
+## Power
+
+Most devices listed here are powered over regular USB-C
+cables. Similarly regular power supplies should generally
+suffice. Some devices can be powered with [Power over Ethernet](https://en.wikipedia.org/wiki/Power_over_Ethernet) as
+well.
+
+## Solar
+
+Some nodes have their own solar panels, which are generally preferable
+for simplicity reasons.
+
+The configuration of a separate solar power system is considered out
+of scope here for the moment, but our previous wiki had [some
+documentation about power generation](https://wiki.reseaulibre.ca/documentation/power/) but consider that the
+information provided there is over 10 years old and [things have
+changed significantly in that space since then](https://www.newyorker.com/news/annals-of-a-warming-planet/46-billion-years-on-the-sun-is-having-a-moment). We'd welcome a
+guide on various solar panel setups that could accommodate various
+setups, from a small base station to a full house.
+
+## Batteries
+
+Battery setups depends on the particular device. The [Heltec v4
+pre-built kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/), for example, uses [18650 battery cells](https://en.wikipedia.org/wiki/18650_battery). Those
+cells need to be handled with care, see [this discussion about those
+batteries](https://wiki.why2025.org/Badge/Fire_hazard), for example.
+
+It's best to buy "protected" cells, which are typically sold in ["vape
+shops"](https://www.openstreetmap.org/search?query=vape+shop&zoom=12&minlon=-74.07085418701173&minlat=45.36975515764875&maxlon=-73.19263458251955&maxlat=45.662286836234586#map=12/45.4999/-73.5775).
+
 ## Other
 
 - [Lamp hack](https://hackaday.io/project/194509-harbor-breeze-meshtastic-hack)
