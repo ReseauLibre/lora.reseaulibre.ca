@@ -8,8 +8,19 @@ few kilometres without even setting up a special antenna or location.
 
 !!! warning
 
-    Meshtastic exposes your location by default! At least reduce the
-    [Position precision][] or set the [GPS Mode][] to `DISABLED`.
+    Meshtastic exposes your location by default on devices which have
+    a GPS device! Make sure the [Position precision][] is reduced or
+    set the [GPS Mode][] to `DISABLED`.
+
+!!! tip
+
+    Also keep in mind that the hardware address of devices is used
+    routing in Meshtastic. Every message from a device includes that
+    address which is unique and cannot be changed, see [this feature
+    request][] for details. This is a bit like [IMEI identifiers on phones][].
+
+[this feature request]: https://github.com/meshtastic/firmware/discussions/5007
+[IMEI identifiers on phones]: https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity
 
 ## Hardware
 
