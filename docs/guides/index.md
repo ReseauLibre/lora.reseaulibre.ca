@@ -7,7 +7,8 @@
 
 ## Hardware
 
-Those all require a phone with the Meshtastic app to operate:
+We have hands-on experience with those devices and recommend them for
+use:
 
 - **Cheapest**: [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/), make sure to get a case and the
   902-928MHz, you need to provide power over USB, any USB-C charger
@@ -15,12 +16,13 @@ Those all require a phone with the Meshtastic app to operate:
 - **Next best**: [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158), doesn't ship with a case,
   25$USD, [90$ with a case and battery](https://store.rakwireless.com/products/wismesh-pocket)
 - **Standalone**: [T-Deck plus](https://lilygo.cc/products/t-deck-plus-1), looks like a blackberry, 80$
-- **Solar relay**: [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html): 90$USD, untested
+- **Solar relay**: [WishMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini), 100$USD, also
+  consider the (untested) [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html)
 
-Those are not formally recommended, but should give you a good
-start. Let us know if you want to buy a lot so we can organize.
+[Let us know](../contact.md) if you want to buy a lot so we can organize.
 
-See also the [official hardware list](https://meshtastic.org/docs/hardware/devices/) and [our hardware review notes](hardware.md).
+See also the [official hardware list](https://meshtastic.org/docs/hardware/devices/) and [our hardware review
+notes](hardware.md) for more options.
 
 !!! tip
 
