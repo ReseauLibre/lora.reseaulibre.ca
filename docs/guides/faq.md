@@ -6,6 +6,15 @@ title: FAQ
 
 Here are a couple of questions we have frequently been asked.
 
+## Should I install a relay?
+
+Yes. Even if you don't think you reach other nodes, you might be
+surprised and do.
+
+Even if you do set up a relay and you don't see neighbours, it's still
+useful to experiment with this technology locally. And besides, this
+is how a mesh start: with one node, and then a second...
+
 ## Which device should I buy?
 
 It depends! In general, follow the [guide](meshtastic.md), which has devices we
@@ -24,6 +33,9 @@ See also our full [hardware guide](hardware.md).
 
 No. Plenty of people are running relays from their homes, living
 rooms, attics, and even cars or backpacks.
+
+But yes, if you *do* have access to a more elevated structure like a
+roof, tree or mast, it will reach farther.
 
 ## How far can this LoRa thing reach?
 
