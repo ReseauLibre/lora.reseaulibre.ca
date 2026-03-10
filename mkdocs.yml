@@ -97,6 +97,7 @@ plugins:
   # disabled because for now we only have a single author
   # - git-authors
   # show git modification date
+  # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/
   - git-revision-date-localized:
       type: iso_datetime
       enable_creation_date: true
@@ -106,15 +107,10 @@ plugins:
         # redirects thinks it doesn't exist, boooouuuh.
         'events.md': 'news/index.md'
         'blog/index.md': 'news/index.md'
+#   # a bunch more possible plugins
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?
 #   - social
-#   # a bunch more possible plugins
 #   # page tagging
 #   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
 #   - tags
-#   # update dates from git
-#   # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/
-#   # not packaged in Debian
-#   # - git-revision-date-localized:
-#   #     enable_creation_date: true
