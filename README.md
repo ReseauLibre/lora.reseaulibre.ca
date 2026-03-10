@@ -1,6 +1,8 @@
 This is the source code for the new Montreal Mesh website, currently
 hosted at <https://lora.reseaulibre.ca>.
 
+[![Pipeline status](https://ci.codeberg.org/api/badges/16463/status.svg)](https://ci.codeberg.org/repos/16463)
+
 Most contents are in [docs](docs/index.md).
 
 # Contributing
@@ -20,9 +22,9 @@ Once the request is approved, your changes will go live. Changes take
 a "few minuets" to show up, see [this troubleshooting section
 otherwise](https://docs.codeberg.org/codeberg-pages/troubleshooting/#my-content-is-not-updated).
 
-The site was originally build on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) but eventually
-switched to [Zensical](https://zensical.org/). See their [authoring guide](https://zensical.org/docs/authoring/markdown/) for more
-information.
+The site was originally built on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) but eventually
+switched to [Zensical](https://zensical.org/), then back to mkdocs-material to get the
+blog working. See their [authoring guide](https://squidfunk.github.io/mkdocs-material/reference/) for more information.
 
 ## Translations
 
