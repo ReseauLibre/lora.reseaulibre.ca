@@ -10,10 +10,10 @@ nav:
   - About:
     - index.md
     - Contact: contact.md
+    - FAQ: guides/faq.md
   - Guides:
     - guides/meshtastic.md
     - guides/hardware.md
-    - guides/faq.md
   - References: references.md
   - News: news/index.md
 markdown_extensions:
