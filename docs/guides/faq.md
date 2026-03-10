@@ -140,10 +140,11 @@ Reticulum: the devices and critical mass is on Meshtastic. Meshcore
 brings interesting scalability properties to the table, but it's
 unclear what improvements it brings to the table in terms of security.
 
-Furthermore, while some of the Meshcore firmware is free, there are [no
-official free software apps and the T-Deck firmware is
-proprietary](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#57-q-is-meshcore-open-source). There are a [number of third-party applications](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#514-q-are-there-are-projects-built-around-meshcore)
-but Meshcore is generally not as well integrated as Meshtastic.
+Furthermore, while some of the Meshcore firmware is free, there are
+[no official free software apps and the T-Deck firmware is
+proprietary](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#57-q-is-meshcore-open-source). There are a [number of third-party applications](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#514-q-are-there-are-projects-built-around-meshcore),
+including an [open app](https://github.com/zjs81/meshcore-open) but Meshcore is generally not as well
+integrated as Meshtastic.
 
 We'll scale the mesh when we get there.
 

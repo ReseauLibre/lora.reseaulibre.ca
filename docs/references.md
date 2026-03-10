@@ -14,7 +14,9 @@ Here's some links while we populate this site:
 - [meshmap.net](https://meshmap.net/)
 - [Liam Cottle's map](https://meshtastic.liamcottle.net/) (now advertising meshcore)
 - [Canada mesh map](https://map.mt.gt/)
-- [Site planner](https://site.meshtastic.org/)
+- [Meshtastic Site planner](https://site.meshtastic.org/)
+- [Hey What's That](https://www.heywhatsthat.com/) can also be used to predict coverage, and gives
+  elevation profiles as a bonus
 
 ## Neighbors
 

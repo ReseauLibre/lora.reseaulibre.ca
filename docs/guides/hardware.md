@@ -121,7 +121,8 @@ shops"](https://www.openstreetmap.org/search?query=vape+shop&zoom=12&minlon=-74.
 
 ## Antennas
 
-- [Official Meshtastic guide](https://meshtastic.org/docs/hardware/antennas/)
+- [Official Meshtastic guide](https://meshtastic.org/docs/hardware/antennas/) which includes a [series of antenna
+  reports](https://github.com/meshtastic/antenna-reports)
 - [nyme.sh recommendations](https://nyme.sh/faq/#what-antenna)
 
 ## Hacks
