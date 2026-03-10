@@ -6,6 +6,10 @@ The [LoRa](https://en.wikipedia.org/wiki/LoRa) `reseaulibre.ca` project is a com
 We are a group of makers, tech enthusiasts and amateur radio operators
 dedicated to the deployment and support of off-grid communication.
 
+Concretely, we're doing decentralized, low-bandwidth and low-power
+communications, sharing text messages without the internet, over the
+entire city.
+
 We are currently focused on [Meshtastic](https://meshtastic.org/) but are also researching
 Meshcore, Reticulum and amateur radio.
 
