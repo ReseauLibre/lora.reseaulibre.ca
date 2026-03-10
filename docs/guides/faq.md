@@ -8,7 +8,7 @@ Here are a couple of questions we have frequently been asked.
 
 ## Which device should I buy?
 
-It depends! In general, follow the [guide](index.md), which has devices we
+It depends! In general, follow the [guide](meshtastic.md), which has devices we
 have actually tested.
 
 When in doubt, and starting, get a cheap one (e.g. [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)) and
@@ -40,7 +40,8 @@ clear the view is.
 
 ## How many nodes are there in the network?
 
-Hard to tell. The [maps](references.md#maps) seem to show somewhere between 20 and 40
+Hard to tell. The [maps](../references.md#maps
+) seem to show somewhere between 20 and 40
 nodes on any given day, but we don't have good metrics of this.
 
 As of 2026-03-09, "from my house", I see about 10 to 20 relays on a

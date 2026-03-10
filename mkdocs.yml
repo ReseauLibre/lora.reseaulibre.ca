@@ -121,6 +121,11 @@ plugins:
               # redirects thinks it doesn't exist, boooouuuh.
               'events.md': 'news/index.md'
               'blog/index.md': 'news/index.md'
+              # this was used for a couple of days, eventually maybe
+              # we'll use a overview page for the multiple
+              # technologies instead. like "you want $this? pick
+              # meshtastic. you want $that? pick reticulum" and so on.
+              'guides/index.md': 'guides/meshtastic.md'
 #   # a bunch more possible plugins
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?
