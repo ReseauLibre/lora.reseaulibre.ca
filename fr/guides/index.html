@@ -303,7 +303,7 @@
   
     
   
-  References
+  Références
 
       </a>
     </li>
@@ -476,22 +476,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started-with-meshtastic" class="md-nav__link">
+  <a href="#premiers-pas-avec-meshtastic" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Getting started with Meshtastic
+        Premiers pas avec Meshtastic
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Getting started with Meshtastic">
+    <nav class="md-nav" aria-label="Premiers pas avec Meshtastic">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hardware" class="md-nav__link">
+  <a href="#materiel" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hardware
+        Matériel
       
     </span>
   </a>
@@ -499,10 +499,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#software" class="md-nav__link">
+  <a href="#logiciel" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Software
+        Logiciel
       
     </span>
   </a>
@@ -510,10 +510,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#settings" class="md-nav__link">
+  <a href="#parametres" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Settings
+        Paramètres
       
     </span>
   </a>
@@ -526,10 +526,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-guides" class="md-nav__link">
+  <a href="#autres-guides" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Other guides
+        Autres guides
       
     </span>
   </a>
@@ -558,7 +558,7 @@
   <span class="md-ellipsis">
     
   
-    References
+    Références
   
 
     
@@ -858,22 +858,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started-with-meshtastic" class="md-nav__link">
+  <a href="#premiers-pas-avec-meshtastic" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Getting started with Meshtastic
+        Premiers pas avec Meshtastic
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Getting started with Meshtastic">
+    <nav class="md-nav" aria-label="Premiers pas avec Meshtastic">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hardware" class="md-nav__link">
+  <a href="#materiel" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hardware
+        Matériel
       
     </span>
   </a>
@@ -881,10 +881,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#software" class="md-nav__link">
+  <a href="#logiciel" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Software
+        Logiciel
       
     </span>
   </a>
@@ -892,10 +892,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#settings" class="md-nav__link">
+  <a href="#parametres" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Settings
+        Paramètres
       
     </span>
   </a>
@@ -908,10 +908,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#other-guides" class="md-nav__link">
+  <a href="#autres-guides" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Other guides
+        Autres guides
       
     </span>
   </a>
@@ -944,120 +944,133 @@
 
 
 <h1 id="guides">Guides</h1>
-<h2 id="getting-started-with-meshtastic">Getting started with Meshtastic</h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Meshtastic exposes your location by default! At least reduce the
-<a href="https://meshtastic.org/docs/configuration/radio/channels/#position-precision">Position precision</a> or set the <a href="https://meshtastic.org/docs/configuration/radio/position/#gps-mode">GPS Mode</a> to <code>DISABLED</code>.</p>
+<h2 id="premiers-pas-avec-meshtastic">Premiers pas avec Meshtastic</h2>
+<div class="admonition avertissement">
+<p class="admonition-title">Avertissement</p>
+<p>Meshtastic expose votre position par défaut ! Réduisez au moins la
+[précision de la position][] ou réglez le [mode GPS][] sur <code>DISABLED</code>.</p>
 </div>
-<h3 id="hardware">Hardware</h3>
-<p>Those all require a phone with the Meshtastic app to operate:</p>
+<h3 id="materiel">Matériel</h3>
+<p>Tous ces appareils nécessitent un téléphone équipé de l'application Meshtastic pour fonctionner :</p>
 <ul>
-<li><strong>Cheapest</strong>: <a href="https://heltec.org/project/wifi-lora-32-v3/">Heltec v3</a>, make sure to get a case and the
-  902-928MHz, you need to provide power over USB, any USB-C charger
-  will do (v4 untested and out of stock as of 2026-02-26, v3 common),
-  20$USD</li>
-<li><strong>Next best</strong>: <a href="https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158">WisBlock RAK4631</a>, doesn't ship with a case,
-  25$USD, <a href="https://store.rakwireless.com/products/wismesh-pocket">90$ with a case and battery</a></li>
-<li><strong>Standalone</strong>: <a href="https://lilygo.cc/products/t-deck-plus-1">T-Deck plus</a>, looks like a blackberry, 80$</li>
-<li><strong>Solar relay</strong>: <a href="https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html">SenseCAP Solar Node P1</a>: 90$USD, untested</li>
+<li><strong>Le moins cher</strong> : <a href="https://heltec.org/project/wifi-lora-32-v3/">Heltec v3</a>, assurez-vous d'acheter un étui et le
+  902-928 MHz, vous devez fournir l'alimentation via USB, n'importe quel chargeur USB-C
+  conviendra (v4 non testé et en rupture de stock au 26/02/2026, v3 courant),
+  20 $ US</li>
+<li><strong>Deuxième choix</strong> : <a href="https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158">WisBlock RAK4631</a>, n'est pas livré avec un boîtier,
+  25 $ USD, <a href="https://store.rakwireless.com/products/wismesh-pocket">90 $ avec boîtier et batterie</a></li>
+<li><strong>Autonome</strong> : <a href="https://lilygo.cc/products/t-deck-plus-1">T-Deck plus</a>, ressemble à un Blackberry, 80 $</li>
+<li><strong>Relais solaire</strong> : <a href="https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html">SenseCAP Solar Node P1</a> : 90 $ USD, non testé</li>
 </ul>
-<p>Those are not formally recommended, but should give you a good
-start. Let us know if you want to buy a lot so we can organize.</p>
-<p>See also the <a href="https://meshtastic.org/docs/hardware/devices/">official hardware list</a> and <a href="https://anarc.at/services/meshtastic/#hardware">anarcat's review</a>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>If the device you picked comes with a removable antenna, make sure
-you connect the antenna before powering up the device. A radio
-that transmits without an antenna can damage itself!</p>
+<p>Ces produits ne sont pas officiellement recommandés, mais devraient vous permettre de bien démarrer.
+Faites-nous savoir si vous souhaitez en acheter en grande quantité afin que nous puissions nous organiser.</p>
+<p>Voir également la <a href="https://meshtastic.org/docs/hardware/devices/">liste officielle du matériel</a> et <a href="https://anarc.at/services/meshtastic/#hardware">l'avis d'anarcat</a>.</p>
+<div class="admonition conseil">
+<p class="admonition-title">Conseil</p>
+<p>Si l'appareil que vous avez choisi est équipé d'une antenne amovible, veillez à
+la connecter avant de mettre l'appareil sous tension. Une radio
+qui émet sans antenne peut s'endommager !</p>
 </div>
-<h3 id="software">Software</h3>
-<p>Once you have some hardware, you need to operate it. Typically, you
-<a href="https://meshtastic.org/downloads/">download an app on your phone</a> (<a href="https://meshtastic.org/docs/software/android/installation/">Android</a>, <a href="https://meshtastic.org/docs/software/apple/installation/">iOS</a>) and
-control the device over Bluetooth. There is also a <a href="https://meshtastic.org/docs/software/python/cli/">command line
-client</a>, a <a href="https://meshtastic.org/docs/software/web-client/">web client</a>, and <a href="https://meshtastic.org/docs/software/">lots more</a>.</p>
-<p>You might need to <a href="https://flasher.meshtastic.org/">flash firmware</a> on the device, which requires
-connecting the device to your computer (or phone?) and running a
-Chrome-derived web browser.</p>
-<p>Anarcat wrote an <a href="https://gitlab.com/anarcat/scripts/-/blob/846a0f46978ae7ebb726004b2653e9a25a5e955c/reflashtic.py">advanced batch-flashing tool</a> if you need to
-flash multiple devices, use at your own risk.</p>
-<h3 id="settings">Settings</h3>
-<p>This section describes various settings we advise in the Meshtastic
-app.</p>
+<h3 id="logiciel">Logiciel</h3>
+<p>Une fois que vous disposez du matériel, vous devez le faire fonctionner. En général, vous
+<a href="https://meshtastic.org/downloads/">téléchargez une application sur votre téléphone</a> (<a href="https://meshtastic.org/docs/software/android/installation/">Android</a>, <a href="https://meshtastic.org/docs/software/apple/installation/">iOS</a>) et
+contrôlez l'appareil via Bluetooth. Il existe également un <a href="https://meshtastic.org/docs/software/python/cli/">client en ligne de commande
+</a>, un <a href="https://meshtastic.org/docs/software/web-client/">client web</a> et <a href="https://meshtastic.org/docs/software/">bien d'autres encore</a>.</p>
+<p>Vous devrez peut-être <a href="https://flasher.meshtastic.org/">flasher le micrologiciel</a> sur l'appareil, ce qui nécessite de
+connecter l'appareil à votre ordinateur (ou téléphone ?) et d'utiliser un
+navigateur web dérivé de Chrome.</p>
+<p>Anarcat a écrit un <a href="https://gitlab.com/anarcat/scripts/-/blob/846a0f46978ae7ebb726004b2653e9a25a5e955c/reflashtic.py">outil avancé de flashage par lots</a> si vous avez besoin de
+flasher plusieurs appareils, à utiliser à vos propres risques.</p>
+<h3 id="parametres">Paramètres</h3>
+<p>Cette section décrit les différents paramètres que nous recommandons dans l'application Meshtastic.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>The two settings below are crucial to connect to the mesh. If
-those are not configured properly, you will not be able to see anything.</p>
+<p>Les deux paramètres ci-dessous sont essentiels pour se connecter au réseau maillé. Si
+ils ne sont pas configurés correctement, vous ne pourrez rien voir.</p>
 </div>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
-<th>Value</th>
-<th>Note</th>
+<th>Paramètre</th>
+<th>Valeur</th>
+<th>Remarque</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="https://meshtastic.org/docs/overview/radio-settings/#presets">Modem preset</a></td>
+<td>[Préréglage du modem][]</td>
 <td><code>LONG_FAST</code></td>
-<td>default, don't change it (for now)</td>
+<td>par défaut, ne le modifiez pas (pour l'instant)</td>
 </tr>
 <tr>
-<td><a href="https://meshtastic.org/docs/configuration/radio/lora/#region">Region</a></td>
+<td>[Région][]</td>
 <td><code>US</code></td>
-<td>even though we're in Canada, pick the US preset because those are the frequencies (902.0 - 928.0 MHz) that apply here as well</td>
+<td>même si nous sommes au Canada, choisissez le préréglage US car ce sont les fréquences (902,0 - 928,0 MHz) qui s'appliquent ici également</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Those settings are optional, but recommended.</p>
+<p>[Région] : https://meshtastic.org/docs/configuration/radio/lora/#region
+ [Préréglage du modem] : https://meshtastic.org/docs/overview/radio-settings/#presets</p>
+<div class="admonition remarque">
+<p class="admonition-title">Remarque</p>
+<p>Ces paramètres sont facultatifs, mais recommandés.</p>
 </div>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
-<th>Value</th>
-<th>Note</th>
+<th>Paramètre</th>
+<th>Valeur</th>
+<th>Remarque</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="https://meshtastic.org/docs/configuration/radio/bluetooth/">Bluetooth</a>: PIN</td>
-<td>(random)</td>
-<td>change the <a href="https://meshtastic.org/docs/configuration/radio/bluetooth/#fixed-pin">default PIN</a> to some random value and keep it in your password manager</td>
+<td>[Bluetooth][] : PIN</td>
+<td>(aléatoire)</td>
+<td>remplacez le [PIN par défaut][] par une valeur aléatoire et conservez-la dans votre gestionnaire de mots de passe</td>
 </tr>
 <tr>
-<td><a href="https://meshtastic.org/docs/configuration/radio/device/">Device</a>:  <a href="https://meshtastic.org/docs/configuration/tips/#roles">Role</a></td>
+<td>[Appareil][] :  [Rôle][]</td>
 <td><code>CLIENT</code></td>
-<td>consider <code>CLIENT_BASE</code> if you run a relay, don't change the role without reading the <a href="https://meshtastic.org/blog/choosing-the-right-device-role/">Choosing The Right Device Role</a> guide</td>
+<td>envisagez <code>CLIENT_BASE</code> si vous utilisez un relais, ne modifiez pas le rôle sans avoir lu le guide [Choisir le bon rôle pour votre appareil][]</td>
 </tr>
 <tr>
-<td><a href="https://meshtastic.org/docs/configuration/radio/lora/">LoRa</a>: <a href="https://meshtastic.org/docs/configuration/radio/lora/#ignore-mqtt">Ignore MQTT</a></td>
+<td>[LoRa][]: [Ignorer MQTT][]</td>
 <td><code>true</code></td>
-<td>this keeps traffic from the wider mesh from entering the   network and reduces overall noise.</td>
+<td>cela empêche le trafic provenant du maillage plus large d'entrer dans le   réseau et réduit le bruit global.</td>
 </tr>
 <tr>
-<td><a href="https://meshtastic.org/docs/configuration/radio/position/">Position</a>: <a href="https://meshtastic.org/docs/configuration/radio/position/#gps-mode">GPS Mode</a></td>
+<td>[Position][]: [Mode GPS][]</td>
 <td><code>DISABLE</code></td>
-<td>or reduce the <a href="https://meshtastic.org/docs/configuration/radio/channels/#position-precision">Position precision</a> in the <a href="https://meshtastic.org/docs/configuration/radio/channels/#position-precision">Channel configuration</a>, otherwise you leak your position to the network by default</td>
+<td>ou réduisez la [Précision de la position][] dans la [Configuration du canal][], sinon vous divulguez votre position au réseau par défaut</td>
 </tr>
 <tr>
-<td><a href="https://meshtastic.org/docs/configuration/radio/user/">User</a>: "Short Name"</td>
-<td>(arbitrary)</td>
-<td>only 4 characters, set to something easy to remember, this is what's visible on the map and chats</td>
+<td>[Utilisateur][] : « Nom court »</td>
+<td>(arbitraire)</td>
+<td>4 caractères maximum, choisissez un nom facile à retenir, c'est ce qui sera visible sur la carte et dans les chats</td>
 </tr>
 <tr>
-<td>User: "Long Name"</td>
-<td>(arbitrary)</td>
-<td>set to something useful, but not offensive, ham operators can set their call sign here</td>
+<td>Utilisateur : « Nom long »</td>
+<td>(arbitraire)</td>
+<td>choisissez un nom utile, mais pas offensant, les opérateurs radioamateurs peuvent définir leur indicatif d'appel ici</td>
 </tr>
 </tbody>
 </table>
-<h2 id="other-guides">Other guides</h2>
-<p>The above is only a primer. Anarcat wrote a <a href="https://anarc.at/services/meshtastic/">lot more</a> that should
-probably be progressively migrated here.</p>
+<p>[Bluetooth] : https://meshtastic.org/docs/configuration/radio/bluetooth/
+ [Configuration des canaux] : https://meshtastic.org/docs/configuration/radio/channels/#position-precision
+ [Choisir le bon rôle pour votre appareil] : https://meshtastic.org/blog/choosing-the-right-device-role/
+ [Appareil] : https://meshtastic.org/docs/configuration/radio/device/
+ [LoRa] : https://meshtastic.org/docs/configuration/radio/lora/
+ [Position] : https://meshtastic.org/docs/configuration/radio/position/
+ [Rôle] : https://meshtastic.org/docs/configuration/tips/#roles
+ [Utilisateur] : https://meshtastic.org/docs/configuration/radio/user/
+ [Code PIN par défaut] : https://meshtastic.org/docs/configuration/radio/bluetooth/#fixed-pin
+ [Précision de la position] : https://meshtastic.org/docs/configuration/radio/channels/#position-precision
+ [Ignorer MQTT] : https://meshtastic.org/docs/configuration/radio/lora/#ignore-mqtt
+[Mode GPS] : https://meshtastic.org/docs/configuration/radio/position/#gps-mode</p>
+<h2 id="autres-guides">Autres guides</h2>
+<p>Ce qui précède n'est qu'une introduction. Anarcat a écrit <a href="https://anarc.at/services/meshtastic/">beaucoup plus</a> qui devrait
+probablement être progressivement transféré ici.</p>
 
 
 
@@ -1080,7 +1093,7 @@ probably be progressively migrated here.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="February 28, 2026 04:47:01 UTC">2026-02-28 04:47:01</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 7, 2026 02:36:26 UTC">2026-03-07 02:36:26</span>
   </span>
 
     
