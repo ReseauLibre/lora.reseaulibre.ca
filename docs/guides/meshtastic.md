@@ -17,7 +17,8 @@ few kilometres without even setting up a special antenna or location.
     Also keep in mind that the hardware address of devices is used
     routing in Meshtastic. Every message from a device includes that
     address which is unique and cannot be changed, see [this feature
-    request][] for details. This is a bit like [IMEI identifiers on phones][].
+    request][] for details. This is a bit like [IMEI identifiers on
+    phones][]. Meshcore and Reticulum do not suffer from this issue.
 
 [this feature request]: https://github.com/meshtastic/firmware/discussions/5007
 [IMEI identifiers on phones]: https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity
