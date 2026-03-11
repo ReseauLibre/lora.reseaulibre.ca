@@ -3,7 +3,9 @@ hosted at <https://lora.reseaulibre.ca>.
 
 [![Pipeline status](https://ci.codeberg.org/api/badges/16463/status.svg)](https://ci.codeberg.org/repos/16463)
 
-Most contents are in [docs](docs/index.md).
+This README file documents the git repository and how to make changes
+to the site. The actual site contents are in [docs](docs/index.md) or on
+[lora.reseaulibre.ca](https://lora.reseaulibre.ca).
 
 # Contributing
 
