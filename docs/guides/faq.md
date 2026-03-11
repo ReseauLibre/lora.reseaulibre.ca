@@ -52,8 +52,7 @@ clear the view is.
 
 ## How many nodes in the network?
 
-Hard to tell. The [maps](../references.md#maps
-) seem to show somewhere between 20 and 40
+Hard to tell. The [maps](../references/maps.md) seem to show somewhere between 20 and 40
 nodes on any given day, but we don't have good metrics of this.
 
 As of 2026-03-09, "from my house", I see about 10 to 20 relays on a
