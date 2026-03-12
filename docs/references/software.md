@@ -51,7 +51,10 @@ service or network.
      - [aprstastic](https://github.com/afourney/aprstastic): [APRS](https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System) gateway (one of the [Puget mesh
        projects](https://pugetmesh.org/meshtastic/#member-projects))
      - [siltamesh](https://codeberg.org/tpikonen/siltamesh): [XMPP](https://en.wikipedia.org/wiki/XMPP) bridge
-    - [jeremiah-k/meshtastic-matrix-relay](https://github.com/jeremiah-k/meshtastic-matrix-relay): [Matrix](https://matrix.org) bridge
+     - [jeremiah-k/meshtastic-matrix-relay](https://github.com/jeremiah-k/meshtastic-matrix-relay): [Matrix](https://matrix.org) bridge
+     - [official home assistant bridge](https://github.com/meshtastic/home-assistant)
+     - [Meshcore to meshtastic relay](https://meshnard.com/mesh/mt-mc_relay): source of the `[MT<>MC]`
+       messages you might have seen in the wild
 
  - Monitoring:
      - [hacktegic/meshtastic-prometheus-exporter](https://github.com/hacktegic/meshtastic-prometheus-exporter): Prometheus metrics
