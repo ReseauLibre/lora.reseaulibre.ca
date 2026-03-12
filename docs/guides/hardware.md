@@ -130,3 +130,7 @@ shops"](https://www.openstreetmap.org/search?query=vape+shop&zoom=12&minlon=-74.
 ## Hacks
 
 - [Lamp hack](https://hackaday.io/project/194509-harbor-breeze-meshtastic-hack)
+
+## Other documentation
+
+- [Connector types overview](https://pole1.co.uk/blog/5/)
