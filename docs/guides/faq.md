@@ -155,15 +155,26 @@ mesh](https://pugetmesh.org/meshcore/) and Boston have started experimenting wit
 Right now, they main reason we're not using Meshcore is similar to
 Reticulum: the devices and critical mass is on Meshtastic. Meshcore
 brings interesting scalability properties to the table, but it's
-unclear what improvements it brings to the table in terms of security.
+unclear what improvements it brings to the table in terms of
+security. 
 
-Furthermore, while some of the Meshcore firmware is free, there are
-[no official free software apps and the T-Deck firmware is
+Regarding encryption, [this blog post](https://jacksbrain.com/2026/01/a-hitchhiker-s-guide-to-meshcore-cryptography/) seems to indicate issues
+with hashtag rooms and [issue #259](https://github.com/meshcore-dev/MeshCore/issues/259) flagged that AES is used in ECB
+mode which leaks at least plain text length information and sometimes
+full clear text patterns, known as the [ECB penguin problem](https://github.com/robertdavidgraham/ecb-penguin). As of
+March 2025, there is a [pull request](https://github.com/meshcore-dev/MeshCore/pull/1677) to *add* "ChaChaPoly AEAD-4
+encryption with nonce persistence" in a backwards compatible way,
+which is very encouraging.
+
+Furthermore, while some of the Meshcore firmware is free, the
+[official Meshcore apps](https://meshcore.co.uk/apps.html) are [non-free and the T-Deck firmware is
 proprietary](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#57-q-is-meshcore-open-source). There are a [number of third-party applications](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#514-q-are-there-are-projects-built-around-meshcore),
 including an [open app](https://github.com/zjs81/meshcore-open) but Meshcore is generally not as well
 integrated as Meshtastic.
 
-We'll scale the mesh when we get there.
+Long story short, we'll scale the mesh when we get there. This might
+come sooner than we think. We suspect we might be currently limited in
+coverage by the Meshtastic hop limit.
 
 ## Why LongFast?
 
