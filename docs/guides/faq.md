@@ -50,6 +50,21 @@ kilometers or more, even from inside your house. A node on a rooftop
 can reach much further, easily a dozen kilometers, depending on how
 clear the view is.
 
+## Why can't I contact anyone?
+
+You might be too far away from another relay or blocked by an
+obstacle. Or people are just being quiet. Wait a little while; relays
+periodically announce themselves and you should eventually see some
+relays.
+
+Try to say hi and ask if anyone can read you. People might pick up the
+message only much later and respond. Keep your device open.
+
+Try to bring your device higher up or outside.
+
+Look at the [maps](../references/maps.md) to see if there are relays in your
+neighbourhood.
+
 ## How many nodes in the network?
 
 Hard to tell. The [maps](../references/maps.md) seem to show somewhere between 20 and 40
