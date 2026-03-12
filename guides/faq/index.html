@@ -1532,13 +1532,23 @@ mesh</a> and Boston have started experimenting with it.</p>
 <p>Right now, they main reason we're not using Meshcore is similar to
 Reticulum: the devices and critical mass is on Meshtastic. Meshcore
 brings interesting scalability properties to the table, but it's
-unclear what improvements it brings to the table in terms of security.</p>
-<p>Furthermore, while some of the Meshcore firmware is free, there are
-<a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#57-q-is-meshcore-open-source">no official free software apps and the T-Deck firmware is
+unclear what improvements it brings to the table in terms of
+security. </p>
+<p>Regarding encryption, <a href="https://jacksbrain.com/2026/01/a-hitchhiker-s-guide-to-meshcore-cryptography/">this blog post</a> seems to indicate issues
+with hashtag rooms and <a href="https://github.com/meshcore-dev/MeshCore/issues/259">issue #259</a> flagged that AES is used in ECB
+mode which leaks at least plain text length information and sometimes
+full clear text patterns, known as the <a href="https://github.com/robertdavidgraham/ecb-penguin">ECB penguin problem</a>. As of
+March 2025, there is a <a href="https://github.com/meshcore-dev/MeshCore/pull/1677">pull request</a> to <em>add</em> "ChaChaPoly AEAD-4
+encryption with nonce persistence" in a backwards compatible way,
+which is very encouraging.</p>
+<p>Furthermore, while some of the Meshcore firmware is free, the
+<a href="https://meshcore.co.uk/apps.html">official Meshcore apps</a> are <a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#57-q-is-meshcore-open-source">non-free and the T-Deck firmware is
 proprietary</a>. There are a <a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#514-q-are-there-are-projects-built-around-meshcore">number of third-party applications</a>,
 including an <a href="https://github.com/zjs81/meshcore-open">open app</a> but Meshcore is generally not as well
 integrated as Meshtastic.</p>
-<p>We'll scale the mesh when we get there.</p>
+<p>Long story short, we'll scale the mesh when we get there. This might
+come sooner than we think. We suspect we might be currently limited in
+coverage by the Meshtastic hop limit.</p>
 <h2 id="why-longfast">Why LongFast?</h2>
 <p>We currently stay close to the default Meshtastic settings, which
 includes 3 hops limits and the LongFast default. For now, we are not
@@ -1571,7 +1581,7 @@ conversation about this.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 12, 2026 04:19:55 UTC">2026-03-12 04:19:55</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 12, 2026 15:38:08 UTC">2026-03-12 15:38:08</span>
   </span>
 
     
