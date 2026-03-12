@@ -11,7 +11,7 @@ communications, sharing text messages without the internet, over the
 entire city.
 
 We are currently focused on [Meshtastic](https://meshtastic.org/) but are also researching
-Meshcore, Reticulum and amateur radio.
+[Meshcore](https://meshcore.co.uk/), [Reticulum](https://reticulum.network/) and [amateur radio](https://en.wikipedia.org/wiki/Amateur_radio).
 
 Our mission is to provide community-owned resilient communication
 infrastructure for disaster preparedness, emergency response and local
