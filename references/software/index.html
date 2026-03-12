@@ -918,21 +918,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gateways-and-bridges" class="md-nav__link">
+  <a href="#bridges" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gateways and bridges
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#flashing-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Flashing tools
+        Bridges
       
     </span>
   </a>
@@ -1044,21 +1033,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gateways-and-bridges" class="md-nav__link">
+  <a href="#bridges" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gateways and bridges
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#flashing-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Flashing tools
+        Bridges
       
     </span>
   </a>
@@ -1113,6 +1091,9 @@ typically connect over Bluetooth.</p>
 <p>rudimentary <a href="https://gitlab.com/kop316/gtk-meshtastic-client">GTK client</a> (packaged in Debian)</p>
 </li>
 <li>
+<p><a href="https://github.com/meshtastic/network-management-client">official network management client</a></p>
+</li>
+<li>
 <p><a href="https://github.com/pdxlocations/contact">contact</a> (messaging)</p>
 </li>
 <li>
@@ -1138,35 +1119,41 @@ to provide information, storage, etc.</p>
   <a href="https://pugetmesh.org/meshtastic/#member-projects">Puget mesh projects</a>)</p>
 </li>
 </ul>
-<h2 id="gateways-and-bridges">Gateways and bridges</h2>
-<p>A "gateway" is a server that will connect Meshtastic to another
+<h2 id="bridges">Bridges</h2>
+<p>A "bridge" is a service that will connect Meshtastic to another
 service or network.</p>
 <ul>
-<li>
-<p>Gateways:</p>
-<ul>
-<li><a href="https://github.com/afourney/aprstastic">aprstastic</a>: <a href="https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System">APRS</a> gateway (one of the <a href="https://pugetmesh.org/meshtastic/#member-projects">Puget mesh
-   projects</a>)</li>
-<li><a href="https://codeberg.org/tpikonen/siltamesh">siltamesh</a>: <a href="https://en.wikipedia.org/wiki/XMPP">XMPP</a> bridge</li>
-<li><a href="https://github.com/jeremiah-k/meshtastic-matrix-relay">jeremiah-k/meshtastic-matrix-relay</a>: <a href="https://matrix.org">Matrix</a> bridge</li>
-<li><a href="https://github.com/meshtastic/home-assistant">official home assistant bridge</a></li>
+<li><a href="https://github.com/meshtastic/home-assistant">official home assistant bridge</a>, untested</li>
 <li><a href="https://meshnard.com/mesh/mt-mc_relay">Meshcore to meshtastic relay</a>: source of the <code>[MT&lt;&gt;MC]</code>
-   messages you might have seen in the wild</li>
+  messages you might have seen in the wild</li>
+<li><a href="https://github.com/IceNet-01/meshtastic-bridge">IceNet-01/meshtastic-bridge</a>: Meshtastic to Meshtastic
+  bridge to forward between channels, Prometheus, MQTT, and Home
+  assistant support, there's a couple like this, see also
+  <a href="https://github.com/geoffwhittington/meshtastic-bridge">geoffwhittington/meshtastic-bridge</a>: "WIP", connects
+  multiple networks over MQTT or HTTP</li>
+<li><a href="https://github.com/afourney/aprstastic">aprstastic</a>: <a href="https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System">APRS</a> gateway (one of the <a href="https://pugetmesh.org/meshtastic/#member-projects">Puget mesh
+  projects</a>), untested</li>
+<li><a href="https://github.com/jaredquinn/meshtastic-bridge">jaredquinn/meshtastic-bridge</a>: APRS, GPS, logger,
+  Prometheus, untested</li>
+<li><a href="https://codeberg.org/tpikonen/siltamesh">siltamesh</a>: <a href="https://en.wikipedia.org/wiki/XMPP">XMPP</a> bridge, untested</li>
+<li><a href="https://github.com/jeremiah-k/meshtastic-matrix-relay">jeremiah-k/meshtastic-matrix-relay</a>: <a href="https://matrix.org">Matrix</a> bridge, untested</li>
+<li><a href="https://github.com/AkitaEngineering/Akita-Meshtastic-Meshcore-Bridge">AkitaEngineering/Akita-Meshtastic-Meshcore-Bridge</a>: another
+  generic bridge, named afed meshcore, but really aimed at
+  bridging meshtastic with other tools, untested</li>
+<li><a href="https://github.com/cpatulea/matterbridge">cpatulea/matterbridge</a>: <a href="https://github.com/42wim/matterbridge/compare/master...cpatulea:matterbridge:master">fork of matterbridge</a> (<a href="https://github.com/42wim/matterbridge/issues/2251">itself
+  unmaintained</a>) that <a href="https://codeberg.org/foulab/foubot2/commit/f1e79507cdff83bd5ee88b05168f45240e434f8f">posts messages</a> from the Meshtastic
+  mesh to the Foulab Mattermost</li>
 </ul>
-</li>
-<li>
-<p>Monitoring:</p>
+<h1 id="monitoring">Monitoring</h1>
 <ul>
 <li><a href="https://github.com/hacktegic/meshtastic-prometheus-exporter">hacktegic/meshtastic-prometheus-exporter</a>: Prometheus metrics
    exporter, counts packets, signal levels, sensor data, last report
-   time per node</li>
+   time per node, untested</li>
 <li><a href="https://github.com/cordelster/mesh-metrics/">cordelster/mesh-metrics</a>: metrics sent over a Prometheus push
-   gateway, odd design</li>
+   gateway, odd design, untested</li>
 <li><a href="https://github.com/tcivie/meshtastic-metrics-exporter">tcivie/meshtastic-metrics-exporter</a>: MQTT to
-   TimescaleDB/Grafana monitoring, behind <a href="https://dash.mt.gt/">dash.mt.gt</a></li>
-<li><a href="https://meshmonitor.org/">Meshmonitor</a>: maps, analytics, traceroutes, triggers</li>
-</ul>
-</li>
+   TimescaleDB/Grafana monitoring, behind <a href="https://dash.mt.gt/">dash.mt.gt</a>, untested</li>
+<li><a href="https://meshmonitor.org/">Meshmonitor</a>: maps, analytics, traceroutes, triggers, untested</li>
 </ul>
 <h2 id="flashing-tools">Flashing tools</h2>
 <ul>
@@ -1201,7 +1188,7 @@ service or network.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 12, 2026 02:06:03 UTC">2026-03-12 02:06:03</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 12, 2026 03:12:54 UTC">2026-03-12 03:12:54</span>
   </span>
 
     
