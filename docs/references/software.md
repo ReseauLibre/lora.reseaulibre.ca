@@ -23,6 +23,8 @@ Those are clients that run on a normal computer (as opposed to a phone
 
 - rudimentary [GTK client](https://gitlab.com/kop316/gtk-meshtastic-client) (packaged in Debian)
 
+- [official network management client](https://github.com/meshtastic/network-management-client)
+
 - [contact](https://github.com/pdxlocations/contact) (messaging)
 
 - [connect](https://github.com/pdxlocations/connect) (LoRa-less client)
@@ -42,29 +44,42 @@ to provide information, storage, etc.
   shell commands, games, quizzes, messaging, testing (one of the
   [Puget mesh projects](https://pugetmesh.org/meshtastic/#member-projects))
 
-## Gateways and bridges
+## Bridges
 
-A "gateway" is a server that will connect Meshtastic to another
+A "bridge" is a service that will connect Meshtastic to another
 service or network.
 
- - Gateways:
-     - [aprstastic](https://github.com/afourney/aprstastic): [APRS](https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System) gateway (one of the [Puget mesh
-       projects](https://pugetmesh.org/meshtastic/#member-projects))
-     - [siltamesh](https://codeberg.org/tpikonen/siltamesh): [XMPP](https://en.wikipedia.org/wiki/XMPP) bridge
-     - [jeremiah-k/meshtastic-matrix-relay](https://github.com/jeremiah-k/meshtastic-matrix-relay): [Matrix](https://matrix.org) bridge
-     - [official home assistant bridge](https://github.com/meshtastic/home-assistant)
-     - [Meshcore to meshtastic relay](https://meshnard.com/mesh/mt-mc_relay): source of the `[MT<>MC]`
-       messages you might have seen in the wild
+- [official home assistant bridge](https://github.com/meshtastic/home-assistant), untested
+- [Meshcore to meshtastic relay](https://meshnard.com/mesh/mt-mc_relay): source of the `[MT<>MC]`
+  messages you might have seen in the wild
+- [IceNet-01/meshtastic-bridge](https://github.com/IceNet-01/meshtastic-bridge): Meshtastic to Meshtastic
+  bridge to forward between channels, Prometheus, MQTT, and Home
+  assistant support, there's a couple like this, see also
+  [geoffwhittington/meshtastic-bridge](https://github.com/geoffwhittington/meshtastic-bridge): "WIP", connects
+  multiple networks over MQTT or HTTP
+- [aprstastic](https://github.com/afourney/aprstastic): [APRS](https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System) gateway (one of the [Puget mesh
+  projects](https://pugetmesh.org/meshtastic/#member-projects)), untested
+- [jaredquinn/meshtastic-bridge](https://github.com/jaredquinn/meshtastic-bridge): APRS, GPS, logger,
+  Prometheus, untested
+- [siltamesh](https://codeberg.org/tpikonen/siltamesh): [XMPP](https://en.wikipedia.org/wiki/XMPP) bridge, untested
+- [jeremiah-k/meshtastic-matrix-relay](https://github.com/jeremiah-k/meshtastic-matrix-relay): [Matrix](https://matrix.org) bridge, untested
+- [AkitaEngineering/Akita-Meshtastic-Meshcore-Bridge](https://github.com/AkitaEngineering/Akita-Meshtastic-Meshcore-Bridge): another
+  generic bridge, named afed meshcore, but really aimed at
+  bridging meshtastic with other tools, untested
+- [cpatulea/matterbridge](https://github.com/cpatulea/matterbridge): [fork of matterbridge](https://github.com/42wim/matterbridge/compare/master...cpatulea:matterbridge:master) ([itself
+  unmaintained](https://github.com/42wim/matterbridge/issues/2251)) that [posts messages](https://codeberg.org/foulab/foubot2/commit/f1e79507cdff83bd5ee88b05168f45240e434f8f) from the Meshtastic
+  mesh to the Foulab Mattermost
 
- - Monitoring:
-     - [hacktegic/meshtastic-prometheus-exporter](https://github.com/hacktegic/meshtastic-prometheus-exporter): Prometheus metrics
-       exporter, counts packets, signal levels, sensor data, last report
-       time per node
-     - [cordelster/mesh-metrics](https://github.com/cordelster/mesh-metrics/): metrics sent over a Prometheus push
-       gateway, odd design
-     - [tcivie/meshtastic-metrics-exporter](https://github.com/tcivie/meshtastic-metrics-exporter): MQTT to
-       TimescaleDB/Grafana monitoring, behind [dash.mt.gt](https://dash.mt.gt/)
-     - [Meshmonitor](https://meshmonitor.org/): maps, analytics, traceroutes, triggers
+# Monitoring
+ 
+ - [hacktegic/meshtastic-prometheus-exporter](https://github.com/hacktegic/meshtastic-prometheus-exporter): Prometheus metrics
+   exporter, counts packets, signal levels, sensor data, last report
+   time per node, untested
+ - [cordelster/mesh-metrics](https://github.com/cordelster/mesh-metrics/): metrics sent over a Prometheus push
+   gateway, odd design, untested
+ - [tcivie/meshtastic-metrics-exporter](https://github.com/tcivie/meshtastic-metrics-exporter): MQTT to
+   TimescaleDB/Grafana monitoring, behind [dash.mt.gt](https://dash.mt.gt/), untested
+ - [Meshmonitor](https://meshmonitor.org/): maps, analytics, traceroutes, triggers, untested
 
 ## Flashing tools
 
