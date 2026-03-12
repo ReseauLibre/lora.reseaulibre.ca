@@ -13,10 +13,9 @@ tools, and projects.
   2025 talk](https://archive.fosdem.org/2025/schedule/event/fosdem-2025-4375-meshtastic-off-grid-communication-for-everyone/) given by [Thomas Göttgens](https://github.com/caveman99), a core Meshtastic developer
 - [Anarcho solarpunk meshtastic guide](https://anarchosolarpunk.substack.com/p/encryptedcomms) (2024), good introduction on
   why and how to build a mesh
-
-[LWN review]: https://lwn.net/Articles/1009782/
-
+- [Awesome Meshtastic](https://github.com/ShakataGaNai/awesome-meshtastic/) is the usual list of lots of things
 - the "old" wifi mesh (2010-2019) website is still around and has some
   more documentation that might be relevant here, see
   <https://wiki.reseaulibre.ca>.
 
+[LWN review]: https://lwn.net/Articles/1009782/
