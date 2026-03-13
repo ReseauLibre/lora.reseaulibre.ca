@@ -20,6 +20,8 @@ nav:
     - references/maps.md
     - references/neighbours.md
     - references/software.md
+    - Meta: meta.md
+    - Code of Conduct: code.md
   - News: news/index.md
 markdown_extensions:
   - admonition

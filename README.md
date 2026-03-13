@@ -1,15 +1,18 @@
-This is the source code for the new Montreal Mesh website, currently
-hosted at <https://lora.reseaulibre.ca>.
+# How this website is built
 
 [![Pipeline status](https://ci.codeberg.org/api/badges/16463/status.svg)](https://ci.codeberg.org/repos/16463)
 
+This is the source code for the new Montreal Mesh website, currently
+hosted at <https://lora.reseaulibre.ca> and backed by Codeberg at
+<https://codeberg.org/anarcat/lora-reseaulibre-ca/>.
+
 This README file documents the git repository and how to make changes
-to the site. The actual site contents are in [docs](docs/index.md) or on
-[lora.reseaulibre.ca](https://lora.reseaulibre.ca).
+to the site. The actual site contents are in the `docs/` directory of
+the [git repository](https://codeberg.org/anarcat/lora-reseaulibre-ca/) or on [lora.reseaulibre.ca](https://lora.reseaulibre.ca).
 
-# Contributing
+## Contributing
 
-If you want to participate here, agree with the [Code of Conduct](CODE_OF_CONDUCT.MD)
+If you want to participate here, agree with the [Code of Conduct](code.md)
 ([Contributor Covenant 3.0 Code](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)), and edit the files in [docs](docs/)
 which should bring you into a [pull request workflow](https://docs.codeberg.org/git/clone-commit-via-web/#edit).
 
