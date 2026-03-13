@@ -127,7 +127,7 @@ following the [peculiar file format](http://aspell.net/man-html/Format-of-the-Pe
 the word on its own line and increment the line count on the first
 line.
 
-# CI build workflow details
+## CI build workflow details
 
 This section explains how the site is built. You don't need to read
 this unless you want to debug the continuous integration (CI) process
@@ -144,7 +144,7 @@ pages" and "actions" in Codeberg. So, essentially, it works like this:
 3. woodpecker pushes the branch back to codeberg
 4. codeberg fires off a webhook to publish the site to git pages
 
-## First setup
+### First setup
 
 To set this up, I had to first [follow the manual pushing guide](https://docs.codeberg.org/codeberg-pages/pushing-output/):
 
@@ -180,7 +180,7 @@ use [Codeberg CI](https://docs.codeberg.org/ci/) to build and publish the site a
 At this point, changes to the repository automatically rebuild and
 publish the changes.
 
-## Alternatives
+### Alternatives
 
 We should probably hook this onto [Forgejo Actions](https://docs.codeberg.org/ci/actions/) and the
 [git-pages action](https://codeberg.org/git-pages/action), instead, but the [guide for that](https://docs.codeberg.org/codeberg-pages/forgejo-actions/) explicitly
