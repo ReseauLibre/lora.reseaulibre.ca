@@ -13,8 +13,9 @@ the [git repository](https://codeberg.org/anarcat/lora-reseaulibre-ca/) or on [l
 ## Contributing
 
 If you want to participate here, agree with the [Code of Conduct](code.md)
-([Contributor Covenant 3.0 Code](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)), and edit the files in [docs](docs/)
-which should bring you into a [pull request workflow](https://docs.codeberg.org/git/clone-commit-via-web/#edit).
+([Contributor Covenant 3.0 Code](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)), and edit the files in the
+`docs/` directory which should bring you into a [pull request
+workflow](https://docs.codeberg.org/git/clone-commit-via-web/#edit).
 
 > 💡 Tip
 >
