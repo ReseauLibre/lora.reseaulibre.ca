@@ -2,8 +2,18 @@
 
 ## Chat
 
-We have a small presence on this [Matrix room](https://matrix.to/#/#reseaulibre:matrix.org),
-`#reseaulibre:matrix.org`.
+We talk on the mesh! In petite-Italie, there are at least some
+messages every week.
+
+We have real time chat in the [`#reseaulibre:matrix.org` Matrix
+room](https://matrix.to/#/#reseaulibre:matrix.org). We're organizing those many rooms in a wider
+[`#mesh-quebec:matrix.org` space](https://matrix.to/#/#mesh-quebec:matrix.org), as an alternative to the
+[Telegram chat](https://t.me/meshtQuebec)[^1].
+
+[^1]:
+  We do not endorse the Telegram channel for [various reasons](https://en.wikipedia.org/wiki/Telegram_(software)#Criticism),
+  but more importantly the author of this site (anarcat) refuses to join
+  because screw proprietary software.
 
 ## Email
 

@@ -25,6 +25,7 @@ nav:
   - News: news/index.md
 markdown_extensions:
   - admonition
+  - footnotes
   - pymdownx.details
   - pymdownx.superfences
   - tables
@@ -44,6 +45,8 @@ theme:
     - content.action.edit  # Edit this page
     # broken, it points to _raw, it's raw in codeberg
     # - content.action.view  # View source of this page
+    # show footnotes as tooltips
+    - content.footnote.tooltips
   # disable the roboto font download from google
   font: false
   palette:
