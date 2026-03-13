@@ -13,10 +13,10 @@ nav:
     - FAQ: guides/faq.md
   - Guides:
     - guides/meshtastic.md
-    - guides/hardware.md
     - FAQ: guides/faq.md
   - References:
     - references.md
+    - Hardware: references/hardware.md
     - references/maps.md
     - references/neighbours.md
     - references/software.md
@@ -136,6 +136,8 @@ plugins:
               # technologies instead. like "you want $this? pick
               # meshtastic. you want $that? pick reticulum" and so on.
               'guides/index.md': 'guides/meshtastic.md'
+              # the hardware page is really a reference more than a guide
+              'guides/hardware.md': 'references/hardware.md'
               # obscure FAQ URL that came up for less than a day
               'guides/z_faq.md': 'guides/faq.md'
 #   # a bunch more possible plugins

@@ -42,7 +42,7 @@ use:
 [Let us know](../contact.md) if you want to buy a lot so we can organize.
 
 See also the [official hardware list](https://meshtastic.org/docs/hardware/devices/) and [our hardware review
-notes](hardware.md) for more options.
+notes](../references/hardware.md) for more options.
 
 !!! tip
 
