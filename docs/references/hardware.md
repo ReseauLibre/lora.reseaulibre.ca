@@ -136,6 +136,16 @@ Other lists include:
   reports](https://github.com/meshtastic/antenna-reports)
 - [nyme.sh recommendations](https://nyme.sh/faq/#what-antenna)
 
+### Antenna theory
+
+Alors pour un toit/grenier omnidirectionnel plus l'antenne est longue, plus le gain sera élevé.
+
+Pour un noeud vraiment éloigné une antenne directionelle yagi (facile à l'extérieur) ou un paneau (probablement plus simple à l'intérieur), gain plus élevé et rejette le bruit des autres direction.
+
+Pour une fenêtre, si le building est gros, peut être qu'un panneau à plat dans la fenêtre, rejetterait le bruit en arrière où on entends probablement pas d'autre noeuds, et contacterait plus de noeuds qui vient avec les noeuds.  Mais ça dépends du building, de l'interférence et de la position des autre noeuds.  Mais il ne semble pas y avoir beaucoup de panneau plat avec un gain relativement faible et à bas prix sur le marché.
+
+Pour le reste (mobile, petite taille) c'est pas mal juste une question d'avoir le meilleur match d'impédance possible (y'a un gars au foulab qui avait un testeur l'autre soir), et le moins de perte dans les connecteurs/cables (voir https://medium.com/home-wireless/testing-and-reviewing-lora-antennas-5b37dfa594a3).
+
 ## Hacks
 
 - [Lamp hack](https://hackaday.io/project/194509-harbor-breeze-meshtastic-hack)
