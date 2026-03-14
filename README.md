@@ -1,13 +1,21 @@
+# How this website is built
+
+[![Pipeline status](https://ci.codeberg.org/api/badges/16463/status.svg)](https://ci.codeberg.org/repos/16463)
+
 This is the source code for the new Montreal Mesh website, currently
-hosted at <https://lora.reseaulibre.ca>.
+hosted at <https://lora.reseaulibre.ca> and backed by Codeberg at
+<https://codeberg.org/anarcat/lora-reseaulibre-ca/>.
 
-Most contents are in [docs](docs/index.md).
+This README file documents the git repository and how to make changes
+to the site. The actual site contents are in the `docs/` directory of
+the [git repository](https://codeberg.org/anarcat/lora-reseaulibre-ca/) or on [lora.reseaulibre.ca](https://lora.reseaulibre.ca).
 
-# Contributing
+## Contributing
 
-If you want to participate here, agree with the [Code of Conduct](CODE_OF_CONDUCT.MD)
-([Contributor Covenant 3.0 Code](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)), and edit the files in [docs](docs/)
-which should bring you into a [pull request workflow](https://docs.codeberg.org/git/clone-commit-via-web/#edit).
+If you want to participate here, agree with the [Code of Conduct](code.md)
+([Contributor Covenant 3.0 Code](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)), and edit the files in the
+`docs/` directory which should bring you into a [pull request
+workflow](https://docs.codeberg.org/git/clone-commit-via-web/#edit).
 
 > 💡 Tip
 >
@@ -20,9 +28,9 @@ Once the request is approved, your changes will go live. Changes take
 a "few minuets" to show up, see [this troubleshooting section
 otherwise](https://docs.codeberg.org/codeberg-pages/troubleshooting/#my-content-is-not-updated).
 
-The site was originally build on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) but eventually
-switched to [Zensical](https://zensical.org/). See their [authoring guide](https://zensical.org/docs/authoring/markdown/) for more
-information.
+The site was originally built on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) but eventually
+switched to [Zensical](https://zensical.org/), then back to mkdocs-material to get the
+blog working. See their [authoring guide](https://squidfunk.github.io/mkdocs-material/reference/) for more information.
 
 ## Translations
 
@@ -97,6 +105,9 @@ Rerunning the pipeline fixes this issue. I assume this is a problem
 internal to Codeberg pages, but I haven't debugged the issue any
 further.
 
+Links truly being mismatched by Lychee can be added to the
+`.lycheeignore` file.
+
 ## Spell checking
 
 Two spell checkers are in use. [Typos](https://github.com/crate-ci/typos/) is used to check the English
@@ -117,7 +128,7 @@ following the [peculiar file format](http://aspell.net/man-html/Format-of-the-Pe
 the word on its own line and increment the line count on the first
 line.
 
-# CI build workflow details
+## CI build workflow details
 
 This section explains how the site is built. You don't need to read
 this unless you want to debug the continuous integration (CI) process
@@ -134,7 +145,7 @@ pages" and "actions" in Codeberg. So, essentially, it works like this:
 3. woodpecker pushes the branch back to codeberg
 4. codeberg fires off a webhook to publish the site to git pages
 
-## First setup
+### First setup
 
 To set this up, I had to first [follow the manual pushing guide](https://docs.codeberg.org/codeberg-pages/pushing-output/):
 
@@ -170,7 +181,7 @@ use [Codeberg CI](https://docs.codeberg.org/ci/) to build and publish the site a
 At this point, changes to the repository automatically rebuild and
 publish the changes.
 
-## Alternatives
+### Alternatives
 
 We should probably hook this onto [Forgejo Actions](https://docs.codeberg.org/ci/actions/) and the
 [git-pages action](https://codeberg.org/git-pages/action), instead, but the [guide for that](https://docs.codeberg.org/codeberg-pages/forgejo-actions/) explicitly

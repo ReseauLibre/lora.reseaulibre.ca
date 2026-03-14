@@ -53,10 +53,11 @@ steps:
       CODEBERG_TOKEN:
         from_secret: codeberg_token
     commands:
+      - apk add rsync
       - git config --global user.email $MAIL
       - git config --global user.name "Woodpecker CI"
       - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git $CI_REPO_NAME
-      - cp -ar $OUTPUT_DIR/. $CI_REPO_NAME/
+      - rsync --delete --recursive --checksum --exclude '.git/**' $OUTPUT_DIR/. $CI_REPO_NAME/
       - cp .domains $CI_REPO_NAME || true
       - cd $CI_REPO_NAME
       - git add .
@@ -89,6 +90,7 @@ steps:
       - cp .lycheeignore cache
       - cd cache
       - lychee ../site --root-dir ../site/ --include-fragments --index-files index.html --no-progress --cache --cache-exclude-status "401,429,500.." --max-cache-age 30d --scheme http --scheme https --require-https
+      - sort .lycheecache > .lycheecache.sorted && mv .lycheecache.sorted .lycheecache
       - git add .
       - if ! git diff --cached --quiet; then git commit -m "Woodpecker CI cache update ${CI_BUILD_CREATED}" && git push; fi
 

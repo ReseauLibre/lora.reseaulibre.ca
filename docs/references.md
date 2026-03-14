@@ -1,38 +1,29 @@
-# Références
+# Autres guides et critiques
 
-Voici quelques liens en attendant que nous enrichissions ce site :
+Cette section comporte une collection de liens vers d'autres guides et
+critiques.
 
-- [Documentation Meshtastic d'Anarcat](https://anarc.at/services/meshtastic/)
-- [Site officiel Meshtastic](https://www.meshtastic.org/) et [documentation](https://meshtastic.org/docs/introduction/)
-- [Critique LWN][] (2025)
-- [Autre guide meshtastic](https://anarchosolarpunk.substack.com/p/encryptedcomms)
+
+- [Site officiel Meshtastic](https://www.meshtastic.org/) et [documentation](https://meshtastic.org/docs/introduction/), excellent
+  documentation, particulièrement pour les guides étape-par-étape, la
+  documentation matérielle et des explications sur les protocoles et
+  réglages
+
+- [Documentation Meshtastic d'Anarcat](https://anarc.at/services/meshtastic/) (2025), explique certains
+  enjeux avec la sécurité et la scalabilité de Meshtastic, quelques
+  critiques matérielles, a formé la base de ce site
+
+- [Critique LWN][] (2025), bonne introductino, couverture de cette
+  [présentation à FOSDEM](https://archive.fosdem.org/2025/schedule/event/fosdem-2025-4375-meshtastic-off-grid-communication-for-everyone/) donnée par [Thomas Göttgens](https://github.com/caveman99), un
+  dévelopeur principal à Meshtastic
+
+- [Guide Meshtastic "Anarcho-punk-solaire"](https://anarchosolarpunk.substack.com/p/encryptedcomms) (2024), bonne
+  introduction sur pourquoi et comment construire un mesh
+
+- [Awesome Meshtastic](https://github.com/ShakataGaNai/awesome-meshtastic/) est la liste usuel d'un paquet de trucs
+
+- le site de l'« ancien » réseau maillé wifi (2010-2019) exist encore
+  et a un peu d documentation qui pourrait être pertinente ici, voir
+  <https://wiki.reseaulibre.ca>.
 
 [Critique LWN] : https://lwn.net/Articles/1009782/
-
-## Contact
-
-- [Matrix](https://matrix.to/#/#reseaulibre:matrix.org)
-- [Liste de diffusion](mailto:nodes@reseaulibre.ca)
-
-## Cartes
-
-- [meshmap.net](https://meshmap.net/)
-- [Carte de Liam Cottle](https://meshtastic.liamcottle.net/) (fait désormais la promotion de meshcore)
-- [Carte du réseau maillé canadien](https://map.mt.gt/)
-- [Planificateur de site](https://site.meshtastic.org/)
-
-## Voisins
-
-- [Wiki Canadaverse mesh](https://wiki.mt.gt/)
-- [Puget Mesh](https://pugetmesh.org/) : côte ouest des États-Unis
-- [mtnme.sh](https://mtnme.sh/) : Tennessee
-- [nyme.sh](https://nyme.sh/) : New York
-- [upstatemesh.org](https://www.upstatemesh.org/) : « Capital district » (Albany, NY)
-- [NHMesh](https://nhmesh.com/) : New Hampshire
-
-Voir également la [liste officielle des groupes locaux](https://meshtastic.org/docs/community/local-groups/).
-
-## Ancien réseau maillé
-
-Si vous recherchez l'« ancien » réseau maillé wifi (2010-2019), consultez
-<https://wiki.reseaulibre.ca>.
