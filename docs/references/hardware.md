@@ -147,30 +147,15 @@ Other lists include:
     repeater" in that guide falls short of the advertised +5dBi gain
     in [this technical review](https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi).
 
-### Picking the right antenna
+### Choisir la bonne antenne
 
-For a roof or attic antenna, the longest the antenna is, the better
-the gain, and gain improves transmission power, essentially.
+Alors pour un toit/grenier omnidirectionnel plus l'antenne est longue, plus le gain sera élevé.
 
-For a remote node, [Yagi](https://en.wikipedia.org/wiki/Yagi%E2%80%93Uda_antenna) antennas (better for outdoors) or panels
-(probably simpler for indoors) are directional antennas that improve
-gain and reject noises from other directions.
+Pour un noeud vraiment éloigné une antenne directionelle yagi (facile à l'extérieur) ou un paneau (probablement plus simple à l'intérieur), gain plus élevé et rejette le bruit des autres direction.
 
-For a window, if the building is large enough, maybe that a flat panel
-in the window would reject noise from other devices and improve
-contact with nodes facing the window. There doesn't seem to be much
-affordable panels on the market.
+Pour une fenêtre, si le building est gros, peut être qu'un panneau à plat dans la fenêtre, rejetterait le bruit en arrière où on entends probablement pas d'autre noeuds, et contacterait plus de noeuds qui vient avec les noeuds.  Mais ça dépends du building, de l'interférence et de la position des autre noeuds.  Mais il ne semble pas y avoir beaucoup de panneau plat avec un gain relativement faible et à bas prix sur le marché.
 
-In any case, for smaller setups, it's all a matter of having the best
-[impedance match](https://en.wikipedia.org/wiki/Impedance_matching), which can be tested with a device called a
-[Vector Network Analyzer](https://en.wikipedia.org/wiki/Network_analyzer_(electrical)), like the [NanoVNA](https://nanovna.com/), essentially an
-antenna tester.
-
-Longer cables will yield more power loss and lesser transmissions as
-well.
-
-See also [this guide that shows tests on various antennas](https://medium.com/home-wireless/testing-and-reviewing-lora-antennas-5b37dfa594a3) to get a
-better idea on how to test antennas.
+Pour le reste (mobile, petite taille) c'est pas mal juste une question d'avoir le meilleur match d'impédance possible (y'a un gars au foulab qui avait un testeur l'autre soir), et le moins de perte dans les connecteurs/cables (voir https://medium.com/home-wireless/testing-and-reviewing-lora-antennas-5b37dfa594a3).
 
 ## Hacks
 
