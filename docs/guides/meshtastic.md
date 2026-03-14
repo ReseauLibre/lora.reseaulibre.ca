@@ -80,8 +80,8 @@ Cette section décrit les différents paramètres que nous recommandons dans l'a
 | [Préréglage du modem][] | `LONG_FAST` | par défaut, ne le modifiez pas (pour l'instant)                                                                                            |
 | [Région][]       | `US`        | même si nous sommes au Canada, choisissez le préréglage US car ce sont les fréquences (902,0 - 928,0 MHz) qui s'appliquent ici également |
 
-[Région] : https://meshtastic.org/docs/configuration/radio/lora/#region
- [Préréglage du modem] : https://meshtastic.org/docs/overview/radio-settings/#presets
+ [Région]: https://meshtastic.org/docs/configuration/radio/lora/#region
+ [Préréglage du modem]: https://meshtastic.org/docs/overview/radio-settings/#presets
 
 !!! note "Optionnel"
 
