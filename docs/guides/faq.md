@@ -1,5 +1,7 @@
 ---
 title: FAQ
+tags:
+  - traduction/aucune
 ---
 
 # Frequently Asked Questions

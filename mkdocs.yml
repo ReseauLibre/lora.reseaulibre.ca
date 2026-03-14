@@ -102,6 +102,10 @@ plugins:
       blog_dir: news
       categories_allowed:
         - events
+
+  # tags are currently used to mark pages as needing translation or not
+  - tags
+
   # regroup third-party plugins to make them easier to disable
   #
   # use, say, `env MKDOCS_THIRD_PARTY=false mkdocs serve` to disable

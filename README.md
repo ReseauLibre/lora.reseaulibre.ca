@@ -1,3 +1,8 @@
+---
+tags:
+  - traduction/aucune
+---
+
 # How this website is built
 
 [![Pipeline status](https://ci.codeberg.org/api/badges/16463/status.svg)](https://ci.codeberg.org/repos/16463)

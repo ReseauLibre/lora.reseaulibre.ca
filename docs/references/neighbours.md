@@ -1,3 +1,8 @@
+---
+tags:
+  - traduction/partielle
+---
+
 # Voisins
 
 - [Wiki Canadaverse mesh](https://wiki.mt.gt/) : various communities all over Canada,

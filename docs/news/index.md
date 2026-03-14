@@ -1,2 +1,7 @@
-# News
+---
+tags:
+  - traduction/complète
+---
+
+# Nouvelles
 

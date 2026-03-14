@@ -1,3 +1,8 @@
+---
+tags:
+  - traduction/complète
+---
+
 # À propos
 
 Le projet [LoRa](https://en.wikipedia.org/wiki/LoRa) `reseaulibre.ca` est une communauté construisant

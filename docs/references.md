@@ -1,3 +1,8 @@
+---
+tags:
+  - traduction/complète
+---
+
 # Autres guides et critiques
 
 Cette section comporte une collection de liens vers d'autres guides et

@@ -1,3 +1,8 @@
+---
+tags:
+  - traduction/partielle
+---
+
 # Contact
 
 ## Chat

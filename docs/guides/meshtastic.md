@@ -1,3 +1,8 @@
+---
+tags:
+  - traduction/complète
+---
+
 # Premiers pas avec Meshtastic
 
 Getting started with running a Meshtastic relay is easy. You need to

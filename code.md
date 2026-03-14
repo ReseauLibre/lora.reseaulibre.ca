@@ -1,3 +1,8 @@
+---
+tags:
+  - traduction/complète
+---
+
 > Note: ceci est la [traduction la plus récente](https://www.contributor-covenant.org/fr/version/2/1/code_of_conduct/) du [code de
 > conduite Contributor Covenant](https://www.contributor-covenant.org/). La version anglaise, plus
 > récente, est la version active.

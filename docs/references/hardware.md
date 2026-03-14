@@ -1,3 +1,8 @@
+---
+tags:
+  - traduction/aucune
+---
+
 # Hardware options
 
 This page documents a certain number of LoRa and Meshtastic hardware
