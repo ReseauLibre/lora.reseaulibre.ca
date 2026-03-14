@@ -1,6 +1,6 @@
 ---
 tags:
-  - traduction/aucune
+  - traduction/partielle
 ---
 
 # Hardware options
@@ -149,13 +149,31 @@ Other lists include:
 
 ### Choisir la bonne antenne
 
-Alors pour un toit/grenier omnidirectionnel plus l'antenne est longue, plus le gain sera élevé.
+Pour une antenne omnidirectionnelle sur un toit ou un grenier plus
+l'antenne est longue, plus le gain sera élevé, et le "gain" augmente
+la puissance de transmission, en gros.
 
-Pour un noeud vraiment éloigné une antenne directionelle yagi (facile à l'extérieur) ou un paneau (probablement plus simple à l'intérieur), gain plus élevé et rejette le bruit des autres direction.
+Pour un noeud vraiment éloigné, les antennes [Yagi](https://en.wikipedia.org/wiki/Yagi%E2%80%93Uda_antenna) (mieux à
+l'extérieur) ou à paneau (probablement plus simple à l'intérieur),
+sont des directionnelles à gain plus élevé et qui rejettent le bruit
+des autres direction.
 
-Pour une fenêtre, si le building est gros, peut être qu'un panneau à plat dans la fenêtre, rejetterait le bruit en arrière où on entends probablement pas d'autre noeuds, et contacterait plus de noeuds qui vient avec les noeuds.  Mais ça dépends du building, de l'interférence et de la position des autre noeuds.  Mais il ne semble pas y avoir beaucoup de panneau plat avec un gain relativement faible et à bas prix sur le marché.
+Pour une fenêtre, si la bâtisse est grosse, peut être qu'un panneau à
+plat dans la fenêtre rejetterait le bruit des autres appareil, et
+aiderait à faire des contacts vers de relais dans la direction de la
+fenêtre.  Il ne semble pas y avoir beaucoup de panneau plat avec un
+gain relativement faible et à bas prix sur le marché.
 
-Pour le reste (mobile, petite taille) c'est pas mal juste une question d'avoir le meilleur match d'impédance possible (y'a un gars au foulab qui avait un testeur l'autre soir), et le moins de perte dans les connecteurs/cables (voir https://medium.com/home-wireless/testing-and-reviewing-lora-antennas-5b37dfa594a3).
+Pour le reste (mobile, petite taille), c'est pas mal juste une
+question d'avoir la meilleure [adaptation d'impédance](https://fr.wikipedia.org/wiki/Adaptation_d%27imp%C3%A9dances), qui peut
+être testée avec un [analyseur de réseau](https://fr.wikipedia.org/wiki/Analyseur_de_r%C3%A9seau), comme le [NanoVNA](https://nanovna.com/),
+essentiellement un testeur d'antenne.
+
+Aussi, plus les des câbles de transmission sont long, et plus il y a
+de la perte de puissance.
+
+Voir aussi [ce guide qui montre certains tests sur quelques
+antennes](https://medium.com/home-wireless/testing-and-reviewing-lora-antennas-5b37dfa594a3) pour avoir une meilleur idée de ce genre de tests.
 
 ## Hacks
 
