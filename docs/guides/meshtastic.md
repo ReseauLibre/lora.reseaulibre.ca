@@ -1,4 +1,4 @@
-# Getting started with Meshtastic
+# Premiers pas avec Meshtastic
 
 Getting started with running a Meshtastic relay is easy. You need to
 buy some hardware, install an app, and tweak some settings.
@@ -6,11 +6,11 @@ buy some hardware, install an app, and tweak some settings.
 You can expect to communicate through text with other relays within a
 few kilometres without even setting up a special antenna or location.
 
-!!! warning
+!!! avertissement
 
-    Meshtastic exposes your location by default on devices which have
-    a GPS device! Make sure the [Position precision][] is reduced or
-    set the [GPS Mode][] to `DISABLED`.
+    Meshtastic expose votre position par défaut sur les appareils
+    ayant une composante GPS ! Assurez vous que la
+    [précision de la position][] est réduite ou réglez le [mode GPS][] sur `DISABLED`.
 
 !!! tip
 
@@ -23,90 +23,88 @@ few kilometres without even setting up a special antenna or location.
 [this feature request]: https://github.com/meshtastic/firmware/discussions/5007
 [IMEI identifiers on phones]: https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity
 
-## Hardware
+### Matériel
 
-We have hands-on experience with those devices and recommend them for
-use:
+Tous ces appareils nécessitent un téléphone équipé de l'application Meshtastic pour fonctionner :
 
-- **Cheapest**: [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/), make sure to get a case and the
-  902-928MHz, you need to provide power over USB, any USB-C charger
-  will do, 20$USD, needs a separate app, for example on your phone
-- **Low-power**: [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158), longer battery life than
-  HELTEC, 25$USD, [90$ with a case and battery](https://store.rakwireless.com/products/wismesh-pocket), also needs a phone
-- **Standalone**: [T-Deck plus](https://lilygo.cc/products/t-deck-plus-1), has keyboard and screen (yes, like
-  a [BlackBerry](https://en.wikipedia.org/wiki/BlackBerry)), useful if you don't want to use your phone, 80$
-- **Solar relay**: [WishMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini), 100$USD, to put
-  on your roof or in a tree, also consider the (untested) [SenseCAP
-  Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html)
+- **Le moins cher** : [Heltec v3](https://heltec.org/project/wifi-lora-32-v3/), assurez-vous d'acheter une
+  boîtier et le 902-928 MHz, vous devez fournir l'alimentation via
+  USB, n'importe quel chargeur USB-C conviendra, 20 $ US, a besoin
+  d'une app, par exemple sur votre téléphone
+- **Plus efficace** : [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158), meilleure durée de vie
+  sur batterie que le Heltec, 25 $ USD, [90 $ avec boîtier et
+  batterie](https://store.rakwireless.com/products/wismesh-pocket), a également besoin d'un téléphone
+- **Autonome** : [T-Deck plus](https://lilygo.cc/products/t-deck-plus-1), a un écran et un clavier (oui, ça
+  ressemble à un [BlackBerry](https://en.wikipedia.org/wiki/BlackBerry)), utile si vous ne voulez pas
+  utiliser votre téléphone, 80 $
+- **Relais solaire** : [WishMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini), 100$USD, à
+  mettre sur son toit ou dans un arbre, considérer égalment le
+  (non-testé) [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html) 90 $ USD
 
-[Let us know](../contact.md) if you want to buy a lot so we can organize.
+[Faites-nous](../contact.md) savoir si vous souhaitez en acheter en grande
+quantité afin que nous puissions nous organiser.
 
-See also the [official hardware list](https://meshtastic.org/docs/hardware/devices/) and [our hardware review
-notes](../references/hardware.md) for more options.
+Voir également la [liste officielle du matériel](https://meshtastic.org/docs/hardware/devices/) et [l'avis d'anarcat](https://anarc.at/services/meshtastic/#hardware).
 
-!!! tip
+!!! Conseil
 
-    If the device you picked comes with a removable antenna, make sure
-    you connect the antenna before powering up the device. A radio
-    that transmits without an antenna can damage itself!
+    Si l'appareil que vous avez choisi est équipé d'une antenne amovible, veillez à
+    la connecter avant de mettre l'appareil sous tension. Une radio
+    qui émet sans antenne peut s'endommager !
 
-## Software
+### Logiciel
 
-Once you have some hardware, you need to operate it. Typically, you
-[download an app on your phone](https://meshtastic.org/downloads/) ([Android](https://meshtastic.org/docs/software/android/installation/), [iOS](https://meshtastic.org/docs/software/apple/installation/)) and
-control the device over Bluetooth or a USB cable. Some devices can
-also be controlled over WiFi or wired network. There is also a
-[command line client](https://meshtastic.org/docs/software/python/cli/), a [web client](https://meshtastic.org/docs/software/web-client/), and [lots more](https://meshtastic.org/docs/software/).
+Une fois que vous disposez du matériel, vous devez le faire fonctionner. En général, vous
+[téléchargez une application sur votre téléphone](https://meshtastic.org/downloads/) ([Android](https://meshtastic.org/docs/software/android/installation/), [iOS](https://meshtastic.org/docs/software/apple/installation/)) et
+contrôlez l'appareil via Bluetooth. Il existe également un [client en ligne de commande
+](https://meshtastic.org/docs/software/python/cli/), un [client web](https://meshtastic.org/docs/software/web-client/) et [bien d'autres encore](https://meshtastic.org/docs/software/).
 
-You might need to [flash firmware](https://flasher.meshtastic.org/) on the device, which requires
-connecting the device to your computer (or phone?) and running a
-Chrome-derived web browser.
+Vous devrez peut-être [flasher le micrologiciel](https://flasher.meshtastic.org/) sur l'appareil, ce qui nécessite de
+connecter l'appareil à votre ordinateur (ou téléphone ?) et d'utiliser un
+navigateur web dérivé de Chrome.
 
-Anarcat wrote an [advanced batch-flashing tool](https://gitlab.com/anarcat/scripts/-/blob/846a0f46978ae7ebb726004b2653e9a25a5e955c/reflashtic.py) if you need to
-flash multiple devices, use at your own risk.
+Anarcat a écrit un [outil avancé de flashage par lots](https://gitlab.com/anarcat/scripts/-/blob/846a0f46978ae7ebb726004b2653e9a25a5e955c/reflashtic.py) si vous avez besoin de
+flasher plusieurs appareils, à utiliser à vos propres risques.
 
-## Settings
+### Paramètres
 
-This section describes various settings we advise in the Meshtastic
-app.
+Cette section décrit les différents paramètres que nous recommandons dans l'application Meshtastic.
 
 !!! info
 
-    The two settings below are crucial to connect to the mesh. If
-    those are not configured properly, you will not be able to talk to
-    anyone else.
+    Les deux paramètres ci-dessous sont essentiels pour se connecter au réseau maillé. Si
+    ils ne sont pas configurés correctement, vous ne pourrez rien voir.
 
-| Setting          | Value       | Note                                                                                                                          |
-|------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [Modem preset][] | `LONG_FAST` | default, don't change it (for now)                                                                                            |
-| [Region][]       | `US`        | even though we're in Canada, pick the US preset because those are the frequencies (902.0 - 928.0 MHz) that apply here as well |
+| Paramètre          | Valeur       | Remarque                                                                                                                          |
+|------------------|-------------|------------------------------------------------------------------ -------------------------------------------------------------|
+| [Préréglage du modem][] | `LONG_FAST` | par défaut, ne le modifiez pas (pour l'instant)                                                                                            |
+| [Région][]       | `US`        | même si nous sommes au Canada, choisissez le préréglage US car ce sont les fréquences (902,0 - 928,0 MHz) qui s'appliquent ici également |
 
- [Region]: https://meshtastic.org/docs/configuration/radio/lora/#region
- [Modem preset]: https://meshtastic.org/docs/overview/radio-settings/#presets
+[Région] : https://meshtastic.org/docs/configuration/radio/lora/#region
+ [Préréglage du modem] : https://meshtastic.org/docs/overview/radio-settings/#presets
 
-!!! note "Optional"
+!!! note "Optionnel"
 
-    Those settings are optional, but recommended.
+    Ces paramètres sont facultatifs, mais recommandés.
 
-    | Setting                    | Value       | Note                                                                                                                              |
-    |----------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------|
-    | [Bluetooth][]: PIN         | (random)    | change the [default PIN][] to some random value and keep it in your password manager                                              |
-    | [Device][]:  [Role][]      | `CLIENT`    | consider `CLIENT_BASE` if you run a relay, don't change the role without reading the [Choosing The Right Device Role][] guide     |
-    | [LoRa][]: [Ignore MQTT][]  | `true`      | this keeps traffic from the wider mesh from entering the   network and reduces overall noise.                                     |
-    | [Position][]: [GPS Mode][] | `DISABLE`   | or reduce the [Position precision][] in the [Channel configuration][], otherwise you leak your position to the network by default |
-    | [User][]: "Short Name"     | (arbitrary) | only 4 characters, set to something easy to remember, this is what's visible on the map and chats                                 |
-    | User: "Long Name"          | (arbitrary) | set to something useful, but not offensive, ham operators can set their call sign here                                            |
-
- [Bluetooth]: https://meshtastic.org/docs/configuration/radio/bluetooth/
- [Channel configuration]: https://meshtastic.org/docs/configuration/radio/channels/#position-precision
- [Choosing The Right Device Role]: https://meshtastic.org/blog/choosing-the-right-device-role/
- [Device]: https://meshtastic.org/docs/configuration/radio/device/
- [LoRa]: https://meshtastic.org/docs/configuration/radio/lora/
- [Position]: https://meshtastic.org/docs/configuration/radio/position/
- [Role]: https://meshtastic.org/docs/configuration/tips/#roles
- [User]: https://meshtastic.org/docs/configuration/radio/user/
- [default PIN]: https://meshtastic.org/docs/configuration/radio/bluetooth/#fixed-pin
- [Position precision]: https://meshtastic.org/docs/configuration/radio/channels/#position-precision
- [Ignore MQTT]: https://meshtastic.org/docs/configuration/radio/lora/#ignore-mqtt
-[GPS Mode]: https://meshtastic.org/docs/configuration/radio/position/#gps-mode
-
+    | Paramètre                    | Valeur       | Remarque                                                                                                                              |
+    |----------------------------|-------------|---------------------------------------- -------------------------------------------------------------------------------------------|
+    | [Bluetooth][] : PIN         | (aléatoire)    | remplacez le [PIN par défaut][] par une valeur aléatoire et conservez-la dans votre gestionnaire de mots de passe                                              |
+    | [Appareil][] :  [Rôle][]      | `CLIENT`    | envisagez `CLIENT_BASE` si vous utilisez un relais, ne modifiez pas le rôle sans avoir lu le guide [Choisir le bon rôle pour votre appareil][]     |
+    | [LoRa][]: [Ignorer MQTT][]  | `true`      | cela empêche le trafic provenant du maillage plus large d'entrer dans le   réseau et réduit le bruit global.                                     |
+    | [Position][]: [Mode GPS][] | `DISABLE`   | ou réduisez la [Précision de la position][] dans la [Configuration du canal][], sinon vous divulguez votre position au réseau par défaut |
+    | [Utilisateur][] : « Nom court »     | (arbitraire) | 4 caractères maximum, choisissez un nom facile à retenir, c'est ce qui sera visible sur la carte et dans les chats                                 |
+    | Utilisateur : « Nom long »          | (arbitraire) | choisissez un nom utile, mais pas offensant, les opérateurs radioamateurs peuvent définir leur indicatif d'appel ici                                            |
+    
+     [Bluetooth]: https://meshtastic.org/docs/configuration/radio/bluetooth/
+     [Configuration des canaux]: https://meshtastic.org/docs/configuration/radio/channels/#position-precision
+     [Choisir le bon rôle pour votre appareil]: https://meshtastic.org/blog/choosing-the-right-device-role/
+     [Appareil]: https://meshtastic.org/docs/configuration/radio/device/
+     [LoRa]: https://meshtastic.org/docs/configuration/radio/lora/
+     [Position]: https://meshtastic.org/docs/configuration/radio/position/
+     [Rôle]: https://meshtastic.org/docs/configuration/tips/#roles
+     [Utilisateur]: https://meshtastic.org/docs/configuration/radio/user/
+     [Code PIN par défaut]: https://meshtastic.org/docs/configuration/radio/bluetooth/#fixed-pin
+     [Précision de la position]: https://meshtastic.org/docs/configuration/radio/channels/#position-precision
+     [Ignorer MQTT]: https://meshtastic.org/docs/configuration/radio/lora/#ignore-mqtt
+     [Mode GPS]: https://meshtastic.org/docs/configuration/radio/position/#gps-mode
