@@ -12,13 +12,13 @@
         <meta name="author" content="Anarcat and others">
       
       
-        <link rel="canonical" href="https://lora.reseaulibre.ca/fr/references/">
+        <link rel="canonical" href="https://lora.reseaulibre.ca/fr/meta/">
       
       
-        <link rel="prev" href="../guides/faq/">
+        <link rel="prev" href="../references/software/">
       
       
-        <link rel="next" href="hardware/">
+        <link rel="next" href="../code/">
       
       
         
@@ -36,7 +36,7 @@
     
     
       
-        <title>Autres guides et critiques - Mesh Montréal</title>
+        <title>Meta - Mesh Montréal</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#autres-guides-et-critiques" class="md-skip">
+        <a href="#how-this-website-is-built" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Autres guides et critiques
+              Meta
             
           </span>
         </div>
@@ -305,7 +305,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../references/" class="md-tabs__link">
           
   
   
@@ -714,19 +714,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../references/" class="md-nav__link">
         
   
   
@@ -742,7 +733,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -755,7 +745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hardware/" class="md-nav__link">
+      <a href="../references/hardware/" class="md-nav__link">
         
   
   
@@ -783,7 +773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="maps/" class="md-nav__link">
+      <a href="../references/maps/" class="md-nav__link">
         
   
   
@@ -811,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="neighbours/" class="md-nav__link">
+      <a href="../references/neighbours/" class="md-nav__link">
         
   
   
@@ -839,7 +829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="software/" class="md-nav__link">
+      <a href="../references/software/" class="md-nav__link">
         
   
   
@@ -864,10 +854,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../meta/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -883,6 +900,126 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contributing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#translations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Translations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Translations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#translating-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Translating pages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Link checks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spell-checking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spell checking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ci-build-workflow-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CI build workflow details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CI build workflow details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternatives
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -972,6 +1109,114 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contributing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#translations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Translations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Translations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#translating-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Translating pages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Link checks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spell-checking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spell checking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ci-build-workflow-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CI build workflow details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CI build workflow details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternatives
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -991,14 +1236,14 @@
       
       
       
-        <span class="md-tag">traduction/complète</span>
+        <span class="md-tag">traduction/aucune</span>
       
     
   </nav>
 
 
   
-    <a href="https://codeberg.org/anarcat/lora-reseaulibre-ca/_edit/main/docs/references.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://codeberg.org/anarcat/lora-reseaulibre-ca/_edit/main/docs/meta.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1006,39 +1251,177 @@
   
 
 
-<h1 id="autres-guides-et-critiques">Autres guides et critiques</h1>
-<p>Cette section comporte une collection de liens vers d'autres guides et
-critiques.</p>
-<ul>
+<h1 id="how-this-website-is-built">How this website is built</h1>
+<p><a href="https://ci.codeberg.org/repos/16463"><img alt="Pipeline status" src="https://ci.codeberg.org/api/badges/16463/status.svg" /></a></p>
+<p>This is the source code for the new Montreal Mesh website, currently
+hosted at <a href="https://lora.reseaulibre.ca">https://lora.reseaulibre.ca</a> and backed by Codeberg at
+<a href="https://codeberg.org/anarcat/lora-reseaulibre-ca/">https://codeberg.org/anarcat/lora-reseaulibre-ca/</a>.</p>
+<p>This README file documents the git repository and how to make changes
+to the site. The actual site contents are in the <code>docs/</code> directory of
+the <a href="https://codeberg.org/anarcat/lora-reseaulibre-ca/">git repository</a> or on <a href="https://lora.reseaulibre.ca">lora.reseaulibre.ca</a>.</p>
+<h2 id="contributing">Contributing</h2>
+<p>If you want to participate here, agree with the <a href="../code/">Code of Conduct</a>
+(<a href="https://www.contributor-covenant.org/version/3/0/code_of_conduct/">Contributor Covenant 3.0 Code</a>), and edit the files in the
+<code>docs/</code> directory which should bring you into a <a href="https://docs.codeberg.org/git/clone-commit-via-web/#edit">pull request
+workflow</a>.</p>
+<blockquote>
+<p>💡 Tip</p>
+<p>That can be done through the web interface directly, even though the
+linked documentation above doesn't make that obvious. The
+documentation seems to favor a local, git-based workflow which is
+more complicated, but also supported.</p>
+</blockquote>
+<p>Once the request is approved, your changes will go live. Changes take
+a "few minuets" to show up, see <a href="https://docs.codeberg.org/codeberg-pages/troubleshooting/#my-content-is-not-updated">this troubleshooting section
+otherwise</a>.</p>
+<p>The site was originally built on <a href="https://squidfunk.github.io/mkdocs-material/">mkdocs-material</a> but eventually
+switched to <a href="https://zensical.org/">Zensical</a>, then back to mkdocs-material to get the
+blog working. See their <a href="https://squidfunk.github.io/mkdocs-material/reference/">authoring guide</a> for more information.</p>
+<h2 id="translations">Translations</h2>
+<p>Translations used to be made with the <a href="https://github.com/ultrabug/mkdocs-static-i18n">mkdocs-static-i18n</a>
+plugin. That approach has been abandoned because it conflicts with the
+<a href="https://squidfunk.github.io/mkdocs-material/plugins/blog/">blog plugin</a> (see upstream issues on <a href="https://github.com/ultrabug/mkdocs-static-i18n/issues/283">both</a> <a href="https://github.com/squidfunk/mkdocs-material/issues/4863">projects</a>). We
+have therefore adopted a "two-site" approach where each language is
+its own site.</p>
+<p>This is done by having the translation in separate
+branches. Concretely, we only translate to "French" right now, which
+lives in the <code>fr</code> branch. The way this works is by merging the <code>main</code>
+branch into the <code>fr</code> branch whenever we update the main branch. This
+is a clunky, manual process, but given we don't have many
+translations, it feels like a good deal.</p>
+<p>What this implies is that updates to existing pages will necessarily
+result in conflicts in the translation. That's a feature: one needs to
+know when a section needs an update.</p>
+<p>Note that the translation branch has a copy of <em>all</em> the files here,
+even though a lot of those are superfluous (like the
+<code>.woodpecker.yaml</code> file). The <code>mkdocs.yml</code> <em>is</em> relevant, however, and
+differs between the two because the <code>site_url</code> needs the <code>fr</code> suffix.</p>
+<h3 id="translating-pages">Translating pages</h3>
+<ol>
 <li>
-<p><a href="https://www.meshtastic.org/">Site officiel Meshtastic</a> et <a href="https://meshtastic.org/docs/introduction/">documentation</a>, excellent
-  documentation, particulièrement pour les guides étape-par-étape, la
-  documentation matérielle et des explications sur les protocoles et
-  réglages</p>
+<p>First pull the repository to have all branches up to date:</p>
+<pre><code>git pull
+</code></pre>
 </li>
 <li>
-<p><a href="https://anarc.at/services/meshtastic/">Documentation Meshtastic d'Anarcat</a> (2025), explique certains
-  enjeux avec la sécurité et la scalabilité de Meshtastic, quelques
-  critiques matérielles, a formé la base de ce site</p>
+<p>Switch to the translation branch:</p>
+<pre><code>git switch fr
+</code></pre>
 </li>
 <li>
-<p><a href="https://lwn.net/Articles/1009782/">Critique LWN</a> (2025), bonne introduction, couverture de cette
-  <a href="https://archive.fosdem.org/2025/schedule/event/fosdem-2025-4375-meshtastic-off-grid-communication-for-everyone/">présentation à FOSDEM</a> donnée par <a href="https://github.com/caveman99">Thomas Göttgens</a>, un
-  développeur principal à Meshtastic</p>
+<p>Update it with the main branch:</p>
+<pre><code>git merge main
+</code></pre>
+<p>If this is an update on an existing page, this will result in a
+merge conflict. Don't panic.</p>
 </li>
 <li>
-<p><a href="https://anarchosolarpunk.substack.com/p/encryptedcomms">Guide Meshtastic "Anarcho-punk-solaire"</a> (2024), bonne
-  introduction sur pourquoi et comment construire un mesh</p>
+<p>Translate a given page:</p>
+<pre><code>$EDITOR docs/foo.md
+</code></pre>
+<p>If this is an existing page, you will need to resolve the merge
+conflict. See the <a href="https://docs.codeberg.org/collaborating/resolve-conflicts/">Codeberg merge conflict instructions</a> for a
+tutorial. When the conflict is resolved, you mark the file as
+resolved with:</p>
+<pre><code>git add docs/foo.md
+</code></pre>
 </li>
 <li>
-<p><a href="https://github.com/ShakataGaNai/awesome-meshtastic/">Awesome Meshtastic</a> est la liste usuel d'un paquet de trucs</p>
+<p>Commit the result and push:</p>
+<pre><code>git commit -m'translate page foo'
+git push
+</code></pre>
 </li>
-<li>
-<p>le site de l'« ancien » réseau maillé wifi (2010-2019) existe encore
-  et a un peu d documentation qui pourrait être pertinente ici, voir
-  <a href="https://wiki.reseaulibre.ca">https://wiki.reseaulibre.ca</a>.</p>
-</li>
-</ul>
+</ol>
+<p>The last step will require you to setup a remote to your own fork if
+you don't have access to the repository.</p>
+<h2 id="link-checks">Link checks</h2>
+<p>The <code>checklinks</code> job uses the <a href="https://github.com/lycheeverse/lychee/">Lychee link checker</a> to check the
+site for dead links.</p>
+<p>Checks sometimes fail because of transient errors like:</p>
+<pre><code>[ERROR] https://lora.reseaulibre.ca/fr/blog/archive/2026/ | Network error: HTTP/2 protocol error. Server may not support HTTP/2 properly (error sending request for url (https://lora.reseaulibre.ca/fr/blog/archive/2026/)): HTTP/2 protocol error. Server may not support HTTP/2 properly
+</code></pre>
+<p>Rerunning the pipeline fixes this issue. I assume this is a problem
+internal to Codeberg pages, but I haven't debugged the issue any
+further.</p>
+<p>Links truly being mismatched by Lychee can be added to the
+<code>.lycheeignore</code> file.</p>
+<h2 id="spell-checking">Spell checking</h2>
+<p>Two spell checkers are in use. <a href="https://github.com/crate-ci/typos/">Typos</a> is used to check the English
+version and good old <a href="https://en.wikipedia.org/wiki/GNU_Aspell">Aspell</a> for other languages.</p>
+<p>To fix false positives found by Typos, follow <a href="https://github.com/crate-ci/typos/?tab=readme-ov-file#false-positives">this guide</a>.</p>
+<p>To fix false positives found by Aspell, install the <code>aspell</code> package
+and run the command recommended by CI, which should be something like:</p>
+<pre><code>aspell --mode=markdown --lang=fr --home-dir=. --personal=aspell.fr.pws --encoding=utf-8 foo.md
+</code></pre>
+<p>... where <code>foo.md</code> is the file with a problem. It will run a text
+interface that will allow you to correct or accept the words.</p>
+<p>Alternatively, you can add the word to the list in <code>aspell.fr.pws</code>
+following the <a href="http://aspell.net/man-html/Format-of-the-Personal-and-Replacement-Dictionaries.html#Format-of-the-Personal-and-Replacement-Dictionaries">peculiar file format</a>. Essentially, you need to add
+the word on its own line and increment the line count on the first
+line.</p>
+<h2 id="ci-build-workflow-details">CI build workflow details</h2>
+<p>This section explains how the site is built. You don't need to read
+this unless you want to debug the continuous integration (CI) process
+or website build.</p>
+<p>The way this is setup is rather convoluted because we need to have a
+custom domain and this is still not yet well supported by the new "git
+pages" and "actions" in Codeberg. So, essentially, it works like this:</p>
+<ol>
+<li>on push, codeberg somehow notifies <a href="https://ci.codeberg.org">https://ci.codeberg.org</a> which
+   is Woodpecker CI instance</li>
+<li>woodpecker pulls the git repo, builds the site, and commits the
+   result to the <code>pages</code> branch</li>
+<li>woodpecker pushes the branch back to codeberg</li>
+<li>codeberg fires off a webhook to publish the site to git pages</li>
+</ol>
+<h3 id="first-setup">First setup</h3>
+<p>To set this up, I had to first <a href="https://docs.codeberg.org/codeberg-pages/pushing-output/">follow the manual pushing guide</a>:</p>
+<ol>
+<li>build the site on the <code>main</code> branch</li>
+<li>create an "orphan" <code>pages</code> branch (<code>git switch --orphan pages</code>) for
+   the site</li>
+<li>add and commit the <code>site</code> directory, but to the root of the repo</li>
+<li>setup a <a href="https://docs.codeberg.org/codeberg-pages/#repository-websites">webhook to the legacy v2 pages</a> on push</li>
+<li>push the <code>pages</code> branch</li>
+</ol>
+<p>At this point, <code>anarcat.codeberg.page/lora-reseaulibre-ca</code> is
+online. Next up was to setup the <a href="https://docs.codeberg.org/codeberg-pages/using-custom-domain/">custom domain</a>:</p>
+<ol>
+<li>add a CNAME for <code>lora.reseaulibre.ca</code> at my registrar, pointing at
+   <code>lora-reseaulibre-ca.anarcat.codeberg.page.</code></li>
+<li>add <code>lora.reseaulibre.ca</code> to the <code>.domains</code> file in the git
+   repository, on the <code>main</code> branch</li>
+<li>push the main branch</li>
+</ol>
+<p>At this point <code>lora.reseaulibre.ca</code> is online. The next step was to
+use <a href="https://docs.codeberg.org/ci/">Codeberg CI</a> to build and publish the site automatically:</p>
+<ol>
+<li><a href="https://docs.codeberg.org/ci/">enroll into Codeberg CI</a>, see <a href="https://codeberg.org/Codeberg-e.V./requests/issues/1570">issue 1570</a></li>
+<li>login to <a href="https://ci.codeberg.org">https://ci.codeberg.org</a></li>
+<li>add the project to Woodpecker</li>
+<li>create an <a href="https://codeberg.org/user/settings/applications">access token for Woodpecker</a> in Codeberg</li>
+<li>add the access token to a <code>codeberg_token</code> variable in the
+   Woodpecker project</li>
+<li>create a new <code>mail</code> variable with some dummy email on my domain in
+   the woodpecker project</li>
+<li>push a trivial change to a markdown file</li>
+</ol>
+<p>At this point, changes to the repository automatically rebuild and
+publish the changes.</p>
+<h3 id="alternatives">Alternatives</h3>
+<p>We should probably hook this onto <a href="https://docs.codeberg.org/ci/actions/">Forgejo Actions</a> and the
+<a href="https://codeberg.org/git-pages/action">git-pages action</a>, instead, but the <a href="https://docs.codeberg.org/codeberg-pages/forgejo-actions/">guide for that</a> explicitly
+says it does not work for custom domains.</p>
+<p>There was a one day downtime on Codeberg on 2026-03-04 that cause the
+site to go down almost entirely. If this happens again, we can
+consider hosting the static site somewhere else. I was recommended
+<a href="https://www.statichost.eu/">statichost.eu</a> (see <a href="https://www.arscyni.cc/file/codeberg.html">this guide</a>) or <a href="https://grebedoc.dev/">grebedoc.dev</a>
+("codeberg" backwards). This might be difficult to deploy while the
+site is down, unless another Git hosting platform is used.</p>
+<p>We also use the <code>cache</code> branch to carry around the Lychee cache. This
+could be fixed if <a href="https://github.com/woodpecker-ci/woodpecker/discussions/2296">Woodpecker supported caches</a> or with a Forgejo
+<a href="https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/">"cache" action</a> or <a href="https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts">artifacts</a>.</p>
 
 
 
@@ -1071,7 +1454,7 @@ critiques.</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="February 27, 2026 04:51:08 UTC">2026-02-27 04:51:08</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="February 27, 2026 01:30:13 UTC">2026-02-27 01:30:13</span>
   </span>
 
     
