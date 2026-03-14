@@ -132,9 +132,15 @@ We have experience with this:
 
 Other lists include:
 
-- [Official Meshtastic guide](https://meshtastic.org/docs/hardware/antennas/) which includes a [series of antenna
-  reports](https://github.com/meshtastic/antenna-reports)
+- [Official Meshtastic guide](https://meshtastic.org/docs/hardware/antennas/)[^1], which also refers to a [series of
+  antenna reports](https://github.com/meshtastic/antenna-reports)
 - [nyme.sh recommendations](https://nyme.sh/faq/#what-antenna)
+
+[^1]:
+
+    Note that the "Alfa AOA-915-5ACM" recommended for "Base station /
+    repeater" in that guide falls short of the advertised +5dBi gain
+    in [this technical review](https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi).
 
 ### Picking the right antenna
 
