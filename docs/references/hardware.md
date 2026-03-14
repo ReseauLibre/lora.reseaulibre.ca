@@ -139,23 +139,25 @@ Other lists include:
 [^1]:
 
     Note that the "Alfa AOA-915-5ACM" recommended for "Base station /
-    repeater" in that guide falls short of the advertised +5dBi gain
+    repeater" in that guide falls way short of the advertised +5dBi gain
     in [this technical review](https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi).
 
 ### Picking the right antenna
 
-For a roof or attic omnidirectional antenna, the longest the antenna
-is, the better the gain, and gain improves transmission power,
-essentially.
+**For a roof or attic antenna**
 
-For a remote node, [Yagi](https://en.wikipedia.org/wiki/Yagi%E2%80%93Uda_antenna) antennas (better for outdoors) or panels
-(probably simpler for indoors) are directional antennas that improve
-gain and reject noises from other directions.
+  * In the typical case you want an omnidirectional antenna.  The longest the antenna is, the better the gain, and gain improves transmission power, essentially.
+  * For a remote node (a node far from most other nodes), a directional antennas is bes: you can aim it at a mesh node you can reach.  It improves gain in one direction and reject noises from other directions. Either:
+    * A [Yagi](https://en.wikipedia.org/wiki/Yagi%E2%80%93Uda_antenna) (better for outdoors) 
+    * A panel (probably simpler for indoors, you can hang it from the ceiling in any orientation from two strings going to the top corners and it won't move) 
 
-For a window, if the building is large enough, maybe that a flat panel
-in the window would reject noise from other devices and improve
-contact with nodes facing the window. There doesn't seem to be much
-affordable panels on the market.
+**For a node in your window**
+
+  * Typically you'll just use the small antenna that came with your hardware.
+  * If the building is large enough, you may get better results with a flat panel in the window.  
+    * It would reject noise from other devices in the back where you probably can't hear anything interesting through the building anyway, and improve contact with nodes on the window side.
+    * Unfortunately there doesn't seem to be many affordable low gain panels on the market (such panels are typically sold as sector antennas, but not always flat).
+    * A normal flat panel like the [ARC-PD0913C01](https://www.streakwave.com/arc-wireless-arc-pd0913c01-arc-dual-pol-panel-ant-900mhz) has 13 dBi of gain and a half power beamwidth of 38 degrees which isn't ideal for this application.  Still, to perform worse than a <3bDi small atennas, you'd need to be at leass than 1/8 power beamwidth, which is probably around 150 degrees.  So worth a try.
 
 In any case, for smaller setups, it's all a matter of having the best
 [impedance match](https://en.wikipedia.org/wiki/Impedance_matching), which can be tested with a device called a
