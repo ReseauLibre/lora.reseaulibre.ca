@@ -144,8 +144,9 @@ Other lists include:
 
 ### Picking the right antenna
 
-For a roof or attic antenna, the longest the antenna is, the better
-the gain, and gain improves transmission power, essentially.
+For a roof or attic omnidirectional antenna, the longest the antenna
+is, the better the gain, and gain improves transmission power,
+essentially.
 
 For a remote node, [Yagi](https://en.wikipedia.org/wiki/Yagi%E2%80%93Uda_antenna) antennas (better for outdoors) or panels
 (probably simpler for indoors) are directional antennas that improve
