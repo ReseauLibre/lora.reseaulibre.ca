@@ -891,6 +891,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Picking the right antenna">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-a-roof-or-attic-antenna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For a roof or attic antenna
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-a-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For a window
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1218,6 +1246,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Picking the right antenna">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-a-roof-or-attic-antenna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For a roof or attic antenna
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-a-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For a window
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1389,11 +1445,13 @@ shops"</a>.</p>
 <h2 id="antennas">Antennas</h2>
 <p>We have experience with this:</p>
 <ul>
-<li><a href="https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL">SYMITANT58</a> (25$CAD Amazon), to connect to (say) a Heltec, you
-  will need adapters:<pre><code>N --(cable)--&gt; SMA-RP --(adapteur)--&gt; SMA --(pigtail)--&gt; Heltec v4
-</code></pre>
-</li>
+<li><a href="https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL">SYMITANT58</a> (25$CAD Amazon), a similar (and currently cheaper)
+  model is this <a href="https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-930MHz-5-8dBi-800mm-p-5275.html">RF Explorer</a> (10$USD from from Seeed Studio)</li>
 </ul>
+<p>Note that, to connect those to (say) a Heltec, you will need
+  adapters:</p>
+<pre><code>    N --(cable)--&gt; SMA-RP --(adapteur)--&gt; SMA --(pigtail)--&gt; Heltec v4
+</code></pre>
 <p>Other lists include:</p>
 <ul>
 <li><a href="https://meshtastic.org/docs/hardware/antennas/">Official Meshtastic guide</a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, which also refers to a <a href="https://github.com/meshtastic/antenna-reports">series of
@@ -1401,25 +1459,26 @@ shops"</a>.</p>
 <li><a href="https://nyme.sh/faq/#what-antenna">nyme.sh recommendations</a></li>
 </ul>
 <h3 id="picking-the-right-antenna">Picking the right antenna</h3>
-<p><strong>For a roof or attic antenna</strong></p>
+<h4 id="for-a-roof-or-attic-antenna">For a roof or attic antenna</h4>
+<p>In the <strong>typical case</strong>, use a regular, omnidirectional antenna.  The
+longest the antenna is, the better the gain, and gain improves
+transmission power, essentially.</p>
+<p>For a remote node, far from most other nodes, a directional antennas
+is best: aim it at the nearest node nearby.  It improves gain in one
+direction and reject noise from other directions. Either:</p>
 <ul>
-<li>In the typical case you want an omnidirectional antenna.  The longest the antenna is, the better the gain, and gain improves transmission power, essentially.</li>
-<li>For a remote node (a node far from most other nodes), a directional antennas is bes: you can aim it at a mesh node you can reach.  It improves gain in one direction and reject noises from other directions. Either:<ul>
 <li>A <a href="https://en.wikipedia.org/wiki/Yagi%E2%80%93Uda_antenna">Yagi</a> (better for outdoors) </li>
-<li>A panel (probably simpler for indoors, you can hang it from the ceiling in any orientation from two strings going to the top corners and it won't move) </li>
+<li>A panel (probably simpler for indoors, you can hang it from the
+   ceiling in any orientation from two strings going to the top
+   corners to orient it correctly)</li>
 </ul>
-</li>
-</ul>
-<p><strong>For a node in your window</strong></p>
-<ul>
-<li>Typically you'll just use the small antenna that came with your hardware.</li>
-<li>If the building is large enough, you may get better results with a flat panel in the window.  <ul>
-<li>It would reject noise from other devices in the back where you probably can't hear anything interesting through the building anyway, and improve contact with nodes on the window side.</li>
-<li>Unfortunately there doesn't seem to be many affordable low gain panels on the market (such panels are typically sold as sector antennas, but not always flat).</li>
-<li>A normal flat panel like the <a href="https://www.streakwave.com/arc-wireless-arc-pd0913c01-arc-dual-pol-panel-ant-900mhz">ARC-PD0913C01</a> has 13 dBi of gain and a half power beamwidth of 38 degrees which isn't ideal for this application.  Still, to perform worse than a &lt;3bDi small atennas, you'd need to be at leass than 1/8 power beamwidth, which is probably around 150 degrees.  So worth a try.</li>
-</ul>
-</li>
-</ul>
+<h4 id="for-a-window">For a window</h4>
+<p>In general, just use small antenna that came with your hardware.</p>
+<p>If the building is large enough, you may get better results with a
+flat panel<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> in the window, as it would reject noise from other devices
+in the back where you probably can't hear anything interesting through
+the building anyway, and improve contact with nodes on the window
+side.</p>
 <p>In any case, for smaller setups, it's all a matter of having the best
 <a href="https://en.wikipedia.org/wiki/Impedance_matching">impedance match</a>, which can be tested with a device called a
 <a href="https://en.wikipedia.org/wiki/Network_analyzer_(electrical)">Vector Network Analyzer</a>, like the <a href="https://nanovna.com/">NanoVNA</a>, essentially an
@@ -1441,8 +1500,18 @@ better idea on how to test antennas.</p>
 <ol>
 <li id="fn:1">
 <p>Note that the "Alfa AOA-915-5ACM" recommended for "Base station /
-repeater" in that guide falls way short of the advertised +5dBi gain
+repeater" in that guide falls short of the advertised +5dBi gain
 in <a href="https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi">this technical review</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Unfortunately there doesn't seem to be many affordable low gain
+   panels on the market (such panels are typically sold as sector
+   antennas, but not always flat). A normal flat panel like the
+   <a href="https://www.streakwave.com/arc-wireless-arc-pd0913c01-arc-dual-pol-panel-ant-900mhz">ARC-PD0913C01</a> has 13 dBi of gain and a half power beamwidth of
+   38 degrees which isn't ideal for this application.  Still, to
+   perform worse than a &lt;3bDi small atennas, you'd need to be at leass
+   than 1/8 power beamwidth, which is probably around 150 degrees.  So
+   worth a try.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -1468,7 +1537,7 @@ in <a href="https://antennatestlab.com/helium-network-antenna-reviews/alpha-netw
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 14, 2026 02:12:30 UTC">2026-03-14 02:12:30</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 15, 2026 02:47:47 UTC">2026-03-15 02:47:47</span>
   </span>
 
     
