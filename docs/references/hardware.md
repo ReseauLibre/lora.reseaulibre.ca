@@ -125,8 +125,11 @@ shops"](https://www.openstreetmap.org/search?query=vape+shop&zoom=12&minlon=-74.
 
 We have experience with this:
 
-- [SYMITANT58](https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL) (25$CAD Amazon), to connect to (say) a Heltec, you
-  will need adapters:
+- [SYMITANT58](https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL) (25$CAD Amazon), a similar (and curently cheaper)
+  model is this [RF Explorer](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-930MHz-5-8dBi-800mm-p-5275.html) (10$USD from from Seeed Studio)
+
+  Note that, to connect those to (say) a Heltec, you will need
+  adapters:
 
         N --(cable)--> SMA-RP --(adapteur)--> SMA --(pigtail)--> Heltec v4
 
