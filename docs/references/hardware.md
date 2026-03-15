@@ -131,7 +131,11 @@ We have experience with this:
   Note that, to connect those to (say) a Heltec, you will need
   adapters:
 
-        N --(cable)--> SMA-RP --(adapteur)--> SMA --(pigtail)--> Heltec v4
+        N (Antenna) --(cable)--> RP-SMA --(adaptor)--> SMA --(pigtail)--> IPEX U.FL (Heltec v4)
+
+See also [this connector guide](https://pole1.co.uk/blog/5/) for recognizing those N, RP-SMA,
+SMA and IPEX connectors. And yes, in the above setup, we essentially
+touch on *all* the connectors from the guide.
 
 Other lists include:
 
