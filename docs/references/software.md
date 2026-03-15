@@ -29,6 +29,10 @@ Those are clients that run on a normal computer (as opposed to a phone
 
 - [connect](https://github.com/pdxlocations/connect) (LoRa-less client)
 
+- [Meshsense](https://github.com/Affirmatech/MeshSense) monitors the local view of the mesh, shows maps,
+  traceroutes, signal reports, see also [this demo](https://affirmatech.com/meshsense/FJP1/) and the global
+  [Meshsense map](https://github.com/Affirmatech/MeshSense) created from installs that report back
+
 ## BBS and bots
 
 A BBS ([Bulletin Board System](https://en.wikipedia.org/wiki/Bulletin_board_system)) is a server hooked up to Meshtastic

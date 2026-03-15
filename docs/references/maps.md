@@ -6,6 +6,8 @@ now use one of those:
 - [meshmap.net](https://meshmap.net/)
 - [Liam Cottle's map](https://meshtastic.liamcottle.net/) (now advertising meshcore)
 - [Canada mesh map](https://map.mt.gt/)
+- [Meshsense map](https://github.com/Affirmatech/MeshSense), based on reports from [Meshsense](https://github.com/Affirmatech/MeshSense) installs,
+  shows links between nodes
 
 Note that those maps don't necessarily reflect actual relays that are
 visible on the ground, only relays that report their position. A relay
