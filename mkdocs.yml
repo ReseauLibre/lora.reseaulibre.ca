@@ -17,9 +17,9 @@ nav:
   - References:
     - references.md
     - Hardware: references/hardware.md
+    - references/software.md
     - references/maps.md
     - references/neighbours.md
-    - references/software.md
     - Meta: meta.md
     - Code of Conduct: code.md
   - News: news/index.md
