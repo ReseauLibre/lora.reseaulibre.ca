@@ -874,6 +874,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Bridges">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-a-matrix-bridge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuring a Matrix bridge
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-matrix-bridge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using the Matrix bridge
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1101,6 +1129,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Bridges">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-a-matrix-bridge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuring a Matrix bridge
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-matrix-bridge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using the Matrix bridge
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1201,13 +1257,193 @@ service or network.</p>
 <li><a href="https://github.com/jaredquinn/meshtastic-bridge">jaredquinn/meshtastic-bridge</a>: APRS, GPS, logger,
   Prometheus, untested</li>
 <li><a href="https://codeberg.org/tpikonen/siltamesh">siltamesh</a>: <a href="https://en.wikipedia.org/wiki/XMPP">XMPP</a> bridge, untested</li>
-<li><a href="https://github.com/jeremiah-k/meshtastic-matrix-relay">jeremiah-k/meshtastic-matrix-relay</a>: <a href="https://matrix.org">Matrix</a> bridge, untested</li>
+<li><a href="https://github.com/jeremiah-k/meshtastic-matrix-relay">jeremiah-k/meshtastic-matrix-relay</a>: <a href="https://matrix.org">Matrix</a> bridge, see the
+  <a href="#using-the-matrix-bridge">Using the Matrix bridge</a> for more usage tips</li>
 <li><a href="https://github.com/AkitaEngineering/Akita-Meshtastic-Meshcore-Bridge">AkitaEngineering/Akita-Meshtastic-Meshcore-Bridge</a>: another
   generic bridge, named afed meshcore, but really aimed at
   bridging meshtastic with other tools, untested</li>
 <li><a href="https://github.com/cpatulea/matterbridge">cpatulea/matterbridge</a>: <a href="https://github.com/42wim/matterbridge/compare/master...cpatulea:matterbridge:master">fork of matterbridge</a> (<a href="https://github.com/42wim/matterbridge/issues/2251">itself
   unmaintained</a>) that <a href="https://codeberg.org/foulab/foubot2/commit/f1e79507cdff83bd5ee88b05168f45240e434f8f">posts messages</a> from the Meshtastic
   mesh to the Foulab Mattermost</li>
+</ul>
+<h3 id="configuring-a-matrix-bridge">Configuring a Matrix bridge</h3>
+<p>There is now a <a href="https://matrix.org">Matrix</a> bridge setup in the little italy
+neighbourhood. I essentially followed <a href="https://github.com/jeremiah-k/meshtastic-matrix-relay/wiki/Getting-Started-With-Matrix-&amp;-MM-Relay">this quick start guide</a> and
+this <a href="https://github.com/jeremiah-k/meshtastic-matrix-relay/blob/main/docs/DOCKER.md">Docker guide</a>.</p>
+<p>I first created a room in the Matrix space, then created a new account
+and invited it to the room. The room is currently fully open to the
+public but might be locked down if there's abuse, either by making the
+room non-writable by Matrix users or invite-only.</p>
+<p>Then I setup the container with the following <code>docker-compose.yml</code>
+file:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">mmrelay-data</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">mmrelay-cache</span><span class="p">:</span>
+
+<span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">mmrelay</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ghcr.io/jeremiah-k/mmrelay:latest</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">meshtastic-matrix-relay</span>
+<span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
+<span class="w">    </span><span class="nt">stop_grace_period</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30s</span>
+<span class="w">    </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1337:20&quot;</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MMRELAY_HOME=/data</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MMRELAY_READY_FILE=/tmp/mmrelay-ready</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TZ=UTC</span><span class="w"> </span><span class="c1"># Set timezone (PYTHONUNBUFFERED and MPLCONFIGDIR are set in Dockerfile)</span>
+
+<span class="w">    </span><span class="nt">devices</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/dev/ttyACM0</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mmrelay-data:/data</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mmrelay-data:/.cache</span>
+</code></pre></div>
+<p>Before starting the container, I created a user and group for it:</p>
+<div class="highlight"><pre><span></span><code>addgroup --system --gid 1337 mmrelay
+adduser --system --uid 1337 --gid 1337 mmrelay
+adduser mmrelay dialout
+</code></pre></div>
+<p>I am not sure if it was necessary, but I also fixed the perms on
+there:</p>
+<div class="highlight"><pre><span></span><code>chown mmrelay:mmrelay /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/
+</code></pre></div>
+<p>I could have used <code>mmrelay config generate</code> to create a sample config
+file, but instead I used:</p>
+<pre><code>curl -Lo /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/config.yaml https://raw.githubusercontent.com/jeremiah-k/meshtastic-matrix-relay/main/src/mmrelay/tools/sample_config.yaml
+</code></pre>
+<p>Then edited the config:</p>
+<div class="highlight"><pre><span></span><code><span class="gd">--- sample_config.yaml  2026-03-15 20:01:08.939719431 -0400</span>
+<span class="gi">+++ /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/config.yaml  2026-03-15 21:40:59.802696541 -0400</span>
+<span class="gu">@@ -44,27 +44,25 @@</span>
+<span class="w"> </span>  # 4. For interactive setup, use: mmrelay auth login
+<span class="w"> </span>  #
+<span class="w"> </span>  e2ee:
+<span class="gd">-    enabled: true</span>
+<span class="gi">+    enabled: false</span>
+
+<span class="w"> </span>  # Message prefix customization (Meshtastic → Matrix direction)
+<span class="w"> </span>  #prefix_enabled: true # Enable prefixes on messages from mesh (e.g., &quot;[Alice/MyMesh]: message&quot;)
+<span class="w"> </span>  #prefix_format: &quot;[{long}/{mesh}]: &quot; # Default format. Variables: {long1-20}, {long}, {short}, {mesh1-20}, {mesh}
+
+<span class="w"> </span>matrix_rooms: # Needs at least 1 room &amp; channel, but supports all Meshtastic channels
+<span class="gd">-  - id: &quot;#someroomalias:example.matrix.org&quot; # Matrix room aliases &amp; IDs supported</span>
+<span class="gi">+  - id: &quot;#reseaulibre-meshtastic-bridge:matrix.org&quot; # TODO: invite the bot here and then make room public</span>
+<span class="w"> </span>    meshtastic_channel: 0
+<span class="gd">-  - id: &quot;!someroomid:example.matrix.org&quot;</span>
+<span class="gd">-    meshtastic_channel: 2</span>
+
+<span class="w"> </span>meshtastic:
+<span class="gd">-  connection_type: tcp # Choose either &quot;tcp&quot;, &quot;serial&quot;, or &quot;ble&quot;</span>
+<span class="gd">-  host: meshtastic.local # Only used when connection is &quot;tcp&quot;</span>
+<span class="gd">-  serial_port: /dev/ttyUSB0 # Only used when connection is &quot;serial&quot;</span>
+<span class="gd">-  ble_address: AA:BB:CC:DD:EE:FF # Only used when connection is &quot;ble&quot; - Uses either an address or name from a `meshtastic --ble-scan`</span>
+<span class="gd">-  meshnet_name: Your Meshnet Name # This is displayed in full on Matrix, but is truncated when sent to a Meshnet</span>
+<span class="gi">+  connection_type: serial # Choose either &quot;tcp&quot;, &quot;serial&quot;, or &quot;ble&quot;</span>
+<span class="gi">+  #host: meshtastic.local # Only used when connection is &quot;tcp&quot;</span>
+<span class="gi">+  serial_port: /dev/ttyACM0 # Only used when connection is &quot;serial&quot;</span>
+<span class="gi">+  #ble_address: AA:BB:CC:DD:EE:FF # Only used when connection is &quot;ble&quot; - Uses either an address or name from a `meshtastic --ble-scan`</span>
+<span class="gi">+  meshnet_name: RL # This is displayed in full on Matrix, but is truncated when sent to a Meshnet</span>
+<span class="w"> </span>  message_interactions: # Configure reactions and replies (both require message storage in database)
+<span class="gd">-    reactions: false # Enable reaction relaying between platforms</span>
+<span class="gd">-    replies: false   # Enable reply relaying between platforms</span>
+<span class="gi">+    reactions: true # Enable reaction relaying between platforms</span>
+<span class="gi">+    replies: true   # Enable reply relaying between platforms</span>
+
+<span class="w"> </span>  # Connection health monitoring configuration
+<span class="w"> </span>  #health_check:
+<span class="gu">@@ -116,7 +114,7 @@</span>
+<span class="w"> </span># These are core Plugins - Note: Some plugins are experimental and some need maintenance.
+<span class="w"> </span>plugins:
+<span class="w"> </span>  # Global setting for all plugins: require bot mentions for commands
+<span class="gd">-  #require_bot_mention: true  # Set to false to disable mention requirements for all plugins</span>
+<span class="gi">+  require_bot_mention: false  # Set to false to disable mention requirements for all plugins</span>
+
+<span class="w"> </span>  ping:
+<span class="w"> </span>    active: true
+<span class="gu">@@ -125,13 +123,21 @@</span>
+<span class="w"> </span>  weather:
+<span class="w"> </span>    active: true
+<span class="w"> </span>    #require_bot_mention: true  # Override global setting for this plugin only
+<span class="gd">-    units: imperial # Options: metric, imperial - Default is metric</span>
+<span class="gi">+    units: metric # Options: metric, imperial - Default is metric</span>
+<span class="w"> </span>    #channels: [] # Empty list, will only respond to DMs
+<span class="w"> </span>  nodes:
+<span class="w"> </span>    active: true
+<span class="w"> </span>    #require_bot_mention: true  # Override global setting for this plugin only
+<span class="w"> </span>    # Does not need to specify channels, as it&#39;s a Matrix-only plugin
+
+<span class="gi">+  health:</span>
+<span class="gi">+    active: true</span>
+<span class="gi">+  telemetry:</span>
+<span class="gi">+    active: true</span>
+<span class="gi">+  map:</span>
+<span class="gi">+    active: true</span>
+<span class="gi">+</span>
+<span class="gi">+</span>
+<span class="w"> </span>#community-plugins:
+<span class="w"> </span>#  sample_plugin:
+<span class="w"> </span>#    active: true
+</code></pre></div>
+<p>At this point, the container should be able to start:</p>
+<pre><code>docker-compose up
+</code></pre>
+<p>... and <code>mmrelay</code> commands can be ran with:</p>
+<pre><code>docker-compose exec mmrelay mmrelay
+</code></pre>
+<p>The <code>mmrelay auth login</code> created the <code>matrix/credentials.json</code> file
+with an access token the the home server configuration.</p>
+<p>A RAK4631 development kit is hooked up to the server over USB, hanging
+off the side in a janky setup in my basement. The board itself is
+configured <a href="../../guides/meshtastic/">as normal</a> except:</p>
+<ul>
+<li>hops: 7 (the node is in my basement and will necessarily go through
+  at least one hop, and is designed to try to relay things)</li>
+<li>device role: <code>CLIENT_MUTE</code>, to avoid re-broadcasting, as we're an
+  endpoint</li>
+</ul>
+<p>The node itself has limited view of the network and relies on a
+second, better positioned, relay to transmit its traffic.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p>Note that in the above config patch, there are some <a href="https://github.com/jeremiah-k/meshtastic-matrix-relay/wiki/Core-Plugins">plugins</a>
+enabled as well, see below on how to use those.</p>
+<h3 id="using-the-matrix-bridge">Using the Matrix bridge</h3>
+<p>Messages sent in the bridged room
+(<a href="https://matrix.to/#/#reseaulibre-meshtastic-bridge:matrix.org">#reseaulibre-meshtastic-bridge:matrix.org</a>) will be sent to the
+Meshtastic "LongFast" channel and vice versa. </p>
+<p>There are <a href="https://github.com/jeremiah-k/meshtastic-matrix-relay/wiki/Core-Plugins">plugins</a> that allow for some fancier operations:</p>
+<ul>
+<li>
+<p><code>!ping</code> - send this to the channel from Meshtastic or Matrix to
+  generate a response, useful to test reachability<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+</li>
+<li>
+<p><code>!health</code> - gives a series of stats about the health of the relay
+  and network (Matrix-only), example:</p>
+<pre><code>Nodes: 31
+ Battery: 100.7% / 101.0% (avg / median)
+ Nodes with Low Battery (&lt;= 10): 0
+ Air Util: 1.28 / 1.03 (avg / median)
+ SNR: 3.93 / 6.00 (avg / median)
+</code></pre>
+</li>
+<li>
+<p><code>!weather</code> - gives a basic weather report (Meshtastic-only),
+  example:</p>
+<pre><code>Now: 🌙☁️ Overcast - -2.5°C | Humidity 82% | Wind 15.9km/h 51° | Precip 14%
+</code></pre>
+<p>Use <code>location=</code> to change the location.</p>
+</li>
+<li>
+<p><code>!airUtilTx</code> - shows channel utilization graph for the last 24h
+  (Matrix-only), the <code>!batteryLevel</code> and <code>!voltage</code> give similar
+  graphs, but currently useless as the device is powered over USB</p>
+</li>
+<li>
+<p><code>!nodes</code> - shows the list of known nodes (Matrix-only)</p>
+</li>
+<li>
+<p><code>!map zoom=12</code> - show a map of the network (Matrix-only), note that
+  the default <code>zoom=8</code> is far too large for the current mesh size</p>
+</li>
 </ul>
 <h1 id="monitoring">Monitoring</h1>
 <ul>
@@ -1231,6 +1467,16 @@ service or network.</p>
   projects</a>)</p>
 </li>
 </ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>The bot is currently in Little Italy, with a poor antenna, so
+don't be surprised if you don't hear it. It will be improved this
+summer.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
@@ -1253,7 +1499,7 @@ service or network.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 15, 2026 00:53:33 UTC">2026-03-15 00:53:33</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 16, 2026 02:24:32 UTC">2026-03-16 02:24:32</span>
   </span>
 
     
