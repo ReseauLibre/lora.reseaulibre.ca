@@ -969,6 +969,7 @@
 
   <h1>Mmrelay</h1>
 
+<p>essentially followed <a href="https://github.com/jeremiah-k/meshtastic-matrix-relay/wiki/Getting-Started-With-Matrix-&amp;-MM-Relay">this guide</a></p>
 <div class="highlight"><pre><span></span><code>volumes:
   mmrelay-data:
 
@@ -1003,11 +1004,11 @@ chown mmrelay:mmrelay /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/</p>
 <p><code>mmrelay config generate</code> creates the config file as well.</p>
 <p>patch config:</p>
 <div class="highlight"><pre><span></span><code><span class="gd">--- sample_config.yaml  2026-03-15 20:01:08.939719431 -0400</span>
-<span class="gi">+++ /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/config.yaml      2026-03-15 20:02:03.508220496 -0400</span>
-<span class="gu">@@ -44,24 +44,24 @@</span>
+<span class="gi">+++ /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/config.yaml      2026-03-15 21:17:09.713552548 -0400</span>
+<span class="gu">@@ -44,27 +44,25 @@                                                                                                                           21:25:15 [10/1983]</span>
 <span class="w"> </span>  # 4. For interactive setup, use: mmrelay auth login
-<span class="w"> </span>  #
-<span class="w"> </span>  e2ee:
+<span class="w"> </span>  #         
+<span class="w"> </span>  e2ee:         
 <span class="gd">-    enabled: true</span>
 <span class="gi">+    enabled: false</span>
 
@@ -1021,23 +1022,27 @@ chown mmrelay:mmrelay /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/</p>
 <span class="w"> </span>    meshtastic_channel: 0
 <span class="gd">-  - id: &quot;!someroomid:example.matrix.org&quot;</span>
 <span class="gd">-    meshtastic_channel: 2</span>
-<span class="gi">+  #- id: &quot;!someroomid:example.matrix.org&quot;</span>
-<span class="gi">+    #meshtastic_channel: 2</span>
 
 <span class="w"> </span>meshtastic:
 <span class="gd">-  connection_type: tcp # Choose either &quot;tcp&quot;, &quot;serial&quot;, or &quot;ble&quot;</span>
 <span class="gd">-  host: meshtastic.local # Only used when connection is &quot;tcp&quot;</span>
-<span class="gi">+  connection_type: serial # Choose either &quot;tcp&quot;, &quot;serial&quot;, or &quot;ble&quot;</span>
-<span class="gi">+  #host: meshtastic.local # Only used when connection is &quot;tcp&quot;</span>
-<span class="w"> </span>  serial_port: /dev/ttyUSB0 # Only used when connection is &quot;serial&quot;
+<span class="gd">-  serial_port: /dev/ttyUSB0 # Only used when connection is &quot;serial&quot;</span>
 <span class="gd">-  ble_address: AA:BB:CC:DD:EE:FF # Only used when connection is &quot;ble&quot; - Uses either an address or name from a `meshtastic --ble-scan`</span>
 <span class="gd">-  meshnet_name: Your Meshnet Name # This is displayed in full on Matrix, but is truncated when sent to a Meshnet</span>
+<span class="gi">+  connection_type: serial # Choose either &quot;tcp&quot;, &quot;serial&quot;, or &quot;ble&quot;</span>
+<span class="gi">+  #host: meshtastic.local # Only used when connection is &quot;tcp&quot;</span>
+<span class="gi">+  serial_port: /dev/ttyACM0 # Only used when connection is &quot;serial&quot;</span>
 <span class="gi">+  #ble_address: AA:BB:CC:DD:EE:FF # Only used when connection is &quot;ble&quot; - Uses either an address or name from a `meshtastic --ble-scan`</span>
 <span class="gi">+  meshnet_name: RL # This is displayed in full on Matrix, but is truncated when sent to a Meshnet</span>
 <span class="w"> </span>  message_interactions: # Configure reactions and replies (both require message storage in database)
-<span class="w"> </span>    reactions: false # Enable reaction relaying between platforms
-<span class="w"> </span>    replies: false   # Enable reply relaying between platforms
-<span class="gu">@@ -125,7 +125,7 @@</span>
+<span class="gd">-    reactions: false # Enable reaction relaying between platforms</span>
+<span class="gd">-    replies: false   # Enable reply relaying between platforms</span>
+<span class="gi">+    reactions: true # Enable reaction relaying between platforms</span>
+<span class="gi">+    replies: true   # Enable reply relaying between platforms</span>
+
+<span class="w"> </span>  # Connection health monitoring configuration
+<span class="w"> </span>  #health_check:
+<span class="gu">@@ -125,13 +125,21 @@</span>
 <span class="w"> </span>  weather:
 <span class="w"> </span>    active: true
 <span class="w"> </span>    #require_bot_mention: true  # Override global setting for this plugin only
@@ -1046,10 +1051,25 @@ chown mmrelay:mmrelay /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/</p>
 <span class="w"> </span>    #channels: [] # Empty list, will only respond to DMs
 <span class="w"> </span>  nodes:
 <span class="w"> </span>    active: true
+<span class="w"> </span>    #require_bot_mention: true  # Override global setting for this plugin only
+<span class="w"> </span>    # Does not need to specify channels, as it&#39;s a Matrix-only plugin
+
+<span class="gi">+  health:</span>
+<span class="gi">+    active: true</span>
+<span class="gi">+  telemetry:</span>
+<span class="gi">+    active: true</span>
+<span class="gi">+  map:</span>
+<span class="gi">+    active: true</span>
+<span class="gi">+</span>
+<span class="gi">+</span>
+<span class="w"> </span>#community-plugins:
+<span class="w"> </span>#  sample_plugin:
+<span class="w"> </span>#    active: true
 </code></pre></div>
 <p>Then <code>mmrelay auth login</code> creates the <code>matrix/credentials.json</code> file
 with an access token the the home server configuration.</p>
 <p>TODO: extract config from container.</p>
+<p>https://github.com/jeremiah-k/meshtastic-matrix-relay/wiki/Core-Plugins</p>
 
 
 
@@ -1072,7 +1092,7 @@ with an access token the the home server configuration.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 16, 2026 01:06:16 UTC">2026-03-16 01:06:16</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 16, 2026 01:46:42 UTC">2026-03-16 01:46:42</span>
   </span>
 
     

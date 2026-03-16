@@ -846,16 +846,22 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solar" class="md-nav__link">
+    <nav class="md-nav" aria-label="Power">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solar-power" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Solar
+        Solar power
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1201,16 +1207,22 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solar" class="md-nav__link">
+    <nav class="md-nav" aria-label="Power">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solar-power" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Solar
+        Solar power
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1379,9 +1391,14 @@ many not have batteries.</p>
 <div class="admonition example">
 <p class="admonition-title">Untested</p>
 <ul>
-<li><a href="https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html">SenseCAP Solar Node P1</a>: 90$USD, outdoors solar-powered relay
-  with 4x18650 batteries, nRF4840, GNSS, BT 5.0, 3 power buttons, 5
-  LEDs, USB-C for debug, <a href="https://nyme.sh/faq/">recommended by nyme.sh</a></li>
+<li><a href="https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html">SenseCAP Solar Node P1</a>: 70$USD, outdoors solar-powered relay
+  with 4x18650 batteries, nRF4840, BT 5.0, 3 power buttons, 5
+  LEDs, USB-C for debug, <a href="https://nyme.sh/faq/">recommended by
+  nyme.sh</a>. Note that the base kit doesn't
+  ship with the actual batteries, or the GNSS device, for that you
+  need the <a href="https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html">Pro
+  kit</a>
+  which is 20$ more.</li>
 <li><a href="https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater">WisMesh Solar Repeater</a>: solar, battery, mast-mountable, unclear
   if it can be setup without solar and if it supports MQTT/ethernet,
   300$, SenseCAP Solar Node P1 (below) might be sturdier and cheaper</li>
@@ -1425,9 +1442,10 @@ really be used in production as they lack a proper case.</p>
 cables. Similarly regular power supplies should generally
 suffice. Some devices can be powered with <a href="https://en.wikipedia.org/wiki/Power_over_Ethernet">Power over Ethernet</a> as
 well.</p>
-<h2 id="solar">Solar</h2>
+<h3 id="solar-power">Solar power</h3>
 <p>Some nodes have their own solar panels, which are generally preferable
-for simplicity reasons.</p>
+for simplicity reasons, see the above <a href="#base-stations-and-solar">base stations and solar
+section</a> for more options.</p>
 <p>The configuration of a separate solar power system is considered out
 of scope here for the moment, but our previous wiki had <a href="https://wiki.reseaulibre.ca/documentation/power/">some
 documentation about power generation</a> but consider that the
@@ -1540,7 +1558,7 @@ in <a href="https://antennatestlab.com/helium-network-antenna-reviews/alpha-netw
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 15, 2026 12:13:01 UTC">2026-03-15 12:13:01</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 16, 2026 01:46:33 UTC">2026-03-16 01:46:33</span>
   </span>
 
     
