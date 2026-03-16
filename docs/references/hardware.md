@@ -51,9 +51,14 @@ many not have batteries.
 
 !!! example "Untested"
 
-    - [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html): 90$USD, outdoors solar-powered relay
-      with 4x18650 batteries, nRF4840, GNSS, BT 5.0, 3 power buttons, 5
-      LEDs, USB-C for debug, [recommended by nyme.sh](https://nyme.sh/faq/)
+    - [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html): 70$USD, outdoors solar-powered relay
+      with 4x18650 batteries, nRF4840, BT 5.0, 3 power buttons, 5
+      LEDs, USB-C for debug, [recommended by
+      nyme.sh](https://nyme.sh/faq/). Note that the base kit doesn't
+      ship with the actual batteries, or the GNSS device, for that you
+      need the [Pro
+      kit](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html)
+      which is 20$ more.
     - [WisMesh Solar Repeater](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater): solar, battery, mast-mountable, unclear
       if it can be setup without solar and if it supports MQTT/ethernet,
       300$, SenseCAP Solar Node P1 (below) might be sturdier and cheaper
@@ -98,10 +103,11 @@ cables. Similarly regular power supplies should generally
 suffice. Some devices can be powered with [Power over Ethernet](https://en.wikipedia.org/wiki/Power_over_Ethernet) as
 well.
 
-## Solar
+### Solar power
 
 Some nodes have their own solar panels, which are generally preferable
-for simplicity reasons.
+for simplicity reasons, see the above [base stations and solar
+section](#base-stations-and-solar) for more options.
 
 The configuration of a separate solar power system is considered out
 of scope here for the moment, but our previous wiki had [some
