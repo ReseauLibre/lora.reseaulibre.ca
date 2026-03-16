@@ -67,7 +67,7 @@ service or network.
   Prometheus, untested
 - [siltamesh](https://codeberg.org/tpikonen/siltamesh): [XMPP](https://en.wikipedia.org/wiki/XMPP) bridge, untested
 - [jeremiah-k/meshtastic-matrix-relay](https://github.com/jeremiah-k/meshtastic-matrix-relay): [Matrix](https://matrix.org) bridge, see the
-  [Matrix bridge documenation](mmrelay.md#usage) for more usage tips
+  [Matrix bridge documentation](mmrelay.md#usage) for more usage tips
 - [AkitaEngineering/Akita-Meshtastic-Meshcore-Bridge](https://github.com/AkitaEngineering/Akita-Meshtastic-Meshcore-Bridge): another
   generic bridge, named afed meshcore, but really aimed at
   bridging meshtastic with other tools, untested
