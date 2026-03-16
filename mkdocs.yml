@@ -17,10 +17,12 @@ nav:
   - References:
     - references.md
     - Hardware: references/hardware.md
-    - references/software.md
-    - references/maps.md
+    - Software:
+        - Index: references/software.md
+        - references/mmrelay.md
+        - references/maps.md
+        - Meta: meta.md
     - references/neighbours.md
-    - Meta: meta.md
     - Code of Conduct: code.md
   - News: news/index.md
 markdown_extensions:
@@ -36,7 +38,7 @@ theme:
   features:
     # - navigation.prune
     # - navigation.sections
-    # - navigation.expand
+    - navigation.expand
     - navigation.tabs
     - navigation.tabs.sticky
     # - navigation.top
