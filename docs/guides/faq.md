@@ -68,6 +68,11 @@ Try to bring your device higher up or outside.
 Look at the [maps](../references/maps.md) to see if there are relays in your
 neighbourhood.
 
+Try to [ask for help](../contact.md) or send the command `!ping` in the [Matrix
+bridge](https://matrix.to/#/#reseaulibre-meshtastic-bridge:matrix.org) to see if you can hear that bot on the Meshtastic
+network. See also the [using the Matrix bridge reference](../references/software.md#using-the-matrix-bridge) for how
+to use the bridge.
+
 ## How many nodes in the network?
 
 Hard to tell. The [maps](../references/maps.md) seem to show somewhere between 20 and 40
