@@ -28,6 +28,7 @@ nav:
 markdown_extensions:
   - admonition
   - footnotes
+  - md_in_html
   - pymdownx.details
   - pymdownx.superfences
   - tables

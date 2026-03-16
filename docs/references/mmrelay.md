@@ -6,8 +6,20 @@ used for a variety of things.
 ## Usage
 
 Messages sent in the bridged room
-([#reseaulibre-meshtastic-bridge:matrix.org](https://matrix.to/#/#reseaulibre-meshtastic-bridge:matrix.org)) will be sent to the
-Meshtastic "LongFast" channel and vice versa. 
+([#reseaulibre-meshtastic-bridge:matrix.org](https://matrix.to/#/#reseaulibre-meshtastic-bridge:matrix.org))
+will be sent to the Meshtastic "LongFast" channel and vice versa. It
+is named `rl-mmrelay-litlitaly` on both sides. On Meshtastic, its
+short name is `litl`.
+
+The bridge also replies to direct messages.
+
+It will show up like this in your device listing in the Android app:
+
+<figure markdown="span">
+![Card for the Matrix bot](matrix-bot-screenshot.jpg)
+  <figcaption>A sighting of the Matrix bot in the Meshtastic Android
+  app, with the bot marked as favourite and a surprisingly Good signal.</figcaption>
+</figure>
 
 There are [plugins](https://github.com/jeremiah-k/meshtastic-matrix-relay/wiki/Core-Plugins) that allow for some fancier operations:
 
