@@ -42,26 +42,26 @@ mmrelay=docker-compose exec mmrelay mmrelay
 patch config:
 
 ```diff
---- sample_config.yaml  2026-03-15 20:01:08.939719431 -0400
-+++ /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/config.yaml      2026-03-15 21:17:09.713552548 -0400
-@@ -44,27 +44,25 @@                                                                                                                           21:25:15 [10/1983]
+--- sample_config.yaml	2026-03-15 20:01:08.939719431 -0400
++++ /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/config.yaml	2026-03-15 21:40:59.802696541 -0400
+@@ -44,27 +44,25 @@
    # 4. For interactive setup, use: mmrelay auth login
-   #         
-   e2ee:         
+   #
+   e2ee:
 -    enabled: true
 +    enabled: false
  
-   # Message prefix customization (Meshtastic _ Matrix direction)
+   # Message prefix customization (Meshtastic → Matrix direction)
    #prefix_enabled: true # Enable prefixes on messages from mesh (e.g., "[Alice/MyMesh]: message")
    #prefix_format: "[{long}/{mesh}]: " # Default format. Variables: {long1-20}, {long}, {short}, {mesh1-20}, {mesh}
-                  
+ 
  matrix_rooms: # Needs at least 1 room & channel, but supports all Meshtastic channels
 -  - id: "#someroomalias:example.matrix.org" # Matrix room aliases & IDs supported
 +  - id: "#reseaulibre-meshtastic-bridge:matrix.org" # TODO: invite the bot here and then make room public
      meshtastic_channel: 0
 -  - id: "!someroomid:example.matrix.org"
 -    meshtastic_channel: 2
-  
+ 
  meshtastic:
 -  connection_type: tcp # Choose either "tcp", "serial", or "ble"
 -  host: meshtastic.local # Only used when connection is "tcp"
@@ -78,10 +78,19 @@ patch config:
 -    replies: false   # Enable reply relaying between platforms
 +    reactions: true # Enable reaction relaying between platforms
 +    replies: true   # Enable reply relaying between platforms
-  
+ 
    # Connection health monitoring configuration
    #health_check:
-@@ -125,13 +125,21 @@
+@@ -116,7 +114,7 @@
+ # These are core Plugins - Note: Some plugins are experimental and some need maintenance.
+ plugins:
+   # Global setting for all plugins: require bot mentions for commands
+-  #require_bot_mention: true  # Set to false to disable mention requirements for all plugins
++  require_bot_mention: false  # Set to false to disable mention requirements for all plugins
+   
+   ping:
+     active: true
+@@ -125,13 +123,21 @@
    weather:
      active: true
      #require_bot_mention: true  # Override global setting for this plugin only
