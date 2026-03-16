@@ -35,6 +35,7 @@ chown mmrelay:mmrelay /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/
 
 curl -Lo /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/config.yaml https://raw.githubusercontent.com/jeremiah-k/meshtastic-matrix-relay/main/src/mmrelay/tools/sample_config.yaml
 
+mmrelay=docker-compose exec mmrelay mmrelay
 
 `mmrelay config generate` creates the config file as well.
 
