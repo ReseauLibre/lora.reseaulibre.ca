@@ -1004,15 +1004,15 @@ chown mmrelay:mmrelay /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/</p>
 <p><code>mmrelay config generate</code> creates the config file as well.</p>
 <p>patch config:</p>
 <div class="highlight"><pre><span></span><code><span class="gd">--- sample_config.yaml  2026-03-15 20:01:08.939719431 -0400</span>
-<span class="gi">+++ /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/config.yaml      2026-03-15 21:17:09.713552548 -0400</span>
-<span class="gu">@@ -44,27 +44,25 @@                                                                                                                           21:25:15 [10/1983]</span>
+<span class="gi">+++ /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/config.yaml  2026-03-15 21:40:59.802696541 -0400</span>
+<span class="gu">@@ -44,27 +44,25 @@</span>
 <span class="w"> </span>  # 4. For interactive setup, use: mmrelay auth login
-<span class="w"> </span>  #         
-<span class="w"> </span>  e2ee:         
+<span class="w"> </span>  #
+<span class="w"> </span>  e2ee:
 <span class="gd">-    enabled: true</span>
 <span class="gi">+    enabled: false</span>
 
-<span class="w"> </span>  # Message prefix customization (Meshtastic _ Matrix direction)
+<span class="w"> </span>  # Message prefix customization (Meshtastic → Matrix direction)
 <span class="w"> </span>  #prefix_enabled: true # Enable prefixes on messages from mesh (e.g., &quot;[Alice/MyMesh]: message&quot;)
 <span class="w"> </span>  #prefix_format: &quot;[{long}/{mesh}]: &quot; # Default format. Variables: {long1-20}, {long}, {short}, {mesh1-20}, {mesh}
 
@@ -1042,7 +1042,16 @@ chown mmrelay:mmrelay /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/</p>
 
 <span class="w"> </span>  # Connection health monitoring configuration
 <span class="w"> </span>  #health_check:
-<span class="gu">@@ -125,13 +125,21 @@</span>
+<span class="gu">@@ -116,7 +114,7 @@</span>
+<span class="w"> </span># These are core Plugins - Note: Some plugins are experimental and some need maintenance.
+<span class="w"> </span>plugins:
+<span class="w"> </span>  # Global setting for all plugins: require bot mentions for commands
+<span class="gd">-  #require_bot_mention: true  # Set to false to disable mention requirements for all plugins</span>
+<span class="gi">+  require_bot_mention: false  # Set to false to disable mention requirements for all plugins</span>
+
+<span class="w"> </span>  ping:
+<span class="w"> </span>    active: true
+<span class="gu">@@ -125,13 +123,21 @@</span>
 <span class="w"> </span>  weather:
 <span class="w"> </span>    active: true
 <span class="w"> </span>    #require_bot_mention: true  # Override global setting for this plugin only
@@ -1092,7 +1101,7 @@ with an access token the the home server configuration.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 16, 2026 01:46:42 UTC">2026-03-16 01:46:42</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 16, 2026 01:47:21 UTC">2026-03-16 01:47:21</span>
   </span>
 
     
