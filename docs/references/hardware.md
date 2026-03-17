@@ -8,18 +8,50 @@ you towards specific purchases to simplify your life.
 Also, in the main [guide](../guides/meshtastic.md), we *recommend* specific devices, while
 here we are more open to suggestions.
 
+## How we classify devices
+
+We have those categories:
+
+!!! success
+
+    Those devices were succesfully tested and used on a daily
+    basis. Those devices typically end up on the [main guide](../guides/meshtastic.md).
+
+!!! example "In testing"
+
+    We have our hands on those devices and are testing them. So far,
+    they work, but need more testing before they can be promoted to a
+    full "success".
+
+!!! question "Untested"
+
+    Those devices are interesting, but we haven't lay our hands on
+    them yet.
+
+!!! warning
+
+    We tested those devices, and there are serious caveats against
+    using them. Do not order one unless you know what you read an
+    understand the note on the device.
+
+!!! failure "Not working"
+
+    We tested those devices, and we recommend against using them entirely.
+
 ## Pocket-sized
 
 Those are day-to-day use device, can you can easily carry in a pocket
 or a pouch. Those generally have a battery.
 
-- [Heltec v4 pre-built kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/), see also this [Aliexpress
-  Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
-- [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket): GNSS, 1.3" OLED, acceleration sensor, power
-  button, 3200mAh battery, USB-C powered, 100$
-- [Lilygo T-Deck Plus](https://lilygo.cc/products/t-deck-plus-1) (80$): blackberry-like, standalone device
-  with battery, keyboard, trackball, LCD display, 2000mAh battery,
-  BLE, WiFi, GPS, MicroSD card reader, microphone/speaker
+!!! success
+
+    - [Heltec v4 pre-built kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/), see also this [Aliexpress
+      Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
+    - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket): GNSS, 1.3" OLED, acceleration sensor, power
+      button, 3200mAh battery, USB-C powered, 100$
+    - [Lilygo T-Deck Plus](https://lilygo.cc/products/t-deck-plus-1) (80$): blackberry-like, standalone device
+      with battery, keyboard, trackball, LCD display, 2000mAh battery,
+      BLE, WiFi, GPS, MicroSD card reader, microphone/speaker
 
 !!! example "In testing"
 
@@ -35,6 +67,9 @@ or a pouch. Those generally have a battery.
       37g, exposed GPIO ports, cheap (20$), does not ship with
       Meshtastic firmware, needs full erase before reflash or gets
       into a boot loop
+
+!!! warning
+
     - [SenseCAP Card Tracker T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) (40$USD)
       anarcat managed to brick this one, be careful when experimenting
       with it, it can be hard to recover, see [this note](https://anarc.at/services/meshtastic/#bricked).
@@ -57,8 +92,10 @@ Those are bulkier devices that are mounted on a mast or are used as a
 back-haul, possibly with a special [antenna](#antennas). The devices may or
 many not have batteries.
 
-- [WishMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini): solar, battery, mast-mountable,
-  cheaper than the full repeater below, 100$
+!!! success
+
+    - [WishMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini): solar, battery, mast-mountable,
+      cheaper than the full repeater below, 100$
 
 !!! example "In testing"
 
@@ -92,37 +129,45 @@ really be used in production as they lack a proper case.
 
 The devices here generally do not have a battery.
 
-- [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/) ([v3](https://heltec.org/project/wifi-lora-32-v3/)) is the cheapest option, 20$ with the case
-  (but no battery, and battery doesn't fit in the case), they also
-  have an [eink dev board](https://heltec.org/project/vision-master-e290/). one advantage Heltec has over the below
-  RAK kits is that you can connect to them over wifi, the downside is
-  they use more power because they are ESP32 based instead of NRF5280
-- the [RAK19003 base kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) (28$), *without* a case which [can be
-  printed](https://www.printables.com/model/286664-rak19003-micro-case-for-meshtastic) but it's tricky because there are many (83!) design
-  files in there, useful if you already order from RAK wireless and
-  need extra kits and know your way around DIY builds. you need to
-  also buy:
-    - 4 × M3x20mm socket head cap screws ([this kit](https://abra-electronics.com/hardware/metric-hardware-kits/nuts/sc-h-m-ss-kit-m2-m3-m4-stainless-steel-hex-socket-cap-head-screws-washers-nuts-assortment-kit-1080pcs.html) covers this and
-      the nuts)
-    - 4 × M3 nuts
-    - 2 × M2.5 screws (*not* part of the above kit, [length unclear](https://www.printables.com/model/286664-rak19003-micro-case-for-meshtastic/comments/2516182),
-      [here are M2.5x6mm](https://abra-electronics.com/hardware/metric-hardware-round-phillips-head-screws/1968p-machine-screw-m2.5-6mm-length-phillips-25-pack.html) or [this kit](https://abra-electronics.com/hardware/metric-hardware-kits/screws-bolts/repair-kit-for-eyeglasses-watches-screws-and-nuts-caps-m1m2m2.5-stainless.html))
-    - 1 × battery ([Amazon](https://www.amazon.com/gp/product/B091FKGW8H), possibly the same as [Abra](https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/1578-ada-lithium-ion-polymer-battery-37v-500mah-1578-ada.html),
-      optional?)
-    - there's also an optional [battery cutoff switch](https://www.amazon.com/gp/product/B086L2GPGX), couldn't find
-      an [equivalent on Abra](https://abra-electronics.com/electromechanical/switches/pushbutton-switches/)
+!!! success
+
+    - [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/) ([v3](https://heltec.org/project/wifi-lora-32-v3/)) is the cheapest option, 20$ with the case
+      (but no battery, and battery doesn't fit in the case), they also
+      have an [eink dev board](https://heltec.org/project/vision-master-e290/). one advantage Heltec has over the below
+      RAK kits is that you can connect to them over wifi, the downside is
+      they use more power because they are ESP32 based instead of NRF5280
+    - the [RAK19003 base kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) (28$) is more expensive, but less
+      power-hungry than the Heltec
 
 !!! example "In testing"
 
-  - [XIAO nRF52840 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-nRF52840-Wio-SX1262-Kit-for-Meshtastic-p-6400.html): even tinier, nRF52840,
-    Semtech SX1262, NFC, BT, -40°C ~ 65°C, 22 x 21 x 17.8mm. Probably
-    the smallest kit you can get. Reset button hard to reach.
+    - [XIAO nRF52840 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-nRF52840-Wio-SX1262-Kit-for-Meshtastic-p-6400.html): even tinier, nRF52840,
+      Semtech SX1262, NFC, BT, -40°C ~ 65°C, 22 x 21 x 17.8mm. Probably
+      the smallest kit you can get. Reset button hard to reach.
 
 !!! question "Untested"
 
     - [T-Beam Supreme](https://lilygo.cc/products/t-beam-supreme?variant=43067944173749): 1.3" OLED display, 18650 battery socket,
       magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, 52$, the [T-Beam
       SoftRF](https://lilygo.cc/products/t-beam-softrf?variant=43170158477493) is similar but without a display and cheaper, 30$USD
+
+### DIY build on top of the RAK kit
+
+The RAK19003 base kit comes *without* a case, but one [can be
+printed](https://www.printables.com/model/286664-rak19003-micro-case-for-meshtastic). It's tricky because there are many (83!) design files in
+there.
+
+On top of 3D-printing the case, you need to also buy:
+
+ - 4 × M3x20mm socket head cap screws ([this kit](https://abra-electronics.com/hardware/metric-hardware-kits/nuts/sc-h-m-ss-kit-m2-m3-m4-stainless-steel-hex-socket-cap-head-screws-washers-nuts-assortment-kit-1080pcs.html) covers this and
+   the nuts)
+ - 4 × M3 nuts
+ - 2 × M2.5 screws (*not* part of the above kit, [length unclear](https://www.printables.com/model/286664-rak19003-micro-case-for-meshtastic/comments/2516182),
+   [here are M2.5x6mm](https://abra-electronics.com/hardware/metric-hardware-round-phillips-head-screws/1968p-machine-screw-m2.5-6mm-length-phillips-25-pack.html) or [this kit](https://abra-electronics.com/hardware/metric-hardware-kits/screws-bolts/repair-kit-for-eyeglasses-watches-screws-and-nuts-caps-m1m2m2.5-stainless.html))
+ - 1 × battery ([Amazon](https://www.amazon.com/gp/product/B091FKGW8H), possibly the same as [Abra](https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/1578-ada-lithium-ion-polymer-battery-37v-500mah-1578-ada.html),
+   optional?)
+ - there's also an optional [battery cutoff switch](https://www.amazon.com/gp/product/B086L2GPGX), couldn't find
+   an [equivalent on Abra](https://abra-electronics.com/electromechanical/switches/pushbutton-switches/)
 
 ## Power
 
