@@ -69,10 +69,12 @@ many not have batteries.
       ship with the actual batteries, or the GNSS device, for that you
       need the [Pro
       kit](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html)
-      which is 20$ more.
+      which is 20$ more. Needs to be tested through night and winter.
     - [WisMesh Solar Repeater](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater): solar, battery, mast-mountable, unclear
       if it can be setup without solar and if it supports MQTT/ethernet,
-      300$, SenseCAP Solar Node P1 (below) might be sturdier and cheaper
+      300$, SenseCAP Solar Node P1 might be sturdier and
+      cheaper. Works through the night in summer time, needs testing
+      through winter.
 
 !!! question "Untested"
 
