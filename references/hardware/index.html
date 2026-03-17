@@ -1459,10 +1459,15 @@ or a pouch. Those generally have a battery.</p>
   button, 3200mAh battery, USB-C powered, 100$</li>
 </ul>
 <div class="admonition example">
-<p class="admonition-title">Untested</p>
+<p class="admonition-title">In testing</p>
 <ul>
 <li><a href="https://lilygo.cc/products/t-echo-lilygo">T-Echo</a>: e-ink display, GPS, BT 5.0, no wifi, only three
   buttons, NFC, 850mAh battery, temperature/pressure sensor, 55$</li>
+</ul>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Untested</p>
+<ul>
 <li><a href="https://lilygo.cc/products/t-beam-supreme?variant=43067944173749">T-Beam Supreme</a>: 1.3" OLED display, 18650 battery socket,
   magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, 52$, the <a href="https://lilygo.cc/products/t-beam-softrf?variant=43170158477493">T-Beam
   SoftRF</a> is similar but without a display and cheaper, 30$</li>
@@ -1473,9 +1478,18 @@ or a pouch. Those generally have a battery.</p>
   (137CAD) made with a Heltec T114, <a href="https://muzi.works/products/r1-neo-complete-meshtastic-device">this R1 Neo</a> (123CAD) is
   similar to the WisMesh Pocket, but smaller, better sealed, but more
   expensive</li>
+</ul>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">Not working</p>
+<p>Those devices are just not working at all in our tests.</p>
+<ul>
 <li>Seeedstudio <a href="https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html">XIAO ESP32S3 &amp; Wio-SX1262 Kit</a>: tiny, cheap, - 40℃ ~
   100℃, WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm,
-  37g, exposed GPIO ports, unclear if has a battery, 20$</li>
+  37g, exposed GPIO ports, cheap (20$) but can't actually be
+  flashed as it doesn't have enough room, boot fails with <code>E (482)
+  esp_image: Image length 2049504 doesn't fit in partition length
+  1536000</code>.</li>
 </ul>
 </div>
 <h2 id="base-stations-and-solar">Base stations and solar</h2>
@@ -1487,7 +1501,7 @@ many not have batteries.</p>
   cheaper than the full repeater below, 100$</li>
 </ul>
 <div class="admonition example">
-<p class="admonition-title">Untested</p>
+<p class="admonition-title">In testing</p>
 <ul>
 <li><a href="https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html">SenseCAP Solar Node P1</a>: 70$USD, outdoors solar-powered relay
   with 4x18650 batteries, nRF4840, BT 5.0, 3 power buttons, 5
@@ -1500,6 +1514,11 @@ many not have batteries.</p>
 <li><a href="https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater">WisMesh Solar Repeater</a>: solar, battery, mast-mountable, unclear
   if it can be setup without solar and if it supports MQTT/ethernet,
   300$, SenseCAP Solar Node P1 (below) might be sturdier and cheaper</li>
+</ul>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Untested</p>
+<ul>
 <li><a href="https://store.rakwireless.com/products/wismesh-ethernet-gateway">WisMesh Ethernet Gateway</a>: no battery, no solar (<a href="https://forum.rakwireless.com/t/ethernet-gateway-with-batteries-solar/14601">might be
   convertible</a>, but ethernet and PoE, note that <a href="https://github.com/meshtastic/firmware/issues/2908">HTTP-based
   management not possible</a>, so configuration still has to go
@@ -1656,7 +1675,7 @@ in <a href="https://antennatestlab.com/helium-network-antenna-reviews/alpha-netw
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 16, 2026 01:46:33 UTC">2026-03-16 01:46:33</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 17, 2026 02:38:53 UTC">2026-03-17 02:38:53</span>
   </span>
 
     
