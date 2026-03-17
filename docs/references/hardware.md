@@ -112,6 +112,12 @@ The devices here generally do not have a battery.
     - there's also an optional [battery cutoff switch](https://www.amazon.com/gp/product/B086L2GPGX), couldn't find
       an [equivalent on Abra](https://abra-electronics.com/electromechanical/switches/pushbutton-switches/)
 
+!!! example "In testing"
+
+  - [XIAO nRF52840 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-nRF52840-Wio-SX1262-Kit-for-Meshtastic-p-6400.html): even tinier, nRF52840,
+    Semtech SX1262, NFC, BT, -40°C ~ 65°C, 22 x 21 x 17.8mm. Probably
+    the smallest kit you can get. Reset button hard to reach.
+
 !!! question "Untested"
 
     - [T-Beam Supreme](https://lilygo.cc/products/t-beam-supreme?variant=43067944173749): 1.3" OLED display, 18650 battery socket,
