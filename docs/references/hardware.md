@@ -22,10 +22,13 @@ or a pouch. Those generally have a battery.
 - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket): GNSS, 1.3" OLED, acceleration sensor, power
   button, 3200mAh battery, USB-C powered, 100$
 
-!!! example "Untested"
+!!! example "In testing"
 
     - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): e-ink display, GPS, BT 5.0, no wifi, only three
       buttons, NFC, 850mAh battery, temperature/pressure sensor, 55$
+
+!!! question "Untested"
+
     - [T-Beam Supreme](https://lilygo.cc/products/t-beam-supreme?variant=43067944173749): 1.3" OLED display, 18650 battery socket,
       magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, 52$, the [T-Beam
       SoftRF](https://lilygo.cc/products/t-beam-softrf?variant=43170158477493) is similar but without a display and cheaper, 30$
@@ -57,7 +60,7 @@ many not have batteries.
 - [WishMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini): solar, battery, mast-mountable,
   cheaper than the full repeater below, 100$
 
-!!! example "Untested"
+!!! example "In testing"
 
     - [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html): 70$USD, outdoors solar-powered relay
       with 4x18650 batteries, nRF4840, BT 5.0, 3 power buttons, 5
@@ -70,6 +73,9 @@ many not have batteries.
     - [WisMesh Solar Repeater](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater): solar, battery, mast-mountable, unclear
       if it can be setup without solar and if it supports MQTT/ethernet,
       300$, SenseCAP Solar Node P1 (below) might be sturdier and cheaper
+
+!!! question "Untested"
+
     - [WisMesh Ethernet Gateway](https://store.rakwireless.com/products/wismesh-ethernet-gateway): no battery, no solar ([might be
       convertible](https://forum.rakwireless.com/t/ethernet-gateway-with-batteries-solar/14601), but ethernet and PoE, note that [HTTP-based
       management not possible](https://github.com/meshtastic/firmware/issues/2908), so configuration still has to go
