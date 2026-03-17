@@ -30,9 +30,6 @@ or a pouch. Those generally have a battery.
 
 !!! question "Untested"
 
-    - [T-Beam Supreme](https://lilygo.cc/products/t-beam-supreme?variant=43067944173749): 1.3" OLED display, 18650 battery socket,
-      magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, 52$, the [T-Beam
-      SoftRF](https://lilygo.cc/products/t-beam-softrf?variant=43170158477493) is similar but without a display and cheaper, 30$
     - [T-Deck Pro](https://lilygo.cc/products/t-deck-pro): 3.1" e-ink touch screen, 4G module, WiFi 2.4GHz,
       BLE 5, GPS, TF Card, mic, speaker, keypad, see also the [T5 e-paper
       s3 pro](https://lilygo.cc/products/t5-e-paper-s3-pro)
@@ -112,6 +109,12 @@ The devices here generally do not have a battery.
       optional?)
     - there's also an optional [battery cutoff switch](https://www.amazon.com/gp/product/B086L2GPGX), couldn't find
       an [equivalent on Abra](https://abra-electronics.com/electromechanical/switches/pushbutton-switches/)
+
+!!! question "Untested"
+
+    - [T-Beam Supreme](https://lilygo.cc/products/t-beam-supreme?variant=43067944173749): 1.3" OLED display, 18650 battery socket,
+      magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, 52$, the [T-Beam
+      SoftRF](https://lilygo.cc/products/t-beam-softrf?variant=43170158477493) is similar but without a display and cheaper, 30$USD
 
 ## Power
 
