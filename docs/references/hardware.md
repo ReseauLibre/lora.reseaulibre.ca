@@ -27,6 +27,11 @@ or a pouch. Those generally have a battery.
     - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): 200x200 e-ink
       display, NRF52840, GPS, BT 5.0, no wifi, only two
       buttons, NFC, 850mAh battery, temperature/pressure sensor, 55$
+    - Seeedstudio [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, - 40℃ ~
+      100℃, WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm,
+      37g, exposed GPIO ports, cheap (20$), does not ship with
+      Meshtastic firmware, needs full erase before reflash or gets
+      into a boot loop
 
 !!! question "Untested"
 
@@ -38,16 +43,7 @@ or a pouch. Those generally have a battery.
       similar to the WisMesh Pocket, but smaller, better sealed, but more
       expensive
 
-!!! failure "Not working"
-
-    Those devices are just not working at all in our tests.
-
-    - Seeedstudio [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, - 40℃ ~
-      100℃, WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm,
-      37g, exposed GPIO ports, cheap (20$) but can't actually be
-      flashed as it doesn't have enough room, boot fails with `E (482)
-      esp_image: Image length 2049504 doesn't fit in partition length
-      1536000`.
+<!-- !!! failure "Not working" -->
 
 ## Base stations and solar
 
