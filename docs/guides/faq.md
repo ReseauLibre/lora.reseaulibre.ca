@@ -89,9 +89,9 @@ Yes. Meshtastic -- or more specifically LoRa -- transmits over [ISM
 radio bands](https://en.wikipedia.org/wiki/ISM_radio_band), specifically centered around 915MHz.
 
 Technically, the LoRa protocol itself is patented by the [Semtech
-corportation](https://en.wikipedia.org/wiki/Semtech), so there is a non-free aspect to this. It is, in any
+corporation](https://en.wikipedia.org/wiki/Semtech), so there is a non-free aspect to this. It is, in any
 case, perfectly legal to *use* LoRa devices as a end-user, but this
-means that someone might not have the right to reimplement the LoRa
+means that someone might not have the right to re-implement the LoRa
 protocol on its own hardware, for example.
 
 ## Are my messages secret?
@@ -99,7 +99,7 @@ protocol on its own hardware, for example.
 It depends.
 
 First off, communications on the main "shared" channel ("LongFast")
-are encrypted, but with a pre-defined, shared key. So conversations
+are encrypted, but with a predefined, shared key. So conversations
 there are definitely not secret and should be treated as a public
 billboard.
 
@@ -139,8 +139,8 @@ on chip without a second computer), [transport nodes](https://github.com/jrl290/
 gateway to the Internet), Reticulum-over-Meshtastic, and more!
 
 But Reticulum, while being more advanced in terms of routing and
-cryptography, lacks the "ready-made" aspect of Meshtastatic. You can,
-today, buy a [hardware pre-installed with Meshtastic](../references/hardware.md) and it just
+cryptography, lacks the "ready-made" aspect of Meshtastic. You can,
+today, buy a [hardware preinstalled with Meshtastic](../references/hardware.md) and it just
 works, without anything else. Reticulum is just not there
 yet. Reticulum has also [switched to a in-house, non-free license in
 April 2025](https://github.com/markqvist/Reticulum/commit/e7daceec820850d397e6bf9aa585ef7222977891) and ultimately become "private source", where the
@@ -188,7 +188,7 @@ includes 3 hops limits and the LongFast default. For now, we are not
 saturating.
 
 When the time comes, we *will* need to change those defaults, as
-others have done in [Tenessee (USA)](https://mtnme.sh/mediumfast/), [Puget Mesh (USA)](https://pugetmesh.org/meshtastic/may2025/) the bay
+others have done in [Tennessee (USA)](https://mtnme.sh/mediumfast/), [Puget Mesh (USA)](https://pugetmesh.org/meshtastic/may2025/) the bay
 area (USA) and Wellington (NZ), see the [official blog post](https://meshtastic.org/blog/why-your-mesh-should-switch-from-longfast/) for a
 conversation about this.
 

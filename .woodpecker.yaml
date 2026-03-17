@@ -29,8 +29,8 @@ steps:
       - pip install -r requirements.txt
       - mkdocs build
       - git fetch --all
-      - git worktree add fr/ fr
-      - cd fr && mkdocs build -d ../site/fr
+      - git worktree add ../fr/ fr
+      - cd ../fr && mkdocs build -d site/fr
 
   # this is still the legacy v2 pages systm
   #
@@ -66,7 +66,8 @@ steps:
   aspell:
     image: debian
     commands:
-      - cd fr && ./spellcheck.sh fr
+      - ./spellcheck.sh en
+      - cd ../fr && ./spellcheck.sh fr
 
   checklinks:
     image: containers.torproject.org/tpo/web/container-images/lychee

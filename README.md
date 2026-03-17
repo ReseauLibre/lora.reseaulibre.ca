@@ -128,6 +128,18 @@ following the [peculiar file format](http://aspell.net/man-html/Format-of-the-Pe
 the word on its own line and increment the line count on the first
 line.
 
+Finally, if you use `backquotes` around a word, it will get excluded
+by the parser, which can be useful to bypass certain words marked as
+failures. This is particularly useful for project names that won't get
+reused or can't be added because they have a separator not recognized
+by Aspell. For example, Meshtastic is in our dictionary so it doesn't
+need to be quoted, but not `grebedoc.dev`, which does need back
+quotes. 
+
+(Astute readers will notice that `backquotes` itself needs back
+quotes, as it's an incorrect spelling, according to Aspell. Capitals
+matter as well: `aspell` is a typo, but not Aspell, of course.)
+
 ## CI build workflow details
 
 This section explains how the site is built. You don't need to read
@@ -138,12 +150,12 @@ The way this is setup is rather convoluted because we need to have a
 custom domain and this is still not yet well supported by the new "git
 pages" and "actions" in Codeberg. So, essentially, it works like this:
 
-1. on push, codeberg somehow notifies <https://ci.codeberg.org> which
+1. on push, Codeberg somehow notifies <https://ci.codeberg.org> which
    is Woodpecker CI instance
-2. woodpecker pulls the git repo, builds the site, and commits the
+2. woodpecker pulls the git repository, builds the site, and commits the
    result to the `pages` branch
-3. woodpecker pushes the branch back to codeberg
-4. codeberg fires off a webhook to publish the site to git pages
+3. woodpecker pushes the branch back to Codeberg
+4. code berg fires off a webhook to publish the site to git pages
 
 ### First setup
 
@@ -152,7 +164,7 @@ To set this up, I had to first [follow the manual pushing guide](https://docs.co
 1. build the site on the `main` branch
 1. create an "orphan" `pages` branch (`git switch --orphan pages`) for
    the site
-1. add and commit the `site` directory, but to the root of the repo
+1. add and commit the `site` directory, but to the root of the repository
 1. setup a [webhook to the legacy v2 pages](https://docs.codeberg.org/codeberg-pages/#repository-websites) on push
 1. push the `pages` branch
 
@@ -190,8 +202,8 @@ says it does not work for custom domains.
 There was a one day downtime on Codeberg on 2026-03-04 that cause the
 site to go down almost entirely. If this happens again, we can
 consider hosting the static site somewhere else. I was recommended
-[statichost.eu](https://www.statichost.eu/) (see [this guide](https://www.arscyni.cc/file/codeberg.html)) or [grebedoc.dev](https://grebedoc.dev/)
-("codeberg" backwards). This might be difficult to deploy while the
+[`statichost.eu`](https://www.statichost.eu/) (see [this guide](https://www.arscyni.cc/file/codeberg.html)) or [`grebedoc.dev`](https://grebedoc.dev/)
+("Codeberg" backwards). This might be difficult to deploy while the
 site is down, unless another Git hosting platform is used.
 
 We also use the `cache` branch to carry around the Lychee cache. This

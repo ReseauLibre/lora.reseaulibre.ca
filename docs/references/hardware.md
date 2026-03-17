@@ -45,7 +45,7 @@ or a pouch. Those generally have a battery.
 
 !!! success
 
-    - [Heltec v4 pre-built kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/), see also this [Aliexpress
+    - [Heltec v4 prebuilt kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/), see also this [Aliexpress
       Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
     - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket): GNSS, 1.3" OLED, acceleration sensor, power
       button, 3200mAh battery, USB-C powered, 100$
@@ -102,7 +102,7 @@ many not have batteries.
     - [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html): 70$USD, outdoors solar-powered relay
       with 4x18650 batteries, nRF4840, BT 5.0, 3 power buttons, 5
       LEDs, USB-C for debug, [recommended by
-      nyme.sh](https://nyme.sh/faq/). Note that the base kit doesn't
+      `nyme.sh`](https://nyme.sh/faq/). Note that the base kit doesn't
       ship with the actual batteries, or the GNSS device, for that you
       need the [Pro
       kit](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html)
@@ -193,7 +193,7 @@ setups, from a small base station to a full house.
 ## Batteries
 
 Battery setups depends on the particular device. The [Heltec v4
-pre-built kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/), for example, uses [18650 battery cells](https://en.wikipedia.org/wiki/18650_battery). Those
+prebuilt kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/), for example, uses [18650 battery cells](https://en.wikipedia.org/wiki/18650_battery). Those
 cells need to be handled with care, see [this discussion about those
 batteries](https://wiki.why2025.org/Badge/Fire_hazard), for example.
 
@@ -204,7 +204,7 @@ shops"](https://www.openstreetmap.org/search?query=vape+shop&zoom=12&minlon=-74.
 
 We have experience with this:
 
-- [SYMITANT58](https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL) (25$CAD Amazon), a similar (and currently cheaper)
+- [`SYMITANT58`](https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL) (25$CAD Amazon), a similar (and currently cheaper)
   model is this [RF Explorer](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-930MHz-5-8dBi-800mm-p-5275.html) (10$USD from from Seeed Studio)
 
   Note that, to connect those to (say) a Heltec, you will need
@@ -220,7 +220,7 @@ Other lists include:
 
 - [Official Meshtastic guide](https://meshtastic.org/docs/hardware/antennas/)[^1], which also refers to a [series of
   antenna reports](https://github.com/meshtastic/antenna-reports)
-- [nyme.sh recommendations](https://nyme.sh/faq/#what-antenna)
+- [`nyme.sh` recommendations](https://nyme.sh/faq/#what-antenna)
 
 [^1]:
 
@@ -259,10 +259,10 @@ side.
    Unfortunately there doesn't seem to be many affordable low gain
    panels on the market (such panels are typically sold as sector
    antennas, but not always flat). A normal flat panel like the
-   [ARC-PD0913C01](https://www.streakwave.com/arc-wireless-arc-pd0913c01-arc-dual-pol-panel-ant-900mhz) has 13 dBi of gain and a half power beamwidth of
+   [ARC-PD0913C01](https://www.streakwave.com/arc-wireless-arc-pd0913c01-arc-dual-pol-panel-ant-900mhz) has 13 dBi of gain and a half power beam width of
    38 degrees which isn't ideal for this application.  Still, to
-   perform worse than a <3bDi small atennas, you'd need to be at leass
-   than 1/8 power beamwidth, which is probably around 150 degrees.  So
+   perform worse than a <3dBi small antennas, you'd need to be at least
+   than 1/8 power beam width, which is probably around 150 degrees.  So
    worth a try.
 
 In any case, for smaller setups, it's all a matter of having the best

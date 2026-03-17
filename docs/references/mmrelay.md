@@ -6,7 +6,7 @@ used for a variety of things.
 ## Usage
 
 Messages sent in the bridged room
-([#reseaulibre-meshtastic-bridge:matrix.org](https://matrix.to/#/#reseaulibre-meshtastic-bridge:matrix.org))
+([`#reseaulibre-meshtastic-bridge:matrix.org`](https://matrix.to/#/#reseaulibre-meshtastic-bridge:matrix.org))
 will be sent to the Meshtastic "LongFast" channel and vice versa. It
 is named `rl-mmrelay-litlitaly` on both sides. On Meshtastic, its
 short name is `litl`.
@@ -56,7 +56,7 @@ summer.
   the default `zoom=8` is far too large for the current mesh size
 ## Configuration
 
-There is now a [Matrix](https://matrix.org) bridge setup in the little italy
+There is now a [Matrix](https://matrix.org) bridge setup in the little Italy
 neighbourhood. I essentially followed [this quick start guide](https://github.com/jeremiah-k/meshtastic-matrix-relay/wiki/Getting-Started-With-Matrix-&-MM-Relay) and
 this [Docker guide](https://github.com/jeremiah-k/meshtastic-matrix-relay/blob/main/docs/DOCKER.md).
 
@@ -107,16 +107,16 @@ there:
 chown mmrelay:mmrelay /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/
 ```
 
-I could have used `mmrelay config generate` to create a sample config
+I could have used `mmrelay config generate` to create a sample configuration
 file, but instead I used:
 
     curl -Lo /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/config.yaml https://raw.githubusercontent.com/jeremiah-k/meshtastic-matrix-relay/main/src/mmrelay/tools/sample_config.yaml
 
-Then edited the config:
+Then edited the configuration:
 
 ```diff
 --- sample_config.yaml	2026-03-15 20:01:08.939719431 -0400
-+++ /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/config.yaml	2026-03-15 21:40:59.802696541 -0400
++++ /var/lib/docker/volumes/mmrelay_mmrelay-data/_data/confia/config.yaml	2026-03-15 21:40:59.802696541 -0400
 @@ -44,27 +44,25 @@
    # 4. For interactive setup, use: mmrelay auth login
    #
@@ -218,6 +218,6 @@ and connect to it with a relay like this over Bluetooth, and I'd
 probably install (and upgrade) the bot with `pip` then, on a
 single-board computer like a Beagle Board or Raspberry Pi.
 
-Note that in the above config patch, there are some [plugins](https://github.com/jeremiah-k/meshtastic-matrix-relay/wiki/Core-Plugins)
+Note that in the above patch, there are some [plugins](https://github.com/jeremiah-k/meshtastic-matrix-relay/wiki/Core-Plugins)
 enabled as well, see below on how to use those.
 
