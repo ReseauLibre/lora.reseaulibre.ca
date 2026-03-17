@@ -24,7 +24,8 @@ or a pouch. Those generally have a battery.
 
 !!! example "In testing"
 
-    - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): e-ink display, GPS, BT 5.0, no wifi, only three
+    - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): 200x200 e-ink
+      display, NRF52840, GPS, BT 5.0, no wifi, only two
       buttons, NFC, 850mAh battery, temperature/pressure sensor, 55$
 
 !!! question "Untested"
