@@ -1447,6 +1447,16 @@ interface that will allow you to correct or accept the words.</p>
 following the <a href="http://aspell.net/man-html/Format-of-the-Personal-and-Replacement-Dictionaries.html#Format-of-the-Personal-and-Replacement-Dictionaries">peculiar file format</a>. Essentially, you need to add
 the word on its own line and increment the line count on the first
 line.</p>
+<p>Finally, if you use <code>backquotes</code> around a word, it will get excluded
+by the parser, which can be useful to bypass certain words marked as
+failures. This is particularly useful for project names that won't get
+reused or can't be added because they have a separator not recognized
+by Aspell. For example, Meshtastic is in our dictionary so it doesn't
+need to be quoted, but not <code>grebedoc.dev</code>, which does need back
+quotes. </p>
+<p>(Astute readers will notice that <code>backquotes</code> itself needs back
+quotes, as it's an incorrect spelling, according to Aspell. Capitals
+matter as well: <code>aspell</code> is a typo, but not Aspell, of course.)</p>
 <h2 id="ci-build-workflow-details">CI build workflow details</h2>
 <p>This section explains how the site is built. You don't need to read
 this unless you want to debug the continuous integration (CI) process
@@ -1455,12 +1465,12 @@ or website build.</p>
 custom domain and this is still not yet well supported by the new "git
 pages" and "actions" in Codeberg. So, essentially, it works like this:</p>
 <ol>
-<li>on push, codeberg somehow notifies <a href="https://ci.codeberg.org">https://ci.codeberg.org</a> which
+<li>on push, Codeberg somehow notifies <a href="https://ci.codeberg.org">https://ci.codeberg.org</a> which
    is Woodpecker CI instance</li>
-<li>woodpecker pulls the git repo, builds the site, and commits the
+<li>woodpecker pulls the git repository, builds the site, and commits the
    result to the <code>pages</code> branch</li>
-<li>woodpecker pushes the branch back to codeberg</li>
-<li>codeberg fires off a webhook to publish the site to git pages</li>
+<li>woodpecker pushes the branch back to Codeberg</li>
+<li>code berg fires off a webhook to publish the site to git pages</li>
 </ol>
 <h3 id="first-setup">First setup</h3>
 <p>To set this up, I had to first <a href="https://docs.codeberg.org/codeberg-pages/pushing-output/">follow the manual pushing guide</a>:</p>
@@ -1468,7 +1478,7 @@ pages" and "actions" in Codeberg. So, essentially, it works like this:</p>
 <li>build the site on the <code>main</code> branch</li>
 <li>create an "orphan" <code>pages</code> branch (<code>git switch --orphan pages</code>) for
    the site</li>
-<li>add and commit the <code>site</code> directory, but to the root of the repo</li>
+<li>add and commit the <code>site</code> directory, but to the root of the repository</li>
 <li>setup a <a href="https://docs.codeberg.org/codeberg-pages/#repository-websites">webhook to the legacy v2 pages</a> on push</li>
 <li>push the <code>pages</code> branch</li>
 </ol>
@@ -1503,8 +1513,8 @@ says it does not work for custom domains.</p>
 <p>There was a one day downtime on Codeberg on 2026-03-04 that cause the
 site to go down almost entirely. If this happens again, we can
 consider hosting the static site somewhere else. I was recommended
-<a href="https://www.statichost.eu/">statichost.eu</a> (see <a href="https://www.arscyni.cc/file/codeberg.html">this guide</a>) or <a href="https://grebedoc.dev/">grebedoc.dev</a>
-("codeberg" backwards). This might be difficult to deploy while the
+<a href="https://www.statichost.eu/"><code>statichost.eu</code></a> (see <a href="https://www.arscyni.cc/file/codeberg.html">this guide</a>) or <a href="https://grebedoc.dev/"><code>grebedoc.dev</code></a>
+("Codeberg" backwards). This might be difficult to deploy while the
 site is down, unless another Git hosting platform is used.</p>
 <p>We also use the <code>cache</code> branch to carry around the Lychee cache. This
 could be fixed if <a href="https://github.com/woodpecker-ci/woodpecker/discussions/2296">Woodpecker supported caches</a> or with a Forgejo
@@ -1531,7 +1541,7 @@ could be fixed if <a href="https://github.com/woodpecker-ci/woodpecker/discussio
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 13, 2026 21:35:07 UTC">2026-03-13 21:35:07</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 17, 2026 21:16:17 UTC">2026-03-17 21:16:17</span>
   </span>
 
     
