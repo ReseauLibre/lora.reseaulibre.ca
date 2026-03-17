@@ -32,14 +32,6 @@ steps:
       - git worktree add fr/ fr
       - cd fr && mkdocs build -d ../site/fr
 
-  typos:
-    # while we wait for an upstream image:
-    # https://github.com/crate-ci/typos/issues/427
-    image: archlinux
-    commands:
-      - pacman -Sy --noconfirm typos
-      - typos
-
   # this is still the legacy v2 pages systm
   #
   # see the README file for a discussion
@@ -62,6 +54,14 @@ steps:
       - cd $CI_REPO_NAME
       - git add .
       - if ! git diff --cached --quiet; then git commit -m "Woodpecker CI ${CI_BUILD_CREATED}" && git push; fi
+
+  typos:
+    # while we wait for an upstream image:
+    # https://github.com/crate-ci/typos/issues/427
+    image: archlinux
+    commands:
+      - pacman -Sy --noconfirm typos
+      - typos
 
   aspell:
     image: debian
