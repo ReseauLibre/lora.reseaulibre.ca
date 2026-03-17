@@ -14,7 +14,7 @@ We have those categories:
 
 !!! success
 
-    Those devices were succesfully tested and used on a daily
+    Those devices were successfully tested and used on a daily
     basis. Those devices typically end up on the [main guide](../guides/meshtastic.md).
 
 !!! example "In testing"
