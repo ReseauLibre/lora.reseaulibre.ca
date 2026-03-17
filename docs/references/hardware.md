@@ -36,9 +36,17 @@ or a pouch. Those generally have a battery.
       (137CAD) made with a Heltec T114, [this R1 Neo](https://muzi.works/products/r1-neo-complete-meshtastic-device) (123CAD) is
       similar to the WisMesh Pocket, but smaller, better sealed, but more
       expensive
+
+!!! failure "Not working"
+
+    Those devices are just not working at all in our tests.
+
     - Seeedstudio [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, cheap, - 40℃ ~
       100℃, WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm,
-      37g, exposed GPIO ports, unclear if has a battery, 20$
+      37g, exposed GPIO ports, cheap (20$) but can't actually be
+      flashed as it doesn't have enough room, boot fails with `E (482)
+      esp_image: Image length 2049504 doesn't fit in partition length
+      1536000`.
 
 ## Base stations and solar
 
