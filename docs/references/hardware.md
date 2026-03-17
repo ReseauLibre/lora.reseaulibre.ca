@@ -220,6 +220,46 @@ antenna tester.
 Longer cables will yield more power loss and lesser transmissions as
 well.
 
+### Theory and testing
+
+!!! abstract
+
+    This is a rather theoritical section about antenna
+    design. You probably don't need to know about this: just use the
+    antenna that ships with your device or buy a more powerful antenna
+    from the recommended list and you'll be fine.
+
+Note that there is an antenna is "tuned" to a specific frequency, or
+more precisely to the "wavelength" of the frequency, which is an
+inverse function of the frequency. So any antenna is *tuned* to a
+specific wavelength, typically half or a quarter of the wavelength.
+
+To compute the wavelength of a frequency, you take the speed of light:
+
+    c = 299 792 458 m/s
+
+... and divide it by the frequency in Hertz, in our case about 900MHz:
+
+    c/915MHz = c/915 000 000 Hz ≈ 0.327 642 m ≈ 32.8 cm
+
+So a correctly sized 915MHz antenna is about 33cm long. Note that
+900MHz is relatively similar, about 4 mm longer:
+
+    c/900MHz ≈ 33.3 cm
+
+For all intents and purposes, we often consider an antenna tuned for
+the *middle* of the frequency to be correct enough.
+
+But all those stub antennas are not 30cm long, are they? That's
+because you can have antennas that are only a *fraction* of the
+wavelength, typically a half or quarter of the length, which makes
+antennas that are 16 cm or 8 cm long.
+
+You can also have *longer* antennas. [This blog post explains colinear
+antennas](https://www.antennaexperts.co/blog/everything-you-need-to-know-about-collinear-antenna), which are omnidirectional antennas that are physically
+*longer* than the wavelength of the frequency we operate on, which
+improves the gain as well.
+
 See also [this guide that shows tests on various antennas](https://medium.com/home-wireless/testing-and-reviewing-lora-antennas-5b37dfa594a3) to get a
 better idea on how to test antennas.
 
