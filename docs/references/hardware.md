@@ -277,7 +277,7 @@ well.
 
 !!! abstract
 
-    This is a rather theoritical section about antenna
+    This is a rather theoretical section about antenna
     design. You probably don't need to know about this: just use the
     antenna that ships with your device or buy a more powerful antenna
     from the recommended list and you'll be fine.
@@ -308,7 +308,7 @@ because you can have antennas that are only a *fraction* of the
 wavelength, typically a half or quarter of the length, which makes
 antennas that are 16 cm or 8 cm long.
 
-You can also have *longer* antennas. [This blog post explains colinear
+You can also have *longer* antennas. [This blog post explains collinear
 antennas](https://www.antennaexperts.co/blog/everything-you-need-to-know-about-collinear-antenna), which are omnidirectional antennas that are physically
 *longer* than the wavelength of the frequency we operate on, which
 improves the gain as well.
