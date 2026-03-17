@@ -15,7 +15,6 @@ or a pouch. Those generally have a battery.
 
 - [Heltec v4 pre-built kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/), see also this [Aliexpress
   Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
-- [SenseCAP Card Tracker T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) (40$USD)
 - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket): GNSS, 1.3" OLED, acceleration sensor, power
   button, 3200mAh battery, USB-C powered, 100$
 - [Lilygo T-Deck Plus](https://lilygo.cc/products/t-deck-plus-1) (80$): blackberry-like, standalone device
@@ -32,6 +31,9 @@ or a pouch. Those generally have a battery.
       37g, exposed GPIO ports, cheap (20$), does not ship with
       Meshtastic firmware, needs full erase before reflash or gets
       into a boot loop
+    - [SenseCAP Card Tracker T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) (40$USD)
+      anarcat managed to brick this one, be careful when experimenting
+      with it, it can be hard to recover, see [this note](https://anarc.at/services/meshtastic/#bricked).
 
 !!! question "Untested"
 
