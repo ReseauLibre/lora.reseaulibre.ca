@@ -900,6 +900,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maps
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -916,6 +934,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#meshtastic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meshtastic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meshcore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meshcore
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#site-planners" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Site planners
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1070,6 +1140,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#meshtastic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meshtastic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meshcore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meshcore
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#site-planners" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Site planners
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1095,26 +1206,39 @@
 
 <h1 id="maps">Maps</h1>
 <p>We hope to eventually show a map of nodes in the local mesh, but for
-now use one of those:</p>
+now use one of those.</p>
+<h2 id="meshtastic">Meshtastic</h2>
 <ul>
 <li><a href="https://meshmap.net/"><code>meshmap.net</code></a>, shows neighbours, hardware details, altitude,
   position precision and so on, based on the <a href="https://meshtastic.org/docs/software/integrations/mqtt/#public-mqtt-server">official MQTT server</a>
-  and <a href="https://github.com/brianshea2/meshmap.net"><code>brianshea2/meshmap.net</code></a></li>
+  and <a href="https://github.com/brianshea2/meshmap.net"><code>brianshea2/meshmap.net</code></a>, sees about 35 nodes in the
+  Montreal area as of 2026-03-18</li>
 <li><a href="https://meshtastic.liamcottle.net/">Liam Cottle's map</a>, similar to <code>meshmap.net</code>, but more details in
   the per-node reports, based on MQTT reports to
   <code>mqtt.meshtastic.liamcottle.net</code>, powerful map (now advertising
-  Meshcore)</li>
+  Meshcore), sees about 51 nodes in the Montreal area
+  as of 2026-03-18</li>
 <li><a href="https://map.mt.gt/">Canada mesh map</a>, also based on the <code>meshmap.net</code> software and the
   official MQTT server, but with the <code>msh/CA</code> prefix (as opposed to
-  the "default" <code>msh/US</code></li>
-<li><a href="https://github.com/Affirmatech/MeshSense">Meshsense map</a>, based on reports from <a href="https://github.com/Affirmatech/MeshSense">Meshsense</a> installs,
-  shows links between nodes</li>
+  the "default" <code>msh/US</code>, sees about 23 nodes in the Montreal area
+  as of 2026-03-18</li>
+<li><a href="https://meshsense.affirmatech.com/">Meshsense map</a>, based on reports from <a href="https://github.com/Affirmatech/MeshSense">Meshsense</a> installs,
+  shows links between nodes, sees about 23 nodes in the Montreal area
+  as of 2026-03-18</li>
 </ul>
 <p>Note that those maps don't necessarily reflect actual relays that are
 visible on the ground, only relays that report their position. A relay
 might be in your neighbourhood and not visible on the map, so don't
 rely on the map to predict success. Try anyways!</p>
-<p>Other tools include:</p>
+<h2 id="meshcore">Meshcore</h2>
+<ul>
+<li>the <a href="https://meshcore.co.uk/map.html">official map</a> often doesn't load here, or very slowly</li>
+<li>the <a href="https://map.meshcore.dev">https://map.meshcore.dev</a> map shows about 14-25 relays in the
+  greater Montreal area as of 2026-03-18</li>
+</ul>
+<h2 id="site-planners">Site planners</h2>
+<p>Those tools allow you to see what a relay in a given location would
+see. It's useful to plan where to install a relay.</p>
 <ul>
 <li><a href="https://site.meshtastic.org/">Meshtastic Site planner</a></li>
 <li><a href="https://www.heywhatsthat.com/">Hey What's That</a> can also be used to predict coverage, and gives
@@ -1142,7 +1266,7 @@ rely on the map to predict success. Try anyways!</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 17, 2026 21:16:17 UTC">2026-03-17 21:16:17</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 18, 2026 15:40:18 UTC">2026-03-18 15:40:18</span>
   </span>
 
     
