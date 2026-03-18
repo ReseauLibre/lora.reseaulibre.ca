@@ -1,2 +1,2 @@
 [files]
-extend-exclude = ["**/*.fr.*", "fr/**", "assets/javascript/**"]
+extend-exclude = ["**/*.fr.*", "fr/**", "assets/javascripts/**"]
