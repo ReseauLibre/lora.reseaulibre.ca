@@ -1,7 +1,9 @@
 # Maps
 
 We hope to eventually show a map of nodes in the local mesh, but for
-now use one of those:
+now use one of those.
+
+## Meshtastic
 
 - [`meshmap.net`](https://meshmap.net/), shows neighbours, hardware details, altitude,
   position precision and so on, based on the [official MQTT server](https://meshtastic.org/docs/software/integrations/mqtt/#public-mqtt-server)
@@ -25,7 +27,16 @@ visible on the ground, only relays that report their position. A relay
 might be in your neighbourhood and not visible on the map, so don't
 rely on the map to predict success. Try anyways!
 
-Other tools include:
+## Meshcore
+
+- the [official map](https://meshcore.co.uk/map.html) often doesn't load here, or very slowly
+- the <https://map.meshcore.dev> map shows about 14-25 relays in the
+  greater Montreal area as of 2026-03-18
+
+## Site planners
+
+Those tools allow you to see what a relay in a given location would
+see. It's useful to plan where to install a relay.
 
 - [Meshtastic Site planner](https://site.meshtastic.org/)
 - [Hey What's That](https://www.heywhatsthat.com/) can also be used to predict coverage, and gives
