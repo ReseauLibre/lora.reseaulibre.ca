@@ -204,13 +204,21 @@ shops"](https://www.openstreetmap.org/search?query=vape+shop&zoom=12&minlon=-74.
 
 We have experience with this:
 
-- [`SYMITANT58`](https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL) (25$CAD Amazon), a similar (and currently cheaper)
-  model is this [RF Explorer](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-930MHz-5-8dBi-800mm-p-5275.html) (10$USD from from Seeed Studio)
+- [`SYMITANT58`](https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL) (25$CAD Amazon)
 
-  Note that, to connect those to (say) a Heltec, you will need
-  adapters:
+- a similar (and currently cheaper) model is this [RF Explorer](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-930MHz-5-8dBi-800mm-p-5275.html)
+  (10$USD from from Seeed Studio)
+  
+!!! warning
 
-        N (Antenna) --(cable)--> RP-SMA --(adaptor)--> SMA --(pigtail)--> IPEX U.FL (Heltec v4)
+    The [antenna reports project](https://github.com/meshtastic/antenna-reports) warns against using a Seeed Studio
+    antenna, particularly for non-US frequencies. It's unclear if it is
+    the same antenna as the above RF Explorer, further testing necessary.
+
+Note that, to connect those to (say) a Heltec, you will need
+adapters:
+
+    N (Antenna) --(cable)--> RP-SMA --(adaptor)--> SMA --(pigtail)--> IPEX U.FL (Heltec v4)
 
 See also [this connector guide](https://pole1.co.uk/blog/5/) for recognizing those N, RP-SMA,
 SMA and IPEX connectors. And yes, in the above setup, we essentially
