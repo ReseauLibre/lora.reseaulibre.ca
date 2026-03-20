@@ -682,6 +682,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#advanced-batch-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced: batch configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1179,6 +1190,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#advanced-batch-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced: batch configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1313,7 +1335,12 @@ anyone else.</p>
 <tr>
 <td><a href="https://meshtastic.org/docs/configuration/radio/lora/">LoRa</a>: <a href="https://meshtastic.org/docs/configuration/radio/lora/#ignore-mqtt">Ignore MQTT</a></td>
 <td><code>true</code></td>
-<td>this keeps traffic from the wider mesh from entering the   network and reduces overall noise.</td>
+<td>this keeps traffic from the wider mesh from entering the network and reduces overall noise.</td>
+</tr>
+<tr>
+<td><a href="https://meshtastic.org/docs/configuration/radio/lora/">LoRa</a>: <a href="https://meshtastic.org/docs/configuration/radio/lora/#max-hops">Max hops</a></td>
+<td>3</td>
+<td>default. you <em>can</em> raise this if you really think it might help you reach further, but we generally advise against it</td>
 </tr>
 <tr>
 <td><a href="https://meshtastic.org/docs/configuration/radio/position/">Position</a>: <a href="https://meshtastic.org/docs/configuration/radio/position/#gps-mode">GPS Mode</a></td>
@@ -1333,6 +1360,74 @@ anyone else.</p>
 </tbody>
 </table>
 </div>
+<h2 id="advanced-batch-configuration">Advanced: batch configuration</h2>
+<p>If you feel adventurous and want to make the above configuration
+easier, you can use the following YAML file -- let's call it
+<code>minimal.yaml</code> -- for the minimal configuration:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">config</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">lora</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">region</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">US</span>
+<span class="w">    </span><span class="nt">modemPreset</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LONG_FAST</span>
+</code></pre></div>
+<p>This can be loaded with:</p>
+<pre><code>meshtastic --configure minimal.yaml
+</code></pre>
+<p>Then, the "recommended" settings (above) can be configured with the
+<code>meshtastic</code> command again:</p>
+<div class="highlight"><pre><span></span><code>meshtastic --set bluetooth.fixedPin 123456
+meshtastic --set bluetooth.mode FIXED_PIN
+meshtastic --set lora.hopLimit 3
+meshtastic --set lora.ignoreMqtt true
+meshtastic --set position.gpsMode NOT_PRESENT
+meshtastic --set device.role CLIENT
+meshtastic --set-owner &quot;you only live once&quot;
+meshtastic --set-owner-short yolo
+</code></pre></div>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p>Note that the order of commands matter here. Some configuration,
+like <code>device.role CLIENT</code> will reboot the device, and will make
+further commands fail. That is why the setting is last here. Using
+a config file solves that problem entirely, as all settings are
+set at once.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You should really set a random PIN here, not 123456, because that
+is the <a href="https://www.youtube.com/watch?v=LcHnf7VQuhc">stupidiest combination ever</a>. You can
+generate such a "random" pin with:</p>
+<pre><code>shuf -i 100000-1000000 -n 1
+</code></pre>
+<p>Also please change away from the "yolo" user above, otherwise
+we'll get confused quick as yo who "yolo" is.</p>
+</div>
+<p>This can of course also be done in a configuration file that we'll
+call <code>recommended.yaml</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">config</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">bluetooth</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">fixedPin</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">123456</span>
+<span class="w">    </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FIXED_PIN</span>
+<span class="w">  </span><span class="nt">device</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CLIENT</span>
+<span class="w">  </span><span class="nt">lora</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">hopLimit</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span>
+<span class="w">    </span><span class="nt">ignoreMqtt</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">position</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">gpsMode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NOT_PRESENT</span>
+<span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">you only live once</span>
+<span class="nt">owner_short</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">yolo</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Note that you <em>can</em> set the <code>CLIENT_BASE</code> role as well but your <code>meshtastic</code>
+command might not know about it so you need to specify it as an
+magic number:</p>
+<pre><code>meshtastic --set device.role 12
+</code></pre>
+</div>
+<p>Once you're done, you might want to backup your configuration with:</p>
+<pre><code>meshtastic --export-config &gt; backup.yaml
+</code></pre>
 <div class="footnote">
 <hr />
 <ol>
@@ -1363,7 +1458,7 @@ anyone else.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 17, 2026 02:39:56 UTC">2026-03-17 02:39:56</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 20, 2026 20:51:28 UTC">2026-03-20 20:51:28</span>
   </span>
 
     
