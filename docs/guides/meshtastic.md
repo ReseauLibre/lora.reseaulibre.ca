@@ -92,7 +92,8 @@ app.
     |----------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------|
     | [Bluetooth][]: PIN         | (random)    | change the [default PIN][] to some random value and keep it in your password manager                                              |
     | [Device][]:  [Role][]      | `CLIENT`    | consider `CLIENT_BASE` if you run a relay, don't change the role without reading the [Choosing The Right Device Role][] guide     |
-    | [LoRa][]: [Ignore MQTT][]  | `true`      | this keeps traffic from the wider mesh from entering the   network and reduces overall noise.                                     |
+    | [LoRa][]: [Ignore MQTT][]  | `true`      | this keeps traffic from the wider mesh from entering the network and reduces overall noise.                                     |
+    | [LoRa][]: [Max hops][]     | 3           | default. you *can* raise this if you really think it might help you reach further, but we generally advise against it |
     | [Position][]: [GPS Mode][] | `DISABLE`   | or reduce the [Position precision][] in the [Channel configuration][], otherwise you leak your position to the network by default[^1] |
     | [User][]: "Short Name"     | (arbitrary) | only 4 characters, set to something easy to remember, this is what's visible on the map and chats                                 |
     | User: "Long Name"          | (arbitrary) | set to something useful, but not offensive, ham operators can set their call sign here                                            |
@@ -104,6 +105,7 @@ app.
  [Choosing The Right Device Role]: https://meshtastic.org/blog/choosing-the-right-device-role/
  [Device]: https://meshtastic.org/docs/configuration/radio/device/
  [LoRa]: https://meshtastic.org/docs/configuration/radio/lora/
+ [Max hops]: https://meshtastic.org/docs/configuration/radio/lora/#max-hops
  [Position]: https://meshtastic.org/docs/configuration/radio/position/
  [Role]: https://meshtastic.org/docs/configuration/tips/#roles
  [User]: https://meshtastic.org/docs/configuration/radio/user/
