@@ -220,6 +220,8 @@ adapters:
 
     N (Antenna) --(cable)--> RP-SMA --(adaptor)--> SMA --(pigtail)--> IPEX U.FL (Heltec v4)
 
+[Nooelec has a kit](https://www.nooelec.com/store/sdr/sdr-adapters-and-cables/sma-adapter-connectivity-kit.html).
+
 See also [this connector guide](https://pole1.co.uk/blog/5/) for recognizing those N, RP-SMA,
 SMA and IPEX connectors. And yes, in the above setup, we essentially
 touch on *all* the connectors from the guide.
