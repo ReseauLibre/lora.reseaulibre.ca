@@ -114,3 +114,83 @@ app.
  [Ignore MQTT]: https://meshtastic.org/docs/configuration/radio/lora/#ignore-mqtt
 [GPS Mode]: https://meshtastic.org/docs/configuration/radio/position/#gps-mode
 
+## Advanced: batch configuration
+
+If you feel adventurous and want to make the above configuration
+easier, you can use the following YAML file -- let's call it
+`minimal.yaml` -- for the minimal configuration:
+
+```yaml
+config:
+  lora:
+    region: US
+    modemPreset: LONG_FAST
+```
+
+This can be loaded with:
+
+    meshtastic --configure minimal.yaml
+
+Then, the "recommended" settings (above) can be configured with the
+`meshtastic` command again:
+
+```
+meshtastic --set bluetooth.fixedPin 123456
+meshtastic --set bluetooth.mode FIXED_PIN
+meshtastic --set lora.hopLimit 3
+meshtastic --set lora.ignoreMqtt true
+meshtastic --set position.gpsMode NOT_PRESENT
+meshtastic --set device.role CLIENT
+meshtastic --set-owner "you only live once"
+meshtastic --set-owner-short yolo
+```
+
+!!! bug
+
+    Note that the order of commands matter here. Some configuration,
+    like `device.role CLIENT` will reboot the device, and will make
+    further commands fail. That is why the setting is last here. Using
+    a config file solves that problem entirely, as all settings are
+    set at once.
+
+!!! tip
+
+    You should really set a random PIN here, not 123456, because that
+    is the [stupidiest combination ever](https://www.youtube.com/watch?v=LcHnf7VQuhc). You can
+    generate such a "random" pin with:
+    
+        shuf -i 100000-1000000 -n 1
+
+    Also please change away from the "yolo" user above, otherwise
+    we'll get confused quick as yo who "yolo" is.
+
+This can of course also be done in a configuration file that we'll
+call `recommended.yaml`:
+
+```yaml
+config:
+  bluetooth:
+    fixedPin: 123456
+    mode: FIXED_PIN
+  device:
+    role: CLIENT
+  lora:
+    hopLimit: 3
+    ignoreMqtt: true
+  position:
+    gpsMode: NOT_PRESENT
+owner: you only live once
+owner_short: yolo
+```
+
+!!! tip
+
+    Note that you *can* set the `CLIENT_BASE` role as well but your `meshtastic`
+    command might not know about it so you need to specify it as an
+    magic number:
+
+        meshtastic --set device.role 12
+
+Once you're done, you might want to backup your configuration with:
+
+    meshtastic --export-config > backup.yaml
