@@ -149,7 +149,7 @@ plugins:
               'guides/index.md': 'guides/meshtastic.md'
               # the hardware page is really a reference more than a guide
               'guides/hardware.md': 'references/hardware/index.md'
-              'references/hardware/index.md': 'references/hardware/index.md'
+              'references/hardware.md': 'references/hardware/index.md'
               'references/software.md': 'references/software/index.md'
               # obscure FAQ URL that came up for less than a day
               'guides/z_faq.md': 'guides/faq.md'
