@@ -46,7 +46,7 @@ theme:
     - navigation.expand
     - navigation.tabs
     - navigation.tabs.sticky
-    # - navigation.top
+    - navigation.top
     # - navigation.tracking
     - navigation.indexes
     - content.action.edit  # Edit this page
