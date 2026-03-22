@@ -1,22 +1,59 @@
-# About
+# Welcome to the Montreal Mesh project!
 
-The [LoRa](https://en.wikipedia.org/wiki/LoRa) `reseaulibre.ca` project is a community group building a
-[mesh network](https://en.wikipedia.org/wiki/Mesh_networking) in the greater Montreal area.
+<div class="grid cards" markdown>
 
-We are a group of makers, tech enthusiasts and amateur radio operators
-dedicated to the deployment and support of off-grid communication.
+-   :octicons-info-16: **What**
 
-Concretely, we're doing decentralized, low-bandwidth and low-power
-communications, sharing text messages without the internet, over the
-entire city.
+    ---
+    
+    We are building a [mesh network](https://en.wikipedia.org/wiki/Mesh_networking) in the greater Montreal area:
+    a decentralized, low-power communication network.
+    
+    The goal is to communicate without the internet and without the
+    power grid, over the entire city.
 
-We are currently focused on [Meshtastic](https://meshtastic.org/) but are also researching
-[Meshcore](https://meshcore.co.uk/), [Reticulum](https://reticulum.network/) and [amateur radio](https://en.wikipedia.org/wiki/Amateur_radio).
+-   :octicons-person-16: **Who**
 
-Our mission is to provide community-owned resilient communication
-infrastructure for disaster recovery and local events. We also want to
-foster collaboration among our members and reclaim ownership of the
-Network.
+    ---
+    
+    We are a group of makers, tech enthusiasts and amateur radio operators dedicated to the deployment and support of off-grid communication.
+
+    We are part of a larger planet-wide effort at rethinking
+    fundamental communication systems and industrial society.
+    
+-   :octicons-share-android-16: **How**
+
+    ---
+
+    We are currently focused on [LoRa](https://en.wikipedia.org/wiki/LoRa) protocols and especially
+    [Meshtastic](https://meshtastic.org/) but are also researching [Meshcore](https://meshcore.co.uk/),
+    [Reticulum](https://reticulum.network/) and [amateur radio](https://en.wikipedia.org/wiki/Amateur_radio).
+
+-   :octicons-sun-16: **Why**
+
+    ---
+    
+    Our mission is to provide community-owned resilient communication
+    infrastructure for disaster recovery and the local communities.
+    
+    We also want to learn, teach, share knowledge and collaborate.
+
+-   :octicons-flame-16: **Getting started**
+
+    ---
+    
+    Follow the [:octicons-arrow-right-24: Getting started with
+    Meshtastic guide](guides/meshtastic.md) and join us, or consult
+    our [growing reference documentation](references/index.md).
+
+-   :octicons-question-16: **Other questions?**
+
+    ---
+    
+    Consult our [FAQ](guides/faq.md) or [contact us](contact.md),
+    we're a friendly bunch!
+
+</div>
 
 This site aims at documenting the project and our knowledge. You can
 change this site through the [Git repository](https://codeberg.org/anarcat/lora-reseaulibre-ca) and by hitting the
