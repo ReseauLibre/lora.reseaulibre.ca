@@ -1,40 +1,4 @@
-# Antennas
-
-We have experience with this:
-
-- [`SYMITANT58`](https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL) (25$CAD Amazon)
-
-- a similar (and currently cheaper) model is this [RF Explorer](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-930MHz-5-8dBi-800mm-p-5275.html)
-  (10$USD from from Seeed Studio)
-  
-!!! warning
-
-    The [antenna reports project](https://github.com/meshtastic/antenna-reports) warns against using a Seeed Studio
-    antenna, particularly for non-US frequencies. It's unclear if it is
-    the same antenna as the above RF Explorer, further testing necessary.
-
-Note that, to connect those to (say) a Heltec, you will need
-adapters:
-
-    N (Antenna) --(cable)--> RP-SMA --(adaptor)--> SMA --(pigtail)--> IPEX U.FL (Heltec v4)
-
-[Nooelec has a kit](https://www.nooelec.com/store/sdr/sdr-adapters-and-cables/sma-adapter-connectivity-kit.html).
-
-See also [this connector guide](https://pole1.co.uk/blog/5/) for recognizing those N, RP-SMA,
-SMA and IPEX connectors. And yes, in the above setup, we essentially
-touch on *all* the connectors from the guide.
-
-Other lists include:
-
-- [Official Meshtastic guide](https://meshtastic.org/docs/hardware/antennas/)[^1], which also refers to a [series of
-  antenna reports](https://github.com/meshtastic/antenna-reports)
-- [`nyme.sh` recommendations](https://nyme.sh/faq/#what-antenna)
-
-[^1]:
-
-    Note that the "Alfa AOA-915-5ACM" recommended for "Base station /
-    repeater" in that guide falls short of the advertised +5dBi gain
-    in [this technical review](https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi).
+# Antenna theory and practice
 
 ## Picking the right antenna
 

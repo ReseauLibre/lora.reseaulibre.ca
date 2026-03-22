@@ -15,16 +15,9 @@ The configuration of a separate solar power system is considered out
 of scope here for the moment, but our previous wiki had [some
 documentation about power generation](https://wiki.reseaulibre.ca/documentation/power/) but consider that the
 information provided there is over 10 years old and [things have
-changed significantly in that space since then](https://www.newyorker.com/news/annals-of-a-warming-planet/46-billion-years-on-the-sun-is-having-a-moment). We'd welcome a
-guide on various solar panel setups that could accommodate various
-setups, from a small base station to a full house.
+changed significantly in that space since then](https://www.newyorker.com/news/annals-of-a-warming-planet/46-billion-years-on-the-sun-is-having-a-moment).
 
-# Batteries
-
-Battery setups depends on the particular device. The [Heltec v4
-prebuilt kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/), for example, uses [18650 battery cells](https://en.wikipedia.org/wiki/18650_battery). Those
-cells need to be handled with care, see [this discussion about those
-batteries](https://wiki.why2025.org/Badge/Fire_hazard), for example.
-
-It's best to buy "protected" cells, which are typically sold in ["vape
-shops"](https://www.openstreetmap.org/search?query=vape+shop&zoom=12&minlon=-74.07085418701173&minlat=45.36975515764875&maxlon=-73.19263458251955&maxlat=45.662286836234586#map=12/45.4999/-73.5775).
+We'd welcome a guide on various solar panel setups that could
+accommodate various setups, from a small base station to a full
+house. We believe [the Sun is having a moment](https://www.newyorker.com/news/annals-of-a-warming-planet/46-billion-years-on-the-sun-is-having-a-moment) and the time to
+transition is now.
