@@ -27,7 +27,7 @@ If you want to put something on your roof or outside, consider a
 self-contained solar node instead of running power all the way out
 there.
 
-See also our full [hardware reference](../references/hardware.md).
+See also our full [hardware reference](../references/hardware/index.md).
 
 ## Do I need something on my roof?
 
@@ -140,7 +140,7 @@ gateway to the Internet), Reticulum-over-Meshtastic, and more!
 
 But Reticulum, while being more advanced in terms of routing and
 cryptography, lacks the "ready-made" aspect of Meshtastic. You can,
-today, buy a [hardware preinstalled with Meshtastic](../references/hardware.md) and it just
+today, buy a [hardware preinstalled with Meshtastic](../references/hardware/index.md) and it just
 works, without anything else. Reticulum is just not there
 yet. Reticulum has also [switched to a in-house, non-free license in
 April 2025](https://github.com/markqvist/Reticulum/commit/e7daceec820850d397e6bf9aa585ef7222977891) and ultimately become "private source", where the

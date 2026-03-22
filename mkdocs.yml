@@ -15,14 +15,18 @@ nav:
     - guides/meshtastic.md
     - FAQ: guides/faq.md
   - References:
-    - references.md
-    - Hardware: references/hardware.md
+    - references/index.md
+    - Hardware:
+        - references/hardware/index.md
+        - references/hardware/antennas.md
+        - references/hardware/power.md
     - Software:
-        - Index: references/software.md
+        - references/software/index.md
         - references/mmrelay.md
         - references/maps.md
         - Meta: meta.md
     - references/neighbours.md
+    - references/other.md
     - Code of Conduct: code.md
   - News: news/index.md
 markdown_extensions:
@@ -140,7 +144,9 @@ plugins:
               # meshtastic. you want $that? pick reticulum" and so on.
               'guides/index.md': 'guides/meshtastic.md'
               # the hardware page is really a reference more than a guide
-              'guides/hardware.md': 'references/hardware.md'
+              'guides/hardware.md': 'references/hardware/index.md'
+              'references/hardware/index.md': 'references/hardware/index.md'
+              'references/software.md': 'references/software/index.md'
               # obscure FAQ URL that came up for less than a day
               'guides/z_faq.md': 'guides/faq.md'
 #   # a bunch more possible plugins

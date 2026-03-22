@@ -1,7 +1,7 @@
 # Software index
 
 A collection of software we find interesting enough to outline on top
-of the [official list](https://meshtastic.org/docs/software/):
+of the [official list](https://meshtastic.org/docs/software/).
 
 ## Apps
 
@@ -67,7 +67,7 @@ service or network.
   Prometheus, untested
 - [`siltamesh`](https://codeberg.org/tpikonen/siltamesh): [XMPP](https://en.wikipedia.org/wiki/XMPP) bridge, untested
 - [`jeremiah-k/meshtastic-matrix-relay`](https://github.com/jeremiah-k/meshtastic-matrix-relay): [Matrix](https://matrix.org) bridge, see the
-  [Matrix bridge documentation](mmrelay.md#usage) for more usage tips
+  [Matrix bridge documentation](../mmrelay.md#usage) for more usage tips
 - [`AkitaEngineering/Akita-Meshtastic-Meshcore-Bridge`](https://github.com/AkitaEngineering/Akita-Meshtastic-Meshcore-Bridge): another
   generic bridge, named after Meshcore, but really aimed at
   bridging Meshtastic with other tools, untested
