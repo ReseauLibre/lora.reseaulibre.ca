@@ -324,7 +324,53 @@ antennas](https://www.antennaexperts.co/blog/everything-you-need-to-know-about-c
 improves the gain as well.
 
 See also [this guide that shows tests on various antennas](https://medium.com/home-wireless/testing-and-reviewing-lora-antennas-5b37dfa594a3) to get a
-better idea on how to test antennas.
+better idea on how to test antennas. 
+
+#### NanoVNA crash course
+
+As mentioned above, a good antenna tester is the [NanoVNA](https://nanovna.com/) which
+you can [order from nooelec](https://www.nooelec.com/store/test-equipment/analyzers/nanovna-h4-bundle.html). Make sure you get a kit that covers
+the 915MHz range, which is not necessarily the case: some kits *stop*
+at 900MHz! Also get a closed case, some are more "bare boards" types
+of things. [This link](https://www.nooelec.com/store/test-equipment/analyzers/nanovna-h4-bundle.html) should be fine.
+
+To test an antenna, it needs to be a [SMA](https://en.wikipedia.org/wiki/SMA_connector) antenna. But lots of
+LoRa antennas are actually [RP-SMA](https://en.wikipedia.org/wiki/SMA_connector#Reverse_polarity), so you will need a [RP-SMA
+female to SMA male adapter](https://mgs4u.com/product/rp-sma-female-to-sma-male-adapter-8503/) which Nooelec oddly doesn't sell
+individually, but they do have a [good connector kit](https://www.nooelec.com/store/sma-adapter-connectivity-kit.html) which is
+useful to connect *other* random stuff you might get your hands on.
+
+When you plug in the antenna, you will likely see one or a couple of
+"dips" in the yellow line: those are where the antenna is "tuned",
+where it will transmit better. By moving the cursor (with the little
+button) you can see which frequency those are.
+
+If you are a radio wizard, you can also read the [Smith chart](https://en.wikipedia.org/wiki/Smith_chart) in
+green to figure out the [SWR](https://en.wikipedia.org/wiki/Standing_wave_ratio) (which you generally want to be below
+2). But if, like me, you barely understand all of this, you might want
+to change one of the traces (say the cyan one) by going into "Display"
+and set it to "SWR".
+
+Typically, you also want to calibrate the device before doing any test
+beyond a quick checkup. For this, the NanoVNA normally ships with
+three little adapters that look like [this image from
+Nooelect](https://www.nooelec.com/store/media/catalog/product/cache/1/image/1200x/040ec09b1e35df139433887a97daa66f/i/m/img_7392_v3_1.jpg). Two have little conductor pins sticking out in the
+middle, one doesn't, one has a longer stub, and one is gray. The
+[calibration guide](https://nanovna.com/?page_id=2) will tell you to connect those in order:
+"OPEN", "SHORT", and "LOAD" or sometimes called "LONG". This is how
+you identify those:
+
+- "OPEN": the one without a pin, think "open electric circuit",
+  because the pin doesn't connect because it's not there!
+
+- "SHORT": with a pin, short stub, same color (golden) as the
+  "OPEN"
+
+- "LOAD": with a pin, longest stub, different color (gray, stainless)
+
+You connect those in order and hit the "calibrate" menus in
+order. Yes, this is annoying, and yes, it's often necessary, otherwise
+you'll get inaccurate or useless results.
 
 ## Hacks
 
