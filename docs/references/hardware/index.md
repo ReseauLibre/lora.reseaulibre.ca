@@ -187,6 +187,7 @@ shops"](https://www.openstreetmap.org/search?query=vape+shop&zoom=12&minlon=-74.
   St-Michel store, not on the website
 - Abra: [Samsung 25R 18650 2500mAh 20A](https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/bat-18650-s.html) for 10$
 - Mastervox: [3.7V 3000mAh](https://www.mastervox.com/fr_CA/pieces/batterie/rechargeable/bat18650b_37-batterie-li-ion-18650-bouton-37v-3000mah) for 10$, maybe protected?
+- Veshra: [EVE 35V INR18650 3500mAh 10.2A](https://www.veshra.io/products/cmmi0b7ct0000ddfj49kcys1l) for 6$
 
 That said, so far it seems most folks use normal "unprotected" cells
 in various devices, without any problems. As long as you handle the
@@ -266,6 +267,20 @@ Other lists include:
     Note that the "Alfa AOA-915-5ACM" recommended for "Base station /
     repeater" in that guide falls short of the advertised +5dBi gain
     in [this technical review](https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi).
+
+## Resellers
+
+The above lists generally link to the upstream supplier or official
+resellers.
+
+There are, however, other resellers that might be more interesting to
+you for various reasons:
+
+- [Veshra](https://www.veshra.io/): more expensive, but local, possibly south shore (to be
+  confirmed); stocks antennas, batteries, Heltec, currently no Seeed
+  Studio, RAK, or ESP32 devices
+- [Space Hedgehog](https://space-hedgehog.com/): also more expensive; stocks Antenna, Heltec,
+  based in Ottawa, related to the [Ottawa mesh](https://ottawamesh.ca/)
 
 ## Hacks
 
