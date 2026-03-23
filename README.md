@@ -209,3 +209,13 @@ site is down, unless another Git hosting platform is used.
 We also use the `cache` branch to carry around the Lychee cache. This
 could be fixed if [Woodpecker supported caches](https://github.com/woodpecker-ci/woodpecker/discussions/2296) or with a Forgejo
 ["cache" action](https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/) or [artifacts](https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts).
+
+## Matrix commit bot
+
+A bot was setup to send messages for new commits on the [`#reseaulibre:matrix.org`
+Matrix room](https://matrix.to/#/#reseaulibre:matrix.org) whenever there is a push. This was done using the
+[built-in Codeberg Matrix integration](https://docs.codeberg.org/integrations/matrix/).
+
+This was done instead of setting up a dedicated bot like [Maubot](https://mau.bot/)
+with its [numerous plugins](https://plugins.mau.bot/) like a [RSS plugin](https://github.com/maubot/rss), or a [webhook
+plugin](https://github.com/jkhsjdhjs/maubot-webhook).
