@@ -218,4 +218,4 @@ Matrix room](https://matrix.to/#/#reseaulibre:matrix.org) whenever there is a pu
 
 This was done instead of setting up a dedicated bot like [Maubot](https://mau.bot/)
 with its [numerous plugins](https://plugins.mau.bot/) like a [RSS plugin](https://github.com/maubot/rss), or a [webhook
-plugin](https://github.com/jkhsjdhjs/maubot-webhook).
+plugin](https://github.com/jkhsjdhjs/maubot-webhook). There is also a [dedicated RSS bridge](https://gitlab.com/matrix-rss-bridge/matrix-rss-bridge).
