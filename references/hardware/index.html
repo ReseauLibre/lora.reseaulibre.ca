@@ -1200,6 +1200,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Base stations and solar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mounts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1213,6 +1230,17 @@
   
     <nav class="md-nav" aria-label="Development boards">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cases
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#diy-build-on-top-of-the-rak-kit" class="md-nav__link">
@@ -1252,6 +1280,28 @@
   
     <nav class="md-nav" aria-label="Batteries">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#18650" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18650
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flat-cells" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flat cells
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#charger" class="md-nav__link">
@@ -1448,7 +1498,10 @@ many not have batteries.</p>
   ship with the actual batteries, or the GNSS device, for that you
   need the <a href="https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html">Pro
   kit</a>
-  which is 20$ more. Needs to be tested through night and winter.</li>
+  which is 20$ more. Needs to be tested through night and
+  winter. Also sold at
+  <a href="https://ca.robotshop.com/products/sensecap-solar-node-p1-meshtastic-w-o-gps-battery">RobotShop</a>
+  for 100CAD.</li>
 <li><a href="https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater">WisMesh Solar Repeater</a>: solar, battery, mast-mountable, unclear
   if it can be setup without solar and if it supports MQTT/ethernet,
   300$, SenseCAP Solar Node P1 might be sturdier and
@@ -1467,6 +1520,10 @@ many not have batteries.</p>
   LoRa/Meshtastic!</li>
 </ul>
 </div>
+<h3 id="mounts">Mounts</h3>
+<p>Base stations will typically be mounted on rooftops or poles.</p>
+<p>The <a href="https://ottawamesh.ca/hardware/repeater-mounting-options/">Ottawa Mesh docs</a> have great documentation and examples for
+this.</p>
 <h2 id="development-boards">Development boards</h2>
 <p>Those are bare-bones circuit boards that <em>work</em> standalone but cannot
 really be used in production as they lack a proper case.</p>
@@ -1499,6 +1556,12 @@ really be used in production as they lack a proper case.</p>
   SoftRF</a> is similar but without a display and cheaper, 30$USD</li>
 </ul>
 </div>
+<h3 id="cases">Cases</h3>
+<p>If you use a development board, you might want a case around it: most
+of them (except the Heltec v3) come without a case.</p>
+<p>The <a href="https://ottawamesh.ca/hardware/recommended-companions/">Ottawa folks recommend</a> the <a href="https://www.printables.com/@AlleyCat/models">AlleyCat models</a>, although the
+license on the page is a bit unclear, as it claims CC BY-SA but then
+follows that with a paragraph limiting commercial use.</p>
 <h3 id="diy-build-on-top-of-the-rak-kit">DIY build on top of the RAK kit</h3>
 <p>The RAK19003 base kit comes <em>without</em> a case, but one <a href="https://www.printables.com/model/286664-rak19003-micro-case-for-meshtastic">can be
 printed</a>. It's tricky because there are many (83!) design files in
@@ -1518,22 +1581,7 @@ there.</p>
 <h2 id="power">Power</h2>
 <p>Moved to its own page, see <a href="power/">Power</a>.</p>
 <h2 id="batteries">Batteries</h2>
-<p>Battery setups depends on the particular device. The <a href="https://heltec.org/project/wifi-lora-32-v4-expansion-housing/">Heltec v4
-prebuilt kit</a>, for example, uses <a href="https://en.wikipedia.org/wiki/18650_battery">18650 battery cells</a>. Those
-cells need to be handled with care, see <a href="https://wiki.why2025.org/Badge/Fire_hazard">this discussion about those
-batteries</a>, for example.</p>
-<p>It's best to buy "protected" cells, which are typically sold in <a href="https://www.openstreetmap.org/search?query=vape+shop&amp;zoom=12&amp;minlon=-74.07085418701173&amp;minlat=45.36975515764875&amp;maxlon=-73.19263458251955&amp;maxlat=45.662286836234586#map=12/45.4999/-73.5775">"vape
-shops"</a>. Electronics shops also hold stock, typically:</p>
-<ul>
-<li>Addison: has 5-10$ unprotected batteries near the LEDs desk at the
-  St-Michel store, not on the website</li>
-<li>Abra: <a href="https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/bat-18650-s.html">Samsung 25R 18650 2500mAh 20A</a> for 10$</li>
-<li>Mastervox: <a href="https://www.mastervox.com/fr_CA/pieces/batterie/rechargeable/bat18650b_37-batterie-li-ion-18650-bouton-37v-3000mah">3.7V 3000mAh</a> for 10$, maybe protected?</li>
-<li>Veshra: <a href="https://www.veshra.io/products/cmmi0b7ct0000ddfj49kcys1l">EVE 35V INR18650 3500mAh 10.2A</a> for 6$</li>
-</ul>
-<p>That said, so far it seems most folks use normal "unprotected" cells
-in various devices, without any problems. As long as you handle the
-batteries with care, you should be fine.</p>
+<p>Battery setups depends on the particular device.</p>
 <p>Contrary to popular belief, it seems like lithium-ion batteries <a href="https://yycmesh.com/blog/cold-weather-charging">work
 fine below freezing</a> although we still need to confirm the results
 from the folks in Calgary ourselves. The Calgary folks are using plain
@@ -1541,6 +1589,31 @@ unprotected batteries below freezing without issues.</p>
 <p>For really remote relays that are difficult to service, they started
 using <a href="https://en.wikipedia.org/wiki/Lithium-titanate_battery">LTO batteries</a> which are better suited to handle deep freeze
 -- we're talking -40℃ on mountaintop -- conditions.</p>
+<p>Battery cells need to be handled with care, see <a href="https://wiki.why2025.org/Badge/Fire_hazard">this discussion about
+those batteries</a>, for example. So far it seems most folks use
+normal "unprotected" cells in various devices, without any
+problems. As long as you handle the batteries with care, you should be
+fine.</p>
+<h3 id="18650">18650</h3>
+<p>The <a href="https://heltec.org/project/wifi-lora-32-v4-expansion-housing/">Heltec v4 prebuilt kit</a>, like many other devices, uses <a href="https://en.wikipedia.org/wiki/18650_battery">18650
+battery cells</a>.</p>
+<p>You can buy those batteries in <a href="https://www.openstreetmap.org/search?query=vape+shop&amp;zoom=12&amp;minlon=-74.07085418701173&amp;minlat=45.36975515764875&amp;maxlon=-73.19263458251955&amp;maxlat=45.662286836234586#map=12/45.4999/-73.5775">"vape shops"</a> and various electronics
+shops also hold stock:</p>
+<ul>
+<li>Addison: has 5-10$CAD unprotected batteries near the LEDs desk at
+  the St-Michel store, not on the website</li>
+<li>Abra: <a href="https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/bat-18650-s.html">Samsung 25R 18650 2500mAh 20A</a> for 10$CAD</li>
+<li>Mastervox: <a href="https://www.mastervox.com/fr_CA/pieces/batterie/rechargeable/bat18650b_37-batterie-li-ion-18650-bouton-37v-3000mah">3.7V 3000mAh</a> for 10$CAD, maybe protected?</li>
+<li>Veshra: <a href="https://www.veshra.io/products/cmmi0b7ct0000ddfj49kcys1l">EVE 35V INR18650 3500mAh 10.2A</a> for 6$CAD</li>
+<li>AliExpress: <a href="https://www.aliexpress.com/item/1005009897181947.html">Kuugro ku-3500 18650 Battery 3500mAh 3.7V 12A</a> for
+  2$CAD, 90$CAD for 20</li>
+</ul>
+<h3 id="flat-cells">Flat cells</h3>
+<p>Those cell packs are more used in DIY kits or lab setups:</p>
+<ul>
+<li><a href="https://www.makerfocus.com/products/makerfocus-3-7v-3000mah-lithium-rechargeable-battery-1s-3c-lipo-battery-pack-of-4">Makerfocus</a> has <a href="https://www.makerfocus.com/products/makerfocus-3-7v-3000mah-lithium-rechargeable-battery-1s-3c-lipo-battery-pack-of-4">3.7V 3000mAh Lithium Rechargeable Battery 1S 3C
+  LiPo Battery (Pack of 4)</a> for 25$USD</li>
+</ul>
 <h3 id="charger">Charger</h3>
 <p>You might also want to have a charger if you deal with a lot of 18650
 batteries.</p>
@@ -1596,6 +1669,7 @@ touch on <em>all</em> the connectors from the guide.</p>
 <li><a href="https://meshtastic.org/docs/hardware/antennas/">Official Meshtastic guide</a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, which also refers to a <a href="https://github.com/meshtastic/antenna-reports">series of
   antenna reports</a></li>
 <li><a href="https://nyme.sh/faq/#what-antenna"><code>nyme.sh</code> recommendations</a></li>
+<li><a href="https://ottawamesh.ca/hardware/repeater-mounting-options/">Ottawa Mesh recommendations</a></li>
 </ul>
 <h2 id="resellers">Resellers</h2>
 <p>The above lists generally link to the upstream supplier or official
@@ -1608,6 +1682,7 @@ you for various reasons:</p>
   Studio, RAK, or ESP32 devices</li>
 <li><a href="https://space-hedgehog.com/">Space Hedgehog</a>: also more expensive; stocks Antenna, Heltec,
   based in Ottawa, related to the <a href="https://ottawamesh.ca/">Ottawa mesh</a></li>
+<li><a href="https://mpandw.ca/">Motion Power &amp; Witt Supply Co.</a> has <a href="https://mpandw.ca/products/eve-35v-18650-battery-cells-set-of-6-with-holders">EVE 35V 18650 3500mAh</a> 6 for 36$, based in Ottawa</li>
 </ul>
 <h2 id="hacks">Hacks</h2>
 <ul>
@@ -1653,7 +1728,7 @@ in <a href="https://antennatestlab.com/helium-network-antenna-reviews/alpha-netw
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 23, 2026 02:40:59 UTC">2026-03-23 02:40:59</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 23, 2026 23:29:08 UTC">2026-03-23 23:29:08</span>
   </span>
 
     
