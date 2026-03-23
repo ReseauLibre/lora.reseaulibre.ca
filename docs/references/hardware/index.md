@@ -188,12 +188,35 @@ shops"](https://www.openstreetmap.org/search?query=vape+shop&zoom=12&minlon=-74.
 - Abra: [Samsung 25R 18650 2500mAh 20A](https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/bat-18650-s.html) for 10$
 - Mastervox: [3.7V 3000mAh](https://www.mastervox.com/fr_CA/pieces/batterie/rechargeable/bat18650b_37-batterie-li-ion-18650-bouton-37v-3000mah) for 10$, maybe protected?
 
+That said, so far it seems most folks use normal "unprotected" cells
+in various devices, without any problems. As long as you handle the
+batteries with care, you should be fine.
+
 Contrary to popular belief, it seems like lithium-ion batteries [work
 fine below freezing](https://yycmesh.com/blog/cold-weather-charging) although we still need to confirm the results
-from the folks in Calgary ourselves.
+from the folks in Calgary ourselves. The Calgary folks are using plain
+unprotected batteries below freezing without issues.
 
-You will likely also want to have a 18650 charger. Do *not* try to
-charge those batteries in a normal "AA" battery charger!
+For really remote relays that are difficult to service, they started
+using [LTO batteries](https://en.wikipedia.org/wiki/Lithium-titanate_battery) which are better suited to handle deep freeze
+-- we're talking -40℃ on mountaintop -- conditions.
+
+### Charger
+
+You might also want to have a charger if you deal with a lot of 18650
+batteries.
+
+!!! warning
+
+    Do *not* try to charge 18650 batteries in a normal "AA" battery
+    charger! They won't fit and it won't work.
+
+You don't need a charger for a single device: devices normally come
+with their own charge controller and can charge over whatever power
+source they normally use (USB-C, Solar, etc).
+
+It is just nice to slot them in a device already charged, and they are
+not necessarily sold charged.
 
 - Abra: [4-battery charger](https://abra-electronics.com/batteries-holders/battery-chargers-automotive/bat-charger-14-li-ion-battery-charger-4-slots-usb-bh-042100-04u.html), 15$: works well, LEDs turn green when
   full, needs a 5V 1-2A USB-A power supply (not included), 1A output
