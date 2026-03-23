@@ -1250,6 +1250,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Batteries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#charger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Charger
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1257,6 +1274,17 @@
     <span class="md-ellipsis">
       
         Antennas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resellers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resellers
       
     </span>
   </a>
@@ -1501,12 +1529,31 @@ shops"</a>. Electronics shops also hold stock, typically:</p>
   St-Michel store, not on the website</li>
 <li>Abra: <a href="https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/bat-18650-s.html">Samsung 25R 18650 2500mAh 20A</a> for 10$</li>
 <li>Mastervox: <a href="https://www.mastervox.com/fr_CA/pieces/batterie/rechargeable/bat18650b_37-batterie-li-ion-18650-bouton-37v-3000mah">3.7V 3000mAh</a> for 10$, maybe protected?</li>
+<li>Veshra: <a href="https://www.veshra.io/products/cmmi0b7ct0000ddfj49kcys1l">EVE 35V INR18650 3500mAh 10.2A</a> for 6$</li>
 </ul>
+<p>That said, so far it seems most folks use normal "unprotected" cells
+in various devices, without any problems. As long as you handle the
+batteries with care, you should be fine.</p>
 <p>Contrary to popular belief, it seems like lithium-ion batteries <a href="https://yycmesh.com/blog/cold-weather-charging">work
 fine below freezing</a> although we still need to confirm the results
-from the folks in Calgary ourselves.</p>
-<p>You will likely also want to have a 18650 charger. Do <em>not</em> try to
-charge those batteries in a normal "AA" battery charger!</p>
+from the folks in Calgary ourselves. The Calgary folks are using plain
+unprotected batteries below freezing without issues.</p>
+<p>For really remote relays that are difficult to service, they started
+using <a href="https://en.wikipedia.org/wiki/Lithium-titanate_battery">LTO batteries</a> which are better suited to handle deep freeze
+-- we're talking -40℃ on mountaintop -- conditions.</p>
+<h3 id="charger">Charger</h3>
+<p>You might also want to have a charger if you deal with a lot of 18650
+batteries.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do <em>not</em> try to charge 18650 batteries in a normal "AA" battery
+charger! They won't fit and it won't work.</p>
+</div>
+<p>You don't need a charger for a single device: devices normally come
+with their own charge controller and can charge over whatever power
+source they normally use (USB-C, Solar, etc).</p>
+<p>It is just nice to slot them in a device already charged, and they are
+not necessarily sold charged.</p>
 <ul>
 <li>Abra: <a href="https://abra-electronics.com/batteries-holders/battery-chargers-automotive/bat-charger-14-li-ion-battery-charger-4-slots-usb-bh-042100-04u.html">4-battery charger</a>, 15$: works well, LEDs turn green when
   full, needs a 5V 1-2A USB-A power supply (not included), 1A output</li>
@@ -1549,6 +1596,18 @@ touch on <em>all</em> the connectors from the guide.</p>
 <li><a href="https://meshtastic.org/docs/hardware/antennas/">Official Meshtastic guide</a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, which also refers to a <a href="https://github.com/meshtastic/antenna-reports">series of
   antenna reports</a></li>
 <li><a href="https://nyme.sh/faq/#what-antenna"><code>nyme.sh</code> recommendations</a></li>
+</ul>
+<h2 id="resellers">Resellers</h2>
+<p>The above lists generally link to the upstream supplier or official
+resellers.</p>
+<p>There are, however, other resellers that might be more interesting to
+you for various reasons:</p>
+<ul>
+<li><a href="https://www.veshra.io/">Veshra</a>: more expensive, but local, possibly south shore (to be
+  confirmed); stocks antennas, batteries, Heltec, currently no Seeed
+  Studio, RAK, or ESP32 devices</li>
+<li><a href="https://space-hedgehog.com/">Space Hedgehog</a>: also more expensive; stocks Antenna, Heltec,
+  based in Ottawa, related to the <a href="https://ottawamesh.ca/">Ottawa mesh</a></li>
 </ul>
 <h2 id="hacks">Hacks</h2>
 <ul>
@@ -1594,7 +1653,7 @@ in <a href="https://antennatestlab.com/helium-network-antenna-reviews/alpha-netw
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 22, 2026 04:36:35 UTC">2026-03-22 04:36:35</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 23, 2026 02:40:59 UTC">2026-03-23 02:40:59</span>
   </span>
 
     
