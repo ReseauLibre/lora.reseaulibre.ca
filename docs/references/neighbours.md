@@ -4,6 +4,8 @@
   organized over Telegram, some ham operators, see [this communities
   list](https://wiki.mt.gt/en/channels), [that list](https://interlinkradio.weebly.com/) and [this Reddit](https://www.reddit.com/r/meshtasticCanada/), we do not monitor
   those networks
+- [Greater Ottawa Mesh](https://ottawamesh.ca/): Meshcore and Meshtastic, mentions
+  cross-linking with Montreal!
 - [`mtnme.sh`](https://mtnme.sh/): Tennessee, Meshtastic over `MediumFast`
 - [`nyme.sh`](https://nyme.sh/): New York city, Meshtastic
 - [`upstatemesh.org`](https://www.upstatemesh.org/): "Capital district" (Albany, NY), Meshtastic
