@@ -106,7 +106,10 @@ many not have batteries.
       ship with the actual batteries, or the GNSS device, for that you
       need the [Pro
       kit](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html)
-      which is 20$ more. Needs to be tested through night and winter.
+      which is 20$ more. Needs to be tested through night and
+      winter. Also sold at
+      [RobotShop](https://ca.robotshop.com/products/sensecap-solar-node-p1-meshtastic-w-o-gps-battery)
+      for 100CAD.
     - [WisMesh Solar Repeater](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater): solar, battery, mast-mountable, unclear
       if it can be setup without solar and if it supports MQTT/ethernet,
       300$, SenseCAP Solar Node P1 might be sturdier and
@@ -121,6 +124,14 @@ many not have batteries.
       through Bluetooth, but monitoring is possible over MQTT, and of
       course the gateway receives and relays messages over
       LoRa/Meshtastic!
+
+
+### Mounts
+
+Base stations will typically be mounted on rooftops or poles.
+
+The [Ottawa Mesh docs](https://ottawamesh.ca/hardware/repeater-mounting-options/) have great documentation and examples for
+this.
 
 ## Development boards
 
@@ -150,6 +161,15 @@ The devices here generally do not have a battery.
     - [T-Beam Supreme](https://lilygo.cc/products/t-beam-supreme?variant=43067944173749): 1.3" OLED display, 18650 battery socket,
       magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, 52$, the [T-Beam
       SoftRF](https://lilygo.cc/products/t-beam-softrf?variant=43170158477493) is similar but without a display and cheaper, 30$USD
+
+### Cases
+
+If you use a development board, you might want a case around it: most
+of them (except the Heltec v3) come without a case.
+
+The [Ottawa folks recommend](https://ottawamesh.ca/hardware/recommended-companions/) the [AlleyCat models](https://www.printables.com/@AlleyCat/models), although the
+license on the page is a bit unclear, as it claims CC BY-SA but then
+follows that with a paragraph limiting commercial use.
 
 ### DIY build on top of the RAK kit
 
@@ -261,6 +281,7 @@ Other lists include:
 - [Official Meshtastic guide](https://meshtastic.org/docs/hardware/antennas/)[^1], which also refers to a [series of
   antenna reports](https://github.com/meshtastic/antenna-reports)
 - [`nyme.sh` recommendations](https://nyme.sh/faq/#what-antenna)
+- [Ottawa Mesh recommendations](https://ottawamesh.ca/hardware/repeater-mounting-options/)
 
 [^1]:
 
@@ -281,6 +302,7 @@ you for various reasons:
   Studio, RAK, or ESP32 devices
 - [Space Hedgehog](https://space-hedgehog.com/): also more expensive; stocks Antenna, Heltec,
   based in Ottawa, related to the [Ottawa mesh](https://ottawamesh.ca/)
+- [Motion Power & Witt Supply Co.](https://mpandw.ca/) has [EVE 35V 18650 3500mAh](https://mpandw.ca/products/eve-35v-18650-battery-cells-set-of-6-with-holders) 6 for 36$, based in Ottawa
 
 ## Hacks
 
