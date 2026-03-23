@@ -195,23 +195,7 @@ Moved to its own page, see [Power](power.md).
 
 ## Batteries
 
-Battery setups depends on the particular device. The [Heltec v4
-prebuilt kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/), for example, uses [18650 battery cells](https://en.wikipedia.org/wiki/18650_battery). Those
-cells need to be handled with care, see [this discussion about those
-batteries](https://wiki.why2025.org/Badge/Fire_hazard), for example.
-
-It's best to buy "protected" cells, which are typically sold in ["vape
-shops"](https://www.openstreetmap.org/search?query=vape+shop&zoom=12&minlon=-74.07085418701173&minlat=45.36975515764875&maxlon=-73.19263458251955&maxlat=45.662286836234586#map=12/45.4999/-73.5775). Electronics shops also hold stock, typically:
-
-- Addison: has 5-10$ unprotected batteries near the LEDs desk at the
-  St-Michel store, not on the website
-- Abra: [Samsung 25R 18650 2500mAh 20A](https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/bat-18650-s.html) for 10$
-- Mastervox: [3.7V 3000mAh](https://www.mastervox.com/fr_CA/pieces/batterie/rechargeable/bat18650b_37-batterie-li-ion-18650-bouton-37v-3000mah) for 10$, maybe protected?
-- Veshra: [EVE 35V INR18650 3500mAh 10.2A](https://www.veshra.io/products/cmmi0b7ct0000ddfj49kcys1l) for 6$
-
-That said, so far it seems most folks use normal "unprotected" cells
-in various devices, without any problems. As long as you handle the
-batteries with care, you should be fine.
+Battery setups depends on the particular device.
 
 Contrary to popular belief, it seems like lithium-ion batteries [work
 fine below freezing](https://yycmesh.com/blog/cold-weather-charging) although we still need to confirm the results
@@ -221,6 +205,35 @@ unprotected batteries below freezing without issues.
 For really remote relays that are difficult to service, they started
 using [LTO batteries](https://en.wikipedia.org/wiki/Lithium-titanate_battery) which are better suited to handle deep freeze
 -- we're talking -40℃ on mountaintop -- conditions.
+
+Battery cells need to be handled with care, see [this discussion about
+those batteries](https://wiki.why2025.org/Badge/Fire_hazard), for example. So far it seems most folks use
+normal "unprotected" cells in various devices, without any
+problems. As long as you handle the batteries with care, you should be
+fine.
+
+### 18650
+
+The [Heltec v4 prebuilt kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/), like many other devices, uses [18650
+battery cells](https://en.wikipedia.org/wiki/18650_battery).
+
+You can buy those batteries in ["vape shops"](https://www.openstreetmap.org/search?query=vape+shop&zoom=12&minlon=-74.07085418701173&minlat=45.36975515764875&maxlon=-73.19263458251955&maxlat=45.662286836234586#map=12/45.4999/-73.5775) and various electronics
+shops also hold stock:
+
+- Addison: has 5-10$CAD unprotected batteries near the LEDs desk at
+  the St-Michel store, not on the website
+- Abra: [Samsung 25R 18650 2500mAh 20A](https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/bat-18650-s.html) for 10$CAD
+- Mastervox: [3.7V 3000mAh](https://www.mastervox.com/fr_CA/pieces/batterie/rechargeable/bat18650b_37-batterie-li-ion-18650-bouton-37v-3000mah) for 10$CAD, maybe protected?
+- Veshra: [EVE 35V INR18650 3500mAh 10.2A](https://www.veshra.io/products/cmmi0b7ct0000ddfj49kcys1l) for 6$CAD
+- AliExpress: [Kuugro ku-3500 18650 Battery 3500mAh 3.7V 12A](https://www.aliexpress.com/item/1005009897181947.html) for
+  2$CAD, 90$CAD for 20
+
+### Flat cells
+
+Those cell packs are more used in DIY kits or lab setups:
+
+- [Makerfocus](https://www.makerfocus.com/products/makerfocus-3-7v-3000mah-lithium-rechargeable-battery-1s-3c-lipo-battery-pack-of-4) has [3.7V 3000mAh Lithium Rechargeable Battery 1S 3C
+  LiPo Battery (Pack of 4)](https://www.makerfocus.com/products/makerfocus-3-7v-3000mah-lithium-rechargeable-battery-1s-3c-lipo-battery-pack-of-4) for 25$USD
 
 ### Charger
 
