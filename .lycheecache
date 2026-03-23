@@ -63,6 +63,7 @@ https://docs.codeberg.org/codeberg-pages/troubleshooting/#my-content-is-not-upda
 https://docs.codeberg.org/codeberg-pages/using-custom-domain/,200,1773367761
 https://docs.codeberg.org/collaborating/resolve-conflicts/,200,1773367761
 https://docs.codeberg.org/git/clone-commit-via-web/#edit,200,1773367761
+https://docs.codeberg.org/integrations/matrix/,200,1774233762
 https://en.wikipedia.org/wiki/18650_battery,200,1773109084
 https://en.wikipedia.org/wiki/Amateur_radio,200,1773281068
 https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System,200,1773202608
@@ -73,6 +74,7 @@ https://en.wikipedia.org/wiki/ISM_radio_band,200,1773109084
 https://en.wikipedia.org/wiki/Impedance_matching,200,1773458470
 https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity,200,1773147659
 https://en.wikipedia.org/wiki/Keep_Austin_Weird,200,1773288337
+https://en.wikipedia.org/wiki/Lithium-titanate_battery,200,1774233762
 https://en.wikipedia.org/wiki/LoRa,200,1772211092
 https://en.wikipedia.org/wiki/Mesh_networking,200,1772211092
 https://en.wikipedia.org/wiki/Network_analyzer_(electrical),200,1773458470
@@ -122,12 +124,14 @@ https://github.com/jeremiah-k/meshtastic-matrix-relay,200,1773202609
 https://github.com/jeremiah-k/meshtastic-matrix-relay/blob/main/docs/DOCKER.md,200,1773627923
 https://github.com/jeremiah-k/meshtastic-matrix-relay/wiki/Core-Plugins,200,1773627922
 https://github.com/jeremiah-k/meshtastic-matrix-relay/wiki/Getting-Started-With-Matrix-&-MM-Relay,200,1773625647
+https://github.com/jkhsjdhjs/maubot-webhook,200,1774233762
 https://github.com/jrl290/RTNode-HeltecV4,200,1773116788
 https://github.com/kstrauser/frozenbbs,200,1773202609
 https://github.com/lycheeverse/lychee/,200,1773367761
 https://github.com/markqvist/Reticulum/blob/master/MIRROR.md,200,1773116787
 https://github.com/markqvist/Reticulum/commit/e7daceec820850d397e6bf9aa585ef7222977891,200,1773116788
 https://github.com/markqvist/Reticulum/discussions/781,200,1773116787
+https://github.com/maubot/rss,200,1774233762
 https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#514-q-are-there-are-projects-built-around-meshcore,200,1773116787
 https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#57-q-is-meshcore-open-source,200,1773116787
 https://github.com/meshcore-dev/MeshCore/issues/259,200,1773367762
@@ -224,6 +228,7 @@ https://lwn.net/Articles/1009782/,200,1772211092
 https://map.meshcore.dev/,200,1773848472
 https://map.mt.gt/,200,1772211092
 https://matrix.org/,200,1773202608
+https://mau.bot/,200,1774233762
 https://medium.com/home-wireless/testing-and-reviewing-lora-antennas-5b37dfa594a3,200,1773458471
 https://meshcore.co.uk/,200,1773281068
 https://meshcore.co.uk/apps.html,200,1773367761
@@ -268,6 +273,9 @@ https://mtnme.sh/mediumfast/,200,1773202608
 https://muzi.works/,200,1773109084
 https://muzi.works/products/h2t-complete-device-heltec-t114-with-gps-running-meshtastic,200,1773109084
 https://muzi.works/products/r1-neo-complete-meshtastic-device,200,1773109084
+https://nanorfe.com/images/V2Plus4_Manual_NC4BR.pdf,200,1774233762
+https://nanorfe.com/nanovna-v2-user-manual.html,200,1774233762
+https://nanorfe.com/nanovna-v2.html,200,1774233762
 https://nanovna.com/,200,1773458470
 https://nanovna.com/?page_id=2,200,1774150169
 https://nhmesh.com/,200,1772211092
@@ -275,6 +283,8 @@ https://nhmesh.live/,200,1773367761
 https://nyme.sh/,200,1772211092
 https://nyme.sh/faq/#what-antenna,200,1773116855
 https://nyme.sh/faq/,200,1773109084
+https://ottawamesh.ca/,200,1774233762
+https://plugins.mau.bot/,200,1774233762
 https://pugetmesh.org/,200,1772211092
 https://pugetmesh.org/meshcore/,200,1773116787
 https://pugetmesh.org/meshtastic/#member-projects,200,1773202608
@@ -282,6 +292,7 @@ https://pugetmesh.org/meshtastic/may2025/,200,1773202608
 https://reticulum.network/,200,1773116787
 https://reticulum.network/crypto.html,200,1773116787
 https://site.meshtastic.org/,200,1772211093
+https://space-hedgehog.com/,200,1774233762
 https://squidfunk.github.io/mkdocs-material/,200,1772254857
 https://squidfunk.github.io/mkdocs-material/plugins/blog/,200,1773367761
 https://squidfunk.github.io/mkdocs-material/reference/,200,1773367761
@@ -336,6 +347,8 @@ https://www.seeedstudio.com/XIAO-nRF52840-Wio-SX1262-Kit-for-Meshtastic-p-6400.h
 https://www.statichost.eu/,200,1773367761
 https://www.streakwave.com/arc-wireless-arc-pd0913c01-arc-dual-pol-panel-ant-900mhz,200,1773542014
 https://www.upstatemesh.org/,200,1772211092
+https://www.veshra.io/,200,1774233764
+https://www.veshra.io/products/cmmi0b7ct0000ddfj49kcys1l,200,1774233764
 https://www.youtube.com/watch?v=LcHnf7VQuhc,200,1774040195
 https://yycmesh.com/blog/cold-weather-charging,200,1774155388
 https://zensical.org/,200,1772211092
