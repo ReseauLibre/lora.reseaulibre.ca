@@ -62,8 +62,8 @@ You might need to [flash firmware](https://flasher.meshtastic.org/) on the devic
 connecting the device to your computer (or phone?) and running a
 Chrome-derived web browser.
 
-Anarcat wrote an [advanced batch-flashing tool](https://gitlab.com/anarcat/scripts/-/blob/846a0f46978ae7ebb726004b2653e9a25a5e955c/reflashtic.py) if you need to
-flash multiple devices, use at your own risk.
+More [projects](../references/software/index.md) are also
+documented in our [software index](../references/software/index.md).
 
 ## Settings
 
