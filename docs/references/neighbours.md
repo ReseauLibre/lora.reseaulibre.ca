@@ -24,5 +24,7 @@ are worth mentioning:
 - [Austin Mesh](https://www.austinmesh.org/): US Texas [weirdos](https://en.wikipedia.org/wiki/Keep_Austin_Weird), moving to Meshcore as well,
   [flying drones](https://www.austinmesh.org/devices/#aerial) and [kites](https://www.austinmesh.org/learn/kite-nodes-for-mesh-networking/) and [DIY solar kits](https://www.austinmesh.org/devices/#solar), excellent
   documentation
+- [`LocalMesh`](https://www.localmesh.nl/en/): NL, beautiful splash page, 2000+ Meshcore
+  repeaters, we could use a tip or two from their frontpage introduction
 
 See also the [official list of local groups](https://meshtastic.org/docs/community/local-groups/).
