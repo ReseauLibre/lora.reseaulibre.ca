@@ -134,3 +134,5 @@ You connect those in order and hit the "calibrate" menus in
 order. Yes, this is annoying, and yes, it's often necessary, otherwise
 you'll get inaccurate or useless results.
 
+There's also this [older website](https://nanorfe.com/nanovna-v2.html), the [V2 Plus 4 manual](https://nanorfe.com/nanovna-v2-user-manual.html)
+([PDF](https://nanorfe.com/images/V2Plus4_Manual_NC4BR.pdf)).
