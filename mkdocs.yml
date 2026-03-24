@@ -30,16 +30,46 @@ nav:
     - Code of Conduct: code.md
   - News: news/index.md
 markdown_extensions:
+  # Python Markdown
+  - abbr
   - admonition
   - attr_list
+  - def_list
   - footnotes
   - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  # underline/superscript with ^
+  - pymdownx.caret
+  # collapsible admonitions
   - pymdownx.details
-  - pymdownx.superfences
+  # support for :emojis:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - tables
+  # syntax highlighting for code blocks
+  - pymdownx.highlight
+  # same, but for `inline` code
+  - pymdownx.inlinehilite
+  # keyboard keys rendering with ++
+  - pymdownx.keys
+  # highlight with ==
+  - pymdownx.mark
+  # turn (c) into ©, disabled: just use unicode directly
+  # - pymdownx.smartsymbols
+  # required for annotations
+  - pymdownx.superfences
+  # tabs support
+  - pymdownx.tabbed:
+      alternate_style: true
+  # tasks lists with - [ ]
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  # strikethrough with ~~
+  - pymdownx.tilde
 theme:
   name: material
   logo: assets/logo.svg
