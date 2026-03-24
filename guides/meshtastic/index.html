@@ -1329,7 +1329,7 @@
   
 
 
-<h1 id="getting-started-with-meshtastic">Getting started with Meshtastic</h1>
+<h1 id="getting-started-with-meshtastic">Getting started with Meshtastic<a class="headerlink" href="#getting-started-with-meshtastic" title="Permanent link">&para;</a></h1>
 <p>Getting started with running a Meshtastic relay is easy. You need to
 buy some hardware, install an app, and tweak some settings.</p>
 <p>You can expect to communicate through text with other relays within a
@@ -1348,7 +1348,7 @@ address which is unique and cannot be changed, see <a href="https://github.com/m
 request</a> for details. This is a bit like <a href="https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity">IMEI identifiers on
 phones</a>. Meshcore and Reticulum do not suffer from this issue.</p>
 </div>
-<h2 id="hardware">Hardware</h2>
+<h2 id="hardware">Hardware<a class="headerlink" href="#hardware" title="Permanent link">&para;</a></h2>
 <p>We have hands-on experience with those devices and recommend them for
 use:</p>
 <ul>
@@ -1372,7 +1372,7 @@ notes</a> for more options.</p>
 you connect the antenna before powering up the device. A radio
 that transmits without an antenna can damage itself!</p>
 </div>
-<h2 id="software">Software</h2>
+<h2 id="software">Software<a class="headerlink" href="#software" title="Permanent link">&para;</a></h2>
 <p>Once you have some hardware, you need to operate it. Typically, you
 <a href="https://meshtastic.org/downloads/">download an app on your phone</a> (<a href="https://meshtastic.org/docs/software/android/installation/">Android</a>, <a href="https://meshtastic.org/docs/software/apple/installation/">iOS</a>) and
 control the device over Bluetooth or a USB cable. Some devices can
@@ -1383,7 +1383,7 @@ connecting the device to your computer (or phone?) and running a
 Chrome-derived web browser.</p>
 <p>More <a href="../../references/software/">projects</a> are also
 documented in our <a href="../../references/software/">software index</a>.</p>
-<h2 id="settings">Settings</h2>
+<h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
 <p>This section describes various settings we advise in the Meshtastic
 app.</p>
 <div class="admonition info">
@@ -1463,7 +1463,7 @@ anyone else.</p>
 </tbody>
 </table>
 </div>
-<h2 id="advanced-batch-configuration">Advanced: batch configuration</h2>
+<h2 id="advanced-batch-configuration">Advanced: batch configuration<a class="headerlink" href="#advanced-batch-configuration" title="Permanent link">&para;</a></h2>
 <p>If you feel adventurous and want to make the above configuration
 easier, you can use the following YAML file -- let's call it
 <code>minimal.yaml</code> -- for the minimal configuration:</p>
@@ -1473,8 +1473,8 @@ easier, you can use the following YAML file -- let's call it
 <span class="w">    </span><span class="nt">modemPreset</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LONG_FAST</span>
 </code></pre></div>
 <p>This can be loaded with:</p>
-<pre><code>meshtastic --configure minimal.yaml
-</code></pre>
+<div class="highlight"><pre><span></span><code>meshtastic --configure minimal.yaml
+</code></pre></div>
 <p>Then, the "recommended" settings (above) can be configured with the
 <code>meshtastic</code> command again:</p>
 <div class="highlight"><pre><span></span><code>meshtastic --set bluetooth.fixedPin 123456
@@ -1499,8 +1499,8 @@ set at once.</p>
 <p>You should really set a random PIN here, not 123456, because that
 is the <a href="https://www.youtube.com/watch?v=LcHnf7VQuhc">stupidiest combination ever</a>. You can
 generate such a "random" pin with:</p>
-<pre><code>shuf -i 100000-1000000 -n 1
-</code></pre>
+<div class="highlight"><pre><span></span><code>shuf -i 100000-1000000 -n 1
+</code></pre></div>
 <p>Also please change away from the "yolo" user above, otherwise
 we'll get confused quick as yo who "yolo" is.</p>
 </div>
@@ -1525,12 +1525,12 @@ call <code>recommended.yaml</code>:</p>
 <p>Note that you <em>can</em> set the <code>CLIENT_BASE</code> role as well but your <code>meshtastic</code>
 command might not know about it so you need to specify it as an
 magic number:</p>
-<pre><code>meshtastic --set device.role 12
-</code></pre>
+<div class="highlight"><pre><span></span><code>meshtastic --set device.role 12
+</code></pre></div>
 </div>
 <p>Once you're done, you might want to backup your configuration with:</p>
-<pre><code>meshtastic --export-config &gt; backup.yaml
-</code></pre>
+<div class="highlight"><pre><span></span><code>meshtastic --export-config &gt; backup.yaml
+</code></pre></div>
 <div class="footnote">
 <hr />
 <ol>

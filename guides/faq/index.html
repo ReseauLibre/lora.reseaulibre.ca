@@ -1684,15 +1684,15 @@
   
 
 
-<h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
+<h1 id="frequently-asked-questions">Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link">&para;</a></h1>
 <p>Here are a couple of questions we have frequently been asked.</p>
-<h2 id="should-i-install-a-relay">Should I install a relay?</h2>
+<h2 id="should-i-install-a-relay">Should I install a relay?<a class="headerlink" href="#should-i-install-a-relay" title="Permanent link">&para;</a></h2>
 <p>Yes. Even if you don't think you reach other nodes, you might be
 surprised and do.</p>
 <p>Even if you do set up a relay and you don't see neighbours, it's still
 useful to experiment with this technology locally. And besides, this
 is how a mesh start: with one node, and then a second...</p>
-<h2 id="what-should-i-buy">What should I buy?</h2>
+<h2 id="what-should-i-buy">What should I buy?<a class="headerlink" href="#what-should-i-buy" title="Permanent link">&para;</a></h2>
 <p>It depends! In general, follow the <a href="../meshtastic/">guide</a>, which has devices we
 have actually tested.</p>
 <p>When in doubt, and starting, get a cheap one (e.g. <a href="https://heltec.org/project/wifi-lora-32-v4/">HELTEC v4</a>) and
@@ -1701,12 +1701,12 @@ experiment.</p>
 self-contained solar node instead of running power all the way out
 there.</p>
 <p>See also our full <a href="../../references/hardware/">hardware reference</a>.</p>
-<h2 id="do-i-need-something-on-my-roof">Do I need something on my roof?</h2>
+<h2 id="do-i-need-something-on-my-roof">Do I need something on my roof?<a class="headerlink" href="#do-i-need-something-on-my-roof" title="Permanent link">&para;</a></h2>
 <p>No. Plenty of people are running relays from their homes, living
 rooms, attics, and even cars or backpacks.</p>
 <p>But yes, if you <em>do</em> have access to a more elevated structure like a
 roof, tree or mast, it will reach farther.</p>
-<h2 id="how-far-can-i-communicate">How far can I communicate?</h2>
+<h2 id="how-far-can-i-communicate">How far can I communicate?<a class="headerlink" href="#how-far-can-i-communicate" title="Permanent link">&para;</a></h2>
 <p>As far as the eye can see.</p>
 <p>The current Meshtastic record is <a href="https://www.reddit.com/r/meshtastic/comments/1fnduwo/mountain_to_mountain_331_km/">330km</a> over the Adriatic sea and
 LoRa has been recorded as reaching <a href="https://hackaday.com/2023/09/15/new-lora-distance-record-830-miles/">1336km</a> over the ocean, thanks
@@ -1715,7 +1715,7 @@ to tropospheric conditions.</p>
 kilometers or more, even from inside your house. A node on a rooftop
 can reach much further, easily a dozen kilometers, depending on how
 clear the view is.</p>
-<h2 id="why-cant-i-contact-anyone">Why can't I contact anyone?</h2>
+<h2 id="why-cant-i-contact-anyone">Why can't I contact anyone?<a class="headerlink" href="#why-cant-i-contact-anyone" title="Permanent link">&para;</a></h2>
 <p>You might be too far away from another relay or blocked by an
 obstacle. Or people are just being quiet.</p>
 <p>Wait a little while; relays periodically announce themselves and you
@@ -1730,13 +1730,13 @@ neighbourhood.</p>
 bridge</a> to see if you can hear that bot on the Meshtastic
 network. See also the <a href="../../references/mmrelay/#usage">Matrix bridge usage</a> for how
 to use the bridge.</p>
-<h2 id="how-many-nodes-in-the-network">How many nodes in the network?</h2>
+<h2 id="how-many-nodes-in-the-network">How many nodes in the network?<a class="headerlink" href="#how-many-nodes-in-the-network" title="Permanent link">&para;</a></h2>
 <p>Hard to tell. The <a href="../../references/maps/">maps</a> seem to show somewhere between 20 and 40
 nodes on any given day, but we don't have good metrics of this.</p>
 <p>As of 2026-03-09, "from my house", I see about 10 to 20 relays on a
 daily basis, with perhaps half a dozen direct contacts.</p>
 <p>There are daily messages.</p>
-<h2 id="is-this-legal">Is this legal?</h2>
+<h2 id="is-this-legal">Is this legal?<a class="headerlink" href="#is-this-legal" title="Permanent link">&para;</a></h2>
 <p>Yes. Meshtastic -- or more specifically LoRa -- transmits over <a href="https://en.wikipedia.org/wiki/ISM_radio_band">ISM
 radio bands</a>, specifically centered around 915MHz.</p>
 <p>Technically, the LoRa protocol itself is patented by the <a href="https://en.wikipedia.org/wiki/Semtech">Semtech
@@ -1744,7 +1744,7 @@ corporation</a>, so there is a non-free aspect to this. It is, in any
 case, perfectly legal to <em>use</em> LoRa devices as a end-user, but this
 means that someone might not have the right to re-implement the LoRa
 protocol on its own hardware, for example.</p>
-<h2 id="are-my-messages-secret">Are my messages secret?</h2>
+<h2 id="are-my-messages-secret">Are my messages secret?<a class="headerlink" href="#are-my-messages-secret" title="Permanent link">&para;</a></h2>
 <p>It depends.</p>
 <p>First off, communications on the main "shared" channel ("LongFast")
 are encrypted, but with a predefined, shared key. So conversations
@@ -1774,7 +1774,7 @@ better</a>.</p>
 devices can generally be put in "DFU" (<a href="https://en.wikipedia.org/wiki/USB#Device_Firmware_Upgrade_mechanism">Device firmware upgrade</a>)
 mode relatively easily. Treat encryption keys from a physically
 compromised device to be equally compromised.</p>
-<h2 id="why-not-reticulum">Why not Reticulum?</h2>
+<h2 id="why-not-reticulum">Why not Reticulum?<a class="headerlink" href="#why-not-reticulum" title="Permanent link">&para;</a></h2>
 <p>We <em>are</em> experimenting with Reticulum. Some of us have worked on
 <a href="https://github.com/markqvist/Reticulum/discussions/781">Debian packaging</a>, <a href="https://github.com/attermann/microReticulum_Firmware">microReticulum</a> (to run Reticulum natively
 on chip without a second computer), <a href="https://github.com/jrl290/RTNode-HeltecV4">transport nodes</a> (same, as a
@@ -1791,7 +1791,7 @@ elsewhere".</p>
 the island, and that is mostly made up of Meshtastic nodes. Reticulum
 could be a backhaul for the network or the future of the network,
 we'll see!</p>
-<h2 id="why-not-meshcore">Why not Meshcore?</h2>
+<h2 id="why-not-meshcore">Why not Meshcore?<a class="headerlink" href="#why-not-meshcore" title="Permanent link">&para;</a></h2>
 <p>We're also considering Meshcore! Many mesh projects including <a href="https://pugetmesh.org/meshcore/">Puget
 mesh</a> and Boston have started experimenting with it.</p>
 <p>Right now, they main reason we're not using Meshcore is similar to
@@ -1814,7 +1814,7 @@ integrated as Meshtastic.</p>
 <p>Long story short, we'll scale the mesh when we get there. This might
 come sooner than we think. We suspect we might be currently limited in
 coverage by the Meshtastic hop limit.</p>
-<h2 id="why-longfast">Why LongFast?</h2>
+<h2 id="why-longfast">Why LongFast?<a class="headerlink" href="#why-longfast" title="Permanent link">&para;</a></h2>
 <p>We currently stay close to the default Meshtastic settings, which
 includes 3 hops limits and the LongFast default. For now, we are not
 saturating.</p>
@@ -1822,7 +1822,7 @@ saturating.</p>
 others have done in <a href="https://mtnme.sh/mediumfast/">Tennessee (USA)</a>, <a href="https://pugetmesh.org/meshtastic/may2025/">Puget Mesh (USA)</a> the bay
 area (USA) and Wellington (NZ), see the <a href="https://meshtastic.org/blog/why-your-mesh-should-switch-from-longfast/">official blog post</a> for a
 conversation about this.</p>
-<h2 id="my-question-is-not-here">My question is not here</h2>
+<h2 id="my-question-is-not-here">My question is not here<a class="headerlink" href="#my-question-is-not-here" title="Permanent link">&para;</a></h2>
 <p>That is not a question, but ask us, <a href="../../contact/">contact us!</a></p>
 
 
