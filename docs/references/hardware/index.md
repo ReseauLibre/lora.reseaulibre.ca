@@ -5,8 +5,11 @@ devices we have tested or somehow evaluated. It is of course not
 exhaustive, and it is opinionated in the sense that it tries to guide
 you towards specific purchases to simplify your life. 
 
-Also, in the main [guide](../../guides/meshtastic.md), we *recommend* specific devices, while
-here we are more open to suggestions.
+## Recommended hardware
+
+--8<-- "docs/references/hardware/.recommendations.md"
+
+Those are the same devices are listed in the [main guide](../../guides/meshtastic.md).
 
 ## How we classify devices
 

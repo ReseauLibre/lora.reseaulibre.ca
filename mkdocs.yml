@@ -60,6 +60,7 @@ markdown_extensions:
   - pymdownx.mark
   # turn (c) into ©, disabled: just use unicode directly
   # - pymdownx.smartsymbols
+  - pymdownx.snippets
   # required for annotations
   - pymdownx.superfences
   # tabs support
