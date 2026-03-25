@@ -287,6 +287,17 @@ shops also hold stock:
 - AliExpress: [Kuugro ku-3500 18650 Battery 3500mAh 3.7V 12A](https://www.aliexpress.com/item/1005009897181947.html) for
   2$CAD, 90$CAD for 20
 
+??? tip "Tip on protected battery sizes"
+
+    Note that "protected" batteries often are larger (by 0.5mm) and longer
+    (by as much as 4.5mm because of the "button" and protection circuit)
+    which makes them harder to fit in some casings:
+
+    ![Image of three different 18650 batteries](../../assets/18650_1024x1024.jpg)
+
+    Note that 18650 batteries are named after their size: 18mm wide,
+    and 65mm high. Wikipedia claims the 0 is the digit after 65mm ("65.0mm").
+
 ### Flat cells
 
 Those cell packs are more used in DIY kits or lab setups:
