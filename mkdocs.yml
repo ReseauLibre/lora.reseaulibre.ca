@@ -9,6 +9,7 @@ edit_uri: _edit/main/docs/
 nav:
   - About:
     - index.md
+    - values.md
     - Contact: contact.md
     - FAQ: guides/faq.md
   - Guides:
