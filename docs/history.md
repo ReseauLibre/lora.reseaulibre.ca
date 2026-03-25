@@ -30,8 +30,16 @@ and a veil of darkness slowly fell over the world.
 
 We consider this as part of the history of "the Montréal mesh",
 because there *was* the belief that this Internet could become
-something else than classic broadcasting. As it turns out,
-telecommunication companies were far from the worst we would see.
+something else than classic broadcasting.[^1]
+
+[^1]: Apologies to radio operators and enthusiasts: obviously, the
+    history of (mesh) communications goes further back than the
+    invention of the Internet, but one has to start somewhere, and
+    that probably requires going back to the 19th century and [James
+    Maxwell](https://en.wikipedia.org/wiki/James_Clerk_Maxwell).
+
+As it turns out, telecommunication companies were far from the worst
+we would see.
 
 ## The WiFi era (2010-2020)
 
