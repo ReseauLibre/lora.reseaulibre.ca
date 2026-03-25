@@ -10,6 +10,7 @@ nav:
   - About:
     - index.md
     - values.md
+    - history.md
     - Contact: contact.md
     - FAQ: guides/faq.md
   - Guides:
