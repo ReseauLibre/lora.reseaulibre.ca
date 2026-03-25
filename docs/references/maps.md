@@ -37,6 +37,9 @@ rely on the map to predict success. Try anyways!
 - <https://analyzer.letsmesh.net/map> has lots of data and will spin
   up the fan on your laptop. shows three relays in the greater
   Montreal area as of 2026-03-18
+- <https://yul.meshmapper.net/> shows actual tested coverage from the
+  [MeshMapper project](https://wiki.meshmapper.net/), which essentially allows users to "war
+  drive" a real-time map of where repeaters can be reached, shows 6 nodes in Montreal
 
 ## Site planners
 
