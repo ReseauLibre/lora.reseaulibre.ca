@@ -5,11 +5,67 @@ devices we have tested or somehow evaluated. It is of course not
 exhaustive, and it is opinionated in the sense that it tries to guide
 you towards specific purchases to simplify your life. 
 
+[Let us know](../../contact.md) if you want to buy a lot so we can organize.
+
 ## Recommended hardware
 
---8<-- "docs/references/hardware/.recommendations.md"
+This is a no-brainer, "just tell me what to buy" guide. There are more
+options below, but we only recommend devices that we have tested
+ourselves.
 
-Those are the same devices are listed in the [main guide](../../guides/meshtastic.md).
+<div class="grid cards" markdown>
+
+-   :material-hands-pray: **Cheapest**: [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)
+
+    ---
+    
+    [![HELTEC v4](../../assets/WiFi-LoRa-32-V4-4.png)](https://heltec.org/project/wifi-lora-32-v4/)
+
+    The V4 does not come with a case, which needs to be
+    [3d-printed](#cases), or get the [v3](https://heltec.org/project/wifi-lora-32-v3/). Make sure to pick 902-928MHz.
+    
+    You need to provide power over USB, any USB-C charger will do,
+    needs a separate app, for example on your phone
+
+    20$USD, [50-60USD as a pre-built standalone kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/).
+    
+-   :material-lightning-bolt: **Low power**: [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158)
+
+    ---
+    [![RAK4631](../../assets/wisblock-meshtastic-starter-kit-rak19003-v2_4000x@2x.progressive.png)](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158)
+    
+    Longer battery life than HELTEC.
+    
+    Also needs a phone.
+    
+    25$USD, [90$ with a case and battery](https://store.rakwireless.com/products/wismesh-pocket).
+
+-   :material-cellphone-basic: **Standalone**: [T-Deck plus](https://lilygo.cc/products/t-deck-plus-1)
+
+    ---
+
+    [![T-Deck plus](../../assets/T-DECK-PLUS_6.png)](https://lilygo.cc/products/t-deck-plus-1)
+    
+    Has keyboard and screen (yes, like a [BlackBerry](https://en.wikipedia.org/wiki/BlackBerry)), useful if
+    you don't want to use your phone.
+    
+    70$USD, 77$USD with Meshtastic pre-installed.
+
+    :material-chart-line: Challenger: [Heltec v4 prebuilt kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/).
+
+-   :octicons-sun-16: **Solar relay**: [WisMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini)
+
+    ---
+    
+    [![WisMesh Solar Repeater Mini](../../assets/WisMesh-Repeater-Mini.png)](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini)
+     
+    For window, rooftop or in a tree installations.
+    
+    100$USD.
+    
+    :material-chart-line: Challenger: [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html), 70$USD.
+
+</div>
 
 ## How we classify devices
 
@@ -97,7 +153,7 @@ many not have batteries.
 
 !!! success
 
-    - [WishMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini): solar, battery, mast-mountable,
+    - [WisMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini): solar, battery, mast-mountable,
       cheaper than the full repeater below, 100$
 
 !!! example "In testing"
@@ -162,7 +218,7 @@ The devices here generally do not have a battery.
 !!! question "Untested"
 
     - [T-Beam Supreme](https://lilygo.cc/products/t-beam-supreme?variant=43067944173749): 1.3" OLED display, 18650 battery socket,
-      magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, 52$, the [T-Beam
+      magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, ESP32, 52$, the [T-Beam
       SoftRF](https://lilygo.cc/products/t-beam-softrf?variant=43170158477493) is similar but without a display and cheaper, 30$USD
 
 ### Cases

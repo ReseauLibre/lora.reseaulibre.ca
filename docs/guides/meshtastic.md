@@ -25,10 +25,11 @@ few kilometres without even setting up a special antenna or location.
 
 ## Hardware
 
---8<-- "docs/references/hardware/.recommendations.md"
+Pick a device in [our hardware review notes](../references/hardware/index.md) or the [official
+hardware list](https://meshtastic.org/docs/hardware/devices/).
 
-See also the [official hardware list](https://meshtastic.org/docs/hardware/devices/) and [our hardware review
-notes](../references/hardware/index.md) for more options.
+It's cheap! Expect to pay 50$CAD for a starter kit, 150$CAD for a
+decent solar relay.
 
 !!! tip
 
