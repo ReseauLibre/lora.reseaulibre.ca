@@ -84,8 +84,8 @@ trickled down to a halt in 2018.
 
 Meanwhile a new technology, [LoRa](https://en.wikipedia.org/wiki/LoRa), enters the picture, around 2015. But
 it's not until 2020 that more accessible software, namely
-[Meshtastic](https://en.wikipedia.org/wiki/Meshtastic) emerges in public view, and later [Reticulum](https://reticulum.network/)
-(2022?) and [MeshCore](https://en.wikipedia.org/wiki/MeshCore) (2024).
+[Meshtastic](https://en.wikipedia.org/wiki/Meshtastic) emerges in public view, and then also [Reticulum](https://reticulum.network/)
+([2018](https://unsigned.io/articles/2018_06_30_15-kilometre-ssh-link-with-rnode.html)) and [MeshCore](https://en.wikipedia.org/wiki/MeshCore) (2024).
 
 Folks in Foulab — who had never stopped running a mesh — start hosting
 a "mesh night" in 2024 at which point there are already [dozens of
