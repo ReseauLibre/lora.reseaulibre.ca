@@ -91,7 +91,7 @@ better idea on how to test antennas.
 ## NanoVNA crash course
 
 As mentioned above, a good antenna tester is the [NanoVNA](https://nanovna.com/) which
-you can [order from nooelec](https://www.nooelec.com/store/test-equipment/analyzers/nanovna-h4-bundle.html). Make sure you get a kit that covers
+you can [order from Nooelec](https://www.nooelec.com/store/test-equipment/analyzers/nanovna-h4-bundle.html). Make sure you get a kit that covers
 the 915MHz range, which is not necessarily the case: some kits *stop*
 at 900MHz! Also get a closed case, some are more "bare boards" types
 of things. [This link](https://www.nooelec.com/store/test-equipment/analyzers/nanovna-h4-bundle.html) should be fine.
@@ -116,7 +116,7 @@ and set it to "SWR".
 Typically, you also want to calibrate the device before doing any test
 beyond a quick checkup. For this, the NanoVNA normally ships with
 three little adapters that look like [this image from
-Nooelect](https://www.nooelec.com/store/media/catalog/product/cache/1/image/1200x/040ec09b1e35df139433887a97daa66f/i/m/img_7392_v3_1.jpg). Two have little conductor pins sticking out in the
+Nooelec](https://www.nooelec.com/store/media/catalog/product/cache/1/image/1200x/040ec09b1e35df139433887a97daa66f/i/m/img_7392_v3_1.jpg). Two have little conductor pins sticking out in the
 middle, one doesn't, one has a longer stub, and one is gray. The
 [calibration guide](https://nanovna.com/?page_id=2) will tell you to connect those in order:
 "OPEN", "SHORT", and "LOAD" or sometimes called "LONG". This is how

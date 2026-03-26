@@ -9,7 +9,7 @@ you towards specific purchases to simplify your life.
 
 ## Recommended hardware
 
-This is a no-brainer, "just tell me what to buy" guide. There are more
+This is the easiest, "just tell me what to buy" guide. There are more
 options below, but we only recommend devices that we have tested
 ourselves.
 
@@ -27,7 +27,7 @@ ourselves.
     You need to provide power over USB, any USB-C charger will do,
     needs a separate app, for example on your phone
 
-    20$USD, [50-60USD as a pre-built standalone kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/).
+    20$USD, [50-60USD as a prebuilt standalone kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/).
     
 -   :material-lightning-bolt: **Low power**: [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158)
 
@@ -49,7 +49,7 @@ ourselves.
     Has keyboard and screen (yes, like a [BlackBerry](https://en.wikipedia.org/wiki/BlackBerry)), useful if
     you don't want to use your phone.
     
-    70$USD, 77$USD with Meshtastic pre-installed.
+    70$USD, 77$USD with Meshtastic preinstalled.
 
     :material-chart-line: Challenger: [Heltec v4 prebuilt kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/).
 
@@ -283,8 +283,8 @@ shops also hold stock:
   the St-Michel store, not on the website
 - Abra: [Samsung 25R 18650 2500mAh 20A](https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/bat-18650-s.html) for 10$CAD
 - Mastervox: [3.7V 3000mAh](https://www.mastervox.com/fr_CA/pieces/batterie/rechargeable/bat18650b_37-batterie-li-ion-18650-bouton-37v-3000mah) for 10$CAD, maybe protected?
-- Veshra: [EVE 35V INR18650 3500mAh 10.2A](https://www.veshra.io/products/cmmi0b7ct0000ddfj49kcys1l) for 6$CAD
-- AliExpress: [Kuugro ku-3500 18650 Battery 3500mAh 3.7V 12A](https://www.aliexpress.com/item/1005009897181947.html) for
+- Veshra: [`EVE 35V INR18650` 3500mAh 10.2A](https://www.veshra.io/products/cmmi0b7ct0000ddfj49kcys1l) for 6$CAD
+- AliExpress: [`Kuugro ku-3500` 18650 Battery 3500mAh 3.7V 12A](https://www.aliexpress.com/item/1005009897181947.html) for
   2$CAD, 90$CAD for 20
 
 ??? tip "Tip on protected battery sizes"
@@ -396,5 +396,5 @@ you for various reasons:
 - [Connector types overview](https://pole1.co.uk/blog/5/)
 - [Another connector guide](https://www.arcantenna.com/blogs/news/how-to-identify-coaxial-connectors)
 - [Haruki's Meshtastic experiments](https://harukitoreda.github.io/Meshtastic-Experiments/) - excellent hardware review:
-  compares battery runtimes, power usage, antenna tests, comparison
+  compares battery life, power usage, antenna tests, comparison
   tables

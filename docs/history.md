@@ -17,7 +17,7 @@ price ever since.
 
 In Québec, universities and CÉGEPS were the first to offer internet
 access, alongside a hodgepodge crew of small independent
-providers. The [RISQ](https://en.wikipedia.org/wiki/R%C3%A9seau_d%27informations_scientifiques_du_Qu%C3%A9bec "eant firs") network was founded in 1989 and still exists to
+providers. The [RISQ](https://en.wikipedia.org/wiki/R%C3%A9seau_d%27informations_scientifiques_du_Qu%C3%A9bec) network was founded in 1989 and still exists to
 this day, but almost every other challenger to the large
 telecommunication companies (Bell, Québecor, Rogers, and Telus) have
 all been absorbed by one of the incumbents.
@@ -35,7 +35,7 @@ something else than classic broadcasting.[^1]
 [^1]: Apologies to radio operators and enthusiasts: obviously, the
     history of (mesh) communications goes further back than the
     invention of the Internet, but one has to start somewhere, and
-    that probably requires going back to the 19th century and [James
+    that probably requires going back to the nineteenth century and [James
     Maxwell](https://en.wikipedia.org/wiki/James_Clerk_Maxwell).
 
 As it turns out, telecommunication companies were far from the worst
