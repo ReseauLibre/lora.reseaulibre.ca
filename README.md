@@ -110,10 +110,7 @@ Links truly being mismatched by Lychee can be added to the
 
 ## Spell checking
 
-Two spell checkers are in use. [Typos](https://github.com/crate-ci/typos/) is used to check the English
-version and good old [Aspell](https://en.wikipedia.org/wiki/GNU_Aspell) for other languages.
-
-To fix false positives found by Typos, follow [this guide](https://github.com/crate-ci/typos/?tab=readme-ov-file#false-positives).
+Good old [Aspell](https://en.wikipedia.org/wiki/GNU_Aspell) is used to check spelling in English and French.
 
 To fix false positives found by Aspell, install the `aspell` package
 and run the command recommended by CI, which should be something like:

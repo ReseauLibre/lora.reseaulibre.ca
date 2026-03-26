@@ -55,14 +55,6 @@ steps:
       - git add .
       - if ! git diff --cached --quiet; then git commit -m "Woodpecker CI ${CI_BUILD_CREATED}" && git push; fi
 
-  typos:
-    # while we wait for an upstream image:
-    # https://github.com/crate-ci/typos/issues/427
-    image: archlinux
-    commands:
-      - pacman -Sy --noconfirm typos
-      - typos
-
   aspell:
     image: debian
     commands:
