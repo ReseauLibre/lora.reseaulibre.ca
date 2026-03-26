@@ -16,7 +16,7 @@ touch base on our [chat channel](../contact.md).
 On each Wednesday at 21:00 local, send those two messages:
 
 ```
-# Bienvenu sur le Réseau Libre #
+# Bienvenue sur le Réseau Libre #
 Chaque mercredi, vous pouvez vous enregistrer avec:
 "Bonsoir acat1815, ici MON_NOM à MON_ENDROIT"
 Je répond à tous les messages que je reçois!
