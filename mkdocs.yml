@@ -28,6 +28,7 @@ nav:
         - references/maps.md
         - Meta: meta.md
     - references/neighbours.md
+    - references/net.md
     - references/other.md
     - Code of Conduct: code.md
   - News: news/index.md
