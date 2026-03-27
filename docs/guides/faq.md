@@ -239,12 +239,14 @@ properties that are uniquely well suited to the mesh:
   or deliberately spy on you
 
 - Matrix is *free*: since anyone can run a server, most (if not all)
-  [servers](https://servers.joinmatrix.org/) offer free accounts to anyone
+  [servers](https://servers.joinmatrix.org/) offer free accounts to anyone (see below)
 
-In particular, if you have a Mozilla account (that you might have
-created to use the "Firefox sync" feature), *you have a Matrix account
-already*! Head over to [chat.mozilla.org](https://chat.mozilla.org/) and you can login with
-your "Mozilla Accounts".
+The key aspect is this: Matrix rooms are decentralized. As long as
+your home server is reachable from the mesh, the Internet could go
+down in flames and Matrix would still work.
+
+This is a property unique to Matrix's design that is rarely seen in
+other messaging platforms.
 
 ### How do I join the Matrix room?
 
