@@ -6,7 +6,10 @@ title: FAQ
 
 Here are a couple of questions we have frequently been asked.
 
-## Should I install a relay?
+
+## General questions
+
+### Should I install a relay?
 
 Yes. Even if you don't think you reach other nodes, you might be
 surprised and do.
@@ -15,7 +18,7 @@ Even if you do set up a relay and you don't see neighbours, it's still
 useful to experiment with this technology locally. And besides, this
 is how a mesh start: with one node, and then a second...
 
-## What should I buy?
+### What should I buy?
 
 It depends! In general, follow the [guide](meshtastic.md), which has devices we
 have actually tested.
@@ -29,7 +32,7 @@ there.
 
 See also our full [hardware reference](../references/hardware/index.md).
 
-## Do I need something on my roof?
+### Do I need something on my roof?
 
 No. Plenty of people are running relays from their homes, living
 rooms, attics, and even cars or backpacks.
@@ -37,7 +40,7 @@ rooms, attics, and even cars or backpacks.
 But yes, if you *do* have access to a more elevated structure like a
 roof, tree or mast, it will reach farther.
 
-## How far can I communicate?
+### How far can I communicate?
 
 As far as the eye can see.
 
@@ -50,30 +53,7 @@ kilometers or more, even from inside your house. A node on a rooftop
 can reach much further, easily a dozen kilometers, depending on how
 clear the view is.
 
-## Why can't I contact anyone?
-
-You might be too far away from another relay or blocked by an
-obstacle. Or people are just being quiet.
-
-Wait a little while; relays periodically announce themselves and you
-should eventually see some relays.
-
-[Make sure you have the right settings](meshtastic.md#settings).
-
-Try to say hi and ask if anyone can read you. People might pick up the
-message only much later and respond. Keep your device open.
-
-Try to bring your device higher up or outside.
-
-Look at the [maps](../references/maps.md) to see if there are relays in your
-neighbourhood.
-
-Try to [ask for help](../contact.md) or send the command `!ping` in the [Matrix
-bridge](https://matrix.to/#/#reseaulibre-meshtastic-bridge:matrix.org) to see if you can hear that bot on the Meshtastic
-network. See also the [Matrix bridge usage](../references/mmrelay.md#usage) for how
-to use the bridge.
-
-## How many nodes in the network?
+### How many nodes in the network?
 
 Hard to tell. The [maps](../references/maps.md) seem to show somewhere between 20 and 40
 nodes on any given day, but we don't have good metrics of this.
@@ -83,7 +63,7 @@ daily basis, with perhaps half a dozen direct contacts.
 
 There are daily messages.
 
-## Is this legal?
+### Is this legal?
 
 Yes. Meshtastic -- or more specifically LoRa -- transmits over [ISM
 radio bands](https://en.wikipedia.org/wiki/ISM_radio_band), specifically centered around 915MHz.
@@ -94,7 +74,7 @@ case, perfectly legal to *use* LoRa devices as a end-user, but this
 means that someone might not have the right to re-implement the LoRa
 protocol on its own hardware, for example.
 
-## Are my messages secret?
+### Are my messages secret?
 
 It depends.
 
@@ -131,7 +111,35 @@ devices can generally be put in "DFU" ([Device firmware upgrade](https://en.wiki
 mode relatively easily. Treat encryption keys from a physically
 compromised device to be equally compromised.
 
-## Why not Reticulum?
+
+
+## Troubleshooting
+
+### Why can't I contact anyone?
+
+You might be too far away from another relay or blocked by an
+obstacle. Or people are just being quiet.
+
+Wait a little while; relays periodically announce themselves and you
+should eventually see some relays.
+
+[Make sure you have the right settings](meshtastic.md#settings).
+
+Try to say hi and ask if anyone can read you. People might pick up the
+message only much later and respond. Keep your device open.
+
+Try to bring your device higher up or outside.
+
+Look at the [maps](../references/maps.md) to see if there are relays in your
+neighbourhood.
+
+Try to [ask for help](../contact.md) or send the command `!ping` in the [Matrix
+bridge](https://matrix.to/#/#reseaulibre-meshtastic-bridge:matrix.org) to see if you can hear that bot on the Meshtastic
+network. See also the [Matrix bridge usage](../references/mmrelay.md#usage) for how
+to use the bridge.
+
+## Technology choices
+### Why not Reticulum?
 
 We *are* experimenting with Reticulum. Some of us have worked on
 [Debian packaging](https://github.com/markqvist/Reticulum/discussions/781), [microReticulum](https://github.com/attermann/microReticulum_Firmware) (to run Reticulum natively
@@ -152,7 +160,7 @@ the island, and that is mostly made up of Meshtastic nodes. Reticulum
 could be a backhaul for the network or the future of the network,
 we'll see!
 
-## Why not Meshcore?
+### Why not Meshcore?
 
 We're also considering Meshcore! Many mesh projects including [Puget
 mesh](https://pugetmesh.org/meshcore/) and Boston have started experimenting with it.
@@ -181,7 +189,7 @@ Long story short, we'll scale the mesh when we get there. This might
 come sooner than we think. We suspect we might be currently limited in
 coverage by the Meshtastic hop limit.
 
-## Why LongFast?
+### Why LongFast?
 
 We currently stay close to the default Meshtastic settings, which
 includes 3 hops limits and the LongFast default. For now, we are not
@@ -192,6 +200,120 @@ others have done in [Tennessee (USA)](https://mtnme.sh/mediumfast/), [Puget Mesh
 area (USA) and Wellington (NZ), see the [official blog post](https://meshtastic.org/blog/why-your-mesh-should-switch-from-longfast/) for a
 conversation about this.
 
-## My question is not here
+
+### Why Matrix?
+
+Also known as "Why are you not on Telegram, Discord, Whatsapp,
+Facebook, XMPP, or whatever?"
+
+The real reason we are on Matrix is because we were already there and
+people already had accounts. People like to argue that we should be
+elsewhere because that is "where every is", but if that was the
+argument, everyone should join Whatsapp (3 billion monthly active
+users), yet people somehow think they should organise
+elsewhere. Typically, it's the place they already use for some other
+purpose.
+
+Compared to all those other platforms (with exceptions), Matrix has
+properties that are uniquely well suited to the mesh:
+
+- Matrix is *federated*: everyone can run their own server, just like
+  the mesh (XMPP is also federated)
+
+- Matrix is *decentralized*: if one server goes down, the other
+  servers keep operating normally
+
+- Matrix is *open*: source code for most Matrix implementations
+  (client and server) are open source, and the [specification](https://spec.matrix.org/latest/) is
+  collaboratively established among multiple stakeholders through
+  (XMPP is also open)
+
+- Matrix is *bridged*: there are [multiple bridges](https://matrix.org/ecosystem/bridges/) to many other
+  platforms, it is the glue that will allow us to merge together all
+  those disconnected communities from Discord, Telegram, Mattermost
+  and so on
+
+- Matrix respects your privacy: while there are issues with data
+  retention in any federated protocol, Matrix at least won't require
+  your phone number (like Whatsapp, Telegram or, sometimes, Discord)
+  or deliberately spy on you
+
+- Matrix is *free*: since anyone can run a server, most (if not all)
+  [servers](https://servers.joinmatrix.org/) offer free accounts to anyone
+
+In particular, if you have a Mozilla account (that you might have
+created to use the "Firefox sync" feature), *you have a Matrix account
+already*! Head over to [chat.mozilla.org](https://chat.mozilla.org/) and you can login with
+your "Mozilla Accounts".
+
+### How do I join the Matrix room?
+
+Let's say you're convinced that Matrix is good enough and you want to
+try it out. How do you actually join?
+
+There are many guides for this, but the [joinmatrix.org guide is
+pretty good](https://joinmatrix.org/). Essentially, it is:
+
+ 1. Register on a home server
+ 2. Download a client, app, or use a web client
+ 3. Join the room
+
+#### Picking a home server
+
+Here are home servers we recommend:
+
+- **Matrix.org**: even though they do not recommend you create an account
+  there because their server is busy, it's still possible to create a
+  `matrix.org` account on [app.element.io](https://app.element.io/)
+
+- **Mozilla.org**: the people who make the Firefox web browser. Go to
+  [chat.mozilla.org](https://chat.mozilla.org/) (which also serves as web client) and click on
+  "Continue with...", you can sign up with an already existing Mozilla
+  Accounts, GitHub, or Google account
+
+- **FSFE**: the European Free Software Foundation [runs a Matrix
+  server for its members](https://docs.fsfe.org/en/techdocs/matrix), requires a donation, see
+  [`chat.fsfe.org`](https://chat.fsfe.org/)
+
+- Linux distributions:
+
+  - **Debian**: people with an account on the [Debian GitLab server](https://salsa.debian.org/)
+    ("salsa") can access the [debian.social](https://element.debian.social/) home server
+
+  - **Ubuntu**: members can use [register on the ubuntu.com home
+    server](https://ubuntu.com/community/docs/communications/matrix/register-ubuntu-com)
+
+  - **Fedora**: people with a [Fedora account](https://accounts.fedoraproject.org/) can use the
+    [fedora.im home server](https://chat.fedoraproject.org/)
+
+  - **Arch**: team members can [use the archlinux.org home server](https://github.com/archlinux/infrastructure/blob/master/docs/matrix.md)
+
+There is also [this partial list of public home servers](https://servers.joinmatrix.org/).
+
+### Picking an app
+
+We recommend those:
+
+- [Element X](https://matrix.org/ecosystem/clients/element-x/): flagship mobile app
+- [Element](https://matrix.org/ecosystem/clients/element/): flagship desktop app
+- [FluffyChat](https://matrix.org/ecosystem/clients/fluffychat/): good mobile, desktop app
+- [Cinny](https://cinny.in/): good desktop, minimalist, desktop app
+
+If you want to use the web interface, your home server provider likely
+provides one (above), otherwise use the official instance at
+[`app.element.io`](https://app.element.io).
+
+### Joining the room
+
+Normally, clicking the [`#reseaulibre:matrix.org` Matrix room](https://matrix.to/#/#reseaulibre:matrix.org) from
+your browser should work, by opening the desktop client. 
+
+If not, you can type `/join #reseaulibre:matrix.org` in any chat
+window, or enter the `#reseaulibre:matrix.org` URL in the "join" (in
+element it's "Search") interface of your client.
+
+## Other questions
+
+### My question is not here
 
 That is not a question, but ask us, [contact us!](../contact.md)
