@@ -11,9 +11,8 @@ room](https://matrix.to/#/#reseaulibre:matrix.org). We're organizing those many 
 [Telegram chat](https://t.me/meshtQuebec)[^1].
 
 [^1]:
-  We do not endorse the Telegram channel for [various reasons](https://en.wikipedia.org/wiki/Telegram_(software)#Criticism),
-  but more importantly the author of this site (Anarcat) refuses to join
-  because screw proprietary software.
+  We do not endorse the Telegram channel for [various reasons](https://en.wikipedia.org/wiki/Telegram_(software)#Criticism), or
+  encourage the use of Discord for [similar reasons](https://joinmatrix.org/guide/matrix-vs-discord/).
 
 ## Email
 
