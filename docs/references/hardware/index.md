@@ -103,9 +103,11 @@ Those are day-to-day use device, can you can easily carry in a pocket
 or a pouch. Those generally have a battery.
 
 !!! success
-
-    - [Heltec v4 prebuilt kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/), see also this [Aliexpress
-      Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
+ 
+    - [Heltec v4 prebuilt kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/): touch screen, 18650 *flat*
+      battery (tight, hard to remove), belt clip bulges the back cover,
+      can also serve as a "standalone" device because of the touch screen
+    - simpler, cheaper [Aliexpress Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
     - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket): GNSS, 1.3" OLED, acceleration sensor, power
       button, 3200mAh battery, USB-C powered, 100$
     - [Lilygo T-Deck Plus](https://lilygo.cc/products/t-deck-plus-1) (80$): blackberry-like, standalone device
@@ -159,7 +161,7 @@ many not have batteries.
 !!! example "In testing"
 
     - [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html): 70$USD, outdoors solar-powered relay
-      with 4x18650 batteries, nRF4840, BT 5.0, 3 power buttons, 5
+      with 4x18650 **button-top** batteries, nRF4840, BT 5.0, 3 power buttons, 5
       LEDs, USB-C for debug, [recommended by
       `nyme.sh`](https://nyme.sh/faq/). Note that the base kit doesn't
       ship with the actual batteries, or the GNSS device, for that you
@@ -168,7 +170,9 @@ many not have batteries.
       which is 20$ more. Needs to be tested through night and
       winter. Also sold at
       [RobotShop](https://ca.robotshop.com/products/sensecap-solar-node-p1-meshtastic-w-o-gps-battery)
-      for 100CAD.
+      for 100CAD. Since this *requires* button-top batteries,
+      seriously consider buying it *with* batteries, as button-top
+      batteries are often more expensive.
     - [WisMesh Solar Repeater](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater): solar, battery, mast-mountable, unclear
       if it can be setup without solar and if it supports MQTT/ethernet,
       300$, SenseCAP Solar Node P1 might be sturdier and

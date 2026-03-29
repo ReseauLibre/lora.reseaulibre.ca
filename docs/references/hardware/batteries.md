@@ -31,6 +31,13 @@ This makes some 18650 batteries fit in one case and not another. A
 "flat" battery might fit but not connect at all because it is not long
 enough!
 
+In particular, we found out that:
+
+- the [Heltec v4 prebuilt kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/) *requires* flat top batteries and
+  even then, they are *tight* and hard to remove
+- the [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html) *requires* button top batteries,
+  otherwise you will not be able to use or charge the batteries reliably
+
 ???+ tip
    
     Here's an example of 3 batteries from the Lilygo website:
