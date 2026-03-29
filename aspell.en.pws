@@ -1,4 +1,4 @@
-personal_ws-1.1 en 123 
+personal_ws-1.1 en 132 
 AEAD
 AES
 APRS
@@ -14,6 +14,7 @@ Beaupré
 CNAME
 Canadaverse
 ChaChaPoly
+Cinny
 Codeberg
 Cottle's
 CÉGEPS
@@ -23,11 +24,14 @@ Dennet
 ECB
 FACIL
 FOSDEM
+FSFE
+FluffyChat
 Forgejo
 Foulab
 Foulab's
 Freifunk
 GTK
+GitLab
 Grafana
 Guifi
 Göttgens
@@ -36,6 +40,8 @@ Haruki's
 Heltec
 IPEX
 ISF
+InkHUD
+Joliette
 Koumbit
 LEDs
 LTO
@@ -43,10 +49,12 @@ LWN
 LiPo
 Liam
 Libre
+Lilygo
 LoRa
 LongFast
 Lychee
 MQTT
+MUI
 Makerfocus
 Mastervox
 Matterbridge
@@ -84,6 +92,7 @@ TLS
 Telus
 TikTok
 TimescaleDB
+UI
 USD
 Veshra
 WIP

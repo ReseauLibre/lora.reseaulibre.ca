@@ -6,7 +6,7 @@ Let's say that, after [reading the FAQ](faq.md#why-matrix) you're convinced that
 Matrix is good enough and you want to try it out. How do you actually
 join?
 
-There are many guides for this, but the [joinmatrix.org guide is
+There are many guides for this, but the [`joinmatrix.org` guide is
 pretty good](https://joinmatrix.org/). Essentially, it is:
 
  1. Register on a home server
@@ -19,7 +19,7 @@ Here are home servers we recommend:
 
 - **Matrix.org**: even though they do not recommend you create an account
   there because their server is busy, it's still possible to create a
-  `matrix.org` account on [app.element.io](https://app.element.io/)
+  `matrix.org` account on [`app.element.io`](https://app.element.io/)
 
 - **Mozilla.org**: the people who make the Firefox web browser. Go to
   [chat.mozilla.org](https://chat.mozilla.org/) (which also serves as web client) and click on
@@ -33,15 +33,15 @@ Here are home servers we recommend:
 - Linux distributions:
 
   - **Debian**: people with an account on the [Debian GitLab server](https://salsa.debian.org/)
-    ("salsa") can access the [debian.social](https://element.debian.social/) home server
+    ("salsa") can access the [`debian.social`](https://element.debian.social/) home server
 
-  - **Ubuntu**: members can use [register on the ubuntu.com home
+  - **Ubuntu**: members can use [register on the `ubuntu.com` home
     server](https://ubuntu.com/community/docs/communications/matrix/register-ubuntu-com)
 
   - **Fedora**: people with a [Fedora account](https://accounts.fedoraproject.org/) can use the
-    [fedora.im home server](https://chat.fedoraproject.org/)
+    [`fedora.im` home server](https://chat.fedoraproject.org/)
 
-  - **Arch**: team members can [use the archlinux.org home server](https://github.com/archlinux/infrastructure/blob/master/docs/matrix.md)
+  - **Arch**: team members can [use the `archlinux.org` home server](https://github.com/archlinux/infrastructure/blob/master/docs/matrix.md)
 
 There is also [this partial list of public home servers](https://servers.joinmatrix.org/).
 
