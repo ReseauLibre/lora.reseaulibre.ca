@@ -56,9 +56,12 @@ shops also hold stock:
   and Longueuil
 - Veshra: [`EVE 35V INR18650` 3500mAh 10.2A](https://www.veshra.io/products/cmmi0b7ct0000ddfj49kcys1l) (flat) for 6$CAD
 - AliExpress: [`Kuugro ku-3500` 18650 Battery 3500mAh 3.7V 12A](https://www.aliexpress.com/item/1005009897181947.html)
-  (button) for 2$CAD, 90$CAD for 20
-- MP&W: [Button Top EVE 35V Battery Cell, Single Cell](https://mpandw.ca/products/button-top-eve-35v-house-made) for 8.50$CAD,
-  spot-welded buttons from a Ottawa maker
+  (button) for 2$CAD, 90$CAD for 20, price varies according to your
+  visit, current sweet spot is actually 8 batteries for 46$
+  (5.75$CAD/battery)
+- MP&W: [Button Top EVE 35V Battery Cell, Single Cell](https://mpandw.ca/products/button-top-eve-35v-house-made) (button) for
+  8.50$CAD, spot-welded buttons from a Ottawa maker, [EVE 35V 18650
+  3500mAh](https://mpandw.ca/products/eve-35v-18650-battery-cells-set-of-6-with-holders) (flat) 6 for 36$
 
 ## Pouch cells
 

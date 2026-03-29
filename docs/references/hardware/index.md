@@ -317,7 +317,7 @@ you for various reasons:
   Studio, RAK, or ESP32 devices
 - [Space Hedgehog](https://space-hedgehog.com/): also more expensive; stocks Antenna, Heltec,
   based in Ottawa, related to the [Ottawa mesh](https://ottawamesh.ca/)
-- [Motion Power & Witt Supply Co.](https://mpandw.ca/) has [EVE 35V 18650 3500mAh](https://mpandw.ca/products/eve-35v-18650-battery-cells-set-of-6-with-holders) 6 for 36$, based in Ottawa
+- [Motion Power & Witt Supply Co.](https://mpandw.ca/) has [batteries](batteries.md), based in Ottawa
 
 ## Hacks
 
