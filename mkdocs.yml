@@ -15,6 +15,7 @@ nav:
     - FAQ: guides/faq.md
   - Guides:
     - guides/meshtastic.md
+    - Matrix: guides/matrix.md
     - FAQ: guides/faq.md
   - References:
     - references/index.md
