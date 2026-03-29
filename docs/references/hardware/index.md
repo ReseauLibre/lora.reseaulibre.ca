@@ -169,10 +169,10 @@ many not have batteries.
       kit](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html)
       which is 20$ more. Needs to be tested through night and
       winter. Also sold at
-      [RobotShop](https://ca.robotshop.com/products/sensecap-solar-node-p1-meshtastic-w-o-gps-battery)
-      for 100CAD. Since this *requires* button-top batteries,
+      [RobotShop
+      for 100CAD](https://ca.robotshop.com/products/sensecap-solar-node-p1-meshtastic-w-o-gps-battery), [130$ with GPS and battery](https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery?qd=c71a67155c4fec187b2b07ee9a7af9f3). Since this *requires* button-top batteries,
       seriously consider buying it *with* batteries, as button-top
-      batteries are often more expensive.
+      batteries are often more expensive, which makes the RobotShop kit particularly attractive.
     - [WisMesh Solar Repeater](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater): solar, battery, mast-mountable, unclear
       if it can be setup without solar and if it supports MQTT/ethernet,
       300$, SenseCAP Solar Node P1 might be sturdier and
