@@ -74,7 +74,10 @@ We have those categories:
 !!! success
 
     Those devices were successfully tested and used on a daily
-    basis. Those devices typically end up on the [main guide](../../guides/meshtastic.md).
+    basis. A select few of those end up being recommended above. 
+    We only "recommend" one device per category to simplify user's
+    choices but "success" devices should be also considered 
+    recommended.
 
 !!! example "In testing"
 
