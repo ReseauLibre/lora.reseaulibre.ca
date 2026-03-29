@@ -26,7 +26,6 @@ nav:
         - references/hardware/power.md
     - Software:
         - references/software/index.md
-        - references/mmrelay.md
         - references/maps.md
         - Meta: meta.md
     - references/neighbours.md
@@ -187,6 +186,7 @@ plugins:
               'guides/hardware.md': 'references/hardware/index.md'
               # obscure FAQ URL that came up for less than a day
               'guides/z_faq.md': 'guides/faq.md'
+              'references/mmrelay.md': 'guides/matrix.md#bridging-matrix-and-meshtastic'
 #   # a bunch more possible plugins
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?

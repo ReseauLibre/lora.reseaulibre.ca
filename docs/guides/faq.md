@@ -135,7 +135,7 @@ neighbourhood.
 
 Try to [ask for help](../contact.md) or send the command `!ping` in the [Matrix
 bridge](https://matrix.to/#/#reseaulibre-meshtastic-bridge:matrix.org) to see if you can hear that bot on the Meshtastic
-network. See also the [Matrix bridge usage](../references/mmrelay.md#usage) for how
+network. See also the [Matrix bridge usage](matrix.md#usage) for how
 to use the bridge.
 
 ## Technology choices
