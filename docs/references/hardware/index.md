@@ -256,15 +256,6 @@ Moved to its own page, see [Power](power.md).
 
 Battery setups depends on the particular device.
 
-Contrary to popular belief, it seems like lithium-ion batteries [work
-fine below freezing](https://yycmesh.com/blog/cold-weather-charging) although we still need to confirm the results
-from the folks in Calgary ourselves. The Calgary folks are using plain
-unprotected batteries below freezing without issues.
-
-For really remote relays that are difficult to service, they started
-using [LTO batteries](https://en.wikipedia.org/wiki/Lithium-titanate_battery) which are better suited to handle deep freeze
--- we're talking -40℃ on mountaintop -- conditions.
-
 Battery cells need to be handled with care, see [this discussion about
 those batteries](https://wiki.why2025.org/Badge/Fire_hazard), for example. So far it seems most folks use
 normal "unprotected" cells in various devices, without any
@@ -273,37 +264,66 @@ fine.
 
 ### 18650
 
-The [Heltec v4 prebuilt kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/), like many other devices, uses [18650
-battery cells](https://en.wikipedia.org/wiki/18650_battery).
+The [Heltec v4 prebuilt kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/) and the [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html),
+like many other devices, uses [18650 battery cells](https://en.wikipedia.org/wiki/18650_battery). 
+
+#### Sizes
+
+18650 batteries look like bigger AA batteries, but they are not "C" or
+"D" batteries either: they are longer and thinner than a "D". 18650
+batteries are named after their size: 18mm wide, and 65mm long.[^1]
+    
+[^1]: Wikipedia claims the 0 is the digit after 65mm ("65.0mm").
+    
+They are not all exactly that same size: some 18650 batteries have a
+"button" (like the positive side of AA batteries) and some are "flat"
+(like negative size, but on both ends). Some have a "protection"
+circuit inside that makes them even longer.
+    
+This makes some 18650 batteries fit in one case and not another. A
+"buttoned" battery might not fit in a case because it's too long and a
+"flat" battery might fit but not connect at all because it is not long
+enough!
+
+???+ tip
+   
+    Here's an example of 3 batteries from the Lilygo website:
+       
+    ![Image of three different 18650 batteries](../../assets/18650_1024x1024.jpg)
+
+#### Where to buy
 
 You can buy those batteries in ["vape shops"](https://www.openstreetmap.org/search?query=vape+shop&zoom=12&minlon=-74.07085418701173&minlat=45.36975515764875&maxlon=-73.19263458251955&maxlat=45.662286836234586#map=12/45.4999/-73.5775) and various electronics
 shops also hold stock:
 
-- Addison: has 5-10$CAD unprotected batteries near the LEDs desk at
-  the St-Michel store, not on the website
-- Abra: [Samsung 25R 18650 2500mAh 20A](https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/bat-18650-s.html) for 10$CAD
-- Mastervox: [3.7V 3000mAh](https://www.mastervox.com/fr_CA/pieces/batterie/rechargeable/bat18650b_37-batterie-li-ion-18650-bouton-37v-3000mah) for 10$CAD, maybe protected?
-- Veshra: [`EVE 35V INR18650` 3500mAh 10.2A](https://www.veshra.io/products/cmmi0b7ct0000ddfj49kcys1l) for 6$CAD
-- AliExpress: [`Kuugro ku-3500` 18650 Battery 3500mAh 3.7V 12A](https://www.aliexpress.com/item/1005009897181947.html) for
-  2$CAD, 90$CAD for 20
+- Addison: has 5-10$CAD flat batteries near the LEDs desk at the
+  St-Michel store, not on the website
+- Abra: [Samsung 25R 18650 2500mAh 20A](https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/bat-18650-s.html) (flat) for 10$CAD
+- Mastervox: [3.7V 3000mAh](https://www.mastervox.com/fr_CA/pieces/batterie/rechargeable/bat18650b_37-batterie-li-ion-18650-bouton-37v-3000mah) (button) for 10$CAD, based in Joliette
+  and Longueuil
+- Veshra: [`EVE 35V INR18650` 3500mAh 10.2A](https://www.veshra.io/products/cmmi0b7ct0000ddfj49kcys1l) (flat) for 6$CAD
+- AliExpress: [`Kuugro ku-3500` 18650 Battery 3500mAh 3.7V 12A](https://www.aliexpress.com/item/1005009897181947.html)
+  (button) for 2$CAD, 90$CAD for 20
+- MP&W: [Button Top EVE 35V Battery Cell, Single Cell](https://mpandw.ca/products/button-top-eve-35v-house-made) for 8.50$CAD,
+  spot-welded buttons from a Ottawa maker
 
-??? tip "Tip on protected battery sizes"
-
-    Note that "protected" batteries often are larger (by 0.5mm) and longer
-    (by as much as 4.5mm because of the "button" and protection circuit)
-    which makes them harder to fit in some casings:
-
-    ![Image of three different 18650 batteries](../../assets/18650_1024x1024.jpg)
-
-    Note that 18650 batteries are named after their size: 18mm wide,
-    and 65mm high. Wikipedia claims the 0 is the digit after 65mm ("65.0mm").
-
-### Flat cells
+### Pouch cells
 
 Those cell packs are more used in DIY kits or lab setups:
 
 - [Makerfocus](https://www.makerfocus.com/products/makerfocus-3-7v-3000mah-lithium-rechargeable-battery-1s-3c-lipo-battery-pack-of-4) has [3.7V 3000mAh Lithium Rechargeable Battery 1S 3C
   LiPo Battery (Pack of 4)](https://www.makerfocus.com/products/makerfocus-3-7v-3000mah-lithium-rechargeable-battery-1s-3c-lipo-battery-pack-of-4) for 25$USD
+
+### Below freezing
+
+Contrary to popular belief, it seems like lithium-ion batteries [work
+fine below freezing](https://yycmesh.com/blog/cold-weather-charging) although we still need to confirm the results
+from the folks in Calgary ourselves. The Calgary folks are using plain
+unprotected batteries below freezing without issues.
+
+For really remote relays that are difficult to service, they started
+using [LTO batteries](https://en.wikipedia.org/wiki/Lithium-titanate_battery) which are better suited to handle deep freeze
+-- we're talking -40℃ on mountaintop -- conditions.
 
 ### Charger
 
@@ -361,12 +381,12 @@ touch on *all* the connectors from the guide.
 
 Other lists include:
 
-- [Official Meshtastic guide](https://meshtastic.org/docs/hardware/antennas/)[^1], which also refers to a [series of
+- [Official Meshtastic guide](https://meshtastic.org/docs/hardware/antennas/)[^2], which also refers to a [series of
   antenna reports](https://github.com/meshtastic/antenna-reports)
 - [`nyme.sh` recommendations](https://nyme.sh/faq/#what-antenna)
 - [Ottawa Mesh recommendations](https://ottawamesh.ca/hardware/repeater-mounting-options/)
 
-[^1]:
+[^2]:
 
     Note that the "Alfa AOA-915-5ACM" recommended for "Base station /
     repeater" in that guide falls short of the advertised +5dBi gain
