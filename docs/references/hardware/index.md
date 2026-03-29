@@ -156,7 +156,7 @@ many not have batteries.
 !!! success
 
     - [WisMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini): solar, battery, mast-mountable,
-      cheaper than the full repeater below, 100$
+      cheaper than the full repeater below, 100$USD
 
 !!! example "In testing"
 
