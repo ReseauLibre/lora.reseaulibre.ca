@@ -21,6 +21,7 @@ nav:
     - Hardware:
         - references/hardware/index.md
         - references/hardware/antennas.md
+        - references/hardware/batteries.md
         - references/hardware/power.md
     - Software:
         - references/software/index.md
