@@ -138,6 +138,44 @@ bridge](https://matrix.to/#/#reseaulibre-meshtastic-bridge:matrix.org) to see if
 network. See also the [Matrix bridge usage](matrix.md#usage) for how
 to use the bridge.
 
+### Is there a user manual for this GUI?
+
+"This GUI" generally means the [Meshtastic UI](https://meshtastic.org/docs/configuration/device-uis/meshtasticui/) which ships with
+device like the Lilygo T-Deck or the Heltec Kit. It's a color
+interface design to be touch or cursor driven, as opposed to the [base
+UI](https://meshtastic.org/docs/configuration/device-uis/baseui/) which is monochrome and designed to be driven by a single
+button.
+
+The user manual therefore depends on the interface:
+
+- [Meshtastic UI guide](https://meshtastic.org/docs/configuration/device-uis/meshtasticui/): color interface
+- [Base UI guide](https://meshtastic.org/docs/configuration/device-uis/baseui/): monochrome (typically green on black) interface
+- [InkHUD guide](https://meshtastic.org/docs/configuration/device-uis/inkhud/): e-ink interface
+
+### I am stuck in this user interface, how do I switch?
+
+If you are in the Base UI and you believe your device *can* run the
+full Meshtastic UI, you can switch with:
+
+ 1. go into the "system" by clicking the button until "system" shows
+    up in the title
+ 2. hold the button until a menu appears
+ 3. click the button until you select"Reboot", hold the button
+ 4. click the button until you select "Switch to MUI", hold the button
+
+To switch from Meshtastic UI back to Base UI, you can:
+
+ 1. tap on the "gear" icon to go to the Settings section
+ 2. tap the reboot menu
+ 3. hold the Bluetooth button
+ 3. click OK to go back in base UI
+
+If you lost access to the interface entirely, for example if the MUI
+is not supported, you can still go back to the Base UI by connecting
+to the device over serial, and configuring it to enable
+Bluetooth. This will disable the Meshtastic UI and *should* reboot in
+the Base UI.
+
 ## Technology choices
 ### Why not Reticulum?
 
