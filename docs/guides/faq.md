@@ -188,9 +188,13 @@ But Reticulum, while being more advanced in terms of routing and
 cryptography, lacks the "ready-made" aspect of Meshtastic. You can,
 today, buy a [hardware preinstalled with Meshtastic](../references/hardware/index.md) and it just
 works, without anything else. Reticulum is just not there
-yet. Reticulum has also [switched to a in-house, non-free license in
-April 2025](https://github.com/markqvist/Reticulum/commit/e7daceec820850d397e6bf9aa585ef7222977891) and ultimately become "private source", where the
-GitHub repository is a "[public mirror](https://github.com/markqvist/Reticulum/blob/master/MIRROR.md)" but development "happens
+yet, although projects like [ratdeck](https://github.com/ratspeak/ratdeck) are approaching the
+capabilities of Meshtastic and Meshcore in terms of running standalone
+routers, and [Columba](https://columba.network/) has tremendously improved the mobile experience.
+
+Reticulum has also [switched to a in-house, non-free license in April
+2025](https://github.com/markqvist/Reticulum/commit/e7daceec820850d397e6bf9aa585ef7222977891) and ultimately become "private source", where the GitHub
+repository is a "[public mirror](https://github.com/markqvist/Reticulum/blob/master/MIRROR.md)" but development "happens
 elsewhere".
 
 Right now the focus is on organizing the mesh that already exists on
