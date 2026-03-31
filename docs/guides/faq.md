@@ -208,7 +208,7 @@ But Reticulum, while being more advanced in terms of routing and
 cryptography, lacks the "ready-made" aspect of Meshtastic. You can,
 today, buy a [hardware preinstalled with Meshtastic](../references/hardware/index.md) and it just
 works, without anything else. Reticulum is just not there
-yet, although projects like [ratdeck](https://github.com/ratspeak/ratdeck) are approaching the
+yet, although projects like [Ratdeck](https://github.com/ratspeak/ratdeck) are approaching the
 capabilities of Meshtastic and Meshcore in terms of running standalone
 routers, and [Columba](https://columba.network/) has tremendously improved the mobile experience.
 
