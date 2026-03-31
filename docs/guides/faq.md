@@ -148,28 +148,33 @@ button.
 
 The user manual therefore depends on the interface:
 
-- [**Meshtastic UI**](https://meshtastic.org/docs/configuration/device-uis/meshtasticui/): color interface
-- [**Base UI**](https://meshtastic.org/docs/configuration/device-uis/baseui/): monochrome (typically green on black) interface
-- [**InkHUD**](https://meshtastic.org/docs/configuration/device-uis/inkhud/): e-ink interface
-- [**Programming mode**](https://meshtastic.org/docs/configuration/device-uis/meshtasticui/#bluetooth-programming-mode): color interface which just says `>>
+- [**Meshtastic UI**][]: color interface
+- [**Base UI**][]: monochrome (typically green on black) interface
+- [**InkHUD**][]: e-ink interface
+- [**Programming mode**][]: color interface which just says `>>
   Programming mode <<` with a Bluetooth icon
+
+ [**Programming mode**]: https://meshtastic.org/docs/configuration/device-uis/meshtasticui/#bluetooth-programming-mode
+ [**InkHUD**]: https://meshtastic.org/docs/configuration/device-uis/inkhud/
+ [**Base UI**]: https://meshtastic.org/docs/configuration/device-uis/baseui/
+ [**Meshtastic UI**]: https://meshtastic.org/docs/configuration/device-uis/meshtasticui/
 
 ### I am stuck in this user interface, how do I switch?
 
 Again, these are the user interfaces:
 
-- [**Meshtastic UI**](https://meshtastic.org/docs/configuration/device-uis/meshtasticui/): color interface, typically doesn't allow
+- [**Meshtastic UI**][]: color interface, typically doesn't allow
   connecting from the app, for standalone devices
-- [**Base UI**](https://meshtastic.org/docs/configuration/device-uis/baseui/): monochrome (typically green on black) interface,
+- [**Base UI**][]: monochrome (typically green on black) interface,
   limited control on standalone devices (just one button), but grants
   access from the app over Bluetooth
-- [**InkHUD**](https://meshtastic.org/docs/configuration/device-uis/inkhud/): e-ink interface
-- [**Programming mode**](https://meshtastic.org/docs/configuration/device-uis/meshtasticui/#bluetooth-programming-mode): color interface which just says `>>
+- [**InkHUD**][]: e-ink interface
+- [**Programming mode**][]: color interface which just says `>>
   Programming mode <<` with a Bluetooth icon, grants access from the
   app over Bluetooth
 
-If you are in the **Base UI** and you believe your device *can* run
-the full **Meshtastic UI** and you don't need to access the device
+If you are in the [**Base UI**][] and you believe your device *can* run
+the full [**Meshtastic UI**][] and you don't need to access the device
 from your phone, you can switch with:
 
  1. go into the "system" by clicking the button until "system" shows
@@ -178,23 +183,23 @@ from your phone, you can switch with:
  3. click the button until you select"Reboot", hold the button
  4. click the button until you select "Switch to MUI", hold the button
 
-To switch from **Meshtastic UI** back to **Base UI** so you can access
+To switch from [**Meshtastic UI**][] back to [**Base UI**][] so you can access
 it from your phone, you can:
 
  1. tap on the "gear" icon to go to the Settings section
  2. tap the reboot menu
  3. hold the Bluetooth button
- 3. click OK to go back in base UI
+ 3. click OK to go back in [**Base UI**][]
 
-If you are in the "[Programming mode](https://meshtastic.org/docs/configuration/device-uis/meshtasticui/#bluetooth-programming-mode)", hold the "Bluetooth" icon
-and you should return to the **Meshtastic UI**.
+If you are in the [**Programming mode**][], hold the "Bluetooth" icon
+and you should return to the [**Meshtastic UI**][].
 
-If you lost access to the interface entirely, for example if the MUI
-is not supported, you can still go back to the Base UI by connecting
-to the device over a USB cable (so-called "serial") and configuring it
-to enable Bluetooth in the device settings from the Meshtastic
-app. This will disable the Meshtastic UI and *should* reboot in the
-Base UI.
+If you lost access to the interface entirely, for example if the
+[**Meshtastic UI**][] is not supported, you can still go back to the
+[**Base UI**][] by connecting to the device over a USB cable
+(so-called "serial") and configuring it to enable Bluetooth in the
+device settings from the Meshtastic app. This will disable the
+[**Meshtastic UI**][] and *should* reboot in the [**Base UI**][].
 
 ## Technology choices
 ### Why not Reticulum?
