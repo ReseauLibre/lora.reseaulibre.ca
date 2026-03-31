@@ -2207,13 +2207,28 @@ UI</a> which is monochrome and designed to be driven by a single
 button.</p>
 <p>The user manual therefore depends on the interface:</p>
 <ul>
-<li><a href="https://meshtastic.org/docs/configuration/device-uis/meshtasticui/">Meshtastic UI guide</a>: color interface</li>
-<li><a href="https://meshtastic.org/docs/configuration/device-uis/baseui/">Base UI guide</a>: monochrome (typically green on black) interface</li>
-<li><a href="https://meshtastic.org/docs/configuration/device-uis/inkhud/">InkHUD guide</a>: e-ink interface</li>
+<li><a href="https://meshtastic.org/docs/configuration/device-uis/meshtasticui/"><strong>Meshtastic UI</strong></a>: color interface</li>
+<li><a href="https://meshtastic.org/docs/configuration/device-uis/baseui/"><strong>Base UI</strong></a>: monochrome (typically green on black) interface</li>
+<li><a href="https://meshtastic.org/docs/configuration/device-uis/inkhud/"><strong>InkHUD</strong></a>: e-ink interface</li>
+<li><a href="https://meshtastic.org/docs/configuration/device-uis/meshtasticui/#bluetooth-programming-mode"><strong>Programming mode</strong></a>: color interface which just says <code>&gt;&gt;
+  Programming mode &lt;&lt;</code> with a Bluetooth icon</li>
 </ul>
 <h3 id="i-am-stuck-in-this-user-interface-how-do-i-switch">I am stuck in this user interface, how do I switch?<a class="headerlink" href="#i-am-stuck-in-this-user-interface-how-do-i-switch" title="Permanent link">&para;</a></h3>
-<p>If you are in the Base UI and you believe your device <em>can</em> run the
-full Meshtastic UI, you can switch with:</p>
+<p>Again, these are the user interfaces:</p>
+<ul>
+<li><a href="https://meshtastic.org/docs/configuration/device-uis/meshtasticui/"><strong>Meshtastic UI</strong></a>: color interface, typically doesn't allow
+  connecting from the app, for standalone devices</li>
+<li><a href="https://meshtastic.org/docs/configuration/device-uis/baseui/"><strong>Base UI</strong></a>: monochrome (typically green on black) interface,
+  limited control on standalone devices (just one button), but grants
+  access from the app over Bluetooth</li>
+<li><a href="https://meshtastic.org/docs/configuration/device-uis/inkhud/"><strong>InkHUD</strong></a>: e-ink interface</li>
+<li><a href="https://meshtastic.org/docs/configuration/device-uis/meshtasticui/#bluetooth-programming-mode"><strong>Programming mode</strong></a>: color interface which just says <code>&gt;&gt;
+  Programming mode &lt;&lt;</code> with a Bluetooth icon, grants access from the
+  app over Bluetooth</li>
+</ul>
+<p>If you are in the <strong>Base UI</strong> and you believe your device <em>can</em> run
+the full <strong>Meshtastic UI</strong> and you don't need to access the device
+from your phone, you can switch with:</p>
 <ol>
 <li>go into the "system" by clicking the button until "system" shows
     up in the title</li>
@@ -2221,18 +2236,22 @@ full Meshtastic UI, you can switch with:</p>
 <li>click the button until you select"Reboot", hold the button</li>
 <li>click the button until you select "Switch to MUI", hold the button</li>
 </ol>
-<p>To switch from Meshtastic UI back to Base UI, you can:</p>
+<p>To switch from <strong>Meshtastic UI</strong> back to <strong>Base UI</strong> so you can access
+it from your phone, you can:</p>
 <ol>
 <li>tap on the "gear" icon to go to the Settings section</li>
 <li>tap the reboot menu</li>
 <li>hold the Bluetooth button</li>
 <li>click OK to go back in base UI</li>
 </ol>
+<p>If you are in the "<a href="https://meshtastic.org/docs/configuration/device-uis/meshtasticui/#bluetooth-programming-mode">Programming mode</a>", hold the "Bluetooth" icon
+and you should return to the <strong>Meshtastic UI</strong>.</p>
 <p>If you lost access to the interface entirely, for example if the MUI
 is not supported, you can still go back to the Base UI by connecting
-to the device over serial, and configuring it to enable
-Bluetooth. This will disable the Meshtastic UI and <em>should</em> reboot in
-the Base UI.</p>
+to the device over a USB cable (so-called "serial") and configuring it
+to enable Bluetooth in the device settings from the Meshtastic
+app. This will disable the Meshtastic UI and <em>should</em> reboot in the
+Base UI.</p>
 <h2 id="technology-choices">Technology choices<a class="headerlink" href="#technology-choices" title="Permanent link">&para;</a></h2>
 <h3 id="why-not-reticulum">Why not Reticulum?<a class="headerlink" href="#why-not-reticulum" title="Permanent link">&para;</a></h3>
 <p>We <em>are</em> experimenting with Reticulum. Some of us have worked on
@@ -2362,7 +2381,7 @@ works.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 30, 2026 14:53:11 UTC">2026-03-30 14:53:11</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 31, 2026 13:57:10 UTC">2026-03-31 13:57:10</span>
   </span>
 
     
