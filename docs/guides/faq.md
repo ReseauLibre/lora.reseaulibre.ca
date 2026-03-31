@@ -170,6 +170,9 @@ To switch from Meshtastic UI back to Base UI, you can:
  3. hold the Bluetooth button
  3. click OK to go back in base UI
 
+If you are in the "[Programming mode](https://meshtastic.org/docs/configuration/device-uis/meshtasticui/#bluetooth-programming-mode)", hold the "Bluetooth" icon
+and you should return to the **Meshtastic UI**.
+
 If you lost access to the interface entirely, for example if the MUI
 is not supported, you can still go back to the Base UI by connecting
 to the device over serial, and configuring it to enable
