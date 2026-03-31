@@ -140,6 +140,10 @@ or a pouch. Those generally have a battery.
 
 !!! question "Untested"
 
+    - [Elecrow ThinkNode M1](https://www.elecrow.com/thinknode-m1-meshtastic-lora-signal-transceiver-powered-by-nrf52840-with-154-screen-support-gps.html):
+      nRF52840, 1200mAh battery, 1.54" e-ink display, GPS, BLE, RP-SMA,
+      -10~50°C, 54$USD, [89$CAD at Muzi](https://muzi.works/products/elecrow-thinknode-m1),  
+      similar to the Lilygo T-Echo, but has a better battery
     - [T-Deck Pro](https://lilygo.cc/products/t-deck-pro): 3.1" e-ink touch screen, 4G module, WiFi 2.4GHz,
       BLE 5, GPS, TF Card, mic, speaker, keypad, see also the [T5 e-paper
       s3 pro](https://lilygo.cc/products/t5-e-paper-s3-pro)
