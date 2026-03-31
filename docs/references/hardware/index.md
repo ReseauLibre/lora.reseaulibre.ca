@@ -125,7 +125,7 @@ or a pouch. Those generally have a battery.
       cheapest kit.
     - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): 200x200 e-ink
       display, NRF52840, GPS, BT 5.0, no wifi, only two
-      buttons, NFC, 850mAh battery, temperature/pressure sensor, 55$
+      buttons, NFC, 850mAh battery, temperature/pressure sensor, 55$USD
     - Seeedstudio [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, - 40℃ ~
       100℃, WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm,
       37g, exposed GPIO ports, cheap (20$), does not ship with
