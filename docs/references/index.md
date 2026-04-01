@@ -12,8 +12,6 @@ We cover a bunch of topics here, namely:
   mesh, and how to use it (including this website!)
 - [Neighbours](neighbours.md): other mesh projects that are relevant
   to us
-- [Meetings](meetings/index.md): meeting minutes, upcoming meetings are
-  announced in the [news section](../news/index.md)
 - [Others](other.md): other guides and documentation we find
   interesting
 - [Code of conduct](../code.md): how to behave around this project, the

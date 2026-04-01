@@ -29,9 +29,6 @@ nav:
         - references/maps.md
         - Meta: meta.md
     - references/neighbours.md
-    - Meetings:
-      - references/meetings/index.md
-      - references/meetings/2026-04-01.md
     - references/net.md
     - references/other.md
     - Code of Conduct: code.md
@@ -151,7 +148,6 @@ plugins:
       blog_dir: news
       categories_allowed:
         - events
-  - macros
   # regroup third-party plugins to make them easier to disable
   #
   # use, say, `env MKDOCS_THIRD_PARTY=false mkdocs serve` to disable
