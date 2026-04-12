@@ -43,7 +43,14 @@ Here are home servers we recommend:
 
   - **Arch**: team members can [use the `archlinux.org` home server](https://github.com/archlinux/infrastructure/blob/master/docs/matrix.md)
 
-There is also [this partial list of public home servers](https://servers.joinmatrix.org/).
+- Other servers:
+
+  - [Unredacted](https://unredacted.org/services/si/matrix/) - privacy focused, based in the United States
+  - [`tchncs.de`](https://tchncs.de/en/matrix) - based in Germany, also offers [other federated
+    services](https://tchncs.de/)
+
+There is also [this list of home servers accepting registration from
+the public](https://servers.joinmatrix.org/).
 
 ### Picking an app
 
