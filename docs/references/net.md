@@ -18,14 +18,14 @@ On each Wednesday at 21:00 local, send those two messages:
 ```
 # Bienvenue sur le Réseau Libre #
 Chaque mercredi, vous pouvez vous enregistrer avec:
-"Bonsoir acat1815, ici MON_NOM à MON_ENDROIT"
+"Bonsoir acat, ici MON_NOM à MON_ENDROIT"
 Je répond à tous les messages que je reçois!
 ```
 
 ```
 # Welcome to the Réseau Libre net #
 Every Wednesday, you can check-in with:
-"Hello acat1815, this is YOUR_NAME at YOUR_LOCATION" 
+"Hello acat, this is YOUR_NAME at YOUR_LOCATION"
 I will acknowledge all check-ins that I receive!
 ```
 
@@ -33,7 +33,7 @@ Respond to every check-in that you receive and include their name and
 location:
 
 ```
-acat1815 (Net Control) received check-in from THEIR_NAME in LOCATION.
+acat (Net Control) received check-in from THEIR_NAME in LOCATION.
 ```
 
 It may feel redundant to include names in the messages, but this
