@@ -24,8 +24,19 @@ workflow](https://docs.codeberg.org/git/clone-commit-via-web/#edit).
 > documentation seems to favor a local, git-based workflow which is
 > more complicated, but also supported.
 
-Your contributions will be considered under the [Creative Commons
-Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) license:
+Once the request is approved, your changes will go live. Changes take
+a "few minuets" to show up, see [this troubleshooting section
+otherwise](https://docs.codeberg.org/codeberg-pages/troubleshooting/#my-content-is-not-updated).
+
+The site was originally built on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) but eventually
+switched to [Zensical](https://zensical.org/), then back to mkdocs-material to get the
+blog working. See their [authoring guide](https://squidfunk.github.io/mkdocs-material/reference/) for more information.
+
+## Copyright
+
+The content of this repository is available under the [Creative
+Commons Attribution-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/), and so
+will be your contributions:
 
 > 💡 License
 >
@@ -40,14 +51,6 @@ Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/b
 >  - **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 >  - **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 >  - *No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
-
-Once the request is approved, your changes will go live. Changes take
-a "few minuets" to show up, see [this troubleshooting section
-otherwise](https://docs.codeberg.org/codeberg-pages/troubleshooting/#my-content-is-not-updated).
-
-The site was originally built on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) but eventually
-switched to [Zensical](https://zensical.org/), then back to mkdocs-material to get the
-blog working. See their [authoring guide](https://squidfunk.github.io/mkdocs-material/reference/) for more information.
 
 ## Translations
 
