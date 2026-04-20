@@ -283,7 +283,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../meshtastic/" class="md-tabs__link">
+        <a href="../meshcore/" class="md-tabs__link">
           
   
   
@@ -781,6 +781,28 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#why-not-meshtastic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why not Meshtastic?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-meshcore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Meshcore?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#why-not-meshcore" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -879,6 +901,8 @@
       
         
       
+        
+      
     
     
     
@@ -932,6 +956,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../meshcore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meshcore
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../meshtastic/" class="md-nav__link">
         
   
@@ -939,7 +991,7 @@
   <span class="md-ellipsis">
     
   
-    Getting started with Meshtastic
+    Meshtastic
   
 
     
@@ -1208,6 +1260,28 @@
     <span class="md-ellipsis">
       
         Why not Reticulum?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-not-meshtastic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why not Meshtastic?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-meshcore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Meshcore?
       
     </span>
   </a>
@@ -2017,6 +2091,28 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#why-not-meshtastic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why not Meshtastic?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-meshcore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Meshcore?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#why-not-meshcore" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2273,29 +2369,96 @@ elsewhere".</p>
 the island, and that is mostly made up of Meshtastic nodes. Reticulum
 could be a backhaul for the network or the future of the network,
 we'll see!</p>
+<h3 id="why-not-meshtastic">Why not Meshtastic?<a class="headerlink" href="#why-not-meshtastic" title="Permanent link">&para;</a></h3>
+<p>We also support and run Meshtastic! At least to a certain extent: at
+the time of writing, there's a mesh of about 100 nodes in
+Montreal. But it doesn't scale: while telemetry seems to eventually
+make it through the mesh, messaging is extremely lossy up to a point
+where one cannot reliably communicate over the mesh.</p>
+<p>We are experimenting with Meshcore instead. We still believe there are
+interesting use cases for Meshtastic: for smaller communities, it just
+works, and it's easier to use than the alternatives.</p>
+<p>Plus, Meshtastic is free software, more so than Meshcore at least:
+software and firmware are all free software, and documentation is
+pretty good. Those are all lessons Meshcore should take a lesson
+from. The onboarding is fantastic as well.</p>
+<p>Meshtastic have built a great product and toolchain. They have blazed
+the way towards people creating mesh networks all across the planet.</p>
+<h3 id="why-meshcore">Why Meshcore?<a class="headerlink" href="#why-meshcore" title="Permanent link">&para;</a></h3>
+<p>We're slowly experimenting with Meshcore more and more! When we first
+started working on LoRa in 2025, there were significantly more
+Meshtastic than Meshcore relays across the world, but as of April
+2026, that trend has reversed, and wildly.</p>
+<p>There are now country-wide meshes in the UK and large parts of Europe,
+including Germany and the Netherlands. The <a href="https://pugetmesh.org/meshcore/">Puget mesh</a> seem on
+their way to connect Vancouver to California.</p>
+<p>With Meshcore, there is a distinction between routers and clients. And
+while mesh "purists" might feel this is a tragic treason of
+fundamental principles, mesh veterans know that a mesh is just another
+piece of infrastructure. There is necessarily some level of
+organization (and chaos) in a mesh, and the sooner we realize and
+acknowledge those power structures, the sooner we can avoid
+<a href="https://www.jofreeman.com/joreen/tyranny.htm">The Tyranny of Structurelessness</a> (<a href="https://en.wikipedia.org/wiki/The_Tyranny_of_Structurelessness">Wikipedia</a>).</p>
+<p>The stronger distinction between the device roles in Meshcore forces a
+more deliberate approach in building necessary infrastructure. With
+<a href="https://meshtastic.org/docs/configuration/radio/device/">over a dozen device roles</a>, this is one of Meshtastic's weak
+point. Even after months of experimentation with Meshtastic, who
+really knows <a href="https://meshtastic.org/blog/choosing-the-right-device-role/">how to chose the right device role</a>, even after
+reading that blog post?</p>
+<p>Security is a bit of a mixed bag (see below), but it feels like
+Meshcore's cryptographic design is slightly more solid than Meshtastic
+utterly trivial design. There is some authentication to thwart replay
+attacks, something which Meshtastic still struggles with. It is far
+from being as solid as Reticulum, which is closer to Signal in terms
+of security properties, but it's a bit of a "worse is better" in this
+case: Meshcore's simpler cryptographic design means it's lighter to
+implement and there are already lots of devices that can run Meshcore
+firmware, while Reticulum is still struggling to embed on a few.</p>
+<p>In March 2026, we said we'd "scale the mesh when we get there". A
+month later, it already feels like we're there since, as we said,
+"this might come sooner than we think".</p>
 <h3 id="why-not-meshcore">Why not Meshcore?<a class="headerlink" href="#why-not-meshcore" title="Permanent link">&para;</a></h3>
-<p>We're also considering Meshcore! Many mesh projects including <a href="https://pugetmesh.org/meshcore/">Puget
-mesh</a> and Boston have started experimenting with it.</p>
-<p>Right now, they main reason we're not using Meshcore is similar to
-Reticulum: the devices and critical mass is on Meshtastic. Meshcore
-brings interesting scalability properties to the table, but it's
-unclear what improvements it brings to the table in terms of
-security. </p>
+<p>There <em>are</em> serious problems with Meshcore, that said, that make us a
+little uncomfortable with its massive adoption.</p>
 <p>Regarding encryption, <a href="https://jacksbrain.com/2026/01/a-hitchhiker-s-guide-to-meshcore-cryptography/">this blog post</a> seems to indicate issues
 with hashtag rooms and <a href="https://github.com/meshcore-dev/MeshCore/issues/259">issue #259</a> flagged that AES is used in ECB
 mode which leaks at least plain text length information and sometimes
 full clear text patterns, known as the <a href="https://github.com/robertdavidgraham/ecb-penguin">ECB penguin problem</a>. As of
 March 2025, there is a <a href="https://github.com/meshcore-dev/MeshCore/pull/1677">pull request</a> to <em>add</em> "ChaChaPoly AEAD-4
 encryption with nonce persistence" in a backwards compatible way,
-which is very encouraging.</p>
-<p>Furthermore, while some of the Meshcore firmware is free, the
-<a href="https://meshcore.co.uk/apps.html">official Meshcore apps</a> are <a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#57-q-is-meshcore-open-source">non-free and the T-Deck firmware is
+which is encouraging, but a year later, the effort doesn't seem to
+have realized significant progress yet.</p>
+<p>Furthermore, while some of the Meshcore software is free, the
+<a href="https://meshcore.co.uk/apps.html">official Meshcore apps</a> are non-free and a lot of <a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#57-q-is-meshcore-open-source">firmware is
 proprietary</a>. There are a <a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#514-q-are-there-are-projects-built-around-meshcore">number of third-party applications</a>,
-including an <a href="https://github.com/zjs81/meshcore-open">open app</a> but Meshcore is generally not as well
-integrated as Meshtastic.</p>
-<p>Long story short, we'll scale the mesh when we get there. This might
-come sooner than we think. We suspect we might be currently limited in
-coverage by the Meshtastic hop limit.</p>
+including an <a href="https://github.com/zjs81/meshcore-open">open app</a> but Meshcore is generally not as close to
+open source ethos as Meshtastic, or Reticulum.</p>
+<p>For example, the main discussion channel for Reticulum is, of course,
+on Matrix. Virtually everything Meshcore is on Discord instead, a
+<a href="https://en.wikipedia.org/wiki/Discord#Criticisms_and_controversies">controversial commercial chat provider</a>, a closed platform with
+<a href="https://en.wikipedia.org/wiki/Discord#Monetization">questionable monetization strategies</a> that is one IPO away from a
+Slack-style rug-pull. The local mesh is trying to pull people towards
+Matrix through bridging and advocacy, but it's an upward slope.</p>
+<p>Finally, the way routing works in Meshcore is that the path is encoded
+in packets in clear text. This means an attacker watching the mesh can
+tell where, generally, you are. On a normal communication (say, when
+you're home), your packets will go through a certain repeater and
+then, if you move around, your packets will go through a different
+repeater.</p>
+<p>While there's an aspect of this that's inherent to any radio
+communication, it's particularly tricky with Meshcore because those
+paths are encoded in the packet itself, which travels of course much
+further than the local LoRa range. Meshtastic doesn't share that
+problem as much since it's mostly flood-routed. Reticulum doesn't have
+that problem because routers only know about their neighbors and
+routes identity-based.</p>
+<p>We consider this anonymity issue to be an acceptable tradeoff:
+repeaters don't <em>have</em> to keep track of their users locations (and
+most don't). Compare this to cell phone towers, for example. Not only
+do towers precisely geolocate their users by triangulation, they also
+resell that private information to data brokers which can then become
+accessible for a small fee, bypassing decades of traditional legal
+protection against unreasonable search and seizure.</p>
 <h3 id="why-longfast">Why LongFast?<a class="headerlink" href="#why-longfast" title="Permanent link">&para;</a></h3>
 <p>We currently stay close to the default Meshtastic settings, which
 includes 3 hops limits and the LongFast default. For now, we are not
@@ -2381,7 +2544,7 @@ works.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 31, 2026 14:12:45 UTC">2026-03-31 14:12:45</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="April 20, 2026 03:00:16 UTC">2026-04-20 03:00:16</span>
   </span>
 
     
