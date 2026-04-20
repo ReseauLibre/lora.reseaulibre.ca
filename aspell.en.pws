@@ -1,4 +1,4 @@
-personal_ws-1.1 en 134 
+personal_ws-1.1 en 143 
 AEAD
 AES
 APRS
@@ -63,9 +63,13 @@ Mattermost
 Maubot
 MeshCore
 MeshMapper
+MeshOS
 Meshcore
+Meshcore's
+Meshmapper
 Meshsense
 Meshtastic
+Meshtastic's
 Montréal
 NHMesh
 NL
@@ -79,6 +83,7 @@ RAK
 README
 RISQ
 RSS
+Ratdeck
 Reddit
 Riseup
 Réseau
@@ -88,7 +93,9 @@ Seeed
 Semtech
 SenseCAP
 Sexualization
+ShareAlike
 Snowden
+Structurelessness
 TLS
 Telus
 TikTok
@@ -109,11 +116,14 @@ anarcat
 backhaul
 collinear
 cooldown
+cryptographic
 dBi
 decrypt
 fil
 janky
 jpg
+licensor
+lossy
 mAh
 microReticulum
 mkdocs
@@ -123,7 +133,6 @@ octicons
 omnidirectional
 prebuilt
 printemps
-Ratdeck
 reachability
 reflashtic
 socio

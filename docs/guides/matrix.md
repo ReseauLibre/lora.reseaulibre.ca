@@ -51,7 +51,7 @@ Here are home servers we recommend:
 
 - Other servers:
 
-  - [Unredacted](https://unredacted.org/services/si/matrix/) - privacy focused, based in the United States
+  - [`Unredacted`](https://unredacted.org/services/si/matrix/) - privacy focused, based in the United States
   - [`tchncs.de`](https://tchncs.de/en/matrix) - based in Germany, also offers [other federated
     services](https://tchncs.de/)
 

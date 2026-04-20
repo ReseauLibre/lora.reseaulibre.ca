@@ -53,7 +53,7 @@ browser:
 <https://meshcore.co.uk/flasher.html>
 
 If you have picked a standalone device, you *may* skip this step if it
-comes pre-configured.
+comes flashed with Meshcore already.
 
 !!! important
 
@@ -145,7 +145,7 @@ provided here as a reference for some rate situations where you need
 to enter the secret key directly. (For example, some standalone
 firmware like the T-Deck require this.)
 
-See also the channels used in other comunities:
+See also the channels used in other communities:
 
 - [Puget mesh](https://pugetmesh.org/meshcore/)
 - [Switzerland](https://www.meshcore.ch/channels/)

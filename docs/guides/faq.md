@@ -242,9 +242,9 @@ works, and it's easier to use than the alternatives.
 Plus, Meshtastic is free software, more so than Meshcore at least:
 software and firmware are all free software, and documentation is
 pretty good. Those are all lessons Meshcore should take a lesson
-from. The onboarding is fantastic as well.
+from. The on-boarding is fantastic as well.
 
-Meshtastic have built a great product and toolchain. They have blazed
+Meshtastic have built a great product and tool chain. They have blazed
 the way towards people creating mesh networks all across the planet.
 
 ### Why Meshcore?
@@ -329,10 +329,10 @@ problem as much since it's mostly flood-routed. Reticulum doesn't have
 that problem because routers only know about their neighbors and
 routes identity-based.
 
-We consider this anonymity issue to be an acceptable tradeoff:
+We consider this anonymity issue to be an acceptable trade-off:
 repeaters don't *have* to keep track of their users locations (and
 most don't). Compare this to cell phone towers, for example. Not only
-do towers precisely geolocate their users by triangulation, they also
+do towers precisely locate their users by triangulation, they also
 resell that private information to data brokers which can then become
 accessible for a small fee, bypassing decades of traditional legal
 protection against unreasonable search and seizure.
