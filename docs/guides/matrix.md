@@ -1,10 +1,16 @@
 # Matrix guides
 
+The Réseau Libre project encourages the use of Matrix instead of
+proprietary platforms like Discord, Telegram or Facebook. This page
+explains how to get onboard and use Matrix to run bridges with the
+mesh.
+
+You can read the rationale behind that choice [in the "Why Matrix?"
+FAQ](faq.md#why-matrix).
+
 ## How do I join the Matrix room?
 
-Let's say that, after [reading the FAQ](faq.md#why-matrix) you're convinced that
-Matrix is good enough and you want to try it out. How do you actually
-join?
+So how do you actually join Matrix?
 
 There are many guides for this, but the [`joinmatrix.org` guide is
 pretty good](https://joinmatrix.org/). Essentially, it is:
@@ -68,11 +74,14 @@ provides one (above), otherwise use the official instance at
 ### Joining the room
 
 Normally, clicking the [`#reseaulibre:matrix.org` Matrix room](https://matrix.to/#/#reseaulibre:matrix.org) from
-your browser should work, by opening the desktop client. 
+your browser should work, by opening the desktop client.
 
 If not, you can type `/join #reseaulibre:matrix.org` in any chat
 window, or enter the `#reseaulibre:matrix.org` URL in the "join" (in
 element it's "Search") interface of your client.
+
+This is the main room, but there are other rooms in the space,
+[`#reseaulibre-space:matrix.org` Matrix room](https://matrix.to/#/#reseaulibre-space:matrix.org).
 
 ## Bridging Matrix and Meshtastic
 
