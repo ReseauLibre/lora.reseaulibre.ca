@@ -227,16 +227,70 @@ the island, and that is mostly made up of Meshtastic nodes. Reticulum
 could be a backhaul for the network or the future of the network,
 we'll see!
 
+### Why not Meshtastic?
+
+We also support and run Meshtastic! At least to a certain extent: at
+the time of writing, there's a mesh of about 100 nodes in
+Montreal. But it doesn't scale: while telemetry seems to eventually
+make it through the mesh, messaging is extremely lossy up to a point
+where one cannot reliably communicate over the mesh.
+
+We are experimenting with Meshcore instead. We still believe there are
+interesting use cases for Meshtastic: for smaller communities, it just
+works, and it's easier to use than the alternatives.
+
+Plus, Meshtastic is free software, more so than Meshcore at least:
+software and firmware are all free software, and documentation is
+pretty good. Those are all lessons Meshcore should take a lesson
+from. The onboarding is fantastic as well.
+
+Meshtastic have built a great product and toolchain. They have blazed
+the way towards people creating mesh networks all across the planet.
+
+### Why Meshcore?
+
+We're slowly experimenting with Meshcore more and more! When we first
+started working on LoRa in 2025, there were significantly more
+Meshtastic than Meshcore relays across the world, but as of April
+2026, that trend has reversed, and wildly.
+
+There are now country-wide meshes in the UK and large parts of Europe,
+including Germany and the Netherlands. The [Puget mesh](https://pugetmesh.org/meshcore/) seem on
+their way to connect Vancouver to California.
+
+With Meshcore, there is a distinction between routers and clients. And
+while mesh "purists" might feel this is a tragic treason of
+fundamental principles, mesh veterans know that a mesh is just another
+piece of infrastructure. There is necessarily some level of
+organization (and chaos) in a mesh, and the sooner we realize and
+acknowledge those power structures, the sooner we can avoid
+[The Tyranny of Structurelessness](https://www.jofreeman.com/joreen/tyranny.htm) ([Wikipedia](https://en.wikipedia.org/wiki/The_Tyranny_of_Structurelessness)).
+
+The stronger distinction between the device roles in Meshcore forces a
+more deliberate approach in building necessary infrastructure. With
+[over a dozen device roles](https://meshtastic.org/docs/configuration/radio/device/), this is one of Meshtastic's weak
+point. Even after months of experimentation with Meshtastic, who
+really knows [how to chose the right device role](https://meshtastic.org/blog/choosing-the-right-device-role/), even after
+reading that blog post?
+
+Security is a bit of a mixed bag (see below), but it feels like
+Meshcore's cryptographic design is slightly more solid than Meshtastic
+utterly trivial design. There is some authentication to thwart replay
+attacks, something which Meshtastic still struggles with. It is far
+from being as solid as Reticulum, which is closer to Signal in terms
+of security properties, but it's a bit of a "worse is better" in this
+case: Meshcore's simpler cryptographic design means it's lighter to
+implement and there are already lots of devices that can run Meshcore
+firmware, while Reticulum is still struggling to embed on a few.
+
+In March 2026, we said we'd "scale the mesh when we get there". A
+month later, it already feels like we're there since, as we said,
+"this might come sooner than we think".
+
 ### Why not Meshcore?
 
-We're also considering Meshcore! Many mesh projects including [Puget
-mesh](https://pugetmesh.org/meshcore/) and Boston have started experimenting with it.
-
-Right now, they main reason we're not using Meshcore is similar to
-Reticulum: the devices and critical mass is on Meshtastic. Meshcore
-brings interesting scalability properties to the table, but it's
-unclear what improvements it brings to the table in terms of
-security. 
+There *are* serious problems with Meshcore, that said, that make us a
+little uncomfortable with its massive adoption.
 
 Regarding encryption, [this blog post](https://jacksbrain.com/2026/01/a-hitchhiker-s-guide-to-meshcore-cryptography/) seems to indicate issues
 with hashtag rooms and [issue #259](https://github.com/meshcore-dev/MeshCore/issues/259) flagged that AES is used in ECB
@@ -244,17 +298,44 @@ mode which leaks at least plain text length information and sometimes
 full clear text patterns, known as the [ECB penguin problem](https://github.com/robertdavidgraham/ecb-penguin). As of
 March 2025, there is a [pull request](https://github.com/meshcore-dev/MeshCore/pull/1677) to *add* "ChaChaPoly AEAD-4
 encryption with nonce persistence" in a backwards compatible way,
-which is very encouraging.
+which is encouraging, but a year later, the effort doesn't seem to
+have realized significant progress yet.
 
-Furthermore, while some of the Meshcore firmware is free, the
-[official Meshcore apps](https://meshcore.co.uk/apps.html) are [non-free and the T-Deck firmware is
+Furthermore, while some of the Meshcore software is free, the
+[official Meshcore apps](https://meshcore.co.uk/apps.html) are non-free and a lot of [firmware is
 proprietary](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#57-q-is-meshcore-open-source). There are a [number of third-party applications](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#514-q-are-there-are-projects-built-around-meshcore),
-including an [open app](https://github.com/zjs81/meshcore-open) but Meshcore is generally not as well
-integrated as Meshtastic.
+including an [open app](https://github.com/zjs81/meshcore-open) but Meshcore is generally not as close to
+open source ethos as Meshtastic, or Reticulum.
 
-Long story short, we'll scale the mesh when we get there. This might
-come sooner than we think. We suspect we might be currently limited in
-coverage by the Meshtastic hop limit.
+For example, the main discussion channel for Reticulum is, of course,
+on Matrix. Virtually everything Meshcore is on Discord instead, a
+[controversial commercial chat provider](https://en.wikipedia.org/wiki/Discord#Criticisms_and_controversies), a closed platform with
+[questionable monetization strategies](https://en.wikipedia.org/wiki/Discord#Monetization) that is one IPO away from a
+Slack-style rug-pull. The local mesh is trying to pull people towards
+Matrix through bridging and advocacy, but it's an upward slope.
+
+Finally, the way routing works in Meshcore is that the path is encoded
+in packets in clear text. This means an attacker watching the mesh can
+tell where, generally, you are. On a normal communication (say, when
+you're home), your packets will go through a certain repeater and
+then, if you move around, your packets will go through a different
+repeater.
+
+While there's an aspect of this that's inherent to any radio
+communication, it's particularly tricky with Meshcore because those
+paths are encoded in the packet itself, which travels of course much
+further than the local LoRa range. Meshtastic doesn't share that
+problem as much since it's mostly flood-routed. Reticulum doesn't have
+that problem because routers only know about their neighbors and
+routes identity-based.
+
+We consider this anonymity issue to be an acceptable tradeoff:
+repeaters don't *have* to keep track of their users locations (and
+most don't). Compare this to cell phone towers, for example. Not only
+do towers precisely geolocate their users by triangulation, they also
+resell that private information to data brokers which can then become
+accessible for a small fee, bypassing decades of traditional legal
+protection against unreasonable search and seizure.
 
 ### Why LongFast?
 

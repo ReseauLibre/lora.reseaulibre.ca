@@ -14,7 +14,8 @@ nav:
     - Contact: contact.md
     - FAQ: guides/faq.md
   - Guides:
-    - guides/meshtastic.md
+    - Meshcore: guides/meshcore.md
+    - Meshtastic: guides/meshtastic.md
     - Matrix: guides/matrix.md
     - FAQ: guides/faq.md
   - References:

@@ -3,6 +3,17 @@
 Getting started with running a Meshtastic relay is easy. You need to
 buy some hardware, install an app, and tweak some settings.
 
+!!! question
+
+    We are currently reconsidering the use of Meshtastic across the
+    Montreal mesh. Right now, there are dozens if not hundreds of
+    devices, but no one can seem to speak with anyone. There's mostly
+    noise, and some believe we have grown past the scalability of
+    Meshtastic.
+    
+    We are now focusing on building Meshcore infrastructure, see our
+    [Getting started with Meshcore](meshcore.md) guide instead.
+
 You can expect to communicate through text with other relays within a
 few kilometres without even setting up a special antenna or location.
 
