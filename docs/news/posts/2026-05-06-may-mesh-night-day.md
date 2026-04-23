@@ -2,41 +2,31 @@
 date:
   created: 2026-04-21
   actual:  2026-05-06
-title: May mesh night and day
+title: Mesh night and day de Mai
 categories:
   - events
 ---
 
-Every month, [Foulab](https://foulab.org/), the Montreal hacker space, holds a mesh
-night the first Wednesday of the month, and this month is
-no exception!  <!-- post link when ready:
-https://foulab.org/news/events-may-2026/ -->
+haque mois, [Foulab](https://foulab.org/), le "hacker space" de
+Montréal, tient une soirée "mesh" et ce mois de mars n'y fait pas exception!
 
-So let's meet at Foulab on May 6h from 19:00 to 22:00. We will be
-talking about and experimenting with mesh networking technologies such
-as Meshtastic, MeshCore, and Reticulum.
+Alors venez-nous voir au Mesh Night, ce 6 mai de 19:00 à 22:00. Nous
+parlerons et expérimienterons avec les technologies maillées telles
+que Meshtastic, Meshcore et Reticulum.
 
-Beginners are welcome to drop by, we are happy to answer your
-questions and demo our devices for you.
+Les néophytes sont bienvenu·e·s, nous serons heureux de répondre à vos
+questions et vous présenter les différents routeurs et relais.
 
-This month Foulab also hosts the [Mesh day 2 event](https://calendrier.constellationmtl.net/event/matc-presents-jour-de-mesh-day-2), where
-[MATC](https://mtl-atc.org/) is...
+Ce mois-ci, Foulab héberge aussi la [journée réseau maillé 2](https://calendrier.constellationmtl.net/event/matc-presents-jour-de-mesh-day-2), où
+[MATC](https://mtl-atc.org/) invite...
 
-> inviting all autonomous anarchist groups who are planning or
-> actively working on building mesh networks across Montreal (and the
-> world) to get together to discuss strategy, technique and how we can
-> collaborate and coordinate our efforts.
+> tous les groupes autonomes anarchistes qui planifient ou travaillent à construire un réseau maillé à travers Montréal (et le monde) à se rencontrer pour discuter de stratégies, de techniques et de comment on peut collaborer et coordonner nos efforts.
 >
-> This will be a guided discussion hosted by the Montreal Anarchist
-> Tech Convergence.
-> 
-> If you are new to mesh network technology, we invite you to check
-> out the workshop and skillshare table introducing and exploring
-> Reticulum that will be happening during the Skillshare day on Sunday
-> at CEDA!
+> Ce sera une discussion guidée animée par la convergence des technologies anarchistes de Montréal.
+>
+> Si vous êtes nouveau / nouvelle dans le monde des technologies de réseaux maillés, nous vous invitons à visiter la table et l'atelier qui introduiront et exploreront Reticulum durant la journée de partage de connaissance au CÉDA!
 
-That is on Friday May 15th, 12h - 15h, followed by a movie/pizza
-night.
+Ça se passe vendredi le 15 mai de midi à 15h, suivi d'une soirée film/pizza.
 
-[Foulab's location](https://foulab.org//location/) is [Suite 33B, 999 `du Collège`, Montréal,
-Québec, Canada, H4C 2S3](https://www.openstreetmap.org/node/717702812) ([Google maps link](https://www.google.com/maps/place/999+Rue+du+Coll%C3%A8ge,+Montr%C3%A9al,+QC+H4C+2S2,+Canada)). 
+[Foulab se trouve](https://foulab.org//location/) à la [Suite 33B, 999 du Collège, Montréal,
+Quebec, Canada, H4C 2S3](https://www.openstreetmap.org/node/717702812) ([lien Google maps](https://www.google.com/maps/place/999+Rue+du+Coll%C3%A8ge,+Montr%C3%A9al,+QC+H4C+2S2,+Canada)).
