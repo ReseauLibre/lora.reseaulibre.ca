@@ -36,7 +36,7 @@ Ce mois-ci, Foulab héberge aussi la [journée réseau maillé 2][], où
 > Si vous êtes nouveau / nouvelle dans le monde des technologies de
 > réseaux maillés, nous vous invitons à visiter la table et l'atelier
 > qui introduiront et exploreront Reticulum durant la journée de
-> partage de connaissance au CÉDA!
+> partage de connaissance au [`CÉDA`](https://cedamtl.org/)!
 
 Ça se passe vendredi le 15 mai de midi à 15h, suivi d'une soirée film/pizza.
 
