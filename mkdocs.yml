@@ -4,31 +4,78 @@ site_url: https://lora.reseaulibre.ca/fr
 site_description: The Montreal mesh project"
 site_author: Anarcat and others
 copyright: Copyleft &copy; CC-BY-SA 4.0
-repo_url: https://codeberg.org/anarcat/lora-reseaulibre-ca
+repo_url: https://codeberg.org/reseaulibre/lora-reseaulibre-ca
 edit_uri: _edit/main/docs/
 nav:
   - About:
     - index.md
+    - values.md
+    - history.md
     - Contact: contact.md
     - FAQ: guides/faq.md
   - Guides:
-    - guides/meshtastic.md
+    - Meshcore: guides/meshcore.md
+    - Meshtastic: guides/meshtastic.md
+    - Matrix: guides/matrix.md
     - FAQ: guides/faq.md
   - References:
-    - references.md
-    - Hardware: references/hardware.md
-    - references/maps.md
+    - references/index.md
+    - Hardware:
+        - references/hardware/index.md
+        - references/hardware/antennas.md
+        - references/hardware/batteries.md
+        - references/hardware/power.md
+    - Software:
+        - references/software/index.md
+        - references/maps.md
+        - Meta: meta.md
     - references/neighbours.md
-    - references/software.md
-    - Meta: meta.md
+    - references/net.md
+    - references/other.md
     - Code of Conduct: code.md
   - News: news/index.md
 markdown_extensions:
+  # Python Markdown
+  - abbr
   - admonition
+  - attr_list
+  - def_list
   - footnotes
-  - pymdownx.details
-  - pymdownx.superfences
+  - md_in_html
   - tables
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  # underline/superscript with ^
+  - pymdownx.caret
+  # collapsible admonitions
+  - pymdownx.details
+  # support for :emojis:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # syntax highlighting for code blocks
+  - pymdownx.highlight
+  # same, but for `inline` code
+  - pymdownx.inlinehilite
+  # keyboard keys rendering with ++
+  - pymdownx.keys
+  # highlight with ==
+  - pymdownx.mark
+  # turn (c) into ©, disabled: just use unicode directly
+  # - pymdownx.smartsymbols
+  - pymdownx.snippets
+  # required for annotations
+  - pymdownx.superfences
+  # tabs support
+  - pymdownx.tabbed:
+      alternate_style: true
+  # tasks lists with - [ ]
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  # strikethrough with ~~
+  - pymdownx.tilde
 theme:
   name: material
   logo: assets/logo.svg
@@ -36,10 +83,10 @@ theme:
   features:
     # - navigation.prune
     # - navigation.sections
-    # - navigation.expand
+    - navigation.expand
     - navigation.tabs
     - navigation.tabs.sticky
-    # - navigation.top
+    - navigation.top
     # - navigation.tracking
     - navigation.indexes
     - content.action.edit  # Edit this page
@@ -141,9 +188,10 @@ plugins:
               # meshtastic. you want $that? pick reticulum" and so on.
               'guides/index.md': 'guides/meshtastic.md'
               # the hardware page is really a reference more than a guide
-              'guides/hardware.md': 'references/hardware.md'
+              'guides/hardware.md': 'references/hardware/index.md'
               # obscure FAQ URL that came up for less than a day
               'guides/z_faq.md': 'guides/faq.md'
+              'references/mmrelay.md': 'guides/matrix.md#bridging-matrix-and-meshtastic'
 #   # a bunch more possible plugins
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?

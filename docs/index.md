@@ -3,27 +3,65 @@ tags:
   - traduction/complète
 ---
 
-# À propos
+# Bienvenue au projet Réseau Libre!
 
 Le projet [LoRa](https://en.wikipedia.org/wiki/LoRa) `reseaulibre.ca` est une communauté construisant
 un [réseau "mesh"](https://fr.wikipedia.org/wiki/R%C3%A9seau_maill%C3%A9) dans la région de Montréal.
 
-Nous sommes un groupe de patenteux, enthousiastes de la technologie et
-opérateurs de radio amateur.
 
-Concrètement, nous faisons des communications décentralisées, demandant
-peu d'énergie et de bande passante, échangeant des messages textes
-sans l'internet, partout sur la ville.
+<div class="grid cards" markdown>
+-   :octicons-info-16: **What**
 
-Nous travaillons pour l'instant sur [Meshtastic](https://meshtastic.org/) mais faisons aussi
-des recherches sur [Meshcore](https://meshcore.co.uk/), [Reticulum](https://reticulum.network/) et [radio
-amateur](https://en.wikipedia.org/wiki/Amateur_radio).
+    ---
+    
+    Nous construisons un
+    [mesh](https://en.wikipedia.org/wiki/Mesh_networking) ou "réseau
+    maillé" dans la région de Montréal: un réseau de communication
+    décentralisé à basse puissance.
 
-Notre mission est de fournir des communications robustes pour la
-reprise après sinistre, les urgences et évènements locaux. Nous
-cherchons à stimuler la collaboration dans notre communauté et
-reprendre le contrôle du Réseau.
+    Le but est de communiquer sans l'internet et sans branchement
+    électrique, sur toute la ville.
 
-Ce site vise à documenter le projet et nos connaissances. Vous pouvez
-modifier le site par le [dépôt Git](https://codeberg.org/anarcat/lora-reseaulibre-ca) ou en tapant l'icône "éditer"
-en haut de chaque page.
+-   :octicons-person-16: **Qui**
+
+    Nous sommes un groupe de patenteux, enthousiastes de la technologie et
+    opérateurs de radio amateur.
+
+    Nous faisons partie d'un effort planétaire à repenser les
+    fondements de nos systèmes de communication et l'organisation de
+    la société industrielle.
+    
+-   :octicons-share-android-16: **How**
+
+    ---
+
+    Nous travaillons pour l'instant sur les protocoles [LoRa](https://en.wikipedia.org/wiki/LoRa) et en
+    particulier [Meshcore](https://meshcore.co.uk/), [Meshtastic](https://meshtastic.org/), [Reticulum](https://reticulum.network/) et la
+    [radio amateur](https://en.wikipedia.org/wiki/Amateur_radio).
+
+-   :octicons-sun-16: **Why**
+
+    ---
+
+    Notre mission est de fournir des communications robustes pour la
+    reprise après sinistre, les urgences et les communautés locales.
+    
+    Nous cherchons à apprendre, enseigner, partager nos connaissances
+    et collaborer.
+
+-   :octicons-flame-16: **Pour commencer**
+
+    ---
+    
+    Suivez le  [:octicons-arrow-right-24: guide Débuter avec
+    Meshcore](guides/meshcore.md) et joignez-vous à nous, ou consultez
+    notre [documentation](references/index.md).
+
+-   :octicons-question-16: **D'autres questions?**
+
+    ---
+    
+    Consultez la [FAQ](guides/faq.md) ou [contactez nous](contact.md),
+    nous sommes gentils!
+
+</div>

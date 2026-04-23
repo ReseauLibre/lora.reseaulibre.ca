@@ -8,6 +8,17 @@ tags:
 Getting started with running a Meshtastic relay is easy. You need to
 buy some hardware, install an app, and tweak some settings.
 
+!!! question
+
+    We are currently reconsidering the use of Meshtastic across the
+    Montreal mesh. Right now, there are dozens if not hundreds of
+    devices, but no one can seem to speak with anyone. There's mostly
+    noise, and some believe we have grown past the scalability of
+    Meshtastic.
+    
+    We are now focusing on building Meshcore infrastructure, see our
+    [Getting started with Meshcore](meshcore.md) guide instead.
+
 You can expect to communicate through text with other relays within a
 few kilometres without even setting up a special antenna or location.
 
@@ -30,26 +41,11 @@ few kilometres without even setting up a special antenna or location.
 
 ### Matériel
 
-Tous ces appareils nécessitent un téléphone équipé de l'application Meshtastic pour fonctionner :
+Choisissez un appareil dans [notre liste d'appareils](../references/hardware/index.md) ou la
+[list officielle](https://meshtastic.org/docs/hardware/devices/).
 
-- **Le moins cher** : [Heltec v3](https://heltec.org/project/wifi-lora-32-v3/), assurez-vous d'acheter une
-  boîtier et le 902-928 MHz, vous devez fournir l'alimentation via
-  USB, n'importe quel chargeur USB-C conviendra, 20 $ US, a besoin
-  d'une app, par exemple sur votre téléphone
-- **Plus efficace** : [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158), meilleure durée de vie
-  sur batterie que le Heltec, 25 $ USD, [90 $ avec boîtier et
-  batterie](https://store.rakwireless.com/products/wismesh-pocket), a également besoin d'un téléphone
-- **Autonome** : [T-Deck plus](https://lilygo.cc/products/t-deck-plus-1), a un écran et un clavier (oui, ça
-  ressemble à un [BlackBerry](https://en.wikipedia.org/wiki/BlackBerry)), utile si vous ne voulez pas
-  utiliser votre téléphone, 80 $
-- **Relais solaire** : [WishMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini), 100$USD, à
-  mettre sur son toit ou dans un arbre, considérer égalment le
-  (non-testé) [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html) 90 $ USD
-
-[Faites-nous](../contact.md) savoir si vous souhaitez en acheter en grande
-quantité afin que nous puissions nous organiser.
-
-Voir également la [liste officielle du matériel](https://meshtastic.org/docs/hardware/devices/) et [l'avis d'anarcat](https://anarc.at/services/meshtastic/#hardware).
+C'est pas cher! Attendez vous à payer 50$CAD pour un kit de base, et
+150$CAD pour un relai solaire.
 
 !!! Conseil
 
@@ -68,8 +64,7 @@ Vous devrez peut-être [flasher le micrologiciel](https://flasher.meshtastic.org
 connecter l'appareil à votre ordinateur (ou téléphone ?) et d'utiliser un
 navigateur web dérivé de Chrome.
 
-Anarcat a écrit un [outil avancé de flashage par lots](https://gitlab.com/anarcat/scripts/-/blob/846a0f46978ae7ebb726004b2653e9a25a5e955c/reflashtic.py) si vous avez besoin de
-flasher plusieurs appareils, à utiliser à vos propres risques.
+D'autres [projets](../references/software/index.md) sont également documentés dans notre [index logiciel](../references/software/index.md).
 
 ### Paramètres
 
@@ -92,24 +87,109 @@ Cette section décrit les différents paramètres que nous recommandons dans l'a
 
     Ces paramètres sont facultatifs, mais recommandés.
 
-    | Paramètre                    | Valeur       | Remarque                                                                                                                              |
-    |----------------------------|-------------|---------------------------------------- -------------------------------------------------------------------------------------------|
-    | [Bluetooth][] : PIN         | (aléatoire)    | remplacez le [PIN par défaut][] par une valeur aléatoire et conservez-la dans votre gestionnaire de mots de passe                                              |
-    | [Appareil][] :  [Rôle][]      | `CLIENT`    | envisagez `CLIENT_BASE` si vous utilisez un relais, ne modifiez pas le rôle sans avoir lu le guide [Choisir le bon rôle pour votre appareil][]     |
-    | [LoRa][]: [Ignorer MQTT][]  | `true`      | cela empêche le trafic provenant du maillage plus large d'entrer dans le   réseau et réduit le bruit global.                                     |
-    | [Position][]: [Mode GPS][] | `DISABLE`   | ou réduisez la [Précision de la position][] dans la [Configuration du canal][], sinon vous divulguez votre position au réseau par défaut |
-    | [Utilisateur][] : « Nom court »     | (arbitraire) | 4 caractères maximum, choisissez un nom facile à retenir, c'est ce qui sera visible sur la carte et dans les chats                                 |
-    | Utilisateur : « Nom long »          | (arbitraire) | choisissez un nom utile, mais pas offensant, les opérateurs radioamateurs peuvent définir leur indicatif d'appel ici                                            |
+    | Setting                    | Value       | Note                                                                                                                              |
+    |----------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------|
+    | [Bluetooth][]: PIN         | (aléatoire)    | remplacez le [PIN par défaut][] par une valeur aléatoire et conservez-la dans votre gestionnaire de mots de passe                                              |
+    | [Device][]:  [Role][]      | `CLIENT`    | envisagez `CLIENT_BASE` si vous utilisez un relais, ne modifiez pas le rôle sans avoir lu le guide [Choisir le bon rôle pour votre appareil][]     |
+    | [LoRa][]: [Ignore MQTT][]  | `true`      |  cela empêche le trafic provenant du maillage plus large d'entrer dans le   réseau et réduit le bruit global.                                     |
+    | [LoRa][]: [Max hops][]     | 3           | default. you *can* raise this if you really think it might help you reach further, but we generally advise against it |
+    | [Position][]: [GPS Mode][] | `DISABLE`   | ou réduisez la [Précision de la position][] dans la [Configuration du canal][], sinon vous divulguez votre position au réseau par défaut[^1] |
+    | [User][]: "Short Name"     | (arbitraire) |  4 caractères maximum, choisissez un nom facile à retenir, c'est ce qui sera visible sur la carte et dans les chats                                 |
+    | User: "Long Name"          | (arbitraire) | choisissez un nom utile, mais pas offensant, les opérateurs radioamateurs peuvent définir leur indicatif d'appel ici                                            |
+
+[^1]: Note that setting it to `NOT_PRESENT` will also improve boot time on devices without GPS.
+
+ [Bluetooth]: https://meshtastic.org/docs/configuration/radio/bluetooth/
+ [Channel configuration]: https://meshtastic.org/docs/configuration/radio/channels/#position-precision
+ [Choosing The Right Device Role]: https://meshtastic.org/blog/choosing-the-right-device-role/
+ [Device]: https://meshtastic.org/docs/configuration/radio/device/
+ [LoRa]: https://meshtastic.org/docs/configuration/radio/lora/
+ [Max hops]: https://meshtastic.org/docs/configuration/radio/lora/#max-hops
+ [Position]: https://meshtastic.org/docs/configuration/radio/position/
+ [Role]: https://meshtastic.org/docs/configuration/tips/#roles
+ [User]: https://meshtastic.org/docs/configuration/radio/user/
+ [default PIN]: https://meshtastic.org/docs/configuration/radio/bluetooth/#fixed-pin
+ [Position precision]: https://meshtastic.org/docs/configuration/radio/channels/#position-precision
+ [Ignore MQTT]: https://meshtastic.org/docs/configuration/radio/lora/#ignore-mqtt
+[GPS Mode]: https://meshtastic.org/docs/configuration/radio/position/#gps-mode
+
+## Advanced: batch configuration
+
+If you feel adventurous and want to make the above configuration
+easier, you can use the following YAML file -- let's call it
+`minimal.yaml` -- for the minimal configuration:
+
+```yaml
+config:
+  lora:
+    region: US
+    modemPreset: LONG_FAST
+```
+
+This can be loaded with:
+
+    meshtastic --configure minimal.yaml
+
+Then, the "recommended" settings (above) can be configured with the
+`meshtastic` command again:
+
+```
+meshtastic --set bluetooth.fixedPin 123456
+meshtastic --set bluetooth.mode FIXED_PIN
+meshtastic --set lora.hopLimit 3
+meshtastic --set lora.ignoreMqtt true
+meshtastic --set position.gpsMode NOT_PRESENT
+meshtastic --set device.role CLIENT
+meshtastic --set-owner "you only live once"
+meshtastic --set-owner-short yolo
+```
+
+!!! bug
+
+    Note that the order of commands matter here. Some configuration,
+    like `device.role CLIENT` will reboot the device, and will make
+    further commands fail. That is why the setting is last here. Using
+    a config file solves that problem entirely, as all settings are
+    set at once.
+
+!!! tip
+
+    You should really set a random PIN here, not 123456, because that
+    is the [stupidiest combination ever](https://www.youtube.com/watch?v=LcHnf7VQuhc). You can
+    generate such a "random" pin with:
     
-     [Bluetooth]: https://meshtastic.org/docs/configuration/radio/bluetooth/
-     [Configuration des canaux]: https://meshtastic.org/docs/configuration/radio/channels/#position-precision
-     [Choisir le bon rôle pour votre appareil]: https://meshtastic.org/blog/choosing-the-right-device-role/
-     [Appareil]: https://meshtastic.org/docs/configuration/radio/device/
-     [LoRa]: https://meshtastic.org/docs/configuration/radio/lora/
-     [Position]: https://meshtastic.org/docs/configuration/radio/position/
-     [Rôle]: https://meshtastic.org/docs/configuration/tips/#roles
-     [Utilisateur]: https://meshtastic.org/docs/configuration/radio/user/
-     [Code PIN par défaut]: https://meshtastic.org/docs/configuration/radio/bluetooth/#fixed-pin
-     [Précision de la position]: https://meshtastic.org/docs/configuration/radio/channels/#position-precision
-     [Ignorer MQTT]: https://meshtastic.org/docs/configuration/radio/lora/#ignore-mqtt
-     [Mode GPS]: https://meshtastic.org/docs/configuration/radio/position/#gps-mode
+        shuf -i 100000-1000000 -n 1
+
+    Also please change away from the "yolo" user above, otherwise
+    we'll get confused quick as yo who "yolo" is.
+
+This can of course also be done in a configuration file that we'll
+call `recommended.yaml`:
+
+```yaml
+config:
+  bluetooth:
+    fixedPin: 123456
+    mode: FIXED_PIN
+  device:
+    role: CLIENT
+  lora:
+    hopLimit: 3
+    ignoreMqtt: true
+  position:
+    gpsMode: NOT_PRESENT
+owner: you only live once
+owner_short: yolo
+```
+
+!!! tip
+
+    Note that you *can* set the `CLIENT_BASE` role as well but your `meshtastic`
+    command might not know about it so you need to specify it as an
+    magic number:
+
+        meshtastic --set device.role 12
+
+Once you're done, you might want to backup your configuration with:
+
+    meshtastic --export-config > backup.yaml

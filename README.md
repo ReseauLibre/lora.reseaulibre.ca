@@ -37,6 +37,26 @@ The site was originally built on [mkdocs-material](https://squidfunk.github.io/m
 switched to [Zensical](https://zensical.org/), then back to mkdocs-material to get the
 blog working. See their [authoring guide](https://squidfunk.github.io/mkdocs-material/reference/) for more information.
 
+## Copyright
+
+The content of this repository is available under the [Creative
+Commons Attribution-ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/), and so
+will be your contributions:
+
+> 💡 License
+>
+> You are free to:
+> 
+>  - **Share** — copy and redistribute the material in any medium or format for any purpose, even commercially.
+>  - **Adapt** — remix, transform, and build upon the material for any purpose, even commercially.
+>  - The licensor cannot revoke these freedoms as long as you follow the license terms.
+> 
+> Under the following terms:
+> 
+>  - **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+>  - **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+>  - *No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
 ## Translations
 
 Translations used to be made with the [mkdocs-static-i18n](https://github.com/ultrabug/mkdocs-static-i18n)
@@ -115,10 +135,7 @@ Links truly being mismatched by Lychee can be added to the
 
 ## Spell checking
 
-Two spell checkers are in use. [Typos](https://github.com/crate-ci/typos/) is used to check the English
-version and good old [Aspell](https://en.wikipedia.org/wiki/GNU_Aspell) for other languages.
-
-To fix false positives found by Typos, follow [this guide](https://github.com/crate-ci/typos/?tab=readme-ov-file#false-positives).
+Good old [Aspell](https://en.wikipedia.org/wiki/GNU_Aspell) is used to check spelling in English and French.
 
 To fix false positives found by Aspell, install the `aspell` package
 and run the command recommended by CI, which should be something like:
@@ -133,6 +150,18 @@ following the [peculiar file format](http://aspell.net/man-html/Format-of-the-Pe
 the word on its own line and increment the line count on the first
 line.
 
+Finally, if you use `backquotes` around a word, it will get excluded
+by the parser, which can be useful to bypass certain words marked as
+failures. This is particularly useful for project names that won't get
+reused or can't be added because they have a separator not recognized
+by Aspell. For example, Meshtastic is in our dictionary so it doesn't
+need to be quoted, but not `grebedoc.dev`, which does need back
+quotes. 
+
+(Astute readers will notice that `backquotes` itself needs back
+quotes, as it's an incorrect spelling, according to Aspell. Capitals
+matter as well: `aspell` is a typo, but not Aspell, of course.)
+
 ## CI build workflow details
 
 This section explains how the site is built. You don't need to read
@@ -143,12 +172,12 @@ The way this is setup is rather convoluted because we need to have a
 custom domain and this is still not yet well supported by the new "git
 pages" and "actions" in Codeberg. So, essentially, it works like this:
 
-1. on push, codeberg somehow notifies <https://ci.codeberg.org> which
+1. on push, Codeberg somehow notifies <https://ci.codeberg.org> which
    is Woodpecker CI instance
-2. woodpecker pulls the git repo, builds the site, and commits the
+2. woodpecker pulls the git repository, builds the site, and commits the
    result to the `pages` branch
-3. woodpecker pushes the branch back to codeberg
-4. codeberg fires off a webhook to publish the site to git pages
+3. woodpecker pushes the branch back to Codeberg
+4. code berg fires off a webhook to publish the site to git pages
 
 ### First setup
 
@@ -157,7 +186,7 @@ To set this up, I had to first [follow the manual pushing guide](https://docs.co
 1. build the site on the `main` branch
 1. create an "orphan" `pages` branch (`git switch --orphan pages`) for
    the site
-1. add and commit the `site` directory, but to the root of the repo
+1. add and commit the `site` directory, but to the root of the repository
 1. setup a [webhook to the legacy v2 pages](https://docs.codeberg.org/codeberg-pages/#repository-websites) on push
 1. push the `pages` branch
 
@@ -195,10 +224,20 @@ says it does not work for custom domains.
 There was a one day downtime on Codeberg on 2026-03-04 that cause the
 site to go down almost entirely. If this happens again, we can
 consider hosting the static site somewhere else. I was recommended
-[statichost.eu](https://www.statichost.eu/) (see [this guide](https://www.arscyni.cc/file/codeberg.html)) or [grebedoc.dev](https://grebedoc.dev/)
-("codeberg" backwards). This might be difficult to deploy while the
+[`statichost.eu`](https://www.statichost.eu/) (see [this guide](https://www.arscyni.cc/file/codeberg.html)) or [`grebedoc.dev`](https://grebedoc.dev/)
+("Codeberg" backwards). This might be difficult to deploy while the
 site is down, unless another Git hosting platform is used.
 
 We also use the `cache` branch to carry around the Lychee cache. This
 could be fixed if [Woodpecker supported caches](https://github.com/woodpecker-ci/woodpecker/discussions/2296) or with a Forgejo
 ["cache" action](https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/) or [artifacts](https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts).
+
+## Matrix commit bot
+
+A bot was setup to send messages for new commits on the [`#reseaulibre:matrix.org`
+Matrix room](https://matrix.to/#/#reseaulibre:matrix.org) whenever there is a push. This was done using the
+[built-in Codeberg Matrix integration](https://docs.codeberg.org/integrations/matrix/).
+
+This was done instead of setting up a dedicated bot like [Maubot](https://mau.bot/)
+with its [numerous plugins](https://plugins.mau.bot/) like a [RSS plugin](https://github.com/maubot/rss), or a [webhook
+plugin](https://github.com/jkhsjdhjs/maubot-webhook). There is also a [dedicated RSS bridge](https://gitlab.com/matrix-rss-bridge/matrix-rss-bridge).
