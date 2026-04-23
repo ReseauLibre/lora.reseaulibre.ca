@@ -26,7 +26,7 @@
     ---
 
     We are currently focused on [LoRa](https://en.wikipedia.org/wiki/LoRa) protocols and especially
-    [Meshcore](https://meshcore.co.uk/), [Reticulum](https://reticulum.network/), [Meshtastic](https://meshtastic.org/) and [amateur
+    [Meshcore](https://meshcore.io/), [Reticulum](https://reticulum.network/), [Meshtastic](https://meshtastic.org/) and [amateur
     radio](https://en.wikipedia.org/wiki/Amateur_radio).
 
 -   :octicons-sun-16: **Why**

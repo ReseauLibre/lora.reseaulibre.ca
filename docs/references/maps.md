@@ -29,7 +29,7 @@ rely on the map to predict success. Try anyways!
 
 ## Meshcore
 
-- the [official map](https://meshcore.co.uk/map.html) often doesn't
+- the [official map](https://map.meshcore.io/) often doesn't
   load here, or very slowly
 - the <https://map.meshcore.dev> map shows about 14-25 relays in the
   greater Montreal area as of 2026-03-18, likely the same data as the
