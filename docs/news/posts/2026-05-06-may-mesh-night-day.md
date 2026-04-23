@@ -2,7 +2,7 @@
 date:
   created: 2026-04-21
   actual:  2026-05-06
-title: Mesh night and day de Mai
+title: Mesh nuit et jour en Mai
 categories:
   - events
 ---
@@ -12,7 +12,7 @@ soirée "mesh" et ce mois de mars n'y fait pas exception!
 
  [Foulab]: https://foulab.org/
 
-Alors venez-nous voir au Mesh Night, ce 6 mai de 19:00 à 22:00. Nous
+Alors venez nous voir au Mesh Night, ce 6 mai de 19:00 à 22:00. Nous
 parlerons et expérimenterons avec les technologies maillées telles
 que Meshtastic, Meshcore et Reticulum.
 
