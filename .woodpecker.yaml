@@ -30,7 +30,7 @@ steps:
       - mkdocs build
       - git fetch --all
       - git worktree add ../fr/ fr
-      - cd ../fr && mkdocs build -d site/fr
+      - cd ../fr && mkdocs build -d ../site/fr
 
   # this is still the legacy v2 pages systm
   #
