@@ -5,7 +5,7 @@ devices we have tested or somehow evaluated. It is of course not
 exhaustive, and it is opinionated in the sense that it tries to guide
 you towards specific purchases to simplify your life. 
 
-[Faites-nous](../contact.md) savoir si vous souhaitez en acheter en grande
+[Faites-nous](../../contact.md) savoir si vous souhaitez en acheter en grande
 quantité afin que nous puissions nous organiser.
 
 ## Recommended hardware
