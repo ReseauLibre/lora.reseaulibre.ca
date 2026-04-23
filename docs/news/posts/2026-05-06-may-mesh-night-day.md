@@ -20,7 +20,7 @@ Beginners are welcome to drop by, we are happy to answer your
 questions and demo our devices for you.
 
 This month Foulab also hosts the [Mesh day 2 event](https://calendrier.constellationmtl.net/event/matc-presents-jour-de-mesh-day-2), where
-[MATC](https://mtl-atc.org/) is...
+[`MATC`](https://mtl-atc.org/) is...
 
 > inviting all autonomous anarchist groups who are planning or
 > actively working on building mesh networks across Montreal (and the
@@ -31,11 +31,11 @@ This month Foulab also hosts the [Mesh day 2 event](https://calendrier.constella
 > Tech Convergence.
 > 
 > If you are new to mesh network technology, we invite you to check
-> out the workshop and skillshare table introducing and exploring
-> Reticulum that will be happening during the Skillshare day on Sunday
-> at CEDA!
+> out the workshop and skill share table introducing and exploring
+> Reticulum that will be happening during the Skill share day on Sunday
+> at [`CEDA`](https://cedamtl.org/)!
 
-That is on Friday May 15th, 12h - 15h, followed by a movie/pizza
+That is on Friday May 15, 12h - 15h, followed by a movie/pizza
 night.
 
 [Foulab's location](https://foulab.org//location/) is [Suite 33B, 999 `du Collège`, Montréal,
