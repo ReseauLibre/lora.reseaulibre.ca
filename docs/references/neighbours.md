@@ -20,7 +20,7 @@ are worth mentioning:
 - [Puget Mesh](https://pugetmesh.org/): US west coast, massive mesh (2-4k nodes),
   previously Meshtastic, moving to Meshcore, but also ham radio
   ([AREDN](https://www.arednmesh.org/)), built a bunch of interesting software, some of which
-  is listen in our [software page](software/index.md)
+  is listed in our [software page](software/index.md)
 - [Austin Mesh](https://www.austinmesh.org/): US Texas [weirdos](https://en.wikipedia.org/wiki/Keep_Austin_Weird), moving to Meshcore as well,
   [flying drones](https://www.austinmesh.org/devices/#aerial) and [kites](https://www.austinmesh.org/learn/kite-nodes-for-mesh-networking/) and [DIY solar kits](https://www.austinmesh.org/devices/#solar), excellent
   documentation
