@@ -1,7 +1,7 @@
 # Weekly net procedures
 
-Every Wednesday at 21:00, we have our weekly "net" on the Public
-channel. We also touch base on our [chat channel](../contact.md).
+Some Wednesdays at 21:00, we have try to hold a weekly "net" on the
+Public channel. We also touch base on our [chat channel](../contact.md).
 
 !!! note
 
@@ -42,3 +42,6 @@ exceed in high mesh-density areas.
 
 At the end of the net, send your results to the [chat channel](../contact.md) (list of who was
 heard, their location, your location).
+
+If no one else is doing it and you're there, you're it, you can call
+the net.
