@@ -39,6 +39,16 @@ visible on the ground, only relays that report their position. A relay
 might be in your neighbourhood and not visible on the map, so don't
 rely on the map to predict success. Try anyways!
 
+## Progression
+
+We're trying to keep track of how many relays we see on those maps,
+over time. Here's an attempt at summarizing this:
+
+| Date       | Meshcore | Meshtastic |
+|------------|----------|------------|
+| 2026-03-18 | 3-25     | 23-51      |
+| 2026-04-24 | 17-47    | ~25        |
+
 ## Site planners
 
 Those tools allow you to see what a relay in a given location would
