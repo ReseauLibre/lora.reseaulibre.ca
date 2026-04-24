@@ -284,6 +284,28 @@ from. The on-boarding is fantastic as well.
 Meshtastic have built a great product and tool chain. They have blazed
 the way towards people creating mesh networks all across the planet.
 
+### Why LongFast?
+
+Note that we don't recommend people setup repeaters using Meshtastic,
+use Meshcore instead.
+
+That said, in our guide we currently stay close to the default
+Meshtastic settings, which includes 3 hops limits and the LongFast
+default. This didn't seem to cause saturation, but it did seem like we
+were running out of hops.
+
+We suspect that people were regularly changing at *least* the hop
+count, because traffic with 7 hops were sometimes observed.
+
+Others have tried experimenting with other settings than LongFast in
+[Tennessee (USA)](https://mtnme.sh/mediumfast/), [Puget Mesh (USA)](https://pugetmesh.org/meshtastic/may2025/) the bay area (USA) and
+Wellington (NZ), see also the [official blog post](https://meshtastic.org/blog/why-your-mesh-should-switch-from-longfast/) for a
+conversation about this.
+
+Ultimately, we do not believe this would have helped the Meshtastic
+mesh and instead, we're focusing more on an "infrastructure" approach
+with Meshcore.
+
 ### Why Meshcore?
 
 We're slowly experimenting with Meshcore more and more! When we first
@@ -373,18 +395,6 @@ do towers precisely locate their users by triangulation, they also
 resell that private information to data brokers which can then become
 accessible for a small fee, bypassing decades of traditional legal
 protection against unreasonable search and seizure.
-
-### Why LongFast?
-
-We currently stay close to the default Meshtastic settings, which
-includes 3 hops limits and the LongFast default. For now, we are not
-saturating.
-
-When the time comes, we *will* need to change those defaults, as
-others have done in [Tennessee (USA)](https://mtnme.sh/mediumfast/), [Puget Mesh (USA)](https://pugetmesh.org/meshtastic/may2025/) the bay
-area (USA) and Wellington (NZ), see the [official blog post](https://meshtastic.org/blog/why-your-mesh-should-switch-from-longfast/) for a
-conversation about this.
-
 
 ### Why Matrix?
 

@@ -1,8 +1,7 @@
 # Weekly net procedures
 
-Every Wednesday at 21:00, we have our weekly "net" on the public
-default LongFast channel, on the default LONG_FAST frequency. We also
-touch base on our [chat channel](../contact.md).
+Every Wednesday at 21:00, we have our weekly "net" on the Public
+channel. We also touch base on our [chat channel](../contact.md).
 
 !!! note
 
