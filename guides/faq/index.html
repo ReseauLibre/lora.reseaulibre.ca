@@ -859,6 +859,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#why-longfast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why LongFast?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#why-meshcore" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -881,10 +892,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-longfast" class="md-nav__link">
+  <a href="#why-matrix" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why LongFast?
+        Why Matrix?
       
     </span>
   </a>
@@ -892,10 +903,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-matrix" class="md-nav__link">
+  <a href="#why-not-matrix" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why Matrix?
+        Why not Matrix?
       
     </span>
   </a>
@@ -1412,6 +1423,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#why-longfast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why LongFast?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#why-meshcore" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1434,10 +1456,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-longfast" class="md-nav__link">
+  <a href="#why-matrix" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why LongFast?
+        Why Matrix?
       
     </span>
   </a>
@@ -1445,10 +1467,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-matrix" class="md-nav__link">
+  <a href="#why-not-matrix" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why Matrix?
+        Why not Matrix?
       
     </span>
   </a>
@@ -2333,6 +2355,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#why-longfast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why LongFast?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#why-meshcore" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2355,10 +2388,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-longfast" class="md-nav__link">
+  <a href="#why-matrix" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why LongFast?
+        Why Matrix?
       
     </span>
   </a>
@@ -2366,10 +2399,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-matrix" class="md-nav__link">
+  <a href="#why-not-matrix" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why Matrix?
+        Why not Matrix?
       
     </span>
   </a>
@@ -2646,6 +2679,22 @@ pretty good. Those are all lessons Meshcore should take a lesson
 from. The on-boarding is fantastic as well.</p>
 <p>Meshtastic have built a great product and tool chain. They have blazed
 the way towards people creating mesh networks all across the planet.</p>
+<h3 id="why-longfast">Why LongFast?<a class="headerlink" href="#why-longfast" title="Permanent link">&para;</a></h3>
+<p>Note that we don't recommend people setup repeaters using Meshtastic,
+use Meshcore instead.</p>
+<p>That said, in our guide we currently stay close to the default
+Meshtastic settings, which includes 3 hops limits and the LongFast
+default. This didn't seem to cause saturation, but it did seem like we
+were running out of hops.</p>
+<p>We suspect that people were regularly changing at <em>least</em> the hop
+count, because traffic with 7 hops were sometimes observed.</p>
+<p>Others have tried experimenting with other settings than LongFast in
+<a href="https://mtnme.sh/mediumfast/">Tennessee (USA)</a>, <a href="https://pugetmesh.org/meshtastic/may2025/">Puget Mesh (USA)</a> the bay area (USA) and
+Wellington (NZ), see also the <a href="https://meshtastic.org/blog/why-your-mesh-should-switch-from-longfast/">official blog post</a> for a
+conversation about this.</p>
+<p>Ultimately, we do not believe this would have helped the Meshtastic
+mesh and instead, we're focusing more on an "infrastructure" approach
+with Meshcore.</p>
 <h3 id="why-meshcore">Why Meshcore?<a class="headerlink" href="#why-meshcore" title="Permanent link">&para;</a></h3>
 <p>We're slowly experimenting with Meshcore more and more! When we first
 started working on LoRa in 2025, there were significantly more
@@ -2721,14 +2770,6 @@ do towers precisely locate their users by triangulation, they also
 resell that private information to data brokers which can then become
 accessible for a small fee, bypassing decades of traditional legal
 protection against unreasonable search and seizure.</p>
-<h3 id="why-longfast">Why LongFast?<a class="headerlink" href="#why-longfast" title="Permanent link">&para;</a></h3>
-<p>We currently stay close to the default Meshtastic settings, which
-includes 3 hops limits and the LongFast default. For now, we are not
-saturating.</p>
-<p>When the time comes, we <em>will</em> need to change those defaults, as
-others have done in <a href="https://mtnme.sh/mediumfast/">Tennessee (USA)</a>, <a href="https://pugetmesh.org/meshtastic/may2025/">Puget Mesh (USA)</a> the bay
-area (USA) and Wellington (NZ), see the <a href="https://meshtastic.org/blog/why-your-mesh-should-switch-from-longfast/">official blog post</a> for a
-conversation about this.</p>
 <h3 id="why-matrix">Why Matrix?<a class="headerlink" href="#why-matrix" title="Permanent link">&para;</a></h3>
 <p>Also known as "Why are you not on Telegram, Discord, Whatsapp,
 Facebook, XMPP, or whatever?"</p>
@@ -2743,34 +2784,34 @@ purpose.</p>
 properties that are uniquely well suited to the mesh:</p>
 <ul>
 <li>
-<p>Matrix is <em>federated</em>: everyone can run their own server, just like
+<p>Matrix is <strong>federated</strong>: everyone can run their own server, just like
   the mesh (XMPP is also federated)</p>
 </li>
 <li>
-<p>Matrix is <em>decentralized</em>: if one server goes down, the other
+<p>Matrix is <strong>decentralized</strong>: if one server goes down, the other
   servers keep operating normally</p>
 </li>
 <li>
-<p>Matrix is <em>open</em>: source code for most Matrix implementations
+<p>Matrix is <strong>open</strong>: source code for most Matrix implementations
   (client and server) are open source, and the <a href="https://spec.matrix.org/latest/">specification</a> is
   collaboratively established among multiple stakeholders through
   (XMPP is also open)</p>
 </li>
 <li>
-<p>Matrix is <em>bridged</em>: there are <a href="https://matrix.org/ecosystem/bridges/">multiple bridges</a> to many other
+<p>Matrix is <strong>free</strong>: since anyone can run a server, most (if not all)
+  <a href="https://servers.joinmatrix.org/">servers</a> offer free accounts to anyone (see below)</p>
+</li>
+<li>
+<p>Matrix is <strong>bridged</strong>: there are <a href="https://matrix.org/ecosystem/bridges/">multiple bridges</a> to many other
   platforms, it is the glue that will allow us to merge together all
   those disconnected communities from Discord, Telegram, Mattermost
   and so on</p>
 </li>
 <li>
-<p>Matrix respects your privacy: while there are issues with data
+<p>Matrix <strong>respects your privacy</strong>: while there are issues with data
   retention in any federated protocol, Matrix at least won't require
   your phone number (like Whatsapp, Telegram or, sometimes, Discord)
   or deliberately spy on you</p>
-</li>
-<li>
-<p>Matrix is <em>free</em>: since anyone can run a server, most (if not all)
-  <a href="https://servers.joinmatrix.org/">servers</a> offer free accounts to anyone (see below)</p>
 </li>
 </ul>
 <p>The key aspect is this: Matrix rooms are decentralized. As long as
@@ -2781,6 +2822,57 @@ other messaging platforms.</p>
 <p>See also <a href="https://matrix.org/docs/matrix-concepts/elements-of-matrix/">Elements of Matrix</a> for more information about how Matrix
 works.</p>
 <p>See the <a href="../matrix/">Matrix guide</a> to get started.</p>
+<h3 id="why-not-matrix">Why <em>not</em> Matrix?<a class="headerlink" href="#why-not-matrix" title="Permanent link">&para;</a></h3>
+<p>A few arguments can be made against Matrix which, of course, is not
+perfect. We explain a few of those issues so people are aware of the
+downsides and to preempt complaints about them:</p>
+<ul>
+<li>
+<p><strong>Encryption</strong>. Matrix's end-to-end security is not as strong as
+  other platforms like Signal. Room membership is defined by the
+  servers which have more power than they should. A lot of information
+  travels out of band, unencrypted.</p>
+</li>
+<li>
+<p><strong>Encryption usability</strong>. Matrix infamously suffers from "cannot
+  decrypt message" kind of issues, where past message cannot be
+  reliably decrypted on all devices. This seems to be a high priority
+  for the Matrix team, and is less of an issue than before.</p>
+</li>
+<li>
+<p><strong>Interoperability</strong>. While Matrix is an open standard with strong
+  compatibility promises across multiple clients, the reality of this
+  is that the compatibility across client is somewhat spotty. Not all
+  features (like spaces, threading, or video) are implement across all
+  clients, and certainly not in the same user interface, so it can be
+  confusing to onboard people across multiple client
+  implementations. It is best for users to use the flagship client
+  (Element) to avoid those issues.</p>
+</li>
+<li>
+<p><strong>Data retention</strong>. By default, federated rooms copy messages across
+  every home server with a user connected to the room. This means that
+  messages get retained across multiple servers which have different
+  retention policies. Worse, the <em>defaults</em> are to keep messages
+  forever, which affects <code>matrix.org</code>, so it is difficult to ensure
+  automatic message expiry across the federation. Message redaction
+  <em>should</em> be better supported however.</p>
+</li>
+<li>
+<p><strong>Moderation</strong>. The Matrix protocol itself has mechanisms to redact
+  messages and ban users, but lacks large-scale moderation systems
+  across rooms and the federation, which are typically handled by
+  bots. This leads to abuse being sometimes more a problem on Matrix
+  than on other platforms, although work is being done on that front
+  as well.</p>
+</li>
+</ul>
+<p>Overall, we find that the benefits of using Matrix (federated,
+decentralized, open, free, bridged, respects your privacy) far
+outweigh those inconveniences, since the alternative also fail at many
+of those challenges. For example, Discord doesn't implement end-to-end
+encryption at all, is not operable, and leaves no control over data
+retention to the user.</p>
 <h2 id="other-questions">Other questions<a class="headerlink" href="#other-questions" title="Permanent link">&para;</a></h2>
 <h3 id="my-question-is-not-here">My question is not here<a class="headerlink" href="#my-question-is-not-here" title="Permanent link">&para;</a></h3>
 <p>That is not a question, but ask us, <a href="../../contact/">contact us!</a></p>
@@ -2806,7 +2898,7 @@ works.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="April 24, 2026 17:42:08 UTC">2026-04-24 17:42:08</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="April 24, 2026 18:43:34 UTC">2026-04-24 18:43:34</span>
   </span>
 
     
