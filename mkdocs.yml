@@ -27,6 +27,7 @@ nav:
         - references/hardware/power.md
     - Software:
         - references/software/index.md
+        - references/software/bots.md
         - references/maps.md
         - Meta: meta.md
     - references/neighbours.md
@@ -182,7 +183,7 @@ plugins:
               # we'll use a overview page for the multiple
               # technologies instead. like "you want $this? pick
               # meshtastic. you want $that? pick reticulum" and so on.
-              'guides/index.md': 'guides/meshtastic.md'
+              'guides/index.md': 'guides/meshcore.md'
               # the hardware page is really a reference more than a guide
               'guides/hardware.md': 'references/hardware/index.md'
               # obscure FAQ URL that came up for less than a day
