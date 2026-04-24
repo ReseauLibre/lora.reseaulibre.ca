@@ -412,29 +412,29 @@ purpose.
 Compared to all those other platforms (with exceptions), Matrix has
 properties that are uniquely well suited to the mesh:
 
-- Matrix is *federated*: everyone can run their own server, just like
+- Matrix is **federated**: everyone can run their own server, just like
   the mesh (XMPP is also federated)
 
-- Matrix is *decentralized*: if one server goes down, the other
+- Matrix is **decentralized**: if one server goes down, the other
   servers keep operating normally
 
-- Matrix is *open*: source code for most Matrix implementations
+- Matrix is **open**: source code for most Matrix implementations
   (client and server) are open source, and the [specification](https://spec.matrix.org/latest/) is
   collaboratively established among multiple stakeholders through
   (XMPP is also open)
 
-- Matrix is *bridged*: there are [multiple bridges](https://matrix.org/ecosystem/bridges/) to many other
+- Matrix is **free**: since anyone can run a server, most (if not all)
+  [servers](https://servers.joinmatrix.org/) offer free accounts to anyone (see below)
+
+- Matrix is **bridged**: there are [multiple bridges](https://matrix.org/ecosystem/bridges/) to many other
   platforms, it is the glue that will allow us to merge together all
   those disconnected communities from Discord, Telegram, Mattermost
   and so on
 
-- Matrix respects your privacy: while there are issues with data
+- Matrix **respects your privacy**: while there are issues with data
   retention in any federated protocol, Matrix at least won't require
   your phone number (like Whatsapp, Telegram or, sometimes, Discord)
   or deliberately spy on you
-
-- Matrix is *free*: since anyone can run a server, most (if not all)
-  [servers](https://servers.joinmatrix.org/) offer free accounts to anyone (see below)
 
 The key aspect is this: Matrix rooms are decentralized. As long as
 your home server is reachable from the mesh, the Internet could go
@@ -447,6 +447,53 @@ See also [Elements of Matrix](https://matrix.org/docs/matrix-concepts/elements-o
 works.
 
 See the [Matrix guide](matrix.md) to get started.
+
+### Why *not* Matrix?
+
+A few arguments can be made against Matrix which, of course, is not
+perfect. We explain a few of those issues so people are aware of the
+downsides and to preempt complaints about them:
+
+- **Encryption**. Matrix's end-to-end security is not as strong as
+  other platforms like Signal. Room membership is defined by the
+  servers which have more power than they should. A lot of information
+  travels out of band, unencrypted.
+
+- **Encryption usability**. Matrix infamously suffers from "cannot
+  decrypt message" kind of issues, where past message cannot be
+  reliably decrypted on all devices. This seems to be a high priority
+  for the Matrix team, and is less of an issue than before.
+
+- **Interoperability**. While Matrix is an open standard with strong
+  compatibility promises across multiple clients, the reality of this
+  is that the compatibility across client is somewhat spotty. Not all
+  features (like spaces, threading, or video) are implement across all
+  clients, and certainly not in the same user interface, so it can be
+  confusing to onboard people across multiple client
+  implementations. It is best for users to use the flagship client
+  (Element) to avoid those issues.
+
+- **Data retention**. By default, federated rooms copy messages across
+  every home server with a user connected to the room. This means that
+  messages get retained across multiple servers which have different
+  retention policies. Worse, the *defaults* are to keep messages
+  forever, which affects `matrix.org`, so it is difficult to ensure
+  automatic message expiry across the federation. Message redaction
+  *should* be better supported however.
+
+- **Moderation**. The Matrix protocol itself has mechanisms to redact
+  messages and ban users, but lacks large-scale moderation systems
+  across rooms and the federation, which are typically handled by
+  bots. This leads to abuse being sometimes more a problem on Matrix
+  than on other platforms, although work is being done on that front
+  as well.
+
+Overall, we find that the benefits of using Matrix (federated,
+decentralized, open, free, bridged, respects your privacy) far
+outweigh those inconveniences, since the alternative also fail at many
+of those challenges. For example, Discord doesn't implement end-to-end
+encryption at all, is not operable, and leaves no control over data
+retention to the user.
 
 ## Other questions
 
