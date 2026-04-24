@@ -20,7 +20,7 @@ is how a mesh start: with one node, and then a second...
 
 ### What should I buy?
 
-It depends! In general, follow the [guide](meshtastic.md), which has devices we
+It depends! In general, follow the [hardware reference](../references/hardware/index.md), which has devices we
 have actually tested.
 
 When in doubt, and starting, get a cheap one (e.g. [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)) and
@@ -65,8 +65,9 @@ There are daily messages.
 
 ### Is this legal?
 
-Yes. Meshtastic -- or more specifically LoRa -- transmits over [ISM
-radio bands](https://en.wikipedia.org/wiki/ISM_radio_band), specifically centered around 915MHz.
+Yes. LoRa transmitters (used by Meshcore, Meshtastic, and optionally
+by Reticulum) use the [ISM radio bands](https://en.wikipedia.org/wiki/ISM_radio_band), specifically centered
+around 915MHz.
 
 Technically, the LoRa protocol itself is patented by the [Semtech
 corporation](https://en.wikipedia.org/wiki/Semtech), so there is a non-free aspect to this. It is, in any
@@ -75,6 +76,33 @@ means that someone might not have the right to re-implement the LoRa
 protocol on its own hardware, for example.
 
 ### Are my messages secret?
+
+#### In Meshcore
+
+Yes. Messages in Meshcore are encrypted with [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) in ECB mode
+which has a [number of issues](https://github.com/meshcore-dev/MeshCore/issues/259) like leaking pattern information
+(the [Penguin attack](https://github.com/robertdavidgraham/ecb-penguin)) and length. But generally it's considered to
+be stronger than Meshtastic as it does include replay attack
+protections.
+
+Those issues have been acknowledged upstream and various proposals
+have been brought up to fix the protocol.
+
+#### In Reticulum
+
+Yes. Reticulum uses [strong encryption](https://reticulum.network/crypto.html), including a Signal-like
+ratcheting algorithm. To quote upstream, it uses:
+
+> - Ed25519 for signatures
+> - X22519 for ECDH key exchanges
+> - HKDF for key derivation
+> - AES-256 in CBC mode
+> - HMAC-SHA256 for message authentication
+
+In all the mesh protocols we're working on, Reticulum has the stronger
+security promises.
+
+#### In Meshtastic
 
 It depends.
 
@@ -111,8 +139,6 @@ devices can generally be put in "DFU" ([Device firmware upgrade](https://en.wiki
 mode relatively easily. Treat encryption keys from a physically
 compromised device to be equally compromised.
 
-
-
 ## Troubleshooting
 
 ### Why can't I contact anyone?
@@ -123,7 +149,8 @@ obstacle. Or people are just being quiet.
 Wait a little while; relays periodically announce themselves and you
 should eventually see some relays.
 
-[Make sure you have the right settings](meshtastic.md#settings).
+Make sure you configured your device with the right settings, see our
+[Meshcore](meshcore.md#configuration) and [Meshtastic](meshtastic.md#settings) settings.
 
 Try to say hi and ask if anyone can read you. People might pick up the
 message only much later and respond. Keep your device open.
@@ -133,12 +160,22 @@ Try to bring your device higher up or outside.
 Look at the [maps](../references/maps.md) to see if there are relays in your
 neighbourhood.
 
-Try to [ask for help](../contact.md) or send the command `!ping` in the [Matrix
-bridge](https://matrix.to/#/#reseaulibre-meshtastic-bridge:matrix.org) to see if you can hear that bot on the Meshtastic
-network. See also the [Matrix bridge usage](matrix.md#usage) for how
-to use the bridge.
+If you're using Meshtastic, consider switching to Meshcore. We've
+found Meshtastic reliability to be extremely poor; while it eventually
+manages to transmit relay telemetry across the mesh, we are not able
+to communicate reliably, while so far the Meshcore mesh has been much
+more reliable.
+
+Try to [ask for help](../contact.md)!
 
 ### Is there a user manual for this GUI?
+
+#### Meshcore
+
+Liam Cottle wrote a [Meshcore quick start guide](https://files.liamcottle.net/MeshCore/Documentation/MeshCore_Quick_Start_Guide.pdf) for the
+proprietary app.
+
+#### Meshtastic
 
 "This GUI" generally means the [Meshtastic UI](https://meshtastic.org/docs/configuration/device-uis/meshtasticui/) which ships with
 device like the Lilygo T-Deck or the Heltec Kit. It's a color
@@ -210,8 +247,8 @@ on chip without a second computer), [transport nodes](https://github.com/jrl290/
 gateway to the Internet), Reticulum-over-Meshtastic, and more!
 
 But Reticulum, while being more advanced in terms of routing and
-cryptography, lacks the "ready-made" aspect of Meshtastic. You can,
-today, buy a [hardware preinstalled with Meshtastic](../references/hardware/index.md) and it just
+cryptography, lacks the "ready-made" aspect of the other protocols. You can,
+today, buy a [hardware preinstalled with Meshtastic or Meshcore](../references/hardware/index.md) and it just
 works, without anything else. Reticulum is just not there
 yet, although projects like [Ratdeck](https://github.com/ratspeak/ratdeck) are approaching the
 capabilities of Meshtastic and Meshcore in terms of running standalone
@@ -223,7 +260,7 @@ repository is a "[public mirror](https://github.com/markqvist/Reticulum/blob/mas
 elsewhere".
 
 Right now the focus is on organizing the mesh that already exists on
-the island, and that is mostly made up of Meshtastic nodes. Reticulum
+the island, and that is mostly made up of Meshtastic and Meshcore nodes. Reticulum
 could be a backhaul for the network or the future of the network,
 we'll see!
 
