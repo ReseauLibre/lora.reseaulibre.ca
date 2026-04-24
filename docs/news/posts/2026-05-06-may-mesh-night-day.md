@@ -8,7 +8,7 @@ categories:
 ---
 
 Chaque mois, [Foulab][], le "hacker space" de Montréal, tient une
-soirée "mesh" et ce mois de mars n'y fait pas exception!
+soirée "mesh" et ce mois-ci n'y fait pas exception!
 
  [Foulab]: https://foulab.org/
 
