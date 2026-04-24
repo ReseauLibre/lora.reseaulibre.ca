@@ -123,7 +123,7 @@ obstacle. Or people are just being quiet.
 Wait a little while; relays periodically announce themselves and you
 should eventually see some relays.
 
-[Make sure you have the right settings](meshtastic.md#settings).
+[Make sure you have the right settings](meshtastic.md#parametres).
 
 Try to say hi and ask if anyone can read you. People might pick up the
 message only much later and respond. Keep your device open.

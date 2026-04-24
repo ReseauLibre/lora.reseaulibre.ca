@@ -26,7 +26,8 @@ few kilometres without even setting up a special antenna or location.
 
     Meshtastic expose votre position par défaut sur les appareils
     ayant une composante GPS ! Assurez vous que la
-    [précision de la position][] est réduite ou réglez le [mode GPS][] sur `DISABLED`.
+    [précision de la position][Position precision] est réduite ou
+    réglez le [mode GPS][GPS mode] sur `DISABLED`.
 
 !!! tip
 
@@ -90,10 +91,10 @@ Cette section décrit les différents paramètres que nous recommandons dans l'a
     | Setting                    | Value       | Note                                                                                                                              |
     |----------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------|
     | [Bluetooth][]: PIN         | (aléatoire)    | remplacez le [PIN par défaut][] par une valeur aléatoire et conservez-la dans votre gestionnaire de mots de passe                                              |
-    | [Device][]:  [Role][]      | `CLIENT`    | envisagez `CLIENT_BASE` si vous utilisez un relais, ne modifiez pas le rôle sans avoir lu le guide [Choisir le bon rôle pour votre appareil][]     |
+    | [Device][]:  [Role][]      | `CLIENT`    | envisagez `CLIENT_BASE` si vous utilisez un relais, ne modifiez pas le rôle sans avoir lu le guide [Choisir le bon rôle pour votre appareil][Choosing The Right Device Role]     |
     | [LoRa][]: [Ignore MQTT][]  | `true`      |  cela empêche le trafic provenant du maillage plus large d'entrer dans le   réseau et réduit le bruit global.                                     |
     | [LoRa][]: [Max hops][]     | 3           | default. you *can* raise this if you really think it might help you reach further, but we generally advise against it |
-    | [Position][]: [GPS Mode][] | `DISABLE`   | ou réduisez la [Précision de la position][] dans la [Configuration du canal][], sinon vous divulguez votre position au réseau par défaut[^1] |
+    | [Position][]: [GPS Mode][] | `DISABLE`   | ou réduisez la [Précision de la position][Position precision] dans la [Configuration du canal][Channel configuration], sinon vous divulguez votre position au réseau par défaut[^1] |
     | [User][]: "Short Name"     | (arbitraire) |  4 caractères maximum, choisissez un nom facile à retenir, c'est ce qui sera visible sur la carte et dans les chats                                 |
     | User: "Long Name"          | (arbitraire) | choisissez un nom utile, mais pas offensant, les opérateurs radioamateurs peuvent définir leur indicatif d'appel ici                                            |
 
@@ -108,7 +109,7 @@ Cette section décrit les différents paramètres que nous recommandons dans l'a
  [Position]: https://meshtastic.org/docs/configuration/radio/position/
  [Role]: https://meshtastic.org/docs/configuration/tips/#roles
  [User]: https://meshtastic.org/docs/configuration/radio/user/
- [default PIN]: https://meshtastic.org/docs/configuration/radio/bluetooth/#fixed-pin
+ [PIN par défaut]: https://meshtastic.org/docs/configuration/radio/bluetooth/#fixed-pin
  [Position precision]: https://meshtastic.org/docs/configuration/radio/channels/#position-precision
  [Ignore MQTT]: https://meshtastic.org/docs/configuration/radio/lora/#ignore-mqtt
 [GPS Mode]: https://meshtastic.org/docs/configuration/radio/position/#gps-mode
