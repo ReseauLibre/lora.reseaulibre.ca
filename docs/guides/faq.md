@@ -457,11 +457,11 @@ downsides and to preempt complaints about them:
 - **Encryption**. Matrix's end-to-end security is not as strong as
   other platforms like Signal. Room membership is defined by the
   servers which have more power than they should. A lot of information
-  travels out of band, unencrypted.
+  travels out of band, in clear text.
 
 - **Encryption usability**. Matrix infamously suffers from "cannot
   decrypt message" kind of issues, where past message cannot be
-  reliably decrypted on all devices. This seems to be a high priority
+  reliably read on all devices. This seems to be a high priority
   for the Matrix team, and is less of an issue than before.
 
 - **Interoperability**. While Matrix is an open standard with strong
