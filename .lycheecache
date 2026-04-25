@@ -22,7 +22,6 @@ https://cinny.in/,200,1774752188
 https://codeberg.org/Codeberg-e.V./requests/issues/1570,200,1776654992
 https://codeberg.org/anarcat/lora-reseaulibre-ca,200,1774965752
 https://codeberg.org/anarcat/lora-reseaulibre-ca/,200,1776654993
-https://codeberg.org/anarcat/lora-reseaulibre-ca/_edit/main/docs/references/net.md,200,1774494766
 https://codeberg.org/anarcat/lora-reseaulibre-ca/issues/new,200,1775957060
 https://codeberg.org/foulab/foubot2/commit/f1e79507cdff83bd5ee88b05168f45240e434f8f,200,1775957060
 https://codeberg.org/git-pages/action,200,1776654992
@@ -55,6 +54,7 @@ https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/values.md,2
 https://codeberg.org/tpikonen/siltamesh,200,1775957060
 https://codeberg.org/user/settings/applications,200,1776654992
 https://columba.network/,200,1774965751
+https://config.meshcore.io/,200,1777087049
 https://creativecommons.org/licenses/by-sa/4.0/,200,1776654992
 https://dash.mt.gt/,200,1775957060
 https://diataxis.fr/,200,1777054051
@@ -77,7 +77,7 @@ https://en.wikipedia.org/wiki/AT&T,200,1777054052
 https://en.wikipedia.org/wiki/Action_research,200,1777054052
 https://en.wikipedia.org/wiki/Advanced_Encryption_Standard,200,1777054052
 https://en.wikipedia.org/wiki/Amateur_radio,200,1775957060
-https://en.wikipedia.org/wiki/Amateur_radio_net,200,1774494766
+https://en.wikipedia.org/wiki/Amateur_radio_net,200,1777087048
 https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System,200,1775957060
 https://en.wikipedia.org/wiki/BlackBerry,200,1775957060
 https://en.wikipedia.org/wiki/Bulletin_board_system,200,1775957060
@@ -93,7 +93,7 @@ https://en.wikipedia.org/wiki/Impedance_matching,200,1776654992
 https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity,200,1775957060
 https://en.wikipedia.org/wiki/Internet#History,200,1777054052
 https://en.wikipedia.org/wiki/Intersectionality,200,1777054052
-https://en.wikipedia.org/wiki/James_Clerk_Maxwell,200,1774480997
+https://en.wikipedia.org/wiki/James_Clerk_Maxwell,200,1777087048
 https://en.wikipedia.org/wiki/Keep_Austin_Weird,200,1775957061
 https://en.wikipedia.org/wiki/Let%27s_Encrypt,200,1777054052
 https://en.wikipedia.org/wiki/Lithium-titanate_battery,200,1777054051
@@ -173,6 +173,7 @@ https://github.com/markqvist/Reticulum/blob/master/MIRROR.md,200,1775957062
 https://github.com/markqvist/Reticulum/commit/e7daceec820850d397e6bf9aa585ef7222977891,200,1775957062
 https://github.com/markqvist/Reticulum/discussions/781,200,1775957062
 https://github.com/maubot/rss,200,1777054052
+https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#39-q-what-is-multi-byte-support--what-do-1-byte-2-byte-3-byte-adverts-and-messages-mean,200,1777087048
 https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#514-q-are-there-are-projects-built-around-meshcore,200,1775957060
 https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#57-q-is-meshcore-open-source,200,1775957060
 https://github.com/meshcore-dev/MeshCore/issues/259,200,1776654994
@@ -272,7 +273,7 @@ https://lora.reseaulibre.ca/references/hardware/batteries/,200,1774752188
 https://lora.reseaulibre.ca/references/hardware/power/,200,1777054055
 https://lora.reseaulibre.ca/references/maps/,200,1775957060
 https://lora.reseaulibre.ca/references/neighbours/,200,1775957060
-https://lora.reseaulibre.ca/references/net/,200,1774494766
+https://lora.reseaulibre.ca/references/net/,200,1777087048
 https://lora.reseaulibre.ca/references/other/,200,1777054055
 https://lora.reseaulibre.ca/references/software/,200,1775957060
 https://lora.reseaulibre.ca/references/software/bots/,200,1777054055
