@@ -52,15 +52,31 @@ browser:
 
 <https://meshcore.co.uk/flasher.html>
 
-If you have picked a standalone device, you *may* skip this step if it
-comes flashed with Meshcore already.
+You *may* skip this step if it comes flashed with Meshcore already.
 
 !!! important
 
     This is the moment when you pick between Companion and Repeater,
-    and you can't go back without reflashing! This is also when you
-    configure a repeater, although *some* settings can be performed
+    and you can't go back without reflashing!
+
+!!! tip
+
+    If you are configuring a repeater, this is also the step where you
+    configure the repeater through the [web
+    interface](https://config.meshcore.io/). *Some* settings can be performed
     over Bluetooth later.
+    
+    You need to at least:
+    
+     1. set a name to the router: the local convention is to use a
+     `YUL-` prefix and the general location of the router,
+     e.g. `YUL-Villeray` or `YUL-Parc-Extension`
+     
+     2. set an admin password and save it to your password manager for
+     remote administration
+
+     The remaining settings can be done over Bluetooth from a
+     companion, which we'll assume below.
 
 ### Install an app
 
@@ -96,7 +112,8 @@ the web-based apps: [Liam Cottle's](https://app.meshcore.nz/) and [MeshOS](https
 
 ## Configuration
 
-The main configuration you need to do on the device is set the "region".
+The main configuration you need to do on the device is set the
+"region".
 
 The Montreal mesh uses the "recommended USA / Canada" preset:
 
@@ -110,10 +127,43 @@ the recommended preset.
 
 !!! success "You made it! Say hi!"
 
-    At this point, your radio should be properly configured and should
-    be able to say "hi!" on the "Public" channel. Introduce yourself!
-    What device did you setup, where's your general area, what's the
+    At this point, your companion should be properly
+    configured. Repeaters require a little more work, below.
+    
+    Introduce yourself! Say "hi!" on the "Public" channel. Explain
+    what device did you setup, where's your general area, what's the
     weather like, etc. Be kind, reply to people, participate!
+
+!!! note "Multi-byte repeater configuration"
+
+    On a repeater, you should also configure the router identifier for
+    [multi-byte path routing](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#39-q-what-is-multi-byte-support--what-do-1-byte-2-byte-3-byte-adverts-and-messages-mean), specifically for three bytes, which is
+    called "mode 2". For this, you need to enter the "command line" mode
+    and enter the command:
+    
+        set path.hash.mode 2
+    
+    You can confirm the current mode with:
+    
+        get path.hash.mode
+    
+    And some relays require a reboot for the change to take effect:
+    
+        reboot
+    
+    Others have reported having to do the change *twice* for it to take
+    effect as well.
+
+!!! bug "Repeaters can lose track of time"
+
+    Repeaters can lose their time after reboot.
+    
+    Make sure the repeater has an accurate clock. Companion apps can
+    be configured to automatically sync the clock on login to
+    workaround this issue.
+    
+    Repeaters without an accurate clock route packets properly, but
+    its adverts will be ignored until its time is accurate.
 
 ### Channels
 
