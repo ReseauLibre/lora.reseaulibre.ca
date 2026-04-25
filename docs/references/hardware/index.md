@@ -212,11 +212,14 @@ The devices here generally do not have a battery.
 
 !!! success
 
-    - [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/) ([v3](https://heltec.org/project/wifi-lora-32-v3/)) is the cheapest option, 20$ with the case
-      (but no battery, and battery doesn't fit in the case), they also
-      have an [eink dev board](https://heltec.org/project/vision-master-e290/). one advantage Heltec has over the below
-      RAK kits is that you can connect to them over wifi, the downside is
-      they use more power because they are ESP32 based instead of NRF5280
+    - [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)
+      ([v3](https://heltec.org/project/wifi-lora-32-v3/)) is the
+      cheapest option, v3 is 20$ (30$CAD) with the case, v4 doesn't
+      ship with a case (but no battery, and battery doesn't fit in the
+      case). one advantage Heltec has over the below RAK kits is that
+      you can connect to them over wifi, the downside is
+      they use more power because they are ESP32 based instead of
+      NRF5280
     - the [RAK19003 base kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) (28$) is more expensive, but less
       power-hungry than the Heltec
 
@@ -231,6 +234,8 @@ The devices here generally do not have a battery.
     - [T-Beam Supreme](https://lilygo.cc/products/t-beam-supreme?variant=43067944173749): 1.3" OLED display, 18650 battery socket,
       magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, ESP32, 52$, the [T-Beam
       SoftRF](https://lilygo.cc/products/t-beam-softrf?variant=43170158477493) is similar but without a display and cheaper, 30$USD
+    - [Heltec Vision Master E290](https://heltec.org/project/vision-master-e290/): eink dev
+      board, ESP32S3 SX1262, 20$USD 180 days display, WiFi, BT
 
 ### Cases
 
