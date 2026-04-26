@@ -328,8 +328,12 @@ Other lists include:
 [^2]:
 
     Note that the "Alfa AOA-915-5ACM" recommended for "Base station /
-    repeater" in that guide falls short of the advertised +5dBi gain
+    repeater" in that guide falls short of the sometimes advertised +5dBi gain
     in [this technical review](https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi).
+
+    In practice, it's still a great antenna, a "great bang for the
+    buck" according to the Ottawa folks, and that the antenna is
+    closer to 3dBi.
 
 ## Resellers
 
