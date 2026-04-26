@@ -78,6 +78,23 @@ You *may* skip this step if it comes flashed with Meshcore already.
      The remaining settings can be done over Bluetooth from a
      companion, which we'll assume below.
 
+!!! tip
+
+    Many settings can be done over a serial port, if you're an
+    advanced user. You can connect to the serial port on Linux with
+    tio:
+    
+        tio /dev/ttyUSB0
+
+    Then the above commands are:
+    
+        set name YUL-Villeray
+    
+    You can also connect to your devices with the
+    [`meschore-cli`](https://github.com/meshcore-dev/meshcore-cli)
+    program. The full command line reference is [available in the
+    upstream documentation](https://docs.meshcore.io/cli_commands/).
+
 ### Install an app
 
 Unless you picked a standalone device, now you'll need something to
@@ -124,6 +141,17 @@ The Montreal mesh uses the "recommended USA / Canada" preset:
 
 You shouldn't need to write those down by hands, generally. Just pick
 the recommended preset.
+
+!!! tip
+
+    You can also perform this configuration over the command line:
+    
+    ```
+    set freq 910.525
+    set bw 62.5
+    set sf 7
+    set cr 5
+    ```
 
 !!! success "You made it! Say hi!"
 
