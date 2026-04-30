@@ -150,6 +150,7 @@ plugins:
       blog_dir: news
       categories_allowed:
         - events
+        - announcements
   # regroup third-party plugins to make them easier to disable
   #
   # use, say, `env MKDOCS_THIRD_PARTY=false mkdocs serve` to disable

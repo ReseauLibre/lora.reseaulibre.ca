@@ -266,28 +266,25 @@ we'll see!
 
 ### Why not Meshtastic?
 
-We also support and run Meshtastic! At least to a certain extent: at
-the time of writing, there's a mesh of about 100 nodes in
-Montreal. But it doesn't scale: while telemetry seems to eventually
-make it through the mesh, messaging is extremely lossy up to a point
-where one cannot reliably communicate over the mesh.
+Once upon a time, there was a mesh of about 100 Meshtastic nodes in
+Montreal. But it didn't scale: while telemetry eventually
+trickled out through the mesh, messaging was extremely lossy, so much
+that one could reliably communicate over the mesh.
 
-We are experimenting with Meshcore instead. We still believe there are
-interesting use cases for Meshtastic: for smaller communities, it just
-works, and it's easier to use than the alternatives.
+There might still be interesting use cases for Meshtastic: for smaller
+communities, it just works, and it's somewhat easier to use.
 
-Plus, Meshtastic is free software, more so than Meshcore at least:
+Meshtastic is also free software, more so than Meshcore, for example:
 software and firmware are all free software, and documentation is
 pretty good. Those are all lessons Meshcore should take a lesson
 from. The on-boarding is fantastic as well.
 
 Meshtastic have built a great product and tool chain. They have blazed
-the way towards people creating mesh networks all across the planet.
+the way towards people creating mesh networks all across the
+planet. But given that Meshcore also has a routing companion now, it's
+not clear to us there's still a use case for Meshtastic anymore.
 
 ### Why LongFast?
-
-Note that we don't recommend people setup repeaters using Meshtastic,
-use Meshcore instead.
 
 That said, in our guide we currently stay close to the default
 Meshtastic settings, which includes 3 hops limits and the LongFast
