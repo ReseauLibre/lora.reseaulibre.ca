@@ -2,7 +2,7 @@
 date:
   created: 2026-04-21
   actual:  2026-05-06
-title: May mesh night and day
+title: Mesh night and day in May
 categories:
   - events
 ---
