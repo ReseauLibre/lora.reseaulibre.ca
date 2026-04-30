@@ -40,6 +40,7 @@ technologies. Right now, Meshcore certainly seems to have the
 momentum. 
 
 But let's keep an eye on Reticulum too; good progress has been made on
-"micro reticulum", various attempts at embedding a full transport node
-onto micro-controllers. It's not yet as easy to deply as Meshtastic or
-Meshcore yet, but certainly something to keep an eye on.
+various firmware projects based on micro-Reticulum, which embed a full
+transport node onto the same micro-controller devices that run
+Meshtastic or Meshcore. It's not yet as easy to deploy yet, but
+certainly something to keep an eye on.
