@@ -265,7 +265,7 @@
   
     
   
-  About
+  À propos
 
         </a>
       </li>
@@ -311,7 +311,7 @@
   
     
   
-  References
+  Références
 
         </a>
       </li>
@@ -433,7 +433,7 @@
   <span class="md-ellipsis">
     
   
-    About
+    À propos
   
 
     
@@ -455,7 +455,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    About
+    À propos
   
 
           </label>
@@ -477,7 +477,7 @@
   <span class="md-ellipsis">
     
   
-    Values
+    Valeurs
   
 
     
@@ -505,7 +505,7 @@
   <span class="md-ellipsis">
     
   
-    History
+    Histoire
   
 
     
@@ -815,7 +815,7 @@
   <span class="md-ellipsis">
     
   
-    References
+    Références
   
 
     
@@ -837,7 +837,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    References
+    Références
   
 
           </label>
@@ -888,7 +888,7 @@
   <span class="md-ellipsis">
     
   
-    Hardware
+    Matériel
   
 
     
@@ -910,7 +910,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Hardware
+    Matériel
   
 
           </label>
@@ -1027,6 +1027,8 @@
       
         
       
+        
+      
     
     
     
@@ -1051,7 +1053,7 @@
   <span class="md-ellipsis">
     
   
-    Software
+    Logiciel
   
 
     
@@ -1073,12 +1075,40 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Software
+    Logiciel
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/bots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bots and bridges
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1243,7 +1273,7 @@
   <span class="md-ellipsis">
     
   
-    Code of Conduct
+    Code de conduite
   
 
     
@@ -1561,6 +1591,19 @@ utile si vous ne voulez pas utiliser votre téléphone.</p>
 </li>
 </ul>
 </div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We do not recommend standalone devices, in general. They're niche
+devices that might have their use case, but they typically use
+more battery and power than normal devices (as they are often
+based on ESP32 device) and are hard to use.</p>
+<p>This is particularly true of Reticulum and Meshcore, for which the
+standalone interfaces are far less advanced and much harder to use
+than Meshtastic, which is already not very intuitive.</p>
+<p>If you're just starting, just get the cheapest device you can get
+your hand on quickly, it's 50$. Plug it into your phone, a USB
+charger or a battery, and get talking!</p>
+</div>
 <h2 id="how-we-classify-devices">How we classify devices<a class="headerlink" href="#how-we-classify-devices" title="Permanent link">&para;</a></h2>
 <p>We have those categories:</p>
 <div class="admonition success">
@@ -1708,11 +1751,14 @@ really be used in production as they lack a proper case.</p>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
 <ul>
-<li><a href="https://heltec.org/project/wifi-lora-32-v4/">HELTEC v4</a> (<a href="https://heltec.org/project/wifi-lora-32-v3/">v3</a>) is the cheapest option, 20$ with the case
-  (but no battery, and battery doesn't fit in the case), they also
-  have an <a href="https://heltec.org/project/vision-master-e290/">eink dev board</a>. one advantage Heltec has over the below
-  RAK kits is that you can connect to them over wifi, the downside is
-  they use more power because they are ESP32 based instead of NRF5280</li>
+<li><a href="https://heltec.org/project/wifi-lora-32-v4/">HELTEC v4</a>
+  (<a href="https://heltec.org/project/wifi-lora-32-v3/">v3</a>) is the
+  cheapest option, v3 is 20$ (30$CAD) with the case, v4 doesn't
+  ship with a case (but no battery, and battery doesn't fit in the
+  case). one advantage Heltec has over the below RAK kits is that
+  you can connect to them over wifi, the downside is
+  they use more power because they are ESP32 based instead of
+  NRF5280</li>
 <li>the <a href="https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158">RAK19003 base kit</a> (28$) is more expensive, but less
   power-hungry than the Heltec</li>
 </ul>
@@ -1731,6 +1777,8 @@ really be used in production as they lack a proper case.</p>
 <li><a href="https://lilygo.cc/products/t-beam-supreme?variant=43067944173749">T-Beam Supreme</a>: 1.3" OLED display, 18650 battery socket,
   magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, ESP32, 52$, the <a href="https://lilygo.cc/products/t-beam-softrf?variant=43170158477493">T-Beam
   SoftRF</a> is similar but without a display and cheaper, 30$USD</li>
+<li><a href="https://heltec.org/project/vision-master-e290/">Heltec Vision Master E290</a>: eink dev
+  board, ESP32S3 SX1262, 20$USD 180 days display, WiFi, BT</li>
 </ul>
 </div>
 <h3 id="cases">Cases<a class="headerlink" href="#cases" title="Permanent link">&para;</a></h3>
@@ -1826,8 +1874,11 @@ you for various reasons:</p>
 <ol>
 <li id="fn:2">
 <p>Note that the "Alfa AOA-915-5ACM" recommended for "Base station /
-repeater" in that guide falls short of the advertised +5dBi gain
-in <a href="https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi">this technical review</a>.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+repeater" in that guide falls short of the sometimes advertised +5dBi gain
+in <a href="https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi">this technical review</a>.</p>
+<p>In practice, it's still a great antenna, a "great bang for the
+buck" according to the Ottawa folks, and that the antenna is
+closer to 3dBi.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -1853,7 +1904,7 @@ in <a href="https://antennatestlab.com/helium-network-antenna-reviews/alpha-netw
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="April 23, 2026 20:59:01 UTC">2026-04-23 20:59:01</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="April 25, 2026 03:11:55 UTC">2026-04-25 03:11:55</span>
   </span>
 
     

@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://lora.reseaulibre.ca/fr/references/maps/">
       
       
-        <link rel="prev" href="../software/">
+        <link rel="prev" href="../software/bots/">
       
       
         <link rel="next" href="../../meta/">
@@ -265,7 +265,7 @@
   
     
   
-  About
+  À propos
 
         </a>
       </li>
@@ -311,7 +311,7 @@
   
     
   
-  References
+  Références
 
         </a>
       </li>
@@ -433,7 +433,7 @@
   <span class="md-ellipsis">
     
   
-    About
+    À propos
   
 
     
@@ -455,7 +455,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    About
+    À propos
   
 
           </label>
@@ -477,7 +477,7 @@
   <span class="md-ellipsis">
     
   
-    Values
+    Valeurs
   
 
     
@@ -505,7 +505,7 @@
   <span class="md-ellipsis">
     
   
-    History
+    Histoire
   
 
     
@@ -815,7 +815,7 @@
   <span class="md-ellipsis">
     
   
-    References
+    Références
   
 
     
@@ -837,7 +837,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    References
+    Références
   
 
           </label>
@@ -888,7 +888,7 @@
   <span class="md-ellipsis">
     
   
-    Hardware
+    Matériel
   
 
     
@@ -910,7 +910,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Hardware
+    Matériel
   
 
           </label>
@@ -1029,6 +1029,8 @@
       
         
       
+        
+      
     
     
     
@@ -1051,7 +1053,7 @@
   <span class="md-ellipsis">
     
   
-    Software
+    Logiciel
   
 
     
@@ -1073,12 +1075,40 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Software
+    Logiciel
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/bots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bots and bridges
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1148,6 +1178,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#meshcore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meshcore
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#meshtastic" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1159,10 +1200,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#meshcore" class="md-nav__link">
+  <a href="#progression" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Meshcore
+        Progression
       
     </span>
   </a>
@@ -1323,7 +1364,7 @@
   <span class="md-ellipsis">
     
   
-    Code of Conduct
+    Code de conduite
   
 
     
@@ -1400,6 +1441,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#meshcore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meshcore
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#meshtastic" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1411,10 +1463,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#meshcore" class="md-nav__link">
+  <a href="#progression" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Meshcore
+        Progression
       
     </span>
   </a>
@@ -1471,6 +1523,17 @@
 <h1 id="maps">Maps<a class="headerlink" href="#maps" title="Permanent link">&para;</a></h1>
 <p>We hope to eventually show a map of nodes in the local mesh, but for
 now use one of those.</p>
+<h2 id="meshcore">Meshcore<a class="headerlink" href="#meshcore" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://map.meshcore.io/">official map</a>, see <a href="https://map.meshcore.io/?zoom=11&amp;lat=45.5951&amp;lon=-73.5294">this link for Montreal</a>, which shows
+  about 14-25 relays in the greater Montreal area as of 2026-03-18</li>
+<li><a href="https://analyzer.letsmesh.net/map">https://analyzer.letsmesh.net/map</a> has lots of data and will spin
+  up the fan on your laptop. shows three relays in the greater
+  Montreal area as of 2026-03-18</li>
+<li><a href="https://yul.meshmapper.net/">https://yul.meshmapper.net/</a> shows actual tested coverage from the
+  <a href="https://wiki.meshmapper.net/">MeshMapper project</a>, which essentially allows users to "war
+  drive" a real-time map of where repeaters can be reached, shows 6 nodes in Montreal</li>
+</ul>
 <h2 id="meshtastic">Meshtastic<a class="headerlink" href="#meshtastic" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://meshmap.net/"><code>meshmap.net</code></a>, shows neighbours, hardware details, altitude,
@@ -1494,20 +1557,30 @@ now use one of those.</p>
 visible on the ground, only relays that report their position. A relay
 might be in your neighbourhood and not visible on the map, so don't
 rely on the map to predict success. Try anyways!</p>
-<h2 id="meshcore">Meshcore<a class="headerlink" href="#meshcore" title="Permanent link">&para;</a></h2>
-<ul>
-<li>the <a href="https://map.meshcore.io/">official map</a> often doesn't
-  load here, or very slowly</li>
-<li>the <a href="https://map.meshcore.dev">https://map.meshcore.dev</a> map shows about 14-25 relays in the
-  greater Montreal area as of 2026-03-18, likely the same data as the
-  above map</li>
-<li><a href="https://analyzer.letsmesh.net/map">https://analyzer.letsmesh.net/map</a> has lots of data and will spin
-  up the fan on your laptop. shows three relays in the greater
-  Montreal area as of 2026-03-18</li>
-<li><a href="https://yul.meshmapper.net/">https://yul.meshmapper.net/</a> shows actual tested coverage from the
-  <a href="https://wiki.meshmapper.net/">MeshMapper project</a>, which essentially allows users to "war
-  drive" a real-time map of where repeaters can be reached, shows 6 nodes in Montreal</li>
-</ul>
+<h2 id="progression">Progression<a class="headerlink" href="#progression" title="Permanent link">&para;</a></h2>
+<p>We're trying to keep track of how many relays we see on those maps,
+over time. Here's an attempt at summarizing this:</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Meshcore</th>
+<th>Meshtastic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-03-18</td>
+<td>3-25</td>
+<td>23-51</td>
+</tr>
+<tr>
+<td>2026-04-24</td>
+<td>17-47</td>
+<td>~25</td>
+</tr>
+</tbody>
+</table>
 <h2 id="site-planners">Site planners<a class="headerlink" href="#site-planners" title="Permanent link">&para;</a></h2>
 <p>Those tools allow you to see what a relay in a given location would
 see. It's useful to plan where to install a relay.</p>
@@ -1538,7 +1611,7 @@ see. It's useful to plan where to install a relay.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="April 23, 2026 20:10:38 UTC">2026-04-23 20:10:38</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="April 24, 2026 18:21:55 UTC">2026-04-24 18:21:55</span>
   </span>
 
     
