@@ -3,7 +3,7 @@
 !!! bug "Deprecated"
 
     As of [April
-    2026](../news/posts/2026-04-29-meshtastic-deprecated.md),
+    2026](../news/posts/2026-05-02-meshtastic-deprecated.md),
     Meshtastic is deprecated in the Montreal mesh. We are now focusing
     on building Meshcore infrastructure, see our [Getting started with
     Meshcore](meshcore.md) guide instead and [Why not
