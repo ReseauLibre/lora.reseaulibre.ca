@@ -1,34 +1,43 @@
-# Values
+---
+tags:
+  - traduction/complète
+---
 
-!!! example
+# Valeurs
 
-    This is a draft of values I hope we can rally around.
+!!! example "Exemple"
 
-## Local first
+    Ceci est un brouillon de valeurs autour desquelles on peut se rallier.
 
-> Get off the internet, I'll see you in the streets! — [Riseup](https://riseup.net)
+## Local avant tout
 
-- real work, with real people, no slop
-- [research in action](https://en.wikipedia.org/wiki/Action_research), no endless technical debate
-- limit reliance on the traditional internet, work [off the grid](https://en.wikipedia.org/wiki/Off-the-grid),
-  prepare for the worst, hope for the best
+> Débarque de l'internet, on se voit dans la rue! — [Riseup](https://riseup.net)
 
-## Transparency and privacy
+- du vrai, avec des personnes, pas de bouillasse artificielle
+- [recherche-action](https://fr.wikipedia.org/wiki/Recherche-action), pas de débats techniques inutiles
+- limiter la dépendence envers l'internet traditionnel, fonctionner
+  [hors réseau](https://fr.wikipedia.org/wiki/Hors_r%C3%A9seau), se préparer au pire, espérer le meilleur
 
-> Transparency for them, privacy for us! — Anonymous
+## Transparence et vie privée
 
-- those in power should be more transparent, this includes network
-  operators
-- you might feel powerless in one space yet might yield power over
-  others in another, [be mindful](https://en.wikipedia.org/wiki/Intersectionality)
-- privacy is a human right
+> Transparence pour eux, vie privée pour nous! — [Anonymous][]
 
-## Open and free
+[Anonymous]: https://fr.wikipedia.org/wiki/Anonymous_(collectif)
 
-> You don't understand it until you can teach it. — [Albert Einstein,
-> Richard Feynman and Daniel Dennet](https://skeptics.stackexchange.com/questions/8742/did-einstein-say-if-you-cant-explain-it-simply-you-dont-understand-it-well-en)
+- ceux au pouvoir doivent être plus transparents, et ça inclus les
+  opérateurs de relais
+- vous pouvez être impuissant dans un espace tout en ayant du pouvoir
+  sur les autres dans un autre, [soyez attentif·ve·s](https://fr.wikipedia.org/wiki/Intersectionnalit%C3%A9)
+- la vie privée est un droit humain
 
-- [real science is open](https://en.wikipedia.org/wiki/Open_science), [document your work](https://diataxis.fr/)
-- [if we can't reproduce your results, they're not valid](https://en.wikipedia.org/wiki/Scientific_method)
-- we prefer [free software](https://en.wikipedia.org/wiki/Free_software) and [collaboration](https://en.wikipedia.org/wiki/Open_peer_review) to top-down
-  organization
+## Ouvert et libre
+
+> Si vous ne pouvez l'enseigner, vous ne le comprenez pas vraiment. —
+> [Albert Einstein, Richard Feynman and Daniel Dennet](https://skeptics.stackexchange.com/questions/8742/did-einstein-say-if-you-cant-explain-it-simply-you-dont-understand-it-well-en)
+
+- [la vrai science est ouverte](https://fr.wikipedia.org/wiki/Science_ouverte), [documentez votre travail](https://diataxis.fr/)
+- [si on ne peut reproduire vos résultats, ils sont invalides](https://fr.wikipedia.org/wiki/%C3%89valuation_par_les_pairs)
+- on préfère les [logiciels libres][] et la [collaboration](https://fr.wikipedia.org/wiki/%C3%89valuation_par_les_pairs) aux
+  organisations hiérarchiques
+
+[logiciels libres]: https://fr.wikipedia.org/wiki/Logiciel_libre
