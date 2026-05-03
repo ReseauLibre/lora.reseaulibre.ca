@@ -7,12 +7,12 @@ messages every week.
 
 We have real time chat in the [`#reseaulibre:matrix.org` Matrix
 room](https://matrix.to/#/#reseaulibre:matrix.org). We're organizing those many rooms in a wider
-[`#mesh-quebec:matrix.org` space](https://matrix.to/#/#mesh-quebec:matrix.org), as an alternative to the
-[Telegram chat](https://t.me/meshtQuebec)[^1].
+[`#mesh-quebec:matrix.org` space](https://matrix.to/#/#mesh-quebec:matrix.org), as an alternative to proprietary
+platforms[^1].
 
 [^1]:
-  We do not endorse the Telegram channel for [various reasons](https://en.wikipedia.org/wiki/Telegram_(software)#Criticism), or
-  encourage the use of Discord for [similar reasons](https://joinmatrix.org/guide/matrix-vs-discord/).
+  We do not endorse the [Telegram chat](https://t.me/meshtQuebec) for [various reasons](https://en.wikipedia.org/wiki/Telegram_(software)#Criticism), or
+  encourage the use of the [Discord "server"](https://discord.gg/xSpMaErKk4) for [similar reasons](https://joinmatrix.org/guide/matrix-vs-discord/).
 
 ## Email
 
@@ -28,7 +28,7 @@ night. It is [located](https://foulab.org/location/) at [Suite 33B, 999 `du Coll
 Québec, Canada, H4C 2S3](https://www.openstreetmap.org/node/717702812) ([Google maps link](https://www.google.com/maps/place/999+Rue+du+Coll%C3%A8ge,+Montr%C3%A9al,+QC+H4C+2S2,+Canada)), just a few
 minutes away from Place-Saint-Henri metro station.
 
-Check the [News pages](https://foulab.org/news/) to confirm the specific date each month, but
+Check the [News pages](news/index.md) to confirm the specific date each month, but
 it is typically on the first Wednesday of the month.
 
 ## Issues

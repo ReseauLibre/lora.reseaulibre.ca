@@ -15,13 +15,15 @@
 
 ## Transparency and privacy
 
-> Transparency for them, privacy for us! — Anonymous
+> Transparency for them, privacy for us! — [Anonymous][]
 
 - those in power should be more transparent, this includes network
   operators
 - you might feel powerless in one space yet might yield power over
   others in another, [be mindful](https://en.wikipedia.org/wiki/Intersectionality)
 - privacy is a human right
+
+[Anonymous]: https://en.wikipedia.org/wiki/Anonymous_(hacker_group)
 
 ## Open and free
 
