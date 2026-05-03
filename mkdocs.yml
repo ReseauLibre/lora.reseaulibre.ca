@@ -7,10 +7,10 @@ copyright: Copyleft &copy; CC-BY-SA 4.0
 repo_url: https://codeberg.org/reseaulibre/lora-reseaulibre-ca
 edit_uri: _edit/main/docs/
 nav:
-  - About:
+  - À propos:
     - index.md
-    - values.md
-    - history.md
+    - Valeurs: values.md
+    - Histoire: history.md
     - Contact: contact.md
     - FAQ: guides/faq.md
   - Guides:
@@ -18,21 +18,21 @@ nav:
     - Meshtastic: guides/meshtastic.md
     - Matrix: guides/matrix.md
     - FAQ: guides/faq.md
-  - References:
+  - Références:
     - references/index.md
-    - Hardware:
+    - Matériel:
         - references/hardware/index.md
         - references/hardware/antennas.md
         - references/hardware/batteries.md
         - references/hardware/power.md
-    - Software:
+    - Logiciel:
         - references/software/index.md
         - references/maps.md
         - Meta: meta.md
     - references/neighbours.md
     - references/net.md
     - references/other.md
-    - Code of Conduct: code.md
+    - Code de conduite: code.md
   - News: news/index.md
 markdown_extensions:
   # Python Markdown

@@ -10,7 +10,7 @@ un [réseau "mesh"](https://fr.wikipedia.org/wiki/R%C3%A9seau_maill%C3%A9) dans 
 
 
 <div class="grid cards" markdown>
--   :octicons-info-16: **What**
+-   :octicons-info-16: **Quoi**
 
     ---
     
@@ -24,6 +24,8 @@ un [réseau "mesh"](https://fr.wikipedia.org/wiki/R%C3%A9seau_maill%C3%A9) dans 
 
 -   :octicons-person-16: **Qui**
 
+    ---
+    
     Nous sommes un groupe de patenteux, enthousiastes de la technologie et
     opérateurs de radio amateur.
 
@@ -53,9 +55,9 @@ un [réseau "mesh"](https://fr.wikipedia.org/wiki/R%C3%A9seau_maill%C3%A9) dans 
 
     ---
     
-    Suivez le  [:octicons-arrow-right-24: guide Débuter avec
-    Meshcore](guides/meshcore.md) et joignez-vous à nous, ou consultez
-    notre [documentation](references/index.md).
+    Suivez le [guide "Débuter avec Meshcore"](guides/meshcore.md) et
+    joignez-vous à nous, ou consultez notre
+    [documentation](references/index.md).
 
 -   :octicons-question-16: **D'autres questions?**
 
