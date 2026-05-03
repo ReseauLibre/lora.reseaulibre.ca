@@ -20,7 +20,7 @@ is how a mesh start: with one node, and then a second...
 
 ### What should I buy?
 
-It depends! In general, follow the [guide](meshtastic.md), which has devices we
+It depends! In general, follow the [hardware reference](../references/hardware/index.md), which has devices we
 have actually tested.
 
 When in doubt, and starting, get a cheap one (e.g. [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)) and
@@ -65,8 +65,9 @@ There are daily messages.
 
 ### Is this legal?
 
-Yes. Meshtastic -- or more specifically LoRa -- transmits over [ISM
-radio bands](https://en.wikipedia.org/wiki/ISM_radio_band), specifically centered around 915MHz.
+Yes. LoRa transmitters (used by Meshcore, Meshtastic, and optionally
+by Reticulum) use the [ISM radio bands](https://en.wikipedia.org/wiki/ISM_radio_band), specifically centered
+around 915MHz.
 
 Technically, the LoRa protocol itself is patented by the [Semtech
 corporation](https://en.wikipedia.org/wiki/Semtech), so there is a non-free aspect to this. It is, in any
@@ -75,6 +76,33 @@ means that someone might not have the right to re-implement the LoRa
 protocol on its own hardware, for example.
 
 ### Are my messages secret?
+
+#### In Meshcore
+
+Yes. Messages in Meshcore are encrypted with [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) in ECB mode
+which has a [number of issues](https://github.com/meshcore-dev/MeshCore/issues/259) like leaking pattern information
+(the [Penguin attack](https://github.com/robertdavidgraham/ecb-penguin)) and length. But generally it's considered to
+be stronger than Meshtastic as it does include replay attack
+protections.
+
+Those issues have been acknowledged upstream and various proposals
+have been brought up to fix the protocol.
+
+#### In Reticulum
+
+Yes. Reticulum uses [strong encryption](https://reticulum.network/crypto.html), including a Signal-like
+ratcheting algorithm. To quote upstream, it uses:
+
+> - Ed25519 for signatures
+> - X22519 for ECDH key exchanges
+> - HKDF for key derivation
+> - AES-256 in CBC mode
+> - HMAC-SHA256 for message authentication
+
+In all the mesh protocols we're working on, Reticulum has the stronger
+security promises.
+
+#### In Meshtastic
 
 It depends.
 
@@ -111,8 +139,6 @@ devices can generally be put in "DFU" ([Device firmware upgrade](https://en.wiki
 mode relatively easily. Treat encryption keys from a physically
 compromised device to be equally compromised.
 
-
-
 ## Troubleshooting
 
 ### Why can't I contact anyone?
@@ -123,7 +149,8 @@ obstacle. Or people are just being quiet.
 Wait a little while; relays periodically announce themselves and you
 should eventually see some relays.
 
-[Make sure you have the right settings](meshtastic.md#parametres).
+Make sure you configured your device with the right settings, see our
+[Meshcore](meshcore.md#configuration) and [Meshtastic](meshtastic.md#parametres) settings.
 
 Try to say hi and ask if anyone can read you. People might pick up the
 message only much later and respond. Keep your device open.
@@ -133,12 +160,22 @@ Try to bring your device higher up or outside.
 Look at the [maps](../references/maps.md) to see if there are relays in your
 neighbourhood.
 
-Try to [ask for help](../contact.md) or send the command `!ping` in the [Matrix
-bridge](https://matrix.to/#/#reseaulibre-meshtastic-bridge:matrix.org) to see if you can hear that bot on the Meshtastic
-network. See also the [Matrix bridge usage](matrix.md#usage) for how
-to use the bridge.
+If you're using Meshtastic, consider switching to Meshcore. We've
+found Meshtastic reliability to be extremely poor; while it eventually
+manages to transmit relay telemetry across the mesh, we are not able
+to communicate reliably, while so far the Meshcore mesh has been much
+more reliable.
+
+Try to [ask for help](../contact.md)!
 
 ### Is there a user manual for this GUI?
+
+#### Meshcore
+
+Liam Cottle wrote a [Meshcore quick start guide](https://files.liamcottle.net/MeshCore/Documentation/MeshCore_Quick_Start_Guide.pdf) for the
+proprietary app.
+
+#### Meshtastic
 
 "This GUI" generally means the [Meshtastic UI](https://meshtastic.org/docs/configuration/device-uis/meshtasticui/) which ships with
 device like the Lilygo T-Deck or the Heltec Kit. It's a color
@@ -210,8 +247,8 @@ on chip without a second computer), [transport nodes](https://github.com/jrl290/
 gateway to the Internet), Reticulum-over-Meshtastic, and more!
 
 But Reticulum, while being more advanced in terms of routing and
-cryptography, lacks the "ready-made" aspect of Meshtastic. You can,
-today, buy a [hardware preinstalled with Meshtastic](../references/hardware/index.md) and it just
+cryptography, lacks the "ready-made" aspect of the other protocols. You can,
+today, buy a [hardware preinstalled with Meshtastic or Meshcore](../references/hardware/index.md) and it just
 works, without anything else. Reticulum is just not there
 yet, although projects like [Ratdeck](https://github.com/ratspeak/ratdeck) are approaching the
 capabilities of Meshtastic and Meshcore in terms of running standalone
@@ -223,29 +260,48 @@ repository is a "[public mirror](https://github.com/markqvist/Reticulum/blob/mas
 elsewhere".
 
 Right now the focus is on organizing the mesh that already exists on
-the island, and that is mostly made up of Meshtastic nodes. Reticulum
+the island, and that is mostly made up of Meshtastic and Meshcore nodes. Reticulum
 could be a backhaul for the network or the future of the network,
 we'll see!
 
 ### Why not Meshtastic?
 
-We also support and run Meshtastic! At least to a certain extent: at
-the time of writing, there's a mesh of about 100 nodes in
-Montreal. But it doesn't scale: while telemetry seems to eventually
-make it through the mesh, messaging is extremely lossy up to a point
-where one cannot reliably communicate over the mesh.
+Once upon a time, there was a mesh of about 100 Meshtastic nodes in
+Montreal. But it didn't scale: while telemetry eventually
+trickled out through the mesh, messaging was extremely lossy, so much
+that one could reliably communicate over the mesh.
 
-We are experimenting with Meshcore instead. We still believe there are
-interesting use cases for Meshtastic: for smaller communities, it just
-works, and it's easier to use than the alternatives.
+There might still be interesting use cases for Meshtastic: for smaller
+communities, it just works, and it's somewhat easier to use.
 
-Plus, Meshtastic is free software, more so than Meshcore at least:
+Meshtastic is also free software, more so than Meshcore, for example:
 software and firmware are all free software, and documentation is
 pretty good. Those are all lessons Meshcore should take a lesson
 from. The on-boarding is fantastic as well.
 
 Meshtastic have built a great product and tool chain. They have blazed
-the way towards people creating mesh networks all across the planet.
+the way towards people creating mesh networks all across the
+planet. But given that Meshcore also has a routing companion now, it's
+not clear to us there's still a use case for Meshtastic anymore.
+
+### Why LongFast?
+
+That said, in our guide we currently stay close to the default
+Meshtastic settings, which includes 3 hops limits and the LongFast
+default. This didn't seem to cause saturation, but it did seem like we
+were running out of hops.
+
+We suspect that people were regularly changing at *least* the hop
+count, because traffic with 7 hops were sometimes observed.
+
+Others have tried experimenting with other settings than LongFast in
+[Tennessee (USA)](https://mtnme.sh/mediumfast/), [Puget Mesh (USA)](https://pugetmesh.org/meshtastic/may2025/) the bay area (USA) and
+Wellington (NZ), see also the [official blog post](https://meshtastic.org/blog/why-your-mesh-should-switch-from-longfast/) for a
+conversation about this.
+
+Ultimately, we do not believe this would have helped the Meshtastic
+mesh and instead, we're focusing more on an "infrastructure" approach
+with Meshcore.
 
 ### Why Meshcore?
 
@@ -337,18 +393,6 @@ resell that private information to data brokers which can then become
 accessible for a small fee, bypassing decades of traditional legal
 protection against unreasonable search and seizure.
 
-### Why LongFast?
-
-We currently stay close to the default Meshtastic settings, which
-includes 3 hops limits and the LongFast default. For now, we are not
-saturating.
-
-When the time comes, we *will* need to change those defaults, as
-others have done in [Tennessee (USA)](https://mtnme.sh/mediumfast/), [Puget Mesh (USA)](https://pugetmesh.org/meshtastic/may2025/) the bay
-area (USA) and Wellington (NZ), see the [official blog post](https://meshtastic.org/blog/why-your-mesh-should-switch-from-longfast/) for a
-conversation about this.
-
-
 ### Why Matrix?
 
 Also known as "Why are you not on Telegram, Discord, Whatsapp,
@@ -365,29 +409,29 @@ purpose.
 Compared to all those other platforms (with exceptions), Matrix has
 properties that are uniquely well suited to the mesh:
 
-- Matrix is *federated*: everyone can run their own server, just like
+- Matrix is **federated**: everyone can run their own server, just like
   the mesh (XMPP is also federated)
 
-- Matrix is *decentralized*: if one server goes down, the other
+- Matrix is **decentralized**: if one server goes down, the other
   servers keep operating normally
 
-- Matrix is *open*: source code for most Matrix implementations
+- Matrix is **open**: source code for most Matrix implementations
   (client and server) are open source, and the [specification](https://spec.matrix.org/latest/) is
   collaboratively established among multiple stakeholders through
   (XMPP is also open)
 
-- Matrix is *bridged*: there are [multiple bridges](https://matrix.org/ecosystem/bridges/) to many other
+- Matrix is **free**: since anyone can run a server, most (if not all)
+  [servers](https://servers.joinmatrix.org/) offer free accounts to anyone (see below)
+
+- Matrix is **bridged**: there are [multiple bridges](https://matrix.org/ecosystem/bridges/) to many other
   platforms, it is the glue that will allow us to merge together all
   those disconnected communities from Discord, Telegram, Mattermost
   and so on
 
-- Matrix respects your privacy: while there are issues with data
+- Matrix **respects your privacy**: while there are issues with data
   retention in any federated protocol, Matrix at least won't require
   your phone number (like Whatsapp, Telegram or, sometimes, Discord)
   or deliberately spy on you
-
-- Matrix is *free*: since anyone can run a server, most (if not all)
-  [servers](https://servers.joinmatrix.org/) offer free accounts to anyone (see below)
 
 The key aspect is this: Matrix rooms are decentralized. As long as
 your home server is reachable from the mesh, the Internet could go
@@ -400,6 +444,53 @@ See also [Elements of Matrix](https://matrix.org/docs/matrix-concepts/elements-o
 works.
 
 See the [Matrix guide](matrix.md) to get started.
+
+### Why *not* Matrix?
+
+A few arguments can be made against Matrix which, of course, is not
+perfect. We explain a few of those issues so people are aware of the
+downsides and to preempt complaints about them:
+
+- **Encryption**. Matrix's end-to-end security is not as strong as
+  other platforms like Signal. Room membership is defined by the
+  servers which have more power than they should. A lot of information
+  travels out of band, in clear text.
+
+- **Encryption usability**. Matrix infamously suffers from "cannot
+  decrypt message" kind of issues, where past message cannot be
+  reliably read on all devices. This seems to be a high priority
+  for the Matrix team, and is less of an issue than before.
+
+- **Interoperability**. While Matrix is an open standard with strong
+  compatibility promises across multiple clients, the reality of this
+  is that the compatibility across client is somewhat spotty. Not all
+  features (like spaces, threading, or video) are implement across all
+  clients, and certainly not in the same user interface, so it can be
+  confusing to onboard people across multiple client
+  implementations. It is best for users to use the flagship client
+  (Element) to avoid those issues.
+
+- **Data retention**. By default, federated rooms copy messages across
+  every home server with a user connected to the room. This means that
+  messages get retained across multiple servers which have different
+  retention policies. Worse, the *defaults* are to keep messages
+  forever, which affects `matrix.org`, so it is difficult to ensure
+  automatic message expiry across the federation. Message redaction
+  *should* be better supported however.
+
+- **Moderation**. The Matrix protocol itself has mechanisms to redact
+  messages and ban users, but lacks large-scale moderation systems
+  across rooms and the federation, which are typically handled by
+  bots. This leads to abuse being sometimes more a problem on Matrix
+  than on other platforms, although work is being done on that front
+  as well.
+
+Overall, we find that the benefits of using Matrix (federated,
+decentralized, open, free, bridged, respects your privacy) far
+outweigh those inconveniences, since the alternative also fail at many
+of those challenges. For example, Discord doesn't implement end-to-end
+encryption at all, is not operable, and leaves no control over data
+retention to the user.
 
 ## Other questions
 

@@ -8,6 +8,17 @@ tags:
 We hope to eventually show a map of nodes in the local mesh, but for
 now use one of those.
 
+## Meshcore
+
+- [official map](https://map.meshcore.io/), see [this link for Montreal](https://map.meshcore.io/?zoom=11&lat=45.5951&lon=-73.5294), which shows
+  about 14-25 relays in the greater Montreal area as of 2026-03-18
+- <https://analyzer.letsmesh.net/map> has lots of data and will spin
+  up the fan on your laptop. shows three relays in the greater
+  Montreal area as of 2026-03-18
+- <https://yul.meshmapper.net/> shows actual tested coverage from the
+  [MeshMapper project](https://wiki.meshmapper.net/), which essentially allows users to "war
+  drive" a real-time map of where repeaters can be reached, shows 6 nodes in Montreal
+
 ## Meshtastic
 
 - [`meshmap.net`](https://meshmap.net/), shows neighbours, hardware details, altitude,
@@ -32,19 +43,15 @@ visible on the ground, only relays that report their position. A relay
 might be in your neighbourhood and not visible on the map, so don't
 rely on the map to predict success. Try anyways!
 
-## Meshcore
+## Progression
 
-- the [official map](https://map.meshcore.io/) often doesn't
-  load here, or very slowly
-- the <https://map.meshcore.dev> map shows about 14-25 relays in the
-  greater Montreal area as of 2026-03-18, likely the same data as the
-  above map
-- <https://analyzer.letsmesh.net/map> has lots of data and will spin
-  up the fan on your laptop. shows three relays in the greater
-  Montreal area as of 2026-03-18
-- <https://yul.meshmapper.net/> shows actual tested coverage from the
-  [MeshMapper project](https://wiki.meshmapper.net/), which essentially allows users to "war
-  drive" a real-time map of where repeaters can be reached, shows 6 nodes in Montreal
+We're trying to keep track of how many relays we see on those maps,
+over time. Here's an attempt at summarizing this:
+
+| Date       | Meshcore | Meshtastic |
+|------------|----------|------------|
+| 2026-03-18 | 3-25     | 23-51      |
+| 2026-04-24 | 17-47    | ~25        |
 
 ## Site planners
 

@@ -1,4 +1,4 @@
-personal_ws-1.1 en 143 
+personal_ws-1.1 en 148 
 AEAD
 AES
 APRS
@@ -17,12 +17,14 @@ ChaChaPoly
 Cinny
 Codeberg
 Columba
+Cottle
 Cottle's
 CÉGEPS
 DFU
 DIY
 Dennet
 ECB
+ECDH
 FACIL
 FOSDEM
 FSFE
@@ -37,6 +39,8 @@ Grafana
 Guifi
 Göttgens
 HELTEC
+HKDF
+HMAC
 Haruki's
 Heltec
 IPEX
@@ -87,6 +91,7 @@ Ratdeck
 Reddit
 Riseup
 Réseau
+SHA
 SMA
 SWR
 Seeed

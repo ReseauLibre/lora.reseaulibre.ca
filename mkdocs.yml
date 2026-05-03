@@ -27,6 +27,7 @@ nav:
         - references/hardware/power.md
     - Logiciel:
         - references/software/index.md
+        - references/software/bots.md
         - references/maps.md
         - Meta: meta.md
     - references/neighbours.md
@@ -149,10 +150,9 @@ plugins:
       blog_dir: news
       categories_allowed:
         - events
-
+        - announcements
   # tags are currently used to mark pages as needing translation or not
   - tags
-
   # regroup third-party plugins to make them easier to disable
   #
   # use, say, `env MKDOCS_THIRD_PARTY=false mkdocs serve` to disable
@@ -186,7 +186,7 @@ plugins:
               # we'll use a overview page for the multiple
               # technologies instead. like "you want $this? pick
               # meshtastic. you want $that? pick reticulum" and so on.
-              'guides/index.md': 'guides/meshtastic.md'
+              'guides/index.md': 'guides/meshcore.md'
               # the hardware page is really a reference more than a guide
               'guides/hardware.md': 'references/hardware/index.md'
               # obscure FAQ URL that came up for less than a day

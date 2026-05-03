@@ -69,6 +69,21 @@ ourselves.
 
 </div>
 
+!!! tip
+
+    We do not recommend standalone devices, in general. They're niche
+    devices that might have their use case, but they typically use
+    more battery and power than normal devices (as they are often
+    based on ESP32 device) and are hard to use.
+    
+    This is particularly true of Reticulum and Meshcore, for which the
+    standalone interfaces are far less advanced and much harder to use
+    than Meshtastic, which is already not very intuitive.
+    
+    If you're just starting, just get the cheapest device you can get
+    your hand on quickly, it's 50$. Plug it into your phone, a USB
+    charger or a battery, and get talking!
+
 ## How we classify devices
 
 We have those categories:
@@ -214,11 +229,14 @@ The devices here generally do not have a battery.
 
 !!! success
 
-    - [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/) ([v3](https://heltec.org/project/wifi-lora-32-v3/)) is the cheapest option, 20$ with the case
-      (but no battery, and battery doesn't fit in the case), they also
-      have an [eink dev board](https://heltec.org/project/vision-master-e290/). one advantage Heltec has over the below
-      RAK kits is that you can connect to them over wifi, the downside is
-      they use more power because they are ESP32 based instead of NRF5280
+    - [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)
+      ([v3](https://heltec.org/project/wifi-lora-32-v3/)) is the
+      cheapest option, v3 is 20$ (30$CAD) with the case, v4 doesn't
+      ship with a case (but no battery, and battery doesn't fit in the
+      case). one advantage Heltec has over the below RAK kits is that
+      you can connect to them over wifi, the downside is
+      they use more power because they are ESP32 based instead of
+      NRF5280
     - the [RAK19003 base kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) (28$) is more expensive, but less
       power-hungry than the Heltec
 
@@ -233,6 +251,8 @@ The devices here generally do not have a battery.
     - [T-Beam Supreme](https://lilygo.cc/products/t-beam-supreme?variant=43067944173749): 1.3" OLED display, 18650 battery socket,
       magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, ESP32, 52$, the [T-Beam
       SoftRF](https://lilygo.cc/products/t-beam-softrf?variant=43170158477493) is similar but without a display and cheaper, 30$USD
+    - [Heltec Vision Master E290](https://heltec.org/project/vision-master-e290/): eink dev
+      board, ESP32S3 SX1262, 20$USD 180 days display, WiFi, BT
 
 ### Cases
 
@@ -310,8 +330,12 @@ Other lists include:
 [^2]:
 
     Note that the "Alfa AOA-915-5ACM" recommended for "Base station /
-    repeater" in that guide falls short of the advertised +5dBi gain
+    repeater" in that guide falls short of the sometimes advertised +5dBi gain
     in [this technical review](https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi).
+
+    In practice, it's still a great antenna, a "great bang for the
+    buck" according to the Ottawa folks, and that the antenna is
+    closer to 3dBi.
 
 ## Resellers
 
