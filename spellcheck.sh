@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 lang="$1"
 
 if ! dpkg-query --show aspell aspell-"$lang" >/dev/null; then

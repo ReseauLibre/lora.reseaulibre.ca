@@ -1,20 +1,81 @@
 ---
 site_name: Mesh Montréal
-site_url: https://lora.reseaulibre.ca
+site_url: https://lora.reseaulibre.ca/fr
 site_description: The Montreal mesh project"
 site_author: Anarcat and others
 copyright: Copyleft &copy; CC-BY-SA 4.0
-repo_url: https://codeberg.org/anarcat/lora-reseaulibre-ca
+repo_url: https://codeberg.org/reseaulibre/lora-reseaulibre-ca
 edit_uri: _edit/main/docs/
-# nav:
-#   - About: index.md
-#   - Guides: guides.md
-#   - References: references.md
+nav:
+  - About:
+    - index.md
+    - values.md
+    - history.md
+    - Contact: contact.md
+    - FAQ: guides/faq.md
+  - Guides:
+    - Meshcore: guides/meshcore.md
+    - Meshtastic: guides/meshtastic.md
+    - Matrix: guides/matrix.md
+    - FAQ: guides/faq.md
+  - References:
+    - references/index.md
+    - Hardware:
+        - references/hardware/index.md
+        - references/hardware/antennas.md
+        - references/hardware/batteries.md
+        - references/hardware/power.md
+    - Software:
+        - references/software/index.md
+        - references/maps.md
+        - Meta: meta.md
+    - references/neighbours.md
+    - references/net.md
+    - references/other.md
+    - Code of Conduct: code.md
+  - News: news/index.md
 markdown_extensions:
+  # Python Markdown
+  - abbr
   - admonition
-  - pymdownx.details
-  - pymdownx.superfences
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
   - tables
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  # underline/superscript with ^
+  - pymdownx.caret
+  # collapsible admonitions
+  - pymdownx.details
+  # support for :emojis:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # syntax highlighting for code blocks
+  - pymdownx.highlight
+  # same, but for `inline` code
+  - pymdownx.inlinehilite
+  # keyboard keys rendering with ++
+  - pymdownx.keys
+  # highlight with ==
+  - pymdownx.mark
+  # turn (c) into ©, disabled: just use unicode directly
+  # - pymdownx.smartsymbols
+  - pymdownx.snippets
+  # required for annotations
+  - pymdownx.superfences
+  # tabs support
+  - pymdownx.tabbed:
+      alternate_style: true
+  # tasks lists with - [ ]
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  # strikethrough with ~~
+  - pymdownx.tilde
 theme:
   name: material
   logo: assets/logo.svg
@@ -22,14 +83,17 @@ theme:
   features:
     # - navigation.prune
     # - navigation.sections
-    # - navigation.expand
+    - navigation.expand
     - navigation.tabs
     - navigation.tabs.sticky
-    # - navigation.top
+    - navigation.top
     # - navigation.tracking
+    - navigation.indexes
     - content.action.edit  # Edit this page
     # broken, it points to _raw, it's raw in codeberg
     # - content.action.view  # View source of this page
+    # show footnotes as tooltips
+    - content.footnote.tooltips
   # disable the roboto font download from google
   font: false
   palette:
@@ -76,25 +140,62 @@ extra:
       lang: fr
 plugins:
   - search
-  # show page authors at the bottom
-  # disabled because for now we only have a single author
-  # - git-authors
-  # show git modification date
-  - git-revision-date-localized:
-      type: iso_datetime
-      enable_creation_date: true
+  # blog posts
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/
+  # note that the blog plugin is incompatible with the i18n one, see:
+  # https://github.com/ultrabug/mkdocs-static-i18n/issues/283
+  # https://github.com/squidfunk/mkdocs-material/issues/4863
+  - blog:
+      blog_dir: news
+      categories_allowed:
+        - events
+
+  # tags are currently used to mark pages as needing translation or not
+  - tags
+
+  # regroup third-party plugins to make them easier to disable
+  #
+  # use, say, `env MKDOCS_THIRD_PARTY=false mkdocs serve` to disable
+  - group:
+      enabled: !ENV [MKDOCS_THIRD_PARTY, true]
+      plugins:
+        # build an RSS feed, requires mkdocs-rss-plugin
+        - rss:
+            match_path: blog/posts/.*
+            date_from_meta:
+              as_creation: date
+            categories:
+              - categories
+              - tags
+        # show page authors at the bottom
+        # disabled because for now we only have a single author
+        # - git-authors
+        # show git modification date, requires mkdocs-git-revision-date-localized-plugin
+        # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/
+        - git-revision-date-localized:
+            type: iso_datetime
+            enable_creation_date: true
+        # set some redirects, requires mkdocs-redirects
+        - redirects:
+            redirect_maps:
+              # can't redirect to blog/category/events/index.md, as
+              # redirects thinks it doesn't exist, boooouuuh.
+              'events.md': 'news/index.md'
+              'blog/index.md': 'news/index.md'
+              # this was used for a couple of days, eventually maybe
+              # we'll use a overview page for the multiple
+              # technologies instead. like "you want $this? pick
+              # meshtastic. you want $that? pick reticulum" and so on.
+              'guides/index.md': 'guides/meshtastic.md'
+              # the hardware page is really a reference more than a guide
+              'guides/hardware.md': 'references/hardware/index.md'
+              # obscure FAQ URL that came up for less than a day
+              'guides/z_faq.md': 'guides/faq.md'
+              'references/mmrelay.md': 'guides/matrix.md#bridging-matrix-and-meshtastic'
+#   # a bunch more possible plugins
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?
 #   - social
-#   # a bunch more possible plugins
-#   # blog posts
-#   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/
-#   - blog
 #   # page tagging
 #   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
 #   - tags
-#   # update dates from git
-#   # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/
-#   # not packaged in Debian
-#   # - git-revision-date-localized:
-#   #     enable_creation_date: true

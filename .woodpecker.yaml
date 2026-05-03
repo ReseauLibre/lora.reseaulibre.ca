@@ -23,34 +23,18 @@ when:
   event: [push, manual]
 
 steps:
-  aspell:
-    image: debian
-    commands:
-      - git switch fr
-      - ./spellcheck.sh fr
-
   build:
     image: squidfunk/mkdocs-material
     commands:
       - pip install -r requirements.txt
       - mkdocs build
-      - git worktree add fr/ fr
-      - cd fr && mkdocs build
-
-  typos:
-    # while we wait for an upstream image:
-    # https://github.com/crate-ci/typos/issues/427
-    image: archlinux
-    commands:
-      - pacman -Sy --noconfirm typos
-      - typos
+      - git fetch --all
+      - git worktree add ../fr/ fr
+      - cd ../fr && mkdocs build -d site/fr
 
   # this is still the legacy v2 pages systm
   #
-  # the new system is based on an action but does not support custom
-  # domains yet, see:
-  # https://codeberg.org/git-pages/action
-  # https://docs.codeberg.org/codeberg-pages/forgejo-actions/
+  # see the README file for a discussion
   publish:
     image: alpine/git
     environment:
@@ -61,14 +45,21 @@ steps:
       CODEBERG_TOKEN:
         from_secret: codeberg_token
     commands:
+      - apk add rsync
       - git config --global user.email $MAIL
       - git config --global user.name "Woodpecker CI"
       - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git $CI_REPO_NAME
-      - cp -ar $OUTPUT_DIR/. $CI_REPO_NAME/
+      - rsync --delete --recursive --checksum --exclude '.git/**' $OUTPUT_DIR/. $CI_REPO_NAME/
       - cp .domains $CI_REPO_NAME || true
       - cd $CI_REPO_NAME
       - git add .
       - if ! git diff --cached --quiet; then git commit -m "Woodpecker CI ${CI_BUILD_CREATED}" && git push; fi
+
+  aspell:
+    image: debian
+    commands:
+      - ./spellcheck.sh en
+      - cd ../fr && ./spellcheck.sh fr
 
   checklinks:
     image: containers.torproject.org/tpo/web/container-images/lychee
@@ -83,11 +74,8 @@ steps:
       - apt-get update && apt-get install -y git
       - git config --global user.email $MAIL
       - git config --global user.name "Woodpecker CI"
-      # cache using git while we wait for a woodpecker cache:
-      # https://github.com/woodpecker-ci/woodpecker/discussions/2296
-      # this could be fixed with a Forgejo "cache" action or artifacts:
-      # https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/
-      # https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts
+      # cache using git while we wait for a woodpecker cache, see the
+      # README for a discussion
       - git clone -b cache https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git cache
       # we *must* go in the cache directory because we can't relocate
       # the lychee cache, see:
@@ -95,6 +83,7 @@ steps:
       - cp .lycheeignore cache
       - cd cache
       - lychee ../site --root-dir ../site/ --include-fragments --index-files index.html --no-progress --cache --cache-exclude-status "401,429,500.." --max-cache-age 30d --scheme http --scheme https --require-https
+      - sort .lycheecache > .lycheecache.sorted && mv .lycheecache.sorted .lycheecache
       - git add .
       - if ! git diff --cached --quiet; then git commit -m "Woodpecker CI cache update ${CI_BUILD_CREATED}" && git push; fi
 
