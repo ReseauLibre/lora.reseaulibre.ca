@@ -63,7 +63,8 @@ ourselves.
     
     100$USD.
     
-    :material-chart-line: Challenger: [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html), 70$USD.
+    :material-chart-line: Alternative, for masts [SenseCAP Solar Node
+    P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html), 70$USD.
 
 </div>
 
@@ -180,10 +181,8 @@ many not have batteries.
     - [WisMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini): solar, battery, mast-mountable,
       cheaper than the full repeater below, 100$USD
 
-!!! example "In testing"
-
     - [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html): 70$USD, outdoors solar-powered relay
-      with 4x18650 **button-top** batteries, nRF4840, BT 5.0, 3 power buttons, 5
+      with 4x18650 **button-top**[^1] batteries, nRF4840, BT 5.0, 3 buttons, 5
       LEDs, USB-C for debug, [recommended by
       `nyme.sh`](https://nyme.sh/faq/). Note that the base kit doesn't
       ship with the actual batteries, or the GNSS device, for that you
@@ -192,16 +191,22 @@ many not have batteries.
       which is 20$ more. Needs to be tested through night and
       winter. Also sold at
       [RobotShop
-      for 100CAD](https://ca.robotshop.com/products/sensecap-solar-node-p1-meshtastic-w-o-gps-battery), [130$ with GPS and battery](https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery?qd=c71a67155c4fec187b2b07ee9a7af9f3). Since this *requires* button-top batteries,
-      seriously consider buying it *with* batteries, as button-top
-      batteries are often more expensive, which makes the RobotShop kit particularly attractive.
-    - [WisMesh Solar Repeater](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater): solar, battery, mast-mountable, unclear
-      if it can be setup without solar and if it supports MQTT/ethernet,
-      300$, SenseCAP Solar Node P1 might be sturdier and
-      cheaper. Works through the night in summer time, needs testing
-      through winter.
+      for
+      100CAD](https://ca.robotshop.com/products/sensecap-solar-node-p1-meshtastic-w-o-gps-battery),
+      [130$ with GPS and
+      battery](https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery?qd=c71a67155c4fec187b2b07ee9a7af9f3).
+
+[^1]: It's really important to get button-top batteries for the
+      SenseCAP Solar node P1! Normal flat-top batteries won't connect
+      correctly. Seriously consider buying it *with* batteries, as
+      button-top batteries are often more expensive, which makes the
+      RobotShop kit particularly attractive.
 
 !!! question "Untested"
+
+    - [WisMesh Solar Repeater](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater): solar, battery, mast-mountable, 
+      300$, SenseCAP Solar Node P1 much cheaper. Works through the night in summer time, needs testing
+      through winter.
 
     - [WisMesh Ethernet Gateway](https://store.rakwireless.com/products/wismesh-ethernet-gateway): no battery, no solar ([might be
       convertible](https://forum.rakwireless.com/t/ethernet-gateway-with-batteries-solar/14601), but ethernet and PoE, note that [HTTP-based
@@ -296,6 +301,13 @@ Moved to its own page, see [Batteries](batteries.md).
 
 We have experience with this:
 
+- [Alfa AOA-915-5ACM](https://www.alfa.com.tw/products/aoa-915-5acm?variant=36473963020360), sold as a 5dBi antenna, but falls short of
+  in [this technical review](https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi). In practice, it's still a great
+  antenna, a "great bang for the buck" according to the Ottawa folks,
+  and that the antenna is closer to 3dBi. Watch out for cheap
+  knock-offs, [Muzi Works sells a real one for 25CAD](https://muzi.works/products/alfa-outdoor-antenna), [Veshra sels
+  a 30$, to be verified](https://www.veshra.io/products/cmmli5vhi0001bz2u6btkjii1).
+
 - [`SYMITANT58`](https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL) (25$CAD Amazon)
 
 - a similar (and currently cheaper) model is this [RF Explorer](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-930MHz-5-8dBi-800mm-p-5275.html)
@@ -320,20 +332,28 @@ touch on *all* the connectors from the guide.
 
 Other lists include:
 
-- [Official Meshtastic guide](https://meshtastic.org/docs/hardware/antennas/)[^2], which also refers to a [series of
+- [Official Meshtastic guide](https://meshtastic.org/docs/hardware/antennas/), which also refers to a [series of
   antenna reports](https://github.com/meshtastic/antenna-reports)
 - [`nyme.sh` recommendations](https://nyme.sh/faq/#what-antenna)
 - [Ottawa Mesh recommendations](https://ottawamesh.ca/hardware/repeater-mounting-options/)
 
-[^2]:
+![](../../assets/sensecap-p1-alfa.jpg){align=right width=300}
 
-    Note that the "Alfa AOA-915-5ACM" recommended for "Base station /
-    repeater" in that guide falls short of the sometimes advertised +5dBi gain
-    in [this technical review](https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi).
+### Alfa upgrade on the SenseCAP P1
 
-    In practice, it's still a great antenna, a "great bang for the
-    buck" according to the Ottawa folks, and that the antenna is
-    closer to 3dBi.
+The SenseCAP Solar Node P1 can be upgraded with an Alfa antenna
+easily.
+
+You need a 30cm N to RP-SMA pigtail connector.
+
+Make sure you get a "bulkhead mount“ that has a little flat piece
+chamfered off the side, which helps prevent it from rotating in the
+hole when you tighten it down. Otherwise it won't fit in the
+socket. 
+
+The [20 cm pigtail from Muzi Works](https://muzi.works/products/rp-sma-to-type-n-cable-20-cm) works, but is a little short:
+you can only install it on the hole nearest to the router instead of
+the further one, as shown on the image here.
 
 ## Resellers
 
