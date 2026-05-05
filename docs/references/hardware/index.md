@@ -22,12 +22,13 @@ ourselves.
     [![HELTEC v4](../../assets/WiFi-LoRa-32-V4-4.png)](https://heltec.org/project/wifi-lora-32-v4/)
 
     The V4 does not come with a case, which needs to be
-    [3d-printed](#cases), or get the [v3](https://heltec.org/project/wifi-lora-32-v3/). Make sure to pick 902-928MHz.
+    [3d-printed](#cases), or get the [v3](https://heltec.org/project/wifi-lora-32-v3/) which does ship with a
+    case. Make sure to pick 902-928MHz.
     
     You need to provide power over USB, any USB-C charger will do,
     needs a separate app, for example on your phone
 
-    20$USD, [50-60USD as a prebuilt standalone kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/).
+    20$USD.
     
 -   :material-lightning-bolt: **Low power**: [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158)
 
