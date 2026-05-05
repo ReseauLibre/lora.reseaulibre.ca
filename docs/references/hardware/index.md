@@ -215,11 +215,11 @@ many not have batteries.
       300$, SenseCAP Solar Node P1 much cheaper.
 
     - [WisMesh Ethernet Gateway](https://store.rakwireless.com/products/wismesh-ethernet-gateway): no battery, no solar ([might be
-      convertible](https://forum.rakwireless.com/t/ethernet-gateway-with-batteries-solar/14601), but ethernet and PoE, note that [HTTP-based
-      management not possible](https://github.com/meshtastic/firmware/issues/2908), so configuration still has to go
-      through Bluetooth, but monitoring is possible over MQTT, and of
-      course the gateway receives and relays messages over
-      LoRa/Meshtastic!
+      convertible](https://forum.rakwireless.com/t/ethernet-gateway-with-batteries-solar/14601),
+      but ethernet and PoE, note that [management over Ethernet is not
+      possible in Meshtastic](https://github.com/meshtastic/firmware/issues/2908)
+      and possibly other firmware, so configuration still has to go
+      through Bluetooth, serial or WiFi.
 
 
 ### Mounts
