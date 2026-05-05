@@ -8,11 +8,12 @@ messages every week.
 We have real time chat in the [`#reseaulibre:matrix.org` Matrix
 room](https://matrix.to/#/#reseaulibre:matrix.org). We're organizing those many rooms in a wider
 [`#mesh-quebec:matrix.org` space](https://matrix.to/#/#mesh-quebec:matrix.org), as an alternative to proprietary
-platforms[^1].
+platforms[^1]. See our [Matrix guide](guides/matrix.md) for details.
 
 [^1]:
   We do not endorse the [Telegram chat](https://t.me/meshtQuebec) for [various reasons](https://en.wikipedia.org/wiki/Telegram_(software)#Criticism), or
-  encourage the use of the [Discord "server"](https://discord.gg/xSpMaErKk4) for [similar reasons](https://joinmatrix.org/guide/matrix-vs-discord/).
+  encourage the use of the [Discord "server"](https://discord.gg/xSpMaErKk4) for [similar
+  reasons](https://joinmatrix.org/guide/matrix-vs-discord/). See also the question of [why Matrix?](guides/faq.md#why-matrix).
 
 ## Email
 
