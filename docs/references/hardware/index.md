@@ -337,23 +337,37 @@ Other lists include:
 - [`nyme.sh` recommendations](https://nyme.sh/faq/#what-antenna)
 - [Ottawa Mesh recommendations](https://ottawamesh.ca/hardware/repeater-mounting-options/)
 
-![](../../assets/sensecap-p1-alfa.jpg){align=right width=300}
-
 ### Alfa upgrade on the SenseCAP P1
 
 The SenseCAP Solar Node P1 can be upgraded with an Alfa antenna
-easily.
+easily, but needs some sort of adapter because the stock connectors
+are SMA-based.
 
-You need a 30cm N to RP-SMA pigtail connector.
+=== "Connector"
 
-Make sure you get a "bulkhead mount“ that has a little flat piece
-chamfered off the side, which helps prevent it from rotating in the
-hole when you tighten it down. Otherwise it won't fit in the
-socket. 
+    ![](../../assets/sensecap-p1-alfa-connector.jpg){align=right width=300}
+    
+    This connector works well: it is a SMA to N converter that fits
+    above the stock pigtail. The connector is sold at [Addison](https://addison-electronique.com/).
+    
+    It also raises the antenna a little higher which is good because
+    it clears the solar panel better. The only downside is it
+    introduces some loss compared to a pigtail only solution.
 
-The [20 cm pigtail from Muzi Works](https://muzi.works/products/rp-sma-to-type-n-cable-20-cm) works, but is a little short:
-you can only install it on the hole nearest to the router instead of
-the further one, as shown on the image here.
+=== "Pigtail"
+
+    ![](../../assets/sensecap-p1-alfa.jpg){align=right width=300}
+
+    For this, you need a 30cm N to RP-SMA pigtail connector.
+
+    Make sure you get a "bulkhead mount“ that has a little flat piece
+    chamfered off the side, which helps prevent it from rotating in the
+    hole when you tighten it down. Otherwise it won't fit in the
+    socket. 
+
+    This [20 cm pigtail from Muzi Works](https://muzi.works/products/rp-sma-to-type-n-cable-20-cm) works, but is a little short:
+    you can only install it on the hole nearest to the router instead of
+    the further one, as shown on the image here.
 
 ## Resellers
 
