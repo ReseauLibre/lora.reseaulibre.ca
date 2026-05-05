@@ -30,6 +30,9 @@ ourselves.
 
     20$USD.
     
+    :material-chart-line: Challenger: SeeedStudio's [XIAO ESP32S3 &
+    Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html) is 11$USD, but without a display or case.
+    
 -   :material-lightning-bolt: **Low power**: [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158)
 
     ---
