@@ -1574,10 +1574,13 @@ ourselves.</p>
 <hr />
 <p><a href="https://heltec.org/project/wifi-lora-32-v4/"><img alt="HELTEC v4" src="../../assets/WiFi-LoRa-32-V4-4.png" /></a></p>
 <p>The V4 does not come with a case, which needs to be
-<a href="#cases">3d-printed</a>, or get the <a href="https://heltec.org/project/wifi-lora-32-v3/">v3</a>. Make sure to pick 902-928MHz.</p>
+<a href="#cases">3d-printed</a>, or get the <a href="https://heltec.org/project/wifi-lora-32-v3/">v3</a> which does ship with a
+case. Make sure to pick 902-928MHz.</p>
 <p>You need to provide power over USB, any USB-C charger will do,
 needs a separate app, for example on your phone</p>
-<p>20$USD, <a href="https://heltec.org/project/wifi-lora-32-v4-expansion-housing/">50-60USD as a prebuilt standalone kit</a>.</p>
+<p>20$USD.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m16 11.78 4.24-7.33 1.73 1-5.23 9.05-6.51-3.75L5.46 19H22v2H2V3h2v14.54L9.5 8z"/></svg></span> Challenger: SeeedStudio's <a href="https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html">XIAO ESP32S3 &amp;
+Wio-SX1262 Kit</a> is 11$USD, but without a display or case.</p>
 </li>
 <li>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 15H6l7-14v8h5l-7 14z"/></svg></span> <strong>Low power</strong>: <a href="https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158">WisBlock RAK4631</a></p>
@@ -1657,7 +1660,7 @@ or a pouch. Those generally have a battery.</p>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
 <ul>
-<li><a href="https://heltec.org/project/wifi-lora-32-v4-expansion-housing/">Heltec v4 prebuilt kit, 50-60USD</a>: touch screen, 18650 <em>flat</em>
+<li><a href="https://heltec.org/project/wifi-lora-32-v4-expansion-housing/">Heltec v4 prebuilt kit, 50-60USD</a>: touch screen, 18650 flat-top
   battery (tight, hard to remove), belt clip bulges the back cover,
   can also serve as a "standalone" device because of the touch screen</li>
 <li>simpler, cheaper <a href="https://www.aliexpress.com/item/1005010640444191.html">Aliexpress Heltec v4 kit, 43CAD</a></li>
@@ -1719,8 +1722,11 @@ many not have batteries.</p>
 <p class="admonition-title">Success</p>
 <ul>
 <li>
-<p><a href="https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini">WisMesh Solar Repeater Mini</a>: solar, battery, mast-mountable,
-  cheaper than the full repeater below, 100$USD</p>
+<p><a href="https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini">WisMesh Solar Repeater
+  Mini</a>:
+  solar, battery, mast or wall-mountable, cheaper than their full
+  repeater, 100$USD. Works through the night in summer time, needs testing
+  through winter.</p>
 </li>
 <li>
 <p><a href="https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html">SenseCAP Solar Node P1</a>: 70$USD, outdoors solar-powered relay
@@ -1745,16 +1751,15 @@ many not have batteries.</p>
 <ul>
 <li>
 <p><a href="https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater">WisMesh Solar Repeater</a>: solar, battery, mast-mountable, 
-  300$, SenseCAP Solar Node P1 much cheaper. Works through the night in summer time, needs testing
-  through winter.</p>
+  300$, SenseCAP Solar Node P1 much cheaper.</p>
 </li>
 <li>
 <p><a href="https://store.rakwireless.com/products/wismesh-ethernet-gateway">WisMesh Ethernet Gateway</a>: no battery, no solar (<a href="https://forum.rakwireless.com/t/ethernet-gateway-with-batteries-solar/14601">might be
-  convertible</a>, but ethernet and PoE, note that <a href="https://github.com/meshtastic/firmware/issues/2908">HTTP-based
-  management not possible</a>, so configuration still has to go
-  through Bluetooth, but monitoring is possible over MQTT, and of
-  course the gateway receives and relays messages over
-  LoRa/Meshtastic!</p>
+  convertible</a>,
+  but ethernet and PoE, note that <a href="https://github.com/meshtastic/firmware/issues/2908">management over Ethernet is not
+  possible in Meshtastic</a>
+  and possibly other firmware, so configuration still has to go
+  through Bluetooth, serial or WiFi.</p>
 </li>
 </ul>
 </div>
@@ -1956,7 +1961,7 @@ you for various reasons:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="May 5, 2026 00:07:00 UTC">2026-05-05 00:07:00</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="May 5, 2026 01:23:06 UTC">2026-05-05 01:23:06</span>
   </span>
 
     
