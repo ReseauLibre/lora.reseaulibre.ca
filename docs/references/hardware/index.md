@@ -182,8 +182,11 @@ many not have batteries.
 
 !!! success
 
-    - [WisMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini): solar, battery, mast-mountable,
-      cheaper than the full repeater below, 100$USD
+    - [WisMesh Solar Repeater
+      Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini):
+      solar, battery, mast or wall-mountable, cheaper than their full
+      repeater, 100$USD. Works through the night in summer time, needs testing
+      through winter.
 
     - [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html): 70$USD, outdoors solar-powered relay
       with 4x18650 **button-top**[^1] batteries, nRF4840, BT 5.0, 3 buttons, 5
@@ -209,8 +212,7 @@ many not have batteries.
 !!! question "Untested"
 
     - [WisMesh Solar Repeater](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater): solar, battery, mast-mountable, 
-      300$, SenseCAP Solar Node P1 much cheaper. Works through the night in summer time, needs testing
-      through winter.
+      300$, SenseCAP Solar Node P1 much cheaper.
 
     - [WisMesh Ethernet Gateway](https://store.rakwireless.com/products/wismesh-ethernet-gateway): no battery, no solar ([might be
       convertible](https://forum.rakwireless.com/t/ethernet-gateway-with-batteries-solar/14601), but ethernet and PoE, note that [HTTP-based
