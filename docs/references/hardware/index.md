@@ -301,11 +301,11 @@ Moved to its own page, see [Batteries](batteries.md).
 
 We have experience with this:
 
-- [Alfa AOA-915-5ACM](https://www.alfa.com.tw/products/aoa-915-5acm?variant=36473963020360), sold as a 5dBi antenna, but falls short of
+- [Alfa `AOA-915-5ACM`](https://www.alfa.com.tw/products/aoa-915-5acm?variant=36473963020360), sold as a 5dBi antenna, but falls short of
   in [this technical review](https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi). In practice, it's still a great
   antenna, a "great bang for the buck" according to the Ottawa folks,
   and that the antenna is closer to 3dBi. Watch out for cheap
-  knock-offs, [Muzi Works sells a real one for 25CAD](https://muzi.works/products/alfa-outdoor-antenna), [Veshra sels
+  knock-offs, [Muzi Works sells a real one for 25CAD](https://muzi.works/products/alfa-outdoor-antenna), [Veshra sells
   a 30$, to be verified](https://www.veshra.io/products/cmmli5vhi0001bz2u6btkjii1).
 
 - [`SYMITANT58`](https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL) (25$CAD Amazon)
