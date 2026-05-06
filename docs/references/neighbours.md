@@ -27,4 +27,4 @@ are worth mentioning:
 - [`LocalMesh`](https://www.localmesh.nl/en/): NL, beautiful splash page, 2000+ Meshcore
   repeaters, we could use a tip or two from their front page introduction
 
-See also the [official list of local groups](https://meshtastic.org/docs/community/local-groups/).
+See also the [list of local Meshtastic groups](https://meshtastic.org/docs/community/local-groups/).
