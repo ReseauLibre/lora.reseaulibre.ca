@@ -46,11 +46,11 @@ phone.
 
 ### Flash the firmware on the device
 
-First you need to [flash your device](https://meshcore.co.uk/flasher.html), which essentially means
+First you need to [flash your device](https://flasher.meshcore.io), which essentially means
 connecting to the following website from a Chrome (or derivative) web
 browser:
 
-<https://meshcore.co.uk/flasher.html>
+<https://flasher.meshcore.io>
 
 You *may* skip this step if it comes flashed with Meshcore already.
 
@@ -102,8 +102,8 @@ talk with people on the mesh. Unless you use a standalone device, this
 means installing software on your phone.
 
 You can try that from your computer with a web browser by using one of
-the web-based apps: [Liam Cottle's](https://app.meshcore.nz/) and [MeshOS](https://meshcore.co.uk/meshos/). There are also
-[iOS and Android versions](https://meshcore.co.uk/#apps).
+the web-based apps: [Liam Cottle's](https://app.meshcore.nz/). There are also
+[iOS and Android versions](https://meshcore.io/#download).
 
 !!! bug "A warning about proprietary software"
 
