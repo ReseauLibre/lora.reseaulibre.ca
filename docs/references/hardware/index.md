@@ -318,14 +318,16 @@ We have experience with this:
 
 - [`SYMITANT58`](https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL) (25$CAD Amazon)
 
-- a similar (and currently cheaper) model is this [RF Explorer](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-930MHz-5-8dBi-800mm-p-5275.html)
+- a similar (and currently cheaper) model is this [RF Explorer 800mm](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-930MHz-5-8dBi-800mm-p-5275.html)
   (10$USD from from SeeedStudio)
   
 !!! warning
 
-    The [antenna reports project](https://github.com/meshtastic/antenna-reports) warns against using a Seeed Studio
-    antenna, particularly for non-US frequencies. It's unclear if it is
-    the same antenna as the above RF Explorer, further testing necessary.
+    The [antenna reports project](https://github.com/meshtastic/antenna-reports) warns against using a
+    [SeeedStudio 600mm](https://www.seeedstudio.com/Lora-Fiberglass-Antenna-860-930MHz-5dBi-600mm-p-4927.html)
+    antenna, particularly for non-US frequencies. While it is a different
+    antenna, it's unclear if the above RF Explorer has the same flaw, further
+    testing necessary.
 
 Note that, to connect those to (say) a Heltec, you will need
 adapters:
