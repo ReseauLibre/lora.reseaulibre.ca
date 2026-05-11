@@ -35,7 +35,7 @@ d'une décennie. Les personnes familières avec [l'histoire](../../history.md) s
 que nous tenions auparavant des [rencontres régulières](https://wiki.reseaulibre.ca/meetings/2015-01-08/) et nous
 croyons que le moment est à nouveau venu.
 
-Nous tenons régulièremnts des rencontres informelles à Mesh night (et 
+Nous tenons régulièrement des rencontres informelles à Mesh night (et 
 [Mesh Day](https://calendrier.constellationmtl.net/event/matc-presents-jour-de-mesh-day-2) arrive bientôt) mais là on parle d'une rencontre plus
 formelle.
 
@@ -61,18 +61,20 @@ L'objectif principal de cette rencontre est de briser la glace et
 l'isolement; créer un espace régulier où ce genre de discussions peut
 avoir lieu.
 
-1. **Accueil**: agenda, facilitation, traduction, temps
+1. **Accueil**: traduction, agenda, facilitation, prise de notes, temps
 2. **Table ronde**: nom, pronom, indicatif/nick, description du relai
-3. **Qui nous sommes**: Réseau Libre? Mesh Montréal? Mesh Québec? Canada? opérateurs? anarchistes?
-4. **Comment on s'organise*: informel / affinités / conseil / comités / OBNL? vote / consensus / élections?
+3. **Qui nous sommes**: Réseau Libre? Mesh Montréal? Mesh Québec?
+   Canada? opérateurs? anarchistes?
+4. **Comment on s'organise**: informel, affinités, conseil, comités,
+   OBNL? vote, consensus, élections?
 5. **Ce qu'on fait**: infrastructure? groupes d'affinités? hacking?
 6. **Choix de plateformes**:
-    - comms: matrix/discord/telegram/facebook/etc
-    - web: mkdocs? montrealmesh.ca / lora.reseaulibre.ca / meshcore.ca
-    - LoRa: Meshtastic / Meshcore / Reticulum?
+    - communications: Matrix, Discord, Telegram, Facebook, etc?
+    - web:  `montrealmesh.ca`, `lora.reseaulibre.ca`, `meshcore.ca`?
+    - LoRa: Meshtastic, Meshcore, Reticulum?
 7. **Prochaine rencontre**
 
 Cette première rencontre se fait en personne, pour solidifier l'esprit
-matériel du mesh. Mais de futures rencontres pourraient se tenir en
+matériel du Mesh. Mais de futures rencontres pourraient se tenir en
 ligne, en alternance, pour faciliter la participation d'autres
 personnes à distance.
