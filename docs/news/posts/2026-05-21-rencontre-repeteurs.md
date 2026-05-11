@@ -8,19 +8,25 @@ categories:
 ---
 
 Nous allons tenir une rencontre "répéteurs" au local C-9019 du
-[pavillon Lionel Groulx](https://www.openstreetmap.org/relation/2109148) de l'université de Montréal, le Jeudi 21
+[pavillon Lionel Groulx][] de l'université de Montréal, le Jeudi 21
 Mai de 19h à 21h.
+
+ [pavillon Lionel Groulx]: https://www.openstreetmap.org/relation/2109148
 
 !!! important
 
     Notez que la rencontre n'est *pas* à Polytechnique comme précédemment
     suggéré. C'est près des métros Université de Montréal et
     Côte-des-Neiges! L'adresse exacte est le 3150 Jean-Brillant ([lien
-    Google Maps](https://maps.app.goo.gl/68PGSCCXcJUjXEAFA)).
+    Google Maps][]).
+
+ [lien Google Maps]: https://maps.app.goo.gl/68PGSCCXcJUjXEAFA
 
 Nous invitons tout le monde qui opère[^1] un relais dans la [grande
-région de Montréal](https://yul.meshmapper.net/), qu'il soit Meshcore, Meshtastic, or Reticulum, à
+région de Montréal][], qu'il soit Meshcore, Meshtastic, or Reticulum, à
 se joindre à nous pour discuter de comment on s'organise!
+
+ [grande région de Montréal]: https://yul.meshmapper.net/
 
 [^1]: Pour l'instant, considère comme un "opérateur·trice de relais"
     toute personne qui "opère" un appareil qui retransmet un signal
@@ -38,13 +44,19 @@ se joindre à nous pour discuter de comment on s'organise!
 ## Contexte
 
 C'est la première vraie rencontre du Mesh de Montréal depuis plus
-d'une décennie. Les personnes familières avec [l'histoire](../../history.md) savent
-que nous tenions auparavant des [rencontres régulières](https://wiki.reseaulibre.ca/meetings/2015-01-08/) et nous
+d'une décennie. Les personnes familières avec [l'histoire][] savent
+que nous tenions auparavant des [rencontres régulières][] et nous
 croyons que le moment est à nouveau venu.
 
+ [rencontres régulières]: https://wiki.reseaulibre.ca/meetings/2015-01-08/
+
+ [l'histoire]: ../../history.md
+
 Nous tenons régulièrement des rencontres informelles à Mesh night (et 
-[Mesh Day](https://calendrier.constellationmtl.net/event/matc-presents-jour-de-mesh-day-2) arrive bientôt) mais là on parle d'une rencontre plus
+[Mesh Day][] arrive bientôt) mais là on parle d'une rencontre plus
 formelle.
+
+ [Mesh Day]: https://calendrier.constellationmtl.net/event/matc-presents-jour-de-mesh-day-2
 
 Nous avons plein de gens enthousiastes pour le Mesh, qui montent des
 appareils Meshtastic, Meshcore, et Reticulum partout dans la ville,
