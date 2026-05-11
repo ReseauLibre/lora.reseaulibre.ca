@@ -56,7 +56,7 @@ That's fine.
 The main objective of the meeting is to break the ice and isolation;
 create a regular space where those kind of discussions can happen.
 
-1. **Welcome**: agenda, facilitation, translation, timing
+1. **Welcome**: translation, agenda, facilitation, minutes, timing
 2. **Round table**: name, pronoun, call sign / nick, relay description
 3. **Who are we?** Réseau Libre? Montreal Mesh? Quebec, Canada Mesh?
    Operators? Anarchists?
