@@ -9,7 +9,10 @@ categories:
 
 Nous allons tenir une rencontre "répéteurs" au local C-9019 du
 [pavillon Lionel Groulx](https://www.openstreetmap.org/relation/2109148) de l'école Polytechnique, le Jeudi 21 Mai
-de 19h à 21h.
+de 19h à 21h. Notez qu'il ne s'agit *pas* du bâtiment principal de
+Polytechnique, c'est plus proche des métros Université de Montréal et
+Côte-des-Neiges! L'adresse exacte est le 3150 Jean-Brillant ([lien
+Google Maps](https://maps.app.goo.gl/68PGSCCXcJUjXEAFA)).
 
 Nous invitons tout le monde qui opère[^1] un relais à Montréal, qu'il
 soit Meshcore, Meshtastic, or Reticulum, à se joindre à nous pour
