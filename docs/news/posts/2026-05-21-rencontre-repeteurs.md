@@ -11,7 +11,7 @@ Nous allons tenir une rencontre "répéteurs" au local C-9019 du
 [pavillon Lionel Groulx](https://www.openstreetmap.org/relation/2109148) de l'école Polytechnique, le Jeudi 21 Mai
 de 19h à 21h.
 
-Nous invitons tout le monde qui opère[^] un relais à Montréal, qu'il
+Nous invitons tout le monde qui opère[^1] un relais à Montréal, qu'il
 soit Meshcore, Meshtastic, or Reticulum, à se joindre à nous pour
 discuter de comment on s'organise!
 
