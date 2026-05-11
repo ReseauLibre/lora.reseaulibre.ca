@@ -64,8 +64,8 @@ create a regular space where those kind of discussions can happen.
    committees, non-profit? vote, consensus, elections?
 5. **What do we do?** Infrastructure? Hacking?
 6. **Platform choices**:
-    - comms: matrix, discord, telegram, facebook, etc?
-    - web:  montrealmesh.ca, lora.reseaulibre.ca, meshcore.ca?
+    - communications: Matrix, Discord, Telegram, Facebook, etc?
+    - web:  `montrealmesh.ca`, `lora.reseaulibre.ca`, `meshcore.ca`?
     - LoRa: Meshtastic, Meshcore, Reticulum?
 7. **Next meeting**
 

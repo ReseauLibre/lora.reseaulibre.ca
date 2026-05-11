@@ -1,4 +1,4 @@
-personal_ws-1.1 en 151 
+personal_ws-1.1 en 154 
 AEAD
 AES
 APRS
@@ -37,6 +37,7 @@ Freifunk
 GTK
 GitLab
 Grafana
+Groulx
 Guifi
 Göttgens
 HELTEC
@@ -83,6 +84,7 @@ NanoVNA
 Nooelec
 OLSR
 Pointe
+Polytechnique
 Québec
 Québecor
 RAK
@@ -97,7 +99,7 @@ Réseau
 SHA
 SMA
 SWR
-Seeed
+SeeedStudio
 Semtech
 SenseCAP
 Sexualization
@@ -115,6 +117,7 @@ WIP
 Whatsapp
 WisBlock
 WisMesh
+XIAO
 XMPP
 YAML
 YYYY

@@ -30,8 +30,8 @@ ourselves.
 
     20$USD.
     
-    :material-chart-line: Challenger: SeeedStudio's [XIAO ESP32S3 &
-    Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html) is 11$USD, but without a display or case.
+    :material-chart-line: Challenger: SeeedStudio [XIAO ESP32S3 &
+    `Wio-SX1262` Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html) is 11$USD, but without a display or case.
     
 -   :material-lightning-bolt: **Low power**: [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158)
 
@@ -319,7 +319,7 @@ We have experience with this:
 - [`SYMITANT58`](https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL) (25$CAD Amazon)
 
 - a similar (and currently cheaper) model is this [RF Explorer](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-930MHz-5-8dBi-800mm-p-5275.html)
-  (10$USD from from Seeed Studio)
+  (10$USD from from SeeedStudio)
   
 !!! warning
 
@@ -386,8 +386,8 @@ There are, however, other resellers that might be more interesting to
 you for various reasons:
 
 - [Veshra](https://www.veshra.io/): more expensive, but local, possibly south shore (to be
-  confirmed); stocks antennas, batteries, Heltec, currently no Seeed
-  Studio, RAK, or ESP32 devices
+  confirmed); stocks antennas, batteries, Heltec, currently no
+  SeeedStudio, RAK, or ESP32 devices
 - [Space Hedgehog](https://space-hedgehog.com/): also more expensive; stocks Antenna, Heltec,
   based in Ottawa, related to the [Ottawa mesh](https://ottawamesh.ca/)
 - [Motion Power & Witt Supply Co.](https://mpandw.ca/) has [batteries](batteries.md), based in Ottawa
