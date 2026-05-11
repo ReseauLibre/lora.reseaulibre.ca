@@ -8,10 +8,14 @@ categories:
 ---
 
 We will hold a Mesh Montreal repeater meet up at room C-9019 of
-[Lionel Groulx wing](https://www.openstreetmap.org/relation/2109148) of Polytechnique on Thursday May 21st at
-19h. Note that this is *not* the main Polytechnique building, it's
-closer to Université de Montréal and Côte-des-Neiges métro! The exact
-address is 3150 Jean-Brillant ([Google Maps link](https://maps.app.goo.gl/68PGSCCXcJUjXEAFA)).
+[Lionel Groulx wing](https://www.openstreetmap.org/relation/2109148) of Université de Montréal on Thursday May 21st
+from 19h to 21h. 
+
+!!! important
+
+    Note that this is *not* at Polytechnique as previously indicated. It's
+    close to Université de Montréal and Côte-des-Neiges métro! The exact
+    address is 3150 Jean-Brillant ([Google Maps link](https://maps.app.goo.gl/68PGSCCXcJUjXEAFA)).
 
 We invite everyone who currently operates[^1] a relay in Montreal, whether
 it is Meshcore, Meshtastic, or Reticulum, to join us to talk about how
