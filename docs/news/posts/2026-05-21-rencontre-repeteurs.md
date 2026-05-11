@@ -18,9 +18,9 @@ Mai de 19h à 21h.
     Côte-des-Neiges! L'adresse exacte est le 3150 Jean-Brillant ([lien
     Google Maps](https://maps.app.goo.gl/68PGSCCXcJUjXEAFA)).
 
-Nous invitons tout le monde qui opère[^1] un relais à Montréal, qu'il
-soit Meshcore, Meshtastic, or Reticulum, à se joindre à nous pour
-discuter de comment on s'organise!
+Nous invitons tout le monde qui opère[^1] un relais dans la [grande
+région de Montréal](https://yul.meshmapper.net/), qu'il soit Meshcore, Meshtastic, or Reticulum, à
+se joindre à nous pour discuter de comment on s'organise!
 
 [^1]: Pour l'instant, considère comme un "opérateur·trice de relais"
     toute personne qui "opère" un appareil qui retransmet un signal
