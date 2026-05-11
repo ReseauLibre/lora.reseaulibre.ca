@@ -17,9 +17,9 @@ from 19h to 21h.
     close to Université de Montréal and Côte-des-Neiges métro! The exact
     address is 3150 Jean-Brillant ([Google Maps link](https://maps.app.goo.gl/68PGSCCXcJUjXEAFA)).
 
-We invite everyone who currently operates[^1] a relay in Montreal, whether
-it is Meshcore, Meshtastic, or Reticulum, to join us to talk about how
-we organise.
+We invite everyone who currently operates[^1] a relay in the [greater
+Montreal area](https://yul.meshmapper.net/), whether it is Meshcore, Meshtastic, or Reticulum, to
+join us to talk about how we organise.
 
 [^1]: For now, we consider a "relay operator" to be a person who is
     currently responsible for the operation of a device which repeats
