@@ -59,24 +59,24 @@ You *may* skip this step if it comes flashed with Meshcore already.
     This is the moment when you pick between Companion and Repeater,
     and you can't go back without reflashing!
 
-!!! tip
+#### Repeater configuration
 
-    If you are configuring a repeater, this is also the step where you
-    configure the repeater through the [web
-    interface](https://config.meshcore.io/). *Some* settings can be performed
-    over Bluetooth later.
+If you are configuring a repeater, this is also the step where you
+configure the repeater through the [web
+interface](https://config.meshcore.io/). *Some* settings can be performed
+over Bluetooth later.
     
-    You need to at least:
-    
-     1. set a name to the router: the local convention is to use a
-     `YUL-` prefix and the general location of the router,
-     e.g. `YUL-Villeray` or `YUL-Parc-Extension`
+You need to at least:
+
+ 1. set a name to the router: the local convention is to use a `YUL-`
+    prefix and the general location of the router, e.g. `YUL-Villeray`
+    or `YUL-Parc-Extension`
      
-     2. set an admin password and save it to your password manager for
-     remote administration
+ 2. set an admin password and save it to your password manager for
+    remote administration
 
-     The remaining settings can be done over Bluetooth from a
-     companion, which we'll assume below.
+The remaining settings can be done over Bluetooth from a companion,
+which we'll assume below.
 
 !!! tip
 
@@ -117,15 +117,15 @@ the web-based apps: [Liam Cottle's](https://app.meshcore.nz/). There are also
     unless you get frustrated with the official apps (and, honestly, you
     might!).
 
-!!! tip "Backing up Meshtastic before flashing"
+#### Backing up Meshtastic before flashing
 
-    If you're replacing a Meshtastic device, you can backup your
-    Meshtastic configuration and keys to restore those if you change your
-    mind or want to use that configuration on another device. This can be
-    done by exporting the configuration in the Meshtastic app settings, or
-    with the [Meshtastic command line tool](https://meshtastic.org/docs/software/python/cli/):
+If you're replacing a Meshtastic device, you can backup your
+Meshtastic configuration and keys to restore those if you change your
+mind or want to use that configuration on another device. This can be
+done by exporting the configuration in the Meshtastic app settings, or
+with the [Meshtastic command line tool](https://meshtastic.org/docs/software/python/cli/):
 
-        meshtastic --export-config > devicename.yaml
+    meshtastic --export-config > devicename.yaml
 
 ## Configuration
 
@@ -153,45 +153,48 @@ the recommended preset.
     set cr 5
     ```
 
-!!! success "You made it! Say hi!"
+### Repeaters can lose track of time
 
-    At this point, your companion should be properly
-    configured. Repeaters require a little more work, below.
+Repeaters can lose their time after reboot.
     
-    Introduce yourself! Say "hi!" on the "Public" channel. Explain
-    what device did you setup, where's your general area, what's the
-    weather like, etc. Be kind, reply to people, participate!
+Make sure the repeater has an accurate clock. Companion apps can
+be configured to automatically sync the clock on login to
+workaround this issue.
+    
+Repeaters without an accurate clock route packets properly, but
+its adverts will be ignored until its time is accurate.
 
-!!! note "Multi-byte repeater configuration"
+Enabling the GPS on a device can keep the clock in sync at the cost of
+a lower battery life.
 
-    On a repeater, you should also configure the router identifier for
-    [multi-byte path routing](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#39-q-what-is-multi-byte-support--what-do-1-byte-2-byte-3-byte-adverts-and-messages-mean), specifically for three bytes, which is
-    called "mode 2". For this, you need to enter the "command line" mode
-    and enter the command:
-    
-        set path.hash.mode 2
-    
-    You can confirm the current mode with:
-    
-        get path.hash.mode
-    
-    And some relays require a reboot for the change to take effect:
-    
-        reboot
-    
-    Others have reported having to do the change *twice* for it to take
-    effect as well.
+### Multi-byte repeater configuration
 
-!!! bug "Repeaters can lose track of time"
+On a repeater, you should also configure the router identifier for
+[multi-byte path routing](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#39-q-what-is-multi-byte-support--what-do-1-byte-2-byte-3-byte-adverts-and-messages-mean), specifically for three bytes, which is
+called "mode 2". For this, you need to enter the "command line" mode
+and enter the command:
+    
+    set path.hash.mode 2
+    
+You can confirm the current mode with:
+    
+    get path.hash.mode
+    
+And some relays require a reboot for the change to take effect:
+    
+    reboot
+    
+Others have reported having to do the change *twice* for it to take
+effect as well.
 
-    Repeaters can lose their time after reboot.
+### You made it! Say hi!
+
+At this point, your companion should be properly
+configured. Repeaters require a little more work, below.
     
-    Make sure the repeater has an accurate clock. Companion apps can
-    be configured to automatically sync the clock on login to
-    workaround this issue.
-    
-    Repeaters without an accurate clock route packets properly, but
-    its adverts will be ignored until its time is accurate.
+Introduce yourself! Say "hi!" on the "Public" channel. Explain
+what device did you setup, where's your general area, what's the
+weather like, etc. Be kind, reply to people, participate!
 
 ### Channels
 
@@ -208,7 +211,7 @@ communication channels. Contents will be encrypted as long as the
 channel name remains secret, but who is talking to who, the number of
 messages sent will be visible to an attacker.
 
-### Public channels
+#### Public channels
 
 We know about the follow channels currently in use:
 
@@ -222,6 +225,8 @@ You should generally not need the hex and Base64 keys. They are only
 provided here as a reference for some rate situations where you need
 to enter the secret key directly. (For example, some standalone
 firmware like the T-Deck require this.)
+
+#### Other channels
 
 See also the channels used in other communities:
 
