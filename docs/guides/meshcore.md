@@ -44,6 +44,17 @@ to make sure it runs Meshcore by installing firmware on it, and that
 you can talk to the device, typically by installing an app on your
 phone.
 
+#### Backing up before flashing
+
+If you're flashing an already configured device, you should backup
+before flashing it.
+
+On Meshtastic, this can be done by exporting the configuration in the
+Meshtastic app settings, or with the [Meshtastic command line
+tool](https://meshtastic.org/docs/software/python/cli/):
+
+    meshtastic --export-config > devicename.yaml
+
 ### Flash the firmware on the device
 
 First you need to [flash your device](https://flasher.meshcore.io), which essentially means
@@ -59,6 +70,44 @@ You *may* skip this step if it comes flashed with Meshcore already.
     This is the moment when you pick between Companion and Repeater,
     and you can't go back without reflashing!
 
+    You will also have the option to flash a "Bluetooth" of "Serial"
+    companion. You should typically choose "Bluetooth" unless you want
+    to connect to the device over the USB cable. Those are exclusive:
+    a Bluetooth device cannot be accessed over serial and vice-versa.
+
+On many devices, you need to enter some special mode for flashing to
+work. Here are examples:
+
+- Heltec: hold the "program" (<kbd>PRG</kbd>) button while connecting
+  the USB cable. For the Heltec v4, it will show up as a "JTAG"
+  device. On the Heltec v3, it will show up as a "CP2102 USB to UART
+  Bridge Controller".
+
+- RAK: double-click the reset button will bring it in "DFU" mode, but
+  the web flasher should also be able to do that automatically.
+
+!!! bug
+
+    We have had trouble flashing RAK4631 device. You can:
+    
+     1. download the `U2F` file
+     2. put the device in "DFU" mode
+     3. mount it
+     4. copy the file on the disk
+     5. unmount
+
+    This can also be done automatically with this
+    [reflashtic](https://gitlab.com/anarcat/scripts/-/blob/main/reflashtic.py?ref_type=heads)
+    command:
+    
+        reflashtic.py --pmount -i RAK_4631_companion_radio_ble-v1.15.0-dee3e26.uf2
+
+During first boot, the device will display the message:
+
+    Loading...
+
+... for a solid minute, that is normal.
+  
 #### Repeater configuration
 
 If you are configuring a repeater, this is also the step where you
@@ -117,16 +166,20 @@ the web-based apps: [Liam Cottle's](https://app.meshcore.nz/). There are also
     unless you get frustrated with the official apps (and, honestly, you
     might!).
 
-#### Backing up Meshtastic before flashing
+To connect your phone to the device, you need to find the right device
+in your list, which can be challenging if you are in an environment
+with lots of Bluetooth devices. 
 
-If you're replacing a Meshtastic device, you can backup your
-Meshtastic configuration and keys to restore those if you change your
-mind or want to use that configuration on another device. This can be
-done by exporting the configuration in the Meshtastic app settings, or
-with the [Meshtastic command line tool](https://meshtastic.org/docs/software/python/cli/):
+Pick the device name that looks like the alphanumeric identifier
+displayed at the top left of the display.
 
-    meshtastic --export-config > devicename.yaml
+The Bluetooth PIN should also be displayed, bigger, and in the center,
+as a string of 6 digits. That is different from the device name, which
+will have letters in it, and is only used in pairing.
 
+The device name on the top left, however, identifies the device over
+the airwaves, both on the Mesh and Bluetooth.
+  
 ## Configuration
 
 The main configuration you need to do on the device is set the
