@@ -6,8 +6,7 @@ title: FAQ
 
 Here are a couple of questions we have frequently been asked.
 
-
-## General questions
+## General
 
 ### Should I install a relay?
 
@@ -27,6 +26,14 @@ A good rule of thumb is to setup a non-repeating device (a "companion"
 in Meshcore) and see if you see other repeaters. If you can
 communicate with others, you don't need to install a relay.
 
+### Do I need something on my roof?
+
+No. Plenty of people are running relays from their homes, living
+rooms, attics, and even cars or backpacks.
+
+But yes, if you *do* have access to a more elevated structure like a
+roof, tree or mast, it will reach farther.
+
 ### What should I buy?
 
 It depends! In general, follow the [hardware reference](../references/hardware/index.md), which has devices we
@@ -41,13 +48,6 @@ there.
 
 See also our full [hardware reference](../references/hardware/index.md).
 
-### Do I need something on my roof?
-
-No. Plenty of people are running relays from their homes, living
-rooms, attics, and even cars or backpacks.
-
-But yes, if you *do* have access to a more elevated structure like a
-roof, tree or mast, it will reach farther.
 
 ### How far can I communicate?
 
