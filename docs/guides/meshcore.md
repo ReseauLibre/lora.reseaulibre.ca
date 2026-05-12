@@ -52,9 +52,9 @@ before flashing it.
 On the Meshcore you want to:
 
  1. go into Settings (the "gear" icon)
- 2. go into "Export Config"
- 3. hit "Select All"
- 4. hit the checkmark
+ 2. go into `Export Config`
+ 3. hit `Select All`
+ 4. hit the check mark
  5. save the file somewhere safe
 
 Normally, flashing a Meshcore device with a newer version should be
@@ -97,10 +97,10 @@ correctly.
 On many devices, you need to enter some special mode for flashing to
 work. Here are examples:
 
-- Heltec: hold the "program" (<kbd>PRG</kbd>) button while connecting
-  the USB cable. For the Heltec v4, it will show up as a "JTAG"
-  device. On the Heltec v3, it will show up as a "CP2102 USB to UART
-  Bridge Controller".
+- Heltec: hold the "program" (`PRG`) button while connecting
+  the USB cable. For the Heltec v4, it will show up as a `JTAG`
+  device. On the Heltec v3, it will show up as a `CP2102 USB to UART
+  Bridge Controller`.
 
 - RAK: double-click the reset button will bring it in "DFU" mode, but
   the web flasher should also be able to do that automatically.
