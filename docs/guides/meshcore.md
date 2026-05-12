@@ -88,6 +88,12 @@ You *may* skip this step if it comes flashed with Meshcore already.
     to connect to the device over the USB cable. Those are exclusive:
     a Bluetooth device cannot be accessed over serial and vice-versa.
 
+Connect your device to your computer using a USB cable. Note that for
+some USB-C cables, you might need to flip the cable over for the
+connection to work. A good hint is whether the device is charging or
+not from your laptop: if it isn't, it means it likely isn't connected
+correctly.
+
 On many devices, you need to enter some special mode for flashing to
 work. Here are examples:
 
