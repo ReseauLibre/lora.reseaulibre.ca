@@ -266,18 +266,29 @@ messages sent will be visible to an attacker.
 
 #### Public channels
 
-We know about the follow channels currently in use:
+We know about the follow channels currently in use[^1]:
 
-| Name          | Hex Key                            | Base64                     | Purpose                                     |
-|---------------|------------------------------------|----------------------------|---------------------------------------------|
-| Public        | `8b3387e9c5cdea6ac9e5edbaa115cd72` | `izOH6cXN6mrJ5e26oRXNcg==` | General conversations                       |
-| `#testing`    | `cde5e82cf515647dcb547a79a4f065d1` | `zeXoLPUVZH3LVHp5pPBl0Q==` | Should be used for test                     |
-| `#wardriving` | `e3c26491e9cd321e3a6be50d57d54acf` | `48JkkenNMh46a+UNV9VKzw==` | Used by [Meshmapper](https://meshmapper.net/) pings |
+| Name          | Hex Key                            | Base64                     | Purpose                                    |
+|---------------|------------------------------------|----------------------------|--------------------------------------------|
+| Public        | `8b3387e9c5cdea6ac9e5edbaa115cd72` | `izOH6cXN6mrJ5e26oRXNcg==` | General conversations                      |
+| `#testing`    | `cde5e82cf515647dcb547a79a4f065d1` | `zeXoLPUVZH3LVHp5pPBl0Q==` | Should be used for tests                   |
+| `#wardriving` | `e3c26491e9cd321e3a6be50d57d54acf` | `48JkkenNMh46a+UNV9VKzw==` | Used by [Meshmapper][] pings               |
+| `#habs`       | `e570409412b40c123b4ab787351ab30b` | `5XBAlBK0DBI7SreHNRqzCw==` | Far from real time game updates and gossip |
+
+ [Meshmapper]: https://meshmapper.net/
 
 You should generally not need the hex and Base64 keys. They are only
 provided here as a reference for some rate situations where you need
-to enter the secret key directly. (For example, some standalone
-firmware like the T-Deck require this.)
+to enter the secret key directly. For example, some standalone
+firmware like the T-Deck might require this although you might get
+away with popping up the menu to select the <kbd>Enter #</kbd> option.
+
+[^1]:
+    Those hashes were generated with the one-liner:
+    
+        python -c 'import base64; import hashlib; import sys; bytes = hashlib.sha256(sys.argv[1].encode("utf-8")).digest()[:16]; print(bytes.hex(), base64.b64encode(bytes).decode("utf-8"))' '#testing'
+
+    A more readable version is available as [hashchan.py](hashchan.py).
 
 #### Other channels
 
