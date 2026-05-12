@@ -63,7 +63,7 @@ can reach much further, easily a dozen kilometers, depending on how
 clear the view is.
 
 As of 2026-05-11, the [current record](https://yul.meshmapper.net/leaderboard.php) is 21.5km across Lac
-Saint-Louis, by [YUL_Dorval-South](https://yul.meshmapper.net/index.php?repeater=D0,45.43988,-73.73579).
+Saint-Louis, by [`YUL_Dorval-South`](https://yul.meshmapper.net/index.php?repeater=D0,45.43988,-73.73579).
 
 ### How many nodes in the network?
 
