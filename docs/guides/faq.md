@@ -58,10 +58,20 @@ clear the view is.
 Hard to tell. The [maps](../references/maps.md) seem to show somewhere between 20 and 40
 nodes on any given day, but we don't have good metrics of this.
 
-As of 2026-03-09, "from my house", I see about 10 to 20 relays on a
-daily basis, with perhaps half a dozen direct contacts.
+We're trying to keep track of how many relays we see on [the maps](../references/maps.md),
+over time:
 
-There are daily messages.
+| Date       | Meshcore | Meshtastic |
+|------------|----------|------------|
+| 2026-03-18 | 3-25     | 23-51      |
+| 2026-04-24 | 17-47    | ~25        |
+| 2026-05-11 | 35-65    | 27-40      |
+
+Links used to extract those numbers:
+
+- Meshtastic: [high](https://meshtastic.liamcottle.net/?lat=45.744526980468436&lng=285.7461547851563&zoom=8), [low](https://meshmap.net/), [lowest](https://map.mt.gt/)
+- Meshcore: [high](https://map.meshcore.io/?zoom=8&lat=45.6486&lon=-72.9767), [low](https://yul.meshmapper.net/leaderboard.php)
+
 
 ### Is this legal?
 
