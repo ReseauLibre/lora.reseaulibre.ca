@@ -72,6 +72,15 @@ Links used to extract those numbers:
 - Meshtastic: [high](https://meshtastic.liamcottle.net/?lat=45.744526980468436&lng=285.7461547851563&zoom=8), [low](https://meshmap.net/), [lowest](https://map.mt.gt/)
 - Meshcore: [high](https://map.meshcore.io/?zoom=8&lat=45.6486&lon=-72.9767), [low](https://yul.meshmapper.net/leaderboard.php)
 
+## Software
+
+### How do I upgrade?
+
+Meshcore devices can be safely upgraded by flashing them with the new
+version. To be on the safer side, it's always a good time to perform a
+backup.
+
+Just make sure to avoid doing an "erase"!
 
 ### Is this legal?
 
