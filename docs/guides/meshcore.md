@@ -49,6 +49,19 @@ phone.
 If you're flashing an already configured device, you should backup
 before flashing it.
 
+On the Meshcore you want to:
+
+ 1. go into Settings (the "gear" icon)
+ 2. go into "Export Config"
+ 3. hit "Select All"
+ 4. hit the checkmark
+ 5. save the file somewhere safe
+
+Normally, flashing a Meshcore device with a newer version should be
+safe and your settings should be kept, but it's always good to backup
+your configuration anyways, and this can be used to copy your
+configuration to another device as well.
+
 On Meshtastic, this can be done by exporting the configuration in the
 Meshtastic app settings, or with the [Meshtastic command line
 tool](https://meshtastic.org/docs/software/python/cli/):
@@ -59,7 +72,7 @@ tool](https://meshtastic.org/docs/software/python/cli/):
 
 First you need to [flash your device](https://flasher.meshcore.io), which essentially means
 connecting to the following website from a Chrome (or derivative) web
-browser:
+browser which support the [Web Serial API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility):
 
 <https://flasher.meshcore.io>
 
@@ -183,17 +196,22 @@ the airwaves, both on the Mesh and Bluetooth.
 ## Configuration
 
 The main configuration you need to do on the device is set the
-"region".
+preset, but you should also pick a display name.
 
-The Montreal mesh uses the "recommended USA / Canada" preset:
+- **Radio settings**: "recommended USA / Canada"
+- **Display name**: your name,  `YUL-Area` for a repeater, for example
+  `YUL-Villeray`, `YUL-Parc-Extension`, etc
+
+The "recommended USA / Canada" preset is, at the time of writing, the
+following settings:
 
 - **Frequency**: 910.525 MHz
 - **Bandwidth**: 62.5 kHz
 - **Spreading Factor** (`SF`): 7 or `SF7`
 - **Coding Rate** (`CR`): 5 or `CR5`
 
-You shouldn't need to write those down by hands, generally. Just pick
-the recommended preset.
+But you shouldn't need to write those down by hands, generally. Just
+pick the recommended preset.
 
 !!! tip
 
