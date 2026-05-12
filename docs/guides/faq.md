@@ -11,12 +11,21 @@ Here are a couple of questions we have frequently been asked.
 
 ### Should I install a relay?
 
-Yes. Even if you don't think you reach other nodes, you might be
-surprised and do.
+Most likely, yes. Even if you don't think you reach other nodes, you
+might be surprised and do.
 
 Even if you do set up a relay and you don't see neighbours, it's still
 useful to experiment with this technology locally. And besides, this
 is how a mesh start: with one node, and then a second...
+
+Still, please take a look at the [Meshmapper coverage](https://yul.meshmapper.net/) or [other
+maps](../references/maps.md) to see if a relay in your area would help. Some areas already
+have pretty good coverage and might not need an extra repeater, which
+might add noise.
+
+A good rule of thumb is to setup a non-repeating device (a "companion"
+in Meshcore) and see if you see other repeaters. If you can
+communicate with others, you don't need to install a relay.
 
 ### What should I buy?
 
