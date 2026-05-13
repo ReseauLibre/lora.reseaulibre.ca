@@ -182,8 +182,16 @@ the web-based apps: [Liam Cottle's](https://app.meshcore.nz/). There are also
     You can work around some of those problems by installin the [open
     app](https://github.com/zjs81/meshcore-open) which requires going through [Obtainium](https://obtainium.imranr.dev/) on Android or
     [test flight](https://github.com/zjs81/meshcore-open/issues/375). It's a little complicated, so don't venture there
-    unless you get frustrated with the official apps (and, honestly, you
-    might!).
+    unless you get frustrated with the official apps. The open app
+    also lacks a few features from the official one, namely:
+    
+     - [full multibyte support](https://github.com/zjs81/meshcore-open/issues/367)
+     - [support for changing the Blutooth PIN](https://github.com/zjs81/meshcore-open/issues/431)
+     - [Google Play Store](https://github.com/zjs81/meshcore-open/issues/323) and [F-Droid](https://github.com/zjs81/meshcore-open/issues/113) releases
+     - [Reactions are non-standard](https://github.com/zjs81/meshcore-open/issues/109)
+     - [Regions support](https://github.com/zjs81/meshcore-open/issues/120)
+     - [Channel utilization display](https://github.com/zjs81/meshcore-open/issues/312)
+     - [User blocking support](https://github.com/zjs81/meshcore-open/issues/340)
 
 To connect your phone to the device, you need to find the right device
 in your list, which can be challenging if you are in an environment
