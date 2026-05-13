@@ -15,24 +15,24 @@ Public channel. We also touch base on our [chat channel](../contact.md).
 On each Wednesday at 21:00 local, send those two messages:
 
 ```
-# Bienvenue sur le Réseau Libre #
-Chaque mercredi, vous pouvez vous enregistrer avec:
-"Bonsoir acat, ici MON_NOM à MON_ENDROIT"
-Je répond à tous les messages que je reçois!
+Bienvenue au Réseau Libre! 
+Chaque mercredi, vous pouvez vous signaler avec: 
+"Allo, ici NOM à ENDROIT" 
+Je réponds à tous les messages reçus!
 ```
 
 ```
-# Welcome to the Réseau Libre net #
+Welcome to Réseau Libre net!
 Every Wednesday, you can check-in with:
-"Hello acat, this is YOUR_NAME at YOUR_LOCATION"
-I will acknowledge all check-ins that I receive!
+"Hello, this is NAME at LOCATION"
+I will acknowledge all check-ins received!
 ```
 
 Respond to every check-in that you receive and include their name and
 location:
 
 ```
-acat (Net Control) received check-in from THEIR_NAME in LOCATION.
+Net Control in LOCATION received check-in by NAME.
 ```
 
 It may feel redundant to include names in the messages, but this
