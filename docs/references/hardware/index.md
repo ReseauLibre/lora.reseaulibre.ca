@@ -320,7 +320,10 @@ We have experience with this:
 
 - a similar (and currently cheaper) model is this [RF Explorer 800mm](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-930MHz-5-8dBi-800mm-p-5275.html)
   (10$USD from from SeeedStudio)
-  
+
+- Ottawa used the [Seeed Studio 1300mm at 30$USD](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-928MHz-8dBi-1300mm-p-5278.html) ([Mouser](https://www.mouser.ca/ProductDetail/Seeed-Studio/318020693?qs=By6Nw2ByBD0kjpJjgHd0aQ%3D%3D))
+  that provides 8dB
+
 !!! warning
 
     The [antenna reports project](https://github.com/meshtastic/antenna-reports) warns against using a
