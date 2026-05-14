@@ -348,7 +348,7 @@ Other lists include:
 - [Official Meshtastic guide](https://meshtastic.org/docs/hardware/antennas/), which also refers to a [series of
   antenna reports](https://github.com/meshtastic/antenna-reports)
 - [`nyme.sh` recommendations](https://nyme.sh/faq/#what-antenna)
-- [Ottawa Mesh recommendations](https://ottawamesh.ca/hardware/repeater-mounting-options/)
+- [Ottawa Mesh recommendations](https://ottawamesh.ca/hardware/recommended-antenna/)
 
 ### Alfa upgrade on the SenseCAP P1
 
