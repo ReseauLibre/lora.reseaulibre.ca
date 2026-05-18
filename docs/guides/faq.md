@@ -523,6 +523,27 @@ of those challenges. For example, Discord doesn't implement end-to-end
 encryption at all, is not operable, and leaves no control over data
 retention to the user.
 
+### Which radio frequencies are you using?
+
+We're using the defaults!
+
+- MeshCore: "US/Canada" preset, which is 910.525 MHz, 62.5 kHz, SF7, CR5
+- Meshtastic: "US" preset, LongFast, which is 906.875 MHz, 250kHz, SF11, CR4-5
+
+For Reticulum, there doesn't seem to be an agreed upon frequency, but
+you should probably avoid the above two since you'll get interference
+from the other Mesh devices. With the above frequencies and bandwidth
+in mind, for example, you should avoid the ranges:
+
+- MeshCore: 910.49375 to 910.55625 MHz (910.525 MHz with 62.5 kHz
+bandwidth or ± 31.25 kHz)
+- Meshtasttic: 906.750 too 907.0 MHz (906.875 Mhz with a 250 kHz
+  bandwidth or ± 125 kHz)
+
+Keep in mind when we say a *frequency* it is the *center* frequency,
+so you need to calculate the bandwidth *around* the frequency to make
+sure you do not interfere.
+
 ## Other questions
 
 ### My question is not here
