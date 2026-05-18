@@ -544,6 +544,11 @@ Keep in mind when we say a *frequency* it is the *center* frequency,
 so you need to calculate the bandwidth *around* the frequency to make
 sure you do not interfere.
 
+In general, we operate within the [ISM bands](https://en.wikipedia.org/wiki/ISM_radio_band#Frequency_allocations) which is, in our
+region, 902 to 928MHz, also known as the [33 cm band](https://en.wikipedia.org/wiki/33-centimeter_band), which can be
+quite crowded! It can also receive interference from nearby [UHF
+bands](https://en.wikipedia.org/wiki/Ultra_high_frequency#United_States) of course, particularly if you are near a cell phone tower.
+
 ## Other questions
 
 ### My question is not here
