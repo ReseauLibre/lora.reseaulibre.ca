@@ -15,17 +15,11 @@ Public channel. We also touch base on our [chat channel](../contact.md).
 On each Wednesday at 21:00 local, send those two messages:
 
 ```
-Bienvenue au Réseau Libre! 
-Chaque mercredi, vous pouvez vous signaler avec: 
-"Allo, ici NOM à ENDROIT" 
-Je réponds à tous les messages reçus!
+Bienvenue au Réseau Libre! Vous pouvez vous signaler avec: "Allo, ici NOM à ENDROIT" Je réponds à tous les messages reçus!
 ```
 
 ```
-Welcome to Réseau Libre net!
-Every Wednesday, you can check-in with:
-"Hello, this is NAME at LOCATION"
-I will acknowledge all check-ins received!
+Welcome to Réseau Libre net! Every Wednesday, you can check-in with: "Hello, this is NAME at LOCATION" I will acknowledge all checkins
 ```
 
 You can resend those messages a couple of times at, say, one to five
