@@ -215,6 +215,8 @@ preset, but you should also pick a display name.
 - **Radio settings**: "recommended USA / Canada"
 - **Display name**: your name,  `YUL-Area` for a repeater, for example
   `YUL-Villeray`, `YUL-Parc-Extension`, etc
+- **Region**: do *not* set a region, as we currently do not use one,
+  and it will interfere with routing
 
 The "recommended USA / Canada" preset is, at the time of writing, the
 following settings:
