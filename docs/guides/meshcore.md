@@ -71,10 +71,12 @@ tool](https://meshtastic.org/docs/software/python/cli/):
 ### Flash the firmware on the device
 
 First you need to [flash your device](https://flasher.meshcore.io), which essentially means
-connecting to the following website from a Chrome (or derivative) web
-browser which support the [Web Serial API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility):
+connecting to the following website.
 
 <https://flasher.meshcore.io>
+
+Your web browser must support the [Web Serial API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility), which includes
+Chrome (and derivatives) and Firefox 151 or later.
 
 You *may* skip this step if it comes flashed with Meshcore already.
 
