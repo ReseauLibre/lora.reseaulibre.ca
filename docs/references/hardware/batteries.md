@@ -63,7 +63,7 @@ shops also hold stock:
   8.50$CAD, spot-welded buttons from a Ottawa maker, [EVE 35V 18650
   3500mAh](https://mpandw.ca/products/eve-35v-18650-battery-cells-set-of-6-with-holders) (flat) 6 for 36$
 - <https://www.18650batterystore.com/en-ca>: 12$ for protected
-  button-top, 2-6$ for flat-top
+  button-top, 2-6$ for flat-top, Manu had a good experience there
 
 ## Pouch cells
 
