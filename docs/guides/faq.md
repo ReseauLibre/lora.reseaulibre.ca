@@ -537,7 +537,7 @@ in mind, for example, you should avoid the ranges:
 
 - MeshCore: 910.49375 to 910.55625 MHz (910.525 MHz with 62.5 kHz
 bandwidth or ± 31.25 kHz)
-- Meshtasttic: 906.750 too 907.0 MHz (906.875 Mhz with a 250 kHz
+- Meshtastic: 906.750 too 907.0 MHz (906.875 MHz with a 250 kHz
   bandwidth or ± 125 kHz)
 
 You can use [this tool from the Reticulum community](https://unsigned.io/understanding-lora-parameters/) as a good

@@ -49,5 +49,5 @@ heard, their location, your location).
 If no one else is doing it and you're there, you're it, you can call
 the net.
 
-While you're there, review the node counnt in the [How many nodes in
+While you're there, review the node count in the [How many nodes in
 the network?](../guides/faq.md#how-many-nodes-in-the-network) FAQ.
