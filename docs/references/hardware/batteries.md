@@ -62,6 +62,8 @@ shops also hold stock:
 - MP&W: [Button Top EVE 35V Battery Cell, Single Cell](https://mpandw.ca/products/button-top-eve-35v-house-made) (button) for
   8.50$CAD, spot-welded buttons from a Ottawa maker, [EVE 35V 18650
   3500mAh](https://mpandw.ca/products/eve-35v-18650-battery-cells-set-of-6-with-holders) (flat) 6 for 36$
+- <https://www.18650batterystore.com/en-ca>: 12$ for protected
+  button-top, 2-6$ for flat-top
 
 ## Pouch cells
 
