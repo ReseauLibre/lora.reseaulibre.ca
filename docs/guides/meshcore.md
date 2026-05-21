@@ -90,6 +90,15 @@ You *may* skip this step if it comes flashed with Meshcore already.
     to connect to the device over the USB cable. Those are exclusive:
     a Bluetooth device cannot be accessed over serial and vice-versa.
 
+!!! bug "Proprietary software warning"
+
+    While most Meshcore firmware is free software (the
+    [`meshcore-dev/MeshCore`
+    repository](https://github.com/meshcore-dev/MeshCore), the [T-Deck
+    firmware is
+    proprietary](https://docs.meshcore.io/faq/#57-q-is-meshcore-open-source). [Awesome
+    MeshCore lists a few alternatives](https://github.com/samuk/awesome-meshcore#free-and-open-source-firmware).
+
 Connect your device to your computer using a USB cable. Note that for
 some USB-C cables, you might need to flip the cable over for the
 connection to work. A good hint is whether the device is charging or
@@ -175,9 +184,9 @@ You can try that from your computer with a web browser by using one of
 the web-based apps: [Liam Cottle's](https://app.meshcore.nz/). There are also
 [iOS and Android versions](https://meshcore.io/#download).
 
-!!! bug "A warning about proprietary software"
+!!! bug "Proprietary software warning"
 
-    Both official Meshcore apps are [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) that do not
+    The official Meshcore app is [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) that do not
     publish their source code and require a subscription or a 10 second
     wait time for certain features.
     
