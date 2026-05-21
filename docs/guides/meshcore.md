@@ -132,12 +132,15 @@ work. Here are examples:
     
         reflashtic.py --pmount -i RAK_4631_companion_radio_ble-v1.15.0-dee3e26.uf2
 
+    The [`adafruit-nrfutil`](https://github.com/adafruit/Adafruit_nRF52_nrfutil)
+    command can also apparently be used for this.
+
 During first boot, the device will display the message:
 
     Loading...
 
 ... for a solid minute, that is normal.
-  
+
 #### Repeater configuration
 
 If you are configuring a repeater, this is also the step where you
