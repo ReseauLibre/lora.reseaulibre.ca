@@ -1353,6 +1353,188 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2026-05-22 00:00:00+00:00">May 22, 2026</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/events/" class="md-meta__link">events</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              4 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="notes-de-la-rencontre-repeteurs-le-21-mai-2026"><a class="toclink" href="../../2026/05/22/notes-de-la-rencontre-r%C3%A9p%C3%A9teurs-le-21-mai-2026/">Notes de la rencontre répéteurs le 21 Mai 2026</a></h2>
+<p>Voici les notes de la <a href="../../2026/05/10/rencontre-r%C3%A9p%C3%A9teurs-le-21-mai/">rencontre du 21 Mai</a>. Merci aux preneurs de
+notes!</p>
+<h2 id="introduction"><a class="toclink" href="../../2026/05/22/notes-de-la-rencontre-r%C3%A9p%C3%A9teurs-le-21-mai-2026/#introduction">Introduction</a></h2>
+<p>Nous avions un <a href="../../2026/05/10/rencontre-r%C3%A9p%C3%A9teurs-le-21-mai/#agenda">agenda</a> reconnu comme étant ambitieux, à étaler sur
+plusieurs rencontres. Nous avons commencé par:</p>
+<ul>
+<li><strong>agenda</strong>: présenter ledit agenda et l'objectif principal, qui était
+  que les gens se rencontre</li>
+<li><strong>traduction</strong>: voir si nous avions besoin de traduction. une personne
+  n'était pas à l'aise de parler en français, mais était à l'aise
+  d'écouter, nous avons donc conduit la rencontre en français</li>
+<li><strong>facilitation</strong>: anarcat s'est porté volontaire pour animer la
+  rencontre</li>
+<li><strong>prise de notes</strong>: deux personnes ont pris des notes et les ont
+  communiqué à anarcat par la suite, qui a rédigé ce procès-verbal</li>
+<li><strong>temps</strong>: deux personnes gardaient le suivi du temps. on a dédié une
+  heure à un tour de table, puis une pause, et une heure pour le reste</li>
+</ul>
+<h2 id="personnes-presentes"><a class="toclink" href="../../2026/05/22/notes-de-la-rencontre-r%C3%A9p%C3%A9teurs-le-21-mai-2026/#personnes-presentes">Personnes présentes</a></h2>
+<p>17 personnes étaient présentes:</p>
+<ul>
+<li>4 membres du club RADAR du département d'informatique (DIRO) de
+  l'Université de Montréal, incluant:</li>
+<li>2 radio amateurs</li>
+<li>un radio amateur potentiel</li>
+<li>intéressé par Reticulum et la philosophie</li>
+<li>opérateur du relais YUL-Dorval-South</li>
+<li>opérateur du relais YUL-Villeray-Lajeunesse, ancien membre Réseau Libre</li>
+<li>futur opérateur d'un relais sur le plateau et Villeray</li>
+<li>futur opérateur d'un relais sur le plateau, ancien membre Réseau
+  Libre, radio amateur</li>
+<li>un curieux qui n'opère pas encore de relais mais intéressé par le
+  mesh et Reticulum</li>
+<li>opérateur du relais Furthur à Rosemont</li>
+<li>personne impliquée dans Reticulum après avoir migré d'un déploiement Meshtastic</li>
+<li>opérateur du relais YUL-Little-Italy, site web Réseau Libre, ancien
+  membre Réseau Libre, radio amateur</li>
+<li>opérateur des relais YUL-Villeray-Nord, YUL-Poly</li>
+<li>membre du support technique DIRO, opérateur du relais MSH-La-Pomeraie</li>
+<li>ancien membre Réseau Libre</li>
+<li>opératrices des relais YUL-Villeray</li>
+<li>membre du collectif Ilot</li>
+</ul>
+<p>Nous avons fait un tour de table où chaque personne a énoncé:</p>
+<ul>
+<li>son nom</li>
+<li>ses pronoms préférés (on a noté 15 "il", déjà un problème de
+  représentation de genre!)</li>
+<li>indicatif / sobriquets en ligne</li>
+<li>nom / emplacement du relais actif ou prévu</li>
+<li>objectifs dans la rencontre et le projet</li>
+</ul>
+<p>Les noms des gens ainsi que les indicatifs de radio amateurs sont
+gardés privés pour respecter la confidentialité des participant·e·s.</p>
+<p>Tout le monde était bien content de rencontrer ses voisins de mesh!</p>
+<p>S'en suit une pause où plusieurs conversations informelles ont eu
+lieu.</p>
+<h2 id="sommaire-technique"><a class="toclink" href="../../2026/05/22/notes-de-la-rencontre-r%C3%A9p%C3%A9teurs-le-21-mai-2026/#sommaire-technique">Sommaire technique</a></h2>
+<p>Suite à la pause, anarcat a suggéré de changer l'agenda, car le tour
+de table a montré que plusieurs personnes n'étaient pas nécessairement
+au fait de toutes les technologies en vigueur, particulièrement au
+niveau de Reticulum.</p>
+<p>anarcat a entrepris un sommaire des 3 technologies principales de mesh
+LoRa sur un tableau, en 15 minutes:</p>
+<table>
+<thead>
+<tr>
+<th>Quoi</th>
+<th>Meshtastic</th>
+<th>MeshCore</th>
+<th>Reticulum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fréquence</td>
+<td>906.875 MHz</td>
+<td>915.525 MHz</td>
+<td>914.875 MHz</td>
+</tr>
+<tr>
+<td>Bande passnte</td>
+<td>250 kHz ("LongFast")</td>
+<td>62.5 kHz</td>
+<td>variable</td>
+</tr>
+<tr>
+<td>applications</td>
+<td>texte, telemétrie</td>
+<td>texte, telemétrie</td>
+<td>Texte (LXMF), "web" (NomadNet), shell (rnsh), etc</td>
+</tr>
+<tr>
+<td>Roles</td>
+<td>tous relaient par défaut</td>
+<td>"repeaters" floodent et "compagnons" ne relaient pas par défaut</td>
+<td>transport nodes relaient, routage sur plusieurs "interfaces" (LoRa, TCP, Bluetooth, radio, etc)</td>
+</tr>
+<tr>
+<td>Routage</td>
+<td>flood, pause avant retransmission</td>
+<td>flood sauf pour les DMs qui sont routés à la source, régions</td>
+<td>seulement DMs, point à point, annonces en "flood"</td>
+</tr>
+</tbody>
+</table>
+<p>anarcat s'est permis un éditorial sur les limites de Meshtastic, et
+des difficultés que le mesh de Montréal a eu jusqu'à ce qu'on adopte
+MeshCore. Nous pouvons maintenant communiquer!</p>
+<p>S'ensuivi une discussion.</p>
+<h3 id="discussion-informelle"><a class="toclink" href="../../2026/05/22/notes-de-la-rencontre-r%C3%A9p%C3%A9teurs-le-21-mai-2026/#discussion-informelle">Discussion informelle</a></h3>
+<p>Lequel de ces trois technologies devrions nous prioriser ? Meshtastic, Meshcore,
+ou Reticulum. Le consensus semble être que Meshcore fonctionne déjà mieux que
+Meshtastic et que Reticulum n'est pas encore facile à déployer.</p>
+<p>Pourrait-on commencer par développer Meshcore puis transitionner vers
+Reticulum ? C'est probablement faisable.</p>
+<p>Que l'on le veuille ou non, des noeuds relieront éventuellement Montréal à
+Ottawa. Est ce que le réseau Montréalais sera prêt à recevoir le traffic
+supplémentaire que cela représentera ? La question demeure.</p>
+<p>Les développements en mesh networking ressemblent aux développements en radio CB
+des années 80s, où tout le monde peut parler à tout le monde.</p>
+<p>À quelles fins notre mesh network servira ? La question demeure.</p>
+<p>Certaines personnes parmis nous aimeraient communiquer avec des gens lointains
+comme ceux à Ottawa, Québec, ou même Boston, New York.</p>
+<p>Certaines personnes aimeraient voir le réseau qu'on développe comme fallback
+autonome dans le cas de désastre naturel ou politique (voir le projet de loi
+C22). De plus, le réseau pourrait permettre une connectivité aux personnes loin
+dans le nord ignorées par les compagnies de télécom.</p>
+<p>Si on veut davantage développer notre réseau, il améliorer l'accès à ce réseau
+pour les personnes ayant moins de connaissances techniques dans ce domaine. Il
+faut bien communiquer, vulgariser.</p>
+<h2 id="prochaine-rencontre"><a class="toclink" href="../../2026/05/22/notes-de-la-rencontre-r%C3%A9p%C3%A9teurs-le-21-mai-2026/#prochaine-rencontre">Prochaine rencontre</a></h2>
+<p>La prochaine rencontre se déroulera le 11 juin, même heure, même salle.</p>
+<p>Le site Web <a href="https://lora.reseaulibre.ca/">reseaulibre.ca</a> sera bientôt mis à jour pour annoncer
+la rencontre formellement. On souhaite de nouveau progresser sur le
+reste de l'agenda originalement prévu et établir comment nous prenons
+des décisions.</p>
+<h2 id="organisation-contre-c-22"><a class="toclink" href="../../2026/05/22/notes-de-la-rencontre-r%C3%A9p%C3%A9teurs-le-21-mai-2026/#organisation-contre-c-22">Organisation contre C-22</a></h2>
+<p>Pour conclure, on souligne l'importance de combattre le <a href="https://www.lapresse.ca/affaires/techno/2026-05-14/projet-de-loi-c-22/ottawa-pourrait-faciliter-l-espionnage-de-votre-telephone.php">projet de loi C-22</a>. De
+contacter ses représentants. D'appuyer les efforts existants contre la
+dite loi:</p>
+<ul>
+<li><a href="https://liguedesdroits.ca/appel-conjoint-au-retrait-du-projet-de-loi-c-22/">Ligue des droits et libertés</a></li>
+<li><a href="https://www.koumbit.org/fr/content/le-projet-de-loi-c-22-une-menace-notre-vie-privee">Koumbit</a></li>
+<li><a href="https://openmedia.org/article/item/openmedia-to-secu-withdraw-bill-c-22-or-gut-its-surveillance-provisions">OpenMedia</a></li>
+<li><a href="https://iclmg.ca/fr/arretons-c-22/">International Civil Liberties Monitoring Group</a></li>
+</ul>
+<p>Nous ne devons pas prévoir contourner la loi en assumant qu'elle sera
+mise en vigueur mais plutôt nous organiser afin de bloquer cette loi.</p>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2026-05-10 00:00:00+00:00">May 10, 2026</time></li>
         
           <li class="md-meta__item">
@@ -1430,6 +1612,8 @@ avoir lieu.</p>
 matériel du Mesh. Mais de futures rencontres pourraient se tenir en
 ligne, en alternance, pour faciliter la participation d'autres
 personnes à distance.</p>
+<h3 id="notes"><a class="toclink" href="../../2026/05/10/rencontre-r%C3%A9p%C3%A9teurs-le-21-mai/#notes">Notes</a></h3>
+<p>Voir <a href="../../2026/05/22/notes-de-la-rencontre-r%C3%A9p%C3%A9teurs-le-21-mai-2026/">les notes de la rencontre</a>.</p>
 <div class="footnote">
 <hr />
 <ol>
