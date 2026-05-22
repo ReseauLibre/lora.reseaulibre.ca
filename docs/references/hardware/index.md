@@ -366,6 +366,9 @@ are SMA-based.
     It also raises the antenna a little higher which is good because
     it clears the solar panel better. The only downside is it
     introduces some loss compared to a pigtail only solution.
+    
+    Note that we have had problems with this connector, where packets
+    would only be sent out and not received correctly.
 
 === "Pigtail"
 
