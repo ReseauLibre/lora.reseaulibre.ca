@@ -88,9 +88,12 @@ Links used to extract those numbers:
 
 ### How do I upgrade?
 
-Meshcore devices can be safely upgraded by flashing them with the new
-version. To be on the safer side, it's always a good time to perform a
-backup.
+Typically, devices can be safely upgraded by flashing them with the
+new version. For Meshcore, follow the [Flash the firmware on the
+device](meshcore.md#flash-the-firmware-on-the-device) instructions and, if you have the device properly
+configured, the [OTA upgrades](meshcore.md#ota-upgrades).
+
+To be on the safer side, it's always a good time to perform a backup.
 
 Just make sure to avoid doing an "erase"!
 

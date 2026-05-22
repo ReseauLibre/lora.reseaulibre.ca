@@ -177,6 +177,111 @@ which we'll assume below.
     program. The full command line reference is [available in the
     upstream documentation](https://docs.meshcore.io/cli_commands/).
 
+#### Bootloader OTA fix
+
+!!! example "Advanced users only"
+
+    This section is a little more advanced and not required for beginners.
+
+You might want to flash upgrades "over the air" (OTA) if your device
+is in a hard to reach location. There are problems with built-in
+bootloaders for this, so it is recommended to flash this [alternative
+bootloader](https://github.com/oltaco/Adafruit_nRF52_Bootloader_OTAFIX). 
+
+For that, you need to flash a custom boot loader, *before* you install
+the device in the remote location:
+
+ 1. find and download the right device file in the last release of the
+    [release list](https://github.com/oltaco/Adafruit_nRF52_Bootloader_OTAFIX/releases), which should end in a `.uf2`, for example in
+    the [current release](https://github.com/oltaco/Adafruit_nRF52_Bootloader_OTAFIX/releases/tag/0.9.2-OTAFIX2.2-BP1.3) the SenseCAP Solar P1 file is the
+    [`update-sensecap_solar_p1_bootloader-0.9.2-OTAFIX2.2-BP1.3_nosd.uf2`](https://github.com/oltaco/Adafruit_nRF52_Bootloader_OTAFIX/releases/download/0.9.2-OTAFIX2.2-BP1.3/update-sensecap_solar_p1_bootloader-0.9.2-OTAFIX2.2-BP1.3_nosd.uf2)
+
+ 2. connect the device to your computer over USB
+
+ 3. put the device in DFU mode, which typically involves
+    double-clicking on the reset button (clicking twice within 500ms)
+
+ 4. mount the device that appears
+
+ 5. copy the `.uf2` file to the device
+
+This should take only a short time and reboot the device.
+
+
+#### OTA upgrades
+
+!!! example "Advanced users only"
+
+    Over-the-air (OTA) upgrades are risky and should be used only if
+    remote access is inconvenient, or if you have a secondary device
+    to run a first test run on.
+    
+    Beginners shouldn't need to follow those instructions.
+    
+    You should also *not* do your initial flash over the air, it's not
+    worth it! 
+    
+    Only use this for upgrades and *only* if you performed the above
+    [Bootloader OTA fix](#bootloader-ota-fix)!
+
+Once your device is correctly flashed for OTA (over the air) upgrades,
+you should be able to perform upgrades remotely, by following [this
+official guide](https://blog.meshcore.io/2026/04/02/nrf-ota-update) or the [Ottawa Mesh guide](https://ottawamesh.ca/meshcore/update-repeater-ota/). A few tips:
+
+ - if you have a custom Android firmware, you might not have access to
+   the App store and the [nRF Device Firmware Update app](https://play.google.com/store/apps/details?id=no.nordicsemi.android.dfu&hl=en_US). You can
+   add [this GitHub repository](https://github.com/nordicsemi/Android-DFU-Library) to Obtainium instead, which works fine.
+
+ - you *must* change the settings in the app before flashing the
+   upgrade, if you get a timeout, it's because the settings are wrong.
+
+ - flashing over Bluetooth is slow, we're seeing 3KB/s transfer speeds
+
+Here is a full procedure, but see the official or Ottawa mesh guide if
+it fails (and let us know):
+
+ 1. install the [nRF Device Firmware Update app](https://play.google.com/store/apps/details?id=no.nordicsemi.android.dfu&hl=en_US) ([source code](https://github.com/nordicsemi/Android-DFU-Library)
+    which can be installed through Obtainium)
+
+ 2. configure the right settings in the app which is called `DFU`:
+ 
+     - Packet receipts notification - **ON**
+     - Number of packets - **8**
+     - Request high MTU (Android only) - **OFF**
+     - Disable resume - **ON**
+     - Prepare object delay - **0 ms**
+     - Force scanning - **ON**
+
+    Leave the other settings untouched.
+
+ 3. download the right firmware for your device in the [Meshcore web
+    flasher interface](https://flasher.meshcore.io), make sure you pick the `.zip` file!
+
+ 4. connect to the device command-line, which should be accessible
+    over the LoRa management interface
+
+ 5. type the following magic command:
+
+        start ota
+
+    This will show the Bluetooth MAC address of your device, which can
+    be used to identify it below.
+
+ 6. back in the app, start the update, by tapping `Select` and picking
+    the `.zip` file you downloaded earlier
+
+ 7. select the device which should show up as something like
+    `SENSECAP_SOLAR_OTA` and also show the MAC address above
+
+ 8. press start
+
+    This will go through various steps. If you have messed up the
+    settings, it will like timeout at the `DFU initialized`
+    step. Otherwise it should show a progress bar and transfer rate
+    after that.
+
+ 9. you're done!
+
 ### Install an app
 
 Unless you picked a standalone device, now you'll need something to
