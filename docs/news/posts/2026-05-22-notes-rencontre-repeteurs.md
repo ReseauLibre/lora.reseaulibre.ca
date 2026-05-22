@@ -82,7 +82,7 @@ LoRa sur un tableau, en 15 minutes:
 
 | Quoi          | Meshtastic                        | MeshCore                                                        | Reticulum                                                                                       |
 |---------------|-----------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| Fréquence     | 906.875 MHz                       | 915.525 MHz                                                     | 914.875 MHz                                                                                     |
+| Fréquence     | 906.875 MHz                       | 910.525 MHz                                                     | 914.875 MHz                                                                                     |
 | Bande passnte | 250 kHz ("LongFast")              | 62.5 kHz                                                        | variable                                                                                        |
 | applications  | texte, telemétrie                 | texte, telemétrie                                               | Texte (LXMF), "web" (NomadNet), shell (rnsh), etc                                               |
 | Roles         | tous relaient par défaut          | "repeaters" floodent et "compagnons" ne relaient pas par défaut | transport nodes relaient, routage sur plusieurs "interfaces" (LoRa, TCP, Bluetooth, radio, etc) |
