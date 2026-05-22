@@ -2,7 +2,7 @@
 date:
   created: 2026-05-22
   actual:  2026-05-22
-title: Notes de la rencontre répéteurs le 21 Mai 2026
+title: Notes de la rencontre répéteurs du 21 Mai 2026
 categories:
   - events
 ---
