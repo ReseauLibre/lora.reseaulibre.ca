@@ -97,3 +97,7 @@ Cette première rencontre se fait en personne, pour solidifier l'esprit
 matériel du Mesh. Mais de futures rencontres pourraient se tenir en
 ligne, en alternance, pour faciliter la participation d'autres
 personnes à distance.
+
+## Notes
+
+Voir [les notes de la rencontre](2026-05-22-notes-rencontre-repeteurs.md).
