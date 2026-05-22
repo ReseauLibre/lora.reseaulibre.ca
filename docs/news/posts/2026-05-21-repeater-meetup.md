@@ -80,3 +80,7 @@ This first meeting is held in person, to solidify the physicality of
 the Mesh. But future meetings could be held alternatively in person
 and online, to facilitate participation from people further out from
 the city.
+
+## Notes
+
+Notes were taken in the meeting, in french, see [the notes](https://lora.reseaulibre.ca/fr/news/2026/05/22/notes-de-la-rencontre-répéteurs-du-21-mai-2026/).
