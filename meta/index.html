@@ -1309,6 +1309,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Alternatives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#switch-to-grebedoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switch to grebedoc
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1622,6 +1639,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Alternatives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#switch-to-grebedoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switch to grebedoc
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1863,6 +1897,30 @@ site is down, unless another Git hosting platform is used.</p>
 <p>We also use the <code>cache</code> branch to carry around the Lychee cache. This
 could be fixed if <a href="https://github.com/woodpecker-ci/woodpecker/discussions/2296">Woodpecker supported caches</a> or with a Forgejo
 <a href="https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/">"cache" action</a> or <a href="https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts">artifacts</a>.</p>
+<h4 id="switch-to-grebedoc">Switch to grebedoc<a class="headerlink" href="#switch-to-grebedoc" title="Permanent link">&para;</a></h4>
+<p>in progress. considered because we hope it will be faster than
+Codeberg pages and independent: if Codeberg fails, grebedoc should
+survive and vice versa, which gives us better redundancy. it also
+shows us how we can host this anywhere we can run <a href="https://codeberg.org/git-pages/git-pages"><code>git-pages</code></a>.</p>
+<p>required two DNS records:</p>
+<div class="highlight"><pre><span></span><code>_git-pages-repository.lora IN TXT https://codeberg.org/reseaulibre/lora-reseaulibre-ca.git
+_git-pages-challenge.lora IN TXT 6697376e11b3ff01b4f4ab83956c2742f065e60239f3e0bdb78caf73f9624cab
+</code></pre></div>
+<p>The latter is the result of:</p>
+<div class="highlight"><pre><span></span><code>printf &quot;$DOMAIN $GIT_PAGES_PASSWORD&quot; | sha256sum
+</code></pre></div>
+<p>where <code>domain</code> is <code>lora.reseaulibre.ca</code> and the password is stored in
+my password manager as <code>grebedoc.dev</code>.</p>
+<p>then a first push is done with:</p>
+<div class="highlight"><pre><span></span><code>curl https://grebedoc.dev/ -X PUT -H &quot;Host: lora.reseaulibre.ca&quot; -H &quot;Authorization: Pages $GIT_PAGES_PASSWORD&quot; --data &quot;https://codeberg.org/anarcat/lora-reseaulibre-ca.git&quot;
+</code></pre></div>
+<p>It currently fails because the DNS has not propagated yet. This also
+fails, perhaps for a different reason:</p>
+<div class="highlight"><pre><span></span><code>export GIT_PAGES_PASSWORD
+git-pages-cli --server https://grebedoc.dev --upload-dir . http://lora.reseaulibre.ca/
+</code></pre></div>
+<p>The <code>--password "$GIT_PAGES_PASSWORD"</code> is implicit as it looks for the
+<code>GIT_PAGES_PASSWORD</code> environment, see the <a href="https://codeberg.org/git-pages/git-pages-cli"><code>git-pages-cli</code> README file</a>.</p>
 <h2 id="matrix-commit-bot">Matrix commit bot<a class="headerlink" href="#matrix-commit-bot" title="Permanent link">&para;</a></h2>
 <p>A bot was setup to send messages for new commits on the <a href="https://matrix.to/#/#reseaulibre:matrix.org"><code>#reseaulibre:matrix.org</code>
 Matrix room</a> whenever there is a push. This was done using the
@@ -1892,7 +1950,7 @@ plugin</a>. There is also a <a href="https://gitlab.com/matrix-rss-bridge/matrix
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="April 19, 2026 21:18:00 UTC">2026-04-19 21:18:00</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="May 25, 2026 21:24:37 UTC">2026-05-25 21:24:37</span>
   </span>
 
     
