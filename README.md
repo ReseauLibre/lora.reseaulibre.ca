@@ -227,6 +227,46 @@ We also use the `cache` branch to carry around the Lychee cache. This
 could be fixed if [Woodpecker supported caches](https://github.com/woodpecker-ci/woodpecker/discussions/2296) or with a Forgejo
 ["cache" action](https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/) or [artifacts](https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts).
 
+#### Switch to grebedoc
+
+in progress. considered because we hope it will be faster than
+Codeberg pages and independent: if Codeberg fails, grebedoc should
+survive and vice versa, which gives us better redundancy. it also
+shows us how we can host this anywhere we can run [`git-pages`](https://codeberg.org/git-pages/git-pages).
+
+required two DNS records:
+
+```
+_git-pages-repository.lora IN TXT https://codeberg.org/reseaulibre/lora-reseaulibre-ca.git
+_git-pages-challenge.lora IN TXT 6697376e11b3ff01b4f4ab83956c2742f065e60239f3e0bdb78caf73f9624cab
+```
+
+The latter is the result of:
+
+```
+printf "$DOMAIN $GIT_PAGES_PASSWORD" | sha256sum
+```
+
+where `domain` is `lora.reseaulibre.ca` and the password is stored in
+my password manager as `grebedoc.dev`.
+
+then a first push is done with:
+
+```
+curl https://grebedoc.dev/ -X PUT -H "Host: lora.reseaulibre.ca" -H "Authorization: Pages $GIT_PAGES_PASSWORD" --data "https://codeberg.org/anarcat/lora-reseaulibre-ca.git"
+```
+
+It currently fails because the DNS has not propagated yet. This also
+fails, perhaps for a different reason:
+
+```
+export GIT_PAGES_PASSWORD
+git-pages-cli --server https://grebedoc.dev --upload-dir . http://lora.reseaulibre.ca/
+```
+
+The `--password "$GIT_PAGES_PASSWORD"` is implicit as it looks for the
+`GIT_PAGES_PASSWORD` environment, see the [`git-pages-cli` README file](https://codeberg.org/git-pages/git-pages-cli).
+
 ## Matrix commit bot
 
 A bot was setup to send messages for new commits on the [`#reseaulibre:matrix.org`
