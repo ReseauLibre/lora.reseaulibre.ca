@@ -256,13 +256,16 @@ then a first push is done with:
 curl https://grebedoc.dev/ -X PUT -H "Host: lora.reseaulibre.ca" -H "Authorization: Pages $GIT_PAGES_PASSWORD" --data "https://codeberg.org/anarcat/lora-reseaulibre-ca.git"
 ```
 
-It currently fails because the DNS has not propagated yet. This also
-fails, perhaps for a different reason:
+This will fail if the DNS has not propagated yet. 
+
+This also fails, perhaps for a different reason:
 
 ```
 export GIT_PAGES_PASSWORD
 git-pages-cli --server https://grebedoc.dev --upload-dir . http://lora.reseaulibre.ca/
 ```
+
+Unclear.
 
 The `--password "$GIT_PAGES_PASSWORD"` is implicit as it looks for the
 `GIT_PAGES_PASSWORD` environment, see the [`git-pages-cli` README file](https://codeberg.org/git-pages/git-pages-cli).
