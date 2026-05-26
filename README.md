@@ -273,7 +273,7 @@ The `--password "$GIT_PAGES_PASSWORD"` is implicit as it looks for the
 Once a first push has been made, we can switch over by changing DNS
 to:
 
-    lora IN CNAME grebedoc.dev
+    lora IN CNAME grebedoc.dev.
 
 Then a new webhook need to be added following [those instructions](https://grebedoc.dev/#own-domain),
 essentially:
