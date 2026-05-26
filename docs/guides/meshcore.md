@@ -222,7 +222,7 @@ This should take only a short time and reboot the device.
     worth it! 
     
     Only use this for upgrades and *only* if you performed the above
-    [Bootloader OTA fix](#bootloader-ota-fix)!
+    [Bootloader OTA fix](#boot-loader-ota-fix)!
 
 Once your device is correctly flashed for OTA (over the air) upgrades,
 you should be able to perform upgrades remotely, by following [this
