@@ -357,6 +357,7 @@ pick the recommended preset.
     set bw 62.5
     set sf 7
     set cr 5
+    set name YUL-Area
     ```
 
 ### Repeaters can lose track of time
