@@ -227,10 +227,10 @@ We also use the `cache` branch to carry around the Lychee cache. This
 could be fixed if [Woodpecker supported caches](https://github.com/woodpecker-ci/woodpecker/discussions/2296) or with a Forgejo
 ["cache" action](https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/) or [artifacts](https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts).
 
-#### Switch to grebedoc
+#### Switch to Grebedoc
 
 in progress. considered because we hope it will be faster than
-Codeberg pages and independent: if Codeberg fails, grebedoc should
+Codeberg pages and independent: if Codeberg fails, Grebedoc should
 survive and vice versa, which gives us better redundancy. it also
 shows us how we can host this anywhere we can run [`git-pages`](https://codeberg.org/git-pages/git-pages).
 

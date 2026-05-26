@@ -1,4 +1,4 @@
-personal_ws-1.1 en 158 
+personal_ws-1.1 en 165 
 AEAD
 AES
 APRS
@@ -23,6 +23,7 @@ Cottle's
 CÉGEPS
 DFU
 DIY
+DNS
 Dennet
 Digikey
 ECB
@@ -38,6 +39,7 @@ Freifunk
 GTK
 GitLab
 Grafana
+Grebedoc
 Groulx
 Guifi
 Göttgens
@@ -62,6 +64,7 @@ LoRa
 LongFast
 Lychee
 MQTT
+MTU
 MUI
 Makerfocus
 Manu
@@ -85,6 +88,8 @@ NL
 NanoVNA
 Nooelec
 OLSR
+OTA
+Obtainium
 Pointe
 Polytechnique
 Québec
@@ -117,6 +122,7 @@ USD
 Université
 Veshra
 WIP
+Webhooks
 Whatsapp
 WisBlock
 WisMesh
@@ -142,6 +148,7 @@ lossy
 mAh
 microReticulum
 mkdocs
+nRF
 natively
 neurodiversity
 octicons

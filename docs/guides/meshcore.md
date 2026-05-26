@@ -177,7 +177,7 @@ which we'll assume below.
     program. The full command line reference is [available in the
     upstream documentation](https://docs.meshcore.io/cli_commands/).
 
-#### Bootloader OTA fix
+#### Boot loader OTA fix
 
 !!! example "Advanced users only"
 
@@ -185,8 +185,8 @@ which we'll assume below.
 
 You might want to flash upgrades "over the air" (OTA) if your device
 is in a hard to reach location. There are problems with built-in
-bootloaders for this, so it is recommended to flash this [alternative
-bootloader](https://github.com/oltaco/Adafruit_nRF52_Bootloader_OTAFIX). 
+boot loaders for this, so it is recommended to flash this [alternative
+boot loader](https://github.com/oltaco/Adafruit_nRF52_Bootloader_OTAFIX). 
 
 For that, you need to flash a custom boot loader, *before* you install
 the device in the remote location:
