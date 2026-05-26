@@ -421,12 +421,13 @@ messages sent will be visible to an attacker.
 
 We know about the follow channels currently in use[^1]:
 
-| Name          | Hex Key                            | Base64                     | Purpose                                    |
-|---------------|------------------------------------|----------------------------|--------------------------------------------|
-| Public        | `8b3387e9c5cdea6ac9e5edbaa115cd72` | `izOH6cXN6mrJ5e26oRXNcg==` | General conversations                      |
-| `#testing`    | `cde5e82cf515647dcb547a79a4f065d1` | `zeXoLPUVZH3LVHp5pPBl0Q==` | Should be used for tests                   |
-| `#wardriving` | `e3c26491e9cd321e3a6be50d57d54acf` | `48JkkenNMh46a+UNV9VKzw==` | Used by [Meshmapper][] pings               |
-| `#habs`       | `e570409412b40c123b4ab787351ab30b` | `5XBAlBK0DBI7SreHNRqzCw==` | Far from real time game updates and gossip |
+| Name          | Hex Key                            | Base64                     | Purpose                                                    |
+|---------------|------------------------------------|----------------------------|------------------------------------------------------------|
+| Public        | `8b3387e9c5cdea6ac9e5edbaa115cd72` | `izOH6cXN6mrJ5e26oRXNcg==` | General conversations                                      |
+| `#testing`    | `cde5e82cf515647dcb547a79a4f065d1` | `zeXoLPUVZH3LVHp5pPBl0Q==` | Should be used for tests                                   |
+| `#wardriving` | `e3c26491e9cd321e3a6be50d57d54acf` | `48JkkenNMh46a+UNV9VKzw==` | Used by [Meshmapper][] pings                               |
+| `#habs`       | `e570409412b40c123b4ab787351ab30b` | `5XBAlBK0DBI7SreHNRqzCw==` | Far from real time game updates and gossip                 |
+| `#bots`       | `0d24f5830b449668b8c221759b6c50d2` | `DST1gwtElmi4wiF1m2xQ0g==` | Where to run bots, a bot replies to `test` and `ping`there |
 
  [Meshmapper]: https://meshmapper.net/
 
