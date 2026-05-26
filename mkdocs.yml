@@ -132,6 +132,16 @@ theme:
 # it's blocked by the second one, the design of the module system:
 # https://github.com/zensical/backlog/issues/41
 extra:
+  social:
+    - icon: simple/matrix
+      link: https://matrix.to/#/#reseaulibre-space:matrix.org
+      name: Matrix chat
+    - icon: simple/codeberg
+      link: https://codeberg.org/reseaulibre/lora-reseaulibre-ca
+      name: Source code
+    - icon: material/feather
+      link: https://grebedoc.dev
+      name: Hosted on grebedoc
   alternate:
     - name: English
       link: /
