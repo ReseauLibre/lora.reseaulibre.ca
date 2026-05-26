@@ -182,14 +182,16 @@ To set this up, I had to first [follow the manual pushing guide](https://docs.co
 1. create an "orphan" `pages` branch (`git switch --orphan pages`) for
    the site
 1. add and commit the `site` directory, but to the root of the repository
-1. setup a [webhook to the legacy v2 pages](https://docs.codeberg.org/codeberg-pages/#repository-websites) on push
+1. setup a [webhook to the legacy v2 pages](https://docs.codeberg.org/codeberg-pages/#repository-websites) on push (update: now a
+   [webhook to Grebedoc](https://grebedoc.dev/#own-domain) instead)
 1. push the `pages` branch
 
 At this point, `anarcat.codeberg.page/lora-reseaulibre-ca` is
 online. Next up was to setup the [custom domain](https://docs.codeberg.org/codeberg-pages/using-custom-domain/):
    
 1. add a CNAME for `lora.reseaulibre.ca` at my registrar, pointing at
-   `lora-reseaulibre-ca.anarcat.codeberg.page.`
+   `lora-reseaulibre-ca.anarcat.codeberg.page.` (update: now pointing
+   at `grebedoc.dev.`
 1. add `lora.reseaulibre.ca` to the `.domains` file in the git
    repository, on the `main` branch
 1. push the main branch
@@ -210,51 +212,46 @@ use [Codeberg CI](https://docs.codeberg.org/ci/) to build and publish the site a
 At this point, changes to the repository automatically rebuild and
 publish the changes.
 
-### Alternatives
+### Switch to Grebedoc
 
-We should probably hook this onto [Forgejo Actions](https://docs.codeberg.org/ci/actions/) and the
-[git-pages action](https://codeberg.org/git-pages/action), instead, but the [guide for that](https://docs.codeberg.org/codeberg-pages/forgejo-actions/) explicitly
-says it does not work for custom domains.
+As of 2026-05-26, we have switched to [Grebedoc][] because we hope it
+will be faster than Codeberg pages. It also provides redundancy: if
+Codeberg fails, Grebedoc should survive and vice versa, which gives us
+better redundancy. It also shows us how we can host this anywhere we
+can run [`git-pages`][], which can be any virtual machine we spin up
+in case of a catastrophe, see also below for [Alternatives](#alternatives).
 
-There was a one day downtime on Codeberg on 2026-03-04 that cause the
-site to go down almost entirely. If this happens again, we can
-consider hosting the static site somewhere else. I was recommended
-[`statichost.eu`](https://www.statichost.eu/) (see [this guide](https://www.arscyni.cc/file/codeberg.html)) or [`grebedoc.dev`](https://grebedoc.dev/)
-("Codeberg" backwards). This might be difficult to deploy while the
-site is down, unless another Git hosting platform is used.
+ [`git-pages`]: https://codeberg.org/git-pages/git-pages
 
-We also use the `cache` branch to carry around the Lychee cache. This
-could be fixed if [Woodpecker supported caches](https://github.com/woodpecker-ci/woodpecker/discussions/2296) or with a Forgejo
-["cache" action](https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/) or [artifacts](https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts).
-
-#### Switch to Grebedoc
-
-in progress. considered because we hope it will be faster than
-Codeberg pages and independent: if Codeberg fails, Grebedoc should
-survive and vice versa, which gives us better redundancy. it also
-shows us how we can host this anywhere we can run [`git-pages`](https://codeberg.org/git-pages/git-pages).
-
-required two DNS records:
+We setup those two DNS records:
 
 ```
 _git-pages-repository.lora IN TXT https://codeberg.org/reseaulibre/lora-reseaulibre-ca.git
 _git-pages-challenge.lora IN TXT 6697376e11b3ff01b4f4ab83956c2742f065e60239f3e0bdb78caf73f9624cab
 ```
 
-The latter is the result of:
+The first tells the `git-pages` software which repository is an
+acceptable source for the site.
+
+The second is the result of:
 
 ```
 printf "$DOMAIN $GIT_PAGES_PASSWORD" | sha256sum
 ```
 
-where `domain` is `lora.reseaulibre.ca` and the password is stored in
-my password manager as `grebedoc.dev`.
+where `domain` is `lora.reseaulibre.ca`. The password is stored in my
+password manager as `grebedoc.dev`.
 
-then a first push is done with:
+It allows for pushing arbitrary content to the site.
+
+A first push is done with:
 
 ```
 curl https://grebedoc.dev/ -X PUT -H "Host: lora.reseaulibre.ca" -H "Authorization: Pages $GIT_PAGES_PASSWORD" --data "https://codeberg.org/anarcat/lora-reseaulibre-ca.git"
 ```
+
+The `Authorization` header might not be necessary since we're passing
+the git repository URL here.
 
 This will fail if the DNS has not propagated yet. 
 
@@ -289,9 +286,36 @@ essentially:
 
 Then this can be tested by pushing to the `pages` branch, which can be
 done by doing a regular commit on the site, or on the `pages` branch
-of course. The CI configuration is actually unchanged, although one
-could now switch to using Codeberg actions instead of Woodpecker and
-use the [`git-pages` action](https://codeberg.org/git-pages/action#with-a-custom-domain).
+of course.
+
+The CI configuration is actually unchanged.
+
+### Alternatives
+
+We should probably hook this onto [Forgejo Actions](https://docs.codeberg.org/ci/actions/) and the
+[git-pages action](https://codeberg.org/git-pages/action), instead. The [guide for that](https://docs.codeberg.org/codeberg-pages/forgejo-actions/) explicitly
+says it does not work for custom domains, although that might now be
+inaccurate, since we've published the site on a `git-pages` backend
+(Grebedoc) without problems since 2026-05-26.
+
+There was a downtime on Codeberg on 2026-03-04 that cause the site to
+go down almost entirely for a full 24 hours. 
+
+If this happens again, we can consider hosting the static site
+somewhere else. I was recommended [`statichost.eu`](https://www.statichost.eu/) (see [this
+guide](https://www.arscyni.cc/file/codeberg.html)) or [Grebedoc][] ("Codeberg" backwards). 
+
+As of 2026-05-26, we've switched to Grebedoc.
+
+Updates to those sites can be posted even without Codeberg being
+available, through any [`git-pages`][] compatible hosting provider,
+see above.
+
+ [Grebedoc]: https://grebedoc.dev/
+
+We also use the `cache` branch to carry around the Lychee cache. This
+could be fixed if [Woodpecker supported caches](https://github.com/woodpecker-ci/woodpecker/discussions/2296) or with a Forgejo
+["cache" action](https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/) or [artifacts](https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts).
 
 ## Matrix commit bot
 
