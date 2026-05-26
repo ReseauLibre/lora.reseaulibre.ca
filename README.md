@@ -321,7 +321,21 @@ could be fixed if [Woodpecker supported caches](https://github.com/woodpecker-ci
 
 A bot was setup to send messages for new commits on the [`#reseaulibre:matrix.org`
 Matrix room](https://matrix.to/#/#reseaulibre:matrix.org) whenever there is a push. This was done using the
-[built-in Codeberg Matrix integration](https://docs.codeberg.org/integrations/matrix/).
+[built-in Codeberg Matrix integration](https://docs.codeberg.org/integrations/matrix/), with a twist: a long lived
+token was created using the [login API](https://spec.matrix.org/v1.6/client-server-api/#login). Concretely, it's with that
+`curl` magic:
+
+    export PASSWORD=$(rbw get @rl-codeberg-webhook)
+    curl -XPOST --header 'Content-Type: application/json' \
+      -d '{"type":"m.login.password",  "identifier":{"type": "m.id.user", "user": "rl-codeberg-webhook"}, "password":"'$PASSWORD'"}' \
+      "https://matrix.org/_matrix/client/r0/login"
+
+On success, it replied with:
+
+    {"access_token":"mct_REDACTED_REDACTED","device_id":"E6aFv2IAri","user_id":"@rl-codeberg-webhook:matrix.org"}
+
+Previous attempts at copying the access token from Element typically
+fail after 24 hours.
 
 This was done instead of setting up a dedicated bot like [Maubot](https://mau.bot/)
 with its [numerous plugins](https://plugins.mau.bot/) like a [RSS plugin](https://github.com/maubot/rss), or a [webhook
