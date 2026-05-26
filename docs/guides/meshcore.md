@@ -435,7 +435,7 @@ You should generally not need the hex and Base64 keys. They are only
 provided here as a reference for some rate situations where you need
 to enter the secret key directly. For example, some standalone
 firmware like the T-Deck might require this although you might get
-away with popping up the menu to select the <kbd>Enter #</kbd> option.
+away with popping up the menu to select the <kbd>Enter</kbd> <kbd>#</kbd> option.
 
 [^1]:
     Those hashes were generated with the one-liner:
