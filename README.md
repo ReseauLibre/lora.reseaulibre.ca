@@ -270,6 +270,29 @@ Unclear.
 The `--password "$GIT_PAGES_PASSWORD"` is implicit as it looks for the
 `GIT_PAGES_PASSWORD` environment, see the [`git-pages-cli` README file](https://codeberg.org/git-pages/git-pages-cli).
 
+Once a first push has been made, we can switch over by changing DNS
+to:
+
+    lora IN CNAME grebedoc.dev
+
+Then a new webhook need to be added following [those instructions](https://grebedoc.dev/#own-domain),
+essentially:
+
+> Select repository > Settings > Webhooks > Add webhook > Forgejo, then configure only the following:
+>
+> - Target URL: `http://lora.reseaulibre.ca`
+> - Branch filter: `pages`
+> - Authorization header: `Pages {password}` (Method B only)
+>
+> Leave everything else at the default values and select `Add
+> webhook`.
+
+Then this can be tested by pushing to the `pages` branch, which can be
+done by doing a regular commit on the site, or on the `pages` branch
+of course. The CI configuration is actually unchanged, although one
+could now switch to using Codeberg actions instead of Woodpecker and
+use the [`git-pages` action](https://codeberg.org/git-pages/action#with-a-custom-domain).
+
 ## Matrix commit bot
 
 A bot was setup to send messages for new commits on the [`#reseaulibre:matrix.org`
