@@ -1922,6 +1922,27 @@ git-pages-cli --server https://grebedoc.dev --upload-dir . http://lora.reseaulib
 <p>Unclear.</p>
 <p>The <code>--password "$GIT_PAGES_PASSWORD"</code> is implicit as it looks for the
 <code>GIT_PAGES_PASSWORD</code> environment, see the <a href="https://codeberg.org/git-pages/git-pages-cli"><code>git-pages-cli</code> README file</a>.</p>
+<p>Once a first push has been made, we can switch over by changing DNS
+to:</p>
+<div class="highlight"><pre><span></span><code>lora IN CNAME grebedoc.dev
+</code></pre></div>
+<p>Then a new webhook need to be added following <a href="https://grebedoc.dev/#own-domain">those instructions</a>,
+essentially:</p>
+<blockquote>
+<p>Select repository &gt; Settings &gt; Webhooks &gt; Add webhook &gt; Forgejo, then configure only the following:</p>
+<ul>
+<li>Target URL: <code>http://lora.reseaulibre.ca</code></li>
+<li>Branch filter: <code>pages</code></li>
+<li>Authorization header: <code>Pages {password}</code> (Method B only)</li>
+</ul>
+<p>Leave everything else at the default values and select <code>Add
+webhook</code>.</p>
+</blockquote>
+<p>Then this can be tested by pushing to the <code>pages</code> branch, which can be
+done by doing a regular commit on the site, or on the <code>pages</code> branch
+of course. The CI configuration is actually unchanged, although one
+could now switch to using Codeberg actions instead of Woodpecker and
+use the <a href="https://codeberg.org/git-pages/action#with-a-custom-domain"><code>git-pages</code> action</a>.</p>
 <h2 id="matrix-commit-bot">Matrix commit bot<a class="headerlink" href="#matrix-commit-bot" title="Permanent link">&para;</a></h2>
 <p>A bot was setup to send messages for new commits on the <a href="https://matrix.to/#/#reseaulibre:matrix.org"><code>#reseaulibre:matrix.org</code>
 Matrix room</a> whenever there is a push. This was done using the
@@ -1951,7 +1972,7 @@ plugin</a>. There is also a <a href="https://gitlab.com/matrix-rss-bridge/matrix
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="May 26, 2026 12:33:27 UTC">2026-05-26 12:33:27</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="May 26, 2026 14:15:53 UTC">2026-05-26 14:15:53</span>
   </span>
 
     
