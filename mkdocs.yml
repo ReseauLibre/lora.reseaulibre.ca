@@ -82,6 +82,7 @@ theme:
   logo: assets/logo.svg
   favicon: assets/logo.svg
   features:
+    - navigation.footer
     # - navigation.prune
     # - navigation.sections
     - navigation.expand
