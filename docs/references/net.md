@@ -9,6 +9,14 @@ Public channel. We also touch base on our [chat channel](../contact.md).
     concept borrowed from amateur radio where multiple callers join on
     the same frequency and time to communicate and collaborate. It's
     like a meeting, with a moderator taking speaking turns.
+    
+    The point of hosting "nets" on the mesh is to give a known time
+    window when people can be sure someone is listening on the network
+    to see if they can be heard. We also use it to "stress-test" the
+    mesh, to make sure contacts can still be made reliably, and
+    welcome new people. 
+    
+    Finally, it's a useful metric to keep track of the growth of the mesh.
 
 ## Net Control Guide
 
