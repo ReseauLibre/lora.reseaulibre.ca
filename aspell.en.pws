@@ -1,4 +1,4 @@
-personal_ws-1.1 en 165 
+personal_ws-1.1 en 176 
 AEAD
 AES
 APRS
@@ -12,6 +12,7 @@ Anarcat
 Anarcat's
 Anarcho
 Beaupré
+Brossard
 CNAME
 Canadaverse
 ChaChaPoly
@@ -68,10 +69,12 @@ MTU
 MUI
 Makerfocus
 Manu
+Marieville
 Mastervox
 Matterbridge
 Mattermost
 Maubot
+Mercier
 MeshCore
 MeshMapper
 MeshOS
@@ -81,6 +84,7 @@ Meshmapper
 Meshsense
 Meshtastic
 Meshtastic's
+Meshy
 Montréal
 Muzi
 NHMesh
@@ -90,6 +94,7 @@ Nooelec
 OLSR
 OTA
 Obtainium
+Patrie
 Pointe
 Polytechnique
 Québec
@@ -101,7 +106,9 @@ RSS
 Ratdeck
 Reddit
 Riseup
+Rivière
 RobotShop
+Rosemont
 Réseau
 SHA
 SMA
@@ -113,6 +120,7 @@ Sexualization
 ShareAlike
 Snowden
 Structurelessness
+Sud
 TLS
 Telus
 TikTok
@@ -121,6 +129,7 @@ UI
 USD
 Université
 Veshra
+Villeray
 WIP
 Webhooks
 Whatsapp
@@ -129,6 +138,7 @@ WisMesh
 XIAO
 XMPP
 YAML
+YUL
 YYYY
 Yagi
 Zensical
@@ -140,6 +150,7 @@ cryptographic
 dBi
 de
 decrypt
+des
 fil
 janky
 jpg

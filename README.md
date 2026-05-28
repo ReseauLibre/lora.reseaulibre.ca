@@ -295,7 +295,7 @@ The CI configuration is actually unchanged.
 We should probably hook this onto [Forgejo Actions](https://docs.codeberg.org/ci/actions/) and the
 [git-pages action](https://codeberg.org/git-pages/action), instead. The [guide for that](https://docs.codeberg.org/codeberg-pages/forgejo-actions/) explicitly
 says it does not work for custom domains, although that might now be
-inaccurate, since we've published the site on a `git-pages` backend
+inaccurate, since we've published the site on a `git-pages` back-end
 (Grebedoc) without problems since 2026-05-26.
 
 There was a downtime on Codeberg on 2026-03-04 that cause the site to
