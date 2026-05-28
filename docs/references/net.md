@@ -44,10 +44,42 @@ Net Control checking out after N contacts.
 ```
 
 And then send your results to the [chat channel](../contact.md) (list of who was
-heard, their location, your location).
+heard, their location, your location), ideally updating the [log below](#net-control-log).
 
 If no one else is doing it and you're there, you're it, you can call
 the net.
 
 While you're there, review the node count in the [How many nodes in
 the network?](../guides/faq.md#how-many-nodes-in-the-network) FAQ.
+
+## Net control log
+
+### 2026-05-27
+
+| time  | callsign      | location      | hops |
+|-------|---------------|---------------|------|
+| 21:01 | K386          | Petite-Patrie | 2    |
+| 21:01 | Arthur        | Villeray      | 2    |
+| 21:03 | LobbyCycliste | Centre-Sud    | 4    |
+| 21:05 | 1D19F8FD      | Mercier       | 6    |
+| 21:05 | Mad Jap       | Marieville    | 18   |
+| 21:12 | Guillaume     | Rosemont      | 3    |
+| 21:13 | SbMo          | Mile end      | 4    |
+
+Observed from `anarcat3`, a WisMesh pocket companion connected to
+YUL-Little-Italy, a Sensecap P1:
+
+- 7 participants (above)
+- 3 non-participents sending text messages in Public or another #room
+- 54 repeaters
+- 17 companions
+- 4 rooms
+- [89 nodes in the official map](https://map.meshcore.io/?zoom=7&lat=45.7100&lon=-72.6416)
+- [66 repeaters in meshmapper](https://yul.meshmapper.net/leaderboard.php)
+
+This net broke essentially all previous records:
+
+- max number of hops (18)
+- distance (marieville, 58.14km)
+- participants (7)
+- number of repeaters (54!), etc
