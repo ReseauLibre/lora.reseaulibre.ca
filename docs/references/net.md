@@ -54,6 +54,8 @@ the network?](../guides/faq.md#how-many-nodes-in-the-network) FAQ.
 
 ## Net control log
 
+We keep track of past nets here.
+
 ### 2026-05-27
 
 | time  | callsign      | location      | hops |
@@ -83,3 +85,28 @@ This net broke essentially all previous records:
 - distance (marieville, 58.14km)
 - participants (7)
 - number of repeaters (54!), etc
+
+### 2026-05-20
+
+- 4 contacts:
+  - RDP (9 hops)
+  - Villeray
+  - Petite-Patrie
+  - Brossard
+
+### 2026-05-13
+
+21:26, one contact (K386, Petite Patrie).
+
+### 2026-04-15
+
+Last Meshtastic net. 
+
+First Meshcore net.
+
+No contact on either.
+
+### 2026-03-25
+
+Meshtastic. 22:52. One contact: "DIR Rooftop", unclear
+(just the string "2️⃣"), no location.
