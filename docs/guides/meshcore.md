@@ -177,6 +177,28 @@ which we'll assume below.
     program. The full command line reference is [available in the
     upstream documentation](https://docs.meshcore.io/cli_commands/).
 
+#### Flashing an observer
+
+If you want to setup an "observer", you should head over to the
+[`observer.gessaman.com` flasher](https://observer.gessaman.com/) and flash that firmware
+instead. It will flash a custom firmware that automatically connects
+to WiFi and MQTT to relay packet data.
+
+You should *not* flash an observer if there is already one in your
+local area. As a rule of thumb, if you're multiple hops from the
+nearest observer, or it's far enough that it doesn't see *your*
+traffic, it's a good idea to set one up. Otherwise, we might not need
+your observer!
+
+You can setup the observer as a Room Server if you want one of those
+in your area, but similarly, we might not need one of those if there
+is already one around.
+
+In any case, it's likely not necessary to setup the observer as a
+"repeater" unless it's the only repeater in your area. In that case,
+either set it up as a room server or as a repeater with repeat turned
+off. This will help reduce the noise on the mesh.
+
 #### Boot loader OTA fix
 
 !!! example "Advanced users only"
@@ -393,6 +415,37 @@ And some relays require a reboot for the change to take effect:
     
 Others have reported having to do the change *twice* for it to take
 effect as well.
+
+### Observer configuration
+
+Assuming you flashed your device with the [`observer.gessaman.com`
+flasher](https://observer.gessaman.com/) above, you need to do extra configuration here:
+
+ 1. as above, setup the preset:
+
+        set radio 910.525,62.5,7,5
+
+ 1. if setup as a repeater and you already have one of those, turn off
+    repeat:
+
+        set repeat off
+
+ 1. setup the right MQTT servers:
+
+        set mqtt1.preset meshcore-ca-1
+        set mqtt2.preset meshcore-ca-2
+        set mqtt.iata YUL
+
+ 1. setup WiFi credentials:
+
+        set wifi.ssid YourWiFiNetwork
+        set wifi.pwd YourWiFiPassword
+
+ 1. reboot:
+
+        reboot
+
+See also the [configuration guide](https://observer.gessaman.com/docs.html).
 
 ### You made it! Say hi!
 
