@@ -771,6 +771,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#flashing-an-observer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flashing an observer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#boot-loader-ota-fix" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -841,6 +852,17 @@
     <span class="md-ellipsis">
       
         Multi-byte repeater configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observer-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observer configuration
       
     </span>
   </a>
@@ -1643,6 +1665,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#flashing-an-observer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flashing an observer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#boot-loader-ota-fix" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1713,6 +1746,17 @@
     <span class="md-ellipsis">
       
         Multi-byte repeater configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observer-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observer configuration
       
     </span>
   </a>
@@ -1961,6 +2005,23 @@ tio:</p>
 program. The full command line reference is <a href="https://docs.meshcore.io/cli_commands/">available in the
 upstream documentation</a>.</p>
 </div>
+<h4 id="flashing-an-observer">Flashing an observer<a class="headerlink" href="#flashing-an-observer" title="Permanent link">&para;</a></h4>
+<p>If you want to setup an "observer", you should head over to the
+<a href="https://observer.gessaman.com/"><code>observer.gessaman.com</code> flasher</a> and flash that firmware
+instead. It will flash a custom firmware that automatically connects
+to WiFi and MQTT to relay packet data.</p>
+<p>You should <em>not</em> flash an observer if there is already one in your
+local area. As a rule of thumb, if you're multiple hops from the
+nearest observer, or it's far enough that it doesn't see <em>your</em>
+traffic, it's a good idea to set one up. Otherwise, we might not need
+your observer!</p>
+<p>You can setup the observer as a Room Server if you want one of those
+in your area, but similarly, we might not need one of those if there
+is already one around.</p>
+<p>In any case, it's likely not necessary to setup the observer as a
+"repeater" unless it's the only repeater in your area. In that case,
+either set it up as a room server or as a repeater with repeat turned
+off. This will help reduce the noise on the mesh.</p>
 <h4 id="boot-loader-ota-fix">Boot loader OTA fix<a class="headerlink" href="#boot-loader-ota-fix" title="Permanent link">&para;</a></h4>
 <div class="admonition example">
 <p class="admonition-title">Advanced users only</p>
@@ -2167,6 +2228,41 @@ and enter the command:</p>
 </code></pre></div>
 <p>Others have reported having to do the change <em>twice</em> for it to take
 effect as well.</p>
+<h3 id="observer-configuration">Observer configuration<a class="headerlink" href="#observer-configuration" title="Permanent link">&para;</a></h3>
+<p>Assuming you flashed your device with the <a href="https://observer.gessaman.com/"><code>observer.gessaman.com</code>
+flasher</a> above, you need to do extra configuration here:</p>
+<ol>
+<li>
+<p>as above, setup the preset:</p>
+<div class="highlight"><pre><span></span><code>set radio 910.525,62.5,7,5
+</code></pre></div>
+</li>
+<li>
+<p>if setup as a repeater and you already have one of those, turn off
+    repeat:</p>
+<div class="highlight"><pre><span></span><code>set repeat off
+</code></pre></div>
+</li>
+<li>
+<p>setup the right MQTT servers:</p>
+<div class="highlight"><pre><span></span><code>set mqtt1.preset meshcore-ca-1
+set mqtt2.preset meshcore-ca-2
+set mqtt.iata YUL
+</code></pre></div>
+</li>
+<li>
+<p>setup WiFi credentials:</p>
+<div class="highlight"><pre><span></span><code>set wifi.ssid YourWiFiNetwork
+set wifi.pwd YourWiFiPassword
+</code></pre></div>
+</li>
+<li>
+<p>reboot:</p>
+<div class="highlight"><pre><span></span><code>reboot
+</code></pre></div>
+</li>
+</ol>
+<p>See also the <a href="https://observer.gessaman.com/docs.html">configuration guide</a>.</p>
 <h3 id="you-made-it-say-hi">You made it! Say hi!<a class="headerlink" href="#you-made-it-say-hi" title="Permanent link">&para;</a></h3>
 <p>At this point, your companion should be properly
 configured. Repeaters require a little more work, below.</p>
@@ -2272,7 +2368,7 @@ away with popping up the menu to select the <kbd>Enter</kbd> <kbd>#</kbd> option
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="May 26, 2026 18:27:11 UTC">2026-05-26 18:27:11</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="May 26, 2026 18:28:41 UTC">2026-05-26 18:28:41</span>
   </span>
 
     
