@@ -58,3 +58,15 @@
 This site aims at documenting the project and our knowledge. You can
 change this site through the [Git repository](https://codeberg.org/anarcat/lora-reseaulibre-ca) and by hitting the
 "edit" icon on any page.
+
+## MeshCore map
+
+This map shows the known repeaters answering in actual probes on the
+MeshCore mesh, thanks to the [MeshMapper
+project](https://wiki.meshmapper.net/) project.
+
+<!-- update the iframe in maps.md when updating this -->
+<iframe src="https://yul.meshmapper.net/embed.php?lat=45.508545&amp;lon=-73.589824&amp;zoom=10&amp;geofence=0&amp;fail_grid=0" width="100%" height="500px" style="border:0;" loading="lazy" allowfullscreen>
+  </iframe>
+
+See also the [maps section](references/maps.md) for other maps.
