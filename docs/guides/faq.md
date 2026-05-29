@@ -433,13 +433,45 @@ protection against unreasonable search and seizure.
 Also known as "Why are you not on Telegram, Discord, Whatsapp,
 Facebook, XMPP, or whatever?"
 
-The real reason we are on Matrix is because we were already there and
-people already had accounts. People like to argue that we should be
-elsewhere because that is "where every is", but if that was the
-argument, everyone should join Whatsapp (3 billion monthly active
-users), yet people somehow think they should organise
-elsewhere. Typically, it's the place they already use for some other
-purpose.
+Obviously, the Meshcore community is organised a mostly through
+Discord, and we're not there. We are on Matrix is because we were
+already there before Meshcore existed, and we are not just about
+Meshcore.
+
+Some people claim there are more people on Discord than Matrix in
+general, but we dispute those claims.[^1]
+
+[^1]: Here is a select number of social networks and their size in
+    monthly active users, as of 2026-05-28, mostly from [this 2025
+    report](https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/) unless otherwise noted:
+
+      * Facebook: 3.07 billion MAU ("may be out of date")
+      * WhatsApp: 3.00B
+      * Instagram: 3.00B
+      * YouTube: 2.58B ("ad reach")
+      * TikTok: 1.99B ("ad reach")
+      * WeChat: 1.41B
+      * Telegram: 1B
+      * Messenger: 942 million ("may be misrepresented")
+      * Snapchat: 932M
+      * Reddit: 765M
+      * Matrix: 200M "users" ([according to
+      Element](https://element.io/en)), was [60M in
+      2022](https://www.theregister.com/on-prem/2022/07/15/matrix-messaging-service-leaps-60-million-user-barrier/1562103)
+      and [28M in 2021](https://www.youtube.com/watch?v=TzUfS08lMek&t=265s)
+      * Signal: 70-100M users ([according to their CEO](https://tech-insider.org/signal-vs-telegram-2026/))
+      * Discord: 90M+ "daily active users" (according to
+      [discord.com](https://discord.com/company)), 150M MAU in 2024,
+      [according to Wikipedia](https://en.wikipedia.org/wiki/Discord)
+      * Meshcore: [46,546 devices world wide](https://map.meshcore.io/)
+
+    So, if actual numbers of users were a real criteria for picking a
+    platform, people would organise primarily on Facebook or Telegram
+    (and indeed, lots of people are), but clearly not on Discord,
+    which is primarily a gaming platform.
+
+    The reality is people organize where they already are, and can't
+    be moved around easily, because [communities are not fungible](https://www.joanwestenberg.com/communities-are-not-fungible/).
 
 Compared to all those other platforms (with exceptions), Matrix has
 properties that are uniquely well suited to the mesh:
