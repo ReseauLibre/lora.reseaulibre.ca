@@ -83,6 +83,10 @@ For really remote relays that are difficult to service, they started
 using [LTO batteries](https://en.wikipedia.org/wiki/Lithium-titanate_battery) which are better suited to handle deep freeze
 -- we're talking -40℃ on mountaintop -- conditions.
 
+Sodium-ion batteries are apparently more tolerant to cold as they can
+charge below freezing better. They do come in 18650 form factor, but
+have lower capacity than normal Lithium-ion batteries.
+
 ## Charger
 
 You might also want to have a charger if you deal with a lot of 18650
