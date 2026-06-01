@@ -14,7 +14,11 @@ de l'université de Montréal, le Jeudi 21 Mai de 19h à 21h.
 Ce sera également, exceptionnellement, une rencontre hybride, pour
 permettre une participation externe, sur Jitsi:
 
-<https://meet.jit.si/DeliciousMissilesMergeAnnually>
+<https://meet.jit.si/moderated/7166e3ba08dc351aea738c80fe797bcd8555ffcfeb74b31ec26e90e2008d2ef8>
+
+!!! important
+
+    Notez que le lien Jitsi ci-haut a été changé (au 2026-06-01).
 
 Mais nous préférons si vous pouviez vous présenter en personne.
 
