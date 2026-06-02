@@ -9,7 +9,7 @@ categories:
 
 Nous allons tenir une seconde rencontre "répéteurs" au local C-9019 du
 [pavillon Lionel Groulx][] (3150 Jean-Brillant ([lien Google Maps][])
-de l'université de Montréal, le Jeudi 21 Mai de 19h à 21h.
+de l'université de Montréal, le Jeudi 11 Juin de 19h à 21h.
 
 Ce sera également, exceptionnellement, une rencontre hybride, pour
 permettre une participation externe, sur Jitsi:
