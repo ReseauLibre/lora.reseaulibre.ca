@@ -9,7 +9,7 @@ categories:
 
 We will hold a second repeater meet up at room C-9019 of [Lionel
 Groulx wing](https://www.openstreetmap.org/relation/2109148) (3150 Jean-Brillant, [Google Maps link](https://maps.app.goo.gl/68PGSCCXcJUjXEAFA)) of
-Université de Montréal on Thursday May 21st from 19h to 21h.
+Université de Montréal on Thursday June 11 from 19h to 21h.
 
 This will be, exceptionally, a hybrid meeting, to allow external
 participation, on Jitsi:
