@@ -592,6 +592,10 @@ usage. A few useful commands:
 - `s` or `send`: send a message to a user
 - `reply` or `re`: reply to a user that just came in
 
+LXMF-CLI also has a [surprisingly large collection of plugins](https://github.com/fr33n0w/lxmf-cli/tree/main/plugins)
+doing anything from a simple echo bot, logging, weather, but also a
+Telegram bridge and more.
+
 ## Transport nodes and microReticulum
 
 All of the above is about "clients", in the sense that most of the
