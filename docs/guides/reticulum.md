@@ -116,12 +116,15 @@ Reticulum, as it can get confusing quickly.
 RNS is the [base Reticulum software](https://github.com/markqvist/Reticulum/), still developed by the
 original founder of the Reticulum project.
 
-Unfortunately, Reticulum now ships [with a non-free license](https://github.com/markqvist/Reticulum/discussions/781#discussioncomment-13209632) which
-has [stalled the Debian packaging effort](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1101959) but also lead to the
-proliferation of [other implementations](https://reticulum.miraheze.org/wiki/Implementations). 
+!!! bug "Proprietary software warning"
 
-RNS is nevertheless the reference implementation which is why we start
-there.
+    Unfortunately, Reticulum now ships [with a non-free license](https://github.com/markqvist/Reticulum/discussions/781#discussioncomment-13209632) which
+    has [stalled the Debian packaging effort](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1101959) but also lead to the
+    proliferation of [other implementations](https://reticulum.miraheze.org/wiki/Implementations). 
+
+    Since most people still use the reference implementation, and that
+    others derive from it generally stay compatible, this guide
+    follows the reference implementation.
 
 ### Installation and configuration
 
@@ -138,10 +141,26 @@ run it with:
 
 You can also [configure it as a systemd service](https://markqvist.github.io/Reticulum/manual/using.html#using-systemd).
 
+On first start, `rnsd` will create a configuration file and a
+public/private keypair for your identity:
+
+```
+anarcat@dorothea:~$ rnsd -v
+[2026-06-05 09:53:44] [Notice]   Could not load config file, creating default configuration file...
+[2026-06-05 09:53:44] [Notice]   Default config file created. Make any necessary changes in /home/anarcat/.reticulum/config and restart Reticulum if needed.
+[2026-06-05 09:53:45] [Verbose]  Bringing up system interfaces...
+[2026-06-05 09:53:45] [Verbose]  AutoInterface[Default Interface] discovering peers for 1.92 seconds...
+[2026-06-05 09:53:47] [Verbose]  System interfaces are ready
+[2026-06-05 09:53:47] [Verbose]  Configuration loaded from /home/anarcat/.reticulum/config
+[2026-06-05 09:53:47] [Verbose]  Destinations file does not exist, no known destinations loaded
+[2026-06-05 09:53:47] [Verbose]  No valid Transport Identity in storage, creating...
+[2026-06-05 09:53:47] [Verbose]  Identity keys created for <6575da95d1d9c8e5d01c560c73c8e67f>
+[2026-06-05 09:53:47] [Notice]   Started rnsd version 1.3.5
+```
+
 ### Interfaces
 
-It will generate a basic configuration, which will likely include a
-block like:
+In the above default configuration file, you will see this interface:
 
 ```
 [interfaces]
@@ -166,15 +185,19 @@ not very useful on its own. So let's look at other interfaces.
 #### TCP interfaces
 
 If you do not have local partner to play with, add a couple interfaces
-(perhaps those that look the closest to you) from the growing list of
-public entry points ([`reticulum.community`](https://reticulum.community/connect.html),
-[`directory.rns.recipes`](https://directory.rns.recipes/), [`rmap.world`](https://rmap.world/). This one, for example, is
-hosted on the US west coast:
+(perhaps those that look the closest to you) from one of those lists
+of public entry points:
 
-    [[RNS Testnet BetweenTheBorders]]
+- [`reticulum.community`](https://reticulum.community/connect.html)
+- [`directory.rns.recipes`](https://directory.rns.recipes/)
+- [`rmap.world`](https://rmap.world/)
+
+Here is an example interface:
+
+    [[Example Testnet]]
       type = TCPClientInterface
       enabled = yes
-      target_host = reticulum.betweentheborders.com
+      target_host = reticulum.example.com
       target_port = 4242
 
 This configuration will tell Reticulum to connect to the given host on
@@ -187,7 +210,12 @@ the internet to route with other Reticulum users.
     instead. But Reticulum is a mixed medium system: it considers the
     possibility of using the internet a *feature* and happily uses
     TCP/IP or LoRa. We show this example to allow you to test the
-    system without having LoRa neighbours, which might not be available.
+    system without having LoRa neighbours, which might not be
+    available.
+    
+    In our defence, the above configuration is actually *not*
+    functional as `example.com` does not run a reticulum interface at
+    the moment.
 
 So yes, this is cheating. Let's try a "real" interface, LoRa, the same
 medium used by Meshtastic and Meshcore.
@@ -208,43 +236,13 @@ Firmware](https://github.com/markqvist/RNode_Firmware) originally supported only
 [community edition](https://github.com/liberatedsystems/RNode_Firmware_CE) came out with [support for many more](https://github.com/liberatedsystems/RNode_Firmware_CE#supported-products-and-boards).
 
 Thankfully, flashing those devices is rather easy. You can use [Liam
-Cottle's web-based flasher](https://liamcottle.github.io/rnode-flasher/) (yes, him again). Note that if you're
-used to Meshtastic or Meshcore flashers, the Reticulum one is a little
-less intuitive: you first need to download the firmware, then select
-it after downloading it.
+Cottle's web-based flasher](https://liamcottle.github.io/rnode-flasher/) (also known for his Meshcore
+work). Note that if you're used to Meshtastic or Meshcore flashers,
+the Reticulum one is a little less intuitive: you first need to
+download the firmware, then select it after downloading it.
 
-!!! example
-
-    If you are familiar with the command line, there is a program shipped
-    with RNS called `rnodeconf` allows you to flash those devices with
-    RNode in an interactive way, with:
-    
-        rnodeconf --autoinstall
-    
-    It will walk you through a series of prompts to flash your device.
-    
-    At some point, it will ask you for the device model. If you're
-    flashing a heltec it will tell you it is experimental, and you can
-    ignore it.
-    
-It will ask you which region / band to use, make sure you pick the 915
-MHz band.
-
-Then at some point it will require you to configure the frequency
-settings, pick those:
-
-- frequency: 914.875 MHz
-- bandwidth: 125 kHz
-- power: 22 dB
-- spread factor: SF7
-- coding rate: 4:7
-
-!!! note
-
-    Those are inspired by the [Ottawa settings](https://ottawamesh.ca/reticulum/reticulum-frequency-settings/#frequency-settings-for-reticulum).
-
-If you have flashed through the web interface, you will need to add
-the following interface to your `~/.reticulum/config` file:
+Once the device is flashed, you will need to add the following
+interface to your `~/.reticulum/config` file:
 
 ```
 [[RNode LoRa Interface]]
@@ -262,12 +260,62 @@ The [full RNode interface configuration](https://markqvist.github.io/Reticulum/m
 
 Restart `rsnd` and it should try to connect to your RNode device!
 
+!!! example "Command line option"
+
+    If you are familiar with the command line, there is a program shipped
+    with RNS called `rnodeconf` allows you to flash those devices with
+    RNode in an interactive way, with:
+    
+        rnodeconf --autoinstall
+    
+    It will walk you through a series of prompts to flash your device.
+    
+    At some point, it will ask you for the device model. If you're
+    flashing a heltec it will tell you it is experimental, and you can
+    ignore it.
+    
+    It will ask you which region / band to use, make sure you pick the 915
+    MHz band. You will then be prompted for actual frequency,
+    bandwidth and power settings, see below for those.
+
+##### A note on frequency settings
+
+When configuring LoRa frequencies, we recommend people who want to
+join the Reticulum mesh in Montreal use those frequencies:
+
+- frequency: 914.875 MHz
+- bandwidth: 125 kHz
+- power: 22 dB
+- spread factor: SF7
+- coding rate: 4:7
+
+!!! note
+
+    Those are inspired by the [Ottawa settings](https://ottawamesh.ca/reticulum/reticulum-frequency-settings/#frequency-settings-for-reticulum).
+
+    See also our [discussion of frequencies in the FAQ](faq.md#which-radio-frequencies-are-you-using).
+
 #### Meshcore
 
 Amazingly, because Reticulum can route over essentially anything, you
 can route Reticulum traffic over Meshcore meshes.
 
-In the May 2026 mesh night at Foulab, we have successfully routed
+!!! example "Advanced users only!"
+
+    This is a particularly exotic Reticulum configuration. 
+    
+    We are not sure this is a good idea. It might flood the Meshcore
+    mesh, for example. So far, there seems to be only moderate (2x)
+    amplification in traffic so we're continuing to experiment. but we
+    do not recommend people adopt this, generally.
+    
+    Meshcore people typically frown upon Meshcore being bridged across
+    regions or with other networks, and might consider such use to be hostile.
+
+    Finally, if you're just getting started with Reticulum, this one
+    will be particularly confusing, just skip this section.
+
+During the May 2026 mesh night at Foulab, we have successfully routed
 Reticulum messages over a local LoRa link with two Meshcore companions
 connected over serial.
 
@@ -323,6 +371,12 @@ Then we add the interface to the RNS configuration file in `~/.reticulum/config`
    #flood_scope =                 # Limit propagation to repeaters allowing this scope (requires firmware >1.14)
 ```
 
+Note that we use a hardcoded `channel_secret` above, which upstream
+[strongly warns against](https://github.com/slack-t/RNS_Over_MeshCore#channel-secret). We consider those concerns to be
+unfounded since Reticulum encrypts traffic before injecting into the
+transport. Instead, we favor instead broad compatibility across
+clients, using a common, public channel.
+
 !!! bug
 
     Pay close attention to the `type` line above. In the upstream
@@ -361,7 +415,7 @@ sure you pick "serial" and not "Bluetooth".
     itself.
     
     We have had success adding something similar to this to the top of
-    the interface Python file:
+    the interface Python file (`MeshcoreInterface.py`):
     
         import sys
         sys.path.insert(0, "/usr/lib/python3/dist-packages/")
@@ -401,7 +455,7 @@ Here's an example output with *all* the above interfaces configured:
         Traffic   : ↑0 B        0 bps
                     ↓0 B        0 bps
 
-     TCPInterface[RNS Testnet BetweenTheBorders/reticulum.betweentheborders.com:4242]
+     TCPInterface[Example Testnet/reticulum.example.com:4242]
         Status    : Down
         Mode      : Full
         Rate      : 10.00 Mbps
@@ -425,8 +479,17 @@ There you can see all the interfaces are working, *except* the
 `TCPInterface`. You should be able to see the reason in the  `rnsd`
 output, for example in our case:
 
-    [2026-06-04 22:17:20] [Error]    Initial connection for TCPInterface[RNS Testnet BetweenTheBorders/reticulum.betweentheborders.com:4242] could not be established: timed out
+    [2026-06-05 10:15:03] [Error]    Initial connection for TCPInterface[Example Testnet/reticulum.examplecom:4242] could not be established: [Errno -2] Name or service not known
 
+In this case, you'll need to pick a different TCP interface. We
+purposefully do not provide a default here because we do not want to
+overwhelm a public interface.
+
+!!! tip
+
+    You *could* run such an interface for the local mesh! If you run
+    Linux, you would probably want to start by configuring a public
+    [backbone interface](https://markqvist.github.io/Reticulum/manual/interfaces.html#backbone-interface).
 
 You can monitor the interfaces with:
 
@@ -440,22 +503,18 @@ To *send* adverts is a little more complicated, because *now* you need
 to pick one of the clients listed in the first section.
 
 The trick here is that adverts, like in Meshcore and Meshtastic, are
-bound to an identity, but contrarily to Meshcore and Meshtastic, the
-identity is not tied to keys on the device (in Meshcore) or the
-hardware ("MAC") address of the device (in Meshtastic).
+bound to an identity, but contrarily to those two-site, the identity is not
+tied to keys on the device (in Meshcore) or the hardware ("MAC")
+address of the device (in Meshtastic).
 
 The keys reside on the computer or mobile operating the interface! So
 they depend on the application.
 
 !!! tip
 
-    You *can* technically send an announce by generating an identity:
+    You *can* technically send an announce by using the transport identity:
 
-        rnid -g .reticulum/storage/identities/anarcat
-
-    Then you can announce this identity with:
-
-        rnid -i .reticulum/storage/identities/anarcat -a 
+        rnid -i .reticulum/storage/transport_identity -a
 
     But we do not recommend doing this outside of the lab.
 
@@ -463,11 +522,12 @@ Once you have peers, you can see the path to them with `rnpath`, which
 will show you how any hops, through which peer and which interface,
 reaches a given destination.
 
-
 ```
 $ rnpath 64607119a6bfd90f3ca6d4332968b35c
 Path found, destination <64607119a6bfd90f3ca6d4332968b35c> is 1 hop away via <48b2dbadf91f9b7a181b1ff0a7017b72> on RNodeInterface[RNode LoRa Interface]
 ```
+
+So let's get talking!
 
 ## LXMF-CLI
 
@@ -507,22 +567,21 @@ usage. A few useful commands:
 - `s` or `send`: send a message to a user
 - `reply` or `re`: reply to a user that just came in
 
-
 ## Transport nodes and microReticulum
 
 All of the above is about "clients", in the sense that most of the
 software is geared towards new users, and rightly so.
 
-But nowhere did we talk about routing, which is a core tenant of mesh
+But we did not talk much about routing, which is a core tenant of mesh
 networks of course. That's because there is a separate feature to
-enable on a RNode to enable that, it's called "transport".
+enable on a RNode to enable that, it's called a "transport".
 
-But because the devices we have setup, so far, all require a client
-like a computer, it makes this all inconvenient to host on your
-rooftop.
+Because the devices we have setup, so far, all require a client like a
+computer, it makes this all inconvenient to host on your rooftop.
 
 Thankfully people figured out a solution to this problem and starting
-expanding the RNode shareware to support routing, called an RTNode.
+expanding RNode to support routing, into something called an RTNode,
+for "Reticulum Transport Node".
 
 Cleeyv wrote an [excellent guide on how to setup the RTNode
 firmware](https://rns.recipes/forum/build-guides/how-to-install-and-test-the-rtnode-firmware), which we'll defer to.
