@@ -1,4 +1,4 @@
-personal_ws-1.1 en 192 
+personal_ws-1.1 en 195 
 AEAD
 AES
 APRS
@@ -62,6 +62,7 @@ LEDs
 LTO
 LWN
 LXMF
+LXST
 LiPo
 Liam
 Libre
@@ -112,6 +113,7 @@ RISQ
 RL
 RNS
 RNode
+RRC
 RSS
 RTNode
 Ratdeck
@@ -138,6 +140,7 @@ TUI
 Telus
 TikTok
 TimescaleDB
+UDP
 UI
 USD
 UUID

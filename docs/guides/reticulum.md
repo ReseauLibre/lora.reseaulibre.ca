@@ -71,12 +71,12 @@ Reticulum, as it can get confusing quickly.
   reference implementation of those called RNS
 - **[RNS](https://github.com/markqvist/Reticulum/)**, "Reticulum Network Stack": the reference Reticulum
   implementation
-- **[Interface](https://markqvist.github.io/Reticulum/manual/interfaces.html)**: a specific backend for Reticulum, for example LoRa, WiFi,
+- **[Interface](https://markqvist.github.io/Reticulum/manual/interfaces.html)**: a specific back end for Reticulum, for example LoRa, WiFi,
   TCP, Bluetooth[^1], ham radio
 - **[Transport](https://markqvist.github.io/Reticulum/manual/understanding.html#reticulum-transport)**: a node that relays traffic for other. A "transport node",
   for example, is roughly equivalent to a "repeater" in Meshcore. For
   LoRa, typically comprises an embedded device (e.g. a Heltec) running
-  RNode (below) and a computer (e.g. a Raspberry Pi) runnin RNS or
+  RNode (below) and a computer (e.g. a Raspberry Pi) running RNS or
   some other application. Without a "transport node", devices can
   still talk to each other point-to-point, but they do not "mesh".
 - **[RNode](https://unsigned.io/rnode/)**: the stock Reticulum firmware that allows you to talk with
@@ -85,7 +85,7 @@ Reticulum, as it can get confusing quickly.
   that it does not work standalone and requires software on a computer
   attached to it to send receive messages or route traffic. Think of
   it like an old-school "modem".
-- **[microReticulum](https://github.com/attermann/microReticulum)**: a reimplementation of the Reticulum stack designed
+- **[microReticulum](https://github.com/attermann/microReticulum)**: a re-implementation of the Reticulum stack designed
   to fit in embedded devices (e.g. a Heltec). Essentially a RNode that
   can act also as a transport node.
 - **[announcement](https://markqvist.github.io/Reticulum/manual/understanding.html#public-key-announcements)**: a message sent over an interface that is used to
@@ -104,7 +104,7 @@ Reticulum, as it can get confusing quickly.
   applications like voice calls, two-way radio systems, media
   streaming and so on. When we say a Reticulum application supports
   voice calls, it is implemented with LXST.
-- **[RRC](https://rrc.kc1awv.net/)**: Reticulum Relay Chat. Reimplementation of IRC over Reticulum.
+- **[RRC](https://rrc.kc1awv.net/)**: Reticulum Relay Chat. Re-implementation of IRC over Reticulum.
 
 [^1]: note that here, Bluetooth is used for communicating between
   devices, in a mesh network, not just for an application to control a
@@ -143,7 +143,7 @@ run it with:
 You can also [configure it as a systemd service](https://markqvist.github.io/Reticulum/manual/using.html#using-systemd).
 
 On first start, `rnsd` will create a configuration file and a
-public/private keypair for your identity:
+public/private key pair for your identity:
 
 ```
 anarcat@dorothea:~$ rnsd -v
@@ -372,7 +372,7 @@ Then we add the interface to the RNS configuration file in `~/.reticulum/config`
    #flood_scope =                 # Limit propagation to repeaters allowing this scope (requires firmware >1.14)
 ```
 
-Note that we use a hardcoded `channel_secret` above, which upstream
+Note that we use a hard coded `channel_secret` above, which upstream
 [strongly warns against](https://github.com/slack-t/RNS_Over_MeshCore#channel-secret). We consider those concerns to be
 unfounded since Reticulum encrypts traffic before injecting into the
 transport. Instead, we favor instead broad compatibility across
@@ -554,7 +554,7 @@ EOF
 chmod +x ~/.venvs/reticulum/bin/lxmf-cli
 ```
 
-The wrapper script is necessary because [lxmf-cli does not write files
+The wrapper script is necessary because [LXMF-CLI does not write files
 in the right place](https://github.com/fr33n0w/lxmf-cli/issues/5).
 
 Then you can start the client with:
