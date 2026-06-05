@@ -61,6 +61,56 @@ applications, but consider them too hard to use for new users:
 
 Instead, we're covering the basic building block of Reticulum, RNS.
 
+## Glossary
+
+Before we go any further, let's go over a few basic concepts in
+Reticulum, as it can get confusing quickly.
+
+- **[Reticulum](https://reticulum.community/)**: a set of transport (e.g. radio) protocols, routing
+  (e.g. mesh) and application (e.g. LXMF) protocols, but also a
+  reference implementation of those called RNS
+- **[RNS](https://github.com/markqvist/Reticulum/)**, "Reticulum Network Stack": the reference Reticulum
+  implementation
+- **[Interface](https://markqvist.github.io/Reticulum/manual/interfaces.html)**: a specific backend for Reticulum, for example LoRa, WiFi,
+  TCP, Bluetooth[^1], ham radio
+- **[Transport](https://markqvist.github.io/Reticulum/manual/understanding.html#reticulum-transport)**: a node that relays traffic for other. A "transport node",
+  for example, is roughly equivalent to a "repeater" in Meshcore. For
+  LoRa, typically comprises an embedded device (e.g. a Heltec) running
+  RNode (below) and a computer (e.g. a Raspberry Pi) runnin RNS or
+  some other application. Without a "transport node", devices can
+  still talk to each other point-to-point, but they do not "mesh".
+- **[RNode](https://unsigned.io/rnode/)**: the stock Reticulum firmware that allows you to talk with
+  other peers over LoRa, and that you flash on embedded devices
+  (e.g. a Heltec). Different than Meshcore or Meshtastic firmware in
+  that it does not work standalone and requires software on a computer
+  attached to it to send receive messages or route traffic. Think of
+  it like an old-school "modem".
+- **[microReticulum](https://github.com/attermann/microReticulum)**: a reimplementation of the Reticulum stack designed
+  to fit in embedded devices (e.g. a Heltec). Essentially a RNode that
+  can act also as a transport node.
+- **[announcement](https://markqvist.github.io/Reticulum/manual/understanding.html#public-key-announcements)**: a message sent over an interface that is used to
+  establish routing with transport nodes. roughly equivalent to an
+  "advert" in Meshcore.
+- **[identity](https://markqvist.github.io/Reticulum/manual/understanding.html#understanding-identities)**: an address in the Reticulum routing system. Roughly
+  equivalent to the "public key" in Meshcore or the MAC address in
+  Meshtastic, except that the full identity is used for routing
+  (whereas only a few bytes are used in Meshcore).
+- [**LXMF**](https://github.com/markqvist/lxmf): Lightweight Extensible Message Format. The reference chat
+  implementation built on top of Reticulum. Does not support groups,
+  only point to point messaging. Think of it like Signal if Reticulum
+  is TCP/IP. When we say a Reticulum application supports chat, it is
+  implemented with LXMF.
+- **[LXST](https://github.com/markqvist/lxst)**: Lightweight Extensible Transport. Streaming system enabling
+  applications like voice calls, two-way radio systems, media
+  streaming and so on. When we say a Reticulum application supports
+  voice calls, it is implemented with LXST.
+- **[RRC](https://rrc.kc1awv.net/)**: Reticulum Relay Chat. Reimplementation of IRC over Reticulum.
+
+[^1]: note that here, Bluetooth is used for communicating between
+  devices, in a mesh network, not just for an application to control a
+  device like we do in Meshcore and Meshtastic, which do *not* support
+  running a mesh over Bluetooth like Reticulum does.
+
 ## RNS
 
 RNS is the [base Reticulum software](https://github.com/markqvist/Reticulum/), still developed by the
