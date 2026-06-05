@@ -86,9 +86,9 @@ Reticulum, as it can get confusing quickly.
   that it does not work standalone and requires software on a computer
   attached to it to send receive messages or route traffic. Think of
   it like an old-school "modem".
-- **[microReticulum](https://github.com/attermann/microReticulum)**: a re-implementation of the Reticulum stack designed
+- **[microReticulum](https://github.com/attermann/microReticulum_Firmware)**: a re-implementation of the Reticulum stack designed
   to fit in embedded devices (e.g. a Heltec). Essentially a RNode that
-  can act also as a transport node.
+  can act also as a transport node.[^2]
 - **[announcement](https://markqvist.github.io/Reticulum/manual/understanding.html#public-key-announcements)**: a message sent over an interface that is used to
   establish routing with transport nodes. roughly equivalent to an
   "advert" in Meshcore.
@@ -112,3 +112,8 @@ Reticulum, as it can get confusing quickly.
   device like we do in Meshcore and Meshtastic, which do *not* support
   running a mesh over Bluetooth like Reticulum does.
 
+[^2]: [microReticulum](https://github.com/attermann/microReticulum) is technically just a C++ reimplementation
+    of RNS and not useful on its own. It is combined into the
+    [`microReticulum_Firmware`](https://github.com/attermann/microReticulum_Firmware) project which is a fork of the
+    [reference `RNode_Firmware`](https://github.com/markqvist/RNode_Firmware), which is much more useful and why
+    we link to that instead of microReticulum directly.
