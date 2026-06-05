@@ -564,17 +564,20 @@ retention to the user.
 We're using the defaults!
 
 - MeshCore: "US/Canada" preset, which is 910.525 MHz, 62.5 kHz, SF7, CR5
-- Meshtastic: "US" preset, LongFast, which is 906.875 MHz, 250kHz, SF11, CR5
+- Meshtastic: "US" preset, LongFast, which is 906.875 MHz, 250kHz, SF 11, CR5
+- Reticulum: "Ottawa" preset, 914.875 MHz, 125 kHz, SF7, CR7
 
-For Reticulum, there doesn't seem to be an agreed upon frequency, but
-you should probably avoid the above two since you'll get interference
-from the other Mesh devices. With the above frequencies and bandwidth
-in mind, for example, you should avoid the ranges:
+For Reticulum, there is less standardization on those settings, so
+people often pick arbitrary numbers. Obviously, avoid the frequencies
+used by MeshCore and Meshtastic. The frequencies above ar note
+overlapping and look something like:
 
 - MeshCore: 910.49375 to 910.55625 MHz (910.525 MHz with 62.5 kHz
 bandwidth or ± 31.25 kHz)
 - Meshtastic: 906.750 too 907.0 MHz (906.875 MHz with a 250 kHz
   bandwidth or ± 125 kHz)
+- Reticulum: 914.8125 to 914.9375 (914.875 MHz with a 125 kHz
+  bandwidth or ± 62.5 kHz)
 
 You can use [this tool from the Reticulum community](https://unsigned.io/understanding-lora-parameters/) as a good
 introduction to the LoRa parameters.
