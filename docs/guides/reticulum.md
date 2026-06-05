@@ -4,7 +4,8 @@
 secure, flexible, powerful, but also less easy to use than Meshcore
 and Meshtastic.
 
-This page aims at providing a guide to get started with Reticulum.
+This page aims at providing a guide to get started with Reticulum. It
+is based off the [official manual](https://markqvist.github.io/Reticulum/manual/gettingstartedfast.html) and first hand experience.
 
 !!! example "Advanced users only"
 
