@@ -33,23 +33,23 @@ at dealing with exotic software or the command line, you should try
 one of those apps first:
 
 - [Columba](https://columba.network/): chat, voice calls, Android
-- [MeshChatX](https://meshchatx.com/): chat, group chat, voice calls, vibe-coded,
+- [`MeshChatX`](https://meshchatx.com/): chat, group chat, voice calls, vibe-coded,
   integrates (poorly) with RNS, Linux
-- [retichat](https://newendian.com/retichat): Mac ([App store](https://apps.apple.com/us/app/retichat/id6762225314))
-- [Ratspeak](https://ratspeak.org/): chat, voice calls, games, desktop, mobile and
+- [`retichat`](https://newendian.com/retichat): Mac ([App store](https://apps.apple.com/us/app/retichat/id6762225314))
+- [`Ratspeak`](https://ratspeak.org/): chat, voice calls, games, desktop, mobile and
   embedded app, Mac, Windows, Linux, iOS, Android, T-Deck Plus,
-  Cardputer, standalone rewrite in Rust
-- [lxmf-cli](https://github.com/fr33n0w/lxmf-cli): chat, Linux, Windows, command-line interface
+  [`Cardputer`](https://shop.m5stack.com/products/m5stack-cardputer-adv-version-esp32-s3), standalone rewrite in Rust
+- [LXMF-CLI](https://github.com/fr33n0w/lxmf-cli): chat, Linux, Windows, command-line interface
 
-We (unfortunately) do not cover onboarding with most of those
+We (unfortunately) do not cover on boarding with most of those
 applications for now.
 
 We also acknowledge the hard work done to create those other
 applications, but consider them too hard to use for new users:
 
-- [Sideband](https://github.com/markqvist/sideband): flagship GUI implementation of a chat client,
+- [`Sideband`](https://github.com/markqvist/sideband): flagship GUI implementation of a chat client,
   supports Android, Linux, MacOS and Windows
-- [nomadnet](https://github.com/markqvist/nomadnet): chat client, web-like browser, text user interface
+- [`nomadnet`](https://github.com/markqvist/nomadnet): chat client, web-like browser, text user interface
   (TUI), Linux
 
 Instead, we're covering the basic building block of Reticulum, RNS.
@@ -110,8 +110,8 @@ not very useful on its own. So let's look at other interfaces.
 
 If you do not have local partner to play with, add a couple interfaces
 (perhaps those that look the closest to you) from the growing list of
-public entry points ([reticulum.community](https://reticulum.community/connect.html),
-[directory.rns.recipes](https://directory.rns.recipes/), [rmap.world](https://rmap.world/). This one, for example, is
+public entry points ([`reticulum.community`](https://reticulum.community/connect.html),
+[`directory.rns.recipes`](https://directory.rns.recipes/), [`rmap.world`](https://rmap.world/). This one, for example, is
 hosted on the US west coast:
 
     [[RNS Testnet BetweenTheBorders]]
@@ -178,7 +178,7 @@ settings, pick those:
 
 - frequency: 914.875 MHz
 - bandwidth: 125 kHz
-- power: 22 dBm
+- power: 22 dB
 - spread factor: SF7
 - coding rate: 4:7
 
@@ -365,7 +365,7 @@ Here's an example output with *all* the above interfaces configured:
 
 
 There you can see all the interfaces are working, *except* the
-TCPInterface. You should be able to see the reason in the  `rnsd`
+`TCPInterface`. You should be able to see the reason in the  `rnsd`
 output, for example in our case:
 
     [2026-06-04 22:17:20] [Error]    Initial connection for TCPInterface[RNS Testnet BetweenTheBorders/reticulum.betweentheborders.com:4242] could not be established: timed out
@@ -451,7 +451,7 @@ usage. A few useful commands:
 - `reply` or `re`: reply to a user that just came in
 
 
-## Transport nodes and Microreticulum
+## Transport nodes and microReticulum
 
 All of the above is about "clients", in the sense that most of the
 software is geared towards new users, and rightly so.

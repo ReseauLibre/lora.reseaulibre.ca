@@ -1,4 +1,4 @@
-personal_ws-1.1 en 179 
+personal_ws-1.1 en 192 
 AEAD
 AES
 APRS
@@ -14,10 +14,12 @@ Anarcho
 Beaupré
 Brillant
 Brossard
+CLI
 CNAME
 Canadaverse
 ChaChaPoly
 Cinny
+Cleeyv
 Codeberg
 Columba
 Cottle
@@ -59,16 +61,19 @@ Koumbit
 LEDs
 LTO
 LWN
+LXMF
 LiPo
 Liam
 Libre
 Lilygo
+Livekit
 LoRa
 LongFast
 Lychee
 MQTT
 MTU
 MUI
+MacOS
 Makerfocus
 Manu
 Marieville
@@ -105,7 +110,10 @@ RAK
 README
 RISQ
 RL
+RNS
+RNode
 RSS
+RTNode
 Ratdeck
 Reddit
 Riseup
@@ -124,16 +132,20 @@ ShareAlike
 Snowden
 Structurelessness
 Sud
+TCP
 TLS
+TUI
 Telus
 TikTok
 TimescaleDB
 UI
 USD
+UUID
 Université
 Veshra
 Villeray
 WIP
+WebRTC
 Webhooks
 Whatsapp
 WisBlock
@@ -173,6 +185,7 @@ reachability
 reflashtic
 socio
 solarpunk
+systemd
 traceroute
 tropospheric
 webhook

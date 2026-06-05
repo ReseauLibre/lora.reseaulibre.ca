@@ -569,7 +569,7 @@ We're using the defaults!
 
 For Reticulum, there is less standardization on those settings, so
 people often pick arbitrary numbers. Obviously, avoid the frequencies
-used by MeshCore and Meshtastic. The frequencies above ar note
+used by MeshCore and Meshtastic. The frequencies above are not
 overlapping and look something like:
 
 - MeshCore: 910.49375 to 910.55625 MHz (910.525 MHz with 62.5 kHz

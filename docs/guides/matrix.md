@@ -92,7 +92,7 @@ implementation:
   <https://meet.element.io/> (but that can be modified for other Jitsi
   servers)
 - native, or "[Element call](https://github.com/element-hq/element-call/)", which is built on top of
-  [Livekit](https://livekit.com/), a WebRTC framework that is slightly easier to deploy
+  [`Livekit`](https://livekit.com/), a WebRTC framework that is slightly easier to deploy
   than Jitsi, and federates better (each server can run its own
   Livekit, whereas Element effectively runs all the legacy calls)
 
