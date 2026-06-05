@@ -601,6 +601,8 @@
       
         
       
+        
+      
     
     
     
@@ -662,6 +664,34 @@
     
   
     Meshcore
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reticulum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reticulum
   
 
     
@@ -816,6 +846,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#videoconferencing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Videoconferencing
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1496,6 +1537,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#videoconferencing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Videoconferencing
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1604,6 +1656,43 @@ window, or enter the <code>#reseaulibre:matrix.org</code> URL in the "join" (in
 element it's "Search") interface of your client.</p>
 <p>This is the main room, but there are other rooms in the space,
 <a href="https://matrix.to/#/#reseaulibre-space:matrix.org"><code>#reseaulibre-space:matrix.org</code> Matrix room</a>.</p>
+<h2 id="videoconferencing">Videoconferencing<a class="headerlink" href="#videoconferencing" title="Permanent link">&para;</a></h2>
+<p>Matrix supports audio and video calls. There are two different
+implementation:</p>
+<ul>
+<li>legacy, built on top of the Jitsi server at
+  <a href="https://meet.element.io/">https://meet.element.io/</a> (but that can be modified for other Jitsi
+  servers)</li>
+<li>native, or "<a href="https://github.com/element-hq/element-call/">Element call</a>", which is built on top of
+  <a href="https://livekit.com/">Livekit</a>, a WebRTC framework that is slightly easier to deploy
+  than Jitsi, and federates better (each server can run its own
+  Livekit, whereas Element effectively runs all the legacy calls)</li>
+</ul>
+<p>We're currently experimenting with Legacy calls, as we want to allow
+outside people to participate in our calls.</p>
+<p>Out of the box, the way legacy calls work is they build a unique
+(think <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</a>) identifier for the room, and embed this as a
+widget. You can find that room identifier by typing this in a Element
+chat window:</p>
+<div class="highlight"><pre><span></span><code>/devtools
+</code></pre></div>
+<p>Then select "Active widgets", where you'll see a button like:</p>
+<div class="highlight"><pre><span></span><code>https://scalar.vector.im/api/widgets/jitsi.html
+</code></pre></div>
+<p>Select that, and look for the <code>conferenceId</code>, for example:</p>
+<div class="highlight"><pre><span></span><code>&quot;conferenceId&quot;: &quot;8be4df61-93ca-11d2-aa0d-00e098032b8c&quot;,
+</code></pre></div>
+<p>Then you can tell people to join that room at:</p>
+<p><a href="https://meet.element.io/$conferenceId">https://meet.element.io/$conferenceId</a></p>
+<p>For example, in the case above:</p>
+<p><a href="https://meet.element.io/8be4df61-93ca-11d2-aa0d-00e098032b8c">https://meet.element.io/8be4df61-93ca-11d2-aa0d-00e098032b8c</a></p>
+<p>The widget should also be visible in <code>Explore room state</code> then
+<code>im.vector.modular.widgets</code>.</p>
+<p>You can also <em>change</em> that widget to point to an <em>existing</em> Jitsi room
+that you control better, for example a <a href="https://moderated.jitsi.net/">moderated meeting</a>. In the
+first example, change the <code>domain</code> to <code>meet.jit.si</code> and the
+<code>conferenceId</code> to the "guest" link, then click "Send", which will
+update the room to point to the new widget.</p>
 
 
 
@@ -1626,7 +1715,7 @@ element it's "Search") interface of your client.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="April 24, 2026 17:36:45 UTC">2026-04-24 17:36:45</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 5, 2026 04:31:17 UTC">2026-06-05 04:31:17</span>
   </span>
 
     

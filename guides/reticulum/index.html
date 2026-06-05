@@ -12,13 +12,13 @@
         <meta name="author" content="Anarcat and others">
       
       
-        <link rel="canonical" href="https://lora.reseaulibre.ca/references/net/">
+        <link rel="canonical" href="https://lora.reseaulibre.ca/guides/reticulum/">
       
       
-        <link rel="prev" href="../neighbours/">
+        <link rel="prev" href="../meshcore/">
       
       
-        <link rel="next" href="../other/">
+        <link rel="next" href="../meshtastic/">
       
       
         
@@ -36,7 +36,7 @@
     
     
       
-        <title>Weekly net procedures - Mesh Montréal</title>
+        <title>Reticulum - Mesh Montréal</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#weekly-net-procedures" class="md-skip">
+        <a href="#getting-starting-with-reticulum" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Weekly net procedures
+              Reticulum
             
           </span>
         </div>
@@ -277,11 +277,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../guides/meshcore/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../meshcore/" class="md-tabs__link">
           
   
   
@@ -299,13 +301,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../references/" class="md-tabs__link">
           
   
   
@@ -554,7 +554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guides/faq/" class="md-nav__link">
+      <a href="../faq/" class="md-nav__link">
         
   
   
@@ -586,8 +586,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -605,19 +607,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -635,7 +638,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -653,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guides/meshcore/" class="md-nav__link">
+      <a href="../meshcore/" class="md-nav__link">
         
   
   
@@ -678,10 +681,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../guides/reticulum/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reticulum
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -697,6 +727,148 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#picking-the-right-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Picking the right tool
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RNS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RNS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation-and-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation and configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interfaces
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interfaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tcp-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TCP interfaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rnode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RNode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meshcore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Meshcore
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-rns-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic RNS tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lxmf-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LXMF-CLI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transport-nodes-and-microreticulum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transport nodes and Microreticulum
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -709,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guides/meshtastic/" class="md-nav__link">
+      <a href="../meshtastic/" class="md-nav__link">
         
   
   
@@ -737,7 +909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guides/matrix/" class="md-nav__link">
+      <a href="../matrix/" class="md-nav__link">
         
   
   
@@ -765,7 +937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guides/faq/" class="md-nav__link">
+      <a href="../faq/" class="md-nav__link">
         
   
   
@@ -797,8 +969,6 @@
       
   
   
-    
-  
   
   
     
@@ -824,21 +994,20 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../references/" class="md-nav__link ">
               
   
   
@@ -856,13 +1025,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -911,7 +1080,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../hardware/" class="md-nav__link ">
+            <a href="../../references/hardware/" class="md-nav__link ">
               
   
   
@@ -955,7 +1124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/antennas/" class="md-nav__link">
+      <a href="../../references/hardware/antennas/" class="md-nav__link">
         
   
   
@@ -983,7 +1152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/batteries/" class="md-nav__link">
+      <a href="../../references/hardware/batteries/" class="md-nav__link">
         
   
   
@@ -1011,7 +1180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/power/" class="md-nav__link">
+      <a href="../../references/hardware/power/" class="md-nav__link">
         
   
   
@@ -1076,7 +1245,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../software/" class="md-nav__link ">
+            <a href="../../references/software/" class="md-nav__link ">
               
   
   
@@ -1120,7 +1289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/bots/" class="md-nav__link">
+      <a href="../../references/software/bots/" class="md-nav__link">
         
   
   
@@ -1148,7 +1317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../maps/" class="md-nav__link">
+      <a href="../../references/maps/" class="md-nav__link">
         
   
   
@@ -1212,7 +1381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../neighbours/" class="md-nav__link">
+      <a href="../../references/neighbours/" class="md-nav__link">
         
   
   
@@ -1237,37 +1406,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Weekly net procedures
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../references/net/" class="md-nav__link">
         
   
   
@@ -1283,109 +1425,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#net-control-guide" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Net Control Guide
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#net-control-log" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Net control log
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Net control log">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#2026-05-27" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2026-05-27
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2026-05-20" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2026-05-20
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2026-05-13" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2026-05-13
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2026-04-15" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2026-04-15
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2026-03-25" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2026-03-25
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1398,7 +1437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../other/" class="md-nav__link">
+      <a href="../../references/other/" class="md-nav__link">
         
   
   
@@ -1510,10 +1549,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#net-control-guide" class="md-nav__link">
+  <a href="#picking-the-right-tool" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Net Control Guide
+        Picking the right tool
       
     </span>
   </a>
@@ -1521,22 +1560,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#net-control-log" class="md-nav__link">
+  <a href="#rns" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Net control log
+        RNS
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Net control log">
+    <nav class="md-nav" aria-label="RNS">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#2026-05-27" class="md-nav__link">
+  <a href="#installation-and-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2026-05-27
+        Installation and configuration
       
     </span>
   </a>
@@ -1544,10 +1583,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2026-05-20" class="md-nav__link">
+  <a href="#interfaces" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2026-05-20
+        Interfaces
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interfaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tcp-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TCP interfaces
       
     </span>
   </a>
@@ -1555,10 +1606,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2026-05-13" class="md-nav__link">
+  <a href="#rnode" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2026-05-13
+        RNode
       
     </span>
   </a>
@@ -1566,21 +1617,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2026-04-15" class="md-nav__link">
+  <a href="#meshcore" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2026-04-15
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2026-03-25" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2026-03-25
+        Meshcore
       
     </span>
   </a>
@@ -1589,6 +1629,44 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-rns-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic RNS tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lxmf-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LXMF-CLI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transport-nodes-and-microreticulum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transport nodes and Microreticulum
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1609,7 +1687,7 @@
 
 
   
-    <a href="https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/references/net.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/guides/reticulum.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1617,137 +1695,391 @@
   
 
 
-<h1 id="weekly-net-procedures">Weekly net procedures<a class="headerlink" href="#weekly-net-procedures" title="Permanent link">&para;</a></h1>
-<p>Some Wednesdays at 21:00, we have try to hold a weekly "net" on the
-Public channel. We also touch base on our <a href="../../contact/">chat channel</a>.</p>
+<h1 id="getting-starting-with-reticulum">Getting starting with Reticulum<a class="headerlink" href="#getting-starting-with-reticulum" title="Permanent link">&para;</a></h1>
+<p><a href="https://reticulum.community/">Reticulum</a> is an advanced mesh networking protocol that is more
+secure, flexible, powerful, but also less easy to use than Meshcore
+and Meshtastic.</p>
+<p>This page aims at providing a guide to get started with Reticulum.</p>
+<div class="admonition example">
+<p class="admonition-title">Advanced users only</p>
+<p>This is an <strong>advanced</strong> guide and assumes more prior knowledge
+than our other guides normally do. Reticulum is a powerful, but
+much more complex stack than Meshcore or Meshtastic, so this guide
+is harder to follow.</p>
+<p>It's also incomplete. It is represents notes of our successes on
+various aspects of our research and development on Reticulum.</p>
+<p>Most people doing mesh networking in Montreal are currently on
+Meshcore, so you should probably see our <a href="../meshcore/">Getting started with
+Meshcore</a> guide instead and <a href="../faq/#why-not-reticulum">Why not
+Reticulum?</a>.</p>
+</div>
+<h2 id="picking-the-right-tool">Picking the right tool<a class="headerlink" href="#picking-the-right-tool" title="Permanent link">&para;</a></h2>
+<p>There are various ways to get started with Reticulum. Contrarily to
+Meshcore and Meshtastic, Reticulum supports multiple physical medium
+including LoRa, of course, but also HF radios, Bluetooth, or
+TCP/IP. We have even ran Reticulum over Meshcore and Meshtastic!</p>
+<p>If you're just getting started but have limited patience or capacity
+at dealing with exotic software or the command line, you should try
+one of those apps first:</p>
+<ul>
+<li><a href="https://columba.network/">Columba</a>: chat, voice calls, Android</li>
+<li><a href="https://meshchatx.com/">MeshChatX</a>: chat, group chat, voice calls, vibe-coded,
+  integrates (poorly) with RNS, Linux</li>
+<li><a href="https://newendian.com/retichat">retichat</a>: Mac (<a href="https://apps.apple.com/us/app/retichat/id6762225314">App store</a>)</li>
+<li><a href="https://ratspeak.org/">Ratspeak</a>: chat, voice calls, games, desktop, mobile and
+  embedded app, Mac, Windows, Linux, iOS, Android, T-Deck Plus,
+  Cardputer, standalone rewrite in Rust</li>
+<li><a href="https://github.com/fr33n0w/lxmf-cli">lxmf-cli</a>: chat, Linux, Windows, command-line interface</li>
+</ul>
+<p>We (unfortunately) do not cover onboarding with most of those
+applications for now.</p>
+<p>We also acknowledge the hard work done to create those other
+applications, but consider them too hard to use for new users:</p>
+<ul>
+<li><a href="https://github.com/markqvist/sideband">Sideband</a>: flagship GUI implementation of a chat client,
+  supports Android, Linux, MacOS and Windows</li>
+<li><a href="https://github.com/markqvist/nomadnet">nomadnet</a>: chat client, web-like browser, text user interface
+  (TUI), Linux</li>
+</ul>
+<p>Instead, we're covering the basic building block of Reticulum, RNS.</p>
+<h2 id="rns">RNS<a class="headerlink" href="#rns" title="Permanent link">&para;</a></h2>
+<p>RNS is the <a href="https://github.com/markqvist/Reticulum/">base Reticulum software</a>, still developed by the
+original founder of the Reticulum project.</p>
+<p>Unfortunately, Reticulum now ships <a href="https://github.com/markqvist/Reticulum/discussions/781#discussioncomment-13209632">with a non-free license</a> which
+has <a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1101959">stalled the Debian packaging effort</a> but also lead to the
+proliferation of <a href="https://reticulum.miraheze.org/wiki/Implementations">other implementations</a>. </p>
+<p>RNS is nevertheless the reference implementation which is why we start
+there.</p>
+<h3 id="installation-and-configuration">Installation and configuration<a class="headerlink" href="#installation-and-configuration" title="Permanent link">&para;</a></h3>
+<p>Installing Reticulum is easy if you're familiar with the command line
+and Python:</p>
+<div class="highlight"><pre><span></span><code>python -m venv --system-site-packages .venvs/reticulum
+.venvs/reticulum/bin/pip install rns
+</code></pre></div>
+<p>The primary service you will run is called <code>rnsd</code>, and you can simply
+run it with:</p>
+<div class="highlight"><pre><span></span><code>rnsd -v
+</code></pre></div>
+<p>You can also <a href="https://markqvist.github.io/Reticulum/manual/using.html#using-systemd">configure it as a systemd service</a>.</p>
+<h3 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">&para;</a></h3>
+<p>It will generate a basic configuration, which will likely include a
+block like:</p>
+<div class="highlight"><pre><span></span><code>[interfaces]
+
+  [[Default Interface]]
+    type = AutoInterface
+    enabled = Yes
+</code></pre></div>
+<p>Reticulum is built on "<a href="https://markqvist.github.io/Reticulum/manual/interfaces.html">interfaces</a>", which represent each of the
+physical layers (LoRa, TCP/IP, Bluetooth, etc).</p>
+<p>The above configures the <a href="https://reticulum.network/manual/interfaces.html#auto-interface">Auto interface</a> which connects
+automatically to hosts discovered on the local network. On its own, it
+will not do much but it <em>will</em> allow you to experiment with Reticulum
+with peers on the local network. If you come to Mesh night, there's a
+good chance someone will be available to test this with you.</p>
+<p>But a local interface only goes so far as the local network, and is
+not very useful on its own. So let's look at other interfaces.</p>
+<h4 id="tcp-interfaces">TCP interfaces<a class="headerlink" href="#tcp-interfaces" title="Permanent link">&para;</a></h4>
+<p>If you do not have local partner to play with, add a couple interfaces
+(perhaps those that look the closest to you) from the growing list of
+public entry points (<a href="https://reticulum.community/connect.html">reticulum.community</a>,
+<a href="https://directory.rns.recipes/">directory.rns.recipes</a>, <a href="https://rmap.world/">rmap.world</a>. This one, for example, is
+hosted on the US west coast:</p>
+<div class="highlight"><pre><span></span><code>[[RNS Testnet BetweenTheBorders]]
+  type = TCPClientInterface
+  enabled = yes
+  target_host = reticulum.betweentheborders.com
+  target_port = 4242
+</code></pre></div>
+<p>This configuration will tell Reticulum to connect to the given host on
+the internet to route with other Reticulum users.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>A "<a href="https://en.wikipedia.org/wiki/Amateur_radio_net">net</a>" is a
-concept borrowed from amateur radio where multiple callers join on
-the same frequency and time to communicate and collaborate. It's
-like a meeting, with a moderator taking speaking turns.</p>
-<p>The point of hosting "nets" on the mesh is to give a known time
-window when people can be sure someone is listening on the network
-to see if they can be heard. We also use it to "stress-test" the
-mesh, to make sure contacts can still be made reliably, and
-welcome new people. </p>
-<p>Finally, it's a useful metric to keep track of the growth of the mesh.</p>
+<p>Yes, we know, this is kind of cheating: we're not really doing a
+local mesh in this case, and are routing over the Internet
+instead. But Reticulum is a mixed medium system: it considers the
+possibility of using the internet a <em>feature</em> and happily uses
+TCP/IP or LoRa. We show this example to allow you to test the
+system without having LoRa neighbours, which might not be available.</p>
 </div>
-<h2 id="net-control-guide">Net Control Guide<a class="headerlink" href="#net-control-guide" title="Permanent link">&para;</a></h2>
-<p>On each Wednesday at 21:00 local, send those two messages:</p>
-<div class="highlight"><pre><span></span><code>Bienvenue au Réseau Libre! Vous pouvez vous signaler avec: &quot;Allo, ici NOM à ENDROIT&quot; Je réponds à tous les messages reçus!
+<p>So yes, this is cheating. Let's try a "real" interface, LoRa, the same
+medium used by Meshtastic and Meshcore.</p>
+<h4 id="rnode">RNode<a class="headerlink" href="#rnode" title="Permanent link">&para;</a></h4>
+<p><a href="https://unsigned.io/rnode/">RNode</a> is a firmware that can be flashed on small LoRa radio
+transceivers that act as "modems" for the RNS software, allowing it to
+talk over much longer distances than the <code>AutoInterface</code> (which is
+restricted to the local network).</p>
+<p>This is where we're going into the real, physical world of building a
+fully autonomous, local mesh network, without the internet.</p>
+<p>But for this, you need a device. Many devices, but not all, from our
+<a href="../../references/hardware/">hardware reference</a> are supported by RNode. The <a href="https://github.com/markqvist/RNode_Firmware">RNode
+Firmware</a> originally supported only a few of those devices, but a
+<a href="https://github.com/liberatedsystems/RNode_Firmware_CE">community edition</a> came out with <a href="https://github.com/liberatedsystems/RNode_Firmware_CE#supported-products-and-boards">support for many more</a>.</p>
+<p>Thankfully, flashing those devices is rather easy. You can use <a href="https://liamcottle.github.io/rnode-flasher/">Liam
+Cottle's web-based flasher</a> (yes, him again). Note that if you're
+used to Meshtastic or Meshcore flashers, the Reticulum one is a little
+less intuitive: you first need to download the firmware, then select
+it after downloading it.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>If you are familiar with the command line, there is a program shipped
+with RNS called <code>rnodeconf</code> allows you to flash those devices with
+RNode in an interactive way, with:</p>
+<div class="highlight"><pre><span></span><code>rnodeconf --autoinstall
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>Welcome to Réseau Libre net! Every Wednesday, you can check-in with: &quot;Hello, this is NAME at LOCATION&quot; I will acknowledge all checkins
-</code></pre></div>
-<p>You can resend those messages a couple of times at, say, one to five
-minute intervals, as sometimes messages don't reach out immediately.</p>
-<p>Respond to every check-in that you receive and include their name and
-location:</p>
-<div class="highlight"><pre><span></span><code>Net Control in LOCATION received check-in by NAME.
-</code></pre></div>
-<p>It may feel redundant to include names in the messages, but this
-ensures all parties have the node name available. Node lists typically
-only remember the 100 most recent node names and this is easy to
-exceed in high mesh-density areas.</p>
-<p>At the end of the net, check out with:</p>
-<div class="highlight"><pre><span></span><code>Net Control checking out after N contacts.
-</code></pre></div>
-<p>And then send your results to the <a href="../../contact/">chat channel</a> (list of who was
-heard, their location, your location), ideally updating the <a href="#net-control-log">log below</a>.</p>
-<p>If no one else is doing it and you're there, you're it, you can call
-the net.</p>
-<p>While you're there, review the node count in the <a href="../../guides/faq/#how-many-nodes-in-the-network">How many nodes in
-the network?</a> FAQ.</p>
-<h2 id="net-control-log">Net control log<a class="headerlink" href="#net-control-log" title="Permanent link">&para;</a></h2>
-<p>We keep track of past nets here.</p>
-<h3 id="2026-05-27">2026-05-27<a class="headerlink" href="#2026-05-27" title="Permanent link">&para;</a></h3>
-<p>Largest net so far:</p>
-<table>
-<thead>
-<tr>
-<th>time</th>
-<th>call sign</th>
-<th>location</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>21:01</td>
-<td><code>K386</code></td>
-<td>Petite-Patrie</td>
-</tr>
-<tr>
-<td>21:01</td>
-<td><code>Arthur</code></td>
-<td>Villeray</td>
-</tr>
-<tr>
-<td>21:03</td>
-<td><code>LobbyCycliste</code></td>
-<td>Centre-Sud</td>
-</tr>
-<tr>
-<td>21:05</td>
-<td><code>1D19F8FD</code></td>
-<td>Mercier</td>
-</tr>
-<tr>
-<td>21:05</td>
-<td><code>Mad Jap</code></td>
-<td>Marieville</td>
-</tr>
-<tr>
-<td>21:12</td>
-<td><code>Guillaume</code></td>
-<td>Rosemont</td>
-</tr>
-<tr>
-<td>21:13</td>
-<td><code>SbMo</code></td>
-<td>Mile-end</td>
-</tr>
-</tbody>
-</table>
-<p>Operated from <code>anarcat3</code>, a WisMesh pocket companion operated from the
-Meshy app, and <code>anarcat1</code>, a T-Echo companion operated from the
-Meshcore Open app, connected to YUL-Little-Italy, a SenseCAP P1. The
-original hop counts published here were from the Meshcore open app
-which has a <a href="https://github.com/zjs81/meshcore-open/issues/367">bug displaying multi-byte
-messages</a>, and have
-been removed.</p>
-<p>Observed:</p>
+<p>It will walk you through a series of prompts to flash your device.</p>
+<p>At some point, it will ask you for the device model. If you're
+flashing a heltec it will tell you it is experimental, and you can
+ignore it.</p>
+</div>
+<p>It will ask you which region / band to use, make sure you pick the 915
+MHz band.</p>
+<p>Then at some point it will require you to configure the frequency
+settings, pick those:</p>
 <ul>
-<li>7 participants (above)</li>
-<li>3 non-participants sending text messages in Public or another #room</li>
-<li>54 repeaters</li>
-<li>17 companions</li>
-<li>4 rooms</li>
-<li><a href="https://map.meshcore.io/?zoom=7&amp;lat=45.7100&amp;lon=-72.6416">89 nodes in the official map</a></li>
-<li><a href="https://yul.meshmapper.net/leaderboard.php">66 repeaters in MeshMapper</a></li>
+<li>frequency: 914.875 MHz</li>
+<li>bandwidth: 125 kHz</li>
+<li>power: 22 dBm</li>
+<li>spread factor: SF7</li>
+<li>coding rate: 4:7</li>
 </ul>
-<p>This net broke essentially all previous records:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Those are inspired by the <a href="https://ottawamesh.ca/reticulum/reticulum-frequency-settings/#frequency-settings-for-reticulum">Ottawa settings</a>.</p>
+</div>
+<p>If you have flashed through the web interface, you will need to add
+the following interface to your <code>~/.reticulum/config</code> file:</p>
+<div class="highlight"><pre><span></span><code>[[RNode LoRa Interface]]
+  type = RNodeInterface
+  enabled = yes
+  port = /dev/ttyUSB1
+  frequency = 914875000
+  bandwidth = 125000
+  txpower = 22
+  spreadingfactor = 7
+  codingrate = 7
+</code></pre></div>
+<p>The <a href="https://markqvist.github.io/Reticulum/manual/interfaces.html#rnode-lora-interface">full RNode interface configuration</a> is worth a read as well.</p>
+<p>Restart <code>rsnd</code> and it should try to connect to your RNode device!</p>
+<h4 id="meshcore">Meshcore<a class="headerlink" href="#meshcore" title="Permanent link">&para;</a></h4>
+<p>Amazingly, because Reticulum can route over essentially anything, you
+can route Reticulum traffic over Meshcore meshes.</p>
+<p>In the May 2026 mesh night at Foulab, we have successfully routed
+Reticulum messages over a local LoRa link with two Meshcore companions
+connected over serial.</p>
+<p>We are using <a href="https://github.com/slack-t/RNS_Over_MeshCore">this fork of the <code>RNS_Over_MeshCore</code> interface</a>.</p>
+<p>To install it, we clone it and deploy the file in place.
+<div class="highlight"><pre><span></span><code>cd .reticulum/interfacse
+git clone https://github.com/slack-t/RNS_Over_MeshCore
+ln -s RNS_Over_MeshCore/Interface/MeshcoreInterface.py .
+</code></pre></div></p>
+<p>Then we add the interface to the RNS configuration file in <code>~/.reticulum/config</code>:</p>
+<div class="highlight"><pre><span></span><code>[[MeshCore]]
+   type = MeshcoreInterface
+   interface_enabled = true
+
+   # === Transport settings ===
+   #transport = ble           # Options: ble | serial | tcp
+   transport = serial
+   #port = /dev/ttyUSB0       # Serial port if transport = serial
+   #baudrate = 115200         # Serial baudrate
+   #host = 127.0.0.1          # TCP host if transport = tcp
+   #tcp_port = 4403           # TCP port if transport = tcp
+   #ble_name = MeshCore-Obdolbus  # BLE device name (optional, auto-scan if empty)
+
+   # === RNS channel settings ===
+   # IMPORTANT: Change channel_secret to a unique value! The default is published
+   # in the source code — anyone using it can read your traffic. Generate one with:
+   #   python3 -c &quot;import os; print(os.urandom(16).hex())&quot;
+   # Then set the SAME secret on ALL your RNS-over-MeshCore nodes.
+   # channel_name = RNSTunnel
+   # channel_secret = &lt;your-unique-16-byte-hex-secret&gt;
+   # channel_idx =                                        # Leave empty to auto-select, fallback = 39
+   channel_name = RNSTunnel
+   # this is #RNSTunnel
+   channel_secret = 04f6a140660d9836752cbbdb71bb601a
+
+   # === Fragmentation / reliability ===
+   #count_repeat = 1              # Number of full interleaved rounds to send all fragments
+   #fragment_mtu = 100            # Max payload bytes per fragment (test higher values for speed)
+   #fragment_delay = 3            # Starting delay between fragments (seconds), adapts automatically
+   #fragment_delay_min = 1        # Minimum adaptive delay (seconds)
+   #fragment_delay_max = 30       # Maximum adaptive delay (seconds)
+   #delay_step_down = 0.5         # Seconds subtracted from delay on each successful send
+   #delay_backoff_factor = 1.5    # Multiplier applied to delay on each failed send
+   #fragment_timeout = 180        # Timeout for incomplete fragment reassembly (seconds)
+   #bitrate = 2000                # Rate limiting in bytes/sec, 0 = unlimited
+   #opportunistic_sending = false # Send next fragment as soon as previous completes
+   #guard_delay = 0.3             # Minimum gap between sends in opportunistic mode (seconds)
+   #flood_scope =                 # Limit propagation to repeaters allowing this scope (requires firmware &gt;1.14)
+</code></pre></div>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p>Pay close attention to the <code>type</code> line above. In the upstream
+documentation, it says to use:</p>
+<div class="highlight"><pre><span></span><code>type = MeshCoreInterface
+</code></pre></div>
+<p>But the filename is <code>MeshcoreInterface.py</code>, which will make
+loading file. This is case sensitive! So either rename the file or
+change the type to:</p>
+<div class="highlight"><pre><span></span><code>type = MeshcoreInterface
+</code></pre></div>
+<p>The above instructions are correct and should work, but you will
+fail if you copy directly from upstream.</p>
+</div>
+<p>In the above configuration, we connect RNS to a Meshcore companion
+over "serial" (USB) and specify the given port. It <em>may</em> be
+<code>/dev/ttyACM0</code> as well on some devices. It might be possible to make
+this work with Bluetooth as well, but we found serial to be much
+easier.</p>
+<p>For this to work, you need to have a "companion" flashed with
+Meshcore. You can follow our <a href="../meshcore/#flash-the-firmware-on-the-device">Meshcore flashing guide</a>, just make
+sure you pick "serial" and not "Bluetooth".</p>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p>Some applications like MeshChatX will fail to load the <code>meshcore</code>
+library because it cannot be found. This is often related to the
+sandboxing some of those applications.</p>
+<p>One workaround is to install the Debian package instead.</p>
+<p>Or it's also possible to hijack the load path inside the interface
+itself.</p>
+<p>We have had success adding something similar to this to the top of
+the interface Python file:</p>
+<div class="highlight"><pre><span></span><code>import sys
+sys.path.insert(0, &quot;/usr/lib/python3/dist-packages/&quot;)
+sys.path.insert(0, &quot;/home/anarcat/.venvs/reticulum/lib/python3.13/site-packages/&quot;)
+</code></pre></div>
+</div>
+<p>If both endpoints are configured this way, they should be able to send
+an announce (see below), see each other, and exchange text messages
+and so on.</p>
+<h3 id="basic-rns-tools">Basic RNS tools<a class="headerlink" href="#basic-rns-tools" title="Permanent link">&para;</a></h3>
+<p>Once <code>rnsd</code> is running with an interface you can start testing if you
+can connect with anyone.</p>
+<p>The first thing you need to run is:</p>
+<div class="highlight"><pre><span></span><code>rnstatus
+</code></pre></div>
+<p>This will show you your interfaces and whether they are working.</p>
+<p>Here's an example output with <em>all</em> the above interfaces configured:</p>
+<div class="highlight"><pre><span></span><code>$ rnstatus
+
+ Shared Instance[rns/default]
+    Status    : Up
+    Serving   : 1 program
+    Rate      : 1.00 Gbps
+    Traffic   : ↑0 B        0 bps
+                ↓405 B      3.24 Kbps
+
+ AutoInterface[Default Interface]
+    Status    : Up
+    Mode      : Full
+    Rate      : 10.00 Mbps
+    Peers     : 0 reachable
+    Traffic   : ↑0 B        0 bps
+                ↓0 B        0 bps
+
+ TCPInterface[RNS Testnet BetweenTheBorders/reticulum.betweentheborders.com:4242]
+    Status    : Down
+    Mode      : Full
+    Rate      : 10.00 Mbps
+    Traffic   : ↑0 B        0 bps
+                ↓0 B        0 bps
+
+ RNodeInterface[RNode LoRa Interface]
+    Status    : Up
+    Mode      : Full
+    Rate      : 3.91 kbps
+    Noise Fl. : -99 dBm, no interference
+    CPU temp  : 62°C
+    Battery   : 96% (discharging)
+    Airtime   : 0.0% (15s), 0.0% (1h)
+    Ch. Load  : 0.0% (15s), 0.0% (1h)
+    Traffic   : ↑0 B        0 bps
+                ↓0 B        0 bps
+</code></pre></div>
+<p>There you can see all the interfaces are working, <em>except</em> the
+TCPInterface. You should be able to see the reason in the  <code>rnsd</code>
+output, for example in our case:</p>
+<div class="highlight"><pre><span></span><code>[2026-06-04 22:17:20] [Error]    Initial connection for TCPInterface[RNS Testnet BetweenTheBorders/reticulum.betweentheborders.com:4242] could not be established: timed out
+</code></pre></div>
+<p>You can monitor the interfaces with:</p>
+<div class="highlight"><pre><span></span><code>rnstatus -m
+</code></pre></div>
+<p>To see the adverts we have received:</p>
+<div class="highlight"><pre><span></span><code>rnpath -t
+</code></pre></div>
+<p>To <em>send</em> adverts is a little more complicated, because <em>now</em> you need
+to pick one of the clients listed in the first section.</p>
+<p>The trick here is that adverts, like in Meshcore and Meshtastic, are
+bound to an identity, but contrarily to Meshcore and Meshtastic, the
+identity is not tied to keys on the device (in Meshcore) or the
+hardware ("MAC") address of the device (in Meshtastic).</p>
+<p>The keys reside on the computer or mobile operating the interface! So
+they depend on the application.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You <em>can</em> technically send an announce by generating an identity:</p>
+<div class="highlight"><pre><span></span><code>rnid -g .reticulum/storage/identities/anarcat
+</code></pre></div>
+<p>Then you can announce this identity with:</p>
+<div class="highlight"><pre><span></span><code>rnid -i .reticulum/storage/identities/anarcat -a
+</code></pre></div>
+<p>But we do not recommend doing this outside of the lab.</p>
+</div>
+<p>Once you have peers, you can see the path to them with <code>rnpath</code>, which
+will show you how any hops, through which peer and which interface,
+reaches a given destination.</p>
+<div class="highlight"><pre><span></span><code>$ rnpath 64607119a6bfd90f3ca6d4332968b35c
+Path found, destination &lt;64607119a6bfd90f3ca6d4332968b35c&gt; is 1 hop away via &lt;48b2dbadf91f9b7a181b1ff0a7017b72&gt; on RNodeInterface[RNode LoRa Interface]
+</code></pre></div>
+<h2 id="lxmf-cli">LXMF-CLI<a class="headerlink" href="#lxmf-cli" title="Permanent link">&para;</a></h2>
+<p>Since a basic RNS setup like the above does not do much on its own, we
+will introduce you to a first basic chat application.</p>
+<p>If you are familiar with the command-line, <a href="https://github.com/fr33n0w/lxmf-cli">LXMF-CLI</a> is a nice and
+simple chat client. When starting, it will prompt you for your
+identity and some settings, then it will announce your identity on the
+network through <code>rnsd</code>.</p>
+<p>If other identities are found through announces, it will notify you
+and you will be able to add them as contacts. For example:</p>
+<div class="highlight"><pre><span></span><code>📡 New Announce: newfriend
+🔗 &lt;a18d35e7e283b3e95158c5412ac58b4c&gt;
+💡 Quick save: &#39;ap 1&#39; | Send: &#39;sp 1 &lt;msg&gt;&#39;
+&gt; ap 1
+✓ Contacts saved
+✓ Added contact: newfriend
+  Display name: My New Friend
+&gt; sp 1 found you!
+Sending to peer #1: My New Friend
+📤 Sending to: My New Friend...
+
+✅ Delivered to My New Friend (0.5s)
+</code></pre></div>
+<p>The interface is otherwise pretty intuitive, use <code>h</code> or <code>help</code> for
+usage. A few useful commands:</p>
 <ul>
-<li>distance (Marieville, 58.14km)</li>
-<li>participants (7)</li>
-<li>number of repeaters (54!), etc</li>
+<li><code>ann</code> or <code>announce</code>: announce your presence on the mesh, required
+  for others to message you, if you are new or changed place</li>
+<li><code>p</code> or <code>peers</code>: show the currently visible peers</li>
+<li><code>c</code> or <code>contacts</code>: show contact list</li>
+<li><code>s</code> or <code>send</code>: send a message to a user</li>
+<li><code>reply</code> or <code>re</code>: reply to a user that just came in</li>
 </ul>
-<h3 id="2026-05-20">2026-05-20<a class="headerlink" href="#2026-05-20" title="Permanent link">&para;</a></h3>
-<ul>
-<li>4 contacts:</li>
-<li>Rivière-des-Prairies</li>
-<li>Villeray</li>
-<li>Petite-Patrie</li>
-<li>Brossard</li>
-</ul>
-<h3 id="2026-05-13">2026-05-13<a class="headerlink" href="#2026-05-13" title="Permanent link">&para;</a></h3>
-<p>21:26, one contact (K386, Petite Patrie).</p>
-<h3 id="2026-04-15">2026-04-15<a class="headerlink" href="#2026-04-15" title="Permanent link">&para;</a></h3>
-<p>Last Meshtastic net. </p>
-<p>First Meshcore net.</p>
-<p>No contact on either.</p>
-<h3 id="2026-03-25">2026-03-25<a class="headerlink" href="#2026-03-25" title="Permanent link">&para;</a></h3>
-<p>Meshtastic. 22:52. One contact: "DIR Rooftop", unclear
-(just the string "2️⃣"), no location.</p>
+<h2 id="transport-nodes-and-microreticulum">Transport nodes and Microreticulum<a class="headerlink" href="#transport-nodes-and-microreticulum" title="Permanent link">&para;</a></h2>
+<p>All of the above is about "clients", in the sense that most of the
+software is geared towards new users, and rightly so.</p>
+<p>But nowhere did we talk about routing, which is a core tenant of mesh
+networks of course. That's because there is a separate feature to
+enable on a RNode to enable that, it's called "transport".</p>
+<p>But because the devices we have setup, so far, all require a client
+like a computer, it makes this all inconvenient to host on your
+rooftop.</p>
+<p>Thankfully people figured out a solution to this problem and starting
+expanding the RNode shareware to support routing, called an RTNode.</p>
+<p>Cleeyv wrote an <a href="https://rns.recipes/forum/build-guides/how-to-install-and-test-the-rtnode-firmware">excellent guide on how to setup the RTNode
+firmware</a>, which we'll defer to.</p>
+<p>Our only addition is that we had to put the device in upload mode, by
+holding the "BOOT" (actually labeled <code>PGR</code> on the board) button while
+pressing "RESET" (<code>RST</code>), before running the <code>flash.py</code> command.</p>
 
 
 
@@ -1770,7 +2102,7 @@ been removed.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="May 28, 2026 02:47:40 UTC">2026-05-28 02:47:40</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 5, 2026 04:30:31 UTC">2026-06-05 04:30:31</span>
   </span>
 
     
@@ -1780,7 +2112,7 @@ been removed.</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 26, 2026 03:05:08 UTC">2026-03-26 03:05:08</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 5, 2026 04:30:31 UTC">2026-06-05 04:30:31</span>
   </span>
 
     
@@ -1815,7 +2147,7 @@ been removed.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../neighbours/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Neighbours">
+          <a href="../meshcore/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Meshcore">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1825,20 +2157,20 @@ been removed.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Neighbours
+                Meshcore
               </div>
             </div>
           </a>
         
         
           
-          <a href="../other/" class="md-footer__link md-footer__link--next" aria-label="Next: Other guides and reviews">
+          <a href="../meshtastic/" class="md-footer__link md-footer__link--next" aria-label="Next: Meshtastic">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Other guides and reviews
+                Meshtastic
               </div>
             </div>
             <div class="md-footer__button md-icon">
