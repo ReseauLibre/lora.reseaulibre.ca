@@ -41,10 +41,9 @@ one of those apps first:
   embedded app, Mac, Windows, Linux, iOS, Android, T-Deck Plus,
   [`Cardputer`](https://shop.m5stack.com/products/m5stack-cardputer-adv-version-esp32-s3), standalone rewrite in Rust
 
-We (unfortunately) do not cover on boarding with most of those
-applications for now.
+We (unfortunately) do not have guides for those applications for now.
 
-In this guide, we will cover the following tools:
+Instead, in this guide, we will cover the following tools:
 
 - [RNS](reticulum/rns.md): base routing layer, supports announcements, routing
   ("transport") over WiFi, TCP, UDP, I2P, LoRa, serial, HF radios;
