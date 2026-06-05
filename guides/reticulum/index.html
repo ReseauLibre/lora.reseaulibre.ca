@@ -1866,6 +1866,7 @@ follows the reference implementation.</p>
 and Python:</p>
 <div class="highlight"><pre><span></span><code>python -m venv --system-site-packages .venvs/reticulum
 .venvs/reticulum/bin/pip install rns
+echo &#39;PATH=$PATH:.venvs/reticulum/bin/&#39; &gt;&gt; .bashrc
 </code></pre></div>
 <p>The primary service you will run is called <code>rnsd</code>, and you can simply
 run it with:</p>
@@ -2195,9 +2196,28 @@ Path found, destination &lt;64607119a6bfd90f3ca6d4332968b35c&gt; is 1 hop away v
 <p>Since a basic RNS setup like the above does not do much on its own, we
 will introduce you to a first basic chat application.</p>
 <p>If you are familiar with the command-line, <a href="https://github.com/fr33n0w/lxmf-cli">LXMF-CLI</a> is a nice and
-simple chat client. When starting, it will prompt you for your
-identity and some settings, then it will announce your identity on the
-network through <code>rnsd</code>.</p>
+simple chat client. It does not have a great installer (see <a href="https://github.com/fr33n0w/lxmf-cli/issues/4">upstream
+issue 4</a>, so we have to wrangle things out a little bit. Here we
+assume we can reuse the Python <code>venv</code> used to <a href="#rns">install RNS</a>:</p>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/fr33n0w/lxmf-cli
+~/.venvs/reticulum/bin/pip install -r requirements.txt
+ln -s $PWD/lxmf-cli.py ~/.venvs/reticulum/bin/lxmf-cli.py
+cat &gt; ~/.venvs/reticulum/bin/lxmf-cli &lt;&lt;EOF
+#! /bin/sh
+
+mkdir -p .config/lxmf-cli
+cd .config/lxmf-cli
+python ~/.venvs/reticulum/bin/lxmf-cli.py
+EOF
+chmod +x ~/.venvs/reticulum/bin/lxmf-cli
+</code></pre></div>
+<p>The wrapper script is necessary because <a href="https://github.com/fr33n0w/lxmf-cli/issues/5">lxmf-cli does not write files
+in the right place</a>.</p>
+<p>Then you can start the client with:</p>
+<div class="highlight"><pre><span></span><code>lxmf-cli
+</code></pre></div>
+<p>When starting, it will prompt you for your identity and some settings,
+then it will announce your identity on the network through <code>rnsd</code>.</p>
 <p>If other identities are found through announces, it will notify you
 and you will be able to add them as contacts. For example:</p>
 <div class="highlight"><pre><span></span><code>📡 New Announce: newfriend
@@ -2272,7 +2292,7 @@ pressing "RESET" (<code>RST</code>), before running the <code>flash.py</code> co
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 5, 2026 14:20:16 UTC">2026-06-05 14:20:16</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 5, 2026 14:34:13 UTC">2026-06-05 14:34:13</span>
   </span>
 
     
