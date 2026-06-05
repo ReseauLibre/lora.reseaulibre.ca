@@ -755,6 +755,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#glossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Glossary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#rns" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -808,6 +819,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="RNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-note-on-frequency-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A note on frequency settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1560,6 +1588,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#glossary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Glossary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#rns" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1613,6 +1652,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="RNode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-note-on-frequency-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A note on frequency settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1730,10 +1786,16 @@ one of those apps first:</p>
 <li><a href="https://ratspeak.org/"><code>Ratspeak</code></a>: chat, voice calls, games, desktop, mobile and
   embedded app, Mac, Windows, Linux, iOS, Android, T-Deck Plus,
   <a href="https://shop.m5stack.com/products/m5stack-cardputer-adv-version-esp32-s3"><code>Cardputer</code></a>, standalone rewrite in Rust</li>
-<li><a href="https://github.com/fr33n0w/lxmf-cli">LXMF-CLI</a>: chat, Linux, Windows, command-line interface</li>
 </ul>
 <p>We (unfortunately) do not cover on boarding with most of those
 applications for now.</p>
+<p>In this guide, we will cover the following command-line tools:</p>
+<ul>
+<li><a href="https://github.com/markqvist/Reticulum/">RNS</a>: base routing layer, supports announcements, routing
+  ("transport") over WiFi, TCP, UDP, I2P, LoRa, serial, HF radios;
+  works on Linux, MacOS, Windows, Android</li>
+<li><a href="https://github.com/fr33n0w/lxmf-cli">LXMF-CLI</a>: chat interface on top of RNS, Linux, Windows</li>
+</ul>
 <p>We also acknowledge the hard work done to create those other
 applications, but consider them too hard to use for new users:</p>
 <ul>
@@ -1743,14 +1805,62 @@ applications, but consider them too hard to use for new users:</p>
   (TUI), Linux</li>
 </ul>
 <p>Instead, we're covering the basic building block of Reticulum, RNS.</p>
+<h2 id="glossary">Glossary<a class="headerlink" href="#glossary" title="Permanent link">&para;</a></h2>
+<p>Before we go any further, let's go over a few basic concepts in
+Reticulum, as it can get confusing quickly.</p>
+<ul>
+<li><strong><a href="https://reticulum.community/">Reticulum</a></strong>: a set of transport (e.g. radio) protocols, routing
+  (e.g. mesh) and application (e.g. LXMF) protocols, but also a
+  reference implementation of those called RNS</li>
+<li><strong><a href="https://github.com/markqvist/Reticulum/">RNS</a></strong>, "Reticulum Network Stack": the reference Reticulum
+  implementation</li>
+<li><strong><a href="https://markqvist.github.io/Reticulum/manual/interfaces.html">Interface</a></strong>: a specific backend for Reticulum, for example LoRa, WiFi,
+  TCP, Bluetooth<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, ham radio</li>
+<li><strong><a href="https://markqvist.github.io/Reticulum/manual/understanding.html#reticulum-transport">Transport</a></strong>: a node that relays traffic for other. A "transport node",
+  for example, is roughly equivalent to a "repeater" in Meshcore. For
+  LoRa, typically comprises an embedded device (e.g. a Heltec) running
+  RNode (below) and a computer (e.g. a Raspberry Pi) runnin RNS or
+  some other application. Without a "transport node", devices can
+  still talk to each other point-to-point, but they do not "mesh".</li>
+<li><strong><a href="https://unsigned.io/rnode/">RNode</a></strong>: the stock Reticulum firmware that allows you to talk with
+  other peers over LoRa, and that you flash on embedded devices
+  (e.g. a Heltec). Different than Meshcore or Meshtastic firmware in
+  that it does not work standalone and requires software on a computer
+  attached to it to send receive messages or route traffic. Think of
+  it like an old-school "modem".</li>
+<li><strong><a href="https://github.com/attermann/microReticulum">microReticulum</a></strong>: a reimplementation of the Reticulum stack designed
+  to fit in embedded devices (e.g. a Heltec). Essentially a RNode that
+  can act also as a transport node.</li>
+<li><strong><a href="https://markqvist.github.io/Reticulum/manual/understanding.html#public-key-announcements">announcement</a></strong>: a message sent over an interface that is used to
+  establish routing with transport nodes. roughly equivalent to an
+  "advert" in Meshcore.</li>
+<li><strong><a href="https://markqvist.github.io/Reticulum/manual/understanding.html#understanding-identities">identity</a></strong>: an address in the Reticulum routing system. Roughly
+  equivalent to the "public key" in Meshcore or the MAC address in
+  Meshtastic, except that the full identity is used for routing
+  (whereas only a few bytes are used in Meshcore).</li>
+<li><a href="https://github.com/markqvist/lxmf"><strong>LXMF</strong></a>: Lightweight Extensible Message Format. The reference chat
+  implementation built on top of Reticulum. Does not support groups,
+  only point to point messaging. Think of it like Signal if Reticulum
+  is TCP/IP. When we say a Reticulum application supports chat, it is
+  implemented with LXMF.</li>
+<li><strong><a href="https://github.com/markqvist/lxst">LXST</a></strong>: Lightweight Extensible Transport. Streaming system enabling
+  applications like voice calls, two-way radio systems, media
+  streaming and so on. When we say a Reticulum application supports
+  voice calls, it is implemented with LXST.</li>
+<li><strong><a href="https://rrc.kc1awv.net/">RRC</a></strong>: Reticulum Relay Chat. Reimplementation of IRC over Reticulum.</li>
+</ul>
 <h2 id="rns">RNS<a class="headerlink" href="#rns" title="Permanent link">&para;</a></h2>
 <p>RNS is the <a href="https://github.com/markqvist/Reticulum/">base Reticulum software</a>, still developed by the
 original founder of the Reticulum project.</p>
+<div class="admonition bug">
+<p class="admonition-title">Proprietary software warning</p>
 <p>Unfortunately, Reticulum now ships <a href="https://github.com/markqvist/Reticulum/discussions/781#discussioncomment-13209632">with a non-free license</a> which
 has <a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1101959">stalled the Debian packaging effort</a> but also lead to the
 proliferation of <a href="https://reticulum.miraheze.org/wiki/Implementations">other implementations</a>. </p>
-<p>RNS is nevertheless the reference implementation which is why we start
-there.</p>
+<p>Since most people still use the reference implementation, and that
+others derive from it generally stay compatible, this guide
+follows the reference implementation.</p>
+</div>
 <h3 id="installation-and-configuration">Installation and configuration<a class="headerlink" href="#installation-and-configuration" title="Permanent link">&para;</a></h3>
 <p>Installing Reticulum is easy if you're familiar with the command line
 and Python:</p>
@@ -1762,9 +1872,22 @@ run it with:</p>
 <div class="highlight"><pre><span></span><code>rnsd -v
 </code></pre></div>
 <p>You can also <a href="https://markqvist.github.io/Reticulum/manual/using.html#using-systemd">configure it as a systemd service</a>.</p>
+<p>On first start, <code>rnsd</code> will create a configuration file and a
+public/private keypair for your identity:</p>
+<div class="highlight"><pre><span></span><code>anarcat@dorothea:~$ rnsd -v
+[2026-06-05 09:53:44] [Notice]   Could not load config file, creating default configuration file...
+[2026-06-05 09:53:44] [Notice]   Default config file created. Make any necessary changes in /home/anarcat/.reticulum/config and restart Reticulum if needed.
+[2026-06-05 09:53:45] [Verbose]  Bringing up system interfaces...
+[2026-06-05 09:53:45] [Verbose]  AutoInterface[Default Interface] discovering peers for 1.92 seconds...
+[2026-06-05 09:53:47] [Verbose]  System interfaces are ready
+[2026-06-05 09:53:47] [Verbose]  Configuration loaded from /home/anarcat/.reticulum/config
+[2026-06-05 09:53:47] [Verbose]  Destinations file does not exist, no known destinations loaded
+[2026-06-05 09:53:47] [Verbose]  No valid Transport Identity in storage, creating...
+[2026-06-05 09:53:47] [Verbose]  Identity keys created for &lt;6575da95d1d9c8e5d01c560c73c8e67f&gt;
+[2026-06-05 09:53:47] [Notice]   Started rnsd version 1.3.5
+</code></pre></div>
 <h3 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">&para;</a></h3>
-<p>It will generate a basic configuration, which will likely include a
-block like:</p>
+<p>In the above default configuration file, you will see this interface:</p>
 <div class="highlight"><pre><span></span><code>[interfaces]
 
   [[Default Interface]]
@@ -1782,14 +1905,18 @@ good chance someone will be available to test this with you.</p>
 not very useful on its own. So let's look at other interfaces.</p>
 <h4 id="tcp-interfaces">TCP interfaces<a class="headerlink" href="#tcp-interfaces" title="Permanent link">&para;</a></h4>
 <p>If you do not have local partner to play with, add a couple interfaces
-(perhaps those that look the closest to you) from the growing list of
-public entry points (<a href="https://reticulum.community/connect.html"><code>reticulum.community</code></a>,
-<a href="https://directory.rns.recipes/"><code>directory.rns.recipes</code></a>, <a href="https://rmap.world/"><code>rmap.world</code></a>. This one, for example, is
-hosted on the US west coast:</p>
-<div class="highlight"><pre><span></span><code>[[RNS Testnet BetweenTheBorders]]
+(perhaps those that look the closest to you) from one of those lists
+of public entry points:</p>
+<ul>
+<li><a href="https://reticulum.community/connect.html"><code>reticulum.community</code></a></li>
+<li><a href="https://directory.rns.recipes/"><code>directory.rns.recipes</code></a></li>
+<li><a href="https://rmap.world/"><code>rmap.world</code></a></li>
+</ul>
+<p>Here is an example interface:</p>
+<div class="highlight"><pre><span></span><code>[[Example Testnet]]
   type = TCPClientInterface
   enabled = yes
-  target_host = reticulum.betweentheborders.com
+  target_host = reticulum.example.com
   target_port = 4242
 </code></pre></div>
 <p>This configuration will tell Reticulum to connect to the given host on
@@ -1801,7 +1928,11 @@ local mesh in this case, and are routing over the Internet
 instead. But Reticulum is a mixed medium system: it considers the
 possibility of using the internet a <em>feature</em> and happily uses
 TCP/IP or LoRa. We show this example to allow you to test the
-system without having LoRa neighbours, which might not be available.</p>
+system without having LoRa neighbours, which might not be
+available.</p>
+<p>In our defence, the above configuration is actually <em>not</em>
+functional as <code>example.com</code> does not run a reticulum interface at
+the moment.</p>
 </div>
 <p>So yes, this is cheating. Let's try a "real" interface, LoRa, the same
 medium used by Meshtastic and Meshcore.</p>
@@ -1817,39 +1948,12 @@ fully autonomous, local mesh network, without the internet.</p>
 Firmware</a> originally supported only a few of those devices, but a
 <a href="https://github.com/liberatedsystems/RNode_Firmware_CE">community edition</a> came out with <a href="https://github.com/liberatedsystems/RNode_Firmware_CE#supported-products-and-boards">support for many more</a>.</p>
 <p>Thankfully, flashing those devices is rather easy. You can use <a href="https://liamcottle.github.io/rnode-flasher/">Liam
-Cottle's web-based flasher</a> (yes, him again). Note that if you're
-used to Meshtastic or Meshcore flashers, the Reticulum one is a little
-less intuitive: you first need to download the firmware, then select
-it after downloading it.</p>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<p>If you are familiar with the command line, there is a program shipped
-with RNS called <code>rnodeconf</code> allows you to flash those devices with
-RNode in an interactive way, with:</p>
-<div class="highlight"><pre><span></span><code>rnodeconf --autoinstall
-</code></pre></div>
-<p>It will walk you through a series of prompts to flash your device.</p>
-<p>At some point, it will ask you for the device model. If you're
-flashing a heltec it will tell you it is experimental, and you can
-ignore it.</p>
-</div>
-<p>It will ask you which region / band to use, make sure you pick the 915
-MHz band.</p>
-<p>Then at some point it will require you to configure the frequency
-settings, pick those:</p>
-<ul>
-<li>frequency: 914.875 MHz</li>
-<li>bandwidth: 125 kHz</li>
-<li>power: 22 dB</li>
-<li>spread factor: SF7</li>
-<li>coding rate: 4:7</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Those are inspired by the <a href="https://ottawamesh.ca/reticulum/reticulum-frequency-settings/#frequency-settings-for-reticulum">Ottawa settings</a>.</p>
-</div>
-<p>If you have flashed through the web interface, you will need to add
-the following interface to your <code>~/.reticulum/config</code> file:</p>
+Cottle's web-based flasher</a> (also known for his Meshcore
+work). Note that if you're used to Meshtastic or Meshcore flashers,
+the Reticulum one is a little less intuitive: you first need to
+download the firmware, then select it after downloading it.</p>
+<p>Once the device is flashed, you will need to add the following
+interface to your <code>~/.reticulum/config</code> file:</p>
 <div class="highlight"><pre><span></span><code>[[RNode LoRa Interface]]
   type = RNodeInterface
   enabled = yes
@@ -1862,10 +1966,52 @@ the following interface to your <code>~/.reticulum/config</code> file:</p>
 </code></pre></div>
 <p>The <a href="https://markqvist.github.io/Reticulum/manual/interfaces.html#rnode-lora-interface">full RNode interface configuration</a> is worth a read as well.</p>
 <p>Restart <code>rsnd</code> and it should try to connect to your RNode device!</p>
+<div class="admonition example">
+<p class="admonition-title">Command line option</p>
+<p>If you are familiar with the command line, there is a program shipped
+with RNS called <code>rnodeconf</code> allows you to flash those devices with
+RNode in an interactive way, with:</p>
+<div class="highlight"><pre><span></span><code>rnodeconf --autoinstall
+</code></pre></div>
+<p>It will walk you through a series of prompts to flash your device.</p>
+<p>At some point, it will ask you for the device model. If you're
+flashing a heltec it will tell you it is experimental, and you can
+ignore it.</p>
+<p>It will ask you which region / band to use, make sure you pick the 915
+MHz band. You will then be prompted for actual frequency,
+bandwidth and power settings, see below for those.</p>
+</div>
+<h5 id="a-note-on-frequency-settings">A note on frequency settings<a class="headerlink" href="#a-note-on-frequency-settings" title="Permanent link">&para;</a></h5>
+<p>When configuring LoRa frequencies, we recommend people who want to
+join the Reticulum mesh in Montreal use those frequencies:</p>
+<ul>
+<li>frequency: 914.875 MHz</li>
+<li>bandwidth: 125 kHz</li>
+<li>power: 22 dB</li>
+<li>spread factor: SF7</li>
+<li>coding rate: 4:7</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Those are inspired by the <a href="https://ottawamesh.ca/reticulum/reticulum-frequency-settings/#frequency-settings-for-reticulum">Ottawa settings</a>.</p>
+<p>See also our <a href="../faq/#which-radio-frequencies-are-you-using">discussion of frequencies in the FAQ</a>.</p>
+</div>
 <h4 id="meshcore">Meshcore<a class="headerlink" href="#meshcore" title="Permanent link">&para;</a></h4>
 <p>Amazingly, because Reticulum can route over essentially anything, you
 can route Reticulum traffic over Meshcore meshes.</p>
-<p>In the May 2026 mesh night at Foulab, we have successfully routed
+<div class="admonition example">
+<p class="admonition-title">Advanced users only!</p>
+<p>This is a particularly exotic Reticulum configuration. </p>
+<p>We are not sure this is a good idea. It might flood the Meshcore
+mesh, for example. So far, there seems to be only moderate (2x)
+amplification in traffic so we're continuing to experiment. but we
+do not recommend people adopt this, generally.</p>
+<p>Meshcore people typically frown upon Meshcore being bridged across
+regions or with other networks, and might consider such use to be hostile.</p>
+<p>Finally, if you're just getting started with Reticulum, this one
+will be particularly confusing, just skip this section.</p>
+</div>
+<p>During the May 2026 mesh night at Foulab, we have successfully routed
 Reticulum messages over a local LoRa link with two Meshcore companions
 connected over serial.</p>
 <p>We are using <a href="https://github.com/slack-t/RNS_Over_MeshCore">this fork of the <code>RNS_Over_MeshCore</code> interface</a>.</p>
@@ -1914,6 +2060,11 @@ ln -s RNS_Over_MeshCore/Interface/MeshcoreInterface.py .
    #guard_delay = 0.3             # Minimum gap between sends in opportunistic mode (seconds)
    #flood_scope =                 # Limit propagation to repeaters allowing this scope (requires firmware &gt;1.14)
 </code></pre></div>
+<p>Note that we use a hardcoded <code>channel_secret</code> above, which upstream
+<a href="https://github.com/slack-t/RNS_Over_MeshCore#channel-secret">strongly warns against</a>. We consider those concerns to be
+unfounded since Reticulum encrypts traffic before injecting into the
+transport. Instead, we favor instead broad compatibility across
+clients, using a common, public channel.</p>
 <div class="admonition bug">
 <p class="admonition-title">Bug</p>
 <p>Pay close attention to the <code>type</code> line above. In the upstream
@@ -1945,7 +2096,7 @@ sandboxing some of those applications.</p>
 <p>Or it's also possible to hijack the load path inside the interface
 itself.</p>
 <p>We have had success adding something similar to this to the top of
-the interface Python file:</p>
+the interface Python file (<code>MeshcoreInterface.py</code>):</p>
 <div class="highlight"><pre><span></span><code>import sys
 sys.path.insert(0, &quot;/usr/lib/python3/dist-packages/&quot;)
 sys.path.insert(0, &quot;/home/anarcat/.venvs/reticulum/lib/python3.13/site-packages/&quot;)
@@ -1979,7 +2130,7 @@ can connect with anyone.</p>
     Traffic   : ↑0 B        0 bps
                 ↓0 B        0 bps
 
- TCPInterface[RNS Testnet BetweenTheBorders/reticulum.betweentheborders.com:4242]
+ TCPInterface[Example Testnet/reticulum.example.com:4242]
     Status    : Down
     Mode      : Full
     Rate      : 10.00 Mbps
@@ -2001,8 +2152,17 @@ can connect with anyone.</p>
 <p>There you can see all the interfaces are working, <em>except</em> the
 <code>TCPInterface</code>. You should be able to see the reason in the  <code>rnsd</code>
 output, for example in our case:</p>
-<div class="highlight"><pre><span></span><code>[2026-06-04 22:17:20] [Error]    Initial connection for TCPInterface[RNS Testnet BetweenTheBorders/reticulum.betweentheborders.com:4242] could not be established: timed out
+<div class="highlight"><pre><span></span><code>[2026-06-05 10:15:03] [Error]    Initial connection for TCPInterface[Example Testnet/reticulum.examplecom:4242] could not be established: [Errno -2] Name or service not known
 </code></pre></div>
+<p>In this case, you'll need to pick a different TCP interface. We
+purposefully do not provide a default here because we do not want to
+overwhelm a public interface.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You <em>could</em> run such an interface for the local mesh! If you run
+Linux, you would probably want to start by configuring a public
+<a href="https://markqvist.github.io/Reticulum/manual/interfaces.html#backbone-interface">backbone interface</a>.</p>
+</div>
 <p>You can monitor the interfaces with:</p>
 <div class="highlight"><pre><span></span><code>rnstatus -m
 </code></pre></div>
@@ -2012,18 +2172,15 @@ output, for example in our case:</p>
 <p>To <em>send</em> adverts is a little more complicated, because <em>now</em> you need
 to pick one of the clients listed in the first section.</p>
 <p>The trick here is that adverts, like in Meshcore and Meshtastic, are
-bound to an identity, but contrarily to Meshcore and Meshtastic, the
-identity is not tied to keys on the device (in Meshcore) or the
-hardware ("MAC") address of the device (in Meshtastic).</p>
+bound to an identity, but contrarily to those two-site, the identity is not
+tied to keys on the device (in Meshcore) or the hardware ("MAC")
+address of the device (in Meshtastic).</p>
 <p>The keys reside on the computer or mobile operating the interface! So
 they depend on the application.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You <em>can</em> technically send an announce by generating an identity:</p>
-<div class="highlight"><pre><span></span><code>rnid -g .reticulum/storage/identities/anarcat
-</code></pre></div>
-<p>Then you can announce this identity with:</p>
-<div class="highlight"><pre><span></span><code>rnid -i .reticulum/storage/identities/anarcat -a
+<p>You <em>can</em> technically send an announce by using the transport identity:</p>
+<div class="highlight"><pre><span></span><code>rnid -i .reticulum/storage/transport_identity -a
 </code></pre></div>
 <p>But we do not recommend doing this outside of the lab.</p>
 </div>
@@ -2033,6 +2190,7 @@ reaches a given destination.</p>
 <div class="highlight"><pre><span></span><code>$ rnpath 64607119a6bfd90f3ca6d4332968b35c
 Path found, destination &lt;64607119a6bfd90f3ca6d4332968b35c&gt; is 1 hop away via &lt;48b2dbadf91f9b7a181b1ff0a7017b72&gt; on RNodeInterface[RNode LoRa Interface]
 </code></pre></div>
+<p>So let's get talking!</p>
 <h2 id="lxmf-cli">LXMF-CLI<a class="headerlink" href="#lxmf-cli" title="Permanent link">&para;</a></h2>
 <p>Since a basic RNS setup like the above does not do much on its own, we
 will introduce you to a first basic chat application.</p>
@@ -2068,19 +2226,30 @@ usage. A few useful commands:</p>
 <h2 id="transport-nodes-and-microreticulum">Transport nodes and microReticulum<a class="headerlink" href="#transport-nodes-and-microreticulum" title="Permanent link">&para;</a></h2>
 <p>All of the above is about "clients", in the sense that most of the
 software is geared towards new users, and rightly so.</p>
-<p>But nowhere did we talk about routing, which is a core tenant of mesh
+<p>But we did not talk much about routing, which is a core tenant of mesh
 networks of course. That's because there is a separate feature to
-enable on a RNode to enable that, it's called "transport".</p>
-<p>But because the devices we have setup, so far, all require a client
-like a computer, it makes this all inconvenient to host on your
-rooftop.</p>
+enable on a RNode to enable that, it's called a "transport".</p>
+<p>Because the devices we have setup, so far, all require a client like a
+computer, it makes this all inconvenient to host on your rooftop.</p>
 <p>Thankfully people figured out a solution to this problem and starting
-expanding the RNode shareware to support routing, called an RTNode.</p>
+expanding RNode to support routing, into something called an RTNode,
+for "Reticulum Transport Node".</p>
 <p>Cleeyv wrote an <a href="https://rns.recipes/forum/build-guides/how-to-install-and-test-the-rtnode-firmware">excellent guide on how to setup the RTNode
 firmware</a>, which we'll defer to.</p>
 <p>Our only addition is that we had to put the device in upload mode, by
 holding the "BOOT" (actually labeled <code>PGR</code> on the board) button while
 pressing "RESET" (<code>RST</code>), before running the <code>flash.py</code> command.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>note that here, Bluetooth is used for communicating between
+  devices, in a mesh network, not just for an application to control a
+  device like we do in Meshcore and Meshtastic, which do <em>not</em> support
+  running a mesh over Bluetooth like Reticulum does.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
@@ -2103,7 +2272,7 @@ pressing "RESET" (<code>RST</code>), before running the <code>flash.py</code> co
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 5, 2026 04:41:30 UTC">2026-06-05 04:41:30</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 5, 2026 14:20:16 UTC">2026-06-05 14:20:16</span>
   </span>
 
     
