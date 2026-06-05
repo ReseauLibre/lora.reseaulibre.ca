@@ -1,0 +1,69 @@
+---
+on: [push]
+jobs:
+  publish:
+    runs-on: codeberg-tiny
+    steps:
+      # this nasty thing uses node.js to clone the repo
+      # consider https://codeberg.org/Shrimp-CI/checkout/ or just
+      # rewrite from scratch. essentially we need to:
+      # git init
+      # git remote add
+      # git fetch with submodules
+      # git checkout
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - run: pip install -r requirements.txt
+      - run: mkdocs build
+      - run: git fetch --all
+      - run: git worktree add ../fr/ fr
+      - run: cd ../fr && mkdocs build -d ../$CI_REPO_NAME/site/fr
+
+      - uses: actions/git-pages@v2
+        with:
+          site: https://lora.reseaulibre.ca/
+          token: ${{ forge.token }}
+          source: public/
+          server: grebedoc.dev
+
+      - name: cache save
+        uses: https://data.forgejo.org/actions/cache/save@v4
+        with:
+          path: |
+            site/
+            .lycheeignore
+          key: site-cache
+
+  linkcheck:
+    needs: [publish]
+    runs-on: codeberg-tiny
+    image: containers.torproject.org/tpo/web/container-images/lychee
+    steps:
+      - name: cache restore
+        id: cachestep2
+        uses: https://data.forgejo.org/actions/cache/restore@v4
+        with:
+          path: |
+            .lycheeignore
+            site/
+          key: site-cache
+      - name: lychee cache restore
+        id: cachestep2
+        uses: https://data.forgejo.org/actions/cache/restore@v4
+        with:
+          path: cache/
+          key: lychee-cache
+
+      - run: apt-get update && apt-get install -y git
+      - run: cp .lycheeignore cache
+      - run: cd cache
+      - run: lychee ../site --root-dir ../site/ --include-fragments --index-files index.html --no-progress --cache --cache-exclude-status "401,429,500.." --max-cache-age 30d --scheme http --scheme https --require-https
+      - run: sort .lycheecache > .lycheecache.sorted && mv .lycheecache.sorted .lycheecache
+
+      - name: cache save
+        uses: https://data.forgejo.org/actions/cache/save@v4
+        with:
+          path: cache/
+          key: lychee-cache
