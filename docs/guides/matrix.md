@@ -82,3 +82,51 @@ element it's "Search") interface of your client.
 
 This is the main room, but there are other rooms in the space,
 [`#reseaulibre-space:matrix.org` Matrix room](https://matrix.to/#/#reseaulibre-space:matrix.org).
+
+## Videoconferencing
+
+Matrix supports audio and video calls. There are two different
+implementation:
+
+- legacy, built on top of the Jitsi server at
+  <https://meet.element.io/> (but that can be modified for other Jitsi
+  servers)
+- native, or "[Element call](https://github.com/element-hq/element-call/)", which is built on top of
+  [Livekit](https://livekit.com/), a WebRTC framework that is slightly easier to deploy
+  than Jitsi, and federates better (each server can run its own
+  Livekit, whereas Element effectively runs all the legacy calls)
+
+We're currently experimenting with Legacy calls, as we want to allow
+outside people to participate in our calls.
+
+Out of the box, the way legacy calls work is they build a unique
+(think [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)) identifier for the room, and embed this as a
+widget. You can find that room identifier by typing this in a Element
+chat window:
+
+    /devtools
+
+Then select "Active widgets", where you'll see a button like:
+
+    https://scalar.vector.im/api/widgets/jitsi.html
+
+Select that, and look for the `conferenceId`, for example:
+
+    "conferenceId": "8be4df61-93ca-11d2-aa0d-00e098032b8c",
+
+Then you can tell people to join that room at:
+
+<https://meet.element.io/$conferenceId>
+
+For example, in the case above:
+
+<https://meet.element.io/8be4df61-93ca-11d2-aa0d-00e098032b8c>
+
+The widget should also be visible in `Explore room state` then
+`im.vector.modular.widgets`.
+
+You can also *change* that widget to point to an *existing* Jitsi room
+that you control better, for example a [moderated meeting](https://moderated.jitsi.net/). In the
+first example, change the `domain` to `meet.jit.si` and the
+`conferenceId` to the "guest" link, then click "Send", which will
+update the room to point to the new widget.
