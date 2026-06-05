@@ -281,6 +281,8 @@ We *are* experimenting with Reticulum. Some of us have worked on
 on chip without a second computer), [transport nodes](https://github.com/jrl290/RTNode-HeltecV4) (same, as a
 gateway to the Internet), Reticulum-over-Meshtastic, and more!
 
+We now have a [guide on getting started with Reticulum](reticulum.md) as well.
+
 But Reticulum, while being more advanced in terms of routing and
 cryptography, lacks the "ready-made" aspect of the other protocols. You can,
 today, buy a [hardware preinstalled with Meshtastic or Meshcore](../references/hardware/index.md) and it just
@@ -298,6 +300,10 @@ Right now the focus is on organizing the mesh that already exists on
 the island, and that is mostly made up of Meshtastic and Meshcore nodes. Reticulum
 could be a backhaul for the network or the future of the network,
 we'll see!
+
+People interested in Reticulum are welcome to join us at Foulab's Mesh
+Night (every first Wednesday of the month) where we do a lot of
+research on Reticulum.
 
 ### Why not Meshtastic?
 
