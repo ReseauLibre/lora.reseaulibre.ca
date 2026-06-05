@@ -40,10 +40,16 @@ one of those apps first:
 - [`Ratspeak`](https://ratspeak.org/): chat, voice calls, games, desktop, mobile and
   embedded app, Mac, Windows, Linux, iOS, Android, T-Deck Plus,
   [`Cardputer`](https://shop.m5stack.com/products/m5stack-cardputer-adv-version-esp32-s3), standalone rewrite in Rust
-- [LXMF-CLI](https://github.com/fr33n0w/lxmf-cli): chat, Linux, Windows, command-line interface
 
 We (unfortunately) do not cover on boarding with most of those
 applications for now.
+
+In this guide, we will cover the following command-line tools:
+
+- [RNS](https://github.com/markqvist/Reticulum/): base routing layer, supports announcements, routing
+  ("transport") over WiFi, TCP, UDP, I2P, LoRa, serial, HF radios;
+  works on Linux, MacOS, Windows, Android
+- [LXMF-CLI](https://github.com/fr33n0w/lxmf-cli): chat interface on top of RNS, Linux, Windows
 
 We also acknowledge the hard work done to create those other
 applications, but consider them too hard to use for new users:
