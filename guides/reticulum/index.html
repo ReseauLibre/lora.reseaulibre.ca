@@ -858,7 +858,7 @@
   <a href="#transport-nodes-and-microreticulum" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Transport nodes and Microreticulum
+        Transport nodes and microReticulum
       
     </span>
   </a>
@@ -1663,7 +1663,7 @@
   <a href="#transport-nodes-and-microreticulum" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Transport nodes and Microreticulum
+        Transport nodes and microReticulum
       
     </span>
   </a>
@@ -1723,22 +1723,22 @@ at dealing with exotic software or the command line, you should try
 one of those apps first:</p>
 <ul>
 <li><a href="https://columba.network/">Columba</a>: chat, voice calls, Android</li>
-<li><a href="https://meshchatx.com/">MeshChatX</a>: chat, group chat, voice calls, vibe-coded,
+<li><a href="https://meshchatx.com/"><code>MeshChatX</code></a>: chat, group chat, voice calls, vibe-coded,
   integrates (poorly) with RNS, Linux</li>
-<li><a href="https://newendian.com/retichat">retichat</a>: Mac (<a href="https://apps.apple.com/us/app/retichat/id6762225314">App store</a>)</li>
-<li><a href="https://ratspeak.org/">Ratspeak</a>: chat, voice calls, games, desktop, mobile and
+<li><a href="https://newendian.com/retichat"><code>retichat</code></a>: Mac (<a href="https://apps.apple.com/us/app/retichat/id6762225314">App store</a>)</li>
+<li><a href="https://ratspeak.org/"><code>Ratspeak</code></a>: chat, voice calls, games, desktop, mobile and
   embedded app, Mac, Windows, Linux, iOS, Android, T-Deck Plus,
-  Cardputer, standalone rewrite in Rust</li>
-<li><a href="https://github.com/fr33n0w/lxmf-cli">lxmf-cli</a>: chat, Linux, Windows, command-line interface</li>
+  <a href="https://shop.m5stack.com/products/m5stack-cardputer-adv-version-esp32-s3"><code>Cardputer</code></a>, standalone rewrite in Rust</li>
+<li><a href="https://github.com/fr33n0w/lxmf-cli">LXMF-CLI</a>: chat, Linux, Windows, command-line interface</li>
 </ul>
-<p>We (unfortunately) do not cover onboarding with most of those
+<p>We (unfortunately) do not cover on boarding with most of those
 applications for now.</p>
 <p>We also acknowledge the hard work done to create those other
 applications, but consider them too hard to use for new users:</p>
 <ul>
-<li><a href="https://github.com/markqvist/sideband">Sideband</a>: flagship GUI implementation of a chat client,
+<li><a href="https://github.com/markqvist/sideband"><code>Sideband</code></a>: flagship GUI implementation of a chat client,
   supports Android, Linux, MacOS and Windows</li>
-<li><a href="https://github.com/markqvist/nomadnet">nomadnet</a>: chat client, web-like browser, text user interface
+<li><a href="https://github.com/markqvist/nomadnet"><code>nomadnet</code></a>: chat client, web-like browser, text user interface
   (TUI), Linux</li>
 </ul>
 <p>Instead, we're covering the basic building block of Reticulum, RNS.</p>
@@ -1782,8 +1782,8 @@ not very useful on its own. So let's look at other interfaces.</p>
 <h4 id="tcp-interfaces">TCP interfaces<a class="headerlink" href="#tcp-interfaces" title="Permanent link">&para;</a></h4>
 <p>If you do not have local partner to play with, add a couple interfaces
 (perhaps those that look the closest to you) from the growing list of
-public entry points (<a href="https://reticulum.community/connect.html">reticulum.community</a>,
-<a href="https://directory.rns.recipes/">directory.rns.recipes</a>, <a href="https://rmap.world/">rmap.world</a>. This one, for example, is
+public entry points (<a href="https://reticulum.community/connect.html"><code>reticulum.community</code></a>,
+<a href="https://directory.rns.recipes/"><code>directory.rns.recipes</code></a>, <a href="https://rmap.world/"><code>rmap.world</code></a>. This one, for example, is
 hosted on the US west coast:</p>
 <div class="highlight"><pre><span></span><code>[[RNS Testnet BetweenTheBorders]]
   type = TCPClientInterface
@@ -1839,7 +1839,7 @@ settings, pick those:</p>
 <ul>
 <li>frequency: 914.875 MHz</li>
 <li>bandwidth: 125 kHz</li>
-<li>power: 22 dBm</li>
+<li>power: 22 dB</li>
 <li>spread factor: SF7</li>
 <li>coding rate: 4:7</li>
 </ul>
@@ -1998,7 +1998,7 @@ can connect with anyone.</p>
                 ↓0 B        0 bps
 </code></pre></div>
 <p>There you can see all the interfaces are working, <em>except</em> the
-TCPInterface. You should be able to see the reason in the  <code>rnsd</code>
+<code>TCPInterface</code>. You should be able to see the reason in the  <code>rnsd</code>
 output, for example in our case:</p>
 <div class="highlight"><pre><span></span><code>[2026-06-04 22:17:20] [Error]    Initial connection for TCPInterface[RNS Testnet BetweenTheBorders/reticulum.betweentheborders.com:4242] could not be established: timed out
 </code></pre></div>
@@ -2064,7 +2064,7 @@ usage. A few useful commands:</p>
 <li><code>s</code> or <code>send</code>: send a message to a user</li>
 <li><code>reply</code> or <code>re</code>: reply to a user that just came in</li>
 </ul>
-<h2 id="transport-nodes-and-microreticulum">Transport nodes and Microreticulum<a class="headerlink" href="#transport-nodes-and-microreticulum" title="Permanent link">&para;</a></h2>
+<h2 id="transport-nodes-and-microreticulum">Transport nodes and microReticulum<a class="headerlink" href="#transport-nodes-and-microreticulum" title="Permanent link">&para;</a></h2>
 <p>All of the above is about "clients", in the sense that most of the
 software is geared towards new users, and rightly so.</p>
 <p>But nowhere did we talk about routing, which is a core tenant of mesh
@@ -2102,7 +2102,7 @@ pressing "RESET" (<code>RST</code>), before running the <code>flash.py</code> co
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 5, 2026 04:30:31 UTC">2026-06-05 04:30:31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 5, 2026 04:38:20 UTC">2026-06-05 04:38:20</span>
   </span>
 
     
