@@ -1814,12 +1814,12 @@ Reticulum, as it can get confusing quickly.</p>
   reference implementation of those called RNS</li>
 <li><strong><a href="https://github.com/markqvist/Reticulum/">RNS</a></strong>, "Reticulum Network Stack": the reference Reticulum
   implementation</li>
-<li><strong><a href="https://markqvist.github.io/Reticulum/manual/interfaces.html">Interface</a></strong>: a specific backend for Reticulum, for example LoRa, WiFi,
+<li><strong><a href="https://markqvist.github.io/Reticulum/manual/interfaces.html">Interface</a></strong>: a specific back end for Reticulum, for example LoRa, WiFi,
   TCP, Bluetooth<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, ham radio</li>
 <li><strong><a href="https://markqvist.github.io/Reticulum/manual/understanding.html#reticulum-transport">Transport</a></strong>: a node that relays traffic for other. A "transport node",
   for example, is roughly equivalent to a "repeater" in Meshcore. For
   LoRa, typically comprises an embedded device (e.g. a Heltec) running
-  RNode (below) and a computer (e.g. a Raspberry Pi) runnin RNS or
+  RNode (below) and a computer (e.g. a Raspberry Pi) running RNS or
   some other application. Without a "transport node", devices can
   still talk to each other point-to-point, but they do not "mesh".</li>
 <li><strong><a href="https://unsigned.io/rnode/">RNode</a></strong>: the stock Reticulum firmware that allows you to talk with
@@ -1828,7 +1828,7 @@ Reticulum, as it can get confusing quickly.</p>
   that it does not work standalone and requires software on a computer
   attached to it to send receive messages or route traffic. Think of
   it like an old-school "modem".</li>
-<li><strong><a href="https://github.com/attermann/microReticulum">microReticulum</a></strong>: a reimplementation of the Reticulum stack designed
+<li><strong><a href="https://github.com/attermann/microReticulum">microReticulum</a></strong>: a re-implementation of the Reticulum stack designed
   to fit in embedded devices (e.g. a Heltec). Essentially a RNode that
   can act also as a transport node.</li>
 <li><strong><a href="https://markqvist.github.io/Reticulum/manual/understanding.html#public-key-announcements">announcement</a></strong>: a message sent over an interface that is used to
@@ -1847,7 +1847,7 @@ Reticulum, as it can get confusing quickly.</p>
   applications like voice calls, two-way radio systems, media
   streaming and so on. When we say a Reticulum application supports
   voice calls, it is implemented with LXST.</li>
-<li><strong><a href="https://rrc.kc1awv.net/">RRC</a></strong>: Reticulum Relay Chat. Reimplementation of IRC over Reticulum.</li>
+<li><strong><a href="https://rrc.kc1awv.net/">RRC</a></strong>: Reticulum Relay Chat. Re-implementation of IRC over Reticulum.</li>
 </ul>
 <h2 id="rns">RNS<a class="headerlink" href="#rns" title="Permanent link">&para;</a></h2>
 <p>RNS is the <a href="https://github.com/markqvist/Reticulum/">base Reticulum software</a>, still developed by the
@@ -1874,7 +1874,7 @@ run it with:</p>
 </code></pre></div>
 <p>You can also <a href="https://markqvist.github.io/Reticulum/manual/using.html#using-systemd">configure it as a systemd service</a>.</p>
 <p>On first start, <code>rnsd</code> will create a configuration file and a
-public/private keypair for your identity:</p>
+public/private key pair for your identity:</p>
 <div class="highlight"><pre><span></span><code>anarcat@dorothea:~$ rnsd -v
 [2026-06-05 09:53:44] [Notice]   Could not load config file, creating default configuration file...
 [2026-06-05 09:53:44] [Notice]   Default config file created. Make any necessary changes in /home/anarcat/.reticulum/config and restart Reticulum if needed.
@@ -2061,7 +2061,7 @@ ln -s RNS_Over_MeshCore/Interface/MeshcoreInterface.py .
    #guard_delay = 0.3             # Minimum gap between sends in opportunistic mode (seconds)
    #flood_scope =                 # Limit propagation to repeaters allowing this scope (requires firmware &gt;1.14)
 </code></pre></div>
-<p>Note that we use a hardcoded <code>channel_secret</code> above, which upstream
+<p>Note that we use a hard coded <code>channel_secret</code> above, which upstream
 <a href="https://github.com/slack-t/RNS_Over_MeshCore#channel-secret">strongly warns against</a>. We consider those concerns to be
 unfounded since Reticulum encrypts traffic before injecting into the
 transport. Instead, we favor instead broad compatibility across
@@ -2211,7 +2211,7 @@ python ~/.venvs/reticulum/bin/lxmf-cli.py
 EOF
 chmod +x ~/.venvs/reticulum/bin/lxmf-cli
 </code></pre></div>
-<p>The wrapper script is necessary because <a href="https://github.com/fr33n0w/lxmf-cli/issues/5">lxmf-cli does not write files
+<p>The wrapper script is necessary because <a href="https://github.com/fr33n0w/lxmf-cli/issues/5">LXMF-CLI does not write files
 in the right place</a>.</p>
 <p>Then you can start the client with:</p>
 <div class="highlight"><pre><span></span><code>lxmf-cli
@@ -2295,7 +2295,7 @@ pressing "RESET" (<code>RST</code>), before running the <code>flash.py</code> co
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 5, 2026 14:40:32 UTC">2026-06-05 14:40:32</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 5, 2026 14:43:10 UTC">2026-06-05 14:43:10</span>
   </span>
 
     
