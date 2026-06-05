@@ -15,7 +15,12 @@ nav:
     - FAQ: guides/faq.md
   - Guides:
     - Meshcore: guides/meshcore.md
-    - Reticulum: guides/reticulum.md
+    - Reticulum:
+      - guides/reticulum.md
+      - guides/reticulum/rns.md
+      - guides/reticulum/lxmf-cli.md
+      - guides/reticulum/meshcore.md
+      - guides/reticulum/rtnode.md
     - Meshtastic: guides/meshtastic.md
     - Matrix: guides/matrix.md
     - FAQ: guides/faq.md
