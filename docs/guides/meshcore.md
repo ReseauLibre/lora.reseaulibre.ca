@@ -44,7 +44,7 @@ to make sure it runs Meshcore by installing firmware on it, and that
 you can talk to the device, typically by installing an app on your
 phone.
 
-#### Backing up before flashing
+### Backing up before flashing
 
 If you're flashing an already configured device, you should backup
 before flashing it.
