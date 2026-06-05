@@ -133,6 +133,7 @@ and Python:
 
     python -m venv --system-site-packages .venvs/reticulum
     .venvs/reticulum/bin/pip install rns
+    echo 'PATH=$PATH:.venvs/reticulum/bin/' >> .bashrc
 
 The primary service you will run is called `rnsd`, and you can simply
 run it with:
@@ -535,9 +536,33 @@ Since a basic RNS setup like the above does not do much on its own, we
 will introduce you to a first basic chat application.
 
 If you are familiar with the command-line, [LXMF-CLI](https://github.com/fr33n0w/lxmf-cli) is a nice and
-simple chat client. When starting, it will prompt you for your
-identity and some settings, then it will announce your identity on the
-network through `rnsd`.
+simple chat client. It does not have a great installer (see [upstream
+issue 4](https://github.com/fr33n0w/lxmf-cli/issues/4), so we have to wrangle things out a little bit. Here we
+assume we can reuse the Python `venv` used to [install RNS](#rns):
+
+```
+git clone https://github.com/fr33n0w/lxmf-cli
+~/.venvs/reticulum/bin/pip install -r requirements.txt
+ln -s $PWD/lxmf-cli.py ~/.venvs/reticulum/bin/lxmf-cli.py
+cat > ~/.venvs/reticulum/bin/lxmf-cli <<EOF
+#! /bin/sh
+ 
+mkdir -p .config/lxmf-cli
+cd .config/lxmf-cli
+python ~/.venvs/reticulum/bin/lxmf-cli.py
+EOF
+chmod +x ~/.venvs/reticulum/bin/lxmf-cli
+```
+
+The wrapper script is necessary because [lxmf-cli does not write files
+in the right place](https://github.com/fr33n0w/lxmf-cli/issues/5).
+
+Then you can start the client with:
+
+    lxmf-cli
+
+When starting, it will prompt you for your identity and some settings,
+then it will announce your identity on the network through `rnsd`.
 
 If other identities are found through announces, it will notify you
 and you will be able to add them as contacts. For example:
