@@ -310,9 +310,9 @@ Unless you picked a standalone device, now you'll need something to
 talk with people on the mesh. Unless you use a standalone device, this
 means installing software on your phone.
 
-You can try that from your computer with a web browser by using one of
-the web-based apps: [Liam Cottle's](https://app.meshcore.nz/). There are also
-[iOS and Android versions](https://meshcore.io/#download).
+You can try that from your computer with a web browser by using [Liam
+Cottle's](https://app.meshcore.nz/) web app. There are also [iOS and Android versions](https://meshcore.io/#download) and
+a pretty good Linux desktop app called [Meshy](https://codeberg.org/sesivany/meshy).
 
 !!! bug "Proprietary software warning"
 
