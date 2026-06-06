@@ -569,9 +569,9 @@ retention to the user.
 
 We're using the defaults!
 
-- MeshCore: "US/Canada" preset, which is 910.525 MHz, 62.5 kHz, SF7, CR5
-- Meshtastic: "US" preset, LongFast, which is 906.875 MHz, 250kHz, SF 11, CR5
-- Reticulum: "Ottawa" preset, 914.875 MHz, 125 kHz, SF7, CR7
+- MeshCore: "US/Canada" preset (910.525 MHz, 62.5 kHz, SF7, CR5)
+- Meshtastic: "US" preset, LongFast (906.875 MHz, 250kHz, SF 11, CR5)
+- Reticulum: "Ottawa" preset (914.875 MHz, 125 kHz, SF7, CR7)
 
 For Reticulum, there is less standardization on those settings, so
 people often pick arbitrary numbers. Obviously, avoid the frequencies
