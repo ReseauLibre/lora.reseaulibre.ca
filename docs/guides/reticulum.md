@@ -33,13 +33,13 @@ If you're just getting started but have limited patience or capacity
 at dealing with exotic software or the command line, you should try
 one of those apps first:
 
-- [Columba](https://columba.network/): chat, voice calls, Android
-- [`MeshChatX`](https://meshchatx.com/): chat, group chat, voice calls, vibe-coded,
-  integrates (poorly) with RNS, Linux
-- [`retichat`](https://newendian.com/retichat): Mac ([App store](https://apps.apple.com/us/app/retichat/id6762225314))
 - [`Ratspeak`](https://ratspeak.org/): chat, voice calls, games, desktop, mobile and
   embedded app, Mac, Windows, Linux, iOS, Android, T-Deck Plus,
   [`Cardputer`](https://shop.m5stack.com/products/m5stack-cardputer-adv-version-esp32-s3), standalone rewrite in Rust
+- [`retichat`](https://newendian.com/retichat): Mac ([App store](https://apps.apple.com/us/app/retichat/id6762225314))
+- [Columba](https://columba.network/): chat, voice calls, Android
+- [`MeshChatX`](https://meshchatx.com/): chat, group chat, voice calls, vibe-coded,
+  integrates (poorly) with RNS, Linux
 
 We (unfortunately) do not have guides for those applications for now.
 
