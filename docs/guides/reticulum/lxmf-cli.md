@@ -63,3 +63,26 @@ usage. A few useful commands:
 LXMF-CLI also has a [surprisingly large collection of plugins](https://github.com/fr33n0w/lxmf-cli/tree/main/plugins)
 doing anything from a simple echo bot, logging, weather, but also a
 Telegram bridge and more.
+
+One plugin that's useful to enable is the [`prop_nodes` plugin](https://github.com/fr33n0w/lxmf-cli/blob/9ca50d00f67443e349346c7d9696e77b3a39abd3/plugins/prop_nodes.py#L494), as
+it will enable the use of [propagation nodes](https://reticulum.miraheze.org/wiki/Propagation_node) which can store
+messages for later replay if a contact is not online.
+
+A simple way is to just make all plugins available with:
+
+    ln -s ~/Projects/src/lxmf-cli/plugins ~/.config/lxmf-cli/lxmf_client_storage/plugins
+
+Then restart `lxmf-cli`, and run:
+
+    plugin enable prop_nodes
+    plugin reload
+    prop on
+
+Then `lxmf-cli` will try to discover a propagation node. If that never
+finishes, you can try to add a known propagation node with:
+
+    prop set a4746deea5c67422f12a621fe6d4ccc8
+
+The above is a random string that is not an actual propagation
+node. You'll need to find your own propagation node, and it's unclear
+how exactly we're supposed to find those.
