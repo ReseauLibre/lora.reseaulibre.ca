@@ -8,6 +8,14 @@ original founder of the Reticulum project.
     Unfortunately, Reticulum now ships [with a non-free license](https://github.com/markqvist/Reticulum/discussions/781#discussioncomment-13209632) which
     has [stalled the Debian packaging effort](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1101959) but also lead to the
     proliferation of [other implementations](https://reticulum.miraheze.org/wiki/Implementations). 
+    
+    [RetiNet](https://codeberg.org/skyguy/retinet) seems to be the
+    direct descendent, a fork of RNS before the license
+    change. [rsReticulum](https://github.com/ratspeak/rsReticulum)
+    seems pretty advanced as well, and so is
+    [leviculum](https://codeberg.org/Lew_Palm/leviculum). There are
+    also other implementations by military startups we will not
+    glorify here.
 
     Since most people still use the reference implementation, and that
     others derive from it generally stay compatible, this guide
