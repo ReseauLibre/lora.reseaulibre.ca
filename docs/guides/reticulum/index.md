@@ -7,6 +7,8 @@ and Meshtastic.
 This page aims at providing a guide to get started with Reticulum. It
 is based off the [official manual](https://markqvist.github.io/Reticulum/manual/gettingstartedfast.html) and first hand experience.
 
+If you know a little where you're going, start at [RNS](reticulum/rns.md).
+
 !!! example "Advanced users only"
 
     This is an **advanced** guide and assumes more prior knowledge
@@ -29,9 +31,20 @@ Meshcore and Meshtastic, Reticulum supports multiple physical medium
 including LoRa, of course, but also HF radios, Bluetooth, or
 TCP/IP. We have even ran Reticulum over Meshcore and Meshtastic!
 
+This guide covers the following tools:
+
+- [RNS](reticulum/rns.md): base routing layer, supports announcements, routing
+  ("transport") over WiFi, TCP, UDP, I2P, LoRa, serial, HF radios;
+  works on Linux, MacOS, Windows, Android; command-line
+- [LXMF-CLI](reticulum/lxmf-cli.md): chat interface on top of RNS,
+  Linux, Windows; command-line 
+- [RTNode](reticulum/rtnode.md): on-device transport node firmware
+
+Those are rather advanced tools, mostly geared towards the
+command-line.
+
 If you're just getting started but have limited patience or capacity
-at dealing with exotic software or the command line, you should try
-one of those apps first:
+at dealing with such complexity, you can try one of those apps instead:
 
 - [`Ratspeak`](https://ratspeak.org/): chat, voice calls, games, desktop, mobile and
   embedded app, Mac, Windows, Linux, iOS, Android, T-Deck Plus,
@@ -41,16 +54,8 @@ one of those apps first:
 - [`MeshChatX`](https://meshchatx.com/): chat, group chat, voice calls, vibe-coded,
   integrates (poorly) with RNS, Linux
 
-We (unfortunately) do not have guides for those applications for now.
-
-Instead, in this guide, we will cover the following tools:
-
-- [RNS](reticulum/rns.md): base routing layer, supports announcements, routing
-  ("transport") over WiFi, TCP, UDP, I2P, LoRa, serial, HF radios;
-  works on Linux, MacOS, Windows, Android; command-line
-- [LXMF-CLI](reticulum/lxmf-cli.md): chat interface on top of RNS,
-  Linux, Windows; command-line 
-- [RTNode](reticulum/rtnode.md): on-device transport node firmware
+We (unfortunately) do not have guides for those applications for
+now.
 
 We also acknowledge the hard work done to create those other
 applications, but consider them too hard to use for new users:
@@ -60,7 +65,8 @@ applications, but consider them too hard to use for new users:
 - [`nomadnet`](https://github.com/markqvist/nomadnet): chat client, web-like browser, text user interface
   (TUI), Linux
 
-Instead, we're covering the basic building block of Reticulum, RNS.
+Instead, we start with the basic building block of Reticulum,
+[RNS](reticulum/rns.md).
 
 ## Glossary
 
@@ -71,7 +77,7 @@ Reticulum, as it can get confusing quickly.
   (e.g. mesh) and application (e.g. LXMF) protocols, but also a
   reference implementation of those called RNS
 - **[RNS](https://github.com/markqvist/Reticulum/)**, "Reticulum Network Stack": the reference Reticulum
-  implementation
+  implementation, see [our guide](reticulum/rns.md)
 - **[Interface](https://markqvist.github.io/Reticulum/manual/interfaces.html)**: a specific back end for Reticulum, for example LoRa, WiFi,
   TCP, Bluetooth[^1], ham radio
 - **[Transport](https://markqvist.github.io/Reticulum/manual/understanding.html#reticulum-transport)**: a node that relays traffic for other. A "transport node",
