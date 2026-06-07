@@ -281,7 +281,7 @@ We *are* experimenting with Reticulum. Some of us have worked on
 on chip without a second computer), [transport nodes](https://github.com/jrl290/RTNode-HeltecV4) (same, as a
 gateway to the Internet), Reticulum-over-Meshtastic, and more!
 
-We now have a [guide on getting started with Reticulum](reticulum.md) as well.
+We now have a [guide on getting started with Reticulum](reticulum/index.md) as well.
 
 But Reticulum, while being more advanced in terms of routing and
 cryptography, lacks the "ready-made" aspect of the other protocols. You can,

@@ -7,7 +7,7 @@ and Meshtastic.
 This page aims at providing a guide to get started with Reticulum. It
 is based off the [official manual](https://markqvist.github.io/Reticulum/manual/gettingstartedfast.html) and first hand experience.
 
-If you know a little where you're going, start at [RNS](reticulum/rns.md).
+If you know a little where you're going, start at [RNS](rns.md).
 
 !!! example "Advanced users only"
 
@@ -22,7 +22,7 @@ If you know a little where you're going, start at [RNS](reticulum/rns.md).
     Most people doing mesh networking in Montreal are currently on
     Meshcore, so you should probably see our [Getting started with
     Meshcore](meshcore.md) guide instead and [Why not
-    Reticulum?](faq.md#why-not-reticulum).
+    Reticulum?](../faq.md#why-not-reticulum).
 
 ## Picking the right tool
 
@@ -33,12 +33,12 @@ TCP/IP. We have even ran Reticulum over Meshcore and Meshtastic!
 
 This guide covers the following tools:
 
-- [RNS](reticulum/rns.md): base routing layer, supports announcements, routing
+- [RNS](rns.md): base routing layer, supports announcements, routing
   ("transport") over WiFi, TCP, UDP, I2P, LoRa, serial, HF radios;
   works on Linux, MacOS, Windows, Android; command-line
-- [LXMF-CLI](reticulum/lxmf-cli.md): chat interface on top of RNS,
+- [LXMF-CLI](lxmf-cli.md): chat interface on top of RNS,
   Linux, Windows; command-line 
-- [RTNode](reticulum/rtnode.md): on-device transport node firmware
+- [RTNode](rtnode.md): on-device transport node firmware
 
 Those are rather advanced tools, mostly geared towards the
 command-line.
@@ -66,7 +66,7 @@ applications, but consider them too hard to use for new users:
   (TUI), Linux
 
 Instead, we start with the basic building block of Reticulum,
-[RNS](reticulum/rns.md).
+[RNS](rns.md).
 
 ## Glossary
 
@@ -77,7 +77,7 @@ Reticulum, as it can get confusing quickly.
   (e.g. mesh) and application (e.g. LXMF) protocols, but also a
   reference implementation of those called RNS
 - **[RNS](https://github.com/markqvist/Reticulum/)**, "Reticulum Network Stack": the reference Reticulum
-  implementation, see [our guide](reticulum/rns.md)
+  implementation, see [our guide](rns.md)
 - **[Interface](https://markqvist.github.io/Reticulum/manual/interfaces.html)**: a specific back end for Reticulum, for example LoRa, WiFi,
   TCP, Bluetooth[^1], ham radio
 - **[Transport](https://markqvist.github.io/Reticulum/manual/understanding.html#reticulum-transport)**: a node that relays traffic for other. A "transport node",
