@@ -85,16 +85,17 @@ Reticulum, as it can get confusing quickly.
   LoRa, typically comprises an embedded device (e.g. a Heltec) running
   RNode (below) and a computer (e.g. a Raspberry Pi) running RNS or
   some other application. Without a "transport node", devices can
-  still talk to each other point-to-point, but they do not "mesh".
-- **[RNode](https://unsigned.io/rnode/)**: the stock Reticulum firmware that allows you to talk with
-  other peers over LoRa, and that you flash on embedded devices
+  still talk to each other point-to-point, but they do not "mesh" over
+  multiple hops.
+- **[RNode](https://unsigned.io/rnode/)**: the stock Reticulum firmware that allows you to talk
+  with other peers over LoRa, and that you flash on embedded devices
   (e.g. a Heltec). Different than Meshcore or Meshtastic firmware in
-  that it does not work standalone and requires software on a computer
-  attached to it to send receive messages or route traffic. Think of
-  it like an old-school "modem".
+  that it does not work standalone; it requires software on an
+  attached computer to send and receive messages or route
+  traffic. Think of it like an old-school [modem](https://en.wikipedia.org/wiki/Modem).
 - **[microReticulum](https://github.com/attermann/microReticulum_Firmware)**: a re-implementation of the Reticulum stack designed
   to fit in embedded devices (e.g. a Heltec). Essentially a RNode that
-  can act also as a transport node.[^2]
+  can act also as a transport node.[^2] Equivalent to a Meshcore repeater.
 - **[announcement](https://markqvist.github.io/Reticulum/manual/understanding.html#public-key-announcements)**: a message sent over an interface that is used to
   establish routing with transport nodes. roughly equivalent to an
   "advert" in Meshcore.
