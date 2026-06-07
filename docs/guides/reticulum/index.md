@@ -124,3 +124,17 @@ Reticulum, as it can get confusing quickly.
     [`microReticulum_Firmware`](https://github.com/attermann/microReticulum_Firmware) project which is a fork of the
     [reference `RNode_Firmware`](https://github.com/markqvist/RNode_Firmware), which is much more useful and why
     we link to that instead of microReticulum directly.
+
+## Other resources
+
+- [Official website](https://reticulum.network/) and [community site](https://reticulum.community/)
+- [Manual](https://markqvist.github.io/Reticulum/manual/)
+- [Reticulum wiki](https://reticulum.miraheze.org/wiki/)
+- [`rns.recipes`](https://rns.recipes/), includes a
+  [forum](https://rns.recipes/forum) and [directory](https://directory.rns.recipes/)
+- [`rmap.world`](https://rmap.world/)
+- the [Linux in a bit guide](https://linuxinabit.codeberg.page/blog/reticulum/) is an excellent introduction to the
+  routing protocol
+- the Moscow site has a [good propagation simulator](https://rns.moscow/announce-sim.html) showing how
+  different modes affect propagation
+- [our Matrix room](https://matrix.to/#/#reseaulibre-reticulum:matrix.org) and the [broader Matrix space](https://matrix.to/#/#rns-space:yatrix.org)

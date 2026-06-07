@@ -505,3 +505,10 @@ See also the channels used in other communities:
 
 - [Puget mesh](https://pugetmesh.org/meshcore/)
 - [Switzerland](https://www.meshcore.ch/channels/)
+
+## References
+
+- [Official site](https://meshcore.io/)
+- [Wiki](https://deepwiki.com/meshcore-dev/MeshCore)
+- [Meshcore Canada](https://meshcore.ca/), and [forum](https://forum.meshcore.ca/)
+- [our Matrix room](https://matrix.to/#/#reseaulibre-meshcore:matrix.org)
