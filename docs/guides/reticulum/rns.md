@@ -1,4 +1,4 @@
-# RNS
+# Networking with RNS
 
 RNS is the [base Reticulum software](https://github.com/markqvist/Reticulum/), still developed by the
 original founder of the Reticulum project.

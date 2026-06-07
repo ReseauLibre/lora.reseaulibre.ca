@@ -16,7 +16,7 @@ nav:
   - Guides:
     - Meshcore: guides/meshcore.md
     - Reticulum:
-      - guides/reticulum.md
+      - guides/reticulum/index.md
       - guides/reticulum/rns.md
       - guides/reticulum/lxmf-cli.md
       - guides/reticulum/meshcore.md
