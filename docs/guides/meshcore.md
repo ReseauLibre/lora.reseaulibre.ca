@@ -512,3 +512,4 @@ See also the channels used in other communities:
 - [Wiki](https://deepwiki.com/meshcore-dev/MeshCore)
 - [Meshcore Canada](https://meshcore.ca/), and [forum](https://forum.meshcore.ca/)
 - [our Matrix room](https://matrix.to/#/#reseaulibre-meshcore:matrix.org)
+- [Ripple firmware user guide](https://files.liamcottle.net/MeshCore/Documentation/Ripple_User_Guide.pdf)

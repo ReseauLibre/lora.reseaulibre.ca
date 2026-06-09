@@ -20,3 +20,5 @@ firmware](https://rns.recipes/forum/build-guides/how-to-install-and-test-the-rtn
 Our only addition is that we had to put the device in upload mode, by
 holding the "BOOT" (actually labeled `PGR` on the board) button while
 pressing "RESET" (`RST`), before running the `flash.py` command.
+
+See also this [untested Ethernet gateway firmware](https://rns.recipes/forum/showcase/rnode-over-ethernet-rak4631-rak13800-ethernet-module).
