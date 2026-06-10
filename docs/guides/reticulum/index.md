@@ -119,7 +119,7 @@ Reticulum, as it can get confusing quickly.
   device like we do in Meshcore and Meshtastic, which do *not* support
   running a mesh over Bluetooth like Reticulum does.
 
-[^2]: [microReticulum](https://github.com/attermann/microReticulum) is technically just a C++ reimplementation
+[^2]: [microReticulum](https://github.com/attermann/microReticulum) is technically just a C++ re-implementation
     of RNS and not useful on its own. It is combined into the
     [`microReticulum_Firmware`](https://github.com/attermann/microReticulum_Firmware) project which is a fork of the
     [reference `RNode_Firmware`](https://github.com/markqvist/RNode_Firmware), which is much more useful and why

@@ -34,6 +34,6 @@ See also the [list of local Meshtastic groups](https://meshtastic.org/docs/commu
 - [Foulab](https://foulab.org): local hacker space
 - [RADAR](https://radar.aediroum.ca/): Université de Montréal computer science department
   ("DIRO") radio club, working on a [C++ driver](https://codeberg.org/RADAR/pinedio-lora-driver) for the
-  [Pinedio](https://wiki.pine64.org/wiki/Pinedio#USB_adapter), the "PINE64 USB LoRa adapter is based on the Semtech
-  SX1262 LoRa module and the CH341 USB bus converter chip"
+  [`Pinedio`](https://wiki.pine64.org/wiki/Pinedio#USB_adapter), the "PINE64 USB LoRa adapter is based on the Semtech
+  `SX1262` LoRa module and the CH341 USB bus converter chip"
 - [Montreal Mesh](https://www.montrealmesh.ca): fork of the [Greater Ottawa Mesh](https://ottawamesh.ca/) site
