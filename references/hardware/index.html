@@ -1952,6 +1952,18 @@ many not have batteries.</p>
   and possibly other firmware, so configuration still has to go
   through Bluetooth, serial or WiFi.</p>
 </li>
+<li>
+<p><a href="https://mappingnetwork.ca/products/sensecap-m2-indoor-gateway-lorawan-us915">SenseCAP M2 indoor
+  gateway</a>:
+  cheaper alternative to teh WisMesh?</p>
+</li>
+<li>
+<p><a href="https://www.aliexpress.com/item/1005010224488993.html">AliExpress 5W Heltec
+kit</a>,
+<a href="https://www.aliexpress.com/item/1005006633080419.html">25W</a>, be
+careful as sometimes they sell a Heltec v4.2 instead of a v4.3,
+and that has problems, better to buy the Heltec separately</p>
+</li>
 </ul>
 </div>
 <h3 id="mounts">Mounts<a class="headerlink" href="#mounts" title="Permanent link">&para;</a></h3>
@@ -1972,7 +1984,7 @@ really be used in production as they lack a proper case.</p>
   case). one advantage Heltec has over the below RAK kits is that
   you can connect to them over wifi, the downside is
   they use more power because they are ESP32 based instead of
-  NRF5280</li>
+  NRF5280, might be cheaper <a href="https://www.aliexpress.com/item/1005011870647672.html">at AliExpress</a></li>
 <li>the <a href="https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158">RAK19003 base kit</a> (28$) is more expensive, but less
   power-hungry than the Heltec</li>
 </ul>
@@ -2044,10 +2056,6 @@ practice, see the <a href="antennas/">Antennas</a> section.</p>
 <p>a similar (and currently cheaper) model is this <a href="https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-930MHz-5-8dBi-800mm-p-5275.html">RF Explorer 800mm</a>
   (10$USD from from SeeedStudio)</p>
 </li>
-<li>
-<p>Ottawa used the <a href="https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-928MHz-8dBi-1300mm-p-5278.html">8dB SeeedStudio 1300mm at 30$USD</a> (<a href="https://www.mouser.ca/ProductDetail/Seeed-Studio/318020693?qs=By6Nw2ByBD0kjpJjgHd0aQ%3D%3D">Mouser</a>,
-  <a href="https://www.digikey.ca/en/products/detail/seeed-technology-co-ltd/318020693/15976337?s=N4IgTCBcDaIMwEYAcAGMKBsBOOIC6AvkA">130$ Digikey</a>)</p>
-</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -2057,6 +2065,17 @@ antenna, particularly for non-US frequencies. While it is a different
 antenna, it's unclear if the above RF Explorer has the same flaw, further
 testing necessary.</p>
 </div>
+<ul>
+<li>
+<p>Ottawa used the <a href="https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-928MHz-8dBi-1300mm-p-5278.html">8dB SeeedStudio 1300mm at 30$USD</a> (<a href="https://www.mouser.ca/ProductDetail/Seeed-Studio/318020693?qs=By6Nw2ByBD0kjpJjgHd0aQ%3D%3D">Mouser</a>,
+  <a href="https://www.digikey.ca/en/products/detail/seeed-technology-co-ltd/318020693/15976337?s=N4IgTCBcDaIMwEYAcAGMKBsBOOIC6AvkA">130$ Digikey</a>, <a href="https://mappingnetwork.ca/products/rakwireless-8dbi-fiberglass-antenna">85$ on sale at MN</a>)</p>
+</li>
+<li>
+<p><a href="https://mappingnetwork.ca/">Mapping Network</a> has a couple of interesting antennas, some of us
+  have experimented with the McGill Microwave antennas, specifically
+  the <a href="https://mappingnetwork.ca/products/mcgill-3dbi-tuned-antenna-us915">3dBi</a> and <a href="https://mappingnetwork.ca/products/mcgill-microwave-6dbi-tuned-antenna-us915">6dBi</a> antennas</p>
+</li>
+</ul>
 <p>Note that, to connect those to (say) a Heltec, you will need
 adapters:</p>
 <div class="highlight"><pre><span></span><code>N (Antenna) --(cable)--&gt; RP-SMA --(adaptor)--&gt; SMA --(pigtail)--&gt; IPEX U.FL (Heltec v4)
@@ -2113,6 +2132,8 @@ you for various reasons:</p>
 <li><a href="https://space-hedgehog.com/">Space Hedgehog</a>: also more expensive; stocks Antenna, Heltec,
   based in Ottawa, related to the <a href="https://ottawamesh.ca/">Ottawa mesh</a></li>
 <li><a href="https://mpandw.ca/">Motion Power &amp; Witt Supply Co.</a> has <a href="batteries/">batteries</a>, based in Ottawa</li>
+<li><a href="https://mappingnetwork.ca/">Mapping Network</a>: has a <a href="https://mappingnetwork.ca/collections/antennas">good antenna collection</a> and other
+  devices, particularly <a href="https://mappingnetwork.ca/products/lmr-400-ultraflex-coaxial-cable-n-female-rp-sma-male">LMR400 cabling</a></li>
 </ul>
 <h2 id="hacks">Hacks<a class="headerlink" href="#hacks" title="Permanent link">&para;</a></h2>
 <ul>
@@ -2160,7 +2181,7 @@ you for various reasons:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="May 22, 2026 19:32:19 UTC">2026-05-22 19:32:19</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 10, 2026 13:50:40 UTC">2026-06-10 13:50:40</span>
   </span>
 
     
