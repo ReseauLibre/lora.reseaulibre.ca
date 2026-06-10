@@ -223,6 +223,15 @@ many not have batteries.
       and possibly other firmware, so configuration still has to go
       through Bluetooth, serial or WiFi.
 
+    - [SenseCAP M2 indoor
+      gateway](https://mappingnetwork.ca/products/sensecap-m2-indoor-gateway-lorawan-us915):
+      cheaper alternative to teh WisMesh?
+
+    - [AliExpress 5W Heltec
+    kit](https://www.aliexpress.com/item/1005010224488993.html),
+    [25W](https://www.aliexpress.com/item/1005006633080419.html), be
+    careful as sometimes they sell a Heltec v4.2 instead of a v4.3,
+    and that has problems, better to buy the Heltec separately
 
 ### Mounts
 
@@ -247,7 +256,7 @@ The devices here generally do not have a battery.
       case). one advantage Heltec has over the below RAK kits is that
       you can connect to them over wifi, the downside is
       they use more power because they are ESP32 based instead of
-      NRF5280
+      NRF5280, might be cheaper [at AliExpress](https://www.aliexpress.com/item/1005011870647672.html)
     - the [RAK19003 base kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) (28$) is more expensive, but less
       power-hungry than the Heltec
 
@@ -321,8 +330,6 @@ We have experience with this:
 - a similar (and currently cheaper) model is this [RF Explorer 800mm](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-930MHz-5-8dBi-800mm-p-5275.html)
   (10$USD from from SeeedStudio)
 
-- Ottawa used the [8dB SeeedStudio 1300mm at 30$USD](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-928MHz-8dBi-1300mm-p-5278.html) ([Mouser](https://www.mouser.ca/ProductDetail/Seeed-Studio/318020693?qs=By6Nw2ByBD0kjpJjgHd0aQ%3D%3D),
-  [130$ Digikey](https://www.digikey.ca/en/products/detail/seeed-technology-co-ltd/318020693/15976337?s=N4IgTCBcDaIMwEYAcAGMKBsBOOIC6AvkA))
 
 !!! warning
 
@@ -331,6 +338,13 @@ We have experience with this:
     antenna, particularly for non-US frequencies. While it is a different
     antenna, it's unclear if the above RF Explorer has the same flaw, further
     testing necessary.
+
+- Ottawa used the [8dB SeeedStudio 1300mm at 30$USD](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-928MHz-8dBi-1300mm-p-5278.html) ([Mouser](https://www.mouser.ca/ProductDetail/Seeed-Studio/318020693?qs=By6Nw2ByBD0kjpJjgHd0aQ%3D%3D),
+  [130$ Digikey](https://www.digikey.ca/en/products/detail/seeed-technology-co-ltd/318020693/15976337?s=N4IgTCBcDaIMwEYAcAGMKBsBOOIC6AvkA), [85$ on sale at MN](https://mappingnetwork.ca/products/rakwireless-8dbi-fiberglass-antenna))
+
+- [Mapping Network][] has a couple of interesting antennas, some of us
+  have experimented with the McGill Microwave antennas, specifically
+  the [3dBi](https://mappingnetwork.ca/products/mcgill-3dbi-tuned-antenna-us915) and [6dBi](https://mappingnetwork.ca/products/mcgill-microwave-6dbi-tuned-antenna-us915) antennas
 
 Note that, to connect those to (say) a Heltec, you will need
 adapters:
@@ -349,6 +363,8 @@ Other lists include:
   antenna reports](https://github.com/meshtastic/antenna-reports)
 - [`nyme.sh` recommendations](https://nyme.sh/faq/#what-antenna)
 - [Ottawa Mesh recommendations](https://ottawamesh.ca/hardware/recommended-antenna/)
+
+[Mapping Network]: https://mappingnetwork.ca/
 
 ### Alfa upgrade on the SenseCAP P1
 
@@ -399,6 +415,8 @@ you for various reasons:
 - [Space Hedgehog](https://space-hedgehog.com/): also more expensive; stocks Antenna, Heltec,
   based in Ottawa, related to the [Ottawa mesh](https://ottawamesh.ca/)
 - [Motion Power & Witt Supply Co.](https://mpandw.ca/) has [batteries](batteries.md), based in Ottawa
+- [Mapping Network][]: has a [good antenna collection](https://mappingnetwork.ca/collections/antennas) and other
+  devices, particularly [LMR400 cabling](https://mappingnetwork.ca/products/lmr-400-ultraflex-coaxial-cable-n-female-rp-sma-male)
 
 ## Hacks
 
