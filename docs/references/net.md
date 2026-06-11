@@ -64,6 +64,39 @@ the network?](../guides/faq.md#how-many-nodes-in-the-network) FAQ.
 
 We keep track of past nets here.
 
+### 2026-06-10
+
+Largest net so far, again:
+
+| time  | call sign          | location      |
+|-------|--------------------|---------------|
+| 21:00 | `oots`             | Villeray      |
+| 21:00 | `uconsole -VE2CKK` | Longueuil     |
+| 21:00 | `K836`             | Petite-Patrie |
+| 21:01 | `anarcat`          | Petite-Italie |
+| 21:02 | `VA2SM`            | Candiac       |
+| 21:02 | `Carlitos`         | Sainte-Julie  |
+| 21:03 | `MadJap`           | Marieville    |
+| 21:04 | `MeshCourte`       | ---           |
+| 21:07 | `VE2CL`            | La Prairie    |
+| 21:20 | `DIR Hochelaga`    | Hochelaga     |
+| 21:36 | `FoxRook`          | Laval         |
+
+Usual host was late, SbMo took the above checkins, then anarcat tried
+to pick up again, only to rehash mostly the same people needlessly. :)
+
+The Marieville record still holds, but we beat the number of
+participants record (11, previously 7).
+
+Observed:
+
+- 11 participants (above)
+- 100 repeaters (last week)
+- 66 companions
+- 9 rooms
+- [114 nodes in the official map](https://map.meshcore.io/?zoom=7&lat=45.7100&lon=-72.6416)
+- [97 repeaters in MeshMapper](https://yul.meshmapper.net/leaderboard.php)
+
 ### 2026-05-27
 
 Largest net so far:
