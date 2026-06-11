@@ -21,6 +21,7 @@ jobs:
           server: grebedoc.dev
         continue-on-error: true
 
+      # this fails because we need node, damnit
       - name: cache save
         uses: https://data.forgejo.org/actions/cache/save@v4
         with:
