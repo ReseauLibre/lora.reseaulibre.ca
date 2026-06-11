@@ -6,8 +6,7 @@ jobs:
     container:
       image: squidfunk/mkdocs-material
     steps:
-      - run: ls -al
-      - run: git clone $REPOSITORY_URL .$FORGEJO_WORKSPACE
+      - run: git clone $REPOSITORY_URL .
       - run: pip install -r requirements.txt
       - run: mkdocs build
       - run: git fetch --all
