@@ -298,6 +298,10 @@ says it does not work for custom domains, although that might now be
 inaccurate, since we've published the site on a `git-pages` back-end
 (Grebedoc) without problems since 2026-05-26.
 
+We're in the process of migrating to Codeberg actions. We've had
+trouble with the cache and artifacts action which both need node, so
+for now it reuses the git-based caching logic used by Woodpecker.
+
 There was a downtime on Codeberg on 2026-03-04 that cause the site to
 go down almost entirely for a full 24 hours. 
 
@@ -315,7 +319,8 @@ see above.
 
 We also use the `cache` branch to carry around the Lychee cache. This
 could be fixed if [Woodpecker supported caches](https://github.com/woodpecker-ci/woodpecker/discussions/2296) or with a Forgejo
-["cache" action](https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/) or [artifacts](https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts).
+["cache"](https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/) or [artifacts action](https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts). Both actions require a Node
+installation and are not compatible with many images.
 
 ## Matrix commit bot
 

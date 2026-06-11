@@ -21,14 +21,21 @@ jobs:
           server: grebedoc.dev
         continue-on-error: true
 
-      # this fails because we need node, damnit
-      - name: cache save
-        uses: https://data.forgejo.org/actions/cache/save@v4
-        with:
-          path: |
-            site/
-            .lycheeignore
-          key: site-cache
+      # sync to the pages branch
+      #
+      # we don't use the "cache" system because a) it's runner
+      # specific and b) it uses node
+      #
+      # we *could* use the artifacts system for this, but we have
+      # haven't figured out how to pull artifacts down just yet
+      - run: apt update && apt install rsync
+      - run: git config --global user.email $MAIL
+      - run: git config --global user.name "Codeberg CI"
+      - run: git worktree add ../pages pages
+      - run: rsync --delete --recursive --checksum --exclude '.git/**' site/ ../pages/
+      - run: cp .domains ../pages/ || true
+      - run: git -C ../pages/ add .
+      - run: if ! git -C ../pages/ diff --cached --quiet; then git ../pages/ commit -m "Codeberg CI pages update" && git ../pages/ push; fi
 
   linkcheck:
     needs:
@@ -37,29 +44,18 @@ jobs:
     container:
       image: containers.torproject.org/tpo/web/container-images/lychee
     steps:
-      - name: cache restore
-        id: cachestep2
-        uses: https://data.forgejo.org/actions/cache/restore@v4
-        with:
-          path: |
-            .lycheeignore
-            site/
-          key: site-cache
-      - name: lychee cache restore
-        id: cachestep2
-        uses: https://data.forgejo.org/actions/cache/restore@v4
-        with:
-          path: cache/
-          key: lychee-cache
-
       - run: apt-get update && apt-get install -y git
-      - run: cp .lycheeignore cache
+
+      - run: git clone -b pages "${REPOSITORY_URL:-${FORGEJO_SERVER_URL}/${FORGEJO_REPOSITORY}.git}" pages/
+      - run: git -C pages/ worktree add cache/ cache
+      - run: git -C repo/ worktree add repo/ main
+      - run: git config --global user.email $MAIL
+      - run: git config --global user.name "Codeberg CI"
+
+      - run: cp repo/.lycheeignore cache
       - run: cd cache
       - run: lychee ../site --root-dir ../site/ --include-fragments --index-files index.html --no-progress --cache --cache-exclude-status "401,429,500.." --max-cache-age 30d --scheme http --scheme https --require-https
       - run: sort .lycheecache > .lycheecache.sorted && mv .lycheecache.sorted .lycheecache
 
-      - name: cache save
-        uses: https://data.forgejo.org/actions/cache/save@v4
-        with:
-          path: cache/
-          key: lychee-cache
+      - run: git -C cache/ add .
+      - run: if ! git diff -C cache/ --cached --quiet; then git commit -C cache/ -m "Codeberg CI cache update" && git  -C cache/ push; fi
