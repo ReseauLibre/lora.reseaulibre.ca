@@ -3,6 +3,8 @@ on: [push]
 jobs:
   publish:
     runs-on: codeberg-tiny
+    container:
+      image: squidfunk/mkdocs-material
     steps:
       # this nasty thing uses node.js to clone the repo
       # consider https://codeberg.org/Shrimp-CI/checkout/ or just
@@ -16,12 +18,11 @@ jobs:
           submodules: true
           fetch-depth: 0
 
-      - run: python -m venv ../venv/mkdocs
-      - run: ../venv/mkdocs/bin/pip install -r requirements.txt
-      - run: ../venv/mkdocs/bin/mkdocs build
+      - run: pip install -r requirements.txt
+      - run: mkdocs build
       - run: git fetch --all
       - run: git worktree add ../fr/ fr
-      - run: cd ../fr && ../venv/mkdocs/bin/mkdocs build -d $FORGEJO_WORKSPACE/site/fr
+      - run: cd ../fr && mkdocs build -d $FORGEJO_WORKSPACE/site/fr
 
       - uses: actions/git-pages@v2
         with:
