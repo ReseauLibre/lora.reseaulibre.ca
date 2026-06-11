@@ -1917,6 +1917,21 @@ interface to your <code>~/.reticulum/config</code> file:</p>
   # appropriately
   discoverable = yes
 </code></pre></div>
+<p>The above connects over a serial port, but you can also connect over
+Bluetooth. For that you need to put the RNode in pairing mode, which
+can be done by holding the extra button (not the power button, the
+other one) for 5 seconds. This can also be enabled with:</p>
+<div class="highlight"><pre><span></span><code>rnodeconf --bluetooth-pair /dev/ttyUSB1
+</code></pre></div>
+<p>Then you can pair the device using <code>rsnd</code> (or, for that matter, a
+mobile app). The above configuration file should have this instead:</p>
+<div class="highlight"><pre><span></span><code>port = ble://
+</code></pre></div>
+<p>Then you pair the device in your OS Bluetooth configuration interface,
+and restart <code>rnsd</code>.</p>
+<p>Then you can ditch the USB cable, as long as the device has a battery
+or other power source, of course. Note that this also works over WiFi
+with <code>--wifi</code> options to <a href="https://markqvist.github.io/Reticulum/manual/using.html#the-rnodeconf-utility"><code>rnodeconf</code></a>.</p>
 <p>The <a href="https://markqvist.github.io/Reticulum/manual/interfaces.html#rnode-lora-interface">full RNode interface configuration</a> is worth a read as well.</p>
 <p>Restart <code>rsnd</code> and it should try to connect to your RNode device!</p>
 <div class="admonition example">
@@ -2060,7 +2075,7 @@ Path found, destination &lt;64607119a6bfd90f3ca6d4332968b35c&gt; is 1 hop away v
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 7, 2026 02:43:16 UTC">2026-06-07 02:43:16</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 11, 2026 02:59:48 UTC">2026-06-11 02:59:48</span>
   </span>
 
     
