@@ -1,7 +1,7 @@
 ---
 on: [push]
 jobs:
-  publish:
+  aspell:
     runs-on: codeberg-tiny
     steps:
       # this nasty thing uses node.js to clone the repo
