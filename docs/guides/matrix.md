@@ -154,3 +154,36 @@ fail after 24 hours.
 This was done instead of setting up a dedicated bot like [Maubot](https://mau.bot/)
 with its [numerous plugins](https://plugins.mau.bot/) like a [RSS plugin](https://github.com/maubot/rss), or a [webhook
 plugin](https://github.com/jkhsjdhjs/maubot-webhook). There is also a [dedicated RSS bridge](https://gitlab.com/matrix-rss-bridge/matrix-rss-bridge).
+
+## Moderation
+
+We have a bot called `mjolnir` in the rooms which enforces common
+block lists shared across the Matrix community. It is managed by the
+[`debian.social` team](https://debian.social), of which anarcat is a member. 
+
+Here is a [good guide on moderation tools](https://matrix-community-help.codestorm.net/).
+
+Other people have been promoted to moderation roles as well. That has
+been done manually across all the rooms.
+
+!!! bug
+
+    Unfortunately, Matrix doesn't support syncing moderation status
+    across an entire space yet, see:
+
+    - [MSC3216: Synchronized access control for Spaces](https://github.com/matrix-org/matrix-spec-proposals/pull/3216)
+    - [MSC2962: Managing power levels via Spaces](https://github.com/matrix-org/matrix-spec-proposals/pull/2962)
+
+    We could also use a
+    [`communitybot`](https://github.com/williamkray/maubot-communitybot)
+    as an alternative, but then we'd still need to add it to all the
+    rooms anyways.
+
+[asgard.chat](https://asgard.chat/) possible alternative to Debian's mjolnir, ran by the
+folks who do a lot of stuff in Matrix, people from the MSC core team,
+draupnir, meowlnir, continuwuity and so on.
+
+Both run an open source bot called [Draupnir](https://github.com/the-draupnir-project/Draupnir). We could run our own
+to remove trust in other organisations, but it wouldn't resolve the
+primary goal of the bot which is to remove the single point of failure
+in the main room admin.
