@@ -6,18 +6,7 @@ jobs:
     container:
       image: squidfunk/mkdocs-material
     steps:
-      # this nasty thing uses node.js to clone the repo
-      # consider https://codeberg.org/Shrimp-CI/checkout/ or just
-      # rewrite from scratch. essentially we need to:
-      # git init
-      # git remote add
-      # git fetch with submodules
-      # git checkout
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
-          fetch-depth: 0
-
+      - run: rm -rf $FORGEJO_WORKSPACE && git clone $REPOSITORY_URL $FORGEJO_WORKSPACE
       - run: pip install -r requirements.txt
       - run: mkdocs build
       - run: git fetch --all
