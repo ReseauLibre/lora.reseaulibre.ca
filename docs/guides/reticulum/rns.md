@@ -158,6 +158,25 @@ interface to your `~/.reticulum/config` file:
   discoverable = yes
 ```
 
+The above connects over a serial port, but you can also connect over
+Bluetooth. For that you need to put the RNode in pairing mode, which
+can be done by holding the extra button (not the power button, the
+other one) for 5 seconds. This can also be enabled with:
+
+    rnodeconf --bluetooth-pair /dev/ttyUSB1
+
+Then you can pair the device using `rsnd` (or, for that matter, a
+mobile app). The above config file should have this instead:
+
+    port = ble://
+
+Then you pair the device in your OS Bluetooth configuration interface,
+and restart `rnsd`.
+
+Then you can ditch the USB cable, as long as the device has a battery
+or other power source, of course. Note that this also works over WiFi
+with `--wifi` options to [`rnodeconf`](https://markqvist.github.io/Reticulum/manual/using.html#the-rnodeconf-utility).
+
 The [full RNode interface configuration](https://markqvist.github.io/Reticulum/manual/interfaces.html#rnode-lora-interface) is worth a read as well.
 
 Restart `rsnd` and it should try to connect to your RNode device!
