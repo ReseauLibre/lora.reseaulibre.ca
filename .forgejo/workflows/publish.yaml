@@ -37,9 +37,11 @@ jobs:
           key: site-cache
 
   linkcheck:
-    needs: [publish]
+    needs:
+      - publish
     runs-on: codeberg-tiny
-    image: containers.torproject.org/tpo/web/container-images/lychee
+    container:
+      image: containers.torproject.org/tpo/web/container-images/lychee
     steps:
       - name: cache restore
         id: cachestep2
