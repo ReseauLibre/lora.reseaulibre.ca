@@ -15,7 +15,7 @@ jobs:
         with:
           submodules: true
 
-      - run: pip install -r requirements.txt
+      - run: pip install --break-system-packages -r requirements.txt
       - run: mkdocs build
       - run: git fetch --all
       - run: git worktree add ../fr/ fr
