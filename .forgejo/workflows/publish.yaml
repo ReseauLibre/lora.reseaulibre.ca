@@ -21,7 +21,7 @@ jobs:
       - run: venv/mkdocs/bin/mkdocs build
       - run: git fetch --all
       - run: git worktree add ../fr/ fr
-      - run: cd ../fr && venv/mkdocs/bin/mkdocs build -d ../$CI_REPO_NAME/site/fr
+      - run: cd ../fr && ../$CI_REPO_NAME/venv/mkdocs/bin/mkdocs build -d ../$CI_REPO_NAME/site/fr
 
       - uses: actions/git-pages@v2
         with:
