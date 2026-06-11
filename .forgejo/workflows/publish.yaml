@@ -2,7 +2,7 @@
 on: [push]
 jobs:
   publish:
-    runs-on: codeberg-tiny
+    runs-on: codeberg-small
     container:
       image: squidfunk/mkdocs-material
     steps:
@@ -40,7 +40,7 @@ jobs:
   linkcheck:
     needs:
       - publish
-    runs-on: codeberg-tiny
+    runs-on: codeberg-small
     container:
       image: containers.torproject.org/tpo/web/container-images/lychee
     steps:
