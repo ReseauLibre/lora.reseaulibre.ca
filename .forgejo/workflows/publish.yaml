@@ -19,6 +19,7 @@ jobs:
           token: ${{ forge.token }}
           source: site/
           server: grebedoc.dev
+        continue-on-error: true
 
       - name: cache save
         uses: https://data.forgejo.org/actions/cache/save@v4
