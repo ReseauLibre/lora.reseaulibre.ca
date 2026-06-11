@@ -179,9 +179,9 @@ been done manually across all the rooms.
     as an alternative, but then we'd still need to add it to all the
     rooms anyways.
 
-[asgard.chat](https://asgard.chat/) possible alternative to Debian's mjolnir, ran by the
+[`asgard.chat`](https://asgard.chat/) possible alternative to Debian's Mjolnir, ran by the
 folks who do a lot of stuff in Matrix, people from the MSC core team,
-draupnir, meowlnir, continuwuity and so on.
+Draupnir, Meowlnir, Continuwuity and so on.
 
 Both run an open source bot called [Draupnir](https://github.com/the-draupnir-project/Draupnir). We could run our own
 to remove trust in other organisations, but it wouldn't resolve the

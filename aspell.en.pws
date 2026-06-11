@@ -1,4 +1,4 @@
-personal_ws-1.1 en 198 
+personal_ws-1.1 en 208 
 AEAD
 AES
 APRS
@@ -17,11 +17,13 @@ Brossard
 CLI
 CNAME
 Canadaverse
+Candiac
 ChaChaPoly
 Cinny
 Cleeyv
 Codeberg
 Columba
+Continuwuity
 Cottle
 Cottle's
 CÉGEPS
@@ -31,6 +33,7 @@ DIY
 DNS
 Dennet
 Digikey
+Draupnir
 ECB
 ECDH
 FACIL
@@ -53,9 +56,11 @@ HKDF
 HMAC
 Haruki's
 Heltec
+Hochelaga
 IPEX
 ISF
 InkHUD
+Italie
 Jitsi
 Joliette
 Koumbit
@@ -74,6 +79,7 @@ LoRa
 LongFast
 Lychee
 MQTT
+MSC
 MTU
 MUI
 MacOS
@@ -85,6 +91,7 @@ Matterbridge
 Mattermost
 Maubot
 McGill
+Meowlnir
 Mercier
 MeshCore
 MeshMapper
@@ -96,6 +103,7 @@ Meshsense
 Meshtastic
 Meshtastic's
 Meshy
+Mjolnir
 Montréal
 Muzi
 NHMesh
@@ -129,6 +137,8 @@ Réseau
 SHA
 SMA
 SWR
+Sainte
+SbMo
 SeeedStudio
 Semtech
 SenseCAP

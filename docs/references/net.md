@@ -82,7 +82,7 @@ Largest net so far, again:
 | 21:20 | `DIR Hochelaga`    | Hochelaga     |
 | 21:36 | `FoxRook`          | Laval         |
 
-Usual host was late, SbMo took the above checkins, then anarcat tried
+Usual host was late, SbMo took the above check-ins, then anarcat tried
 to pick up again, only to rehash mostly the same people needlessly. :)
 
 The Marieville record still holds, but we beat the number of

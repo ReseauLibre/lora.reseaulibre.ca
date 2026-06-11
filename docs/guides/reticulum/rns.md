@@ -166,7 +166,7 @@ other one) for 5 seconds. This can also be enabled with:
     rnodeconf --bluetooth-pair /dev/ttyUSB1
 
 Then you can pair the device using `rsnd` (or, for that matter, a
-mobile app). The above config file should have this instead:
+mobile app). The above configuration file should have this instead:
 
     port = ble://
 

@@ -144,4 +144,4 @@ over Reticulum:
 - [RFC: Reticulum Network Stack as a Decentralized Backhaul Layer for
   MeshCore](https://github.com/meshcore-dev/MeshCore/discussions/1736)
 - [MeshCore–Reticulum Bridge Node: Technical Specification v5](https://github.com/samuk/Reticulum/blob/master/docs/meshcore-bridge.md), the
-  spec behind [CoreNet](https://github.com/artbotterell/CoreNet)
+  spec behind [`CoreNet`](https://github.com/artbotterell/CoreNet)
