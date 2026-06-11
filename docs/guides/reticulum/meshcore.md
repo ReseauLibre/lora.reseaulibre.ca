@@ -22,16 +22,24 @@ During the May 2026 mesh night at Foulab, we have successfully routed
 Reticulum messages over a local LoRa link with two Meshcore companions
 connected over serial.
 
-We are using [this fork of the `RNS_Over_MeshCore` interface](https://github.com/slack-t/RNS_Over_MeshCore).
+We are using [this fork of the `RNS_Over_MeshCore` interface](https://github.com/slack-t/RNS_Over_MeshCore). To
+install it, we clone it and deploy the file in place:
 
-To install it, we clone it and deploy the file in place.
 ```
 cd .reticulum/interfacse
 git clone https://github.com/slack-t/RNS_Over_MeshCore
 ln -s RNS_Over_MeshCore/Interface/MeshcoreInterface.py .
 ```
 
-Then we add the interface to the RNS configuration file in `~/.reticulum/config`:
+!!! note
+
+    There is also this other implementation:
+    [`scottrhoyt/rns-meshcore-interface`](https://github.com/scottrhoyt/rns-meshcore-interface)
+    that has not been tested and is likely incompatible.
+
+
+Then we add the interface to the RNS configuration file in
+`~/.reticulum/config`:
 
 ```
 [[MeshCore]]
@@ -127,3 +135,13 @@ sure you pick "serial" and not "Bluetooth".
 If both endpoints are configured this way, they should be able to send
 an announce (see below), see each other, and exchange text messages
 and so on.
+
+## Other references
+
+Two conversations about doing the reverse, that is routing Meshcore
+over Reticulum:
+
+- [RFC: Reticulum Network Stack as a Decentralized Backhaul Layer for
+  MeshCore](https://github.com/meshcore-dev/MeshCore/discussions/1736)
+- [MeshCore–Reticulum Bridge Node: Technical Specification v5](https://github.com/samuk/Reticulum/blob/master/docs/meshcore-bridge.md), the
+  spec behind [CoreNet](https://github.com/artbotterell/CoreNet)
