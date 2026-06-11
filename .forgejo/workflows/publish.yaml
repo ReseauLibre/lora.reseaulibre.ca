@@ -27,7 +27,7 @@ jobs:
         with:
           site: https://lora.reseaulibre.ca/
           token: ${{ forge.token }}
-          source: public/
+          source: site/
           server: grebedoc.dev
 
       - name: cache save
