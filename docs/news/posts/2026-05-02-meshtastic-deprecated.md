@@ -6,6 +6,12 @@ categories:
   - announcements
 ---
 
+Meshtastic deprecated in favor of Meshcore.
+
+<!-- more -->
+
+---
+
 As of today, Meshcore has overtaken Meshtastic in number of devices
 visible from maps in the greater Montreal area. While this might be a
 questionable heuristic, it's pretty clear when comparing the current

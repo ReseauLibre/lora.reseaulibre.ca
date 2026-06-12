@@ -12,6 +12,8 @@ night the first Wednesday of the month, and this month is
 no exception!  <!-- post link when ready:
 https://foulab.org/news/events-may-2026/ -->
 
+<!-- more -->
+
 So let's meet at Foulab on May 6h from 19:00 to 22:00. We will be
 talking about and experimenting with mesh networking technologies such
 as Meshtastic, MeshCore, and Reticulum.

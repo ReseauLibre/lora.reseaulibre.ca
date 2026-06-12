@@ -11,6 +11,8 @@ We will hold a Mesh Montreal repeater meet up at room C-9019 of
 [Lionel Groulx wing](https://www.openstreetmap.org/relation/2109148) of Université de Montréal on Thursday May 21st
 from 19h to 21h. 
 
+<!-- more -->
+
 !!! important
 
     Note that this is *not* at Polytechnique as previously indicated. It's

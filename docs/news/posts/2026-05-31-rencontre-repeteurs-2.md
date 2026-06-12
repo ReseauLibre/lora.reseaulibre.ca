@@ -11,6 +11,8 @@ We will hold a second repeater meet up at room C-9019 of [Lionel
 Groulx wing](https://www.openstreetmap.org/relation/2109148) (3150 Jean-Brillant, [Google Maps link](https://maps.app.goo.gl/68PGSCCXcJUjXEAFA)) of
 Université de Montréal on Thursday June 11 from 19h to 21h.
 
+<!-- more -->
+
 This will be, exceptionally, a hybrid meeting, to allow external
 participation, on Jitsi:
 
@@ -114,8 +116,6 @@ accommodate both languages to the best of our abilities, but so far
 most people speak in French. We hope to provide interpretation between
 those two languages if needed.
 
-## Notes
+## Minutes
 
-Notes will be held during the meeting and published subsequently
-published like the minutes from the [last meeting](https://lora.reseaulibre.ca/fr/news/2026/05/22/notes-de-la-rencontre-répéteurs-du-21-mai-2026/), but, like the
-last meeting, might not be translated.
+Minutes have been taken, in french, see [the french version](https://lora.reseaulibre.ca/fr/news/2026/05/31/rencontre-r%C3%A9p%C3%A9teurs-le-11-juin/).
