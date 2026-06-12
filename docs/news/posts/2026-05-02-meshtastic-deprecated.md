@@ -6,6 +6,12 @@ categories:
   - announcements
 ---
 
+Meshtastic abandonné en faveur de Meshcore.
+
+<!-- more -->
+
+---
+
 Aujourd'hui, Meshcore a dépassé Meshtastic en nombre d'appareils
 visibles dans la grande région de Montréal. Bien que ça puisse être
 une métrique douteuse, il est assez évident en regardant les cartes

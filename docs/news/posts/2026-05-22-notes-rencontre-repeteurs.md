@@ -10,7 +10,9 @@ categories:
 Voici les notes de la [rencontre du 21 Mai](2026-05-21-rencontre-repeteurs.md). Merci aux preneurs de
 notes!
 
-# Introduction
+<!-- more -->
+
+## Introduction
 
 Nous avions un [agenda](2026-05-21-rencontre-repeteurs.md#agenda) reconnu comme étant ambitieux, à étaler sur
 plusieurs rencontres. Nous avons commencé par:
@@ -27,7 +29,7 @@ plusieurs rencontres. Nous avons commencé par:
 - **temps**: deux personnes gardaient le suivi du temps. on a dédié une
   heure à un tour de table, puis une pause, et une heure pour le reste
 
-# Personnes présentes
+## Personnes présentes
 
 17 personnes étaient présentes:
 
@@ -70,7 +72,7 @@ Tout le monde était bien content de rencontrer ses voisins de mesh!
 S'en suit une pause où plusieurs conversations informelles ont eu
 lieu.
 
-# Sommaire technique
+## Sommaire technique
 
 Suite à la pause, anarcat a suggéré de changer l'agenda, car le tour
 de table a montré que plusieurs personnes n'étaient pas nécessairement
@@ -94,7 +96,7 @@ MeshCore. Nous pouvons maintenant communiquer!
 
 S'ensuivi une discussion.
 
-## Discussion informelle
+### Discussion informelle
 
 Lequel de ces trois technologies devrions nous prioriser ? Meshtastic, Meshcore,
 ou Reticulum. Le consensus semble être que Meshcore fonctionne déjà mieux que
@@ -124,7 +126,7 @@ Si on veut davantage développer notre réseau, il améliorer l'accès à ce ré
 pour les personnes ayant moins de connaissances techniques dans ce domaine. Il
 faut bien communiquer, vulgariser.
 
-# Prochaine rencontre
+## Prochaine rencontre
 
 La prochaine rencontre se déroulera le 11 juin, même heure, même salle.
 
@@ -133,7 +135,7 @@ la rencontre formellement. On souhaite de nouveau progresser sur le
 reste de l'agenda originalement prévu et établir comment nous prenons
 des décisions.
 
-# Organisation contre C-22
+## Organisation contre C-22
 
 Pour conclure, on souligne l'importance de combattre le [projet de loi C-22](https://www.lapresse.ca/affaires/techno/2026-05-14/projet-de-loi-c-22/ottawa-pourrait-faciliter-l-espionnage-de-votre-telephone.php). De
 contacter ses représentants. D'appuyer les efforts existants contre la

@@ -10,7 +10,9 @@ categories:
 Voici les notes de la [rencontre du 11 juin](2026-05-31-rencontre-repeteurs-2.md). Merci aux preneurs de
 notes!
 
-# Introduction
+<!-- more -->
+
+## Introduction
 
 Nous avions un [agenda](2026-05-31-rencontre-repeteurs-2.md#agenda) plus modeste que le dernier cette
 fois. Nous avons, comme la dernière fois, commencé par cette
@@ -26,7 +28,7 @@ introduction:
   anarcat par la suite, qui a rédigé ce procès-verbal
 - **temps**: Julie a gardé le suivi du temps
 
-# Personnes présentes
+## Personnes présentes
 
 La rencontre était hybride et a commencé avec 3 personnes en ligne:
 
@@ -50,9 +52,9 @@ Puis 10 personnes en personne:
 Deux personnes se sont ajoutées en cours de rencontre, une en ligne,
 et une en personne.
 
-# Présentation Résesau Libre
+## Présentation Résesau Libre
 
-## Historique
+### Historique
 
 anarcat a fait une présentation de [l'histoire](../../history.md) du projet.
 
@@ -73,7 +75,7 @@ Une question a suivi: combien de relais Meshtastic à Montréal? Voir le
 [FAQ](https://lora.reseaulibre.ca/guides/faq/#how-many-nodes-in-the-network), présentement moins de 30, en diminution, versus une centaine
 Meshcore.
 
-## Valeurs
+### Valeurs
 
 anarcat a ensuite présenté l'ébauche des [valeurs](../../values.md) du projet, en
 notant tout d'abord que, après avoir écrit celles-ci, il semblerait
@@ -83,16 +85,16 @@ Au niveau de la vie privée, on note que le chiffrement par défaut de
 Meshcore est mieux que rien, mais qu'il y a des gros enjeux de vie
 privée. Reticulum adresse beaucoup de ces problèmes.
 
-# Pause
+## Pause
 
 Nous avons pris une pause de 10 minutes.
 
-# Présentations
+## Présentations
 
 Au retour, un nouveau était apparu en ligne, de Dollards-des-Ormaux,
 et en personne, l'opérateur `YUL-Villeray-Lajeunesse`.
 
-# Enjeux de vie privée de Meshcore
+## Enjeux de vie privée de Meshcore
 
 Suite à des questions dans la présentation des valeurs, anarcat a fait
 une courte présentation des différents outils de surveillance déployés
@@ -116,11 +118,11 @@ utilise la clé publique, qui peut être changée. Mais Reticulum a
 seulement le "next hop" sur les paquets, pas le chemin complet, ce qui
 réduit la fuite de données.
 
-# Propositions
+## Propositions
 
 Nous avons adopté plusieurs propositions.
 
-## Meshcore
+### Meshcore
 
 **Proposition**: Réseau Libre continue sur Meshcore, recherche
 Reticulum.
@@ -155,7 +157,7 @@ vie privée des usagers.
 La proposition a été adopté, Réseau Libre continue avec Meshcore et
 continuant les recherches sur Reticulum.
 
-## Matrix
+### Matrix
 
 **Proposition**: Réseau Libre continue sur Matrix.
 
@@ -168,7 +170,7 @@ principale.
 
 On reste sur Matrix, sans empêcher les gens d'aller où ils veulent.
 
-## Site web
+### Site web
 
 **Proposition**: Réseau Libre continue sur le site web
 `lora.reseaulibre.ca`.
@@ -183,7 +185,7 @@ On aime que le site reste francophone.
 
 On continue à utiliser le site actuel.
 
-## Rencontres en personne
+### Rencontres en personne
 
 **Proposition**: Réseau Libre s'organise par des rencontres en
 personnes, exceptionnellement en ligne si nécessaire, par Jitsi ou sur
@@ -199,7 +201,7 @@ de travail, qu'un espace de discussion / décision / organisation.
 
 La disponibilité dépend aussi jour de semaine versus week-end.
 
-## Listes de discussion
+### Listes de discussion
 
 **Discussion:** savez-vous que des listes de discussion existent? On
 les garde?
@@ -208,7 +210,7 @@ Garder annonce, on peut fermer "nodes".
 
 Annoncer les rencontres sur la liste annonce.
 
-# Prochaine rencontre
+## Prochaine rencontre
 
 Personne ne s'est porté volontaire pour organiser une rencontre en
 juillet, anarcat le fera pour août.

@@ -16,6 +16,8 @@ permettre une participation externe, sur Jitsi:
 
 <https://meet.jit.si/moderated/7166e3ba08dc351aea738c80fe797bcd8555ffcfeb74b31ec26e90e2008d2ef8>
 
+<!-- more -->
+
 !!! important
 
     Notez que le lien Jitsi ci-haut a été changé (au 2026-06-01).

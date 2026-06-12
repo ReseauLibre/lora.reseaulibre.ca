@@ -11,6 +11,8 @@ Nous allons tenir une rencontre "répéteurs" au local C-9019 du
 [pavillon Lionel Groulx][] de l'université de Montréal, le Jeudi 21
 Mai de 19h à 21h.
 
+<!-- more -->
+
  [pavillon Lionel Groulx]: https://www.openstreetmap.org/relation/2109148
 
 !!! important

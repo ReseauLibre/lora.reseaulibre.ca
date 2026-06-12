@@ -12,6 +12,8 @@ soirée "mesh" et ce mois-ci n'y fait pas exception!
 
  [Foulab]: https://foulab.org/
 
+<!-- more -->
+
 Alors venez nous voir au Mesh Night, ce 6 mai de 19:00 à 22:00. Nous
 parlerons et expérimenterons avec les technologies maillées telles
 que Meshtastic, Meshcore et Reticulum.
