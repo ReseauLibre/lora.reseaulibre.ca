@@ -19,7 +19,7 @@
 
 - those in power should be more transparent, this includes network
   operators
-- you might feel powerless in one space yet might yield power over
+- you might feel powerless in one space yet might wield power over
   others in another, [be mindful](https://en.wikipedia.org/wiki/Intersectionality)
 - privacy is a human right
 
