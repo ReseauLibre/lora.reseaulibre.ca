@@ -119,5 +119,4 @@ Matrix ([`#reseaulibre-decisions:matrix.org`](https://matrix.to/#/#reseaulibre-d
 
 ## Notes
 
-Des notes seront tenus durant la rencontre et publiées ultérieurement,
-comme les notes de [la rencontre précédente](2026-05-22-notes-rencontre-repeteurs.md).
+Voir les [notes de la rencontre](2026-06-11-notes-rencontre-repeteurs.md).
