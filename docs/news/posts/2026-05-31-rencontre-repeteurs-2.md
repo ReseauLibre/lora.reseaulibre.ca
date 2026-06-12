@@ -118,4 +118,4 @@ those two languages if needed.
 
 ## Minutes
 
-Minutes have been taken, in french, see [the french version](https://lora.reseaulibre.ca/fr/news/2026/05/31/rencontre-r%C3%A9p%C3%A9teurs-le-11-juin/).
+Minutes have been taken, in french, see [the french version](https://lora.reseaulibre.ca/fr/news/2026/06/11/notes-de-la-rencontre-r%C3%A9p%C3%A9teurs-du-11-juin-2026/).
