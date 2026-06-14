@@ -503,6 +503,7 @@ away with popping up the menu to select the <kbd>Enter</kbd> <kbd>#</kbd> option
 
 See also the channels used in other communities:
 
+- [Ottawa mesh](https://ottawamesh.ca/fr/meshcore/general-public-channels/)
 - [Puget mesh](https://pugetmesh.org/meshcore/)
 - [Switzerland](https://www.meshcore.ch/channels/)
 
