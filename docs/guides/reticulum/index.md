@@ -49,10 +49,11 @@ at dealing with such complexity, you can try one of those apps instead:
 - [`Ratspeak`](https://ratspeak.org/): chat, voice calls, games, desktop, mobile and
   embedded app, Mac, Windows, Linux, iOS, Android, T-Deck Plus,
   [`Cardputer`](https://shop.m5stack.com/products/m5stack-cardputer-adv-version-esp32-s3), standalone rewrite in Rust
-- [`retichat`](https://newendian.com/retichat): Mac ([App store](https://apps.apple.com/us/app/retichat/id6762225314))
+- [`retichat`](https://newendian.com/retichat): Mac ([GitHub](https://github.com/jrl290/Retichat-ios), [App store](https://apps.apple.com/us/app/retichat/id6762225314))
 - [Columba](https://columba.network/): chat, voice calls, Android
 - [`MeshChatX`](https://meshchatx.com/): chat, group chat, voice calls, vibe-coded,
   integrates (poorly) with RNS, Linux
+- [Intertia](https://inertia.chat/): native MacOS client, explicitly not vibe-coded
 
 We (unfortunately) do not have guides for those applications for
 now.
@@ -98,7 +99,8 @@ Reticulum, as it can get confusing quickly.
   can act also as a transport node.[^2] Equivalent to a Meshcore repeater.
 - **[announcement](https://markqvist.github.io/Reticulum/manual/understanding.html#public-key-announcements)**: a message sent over an interface that is used to
   establish routing with transport nodes. roughly equivalent to an
-  "advert" in Meshcore.
+  "advert" in Meshcore. Here is a [good video explaining how announces
+  work](https://www.youtube.com/watch?app=desktop&v=PFRS_Fqk2Go) and the [propagation simulator](https://rns.moscow/announce-sim.html) from Moscow
 - **[identity](https://markqvist.github.io/Reticulum/manual/understanding.html#understanding-identities)**: an address in the Reticulum routing system. Roughly
   equivalent to the "public key" in Meshcore or the MAC address in
   Meshtastic, except that the full identity is used for routing
@@ -129,12 +131,22 @@ Reticulum, as it can get confusing quickly.
 
 - [Official website](https://reticulum.network/) and [community site](https://reticulum.community/)
 - [Manual](https://markqvist.github.io/Reticulum/manual/)
-- [Reticulum wiki](https://reticulum.miraheze.org/wiki/)
+- [Reticulum wiki](https://reticulum.miraheze.org/wiki/), including this [Awesome Reticulum](https://reticulum.miraheze.org/wiki/Awesome_Reticulum) list
+- [`lorien/awesome-reticulum`](https://github.com/lorien/awesome-reticulum)
 - [`rns.recipes`](https://rns.recipes/), includes a
   [forum](https://rns.recipes/forum) and [directory](https://directory.rns.recipes/)
 - [`rmap.world`](https://rmap.world/)
+- [Between the borders primer (PDF)](https://reticulum.betweentheborders.com/primer.pdf) (2023), now [archived on GitHub](https://github.com/faragher/ReticulumExamples)
 - the [Linux in a bit guide](https://linuxinabit.codeberg.page/blog/reticulum/) is an excellent introduction to the
   routing protocol
 - the Moscow site has a [good propagation simulator](https://rns.moscow/announce-sim.html) showing how
   different modes affect propagation
 - [our Matrix room](https://matrix.to/#/#reseaulibre-reticulum:matrix.org) and the [broader Matrix space](https://matrix.to/#/#rns-space:yatrix.org)
+
+### Other software
+
+- [`lr-squash`](https://git.puscii.nl/yids/lr-squesh): ansible role to deploy a RNS, LXMF, RNSH, BATMAN relay
+- [`reticulum-exporter`](https://git.drkhsh.at/reticulum-exporter/): Prometheus exporter for the `rnstatus` output
+- [`rngit`](https://reticulum.network/manual/git.html): git over Reticulum, originally implemented as
+  [`git-remote-rns`](https://github.com/Eeems/git-remote-rns) by a third party but reimplemented from
+  scratch by Mark in Reticulum

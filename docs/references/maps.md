@@ -43,6 +43,11 @@ visible on the ground, only relays that report their position. A relay
 might be in your neighbourhood and not visible on the map, so don't
 rely on the map to predict success. Try anyways!
 
+## Reticulum
+
+- [`rmap.world`](https://rmap.world/)
+- [`rns.fyi`](https://rns.fyi/)
+
 ## Progression
 
 Moved to the FAQ, in [How many nodes in the network?](../guides/faq.md#how-many-nodes-in-the-network).
