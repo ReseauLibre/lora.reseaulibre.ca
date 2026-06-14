@@ -1569,6 +1569,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Other resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#other-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other software
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1638,10 +1655,11 @@ at dealing with such complexity, you can try one of those apps instead:</p>
 <li><a href="https://ratspeak.org/"><code>Ratspeak</code></a>: chat, voice calls, games, desktop, mobile and
   embedded app, Mac, Windows, Linux, iOS, Android, T-Deck Plus,
   <a href="https://shop.m5stack.com/products/m5stack-cardputer-adv-version-esp32-s3"><code>Cardputer</code></a>, standalone rewrite in Rust</li>
-<li><a href="https://newendian.com/retichat"><code>retichat</code></a>: Mac (<a href="https://apps.apple.com/us/app/retichat/id6762225314">App store</a>)</li>
+<li><a href="https://newendian.com/retichat"><code>retichat</code></a>: Mac (<a href="https://github.com/jrl290/Retichat-ios">GitHub</a>, <a href="https://apps.apple.com/us/app/retichat/id6762225314">App store</a>)</li>
 <li><a href="https://columba.network/">Columba</a>: chat, voice calls, Android</li>
 <li><a href="https://meshchatx.com/"><code>MeshChatX</code></a>: chat, group chat, voice calls, vibe-coded,
   integrates (poorly) with RNS, Linux</li>
+<li><a href="https://inertia.chat/">Intertia</a>: native MacOS client, explicitly not vibe-coded</li>
 </ul>
 <p>We (unfortunately) do not have guides for those applications for
 now.</p>
@@ -1684,7 +1702,8 @@ Reticulum, as it can get confusing quickly.</p>
   can act also as a transport node.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> Equivalent to a Meshcore repeater.</li>
 <li><strong><a href="https://markqvist.github.io/Reticulum/manual/understanding.html#public-key-announcements">announcement</a></strong>: a message sent over an interface that is used to
   establish routing with transport nodes. roughly equivalent to an
-  "advert" in Meshcore.</li>
+  "advert" in Meshcore. Here is a <a href="https://www.youtube.com/watch?app=desktop&amp;v=PFRS_Fqk2Go">good video explaining how announces
+  work</a> and the <a href="https://rns.moscow/announce-sim.html">propagation simulator</a> from Moscow</li>
 <li><strong><a href="https://markqvist.github.io/Reticulum/manual/understanding.html#understanding-identities">identity</a></strong>: an address in the Reticulum routing system. Roughly
   equivalent to the "public key" in Meshcore or the MAC address in
   Meshtastic, except that the full identity is used for routing
@@ -1704,15 +1723,25 @@ Reticulum, as it can get confusing quickly.</p>
 <ul>
 <li><a href="https://reticulum.network/">Official website</a> and <a href="https://reticulum.community/">community site</a></li>
 <li><a href="https://markqvist.github.io/Reticulum/manual/">Manual</a></li>
-<li><a href="https://reticulum.miraheze.org/wiki/">Reticulum wiki</a></li>
+<li><a href="https://reticulum.miraheze.org/wiki/">Reticulum wiki</a>, including this <a href="https://reticulum.miraheze.org/wiki/Awesome_Reticulum">Awesome Reticulum</a> list</li>
+<li><a href="https://github.com/lorien/awesome-reticulum"><code>lorien/awesome-reticulum</code></a></li>
 <li><a href="https://rns.recipes/"><code>rns.recipes</code></a>, includes a
   <a href="https://rns.recipes/forum">forum</a> and <a href="https://directory.rns.recipes/">directory</a></li>
 <li><a href="https://rmap.world/"><code>rmap.world</code></a></li>
+<li><a href="https://reticulum.betweentheborders.com/primer.pdf">Between the borders primer (PDF)</a> (2023), now <a href="https://github.com/faragher/ReticulumExamples">archived on GitHub</a></li>
 <li>the <a href="https://linuxinabit.codeberg.page/blog/reticulum/">Linux in a bit guide</a> is an excellent introduction to the
   routing protocol</li>
 <li>the Moscow site has a <a href="https://rns.moscow/announce-sim.html">good propagation simulator</a> showing how
   different modes affect propagation</li>
 <li><a href="https://matrix.to/#/#reseaulibre-reticulum:matrix.org">our Matrix room</a> and the <a href="https://matrix.to/#/#rns-space:yatrix.org">broader Matrix space</a></li>
+</ul>
+<h3 id="other-software">Other software<a class="headerlink" href="#other-software" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://git.puscii.nl/yids/lr-squesh"><code>lr-squash</code></a>: ansible role to deploy a RNS, LXMF, RNSH, BATMAN relay</li>
+<li><a href="https://git.drkhsh.at/reticulum-exporter/"><code>reticulum-exporter</code></a>: Prometheus exporter for the <code>rnstatus</code> output</li>
+<li><a href="https://reticulum.network/manual/git.html"><code>rngit</code></a>: git over Reticulum, originally implemented as
+  <a href="https://github.com/Eeems/git-remote-rns"><code>git-remote-rns</code></a> by a third party but reimplemented from
+  scratch by Mark in Reticulum</li>
 </ul>
 <div class="footnote">
 <hr />
@@ -1754,7 +1783,7 @@ we link to that instead of microReticulum directly.&#160;<a class="footnote-back
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 10, 2026 13:53:09 UTC">2026-06-10 13:53:09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 14, 2026 03:30:43 UTC">2026-06-14 03:30:43</span>
   </span>
 
     
