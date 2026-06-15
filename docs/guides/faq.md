@@ -598,6 +598,39 @@ region, 902 to 928MHz, also known as the [33 cm band](https://en.wikipedia.org/w
 quite crowded! It can also receive interference from nearby [UHF
 bands](https://en.wikipedia.org/wiki/Ultra_high_frequency#United_States) of course, particularly if you are near a cell phone tower.
 
+### What do those radio settings even mean?
+
+Bandwidth? Spread factor? Coding rate? What do all those things mean?
+
+While explaining all of Radio is beyond the scope of this FAQ, you
+should know a few basic things while configuring LoRa radios,
+particularly in Reticulum where there are less strictly defined
+presets:
+
+- **Frequency** - This needs to match between nodes. It is somewhat
+  arbitrary, but can be chosen based on context-specific factors like
+  local radio interference, existing use by other LoRa platforms,
+  available antenna sizes, and local regulations.
+
+- **Bandwidth** and **Spreading Factor** - These both need to match
+  between nodes. They both offer tradeoffs between speed of data
+  exchange, and distance of effective communication.
+
+- **Coding Rate** - This does not need to match between nodes. It is
+  the amount of error correction, so more of it slows down speed of
+  data exchange (and slightly increases power consumption), but makes
+  communication more reliable, especially important when there is a
+  lot of radio interference at the frequency being used.
+
+- **TX power** - This does not need to match between nodes. Higher
+  levels will transmit further, be easier for anyone to detect and
+  locate, will consume more power, and can cause overload problems if
+  two nodes are right next to each other and transmitting at high
+  power. Higher power levels are also more likely to be regulated. The
+  maximum level varies by LoRa device.
+
+See also the Reticulum [LoRa Bitrate & Sensitivity Calculator](https://unsigned.io/understanding-lora-parameters/) guide.
+
 ## Other questions
 
 ### My question is not here
