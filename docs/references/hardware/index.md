@@ -120,6 +120,13 @@ We have those categories:
 
     We tested those devices, and we recommend against using them entirely.
 
+Note that the devices are rated for compliance with Meshcore for the
+moment, but should generally also work with Meshtastic. 
+
+Reticulum support is spottier, and not explicitly covered here. Each
+software project has their own list of compatible hardware which we do
+not try to cover here.
+
 ## Pocket-sized
 
 Those are day-to-day use device, can you can easily carry in a pocket
