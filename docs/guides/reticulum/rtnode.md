@@ -21,4 +21,12 @@ Our only addition is that we had to put the device in upload mode, by
 holding the "BOOT" (actually labeled `PGR` on the board) button while
 pressing "RESET" (`RST`), before running the `flash.py` command.
 
-See also this [untested Ethernet gateway firmware](https://rns.recipes/forum/showcase/rnode-over-ethernet-rak4631-rak13800-ethernet-module).
+See also those firmwares:
+
+- [`attermann/microReticulum_Firmware`](https://github.com/attermann/microReticulum_Firmware): RNode firmware integrating
+  the [microReticulum](https://github.com/attermann/microReticulum) stack which implements a full transport node
+  (documented above), see also the [ratspeak fork](https://github.com/ratspeak/microReticulum)
+- [`RatTunnel`](https://github.com/hipstereclipse/rns-transport-wisblock1w) - used on the west coast on RAK solar nodes, with
+  console commands, 200 entry routing table with SNR tracking,
+  integration with [Rathole](https://github.com/ratspeak/rathole)
+- [untested Ethernet gateway firmware](https://rns.recipes/forum/showcase/rnode-over-ethernet-rak4631-rak13800-ethernet-module)
