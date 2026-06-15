@@ -150,3 +150,5 @@ Reticulum, as it can get confusing quickly.
 - [`rngit`](https://reticulum.network/manual/git.html): git over Reticulum, originally implemented as
   [`git-remote-rns`](https://github.com/Eeems/git-remote-rns) by a third party but reimplemented from
   scratch by Mark in Reticulum
+- [`reti_socks_client`](https://codeberg.org/SkyGuy/reti_socks_client): SOCKS client for RNS, allows connection to
+  Reticulum relays running over Tor, see also [this guide](https://rns.recipes/forum/help/anonymous-nodes-without-i2p)
