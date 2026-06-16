@@ -300,16 +300,18 @@ inaccurate, since we've published the site on a `git-pages` back-end
 
 We're in the process of migrating to Codeberg actions. We've had
 trouble with the cache and artifacts action which both need node, so
-for now it reuses the git-based caching logic used by Woodpecker.
+for now it reuses the git-based caching logic used by
+Woodpecker. We've also found the actions pipeline to be much slower
+than the Woodpecker pipelines, so much so that it would timeout and,
+ultimately, made migration impossible, so we're still on Woodpecker.
 
 There was a downtime on Codeberg on 2026-03-04 that cause the site to
 go down almost entirely for a full 24 hours. 
 
 If this happens again, we can consider hosting the static site
 somewhere else. I was recommended [`statichost.eu`](https://www.statichost.eu/) (see [this
-guide](https://www.arscyni.cc/file/codeberg.html)) or [Grebedoc][] ("Codeberg" backwards). 
-
-As of 2026-05-26, we've switched to Grebedoc.
+guide](https://www.arscyni.cc/file/codeberg.html)) or [Grebedoc][] ("Codeberg" backwards).  As of 2026-05-26,
+we've switched to Grebedoc.
 
 Updates to those sites can be posted even without Codeberg being
 available, through any [`git-pages`][] compatible hosting provider,
