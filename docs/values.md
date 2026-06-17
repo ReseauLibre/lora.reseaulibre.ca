@@ -5,9 +5,8 @@ tags:
 
 # Valeurs
 
-!!! example "Exemple"
-
-    Ceci est un brouillon de valeurs autour desquelles on peut se rallier.
+Voici les valeurs qui résonnent dans notre communauté. Elles ont été
+présentées à la [rencontre de Juin 2026](news/posts/2026-05-31-rencontre-repeteurs-2.md).
 
 ## Entraide locale
 
