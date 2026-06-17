@@ -24,10 +24,8 @@ Matrix](guides/matrix.md) pour plus de détails.
 
 ## Courriel
 
-Nous utilisons présentement la vielle liste de discussion de Réseau Libre:
-
-- [nodes](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nodes-reseaulibre.ca) - liste de discussion (<mailto:nodes@reseaulibre.ca>)
-- [nouvelles](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca) - annonces, volume bas
+Nous annonçons les évènement majeurs et rencontres à venir sur la
+liste [nouvelles](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca).
 
 ## Rencontres
 
