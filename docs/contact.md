@@ -17,10 +17,8 @@ platforms[^1]. See our [Matrix guide](guides/matrix.md) for details.
 
 ## Email
 
-We're currently reusing the old `Réseau Libre` mailing lists:
-
-- [nodes](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nodes-reseaulibre.ca) - discussion list (<mailto:nodes@reseaulibre.ca>)
-- [`nouvelles`](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca) - announcements, low-traffic
+We announce major events and upcoming meetings on the [`nouvelles`](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca)
+mailing list.
 
 ## Meetups
 
