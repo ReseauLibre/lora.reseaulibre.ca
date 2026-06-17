@@ -420,9 +420,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -599,6 +597,8 @@
       
         
       
+        
+      
     
     
     
@@ -610,9 +610,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -667,6 +665,199 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../guides/reticulum/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reticulum
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reticulum
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/reticulum/rns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Networking with RNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/reticulum/lxmf-cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chat with LXMF-CLI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/reticulum/meshcore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tunneling Reticulum over Meshcore
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/reticulum/rtnode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transport nodes and microReticulum
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -875,9 +1066,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -1301,6 +1490,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#switch-to-grebedoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switch to Grebedoc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#alternatives" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1614,6 +1814,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#switch-to-grebedoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switch to Grebedoc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#alternatives" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1834,14 +2045,16 @@ pages" and "actions" in Codeberg. So, essentially, it works like this:</p>
 <li>create an "orphan" <code>pages</code> branch (<code>git switch --orphan pages</code>) for
    the site</li>
 <li>add and commit the <code>site</code> directory, but to the root of the repository</li>
-<li>setup a <a href="https://docs.codeberg.org/codeberg-pages/#repository-websites">webhook to the legacy v2 pages</a> on push</li>
+<li>setup a <a href="https://docs.codeberg.org/codeberg-pages/#repository-websites">webhook to the legacy v2 pages</a> on push (update: now a
+   <a href="https://grebedoc.dev/#own-domain">webhook to Grebedoc</a> instead)</li>
 <li>push the <code>pages</code> branch</li>
 </ol>
 <p>At this point, <code>anarcat.codeberg.page/lora-reseaulibre-ca</code> is
 online. Next up was to setup the <a href="https://docs.codeberg.org/codeberg-pages/using-custom-domain/">custom domain</a>:</p>
 <ol>
 <li>add a CNAME for <code>lora.reseaulibre.ca</code> at my registrar, pointing at
-   <code>lora-reseaulibre-ca.anarcat.codeberg.page.</code></li>
+   <code>lora-reseaulibre-ca.anarcat.codeberg.page.</code> (update: now pointing
+   at <code>grebedoc.dev.</code></li>
 <li>add <code>lora.reseaulibre.ca</code> to the <code>.domains</code> file in the git
    repository, on the <code>main</code> branch</li>
 <li>push the main branch</li>
@@ -1861,26 +2074,85 @@ use <a href="https://docs.codeberg.org/ci/">Codeberg CI</a> to build and publish
 </ol>
 <p>At this point, changes to the repository automatically rebuild and
 publish the changes.</p>
+<h3 id="switch-to-grebedoc">Switch to Grebedoc<a class="headerlink" href="#switch-to-grebedoc" title="Permanent link">&para;</a></h3>
+<p>As of 2026-05-26, we have switched to <a href="https://grebedoc.dev/">Grebedoc</a> because we hope it
+will be faster than Codeberg pages. It also provides redundancy: if
+Codeberg fails, Grebedoc should survive and vice versa, which gives us
+better redundancy. It also shows us how we can host this anywhere we
+can run [<code>git-pages</code>][], which can be any virtual machine we spin up
+in case of a catastrophe, see also below for <a href="#alternatives">Alternatives</a>.</p>
+<p>We setup those two DNS records:</p>
+<div class="highlight"><pre><span></span><code>_git-pages-repository.lora IN TXT https://codeberg.org/reseaulibre/lora-reseaulibre-ca.git
+_git-pages-challenge.lora IN TXT 6697376e11b3ff01b4f4ab83956c2742f065e60239f3e0bdb78caf73f9624cab
+</code></pre></div>
+<p>The first tells the <code>git-pages</code> software which repository is an
+acceptable source for the site.</p>
+<p>The second is the result of:</p>
+<div class="highlight"><pre><span></span><code>printf &quot;$DOMAIN $GIT_PAGES_PASSWORD&quot; | sha256sum
+</code></pre></div>
+<p>where <code>domain</code> is <code>lora.reseaulibre.ca</code>. The password is stored in my
+password manager as <code>grebedoc.dev</code>.</p>
+<p>It allows for pushing arbitrary content to the site.</p>
+<p>A first push is done with:</p>
+<div class="highlight"><pre><span></span><code>curl https://grebedoc.dev/ -X PUT -H &quot;Host: lora.reseaulibre.ca&quot; -H &quot;Authorization: Pages $GIT_PAGES_PASSWORD&quot; --data &quot;https://codeberg.org/anarcat/lora-reseaulibre-ca.git&quot;
+</code></pre></div>
+<p>The <code>Authorization</code> header might not be necessary since we're passing
+the git repository URL here.</p>
+<p>This will fail if the DNS has not propagated yet. </p>
+<p>This also fails, perhaps for a different reason:</p>
+<div class="highlight"><pre><span></span><code>export GIT_PAGES_PASSWORD
+git-pages-cli --server https://grebedoc.dev --upload-dir . http://lora.reseaulibre.ca/
+</code></pre></div>
+<p>Unclear.</p>
+<p>The <code>--password "$GIT_PAGES_PASSWORD"</code> is implicit as it looks for the
+<code>GIT_PAGES_PASSWORD</code> environment, see the <a href="https://codeberg.org/git-pages/git-pages-cli"><code>git-pages-cli</code> README file</a>.</p>
+<p>Once a first push has been made, we can switch over by changing DNS
+to:</p>
+<div class="highlight"><pre><span></span><code>lora IN CNAME grebedoc.dev.
+</code></pre></div>
+<p>Then a new webhook need to be added following <a href="https://grebedoc.dev/#own-domain">those instructions</a>,
+essentially:</p>
+<blockquote>
+<p>Select repository &gt; Settings &gt; Webhooks &gt; Add webhook &gt; Forgejo, then configure only the following:</p>
+<ul>
+<li>Target URL: <code>http://lora.reseaulibre.ca</code></li>
+<li>Branch filter: <code>pages</code></li>
+<li>Authorization header: <code>Pages {password}</code> (Method B only)</li>
+</ul>
+<p>Leave everything else at the default values and select <code>Add
+webhook</code>.</p>
+</blockquote>
+<p>Then this can be tested by pushing to the <code>pages</code> branch, which can be
+done by doing a regular commit on the site, or on the <code>pages</code> branch
+of course.</p>
+<p>The CI configuration is actually unchanged.</p>
 <h3 id="alternatives">Alternatives<a class="headerlink" href="#alternatives" title="Permanent link">&para;</a></h3>
 <p>We should probably hook this onto <a href="https://docs.codeberg.org/ci/actions/">Forgejo Actions</a> and the
-<a href="https://codeberg.org/git-pages/action">git-pages action</a>, instead, but the <a href="https://docs.codeberg.org/codeberg-pages/forgejo-actions/">guide for that</a> explicitly
-says it does not work for custom domains.</p>
-<p>There was a one day downtime on Codeberg on 2026-03-04 that cause the
-site to go down almost entirely. If this happens again, we can
-consider hosting the static site somewhere else. I was recommended
-<a href="https://www.statichost.eu/"><code>statichost.eu</code></a> (see <a href="https://www.arscyni.cc/file/codeberg.html">this guide</a>) or <a href="https://grebedoc.dev/"><code>grebedoc.dev</code></a>
-("Codeberg" backwards). This might be difficult to deploy while the
-site is down, unless another Git hosting platform is used.</p>
+<a href="https://codeberg.org/git-pages/action">git-pages action</a>, instead. The <a href="https://docs.codeberg.org/codeberg-pages/forgejo-actions/">guide for that</a> explicitly
+says it does not work for custom domains, although that might now be
+inaccurate, since we've published the site on a <code>git-pages</code> back-end
+(Grebedoc) without problems since 2026-05-26.</p>
+<p>We're in the process of migrating to Codeberg actions. We've had
+trouble with the cache and artifacts action which both need node, so
+for now it reuses the git-based caching logic used by
+Woodpecker. We've also found the actions pipeline to be much slower
+than the Woodpecker pipelines, so much so that it would timeout and,
+ultimately, made migration impossible, so we're still on Woodpecker.</p>
+<p>There was a downtime on Codeberg on 2026-03-04 that cause the site to
+go down almost entirely for a full 24 hours. </p>
+<p>If this happens again, we can consider hosting the static site
+somewhere else. I was recommended <a href="https://www.statichost.eu/"><code>statichost.eu</code></a> (see <a href="https://www.arscyni.cc/file/codeberg.html">this
+guide</a>) or <a href="https://grebedoc.dev/">Grebedoc</a> ("Codeberg" backwards).  As of 2026-05-26,
+we've switched to Grebedoc.</p>
+<p>Updates to those sites can be posted even without Codeberg being
+available, through any [<code>git-pages</code>][] compatible hosting provider,
+see above.</p>
 <p>We also use the <code>cache</code> branch to carry around the Lychee cache. This
 could be fixed if <a href="https://github.com/woodpecker-ci/woodpecker/discussions/2296">Woodpecker supported caches</a> or with a Forgejo
-<a href="https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/">"cache" action</a> or <a href="https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts">artifacts</a>.</p>
+<a href="https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/">"cache"</a> or <a href="https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts">artifacts action</a>. Both actions require a Node
+installation and are not compatible with many images.</p>
 <h2 id="matrix-commit-bot">Matrix commit bot<a class="headerlink" href="#matrix-commit-bot" title="Permanent link">&para;</a></h2>
-<p>A bot was setup to send messages for new commits on the <a href="https://matrix.to/#/#reseaulibre:matrix.org"><code>#reseaulibre:matrix.org</code>
-Matrix room</a> whenever there is a push. This was done using the
-<a href="https://docs.codeberg.org/integrations/matrix/">built-in Codeberg Matrix integration</a>.</p>
-<p>This was done instead of setting up a dedicated bot like <a href="https://mau.bot/">Maubot</a>
-with its <a href="https://plugins.mau.bot/">numerous plugins</a> like a <a href="https://github.com/maubot/rss">RSS plugin</a>, or a <a href="https://github.com/jkhsjdhjs/maubot-webhook">webhook
-plugin</a>. There is also a <a href="https://gitlab.com/matrix-rss-bridge/matrix-rss-bridge">dedicated RSS bridge</a>.</p>
+<p>Moved to <a href="https://lora.reseaulibre.ca/guides/matrix#commit-bot">our Matrix guide</a>.</p>
 
 
 
@@ -1903,7 +2175,7 @@ plugin</a>. There is also a <a href="https://gitlab.com/matrix-rss-bridge/matrix
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="April 19, 2026 21:18:00 UTC">2026-04-19 21:18:00</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 16, 2026 01:22:15 UTC">2026-06-16 01:22:15</span>
   </span>
 
     
@@ -1943,6 +2215,46 @@ plugin</a>. There is also a <a href="https://gitlab.com/matrix-rss-bridge/matrix
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../references/maps/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Maps">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Maps
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../references/neighbours/" class="md-footer__link md-footer__link--next" aria-label="Next: Voisins">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Voisins
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
@@ -1955,6 +2267,35 @@ plugin</a>. There is also a <a href="https://gitlab.com/matrix-rss-bridge/matrix
     Made with
     <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://matrix.to/#/#reseaulibre-space:matrix.org" target="_blank" rel="noopener" title="Matrix chat" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.632.55v22.9H2.28V24H0V0h2.28v.55zm7.043 7.26v1.157h.033a3.3 3.3 0 0 1 1.117-1.024c.433-.245.936-.365 1.5-.365q.81.002 1.481.314c.448.208.785.582 1.02 1.108q.382-.562 1.034-.992.651-.43 1.546-.43.679 0 1.26.167c.388.11.716.286.993.53.276.245.489.559.646.951q.229.587.23 1.417v5.728h-2.349V11.52q0-.43-.032-.812a1.8 1.8 0 0 0-.18-.66 1.1 1.1 0 0 0-.438-.448q-.292-.165-.785-.166-.498 0-.803.189a1.4 1.4 0 0 0-.48.499 2 2 0 0 0-.231.696 5.6 5.6 0 0 0-.06.785v4.768h-2.35v-4.8q.002-.38-.018-.752a2.1 2.1 0 0 0-.143-.688 1.05 1.05 0 0 0-.415-.503c-.194-.125-.476-.19-.854-.19q-.168 0-.439.074c-.18.051-.36.143-.53.282a1.64 1.64 0 0 0-.439.595q-.18.39-.18 1.02v4.966H5.46V7.81zm15.693 15.64V.55H21.72V0H24v24h-2.28v-.55z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://codeberg.org/reseaulibre/lora-reseaulibre-ca" target="_blank" rel="noopener" title="Source code" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.999.747A11.974 11.974 0 0 0 0 12.75c0 2.254.635 4.465 1.833 6.376L11.837 6.19c.072-.092.251-.092.323 0l4.178 5.402h-2.992l.065.239h3.113l.882 1.138h-3.674l.103.374h3.86l.777 1.003h-4.358l.135.483h4.593l.695.894h-5.038l.165.589h5.326l.609.785h-5.717l.182.65h6.038l.562.727h-6.397l.183.65h6.717A12 12 0 0 0 24 12.75 11.977 11.977 0 0 0 11.999.747m3.654 19.104.182.65h5.326c.173-.204.353-.433.513-.65zm.385 1.377.18.65h3.563c.233-.198.485-.428.712-.65zm.383 1.377.182.648h1.203c.356-.204.685-.412 1.042-.648z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://grebedoc.dev" target="_blank" rel="noopener" title="Hosted on grebedoc" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 2s-7.64-.37-13.66 7.88C3.72 16.21 2 22 2 22l1.94-1c1.44-2.5 2.19-3.53 3.6-5 2.53.74 5.17.65 7.46-2-2-.56-3.6-.43-5.96-.19C11.69 12 13.5 11.6 16 12l1-2c-1.8-.34-3-.37-4.78.04C14.19 8.65 15.56 7.87 18 8l1.21-1.93c-1.56-.11-2.5.06-4.29.5 1.61-1.46 3.08-2.12 5.22-2.25 0 0 1.05-1.89 1.86-2.32"/></svg>
     </a>
   
 </div>
@@ -1972,7 +2313,7 @@ plugin</a>. There is also a <a href="https://gitlab.com/matrix-rss-bridge/matrix
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "content.action.edit", "content.footnote.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "content.action.edit", "content.footnote.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
