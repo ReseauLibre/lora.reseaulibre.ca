@@ -38,9 +38,10 @@ which is more of an hack session. Foulab is [located](https://foulab.org/locatio
 maps link](https://www.google.com/maps/place/999+Rue+du+Coll%C3%A8ge,+Montr%C3%A9al,+QC+H4C+2S2,+Canada)), just a few minutes away from Place-Saint-Henri metro
 station.
 
-Check the [News pages](news/index.md) to confirm the specific dates
-each month, but Mesh night is typically on the first Wednesday of the
-month, and the Réseau Libre meeting on Thursday following Mesh night.
+Check the [News pages](news/index.md) to confirm the specific dates each month,
+but Mesh night is typically on the first Wednesday of the month, and
+the Réseau Libre meeting on the Thursday of the week following Mesh
+night.
 
 ## Issues
 
