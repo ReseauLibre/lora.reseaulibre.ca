@@ -32,5 +32,13 @@ are worth mentioning:
 - [`LocalMesh`](https://www.localmesh.nl/en/): NL, beautiful splash page, 2000+ Meshcore
   repeaters, we could use a tip or two from their front page introduction
 
-Voir également la [liste officielle des groupes locaux](https://meshtastic.org/docs/community/local-groups/).
+Voir également la [liste officielle des groupes locaux Meshtastic](https://meshtastic.org/docs/community/local-groups/).
 
+## Projets reliés
+
+- [Foulab](https://foulab.org): hacker space local
+- [RADAR](https://radar.aediroum.ca/): club radio du Département d'Informatique et de Recherche
+  Opérationelle (DIRO) de l'niversité de Montréal, qui travaille sur
+  un [pilote C++](https://codeberg.org/RADAR/pinedio-lora-driver) pour le [`Pinedio`](https://wiki.pine64.org/wiki/Pinedio#USB_adapter), un adaptateur "PINE64 USB
+  basé sur le module Semtech `SX1262` LoRa module et une puce CH341"
+- [Montreal Mesh](https://www.montrealmesh.ca): fork du site [Greater Ottawa Mesh](https://ottawamesh.ca/)

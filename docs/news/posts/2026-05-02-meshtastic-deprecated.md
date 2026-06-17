@@ -15,12 +15,10 @@ Meshtastic abandonné en faveur de Meshcore.
 Aujourd'hui, Meshcore a dépassé Meshtastic en nombre d'appareils
 visibles dans la grande région de Montréal. Bien que ça puisse être
 une métrique douteuse, il est assez évident en regardant les cartes
-actuelles de 
-[Meshcore](https://map.meshcore.io/?zoom=8&lat=45.8594&lon=-73.1580)
-et [Meshtastic](https://meshmap.net/) que Meshcore a bien dépassé
-Meshtastic en nombres absolus.
+actuelles de [Meshcore](https://map.meshcore.io/?zoom=8&lat=45.8594&lon=-73.1580) et [Meshtastic](https://meshmap.net/) que Meshcore a bien
+dépassé Meshtastic en nombres absolus.
 
-Aujourd'hui, il y a 48 appareils Meshcore et tout au plus 29 appareils
+Aujourd'hui, il y a 54 appareils Meshcore et tout au plus 29 appareils
 Meshtastic sur ces cartes.
 
 L'année dernière, Meshcore n'existait pas vraiment.

@@ -5,8 +5,13 @@ tags:
 
 # Maps
 
-We hope to eventually show a map of nodes in the local mesh, but for
-now use one of those.
+This the coverage map of the [MeshMapper
+project](https://wiki.meshmapper.net/), for the MeshCore mesh. See
+below for other maps.
+
+<!-- update the iframe in index.md when updating this, see also https://wiki.meshmapper.net/embedding/-->
+<iframe src="https://yul.meshmapper.net/embed.php?lat=45.508545&amp;lon=-73.589824&amp;zoom=10&amp;geofence=0&amp;" width="100%" height="500px" style="border:0;" loading="lazy" allowfullscreen>
+  </iframe>
 
 ## Meshcore
 
@@ -15,7 +20,7 @@ now use one of those.
 - <https://analyzer.letsmesh.net/map> has lots of data and will spin
   up the fan on your laptop. shows three relays in the greater
   Montreal area as of 2026-03-18
-- <https://yul.meshmapper.net/> shows actual tested coverage from the
+- <https://yul.meshmapper.net/> (also shown above) shows actual tested coverage from the
   [MeshMapper project](https://wiki.meshmapper.net/), which essentially allows users to "war
   drive" a real-time map of where repeaters can be reached, shows 6 nodes in Montreal
 
@@ -43,15 +48,14 @@ visible on the ground, only relays that report their position. A relay
 might be in your neighbourhood and not visible on the map, so don't
 rely on the map to predict success. Try anyways!
 
+## Reticulum
+
+- [`rmap.world`](https://rmap.world/)
+- [`rns.fyi`](https://rns.fyi/)
+
 ## Progression
 
-We're trying to keep track of how many relays we see on those maps,
-over time. Here's an attempt at summarizing this:
-
-| Date       | Meshcore | Meshtastic |
-|------------|----------|------------|
-| 2026-03-18 | 3-25     | 23-51      |
-| 2026-04-24 | 17-47    | ~25        |
+Moved to the FAQ, in [How many nodes in the network?](../guides/faq.md#how-many-nodes-in-the-network).
 
 ## Site planners
 

@@ -67,3 +67,19 @@ un [réseau "mesh"](https://fr.wikipedia.org/wiki/R%C3%A9seau_maill%C3%A9) dans 
     nous sommes gentils!
 
 </div>
+
+Ce site vise à documenter le projet et nos connaissances. Vous pouvez
+modifier le site par le [dépôt Git](https://codeberg.org/anarcat/lora-reseaulibre-ca) et en cliquant le bouton
+"éditer" sur une page.
+
+# Carte MeshCore
+
+Cette carte montre les répétitrices qui répondent aux sondes sur le
+mesh MeshCore, grâce au [projet MeshMapper](https://wiki.meshmapper.net/).
+
+<!-- update the iframe in maps.md when updating this -->
+<iframe src="https://yul.meshmapper.net/embed.php?lat=45.508545&amp;lon=-73.589824&amp;zoom=10&amp;geofence=0&amp;fail_grid=0" width="100%" height="500px" style="border:0;" loading="lazy" allowfullscreen>
+  </iframe>
+
+Voir aussi la [section Cartes](references/maps.md) pour d'autres cartes.
+

@@ -9,14 +9,15 @@ tags:
 
     Ceci est un brouillon de valeurs autour desquelles on peut se rallier.
 
-## Local avant tout
+## Entraide locale
 
 > Débarque de l'internet, on se voit dans la rue! — [Riseup](https://riseup.net)
 
 - du vrai, avec des personnes, pas de bouillasse artificielle
 - [recherche-action](https://fr.wikipedia.org/wiki/Recherche-action), pas de débats techniques inutiles
 - limiter la dépendence envers l'internet traditionnel, fonctionner
-  [hors réseau](https://fr.wikipedia.org/wiki/Hors_r%C3%A9seau), se préparer au pire, espérer le meilleur
+  [hors réseau](https://fr.wikipedia.org/wiki/Hors_r%C3%A9seau), se préparer au pire, espérer le meilleur, par
+  [l'entraide](https://fr.wikipedia.org/wiki/L%27Entraide,_un_facteur_de_l%27%C3%A9volution)
 
 ## Transparence et vie privée
 

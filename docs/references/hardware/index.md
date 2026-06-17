@@ -29,7 +29,10 @@ ourselves.
     USB-C conviendra, 20 $ US, a besoin d'une app, par exemple sur votre
     téléphone
   
-    20$USD, [50-60USD comme kit autonome](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/).
+    20$USD.
+
+    :material-chart-line: Challenger: SeeedStudio [XIAO ESP32S3 &
+    `Wio-SX1262` Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html) à 11$USD, mais sans affichage ou boitier.
     
 -   :material-lightning-bolt: **Plus efficace**: [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158)
 
@@ -65,7 +68,8 @@ ourselves.
     
     100$USD.
     
-    :material-chart-line: Challenger: [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html), 70$USD.
+    :material-chart-line: Alternative, for masts [SenseCAP Solar Node
+    P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html), 70$USD.
 
 </div>
 
@@ -117,6 +121,13 @@ We have those categories:
 
     We tested those devices, and we recommend against using them entirely.
 
+Note that the devices are rated for compliance with Meshcore for the
+moment, but should generally also work with Meshtastic. 
+
+Reticulum support is spottier, and not explicitly covered here. Each
+software project has their own list of compatible hardware which we do
+not try to cover here.
+
 ## Pocket-sized
 
 Those are day-to-day use device, can you can easily carry in a pocket
@@ -124,7 +135,7 @@ or a pouch. Those generally have a battery.
 
 !!! success
  
-    - [Heltec v4 prebuilt kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/): touch screen, 18650 *flat*
+    - [Heltec v4 prebuilt kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/): touch screen, 18650 flat-top
       battery (tight, hard to remove), belt clip bulges the back cover,
       can also serve as a "standalone" device because of the touch screen
     - simpler, cheaper [Aliexpress Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
@@ -137,7 +148,9 @@ or a pouch. Those generally have a battery.
 !!! example "In testing"
 
     - [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, cheap, - 40℃ ~ 100℃,
-      WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm, 37g,
+      WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button (hidden under the
+      daughterboard, press both to enter JTAG so you can flash, requires
+      opening the case and removing the daughterboard), 22x23x57mm, 37g,
       exposed GPIO ports, no battery, 20$. Good candidate for the
       cheapest kit.
     - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): 200x200 e-ink
@@ -179,13 +192,14 @@ many not have batteries.
 
 !!! success
 
-    - [WisMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini): solar, battery, mast-mountable,
-      cheaper than the full repeater below, 100$USD
-
-!!! example "In testing"
+    - [WisMesh Solar Repeater
+      Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini):
+      solar, battery, mast or wall-mountable, cheaper than their full
+      repeater, 100$USD. Works through the night in summer time, needs testing
+      through winter.
 
     - [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html): 70$USD, outdoors solar-powered relay
-      with 4x18650 **button-top** batteries, nRF4840, BT 5.0, 3 power buttons, 5
+      with 4x18650 **button-top**[^1] batteries, nRF4840, BT 5.0, 3 buttons, 5
       LEDs, USB-C for debug, [recommended by
       `nyme.sh`](https://nyme.sh/faq/). Note that the base kit doesn't
       ship with the actual batteries, or the GNSS device, for that you
@@ -194,24 +208,38 @@ many not have batteries.
       which is 20$ more. Needs to be tested through night and
       winter. Also sold at
       [RobotShop
-      for 100CAD](https://ca.robotshop.com/products/sensecap-solar-node-p1-meshtastic-w-o-gps-battery), [130$ with GPS and battery](https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery?qd=c71a67155c4fec187b2b07ee9a7af9f3). Since this *requires* button-top batteries,
-      seriously consider buying it *with* batteries, as button-top
-      batteries are often more expensive, which makes the RobotShop kit particularly attractive.
-    - [WisMesh Solar Repeater](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater): solar, battery, mast-mountable, unclear
-      if it can be setup without solar and if it supports MQTT/ethernet,
-      300$, SenseCAP Solar Node P1 might be sturdier and
-      cheaper. Works through the night in summer time, needs testing
-      through winter.
+      for
+      100CAD](https://ca.robotshop.com/products/sensecap-solar-node-p1-meshtastic-w-o-gps-battery),
+      [130$ with GPS and
+      battery](https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery?qd=c71a67155c4fec187b2b07ee9a7af9f3).
+
+[^1]: It's really important to get button-top batteries for the
+      SenseCAP Solar node P1! Normal flat-top batteries won't connect
+      correctly. Seriously consider buying it *with* batteries, as
+      button-top batteries are often more expensive, which makes the
+      RobotShop kit particularly attractive.
 
 !!! question "Untested"
 
-    - [WisMesh Ethernet Gateway](https://store.rakwireless.com/products/wismesh-ethernet-gateway): no battery, no solar ([might be
-      convertible](https://forum.rakwireless.com/t/ethernet-gateway-with-batteries-solar/14601), but ethernet and PoE, note that [HTTP-based
-      management not possible](https://github.com/meshtastic/firmware/issues/2908), so configuration still has to go
-      through Bluetooth, but monitoring is possible over MQTT, and of
-      course the gateway receives and relays messages over
-      LoRa/Meshtastic!
+    - [WisMesh Solar Repeater](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater): solar, battery, mast-mountable, 
+      300$, SenseCAP Solar Node P1 much cheaper.
 
+    - [WisMesh Ethernet Gateway](https://store.rakwireless.com/products/wismesh-ethernet-gateway): no battery, no solar ([might be
+      convertible](https://forum.rakwireless.com/t/ethernet-gateway-with-batteries-solar/14601),
+      but ethernet and PoE, note that [management over Ethernet is not
+      possible in Meshtastic](https://github.com/meshtastic/firmware/issues/2908)
+      and possibly other firmware, so configuration still has to go
+      through Bluetooth, serial or WiFi.
+
+    - [SenseCAP M2 indoor
+      gateway](https://mappingnetwork.ca/products/sensecap-m2-indoor-gateway-lorawan-us915):
+      cheaper alternative to teh WisMesh?
+
+    - [AliExpress 5W Heltec
+    kit](https://www.aliexpress.com/item/1005010224488993.html),
+    [25W](https://www.aliexpress.com/item/1005006633080419.html), be
+    careful as sometimes they sell a Heltec v4.2 instead of a v4.3,
+    and that has problems, better to buy the Heltec separately
 
 ### Mounts
 
@@ -236,7 +264,7 @@ The devices here generally do not have a battery.
       case). one advantage Heltec has over the below RAK kits is that
       you can connect to them over wifi, the downside is
       they use more power because they are ESP32 based instead of
-      NRF5280
+      NRF5280, might be cheaper [at AliExpress](https://www.aliexpress.com/item/1005011870647672.html)
     - the [RAK19003 base kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) (28$) is more expensive, but less
       power-hungry than the Heltec
 
@@ -298,16 +326,33 @@ Moved to its own page, see [Batteries](batteries.md).
 
 We have experience with this:
 
+- [Alfa `AOA-915-5ACM`](https://www.alfa.com.tw/products/aoa-915-5acm?variant=36473963020360), sold as a 5dBi antenna, but falls short of
+  in [this technical review](https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi). In practice, it's still a great
+  antenna, a "great bang for the buck" according to the Ottawa folks,
+  and that the antenna is closer to 3dBi. Watch out for cheap
+  knock-offs, [Muzi Works sells a real one for 25CAD](https://muzi.works/products/alfa-outdoor-antenna), [Veshra sells
+  a 30$, to be verified](https://www.veshra.io/products/cmmli5vhi0001bz2u6btkjii1).
+
 - [`SYMITANT58`](https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL) (25$CAD Amazon)
 
-- a similar (and currently cheaper) model is this [RF Explorer](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-930MHz-5-8dBi-800mm-p-5275.html)
-  (10$USD from from Seeed Studio)
-  
+- a similar (and currently cheaper) model is this [RF Explorer 800mm](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-930MHz-5-8dBi-800mm-p-5275.html)
+  (10$USD from from SeeedStudio)
+
+
 !!! warning
 
-    The [antenna reports project](https://github.com/meshtastic/antenna-reports) warns against using a Seeed Studio
-    antenna, particularly for non-US frequencies. It's unclear if it is
-    the same antenna as the above RF Explorer, further testing necessary.
+    The [antenna reports project](https://github.com/meshtastic/antenna-reports) warns against using a
+    [SeeedStudio 600mm](https://www.seeedstudio.com/Lora-Fiberglass-Antenna-860-930MHz-5dBi-600mm-p-4927.html)
+    antenna, particularly for non-US frequencies. While it is a different
+    antenna, it's unclear if the above RF Explorer has the same flaw, further
+    testing necessary.
+
+- Ottawa used the [8dB SeeedStudio 1300mm at 30$USD](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-928MHz-8dBi-1300mm-p-5278.html) ([Mouser](https://www.mouser.ca/ProductDetail/Seeed-Studio/318020693?qs=By6Nw2ByBD0kjpJjgHd0aQ%3D%3D),
+  [130$ Digikey](https://www.digikey.ca/en/products/detail/seeed-technology-co-ltd/318020693/15976337?s=N4IgTCBcDaIMwEYAcAGMKBsBOOIC6AvkA), [85$ on sale at MN](https://mappingnetwork.ca/products/rakwireless-8dbi-fiberglass-antenna))
+
+- [Mapping Network][] has a couple of interesting antennas, some of us
+  have experimented with the McGill Microwave antennas, specifically
+  the [3dBi](https://mappingnetwork.ca/products/mcgill-3dbi-tuned-antenna-us915) and [6dBi](https://mappingnetwork.ca/products/mcgill-microwave-6dbi-tuned-antenna-us915) antennas
 
 Note that, to connect those to (say) a Heltec, you will need
 adapters:
@@ -322,20 +367,47 @@ touch on *all* the connectors from the guide.
 
 Other lists include:
 
-- [Official Meshtastic guide](https://meshtastic.org/docs/hardware/antennas/)[^2], which also refers to a [series of
+- [Official Meshtastic guide](https://meshtastic.org/docs/hardware/antennas/), which also refers to a [series of
   antenna reports](https://github.com/meshtastic/antenna-reports)
 - [`nyme.sh` recommendations](https://nyme.sh/faq/#what-antenna)
-- [Ottawa Mesh recommendations](https://ottawamesh.ca/hardware/repeater-mounting-options/)
+- [Ottawa Mesh recommendations](https://ottawamesh.ca/hardware/recommended-antenna/)
 
-[^2]:
+[Mapping Network]: https://mappingnetwork.ca/
 
-    Note that the "Alfa AOA-915-5ACM" recommended for "Base station /
-    repeater" in that guide falls short of the sometimes advertised +5dBi gain
-    in [this technical review](https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi).
+### Alfa upgrade on the SenseCAP P1
 
-    In practice, it's still a great antenna, a "great bang for the
-    buck" according to the Ottawa folks, and that the antenna is
-    closer to 3dBi.
+The SenseCAP Solar Node P1 can be upgraded with an Alfa antenna
+easily, but needs some sort of adapter because the stock connectors
+are SMA-based.
+
+=== "Connector"
+
+    ![](../../assets/sensecap-p1-alfa-connector.jpg){align=right width=300}
+    
+    This connector works well: it is a SMA to N converter that fits
+    above the stock pigtail. The connector is sold at [Addison](https://addison-electronique.com/).
+    
+    It also raises the antenna a little higher which is good because
+    it clears the solar panel better. The only downside is it
+    introduces some loss compared to a pigtail only solution.
+    
+    Note that we have had problems with this connector, where packets
+    would only be sent out and not received correctly.
+
+=== "Pigtail"
+
+    ![](../../assets/sensecap-p1-alfa.jpg){align=right width=300}
+
+    For this, you need a 30cm N to RP-SMA pigtail connector.
+
+    Make sure you get a "bulkhead mount“ that has a little flat piece
+    chamfered off the side, which helps prevent it from rotating in the
+    hole when you tighten it down. Otherwise it won't fit in the
+    socket. 
+
+    This [20 cm pigtail from Muzi Works](https://muzi.works/products/rp-sma-to-type-n-cable-20-cm) works, but is a little short:
+    you can only install it on the hole nearest to the router instead of
+    the further one, as shown on the image here.
 
 ## Resellers
 
@@ -346,11 +418,13 @@ There are, however, other resellers that might be more interesting to
 you for various reasons:
 
 - [Veshra](https://www.veshra.io/): more expensive, but local, possibly south shore (to be
-  confirmed); stocks antennas, batteries, Heltec, currently no Seeed
-  Studio, RAK, or ESP32 devices
+  confirmed); stocks antennas, batteries, Heltec, currently no
+  SeeedStudio, RAK, or ESP32 devices
 - [Space Hedgehog](https://space-hedgehog.com/): also more expensive; stocks Antenna, Heltec,
   based in Ottawa, related to the [Ottawa mesh](https://ottawamesh.ca/)
 - [Motion Power & Witt Supply Co.](https://mpandw.ca/) has [batteries](batteries.md), based in Ottawa
+- [Mapping Network][]: has a [good antenna collection](https://mappingnetwork.ca/collections/antennas) and other
+  devices, particularly [LMR400 cabling](https://mappingnetwork.ca/products/lmr-400-ultraflex-coaxial-cable-n-female-rp-sma-male)
 
 ## Hacks
 

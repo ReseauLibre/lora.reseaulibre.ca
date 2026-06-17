@@ -1,0 +1,17 @@
+---
+on: [push]
+jobs:
+  aspell:
+    runs-on: codeberg-tiny
+    steps:
+      # this nasty thing uses node.js to clone the repo
+      # consider https://codeberg.org/Shrimp-CI/checkout/ or just
+      # rewrite from scratch. essentially we need to:
+      # git init
+      # git remote add
+      # git fetch with submodules
+      # git checkout
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - run: ./spellcheck.sh en

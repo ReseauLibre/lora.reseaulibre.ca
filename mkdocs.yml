@@ -15,6 +15,12 @@ nav:
     - FAQ: guides/faq.md
   - Guides:
     - Meshcore: guides/meshcore.md
+    - Reticulum:
+      - guides/reticulum/index.md
+      - guides/reticulum/rns.md
+      - guides/reticulum/lxmf-cli.md
+      - guides/reticulum/meshcore.md
+      - guides/reticulum/rtnode.md
     - Meshtastic: guides/meshtastic.md
     - Matrix: guides/matrix.md
     - FAQ: guides/faq.md
@@ -82,9 +88,10 @@ theme:
   logo: assets/logo.svg
   favicon: assets/logo.svg
   features:
+    - navigation.footer
     # - navigation.prune
     # - navigation.sections
-    - navigation.expand
+    # - navigation.expand
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
@@ -132,6 +139,16 @@ theme:
 # it's blocked by the second one, the design of the module system:
 # https://github.com/zensical/backlog/issues/41
 extra:
+  social:
+    - icon: simple/matrix
+      link: https://matrix.to/#/#reseaulibre-space:matrix.org
+      name: Matrix chat
+    - icon: simple/codeberg
+      link: https://codeberg.org/reseaulibre/lora-reseaulibre-ca
+      name: Source code
+    - icon: material/feather
+      link: https://grebedoc.dev
+      name: Hosted on grebedoc
   alternate:
     - name: English
       link: /

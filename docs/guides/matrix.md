@@ -82,3 +82,108 @@ element it's "Search") interface of your client.
 
 This is the main room, but there are other rooms in the space,
 [`#reseaulibre-space:matrix.org` Matrix room](https://matrix.to/#/#reseaulibre-space:matrix.org).
+
+## Videoconferencing
+
+Matrix supports audio and video calls. There are two different
+implementation:
+
+- legacy, built on top of the Jitsi server at
+  <https://meet.element.io/> (but that can be modified for other Jitsi
+  servers)
+- native, or "[Element call](https://github.com/element-hq/element-call/)", which is built on top of
+  [`Livekit`](https://livekit.com/), a WebRTC framework that is slightly easier to deploy
+  than Jitsi, and federates better (each server can run its own
+  Livekit, whereas Element effectively runs all the legacy calls)
+
+We're currently experimenting with Legacy calls, as we want to allow
+outside people to participate in our calls.
+
+Out of the box, the way legacy calls work is they build a unique
+(think [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)) identifier for the room, and embed this as a
+widget. You can find that room identifier by typing this in a Element
+chat window:
+
+    /devtools
+
+Then select "Active widgets", where you'll see a button like:
+
+    https://scalar.vector.im/api/widgets/jitsi.html
+
+Select that, and look for the `conferenceId`, for example:
+
+    "conferenceId": "8be4df61-93ca-11d2-aa0d-00e098032b8c",
+
+Then you can tell people to join that room at:
+
+<https://meet.element.io/$conferenceId>
+
+For example, in the case above:
+
+<https://meet.element.io/8be4df61-93ca-11d2-aa0d-00e098032b8c>
+
+The widget should also be visible in `Explore room state` then
+`im.vector.modular.widgets`.
+
+You can also *change* that widget to point to an *existing* Jitsi room
+that you control better, for example a [moderated meeting](https://moderated.jitsi.net/). In the
+first example, change the `domain` to `meet.jit.si` and the
+`conferenceId` to the "guest" link, then click "Send", which will
+update the room to point to the new widget.
+
+## Commit bot
+
+A bot was setup to send messages for new commits on the [`#reseaulibre:matrix.org`
+Matrix room](https://matrix.to/#/#reseaulibre:matrix.org) whenever there is a push. This was done using the
+[built-in Codeberg Matrix integration](https://docs.codeberg.org/integrations/matrix/), with a twist: a long lived
+token was created using the [login API](https://spec.matrix.org/v1.6/client-server-api/#login). Concretely, it's with that
+`curl` magic:
+
+    export PASSWORD=$(rbw get @rl-codeberg-webhook)
+    curl -XPOST --header 'Content-Type: application/json' \
+      -d '{"type":"m.login.password",  "identifier":{"type": "m.id.user", "user": "rl-codeberg-webhook"}, "password":"'$PASSWORD'"}' \
+      "https://matrix.org/_matrix/client/r0/login"
+
+On success, it replied with:
+
+    {"access_token":"mct_REDACTED_REDACTED","device_id":"E6aFv2IAri","user_id":"@rl-codeberg-webhook:matrix.org"}
+
+Previous attempts at copying the access token from Element typically
+fail after 24 hours.
+
+This was done instead of setting up a dedicated bot like [Maubot](https://mau.bot/)
+with its [numerous plugins](https://plugins.mau.bot/) like a [RSS plugin](https://github.com/maubot/rss), or a [webhook
+plugin](https://github.com/jkhsjdhjs/maubot-webhook). There is also a [dedicated RSS bridge](https://gitlab.com/matrix-rss-bridge/matrix-rss-bridge).
+
+## Moderation
+
+We have a bot called `mjolnir` in the rooms which enforces common
+block lists shared across the Matrix community. It is managed by the
+[`debian.social` team](https://debian.social), of which anarcat is a member. 
+
+Here is a [good guide on moderation tools](https://matrix-community-help.codestorm.net/).
+
+Other people have been promoted to moderation roles as well. That has
+been done manually across all the rooms.
+
+!!! bug
+
+    Unfortunately, Matrix doesn't support syncing moderation status
+    across an entire space yet, see:
+
+    - [MSC3216: Synchronized access control for Spaces](https://github.com/matrix-org/matrix-spec-proposals/pull/3216)
+    - [MSC2962: Managing power levels via Spaces](https://github.com/matrix-org/matrix-spec-proposals/pull/2962)
+
+    We could also use a
+    [`communitybot`](https://github.com/williamkray/maubot-communitybot)
+    as an alternative, but then we'd still need to add it to all the
+    rooms anyways.
+
+[`asgard.chat`](https://asgard.chat/) possible alternative to Debian's Mjolnir, ran by the
+folks who do a lot of stuff in Matrix, people from the MSC core team,
+Draupnir, Meowlnir, Continuwuity and so on.
+
+Both run an open source bot called [Draupnir](https://github.com/the-draupnir-project/Draupnir). We could run our own
+to remove trust in other organisations, but it wouldn't resolve the
+primary goal of the bot which is to remove the single point of failure
+in the main room admin.

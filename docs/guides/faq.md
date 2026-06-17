@@ -6,17 +6,33 @@ title: FAQ
 
 Here are a couple of questions we have frequently been asked.
 
-
-## General questions
+## General
 
 ### Should I install a relay?
 
-Yes. Even if you don't think you reach other nodes, you might be
-surprised and do.
+Most likely, yes. Even if you don't think you reach other nodes, you
+might be surprised and do.
 
 Even if you do set up a relay and you don't see neighbours, it's still
 useful to experiment with this technology locally. And besides, this
 is how a mesh start: with one node, and then a second...
+
+Still, please take a look at the [Meshmapper coverage](https://yul.meshmapper.net/) or [other
+maps](../references/maps.md) to see if a relay in your area would help. Some areas already
+have pretty good coverage and might not need an extra repeater, which
+might add noise.
+
+A good rule of thumb is to setup a non-repeating device (a "companion"
+in Meshcore) and see if you see other repeaters. If you can
+communicate with others, you don't need to install a relay.
+
+### Do I need something on my roof?
+
+No. Plenty of people are running relays from their homes, living
+rooms, attics, and even cars or backpacks.
+
+But yes, if you *do* have access to a more elevated structure like a
+roof, tree or mast, it will reach farther.
 
 ### What should I buy?
 
@@ -32,13 +48,6 @@ there.
 
 See also our full [hardware reference](../references/hardware/index.md).
 
-### Do I need something on my roof?
-
-No. Plenty of people are running relays from their homes, living
-rooms, attics, and even cars or backpacks.
-
-But yes, if you *do* have access to a more elevated structure like a
-roof, tree or mast, it will reach farther.
 
 ### How far can I communicate?
 
@@ -53,15 +62,42 @@ kilometers or more, even from inside your house. A node on a rooftop
 can reach much further, easily a dozen kilometers, depending on how
 clear the view is.
 
+As of 2026-05-11, the [current record](https://yul.meshmapper.net/leaderboard.php) is 21.5km across Lac
+Saint-Louis, by [`YUL_Dorval-South`](https://yul.meshmapper.net/index.php?repeater=D0,45.43988,-73.73579).
+
 ### How many nodes in the network?
 
 Hard to tell. The [maps](../references/maps.md) seem to show somewhere between 20 and 40
 nodes on any given day, but we don't have good metrics of this.
 
-As of 2026-03-09, "from my house", I see about 10 to 20 relays on a
-daily basis, with perhaps half a dozen direct contacts.
+We're trying to keep track of how many relays we see on [the maps](../references/maps.md),
+over time:
 
-There are daily messages.
+| Date       | Meshcore | Meshtastic |
+|------------|----------|------------|
+| 2026-03-18 | 3-25     | 23-51      |
+| 2026-04-24 | 17-47    | ~25        |
+| 2026-05-11 | 35-65    | 27-40      |
+| 2026-05-27 | 66-89    | 22-34      |
+| 2026-06-10 | 97-114   | 16-29      |
+
+Links used to extract those numbers:
+
+- Meshtastic: [high](https://meshtastic.liamcottle.net/?lat=45.744526980468436&lng=285.7461547851563&zoom=8), [low](https://meshmap.net/), [lowest](https://map.mt.gt/)
+- Meshcore: [high](https://map.meshcore.io/?zoom=8&lat=45.6486&lon=-72.9767), [low](https://yul.meshmapper.net/leaderboard.php)
+
+## Software
+
+### How do I upgrade?
+
+Typically, devices can be safely upgraded by flashing them with the
+new version. For Meshcore, follow the [Flash the firmware on the
+device](meshcore.md#flash-the-firmware-on-the-device) instructions and, if you have the device properly
+configured, the [OTA upgrades](meshcore.md#ota-upgrades).
+
+To be on the safer side, it's always a good time to perform a backup.
+
+Just make sure to avoid doing an "erase"!
 
 ### Is this legal?
 
@@ -246,6 +282,8 @@ We *are* experimenting with Reticulum. Some of us have worked on
 on chip without a second computer), [transport nodes](https://github.com/jrl290/RTNode-HeltecV4) (same, as a
 gateway to the Internet), Reticulum-over-Meshtastic, and more!
 
+We now have a [guide on getting started with Reticulum](reticulum/index.md) as well.
+
 But Reticulum, while being more advanced in terms of routing and
 cryptography, lacks the "ready-made" aspect of the other protocols. You can,
 today, buy a [hardware preinstalled with Meshtastic or Meshcore](../references/hardware/index.md) and it just
@@ -263,6 +301,10 @@ Right now the focus is on organizing the mesh that already exists on
 the island, and that is mostly made up of Meshtastic and Meshcore nodes. Reticulum
 could be a backhaul for the network or the future of the network,
 we'll see!
+
+People interested in Reticulum are welcome to join us at Foulab's Mesh
+Night (every first Wednesday of the month) where we do a lot of
+research on Reticulum.
 
 ### Why not Meshtastic?
 
@@ -398,13 +440,45 @@ protection against unreasonable search and seizure.
 Also known as "Why are you not on Telegram, Discord, Whatsapp,
 Facebook, XMPP, or whatever?"
 
-The real reason we are on Matrix is because we were already there and
-people already had accounts. People like to argue that we should be
-elsewhere because that is "where every is", but if that was the
-argument, everyone should join Whatsapp (3 billion monthly active
-users), yet people somehow think they should organise
-elsewhere. Typically, it's the place they already use for some other
-purpose.
+Obviously, the Meshcore community is organised a mostly through
+Discord, and we're not there. We are on Matrix is because we were
+already there before Meshcore existed, and we are not just about
+Meshcore.
+
+Some people claim there are more people on Discord than Matrix in
+general, but we dispute those claims.[^1]
+
+[^1]: Here is a select number of social networks and their size in
+    monthly active users, as of 2026-05-28, mostly from [this 2025
+    report](https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/) unless otherwise noted:
+
+      * Facebook: 3.07 billion MAU ("may be out of date")
+      * WhatsApp: 3.00B
+      * Instagram: 3.00B
+      * YouTube: 2.58B ("ad reach")
+      * TikTok: 1.99B ("ad reach")
+      * WeChat: 1.41B
+      * Telegram: 1B
+      * Messenger: 942 million ("may be misrepresented")
+      * Snapchat: 932M
+      * Reddit: 765M
+      * Matrix: 200M "users" ([according to
+      Element](https://element.io/en)), was [60M in
+      2022](https://www.theregister.com/on-prem/2022/07/15/matrix-messaging-service-leaps-60-million-user-barrier/1562103)
+      and [28M in 2021](https://www.youtube.com/watch?v=TzUfS08lMek&t=265s)
+      * Signal: 70-100M users ([according to their CEO](https://tech-insider.org/signal-vs-telegram-2026/))
+      * Discord: 90M+ "daily active users" (according to
+      [discord.com](https://discord.com/company)), 150M MAU in 2024,
+      [according to Wikipedia](https://en.wikipedia.org/wiki/Discord)
+      * Meshcore: [46,546 devices world wide](https://map.meshcore.io/)
+
+    So, if actual numbers of users were a real criteria for picking a
+    platform, people would organise primarily on Facebook or Telegram
+    (and indeed, lots of people are), but clearly not on Discord,
+    which is primarily a gaming platform.
+
+    The reality is people organize where they already are, and can't
+    be moved around easily, because [communities are not fungible](https://www.joanwestenberg.com/communities-are-not-fungible/).
 
 Compared to all those other platforms (with exceptions), Matrix has
 properties that are uniquely well suited to the mesh:
@@ -491,6 +565,40 @@ outweigh those inconveniences, since the alternative also fail at many
 of those challenges. For example, Discord doesn't implement end-to-end
 encryption at all, is not operable, and leaves no control over data
 retention to the user.
+
+### Which radio frequencies are you using?
+
+We're using the defaults!
+
+- MeshCore: "US/Canada" preset (910.525 MHz, 62.5 kHz, SF7, CR5)
+- Meshtastic: "US" preset, LongFast (906.875 MHz, 250kHz, SF 11, CR5)
+- Reticulum: "Ottawa" preset (914.875 MHz, 125 kHz, SF7, CR7)
+
+For Reticulum, there is less standardization on those settings, so
+people often pick arbitrary numbers. Obviously, avoid the frequencies
+used by MeshCore and Meshtastic. The frequencies above are not
+overlapping and look something like:
+
+- MeshCore: 910.49375 to 910.55625 MHz (910.525 MHz with 62.5 kHz
+bandwidth or ± 31.25 kHz)
+- Meshtastic: 906.750 too 907.0 MHz (906.875 MHz with a 250 kHz
+  bandwidth or ± 125 kHz)
+- Reticulum: 914.8125 to 914.9375 (914.875 MHz with a 125 kHz
+  bandwidth or ± 62.5 kHz)
+
+You can use [this tool from the Reticulum community](https://unsigned.io/understanding-lora-parameters/) to calculate
+the bandwidth resulting from various parameters. The [LoRa parameters
+guide of the Reticulum wiki](https://reticulum.miraheze.org/wiki/LoRa_parameters) is also tremendously useful to
+understand better what those parameters mean.
+
+Keep in mind when we say a *frequency* it is the *center* frequency,
+so you need to calculate the bandwidth *around* the frequency to make
+sure you do not interfere.
+
+In general, we operate within the [ISM bands](https://en.wikipedia.org/wiki/ISM_radio_band#Frequency_allocations) which is, in our
+region, 902 to 928MHz, also known as the [33 cm band](https://en.wikipedia.org/wiki/33-centimeter_band), which can be
+quite crowded! It can also receive interference from nearby [UHF
+bands](https://en.wikipedia.org/wiki/Ultra_high_frequency#United_States) of course, particularly if you are near a cell phone tower.
 
 ## Other questions
 
