@@ -1,8 +1,7 @@
 # Values
 
-!!! example
-
-    This is a draft of values I hope we can rally around.
+Those are the values that resonate with our community. They were
+introduced at the [June 2026 meeting](news/posts/2026-05-31-rencontre-repeteurs-2.md).
 
 ## Local first and mutual aid
 
