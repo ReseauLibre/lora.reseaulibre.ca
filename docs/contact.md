@@ -31,13 +31,23 @@ Nous utilisons présentement la vielle liste de discussion de Réseau Libre:
 
 ## Rencontres
 
-Chaque mois, [Foulab][], le "hacker space" de Montréal, tient une
-soirée "mesh". Il [se trouve][] à la [Suite 33B, 999 du Collège,
-Montréal, Quebec, Canada, H4C 2S3][] ([lien Google maps][]), à
-quelques minutes du métro Saint-Henri.
+Nous nous rencontrons durant deux types de rencontre: "Mesh night" et
+des rencontres plus formelles.
 
-Vérifiez la [page de nouvelles](news/index.md) pour confirmer la date
-à chaque mois, mais c'est typiquement le premier mercredi du mois.
+Durant nos rencontres Réseau Libre, nous discutons, avec un agenda,
+des propositions, tours de paroles et procès verbaux. Ces rencontres
+se sont tenues à l'Université de Montréal pour l'instant, mais nous
+voulons varier l'emplacement d'une rencontre à l'autre.
+
+Puis il y a le [Foulab][], le "hacker space" de Montréal, qui tient
+une soirée "mesh" qui est une session de "hacking" plus informelle. le
+Foulab [se trouve][] à la [Suite 33B, 999 du Collège, Montréal,
+Quebec, Canada, H4C 2S3][] ([lien Google maps][]), à quelques minutes
+du métro Saint-Henri.  to vary location from one meeting to the next.
+
+Vérifiez la [page de nouvelles](news/index.md) pour confirmer les dates à chaque
+mois, mais en général Mesh night se tient le premier mercredi du mois,
+et la rencontre Réseau Libre, le jeudi de la semaine suivant Mesh night.
 
  [se trouve]: https://foulab.org//location/
  [lien Google maps]: https://www.google.com/maps/place/999+Rue+du+Coll%C3%A8ge,+Montr%C3%A9al,+QC+H4C+2S2,+Canada
