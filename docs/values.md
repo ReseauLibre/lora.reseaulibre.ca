@@ -4,14 +4,14 @@
 
     This is a draft of values I hope we can rally around.
 
-## Local first
+## Local first and mutual aid
 
 > Get off the internet, I'll see you in the streets! — [Riseup](https://riseup.net)
 
 - real work, with real people, no slop
 - [research in action](https://en.wikipedia.org/wiki/Action_research), no endless technical debate
 - limit reliance on the traditional internet, work [off the grid](https://en.wikipedia.org/wiki/Off-the-grid),
-  prepare for the worst, hope for the best
+  prepare for the worst, hope for the best, [help each other](https://en.wikipedia.org/wiki/Mutual_aid)
 
 ## Transparency and privacy
 
