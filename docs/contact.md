@@ -7,7 +7,7 @@ messages every week.
 
 We have real time chat in the [`#reseaulibre:matrix.org` Matrix
 room](https://matrix.to/#/#reseaulibre:matrix.org). We're organizing those many rooms in a wider
-[`#mesh-quebec:matrix.org` space](https://matrix.to/#/#mesh-quebec:matrix.org), as an alternative to proprietary
+[`#reseaulibre-space:matrix.org` space](https://matrix.to/#/#reseaulibre-space:matrix.org), as an alternative to proprietary
 platforms[^1]. See our [Matrix guide](guides/matrix.md) for details.
 
 [^1]:
