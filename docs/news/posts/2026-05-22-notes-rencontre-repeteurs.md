@@ -10,6 +10,8 @@ categories:
 Voici les notes de la [rencontre du 21 Mai](2026-05-21-rencontre-repeteurs.md). Merci aux preneurs de
 notes!
 
+![Photo d'un tableau vert présentant l'agenda](PXL_20260522_013852459-1080p.cleaned.jpg)
+
 <!-- more -->
 
 ## Introduction
@@ -94,7 +96,9 @@ anarcat s'est permis un éditorial sur les limites de Meshtastic, et
 des difficultés que le mesh de Montréal a eu jusqu'à ce qu'on adopte
 MeshCore. Nous pouvons maintenant communiquer!
 
-S'ensuivi une discussion.
+S'en suivi une discussion.
+
+![Photo d'un tableau vert présentant l'agenda](PXL_20260522_013855746-crop-1080p.cleaned.jpg)
 
 ### Discussion informelle
 
