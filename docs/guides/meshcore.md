@@ -479,6 +479,10 @@ We know about the follow channels currently in use[^1]:
 |-----------------------|------------------------------------|----------------------------|------------------------------------------------------------|
 | Public                | `8b3387e9c5cdea6ac9e5edbaa115cd72` | `izOH6cXN6mrJ5e26oRXNcg==` | General conversations                                      |
 | `#testing`            | `cde5e82cf515647dcb547a79a4f065d1` | `zeXoLPUVZH3LVHp5pPBl0Q==` | Should be used for tests                                   |
+| `#911`                | `907a3dd4b73b9d1324b4d6c83425c186` | `kHo91Lc7nRMktNbINCXBhg==` | Communications d'urgence (français)                        |
+| `#emergency`          | `e1ad578d25108e344808f30dfdaaf926` | `4a1XjSUQjjRICPMN/ar5Jg==` | Emergency communications (english)                         |
+| `#meshcore-ops`       | `dd95f5167774c3967edee5c606bcad43` | `3ZX1Fnd0w5Z+3uXGBrytQw==` | Operator coordination                                      |
+| `#montreal`           | `0c4c03b5fbea5b80f89e2a2a16ed3f40` | `DEwDtfvqW4D4nioqFu0/QA==` | Montreal-specific traffic, see also `#ottawa`              |
 | `#wardriving`         | `e3c26491e9cd321e3a6be50d57d54acf` | `48JkkenNMh46a+UNV9VKzw==` | Used by [Meshmapper][] pings                               |
 | `#habs`               | `e570409412b40c123b4ab787351ab30b` | `5XBAlBK0DBI7SreHNRqzCw==` | Far from real time game updates and gossip                 |
 | `#bots`               | `0d24f5830b449668b8c221759b6c50d2` | `DST1gwtElmi4wiF1m2xQ0g==` | Where to run bots, a bot replies to `test` and `ping`there |
