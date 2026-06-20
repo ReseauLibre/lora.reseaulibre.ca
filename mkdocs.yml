@@ -206,8 +206,6 @@ plugins:
               # technologies instead. like "you want $this? pick
               # meshtastic. you want $that? pick reticulum" and so on.
               'guides/index.md': 'guides/meshcore/index.md'
-              # guide was split up
-              'guides/meshcore.md': 'guides/meshcore/index.md'
               # the hardware page is really a reference more than a guide
               'guides/hardware.md': 'references/hardware/index.md'
               # obscure FAQ URL that came up for less than a day
