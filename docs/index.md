@@ -43,7 +43,7 @@
     ---
     
     Follow the [:octicons-arrow-right-24: Getting started with
-    Meshcore guide](guides/meshcore.md) and join us, or consult
+    Meshcore guide](guides/meshcore/companion.md) and join us, or consult
     our [growing reference documentation](references/index.md).
 
 -   :octicons-question-16: **Other questions?**

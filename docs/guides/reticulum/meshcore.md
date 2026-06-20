@@ -111,7 +111,7 @@ this work with Bluetooth as well, but we found serial to be much
 easier.
 
 For this to work, you need to have a "companion" flashed with
-Meshcore. You can follow our [Meshcore flashing guide](../meshcore.md#flash-the-firmware-on-the-device), just make
+Meshcore. You can follow our [Meshcore flashing guide](../meshcore/companion.md#flash-the-firmware-on-the-device), just make
 sure you pick "serial" and not "Bluetooth".
 
 !!! bug
