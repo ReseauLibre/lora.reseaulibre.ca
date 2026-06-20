@@ -37,6 +37,7 @@ nav:
         - references/hardware/power.md
     - Software:
         - references/software/index.md
+        - references/software/meshtastic.md
         - references/software/bots.md
         - references/maps.md
         - Meta: meta.md
