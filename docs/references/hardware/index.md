@@ -127,39 +127,37 @@ Reticulum support is spottier, and not explicitly covered here. Each
 software project has their own list of compatible hardware which we do
 not try to cover here.
 
-## Pocket-sized
+## Companions
 
 Those are day-to-day use device, can you can easily carry in a pocket
-or a pouch. Those generally have a battery.
+or a pouch. Those generally have a battery. They need a phone or
+computer to operate.
 
 !!! success
  
-    - [Heltec v4 prebuilt kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/): touch screen, 18650 flat-top
-      battery (tight, hard to remove), belt clip bulges the back cover,
-      can also serve as a "standalone" device because of the touch screen
-    - simpler, cheaper [Aliexpress Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
     - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket): GNSS, 1.3" OLED, acceleration sensor, power
       button, 3200mAh battery, USB-C powered, 100$
-    - [Lilygo T-Deck Plus](https://lilygo.cc/products/t-deck-plus-1) (80$): blackberry-like, standalone device
-      with battery, keyboard, trackball, LCD display, 2000mAh battery,
-      BLE, WiFi, GPS, MicroSD card reader, microphone/speaker
-
-!!! example "In testing"
-
+    - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): 200x200 e-ink
+      display, NRF52840, GPS, BT 5.0, no wifi, only two
+      buttons, NFC, 850mAh battery, temperature/pressure sensor, 55$USD
+    - cheap [Aliexpress Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
     - [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, cheap, - 40℃ ~ 100℃,
       WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button (hidden under the
       daughterboard, press both to enter JTAG so you can flash, requires
       opening the case and removing the daughterboard), 22x23x57mm, 37g,
       exposed GPIO ports, no battery, 20$. Good candidate for the
       cheapest kit.
-    - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): 200x200 e-ink
-      display, NRF52840, GPS, BT 5.0, no wifi, only two
-      buttons, NFC, 850mAh battery, temperature/pressure sensor, 55$USD
     - Seeedstudio [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, - 40℃ ~
       100℃, WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm,
       37g, exposed GPIO ports, cheap (20$), does not ship with
       Meshtastic firmware, needs full erase before reflash or gets
       into a boot loop
+
+!!! example "In testing"
+
+    - [Elecrow ThinkNode M1](https://www.elecrow.com/thinknode-m1-meshtastic-lora-signal-transceiver-powered-by-nrf52840-with-154-screen-support-gps.html):
+      nRF52840, 1200mAh battery, 1.54" e-ink display, GPS, BLE, RP-SMA,
+      -10~50°C, 54$USD, [89$CAD at Muzi](https://muzi.works/products/elecrow-thinknode-m1), similar to the Lilygo T-Echo, but has a better battery
 
 !!! warning
 
@@ -169,10 +167,6 @@ or a pouch. Those generally have a battery.
 
 !!! question "Untested"
 
-    - [Elecrow ThinkNode M1](https://www.elecrow.com/thinknode-m1-meshtastic-lora-signal-transceiver-powered-by-nrf52840-with-154-screen-support-gps.html):
-      nRF52840, 1200mAh battery, 1.54" e-ink display, GPS, BLE, RP-SMA,
-      -10~50°C, 54$USD, [89$CAD at Muzi](https://muzi.works/products/elecrow-thinknode-m1),  
-      similar to the Lilygo T-Echo, but has a better battery
     - [T-Deck Pro](https://lilygo.cc/products/t-deck-pro): 3.1" e-ink touch screen, 4G module, WiFi 2.4GHz,
       BLE 5, GPS, TF Card, mic, speaker, keypad, see also the [T5 e-paper
       s3 pro](https://lilygo.cc/products/t5-e-paper-s3-pro)
@@ -182,6 +176,23 @@ or a pouch. Those generally have a battery.
       expensive
 
 <!-- !!! failure "Not working" -->
+
+## Standalone
+
+Those are day-to-day use device, can you can easily carry in a pocket
+or a pouch. They have a battery and do *not* need a phone or computer
+to operate.
+
+!!! success
+
+    - [Heltec v4 prebuilt kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/): touch screen, 18650 flat-top
+      battery (tight, hard to remove), belt clip bulges the back cover,
+      can also serve as a "standalone" device because of the touch screen
+    - [Lilygo T-Deck Plus](https://lilygo.cc/products/t-deck-plus-1) (80$): blackberry-like, standalone device
+      with battery, keyboard, trackball, LCD display, 2000mAh battery,
+      BLE, WiFi, GPS, MicroSD card reader, microphone/speaker
+
+Note that those devices depend on the proprietary Ripple firmware.
 
 ## Base stations and solar
 
