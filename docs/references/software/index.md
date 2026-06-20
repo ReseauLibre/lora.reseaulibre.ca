@@ -21,7 +21,7 @@ We also have:
 
 - a legacy [collection of Meshtastic-related software](meshtastic.md)
 - [bots and bridges](bots.md)
-- [Maps](maps.md)
-- [Meta](meta.md) - how this site works
+- [Maps](../maps.md)
+- [Meta](../../meta.md) - how this site works
 
 See also [Awesome MeshCore](https://github.com/samuk/awesome-meshcore).
