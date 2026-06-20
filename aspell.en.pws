@@ -1,4 +1,4 @@
-personal_ws-1.1 en 208 
+personal_ws-1.1 en 218 
 AEAD
 AES
 APRS
@@ -11,6 +11,7 @@ AlleyCat
 Anarcat
 Anarcat's
 Anarcho
+Ansible
 Beaupré
 Brillant
 Brossard
@@ -22,6 +23,7 @@ ChaChaPoly
 Cinny
 Cleeyv
 Codeberg
+Collège
 Columba
 Continuwuity
 Cottle
@@ -31,6 +33,7 @@ DFU
 DIRO
 DIY
 DNS
+Delson
 Dennet
 Digikey
 Draupnir
@@ -46,6 +49,7 @@ Foulab's
 Freifunk
 GTK
 GitLab
+Golang
 Grafana
 Grebedoc
 Groulx
@@ -123,11 +127,13 @@ README
 RISQ
 RL
 RNS
+RNSH
 RNode
 RRC
 RSS
 RTNode
 Ratdeck
+Ratspeak
 Reddit
 Riseup
 Rivière
@@ -136,6 +142,7 @@ Rosemont
 Réseau
 SHA
 SMA
+SNR
 SWR
 Sainte
 SbMo
@@ -159,6 +166,7 @@ USD
 UUID
 Université
 Veshra
+Vieux
 Villeray
 WIP
 WebRTC
@@ -182,6 +190,7 @@ dBi
 de
 decrypt
 des
+du
 fil
 janky
 jpg
@@ -202,6 +211,7 @@ reflashtic
 socio
 solarpunk
 systemd
+th
 traceroute
 tropospheric
 webhook

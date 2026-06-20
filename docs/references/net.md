@@ -83,7 +83,7 @@ We keep track of past nets here.
 | 21:22 | `Stef`       | Longueuil       | 2-3  |
 | 21:41 | `Massimo`    | Greenfield Park | 5    |
 
-Longueuil repeater [VE2RSM](https://yul.meshmapper.net/?repeater=BF%2C45.53836%2C-73.45851) came online and drastically improved
+Longueuil repeater [`VE2RSM`](https://yul.meshmapper.net/?repeater=BF%2C45.53836%2C-73.45851) came online and drastically improved
 hop counts and coverage on the south shore.
 
 Observed:

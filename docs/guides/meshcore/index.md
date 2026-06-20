@@ -38,7 +38,7 @@ in the FAQ.
 - [`Cyclenerd/meshcore-bot`](https://github.com/Cyclenerd/meshcore-bot)
 - [`agessaman/meshcore-bot`](https://github.com/agessaman/meshcore-bot)
 - [`watsoncj/meshcore-stats`](https://github.com/watsoncj/meshcore-stats): Prometheus exporter for repeater
-  telemetry, golang
+  telemetry, Golang
 - [`rupertdev/meshcore-prometheus-exporter`](https://github.com/rupertdev/meshcore-prometheus-exporter): same, Python
 - [`pyMC-dev/pyMC_Repeater`](https://github.com/pyMC-dev/pyMC_Repeater): Python-based repeaters
-- [`meshcorrode`](https://github.com/Fingel/meshcorrode/): partial Rust reimplementation
+- [`meshcorrode`](https://github.com/Fingel/meshcorrode/): partial Rust re-implementation
