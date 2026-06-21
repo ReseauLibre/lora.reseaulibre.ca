@@ -426,8 +426,12 @@ resellers.
 There are, however, other resellers that might be more interesting to
 you for various reasons:
 
+- [Robotshop](https://ca.robotshop.com/collections/lora): good source for the [SenseCAP P1](https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery), delivers fast,
+  reliable, good prices. They also sell robots, SeeedStudio, Elecrow,
+  but no RAK.
 - [Space Hedgehog](https://space-hedgehog.com/): also more expensive; stocks Antenna, Heltec,
-  based in Ottawa, related to the [Ottawa mesh](https://ottawamesh.ca/)
+  based in Ottawa, related to the [Ottawa mesh](https://ottawamesh.ca/) (currently on
+  hiatus for the summer)
 - [Motion Power & Witt Supply Co.](https://mpandw.ca/) has [batteries](batteries.md), based in Ottawa
 - [Mapping Network][]: has a [good antenna collection](https://mappingnetwork.ca/collections/antennas) and other
   devices, particularly [LMR400 cabling](https://mappingnetwork.ca/products/lmr-400-ultraflex-coaxial-cable-n-female-rp-sma-male)
