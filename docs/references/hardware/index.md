@@ -446,10 +446,10 @@ you for various reasons:
 
     We've had trouble with these:
 
-   - [Veshra](https://www.veshra.io/): more expensive, but local, possibly south shore (to be
-     confirmed); stocks antennas, batteries, Heltec, currently no
-     SeeedStudio, RAK, or ESP32 devices. Recent orders have failed,
-     some unanswered. Not recommended anymore.
+    - [Veshra](https://www.veshra.io/): more expensive, but local, possibly south shore (to be
+      confirmed); stocks antennas, batteries, Heltec, currently no
+      SeeedStudio, RAK, or ESP32 devices. Recent orders have failed,
+      some unanswered. Not recommended anymore.
 
 ## Hacks
 
