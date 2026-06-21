@@ -80,6 +80,7 @@ over time:
 | 2026-05-11 | 35-65    | 27-40      |
 | 2026-05-27 | 66-89    | 22-34      |
 | 2026-06-10 | 97-114   | 16-29      |
+| 2026-06-17 | 104-129  | 16-26      |
 
 Links used to extract those numbers:
 
@@ -92,8 +93,8 @@ Links used to extract those numbers:
 
 Typically, devices can be safely upgraded by flashing them with the
 new version. For Meshcore, follow the [Flash the firmware on the
-device](meshcore.md#flash-the-firmware-on-the-device) instructions and, if you have the device properly
-configured, the [OTA upgrades](meshcore.md#ota-upgrades).
+device](meshcore/companion.md#flash-the-firmware-on-the-device) instructions and, if you have the device properly
+configured, the [OTA upgrades](meshcore/repeater.md#ota-upgrades).
 
 To be on the safer side, it's always a good time to perform a backup.
 
@@ -186,7 +187,7 @@ Wait a little while; relays periodically announce themselves and you
 should eventually see some relays.
 
 Make sure you configured your device with the right settings, see our
-[Meshcore](meshcore.md#configuration) and [Meshtastic](meshtastic.md#parametres) settings.
+[Meshcore](meshcore/companion.md#configuration) and [Meshtastic](meshtastic.md#parametres) settings.
 
 Try to say hi and ask if anyone can read you. People might pick up the
 message only much later and respond. Keep your device open.

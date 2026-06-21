@@ -64,6 +64,37 @@ the network?](../guides/faq.md#how-many-nodes-in-the-network) FAQ.
 
 We keep track of past nets here.
 
+### 2026-06-17
+
+| time  | call sign    | location        | hops |
+|-------|--------------|-----------------|------|
+| 21:00 | `Oots`       | Villeray        | 3    |
+| 21:02 | `Cédric`     | La Prairie      | 6    |
+| 21:02 | `Erik`       | Vieux Longueuil | 2    |
+| 21:03 | `Mad Jap`    | Marieville      | 3    |
+| 21:05 | `SbMo`       | Mile End        | 3-4  |
+| 21:07 | `Johnputer`  |                 | 4    |
+| 21:10 | `VE2XJS`     | Delson          | 5    |
+| 21:11 | `VariaLFliP` | Saint-Laurent   | 5    |
+| 21:13 | `Carlitos`   | Sainte-Julie    | 4    |
+| 21:13 | `Daniel`     | Saint-Jean      | 3    |
+| 21:15 | `Normand`    | Saint-Hubert    | 3    |
+| 21:15 | `VE2IES`     | Verdun          | 3    |
+| 21:22 | `Stef`       | Longueuil       | 2-3  |
+| 21:41 | `Massimo`    | Greenfield Park | 5    |
+
+Longueuil repeater [`VE2RSM`](https://yul.meshmapper.net/?repeater=BF%2C45.53836%2C-73.45851) came online and drastically improved
+hop counts and coverage on the south shore.
+
+Observed:
+
+- 13 participants (more than the previous record at 11)
+- 109 repeaters in the past week
+- 77 companions
+- 10 rooms
+- [129 nodes in the official map](https://map.meshcore.io/?zoom=7&lat=45.7100&lon=-72.6416)
+- [104 repeaters in MeshMapper](https://yul.meshmapper.net/leaderboard.php)
+
 ### 2026-06-10
 
 Largest net so far, again:
@@ -77,7 +108,7 @@ Largest net so far, again:
 | 21:02 | `VA2SM`            | Candiac       |
 | 21:02 | `Carlitos`         | Sainte-Julie  |
 | 21:03 | `MadJap`           | Marieville    |
-| 21:04 | `MeshCourte`       | ---           |
+| 21:04 | `MeshCourte`       | Villeray      |
 | 21:07 | `VE2CL`            | La Prairie    |
 | 21:20 | `DIR Hochelaga`    | Hochelaga     |
 | 21:36 | `FoxRook`          | Laval         |
@@ -91,7 +122,7 @@ participants record (11, previously 7).
 Observed:
 
 - 11 participants (above)
-- 100 repeaters (last week)
+- 100 repeaters
 - 66 companions
 - 9 rooms
 - [114 nodes in the official map](https://map.meshcore.io/?zoom=7&lat=45.7100&lon=-72.6416)

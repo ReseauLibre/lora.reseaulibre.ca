@@ -14,7 +14,11 @@ nav:
     - Contact: contact.md
     - FAQ: guides/faq.md
   - Guides:
-    - Meshcore: guides/meshcore.md
+    - Meshcore:
+      - guides/meshcore/index.md
+      - guides/meshcore/companion.md
+      - guides/meshcore/channels.md
+      - guides/meshcore/repeater.md
     - Reticulum:
       - guides/reticulum/index.md
       - guides/reticulum/rns.md
@@ -33,6 +37,7 @@ nav:
         - references/hardware/power.md
     - Logiciel:
         - references/software/index.md
+        - references/software/meshtastic.md
         - references/software/bots.md
         - references/maps.md
         - Meta: meta.md
@@ -203,7 +208,7 @@ plugins:
               # we'll use a overview page for the multiple
               # technologies instead. like "you want $this? pick
               # meshtastic. you want $that? pick reticulum" and so on.
-              'guides/index.md': 'guides/meshcore.md'
+              'guides/index.md': 'guides/meshcore/index.md'
               # the hardware page is really a reference more than a guide
               'guides/hardware.md': 'references/hardware/index.md'
               # obscure FAQ URL that came up for less than a day

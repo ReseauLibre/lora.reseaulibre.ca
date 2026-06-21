@@ -11,7 +11,7 @@ tags:
     2026](../news/posts/2026-05-02-meshtastic-deprecated.md),
     Meshtastic is deprecated in the Montreal mesh. We are now focusing
     on building Meshcore infrastructure, see our [Getting started with
-    Meshcore](meshcore.md) guide instead and [Why not
+    Meshcore](meshcore/index.md) guide instead and [Why not
     Meshtastic?](faq.md#why-not-meshtastic)
 
 Getting started with running a Meshtastic relay is easy. You need to

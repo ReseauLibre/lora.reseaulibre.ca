@@ -55,7 +55,7 @@ un [réseau "mesh"](https://fr.wikipedia.org/wiki/R%C3%A9seau_maill%C3%A9) dans 
 
     ---
     
-    Suivez le [guide "Débuter avec Meshcore"](guides/meshcore.md) et
+    Suivez le [guide "Débuter avec Meshcore"](guides/meshcore/companion.md) et
     joignez-vous à nous, ou consultez notre
     [documentation](references/index.md).
 

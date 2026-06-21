@@ -53,7 +53,7 @@ at dealing with such complexity, you can try one of those apps instead:
 - [Columba](https://columba.network/): chat, voice calls, Android
 - [`MeshChatX`](https://meshchatx.com/): chat, group chat, voice calls, vibe-coded,
   integrates (poorly) with RNS, Linux
-- [Intertia](https://inertia.chat/): native MacOS client, explicitly not vibe-coded
+- [`Intertia`](https://inertia.chat/): native MacOS client, explicitly not vibe-coded
 
 We (unfortunately) do not have guides for those applications for
 now.
@@ -145,10 +145,10 @@ Reticulum, as it can get confusing quickly.
 
 ### Other software
 
-- [`lr-squash`](https://git.puscii.nl/yids/lr-squesh): ansible role to deploy a RNS, LXMF, RNSH, BATMAN relay
+- [`lr-squash`](https://git.puscii.nl/yids/lr-squesh): Ansible role to deploy a RNS, LXMF, RNSH, BATMAN relay
 - [`reticulum-exporter`](https://git.drkhsh.at/reticulum-exporter/): Prometheus exporter for the `rnstatus` output
 - [`rngit`](https://reticulum.network/manual/git.html): git over Reticulum, originally implemented as
-  [`git-remote-rns`](https://github.com/Eeems/git-remote-rns) by a third party but reimplemented from
+  [`git-remote-rns`](https://github.com/Eeems/git-remote-rns) by a third party but re-implemented from
   scratch by Mark in Reticulum
 - [`reti_socks_client`](https://codeberg.org/SkyGuy/reti_socks_client): SOCKS client for RNS, allows connection to
   Reticulum relays running over Tor, see also [this guide](https://rns.recipes/forum/help/anonymous-nodes-without-i2p)
