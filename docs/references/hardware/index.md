@@ -340,8 +340,7 @@ We have experience with this:
   in [this technical review](https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi). In practice, it's still a great
   antenna, a "great bang for the buck" according to the Ottawa folks,
   and that the antenna is closer to 3dBi. Watch out for cheap
-  knock-offs, [Muzi Works sells a real one for 25CAD](https://muzi.works/products/alfa-outdoor-antenna), [Veshra sells
-  a 30$, to be verified](https://www.veshra.io/products/cmmli5vhi0001bz2u6btkjii1).
+  knock-offs, [Muzi Works sells a real one for 25CAD](https://muzi.works/products/alfa-outdoor-antenna).
 
 - [`SYMITANT58`](https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL) (25$CAD Amazon)
 
@@ -427,14 +426,20 @@ resellers.
 There are, however, other resellers that might be more interesting to
 you for various reasons:
 
-- [Veshra](https://www.veshra.io/): more expensive, but local, possibly south shore (to be
-  confirmed); stocks antennas, batteries, Heltec, currently no
-  SeeedStudio, RAK, or ESP32 devices
 - [Space Hedgehog](https://space-hedgehog.com/): also more expensive; stocks Antenna, Heltec,
   based in Ottawa, related to the [Ottawa mesh](https://ottawamesh.ca/)
 - [Motion Power & Witt Supply Co.](https://mpandw.ca/) has [batteries](batteries.md), based in Ottawa
 - [Mapping Network][]: has a [good antenna collection](https://mappingnetwork.ca/collections/antennas) and other
   devices, particularly [LMR400 cabling](https://mappingnetwork.ca/products/lmr-400-ultraflex-coaxial-cable-n-female-rp-sma-male)
+
+!!! warning
+
+    We've had trouble with these:
+
+   - [Veshra](https://www.veshra.io/): more expensive, but local, possibly south shore (to be
+     confirmed); stocks antennas, batteries, Heltec, currently no
+     SeeedStudio, RAK, or ESP32 devices. Recent orders have failed,
+     some unanswered. Not recommended anymore.
 
 ## Hacks
 
