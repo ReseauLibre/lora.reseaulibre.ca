@@ -194,7 +194,7 @@ to operate.
 
 Note that those devices depend on the proprietary Ripple firmware.
 
-## Base stations and solar
+## Repeaters
 
 Those are bulkier devices that are mounted on a mast or are used as a
 back-haul, possibly with a special [antenna](#antennas). The devices may or

@@ -10,8 +10,11 @@ setting one up following the [repeater guide](repeater.md)!
 
 ## Hardware
 
-Pick a device in [our hardware review notes](../../references/hardware/index.md) or the [official
-hardware list](https://meshtastic.org/docs/hardware/devices/).
+Pick a device in [our hardware review notes](../../references/hardware/index.md#companions) or the [Meshtastic
+hardware list](https://meshtastic.org/docs/hardware/devices/)[^1].
+
+[^1]: Meshtastic-supported device are *often* (but not always!) also
+      working under Meshcore.
 
 It's cheap! Expect to pay 50$CAD for a starter kit or 100$CAD for a
 good companion.
