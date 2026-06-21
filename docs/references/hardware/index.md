@@ -216,7 +216,7 @@ many not have batteries.
 
     - [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html): 70$USD, outdoors solar-powered relay
       with 4x18650 **button-top**[^1] batteries, nRF4840, BT 5.0, 3 buttons, 5
-      LEDs, USB-C for debug, [recommended by
+      LEDs, USB-C for debug, RP-SMA, [recommended by
       `nyme.sh`](https://nyme.sh/faq/). Note that the base kit doesn't
       ship with the actual batteries, or the GNSS device, for that you
       need the [Pro
