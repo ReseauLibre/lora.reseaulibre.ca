@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The Montreal mesh project"">
+        <meta name="description" content="Expériences mesh à Montréal">
       
       
         <meta name="author" content="Anarcat and others">
@@ -36,7 +36,7 @@
     
     
       
-        <title>Transport nodes and microReticulum - Mesh Montréal</title>
+        <title>Transport nodes and microReticulum - Réseau Libre</title>
       
     
     
@@ -97,7 +97,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Mesh Montréal" class="md-header__button md-logo" aria-label="Mesh Montréal" data-md-component="logo">
+    <a href="../../.." title="Réseau Libre" class="md-header__button md-logo" aria-label="Réseau Libre" data-md-component="logo">
       
   <img src="../../../assets/logo.svg" alt="logo">
 
@@ -110,7 +110,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Mesh Montréal
+            Réseau Libre
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -282,6 +282,15 @@
   
     
     
+      
+  
+  
+  
+    
+  
+  
+    
+    
       <li class="md-tabs__item md-tabs__item--active">
         <a href="../../meshcore/" class="md-tabs__link">
           
@@ -293,6 +302,9 @@
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -366,12 +378,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Mesh Montréal" class="md-nav__button md-logo" aria-label="Mesh Montréal" data-md-component="logo">
+    <a href="../../.." title="Réseau Libre" class="md-nav__button md-logo" aria-label="Réseau Libre" data-md-component="logo">
       
   <img src="../../../assets/logo.svg" alt="logo">
 
     </a>
-    Mesh Montréal
+    Réseau Libre
   </label>
   
     <div class="md-nav__source">
@@ -653,9 +665,36 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../meshcore/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../meshcore/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -669,7 +708,115 @@
   
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Meshcore
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../meshcore/companion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Companion guide
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../meshcore/channels/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Channel configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../meshcore/repeater/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repeater guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1230,6 +1377,8 @@
       
         
       
+        
+      
     
     
     
@@ -1280,6 +1429,34 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../references/software/meshtastic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meshtastic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -1581,14 +1758,14 @@ firmware</a>, which we'll defer to.</p>
 <p>Our only addition is that we had to put the device in upload mode, by
 holding the "BOOT" (actually labeled <code>PGR</code> on the board) button while
 pressing "RESET" (<code>RST</code>), before running the <code>flash.py</code> command.</p>
-<p>See also those firmwares:</p>
+<p>See also those firmware projects:</p>
 <ul>
 <li><a href="https://github.com/attermann/microReticulum_Firmware"><code>attermann/microReticulum_Firmware</code></a>: RNode firmware integrating
   the <a href="https://github.com/attermann/microReticulum">microReticulum</a> stack which implements a full transport node
-  (documented above), see also the <a href="https://github.com/ratspeak/microReticulum">ratspeak fork</a></li>
+  (documented above), see also the <a href="https://github.com/ratspeak/microReticulum">Ratspeak fork</a></li>
 <li><a href="https://github.com/hipstereclipse/rns-transport-wisblock1w"><code>RatTunnel</code></a> - used on the west coast on RAK solar nodes, with
   console commands, 200 entry routing table with SNR tracking,
-  integration with <a href="https://github.com/ratspeak/rathole">Rathole</a></li>
+  integration with <a href="https://github.com/ratspeak/rathole"><code>Rathole</code></a></li>
 <li><a href="https://rns.recipes/forum/showcase/rnode-over-ethernet-rak4631-rak13800-ethernet-module">untested Ethernet gateway firmware</a></li>
 </ul>
 
@@ -1613,7 +1790,7 @@ pressing "RESET" (<code>RST</code>), before running the <code>flash.py</code> co
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 15, 2026 16:59:39 UTC">2026-06-15 16:59:39</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 20, 2026 03:42:10 UTC">2026-06-20 03:42:10</span>
   </span>
 
     

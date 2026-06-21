@@ -6,19 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Mesh networking experiments in Montréal">
+        <meta name="description" content="Expériences mesh à Montréal">
       
       
         <meta name="author" content="Anarcat and others">
       
       
-        <link rel="canonical" href="https://lora.reseaulibre.ca/code/">
+        <link rel="canonical" href="https://lora.reseaulibre.ca/fr/guides/meshcore/channels/">
       
       
-        <link rel="prev" href="../references/other/">
+        <link rel="prev" href="../companion/">
       
       
-        <link rel="next" href="../news/">
+        <link rel="next" href="../repeater/">
       
       
         
@@ -28,22 +28,22 @@
         
       
       
-        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../feed_rss_updated.xml">
       
-      <link rel="icon" href="../assets/logo.svg">
+      <link rel="icon" href="../../../assets/logo.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Code of Conduct - Réseau Libre</title>
+        <title>Channel configuration - Réseau Libre</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -56,7 +56,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#contributor-covenant-30-code-of-conduct" class="md-skip">
+        <a href="#channel-configuration" class="md-skip">
           Skip to content
         </a>
       
@@ -97,9 +97,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Réseau Libre" class="md-header__button md-logo" aria-label="Réseau Libre" data-md-component="logo">
+    <a href="../../.." title="Réseau Libre" class="md-header__button md-logo" aria-label="Réseau Libre" data-md-component="logo">
       
-  <img src="../assets/logo.svg" alt="logo">
+  <img src="../../../assets/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Code of Conduct
+              Channel configuration
             
           </span>
         </div>
@@ -259,13 +259,13 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../../.." class="md-tabs__link">
           
   
   
     
   
-  About
+  À propos
 
         </a>
       </li>
@@ -277,6 +277,8 @@
   
   
   
+    
+  
   
     
     
@@ -284,11 +286,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../guides/meshcore/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -309,19 +313,17 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../references/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../references/" class="md-tabs__link">
           
   
   
     
   
-  References
+  Références
 
         </a>
       </li>
@@ -335,13 +337,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../news/" class="md-tabs__link">
+      <a href="../../../news/" class="md-tabs__link">
         
   
   
     
   
-  News
+  Nouvelles
 
       </a>
     </li>
@@ -376,9 +378,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Réseau Libre" class="md-nav__button md-logo" aria-label="Réseau Libre" data-md-component="logo">
+    <a href="../../.." title="Réseau Libre" class="md-nav__button md-logo" aria-label="Réseau Libre" data-md-component="logo">
       
-  <img src="../assets/logo.svg" alt="logo">
+  <img src="../../../assets/logo.svg" alt="logo">
 
     </a>
     Réseau Libre
@@ -434,14 +436,14 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href=".." class="md-nav__link ">
+            <a href="../../.." class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
     
   
-    About
+    À propos
   
 
     
@@ -463,7 +465,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    About
+    À propos
   
 
           </label>
@@ -478,14 +480,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../values/" class="md-nav__link">
+      <a href="../../../values/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Values
+    Valeurs
   
 
     
@@ -506,14 +508,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../history/" class="md-nav__link">
+      <a href="../../../history/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    History
+    Histoire
   
 
     
@@ -534,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contact/" class="md-nav__link">
+      <a href="../../../contact/" class="md-nav__link">
         
   
   
@@ -562,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/faq/" class="md-nav__link">
+      <a href="../../faq/" class="md-nav__link">
         
   
   
@@ -594,8 +596,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -613,17 +617,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -641,7 +648,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -656,6 +663,8 @@
                 
   
   
+    
+  
   
   
     
@@ -678,15 +687,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../guides/meshcore/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -710,7 +719,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -730,7 +739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/meshcore/companion/" class="md-nav__link">
+      <a href="../companion/" class="md-nav__link">
         
   
   
@@ -755,10 +764,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../guides/meshcore/channels/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Channel configuration
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -774,6 +810,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#public-channels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public channels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-channels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other channels
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -786,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/meshcore/repeater/" class="md-nav__link">
+      <a href="../repeater/" class="md-nav__link">
         
   
   
@@ -851,7 +929,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../guides/reticulum/" class="md-nav__link ">
+            <a href="../../reticulum/" class="md-nav__link ">
               
   
   
@@ -895,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/reticulum/rns/" class="md-nav__link">
+      <a href="../../reticulum/rns/" class="md-nav__link">
         
   
   
@@ -923,7 +1001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/reticulum/lxmf-cli/" class="md-nav__link">
+      <a href="../../reticulum/lxmf-cli/" class="md-nav__link">
         
   
   
@@ -951,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/reticulum/meshcore/" class="md-nav__link">
+      <a href="../../reticulum/meshcore/" class="md-nav__link">
         
   
   
@@ -979,7 +1057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/reticulum/rtnode/" class="md-nav__link">
+      <a href="../../reticulum/rtnode/" class="md-nav__link">
         
   
   
@@ -1015,7 +1093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/meshtastic/" class="md-nav__link">
+      <a href="../../meshtastic/" class="md-nav__link">
         
   
   
@@ -1043,7 +1121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/matrix/" class="md-nav__link">
+      <a href="../../matrix/" class="md-nav__link">
         
   
   
@@ -1071,7 +1149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/faq/" class="md-nav__link">
+      <a href="../../faq/" class="md-nav__link">
         
   
   
@@ -1103,8 +1181,6 @@
       
   
   
-    
-  
   
   
     
@@ -1130,28 +1206,25 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../references/" class="md-nav__link ">
+            <a href="../../../references/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
     
   
-    References
+    Références
   
 
     
@@ -1162,18 +1235,18 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
-    References
+    Références
   
 
           </label>
@@ -1215,14 +1288,14 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../references/hardware/" class="md-nav__link ">
+            <a href="../../../references/hardware/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
     
   
-    Hardware
+    Matériel
   
 
     
@@ -1244,7 +1317,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Hardware
+    Matériel
   
 
           </label>
@@ -1259,7 +1332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/hardware/antennas/" class="md-nav__link">
+      <a href="../../../references/hardware/antennas/" class="md-nav__link">
         
   
   
@@ -1287,7 +1360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/hardware/batteries/" class="md-nav__link">
+      <a href="../../../references/hardware/batteries/" class="md-nav__link">
         
   
   
@@ -1315,7 +1388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/hardware/power/" class="md-nav__link">
+      <a href="../../../references/hardware/power/" class="md-nav__link">
         
   
   
@@ -1380,14 +1453,14 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../references/software/" class="md-nav__link ">
+            <a href="../../../references/software/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
     
   
-    Software
+    Logiciel
   
 
     
@@ -1409,7 +1482,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Software
+    Logiciel
   
 
           </label>
@@ -1424,7 +1497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/software/meshtastic/" class="md-nav__link">
+      <a href="../../../references/software/meshtastic/" class="md-nav__link">
         
   
   
@@ -1452,7 +1525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/software/bots/" class="md-nav__link">
+      <a href="../../../references/software/bots/" class="md-nav__link">
         
   
   
@@ -1480,7 +1553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/maps/" class="md-nav__link">
+      <a href="../../../references/maps/" class="md-nav__link">
         
   
   
@@ -1508,7 +1581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../meta/" class="md-nav__link">
+      <a href="../../../meta/" class="md-nav__link">
         
   
   
@@ -1544,14 +1617,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/neighbours/" class="md-nav__link">
+      <a href="../../../references/neighbours/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Neighbours
+    Voisins
   
 
     
@@ -1572,7 +1645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/net/" class="md-nav__link">
+      <a href="../../../references/net/" class="md-nav__link">
         
   
   
@@ -1600,14 +1673,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/other/" class="md-nav__link">
+      <a href="../../../references/other/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Other guides and reviews
+    Autres guides et critiques
   
 
     
@@ -1625,44 +1698,17 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Code of Conduct
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../code/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Code of Conduct
+    Code de conduite
   
 
     
@@ -1671,120 +1717,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#our-pledge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Our Pledge
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#encouraged-behaviors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Encouraged Behaviors
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#restricted-behaviors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Restricted Behaviors
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Restricted Behaviors">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#other-restrictions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other Restrictions
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reporting-an-issue" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reporting an Issue
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#addressing-and-repairing-harm" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Addressing and Repairing Harm
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scope" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Scope
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attribution" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Attribution
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1806,14 +1738,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../news/" class="md-nav__link">
+      <a href="../../../news/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    News
+    Nouvelles
   
 
     
@@ -1853,10 +1785,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#our-pledge" class="md-nav__link">
+  <a href="#public-channels" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Our Pledge
+        Public channels
       
     </span>
   </a>
@@ -1864,82 +1796,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#encouraged-behaviors" class="md-nav__link">
+  <a href="#other-channels" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Encouraged Behaviors
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#restricted-behaviors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Restricted Behaviors
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Restricted Behaviors">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#other-restrictions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other Restrictions
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reporting-an-issue" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reporting an Issue
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#addressing-and-repairing-harm" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Addressing and Repairing Harm
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scope" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Scope
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attribution" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Attribution
+        Other channels
       
     </span>
   </a>
@@ -1963,7 +1823,7 @@
 
 
   
-    <a href="https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/code.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/guides/meshcore/channels.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1971,79 +1831,114 @@
   
 
 
-<h1 id="contributor-covenant-30-code-of-conduct">Contributor Covenant 3.0 Code of Conduct<a class="headerlink" href="#contributor-covenant-30-code-of-conduct" title="Permanent link">&para;</a></h1>
-<h2 id="our-pledge">Our Pledge<a class="headerlink" href="#our-pledge" title="Permanent link">&para;</a></h2>
-<p>We pledge to make our community welcoming, safe, and equitable for all.</p>
-<p>We are committed to fostering an environment that respects and promotes the dignity, rights, and contributions of all individuals, regardless of characteristics including race, ethnicity, caste, color, age, physical characteristics, neurodiversity, disability, sex or gender, gender identity or expression, sexual orientation, language, philosophy or religion, national or social origin, socio-economic position, level of education, or other status. The same privileges of participation are extended to everyone who participates in good faith and in accordance with this Covenant.</p>
-<h2 id="encouraged-behaviors">Encouraged Behaviors<a class="headerlink" href="#encouraged-behaviors" title="Permanent link">&para;</a></h2>
-<p>While acknowledging differences in social norms, we all strive to meet our community's expectations for positive behavior. We also understand that our words and actions may be interpreted differently than we intend based on culture, background, or native language.</p>
-<p>With these considerations in mind, we agree to behave mindfully toward each other and act in ways that center our shared values, including:</p>
+<h1 id="channel-configuration">Channel configuration<a class="headerlink" href="#channel-configuration" title="Permanent link">&para;</a></h1>
+<p>If you want to go a little further, you should know that Meshcore
+supports the concept of "channels" which are essentially different
+communities separated by their own private keys.</p>
+<p>Many of those are "public", in the sense that the encryption key is
+derived from an easy to guess name, like <code>#testing</code>, so those are not
+"really" encrypted.</p>
+<p>But you can use channels to really create your own secret
+communication channels. Contents will be encrypted as long as the
+channel name remains secret, but who is talking to who, the number of
+messages sent will be visible to an attacker.</p>
+<h2 id="public-channels">Public channels<a class="headerlink" href="#public-channels" title="Permanent link">&para;</a></h2>
+<p>We know about the follow channels currently in use<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Hex Key</th>
+<th>Base64</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Public</td>
+<td><code>8b3387e9c5cdea6ac9e5edbaa115cd72</code></td>
+<td><code>izOH6cXN6mrJ5e26oRXNcg==</code></td>
+<td>General conversations</td>
+</tr>
+<tr>
+<td><code>#testing</code></td>
+<td><code>cde5e82cf515647dcb547a79a4f065d1</code></td>
+<td><code>zeXoLPUVZH3LVHp5pPBl0Q==</code></td>
+<td>Should be used for tests</td>
+</tr>
+<tr>
+<td><code>#911</code></td>
+<td><code>907a3dd4b73b9d1324b4d6c83425c186</code></td>
+<td><code>kHo91Lc7nRMktNbINCXBhg==</code></td>
+<td>Emergency communications (french)</td>
+</tr>
+<tr>
+<td><code>#emergency</code></td>
+<td><code>e1ad578d25108e344808f30dfdaaf926</code></td>
+<td><code>4a1XjSUQjjRICPMN/ar5Jg==</code></td>
+<td>Emergency communications (English)</td>
+</tr>
+<tr>
+<td><code>#meshcore-ops</code></td>
+<td><code>dd95f5167774c3967edee5c606bcad43</code></td>
+<td><code>3ZX1Fnd0w5Z+3uXGBrytQw==</code></td>
+<td>Operator coordination</td>
+</tr>
+<tr>
+<td><code>#montreal</code></td>
+<td><code>0c4c03b5fbea5b80f89e2a2a16ed3f40</code></td>
+<td><code>DEwDtfvqW4D4nioqFu0/QA==</code></td>
+<td>Montreal-specific traffic, see also <code>#ottawa</code></td>
+</tr>
+<tr>
+<td><code>#wardriving</code></td>
+<td><code>e3c26491e9cd321e3a6be50d57d54acf</code></td>
+<td><code>48JkkenNMh46a+UNV9VKzw==</code></td>
+<td>Used by <a href="https://meshmapper.net/">Meshmapper</a> pings</td>
+</tr>
+<tr>
+<td><code>#habs</code></td>
+<td><code>e570409412b40c123b4ab787351ab30b</code></td>
+<td><code>5XBAlBK0DBI7SreHNRqzCw==</code></td>
+<td>Far from real time game updates and gossip</td>
+</tr>
+<tr>
+<td><code>#bots</code></td>
+<td><code>0d24f5830b449668b8c221759b6c50d2</code></td>
+<td><code>DST1gwtElmi4wiF1m2xQ0g==</code></td>
+<td>Where to run bots, a bot replies to <code>test</code> and <code>ping</code>there</td>
+</tr>
+<tr>
+<td><code>#ceuxquimarchemoyen</code></td>
+<td><code>751be125eb7d167e07a95603c9e9a5dd</code></td>
+<td><code>dRvhJet9Fn4HqVYDyeml3Q==</code></td>
+<td>Another test channel for people who have trouble</td>
+</tr>
+</tbody>
+</table>
+<p>You should generally not need the hex and Base64 keys. They are only
+provided here as a reference for some rate situations where you need
+to enter the secret key directly. For example, some standalone
+firmware like the T-Deck might require this although you might get
+away with popping up the menu to select the <kbd>Enter</kbd> <kbd>#</kbd> option.</p>
+<h2 id="other-channels">Other channels<a class="headerlink" href="#other-channels" title="Permanent link">&para;</a></h2>
+<p>See also the channels used in other communities:</p>
+<ul>
+<li><a href="https://ottawamesh.ca/fr/meshcore/general-public-channels/">Ottawa mesh</a></li>
+<li><a href="https://pugetmesh.org/meshcore/">Puget mesh</a></li>
+<li><a href="https://www.meshcore.ch/channels/">Switzerland</a></li>
+</ul>
+<div class="footnote">
+<hr />
 <ol>
-<li>Respecting the <strong>purpose of our community</strong>, our activities, and our ways of gathering.</li>
-<li>Engaging <strong>kindly and honestly</strong> with others.</li>
-<li>Respecting <strong>different viewpoints</strong> and experiences.</li>
-<li><strong>Taking responsibility</strong> for our actions and contributions.</li>
-<li>Gracefully giving and accepting <strong>constructive feedback</strong>.</li>
-<li>Committing to <strong>repairing harm</strong> when it occurs.</li>
-<li>Behaving in other ways that promote and sustain the <strong>well-being of our community</strong>.</li>
-</ol>
-<h2 id="restricted-behaviors">Restricted Behaviors<a class="headerlink" href="#restricted-behaviors" title="Permanent link">&para;</a></h2>
-<p>We agree to restrict the following behaviors in our community. Instances, threats, and promotion of these behaviors are violations of this Code of Conduct.</p>
-<ol>
-<li><strong>Harassment.</strong> Violating explicitly expressed boundaries or engaging in unnecessary personal attention after any clear request to stop.</li>
-<li><strong>Character attacks.</strong> Making insulting, demeaning, or pejorative comments directed at a community member or group of people.</li>
-<li><strong>Stereotyping or discrimination.</strong> Characterizing anyone’s personality or behavior on the basis of immutable identities or traits.</li>
-<li><strong>Sexualization.</strong> Behaving in a way that would generally be considered inappropriately intimate in the context or purpose of the community.</li>
-<li><strong>Violating confidentiality</strong>. Sharing or acting on someone's personal or private information without their permission.</li>
-<li><strong>Endangerment.</strong> Causing, encouraging, or threatening violence or other harm toward any person or group.</li>
-<li>Behaving in other ways that <strong>threaten the well-being</strong> of our community.</li>
-</ol>
-<h3 id="other-restrictions">Other Restrictions<a class="headerlink" href="#other-restrictions" title="Permanent link">&para;</a></h3>
-<ol>
-<li><strong>Misleading identity.</strong> Impersonating someone else for any reason, or pretending to be someone else to evade enforcement actions.</li>
-<li><strong>Failing to credit sources.</strong> Not properly crediting the sources of content you contribute.</li>
-<li><strong>Promotional materials</strong>. Sharing marketing or other commercial content in a way that is outside the norms of the community.</li>
-<li><strong>Irresponsible communication.</strong> Failing to responsibly present content which includes, links or describes any other restricted behaviors.</li>
-</ol>
-<h2 id="reporting-an-issue">Reporting an Issue<a class="headerlink" href="#reporting-an-issue" title="Permanent link">&para;</a></h2>
-<p>Tensions can occur between community members even when they are trying their best to collaborate. Not every conflict represents a code of conduct violation, and this Code of Conduct reinforces encouraged behaviors and norms that can help avoid conflicts and minimize harm.</p>
-<p>When an incident does occur, it is important to report it promptly. To report a possible violation, <strong>contact Antoine Beaupré <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#110;&#97;&#114;&#99;&#97;&#116;&#64;&#100;&#101;&#98;&#105;&#97;&#110;&#46;&#111;&#114;&#103;">&#97;&#110;&#97;&#114;&#99;&#97;&#116;&#64;&#100;&#101;&#98;&#105;&#97;&#110;&#46;&#111;&#114;&#103;</a>.</strong></p>
-<p>Community Moderators take reports of violations seriously and will make every effort to respond in a timely manner. They will investigate all reports of code of conduct violations, reviewing messages, logs, and recordings, or interviewing witnesses and other participants. Community Moderators will keep investigation and enforcement actions as transparent as possible while prioritizing safety and confidentiality. In order to honor these values, enforcement actions are carried out in private with the involved parties, but communicating to the whole community may be part of a mutually agreed upon resolution.</p>
-<h2 id="addressing-and-repairing-harm">Addressing and Repairing Harm<a class="headerlink" href="#addressing-and-repairing-harm" title="Permanent link">&para;</a></h2>
-<p>If an investigation by the Community Moderators finds that this Code of Conduct has been violated, the following enforcement ladder may be used to determine how best to repair harm, based on the incident's impact on the individuals involved and the community as a whole. Depending on the severity of a violation, lower rungs on the ladder may be skipped.</p>
-<ol>
-<li>Warning<ol>
-<li>Event: A violation involving a single incident or series of incidents.</li>
-<li>Consequence: A private, written warning from the Community Moderators.</li>
-<li>Repair: Examples of repair include a private written apology, acknowledgement of responsibility, and seeking clarification on expectations.</li>
-</ol>
-</li>
-<li>Temporarily Limited Activities<ol>
-<li>Event: A repeated incidence of a violation that previously resulted in a warning, or the first incidence of a more serious violation.</li>
-<li>Consequence: A private, written warning with a time-limited cooldown period designed to underscore the seriousness of the situation and give the community members involved time to process the incident. The cooldown period may be limited to particular communication channels or interactions with particular community members.</li>
-<li>Repair: Examples of repair may include making an apology, using the cooldown period to reflect on actions and impact, and being thoughtful about re-entering community spaces after the period is over.</li>
-</ol>
-</li>
-<li>Temporary Suspension<ol>
-<li>Event: A pattern of repeated violation which the Community Moderators have tried to address with warnings, or a single serious violation.</li>
-<li>Consequence: A private written warning with conditions for return from suspension. In general, temporary suspensions give the person being suspended time to reflect upon their behavior and possible corrective actions.</li>
-<li>Repair: Examples of repair include respecting the spirit of the suspension, meeting the specified conditions for return, and being thoughtful about how to reintegrate with the community when the suspension is lifted.</li>
-</ol>
-</li>
-<li>Permanent Ban<ol>
-<li>Event: A pattern of repeated code of conduct violations that other steps on the ladder have failed to resolve, or a violation so serious that the Community Moderators determine there is no way to keep the community safe with this person as a member.</li>
-<li>Consequence: Access to all community spaces, tools, and communication channels is removed. In general, permanent bans should be rarely used, should have strong reasoning behind them, and should only be resorted to if working through other remedies has failed to change the behavior.</li>
-<li>Repair: There is no possible repair in cases of this severity.</li>
-</ol>
+<li id="fn:1">
+<p>Those hashes were generated with the one-liner:</p>
+<div class="highlight"><pre><span></span><code>python -c &#39;import base64; import hashlib; import sys; bytes = hashlib.sha256(sys.argv[1].encode(&quot;utf-8&quot;)).digest()[:16]; print(bytes.hex(), base64.b64encode(bytes).decode(&quot;utf-8&quot;))&#39; &#39;#testing&#39;
+</code></pre></div>
+<p>A more readable version is available as <a href="../hashchan.py">hashchan.py</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
-<p>This enforcement ladder is intended as a guideline. It does not limit the ability of Community Managers to use their discretion and judgment, in keeping with the best interests of our community.</p>
-<h2 id="scope">Scope<a class="headerlink" href="#scope" title="Permanent link">&para;</a></h2>
-<p>This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public or other spaces. Examples of representing our community include using an official email address, posting via an official social media account, or acting as an appointed representative at an online or offline event.</p>
-<h2 id="attribution">Attribution<a class="headerlink" href="#attribution" title="Permanent link">&para;</a></h2>
-<p>This Code of Conduct is adapted from the Contributor Covenant, version 3.0, permanently available at <a href="https://www.contributor-covenant.org/version/3/0/">https://www.contributor-covenant.org/version/3/0/</a>.</p>
-<p>Contributor Covenant is stewarded by the Organization for Ethical Source and licensed under CC BY-SA 4.0. To view a copy of this license, visit <a href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a></p>
-<p>For answers to common questions about Contributor Covenant, see the FAQ at <a href="https://www.contributor-covenant.org/faq">https://www.contributor-covenant.org/faq</a>. Translations are provided at <a href="https://www.contributor-covenant.org/translations">https://www.contributor-covenant.org/translations</a>. Additional enforcement and community guideline resources can be found at <a href="https://www.contributor-covenant.org/resources">https://www.contributor-covenant.org/resources</a>. The enforcement ladder was inspired by the work of <a href="https://github.com/mozilla/inclusion">Mozilla’s code of conduct team</a>.</p>
+</div>
 
 
 
@@ -2066,7 +1961,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="February 27, 2026 01:39:12 UTC">2026-02-27 01:39:12</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 20, 2026 03:42:10 UTC">2026-06-20 03:42:10</span>
   </span>
 
     
@@ -2076,7 +1971,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="February 27, 2026 01:36:01 UTC">2026-02-27 01:36:01</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 20, 2026 03:28:45 UTC">2026-06-20 03:28:45</span>
   </span>
 
     
@@ -2111,7 +2006,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../references/other/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Other guides and reviews">
+          <a href="../companion/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Companion guide">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2121,20 +2016,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Other guides and reviews
+                Companion guide
               </div>
             </div>
           </a>
         
         
           
-          <a href="../news/" class="md-footer__link md-footer__link--next" aria-label="Next: News">
+          <a href="../repeater/" class="md-footer__link md-footer__link--next" aria-label="Next: Repeater guide">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                News
+                Repeater guide
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2204,10 +2099,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "content.action.edit", "content.footnote.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "content.action.edit", "content.footnote.tooltips"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
