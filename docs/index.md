@@ -8,7 +8,6 @@ tags:
 Le projet [LoRa](https://en.wikipedia.org/wiki/LoRa) `reseaulibre.ca` est une communauté construisant
 un [réseau "mesh"](https://fr.wikipedia.org/wiki/R%C3%A9seau_maill%C3%A9) dans la région de Montréal.
 
-
 <div class="grid cards" markdown>
 -   :octicons-info-16: **Quoi**
 

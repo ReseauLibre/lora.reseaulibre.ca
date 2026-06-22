@@ -160,17 +160,30 @@ computer to operate.
       nRF52840, 1200mAh battery, 1.54" e-ink display, GPS, BLE, RP-SMA,
       -10~50°C, 54$USD, [89$CAD at Muzi](https://muzi.works/products/elecrow-thinknode-m1), similar to the Lilygo T-Echo, but has a better battery
 
-!!! warning
+    - [SeeedStudio Wio Tracker L1
+    Pro](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html):
+    1.3" OLED, 3D-Printed Casing, 2000mAh battery, GPS, nRF5284 /
+    SX1262, 4-way joystick, menu button, reset/power switch, 3 LEDs
+    43$USD, [62$ at Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
 
-    - [SenseCAP Card Tracker T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) (40$USD)
-      anarcat managed to brick this one, be careful when experimenting
-      with it, it can be hard to recover, see [this note](https://anarc.at/services/meshtastic/#bricked).
+    - [SeeedStudio SenseCAP Card Tracker T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) (40$USD)
+      IP65, 700mAh battery, nRF52840/LR1110, GPS, 85 * 55 * 6.5 mm,
+      32g, buzzer, magnetic pogo pins USB charging, 40$USD, anarcat managed get [this one in a boot loop](https://anarc.at/services/meshtastic/#bricked) 
+      but eventually recovered. Nice and portable, waterproof. See
+      [this guide for how to use that single button](https://wiki.seeedstudio.com/sensecap_t1000_e_meshcore/#button),
+      in particular use triple-click to turn off the buzzer.
+
+    - [RAK Wireless WisMesh Tag](https://store.rakwireless.com/products/wismesh-tag-meshtastic-gps-lora-tracker-ip66): 
+      1000 mAh battery, IP66 rating, two buttons, status LED,
+      magnetic USB pogo charging, nRF52840/SX1262, GPS, 92 x 59 x 7.5
+      mm, 40$USD
 
 !!! question "Untested"
 
     - [T-Deck Pro](https://lilygo.cc/products/t-deck-pro): 3.1" e-ink touch screen, 4G module, WiFi 2.4GHz,
       BLE 5, GPS, TF Card, mic, speaker, keypad, see also the [T5 e-paper
       s3 pro](https://lilygo.cc/products/t5-e-paper-s3-pro)
+
     - [Muzi](https://muzi.works/) has builds on top of the Heltec, e.g. [this H2T](https://muzi.works/products/h2t-complete-device-heltec-t114-with-gps-running-meshtastic)
       (137CAD) made with a Heltec T114, [this R1 Neo](https://muzi.works/products/r1-neo-complete-meshtastic-device) (123CAD) is
       similar to the WisMesh Pocket, but smaller, better sealed, but more
@@ -211,7 +224,7 @@ many not have batteries.
 
     - [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html): 70$USD, outdoors solar-powered relay
       with 4x18650 **button-top**[^1] batteries, nRF4840, BT 5.0, 3 buttons, 5
-      LEDs, USB-C for debug, [recommended by
+      LEDs, USB-C for debug, RP-SMA, [recommended by
       `nyme.sh`](https://nyme.sh/faq/). Note that the base kit doesn't
       ship with the actual batteries, or the GNSS device, for that you
       need the [Pro
@@ -341,8 +354,7 @@ We have experience with this:
   in [this technical review](https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi). In practice, it's still a great
   antenna, a "great bang for the buck" according to the Ottawa folks,
   and that the antenna is closer to 3dBi. Watch out for cheap
-  knock-offs, [Muzi Works sells a real one for 25CAD](https://muzi.works/products/alfa-outdoor-antenna), [Veshra sells
-  a 30$, to be verified](https://www.veshra.io/products/cmmli5vhi0001bz2u6btkjii1).
+  knock-offs, [Muzi Works sells a real one for 25CAD](https://muzi.works/products/alfa-outdoor-antenna).
 
 - [`SYMITANT58`](https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL) (25$CAD Amazon)
 
@@ -428,14 +440,24 @@ resellers.
 There are, however, other resellers that might be more interesting to
 you for various reasons:
 
-- [Veshra](https://www.veshra.io/): more expensive, but local, possibly south shore (to be
-  confirmed); stocks antennas, batteries, Heltec, currently no
-  SeeedStudio, RAK, or ESP32 devices
+- [Robotshop](https://ca.robotshop.com/collections/lora): good source for the [SenseCAP P1](https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery), delivers fast,
+  reliable, good prices. They also sell robots, SeeedStudio, Elecrow,
+  but no RAK.
 - [Space Hedgehog](https://space-hedgehog.com/): also more expensive; stocks Antenna, Heltec,
-  based in Ottawa, related to the [Ottawa mesh](https://ottawamesh.ca/)
+  based in Ottawa, related to the [Ottawa mesh](https://ottawamesh.ca/) (currently on
+  hiatus for the summer)
 - [Motion Power & Witt Supply Co.](https://mpandw.ca/) has [batteries](batteries.md), based in Ottawa
 - [Mapping Network][]: has a [good antenna collection](https://mappingnetwork.ca/collections/antennas) and other
   devices, particularly [LMR400 cabling](https://mappingnetwork.ca/products/lmr-400-ultraflex-coaxial-cable-n-female-rp-sma-male)
+
+!!! warning
+
+    We've had trouble with these:
+
+    - [Veshra](https://www.veshra.io/): more expensive, but local, possibly south shore (to be
+      confirmed); stocks antennas, batteries, Heltec, currently no
+      SeeedStudio, RAK, or ESP32 devices. Recent orders have failed,
+      some unanswered. Not recommended anymore.
 
 ## Hacks
 
