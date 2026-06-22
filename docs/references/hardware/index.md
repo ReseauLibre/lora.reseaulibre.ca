@@ -153,6 +153,10 @@ computer to operate.
       37g, exposed GPIO ports, cheap (20$), does not ship with
       Meshtastic firmware, needs full erase before reflash or gets
       into a boot loop
+    - [RAK Wireless WisMesh Tag](https://store.rakwireless.com/products/wismesh-tag-meshtastic-gps-lora-tracker-ip66): 
+      1000 mAh battery, IP66 rating, two buttons, status LED,
+      magnetic USB pogo charging, nRF52840/SX1262, GPS, 92 x 59 x 7.5
+      mm, 40$USD
 
 !!! example "In testing"
 
@@ -172,11 +176,6 @@ computer to operate.
       but eventually recovered. Nice and portable, waterproof. See
       [this guide for how to use that single button](https://wiki.seeedstudio.com/sensecap_t1000_e_meshcore/#button),
       in particular use triple-click to turn off the buzzer.
-
-    - [RAK Wireless WisMesh Tag](https://store.rakwireless.com/products/wismesh-tag-meshtastic-gps-lora-tracker-ip66): 
-      1000 mAh battery, IP66 rating, two buttons, status LED,
-      magnetic USB pogo charging, nRF52840/SX1262, GPS, 92 x 59 x 7.5
-      mm, 40$USD
 
 !!! question "Untested"
 
