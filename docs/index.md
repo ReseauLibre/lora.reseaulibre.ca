@@ -1,4 +1,4 @@
-# Welcome to the Montreal Mesh project!
+# Welcome to Réseau Libre!
 
 <div class="grid cards" markdown>
 
