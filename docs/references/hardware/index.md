@@ -178,11 +178,6 @@ computer to operate.
 
 !!! question "Untested"
 
-    - [T-Deck Pro](https://lilygo.cc/products/t-deck-pro): 3.1" e-ink touch screen, 4G module, WiFi 2.4GHz,
-      BLE 5, GPS, TF Card, mic, speaker, keypad, see also the [T5 e-paper
-      s3 pro](https://lilygo.cc/products/t5-e-paper-s3-pro). Note that
-      an order in March 2026 took 24 days to deliver.
-
     - [Muzi](https://muzi.works/) has builds on top of the Heltec, e.g. [this H2T](https://muzi.works/products/h2t-complete-device-heltec-t114-with-gps-running-meshtastic)
       (137CAD) made with a Heltec T114, [this R1 Neo](https://muzi.works/products/r1-neo-complete-meshtastic-device) (123CAD) is
       similar to the WisMesh Pocket, but smaller, better sealed, but more
@@ -203,7 +198,14 @@ to operate.
       can also serve as a "standalone" device because of the touch screen
     - [Lilygo T-Deck Plus](https://lilygo.cc/products/t-deck-plus-1) (80$): blackberry-like, standalone device
       with battery, keyboard, trackball, LCD display, 2000mAh battery,
-      BLE, WiFi, GPS, MicroSD card reader, microphone/speaker
+      BLE, WiFi, GPS, MicroSD card reader, microphone/speake. Note that
+      an order in March 2026 took 24 days to deliver.
+
+!!! question "Untested"
+
+    - [T-Deck Pro](https://lilygo.cc/products/t-deck-pro): 3.1" e-ink touch screen, 4G module, WiFi 2.4GHz,
+      BLE 5, GPS, TF Card, mic, speaker, keypad, see also the [T5 e-paper
+      s3 pro](https://lilygo.cc/products/t5-e-paper-s3-pro).
 
 Note that those devices depend on the proprietary Ripple firmware.
 
