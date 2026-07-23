@@ -45,6 +45,14 @@ connecting to the following website.
 
 <https://flasher.meshcore.io>
 
+!!! tip
+
+    If you picked a standalone companion like the Lilygo T-Deck or
+    T-Lora pager, or the Heltec v4 expansion kit, you might want to
+    take a look at [Wadamesh](https://www.wadamesh.com/) as well. The
+    stock firmware GUI (Ripple) is hard to use and proprietary, while
+    Wadamsh is free software, although coded with the Claude LLM.
+
 Your web browser must support the [Web Serial API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility), which includes
 Chrome (and derivatives) and Firefox 151 or later.
 
