@@ -206,6 +206,8 @@ to operate.
     - [T-Deck Pro](https://lilygo.cc/products/t-deck-pro): 3.1" e-ink touch screen, 4G module, WiFi 2.4GHz,
       BLE 5, GPS, TF Card, mic, speaker, keypad, see also the [T5 e-paper
       s3 pro](https://lilygo.cc/products/t5-e-paper-s3-pro).
+    - Elecrow M9, not yet released, similar to the D-Teck, LCD
+      display, no touch screen, real time clock, GPS, SD card, to be confirmed.
 
 Note that those devices depend on the proprietary Ripple firmware.
 
