@@ -194,8 +194,8 @@ to operate.
 !!! success
 
     - [Heltec v4 prebuilt kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/): touch screen, 18650 flat-top
-      battery (tight, hard to remove), belt clip bulges the back cover,
-      can also serve as a "standalone" device because of the touch screen
+      battery (tight, hard to remove), belt clip bulges the back
+      cover.
     - [Lilygo T-Deck Plus](https://lilygo.cc/products/t-deck-plus-1) (80$): blackberry-like, standalone device
       with battery, keyboard, trackball, LCD display, 2000mAh battery,
       BLE, WiFi, GPS, MicroSD card reader, microphone/speake. Note that
