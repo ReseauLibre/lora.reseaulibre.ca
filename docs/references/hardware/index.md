@@ -180,7 +180,8 @@ computer to operate.
 
     - [T-Deck Pro](https://lilygo.cc/products/t-deck-pro): 3.1" e-ink touch screen, 4G module, WiFi 2.4GHz,
       BLE 5, GPS, TF Card, mic, speaker, keypad, see also the [T5 e-paper
-      s3 pro](https://lilygo.cc/products/t5-e-paper-s3-pro)
+      s3 pro](https://lilygo.cc/products/t5-e-paper-s3-pro). Note that
+      an order in March 2026 took 24 days to deliver.
 
     - [Muzi](https://muzi.works/) has builds on top of the Heltec, e.g. [this H2T](https://muzi.works/products/h2t-complete-device-heltec-t114-with-gps-running-meshtastic)
       (137CAD) made with a Heltec T114, [this R1 Neo](https://muzi.works/products/r1-neo-complete-meshtastic-device) (123CAD) is
