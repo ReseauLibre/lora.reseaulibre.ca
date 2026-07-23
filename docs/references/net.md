@@ -31,7 +31,18 @@ Welcome to Réseau Libre net! Every Wednesday, you can check-in with: "Hello, th
 ```
 
 You can resend those messages a couple of times at, say, one to five
-minute intervals, as sometimes messages don't reach out immediately.
+minute intervals, as LoRa is lossy and some folks might not see all
+messages. If you are on a busy segment, you can also say:
+
+```
+Reminder: LoRa only handles about one message per second,
+globally. Wait for silence before speaking.
+```
+
+```
+Rappel: LoRa est globalement limité à environ un message
+par seconde. Attendez un silence avant de parler.
+```
 
 Respond to every check-in that you receive and include their name and
 location:
@@ -63,6 +74,50 @@ the network?](../guides/faq.md#how-many-nodes-in-the-network) FAQ.
 ## Net control log
 
 We keep track of past nets here.
+
+### 2026-07-22
+
+| time  | call sign     |                | location           | hops |
+|-------|---------------|----------------|--------------------|------|
+| 21:00 | oots          |                | Villeray           | 4    |
+| 21:00 | VE2CCK        | erik           | Vieux Longueuil    | 4    |
+| 21:00 | MG-V4-mini    | Marc           | Terrebonne         | 3    |
+| 21:00 | VA2LW         | Emils          | Verdun             | 5    |
+| 21:01 | OOZE          |                | Verdun             | 6    |
+| 21:01 | MeshCourte    | Patrick        | Villeray           | 4    |
+| 21:01 | Kernel V4     | Boris          | Verdun             | 4    |
+| 21:01 | Yaya          |                | Île Perrot         | 5    |
+| 21:03 | VE2CL-V4      | cedric         | La Prairie         | 6    |
+| 21:03 | SbMo_USB      | Simon          | Mile End           | 4    |
+| 21:03 | VE2UM         |                | Saint-Hubert       | 3    |
+| 21:04 | Mad Jap       | Claude         | Marieville         | 4    |
+| 21:05 | YHU-MRV-1     | François       | Marieville         | 3    |
+| 21:07 | grenscientist | Yannick        | Verdun             | 4    |
+| 21:10 | Further       |                | Rosemont           | 2    |
+| 21:13 | VA2VQ         | Louis-Philippe | Beloeil            | 6    |
+| 21:16 | dwild         | Dominic        | Mont-Saint-Hilaire | 4    |
+| 21:17 | VE2XJS        | Jean-Sébastien | Delson             | 5    |
+| 21:22 | RL Mobile     |                | Greenfield Park    | 6    |
+| 21:23 | Pleb          |                | Greenfield Park    | 7    |
+| 21:28 | MeshAnt       |                | Villeray           | 3    |
+|       |               |                |                    |      |
+
+Announces:
+
+- Merci à VE2CL pour avoir tenu le réseau durant mes vacances, bravo
+  pour le record à 20 présences.
+- Meshcore [needs your help](https://blog.meshcore.io/2026/07/04/help-us-save-meshcore): the trademark issue is going legal,
+  and they are fundraiding.
+- Nouveau firmware [Wadamesh](https://wadamesh.com/) pour les
+  compagnons "standalone" comme le Lilygo T-Deck, T-Lora ou le Heltec
+  v4 expansion kit
+- Mesh night in two weeks, first Wednesday of the month, at Foulab
+
+Observed:
+
+- 22 participants (more than the previous record at 20)
+- [197 nodes in the official map](https://map.meshcore.io/?zoom=7&lat=45.7100&lon=-72.6416)
+- [145 repeaters in MeshMapper](https://yul.meshmapper.net/leaderboard.php)
 
 ### 2026-06-17
 
