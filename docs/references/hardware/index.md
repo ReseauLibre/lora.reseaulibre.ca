@@ -156,11 +156,13 @@ computer to operate.
       1000 mAh battery, IP66 rating, two buttons, status LED,
       magnetic USB pogo charging, nRF52840/SX1262, GPS, 92 x 59 x 7.5
       mm, 40$USD
-    - [SenseCAP Card Tracker
-      T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html):
-      GPS, accelerometer, LED and buzzer, one button, GPS, IP65, 85 *
-      55 * 6.5 mm, 32g, -20℃ to +60℃ operation, 700mAh battery, pogo
-      pin charger, temperature sensor, 40$USD
+    - [SeeedStudio SenseCAP Card Tracker T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) (40$USD)
+      IP65, 700mAh battery, nRF52840/LR1110, GPS, 85 * 55 * 6.5 mm,
+      32g, -20℃ to +60℃ operation, buzzer, magnetic pogo pins USB charging, 40$USD, anarcat managed get [this one in a boot loop](https://anarc.at/services/meshtastic/#bricked) 
+      but eventually recovered. Nice and portable, waterproof. See
+      [this guide for how to use that single button](https://wiki.seeedstudio.com/sensecap_t1000_e_meshcore/#button),
+      in particular use triple-click to turn off the buzzer.
+
 
 !!! example "In testing"
 
@@ -173,13 +175,6 @@ computer to operate.
     1.3" OLED, 3D-Printed Casing, 2000mAh battery, GPS, nRF5284 /
     SX1262, 4-way joystick, menu button, reset/power switch, 3 LEDs
     43$USD, [62$ at Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
-
-    - [SeeedStudio SenseCAP Card Tracker T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) (40$USD)
-      IP65, 700mAh battery, nRF52840/LR1110, GPS, 85 * 55 * 6.5 mm,
-      32g, buzzer, magnetic pogo pins USB charging, 40$USD, anarcat managed get [this one in a boot loop](https://anarc.at/services/meshtastic/#bricked) 
-      but eventually recovered. Nice and portable, waterproof. See
-      [this guide for how to use that single button](https://wiki.seeedstudio.com/sensecap_t1000_e_meshcore/#button),
-      in particular use triple-click to turn off the buzzer.
 
 !!! question "Untested"
 
