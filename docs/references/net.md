@@ -100,7 +100,6 @@ We keep track of past nets here.
 | 21:22 | RL Mobile     |                | Greenfield Park    | 6    |
 | 21:23 | Pleb          |                | Greenfield Park    | 7    |
 | 21:28 | MeshAnt       |                | Villeray           | 3    |
-|       |               |                |                    |      |
 
 Announces:
 
