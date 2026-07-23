@@ -135,6 +135,12 @@ computer to operate.
 
 !!! success
  
+    - [SeeedStudio Wio Tracker L1
+    Pro](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html):s
+    1.3" OLED, 3D-Printed Casing, 2000mAh battery, GPS, nRF5284 /
+    SX1262, 4-way joystick, menu button, reset button, power switch, 3 LEDs
+    43$USD, [62$ at Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
+
     - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket): GNSS, 1.3" OLED, acceleration sensor, power
       button, 3200mAh battery, USB-C powered, 100$
     - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): 200x200 e-ink
@@ -169,12 +175,6 @@ computer to operate.
     - [Elecrow ThinkNode M1](https://www.elecrow.com/thinknode-m1-meshtastic-lora-signal-transceiver-powered-by-nrf52840-with-154-screen-support-gps.html):
       nRF52840, 1200mAh battery, 1.54" e-ink display, GPS, BLE, RP-SMA,
       -10~50°C, 54$USD, [89$CAD at Muzi](https://muzi.works/products/elecrow-thinknode-m1), similar to the Lilygo T-Echo, but has a better battery
-
-    - [SeeedStudio Wio Tracker L1
-    Pro](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html):s
-    1.3" OLED, 3D-Printed Casing, 2000mAh battery, GPS, nRF5284 /
-    SX1262, 4-way joystick, menu button, reset button, power switch, 3 LEDs
-    43$USD, [62$ at Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
 
 !!! question "Untested"
 
