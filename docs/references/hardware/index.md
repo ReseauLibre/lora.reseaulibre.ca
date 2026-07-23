@@ -138,8 +138,8 @@ computer to operate.
     - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket): GNSS, 1.3" OLED, acceleration sensor, power
       button, 3200mAh battery, USB-C powered, 100$
     - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): 200x200 e-ink
-      display, NRF52840, GPS, BT 5.0, no wifi, only two
-      buttons, NFC, 850mAh battery, temperature/pressure sensor, 55$USD
+      display, NRF52840, GPS, BT 5.0, no wifi, two buttons, no power
+      button, NFC, 850mAh battery, temperature/pressure sensor, 55$USD
     - cheap [Aliexpress Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
     - [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, cheap, - 40℃ ~ 100℃,
       WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button (hidden under the
@@ -171,9 +171,9 @@ computer to operate.
       -10~50°C, 54$USD, [89$CAD at Muzi](https://muzi.works/products/elecrow-thinknode-m1), similar to the Lilygo T-Echo, but has a better battery
 
     - [SeeedStudio Wio Tracker L1
-    Pro](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html):
+    Pro](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html):s
     1.3" OLED, 3D-Printed Casing, 2000mAh battery, GPS, nRF5284 /
-    SX1262, 4-way joystick, menu button, reset/power switch, 3 LEDs
+    SX1262, 4-way joystick, menu button, reset button, power switch, 3 LEDs
     43$USD, [62$ at Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
 
 !!! question "Untested"
