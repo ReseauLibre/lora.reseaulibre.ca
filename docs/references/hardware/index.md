@@ -156,6 +156,11 @@ computer to operate.
       1000 mAh battery, IP66 rating, two buttons, status LED,
       magnetic USB pogo charging, nRF52840/SX1262, GPS, 92 x 59 x 7.5
       mm, 40$USD
+    - [SenseCAP Card Tracker
+      T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html):
+      GPS, accelerometer, LED and buzzer, one button, GPS, IP65, 85 *
+      55 * 6.5 mm, 32g, -20℃ to +60℃ operation, 700mAh battery, pogo
+      pin charger, temperature sensor, 40$USD
 
 !!! example "In testing"
 
@@ -182,6 +187,10 @@ computer to operate.
       (137CAD) made with a Heltec T114, [this R1 Neo](https://muzi.works/products/r1-neo-complete-meshtastic-device) (123CAD) is
       similar to the WisMesh Pocket, but smaller, better sealed, but more
       expensive
+    - [SenseCAP MeshTracker X1](https://www.seeedstudio.com/sensecap-meshtracker-x1-meshtastic-gps-tracker-p-6935.html): 
+      Next generation of the T1000-E. LR2021, IP66, USB-C connector,
+      1100mAh, claims 5 days battery, dual GPS, BT, 1 RGB LED, 2 buttons, -20 to 60℃
+      operation, 90*57*8 mm, 45g, 43$USD.
 
 <!-- !!! failure "Not working" -->
 
