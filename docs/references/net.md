@@ -77,39 +77,39 @@ We keep track of past nets here.
 
 ### 2026-07-22
 
-| time  | call sign     |                | location           | hops |
-|-------|---------------|----------------|--------------------|------|
-| 21:00 | oots          |                | Villeray           | 4    |
-| 21:00 | VE2CCK        | erik           | Vieux Longueuil    | 4    |
-| 21:00 | MG-V4-mini    | Marc           | Terrebonne         | 3    |
-| 21:00 | VA2LW         | Emils          | Verdun             | 5    |
-| 21:01 | OOZE          |                | Verdun             | 6    |
-| 21:01 | MeshCourte    | Patrick        | Villeray           | 4    |
-| 21:01 | Kernel V4     | Boris          | Verdun             | 4    |
-| 21:01 | Yaya          |                | Île Perrot         | 5    |
-| 21:03 | VE2CL-V4      | cedric         | La Prairie         | 6    |
-| 21:03 | SbMo_USB      | Simon          | Mile End           | 4    |
-| 21:03 | VE2UM         |                | Saint-Hubert       | 3    |
-| 21:04 | Mad Jap       | Claude         | Marieville         | 4    |
-| 21:05 | YHU-MRV-1     | François       | Marieville         | 3    |
-| 21:07 | grenscientist | Yannick        | Verdun             | 4    |
-| 21:10 | Further       |                | Rosemont           | 2    |
-| 21:13 | VA2VQ         | Louis-Philippe | Beloeil            | 6    |
-| 21:16 | dwild         | Dominic        | Mont-Saint-Hilaire | 4    |
-| 21:17 | VE2XJS        | Jean-Sébastien | Delson             | 5    |
-| 21:22 | RL Mobile     |                | Greenfield Park    | 6    |
-| 21:23 | Pleb          |                | Greenfield Park    | 7    |
-| 21:28 | MeshAnt       |                | Villeray           | 3    |
+| time  | call sign               | name           | location           | hops |
+|-------|-------------------------|----------------|--------------------|------|
+| 21:00 | `oots`                  |                | Villeray           | 4    |
+| 21:00 | `VE2CCK`                | erik           | Vieux Longueuil    | 4    |
+| 21:00 | `MG-V4-mini`            | Marc           | Terrebonne         | 3    |
+| 21:00 | `VA2LW`                 | Emils          | Verdun             | 5    |
+| 21:01 | `OOZE`                  |                | Verdun             | 6    |
+| 21:01 | `MeshCourte`            | Patrick        | Villeray           | 4    |
+| 21:01 | `Kernel V4`             | Boris          | Verdun             | 4    |
+| 21:01 | `Yaya`                  |                | Île Perrot         | 5    |
+| 21:03 | `VE2CL-V4`              | Cédric         | La Prairie         | 6    |
+| 21:03 | `SbMo_USB`              | Simon          | Mile End           | 4    |
+| 21:03 | `VE2UM`                 |                | Saint-Hubert       | 3    |
+| 21:04 | `Mad Jap`               | Claude         | Marieville         | 4    |
+| 21:05 | `YHU-MRV-1`             | François       | Marieville         | 3    |
+| 21:07 | `grenscientist`         | Yannick        | Verdun             | 4    |
+| 21:10 | `Further`               |                | Rosemont           | 2    |
+| 21:13 | `VA2VQ`                 | Louis-Philippe | Beloeil            | 6    |
+| 21:16 | `dwild`                 | Dominic        | Mont-Saint-Hilaire | 4    |
+| 21:17 | `VE2XJS`                | Jean-Sébastien | Delson             | 5    |
+| 21:22 | `RL Mobile`             |                | Greenfield Park    | 6    |
+| 21:23 | `Pleb`                  |                | Greenfield Park    | 7    |
+| 21:28 | `MeshAnt`               |                | Villeray           | 3    |
+| 21:51 | `YUL-SteJulie_Carlitos` | Carlitos       | Saint-Julie        | 5    |
 
 Announces:
 
-- Merci à VE2CL pour avoir tenu le réseau durant mes vacances, bravo
-  pour le record à 20 présences.
+- Thank you to VE2CL to have covered for the net during my vacations,
+  congratulations on the (previous) 20 check-in record
 - Meshcore [needs your help](https://blog.meshcore.io/2026/07/04/help-us-save-meshcore): the trademark issue is going legal,
   and they are fundraiding.
-- Nouveau firmware [Wadamesh](https://wadamesh.com/) pour les
-  compagnons "standalone" comme le Lilygo T-Deck, T-Lora ou le Heltec
-  v4 expansion kit
+- New [Wadamesh firmware](https://wadamesh.com/) standalone companions like the Lilygo
+  T-Deck, T-Lora or the Heltec v4 expansion kit
 - Mesh night in two weeks, first Wednesday of the month, at Foulab
 
 Observed:
