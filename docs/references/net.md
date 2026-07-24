@@ -118,6 +118,32 @@ Observed:
 - [197 nodes in the official map](https://map.meshcore.io/?zoom=7&lat=45.7100&lon=-72.6416)
 - [145 repeaters in MeshMapper](https://yul.meshmapper.net/leaderboard.php)
 
+### VE2CL net
+
+Dates to be determined, to be confirmed.
+
+| time  | call sign           | name     | location           |
+|-------|---------------------|----------|--------------------|
+| 21:01 | YUL-Carlitos-Mobile | Carlitos | Ste-Julie          |
+| 21:01 | Johnputer R&D       | JP       | Cartierville       |
+| 21:02 | Further             |          | Rosemont           |
+| 21:02 | Kernel V4           | Boris    | Verdun             |
+| 21:03 | RAD                 |          | Rosemont           |
+| 21:03 | VE2IES              | Marc     | Verdun             |
+| 21:03 | greenscientist      | Yannick  | Verdun             |
+| 21:05 | VE2YTQ              | Yves     | Rosemont           |
+| 21:06 | Pm479               |          |                    |
+| 21:06 | dwild               |          |                    |
+| 21:08 | MG-V4               | Marc     | Terrebonne         |
+| 21:00 |                     | Claude   | Marieville         |
+| 21:00 | Oots                |          | Villeray           |
+| 21:07 | dwild               | Dominic  | Mont-Saint-Hilaire |
+| 21:13 | K386                |          | Rosemont           |
+| 21:04 | Mad Jap             | Claude   | Marieville         |
+| 21:04 | VE2CCK              | Erik     | Longueuil          |
+| 21:13 | MeshCourte          |          | Villeray           |
+| 21:17 | VariaLFliP          |          | Saint-Laurent      |
+
 ### 2026-06-17
 
 | time  | call sign    | location        | hops |
