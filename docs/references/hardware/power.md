@@ -8,8 +8,7 @@ well.
 ## Solar power
 
 Some nodes have their own solar panels, which are generally preferable
-for simplicity reasons, see the [base stations and solar
-section](index.md#base-stations-and-solar) for more options.
+for simplicity reasons, see the [repeaters section](index.md#repeaters) for more options.
 
 The configuration of a separate solar power system is considered out
 of scope here for the moment, but our previous wiki had [some
