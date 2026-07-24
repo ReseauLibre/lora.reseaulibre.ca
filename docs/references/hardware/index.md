@@ -31,7 +31,7 @@ ourselves.
 
     [62$ at Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
 
-    :material-chart-line: Challenger: 
+    :material-chart-line: **Alternatives**: 
 
     - [RAK Wireless WisMesh Tag](https://store.rakwireless.com/products/wismesh-tag-meshtastic-gps-lora-tracker-ip66): credit-card sized, waterproof
       (IP66), two buttons, no display, magnetic USB pogo charging,
@@ -51,7 +51,7 @@ ourselves.
     
     70$USD.
 
-    :material-chart-line: Challengers:
+    :material-chart-line: **Alternatives**:
     
     - [Heltec v4 prebuilt kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/): touch-screen only, 50-60$USD
     - [Lilygo T-Lora Pager](https://lilygo.cc/products/t-lora-pager): smaller, quirkier, 90$USD
@@ -75,7 +75,7 @@ ourselves.
 
     20-30$USD.
     
-    :material-chart-line: Challengers:
+    :material-chart-line: **Alternatives**:
     
     - SeeedStudio [XIAO ESP32S3 & `Wio-SX1262` Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html) is 11$USD, but
       without a display or case.
@@ -94,7 +94,7 @@ ourselves.
     
     100$USD.
     
-    :material-chart-line: Challenders:
+    :material-chart-line: **Alternatives**:
     
     - Cheaper, less flexible alternative [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html),
       70$USD, [130$ with GPS and battery at Robot Shop](https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery?qd=c71a67155c4fec187b2b07ee9a7af9f3).
