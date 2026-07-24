@@ -226,6 +226,9 @@ to operate.
       with battery, keyboard, trackball, LCD display, 2000mAh battery,
       BLE, WiFi, GPS, MicroSD card reader, microphone/speake. Note that
       an order in March 2026 took 24 days to deliver.
+    - [Lilygo T-Lora Pager](https://lilygo.cc/products/t-lora-pager):
+      smaller, quirkier, 90$USD. Keyboard and wheel are unreliable,
+      and it has no touch scren. It's really cute though.
 
 !!! question "Untested"
 
@@ -235,7 +238,10 @@ to operate.
     - Elecrow M9, not yet released, similar to the D-Teck, LCD
       display, no touch screen, real time clock, GPS, SD card, to be confirmed.
 
-Note that those devices depend on the proprietary Ripple firmware.
+Note that those devices depend on the proprietary Ripple firmware, but
+you can now try the [Wadamesh](https://wadamesh.com/) firmware as well, which is open
+source, and is *much* more intuitive and powerful. Its only downside
+is that it seems to be developed with the help of an LLM (Claude).
 
 ## Repeaters
 
