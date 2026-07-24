@@ -56,6 +56,25 @@ ourselves.
     - [Heltec v4 prebuilt kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/): touch-screen only, 50-60$USD
     - [Lilygo T-Lora Pager](https://lilygo.cc/products/t-lora-pager): smaller, quirkier, 90$USD
 
+-   :octicons-sun-16: **Repeater**: [WisMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini)
+
+    ---
+    
+    [![WisMesh Solar Repeater Mini](../../assets/WisMesh-Repeater-Mini.png)](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini)
+     
+    For window, rooftop or in a tree installations, the mini is
+    flexible and can be upgraded to a more powerful setup with a [1W
+    booster kit](https://store.rakwireless.com/products/meshtastic-1w-lora-booster-kit-rak3401?variant=45678368882886).
+    
+    100$USD.
+    
+    :material-chart-line: **Alternatives**:
+    
+    - Cheaper, less flexible alternative [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html),
+      70$USD, [130$ with GPS and battery at Robot Shop](https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery?qd=c71a67155c4fec187b2b07ee9a7af9f3).
+    - [1W solar repeater build](https://meshcore.ca/hardware/repeater-solar-1w-diy-build/) from Ottawa, 300$+, requires some
+      soldering and tools
+
 -   ⎇ **Kit**: [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)
 
     ---
@@ -82,25 +101,6 @@ ourselves.
     - RAK [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) is 25-62$USD, is more powerful and
       uses less power
   
--   :octicons-sun-16: **Repeater**: [WisMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini)
-
-    ---
-    
-    [![WisMesh Solar Repeater Mini](../../assets/WisMesh-Repeater-Mini.png)](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini)
-     
-    For window, rooftop or in a tree installations, the mini is
-    flexible and can be upgraded to a more powerful setup with a [1W
-    booster kit](https://store.rakwireless.com/products/meshtastic-1w-lora-booster-kit-rak3401?variant=45678368882886).
-    
-    100$USD.
-    
-    :material-chart-line: **Alternatives**:
-    
-    - Cheaper, less flexible alternative [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html),
-      70$USD, [130$ with GPS and battery at Robot Shop](https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery?qd=c71a67155c4fec187b2b07ee9a7af9f3).
-    - [1W solar repeater build](https://meshcore.ca/hardware/repeater-solar-1w-diy-build/) from Ottawa, 300$+, requires some
-      soldering and tools
-
 </div>
 
 !!! tip
