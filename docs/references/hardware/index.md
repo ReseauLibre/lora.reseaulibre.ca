@@ -15,34 +15,30 @@ ourselves.
 
 <div class="grid cards" markdown>
 
--   :material-hands-pray: **Cheapest**: [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)
-
+-   :material-cellphone-cog: **Companion**: [SeeedStudio Wio Tracker L1
+    Pro](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html)
+    
     ---
     
-    [![HELTEC v4](../../assets/WiFi-LoRa-32-V4-4.png)](https://heltec.org/project/wifi-lora-32-v4/)
+    [![Wio Tracker L1 Pro](../../assets/wio-tracker-l1-pro2.png)](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html)
 
-    The V4 does not come with a case, which needs to be
-    [3d-printed](#cases), or get the [v3](https://heltec.org/project/wifi-lora-32-v3/) which does ship with a
-    case. Make sure to pick 902-928MHz.
+    The Tracker is small, sturdy, has a good battery life, a power
+    switch and is cheap enough to get started.
     
-    You need to provide power over USB, any USB-C charger will do,
-    needs a separate app, for example on your phone
+    It needs a separate app, for example on your phone, but can be
+    used to read messages with the buttons, in a pinch. No water
+    resistance.
 
-    20$USD.
-    
-    :material-chart-line: Challenger: SeeedStudio [XIAO ESP32S3 &
-    `Wio-SX1262` Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html) is 11$USD, but without a display or case.
-    
--   :material-lightning-bolt: **Low power**: [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158)
+    [62$ at Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
 
-    ---
-    [![RAK4631](../../assets/wisblock-meshtastic-starter-kit-rak19003-v2_4000x@2x.progressive.png)](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158)
-    
-    Longer battery life than HELTEC.
-    
-    Also needs a phone.
-    
-    25$USD, [90$ with a case and battery](https://store.rakwireless.com/products/wismesh-pocket).
+    :material-chart-line: Challenger: 
+
+    - [RAK Wireless WisMesh Tag](https://store.rakwireless.com/products/wismesh-tag-meshtastic-gps-lora-tracker-ip66): credit-card sized, waterproof
+      (IP66), two buttons, no display, magnetic USB pogo charging,
+      40$USD
+
+    - [Lilygo T-Echo](https://lilygo.cc/products/t-echo-lilygo): e-ink display, only two buttons, no power button,
+      45$USD, [T-Echo Plus](https://lilygo.cc/products/t-echo-plus) has a better battery for 66$USD
 
 -   :material-cellphone-basic: **Standalone**: [T-Deck plus](https://lilygo.cc/products/t-deck-plus-1)
 
@@ -53,22 +49,57 @@ ourselves.
     Has keyboard and screen (yes, like a [BlackBerry](https://en.wikipedia.org/wiki/BlackBerry)), useful if
     you don't want to use your phone.
     
-    70$USD, 77$USD with Meshtastic preinstalled.
+    70$USD.
 
-    :material-chart-line: Challenger: [Heltec v4 prebuilt kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/).
+    :material-chart-line: Challengers:
+    
+    - [Heltec v4 prebuilt kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/): touch-screen only, 50-60$USD
+    - [Lilygo T-Lora Pager](https://lilygo.cc/products/t-lora-pager): smaller, quirkier, 90$USD
 
--   :octicons-sun-16: **Solar relay**: [WisMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini)
+-   ⎇ **Kit**: [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)
+
+    ---
+    
+    [![HELTEC v4](../../assets/WiFi-LoRa-32-V4-4.png)](https://heltec.org/project/wifi-lora-32-v4/)
+
+    This is a bare bones kit for hackers, running bots, or if you're
+    really broke.
+    
+    The V4 is as simple (it's essentially a Arduino) and as cheap as
+    it goes. The v4 does not come with a case, but one can be
+    [3d-printed](#cases), or get the [v3](https://heltec.org/project/wifi-lora-32-v3/) which ships with a
+    case. Make sure to pick 902-928MHz.
+    
+    You need to provide power over USB, any USB-C charger will do,
+    needs a separate app, for example on your phone
+
+    20-30$USD.
+    
+    :material-chart-line: Challengers:
+    
+    - SeeedStudio [XIAO ESP32S3 & `Wio-SX1262` Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html) is 11$USD, but
+      without a display or case.
+    - RAK [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) is 25-62$USD, is more powerful and
+      uses less power
+  
+-   :octicons-sun-16: **Repeater**: [WisMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini)
 
     ---
     
     [![WisMesh Solar Repeater Mini](../../assets/WisMesh-Repeater-Mini.png)](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini)
      
-    For window, rooftop or in a tree installations.
+    For window, rooftop or in a tree installations, the mini is
+    flexible and can be upgraded to a more powerful setup with a [1W
+    booster kit](https://store.rakwireless.com/products/meshtastic-1w-lora-booster-kit-rak3401?variant=45678368882886).
     
     100$USD.
     
-    :material-chart-line: Alternative, for masts [SenseCAP Solar Node
-    P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html), 70$USD.
+    :material-chart-line: Challenders:
+    
+    - Cheaper, less flexible alternative [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html),
+      70$USD, [130$ with GPS and battery at Robot Shop](https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery?qd=c71a67155c4fec187b2b07ee9a7af9f3).
+    - [1W solar repeater build](https://meshcore.ca/hardware/repeater-solar-1w-diy-build/) from Ottawa, 300$+, requires some
+      soldering and tools
 
 </div>
 
