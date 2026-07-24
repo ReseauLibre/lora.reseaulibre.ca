@@ -158,7 +158,7 @@ computer to operate.
 !!! success
  
     - [SeeedStudio Wio Tracker L1
-    Pro](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html):s
+    Pro](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html):
     1.3" OLED, 3D-Printed Casing, 2000mAh battery, GPS, nRF5284 /
     SX1262, 4-way joystick, menu button, reset button, power switch, 3 LEDs
     43$USD, [62$ at Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
