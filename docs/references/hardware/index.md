@@ -104,15 +104,6 @@ ourselves.
 </div>
 
 !!! tip
-
-    We do not recommend standalone devices, in general. They're niche
-    devices that might have their use case, but they typically use
-    more battery and power than normal devices (as they are often
-    based on ESP32 device) and are hard to use.
-    
-    This is particularly true of Reticulum and Meshcore, for which the
-    standalone interfaces are far less advanced and much harder to use
-    than Meshtastic, which is already not very intuitive.
     
     If you're just starting, just get the cheapest device you can get
     your hand on quickly, it's 50$. Plug it into your phone, a USB
