@@ -16,34 +16,28 @@ ourselves.
 
 <div class="grid cards" markdown>
 
--   :material-hands-pray: **Moins cher**: [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)
-
+-   :material-cellphone-cog: **Compagnon**: [SeeedStudio Wio Tracker L1
+    Pro](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html)
+    
     ---
     
-    [![HELTEC v4](../../assets/WiFi-LoRa-32-V4-4.png)](https://heltec.org/project/wifi-lora-32-v4/)
+    [![Wio Tracker L1 Pro](../../assets/wio-tracker-l1-pro2.png)](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html)
 
-    Le v4 vient sans boitier, alors il faut faire une [impression
-    3D](#cases), or choisir le [v3](https://heltec.org/project/wifi-lora-32-v3/). Choisissez bien la fréquence 902-928MHz.
+    Le "tracker" est petit, solide, a une bonne batterie, un
+    interrupteur est surtout, il est pas cher.
     
-    Vous devez fournir l'alimentation via USB, n'importe quel chargeur
-    USB-C conviendra, 20 $ US, a besoin d'une app, par exemple sur votre
-    téléphone
+    A besoin d'une app, par exemple sur votre téléphone
   
-    20$USD.
+    [62$ à Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
 
-    :material-chart-line: Challenger: SeeedStudio [XIAO ESP32S3 &
-    `Wio-SX1262` Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html) à 11$USD, mais sans affichage ou boitier.
-    
--   :material-lightning-bolt: **Plus efficace**: [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158)
+    :material-chart-line: **Alternatives**: 
 
-    ---
-    [![RAK4631](../../assets/wisblock-meshtastic-starter-kit-rak19003-v2_4000x@2x.progressive.png)](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158)
-    
-    Meilleure durée de vie sur batterie que le Heltec.
-  
-    Also needs a phone.
-    
-    25 $ USD, [90 $ avec boîtier et batterie](https://store.rakwireless.com/products/wismesh-pocket)
+    - [RAK Wireless WisMesh Tag](https://store.rakwireless.com/products/wismesh-tag-meshtastic-gps-lora-tracker-ip66): credit-card sized, waterproof
+      (IP66), two buttons, no display, magnetic USB pogo charging,
+      40$USD
+
+    - [Lilygo T-Echo](https://lilygo.cc/products/t-echo-lilygo): e-ink display, only two buttons, no power button,
+      45$USD, [T-Echo Plus](https://lilygo.cc/products/t-echo-plus) has a better battery for 66$USD
 
 -   :material-cellphone-basic: **Autonome**: [T-Deck plus](https://lilygo.cc/products/t-deck-plus-1)
 
@@ -53,36 +47,60 @@ ourselves.
     
     A un écran et un clavier (oui, ça ressemble à un [BlackBerry](https://en.wikipedia.org/wiki/BlackBerry)),
     utile si vous ne voulez pas utiliser votre téléphone.
+
+    70$USD.
+
+    :material-chart-line: **Alternatives**:
     
-    70$USD, 77$USD avec Meshtastic pré-installé.
+    - [Heltec v4 prebuilt kit](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/): touch-screen only, 50-60$USD
+    - [Lilygo T-Lora Pager](https://lilygo.cc/products/t-lora-pager): smaller, quirkier, 90$USD
 
-    :material-chart-line: Challenger: [Heltec v4 kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/).
-
--   :octicons-sun-16: **Relais solaire**: [WisMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini)
+-   :octicons-sun-16: **Répéteur**: [WisMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini)
 
     ---
     
     [![WisMesh Solar Repeater Mini](../../assets/WisMesh-Repeater-Mini.png)](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini)
      
-    Pour installation sur un toit, fenêtre ou dans un arbre.
+    Pour installation sur un toit, fenêtre ou dans un arbre, le mini
+    est flexible et peut être mis à jour avec le [kit 1W](https://store.rakwireless.com/products/meshtastic-1w-lora-booster-kit-rak3401?variant=45678368882886).
     
     100$USD.
     
-    :material-chart-line: Alternative, for masts [SenseCAP Solar Node
-    P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html), 70$USD.
+    :material-chart-line: **Alternatives**:
+    
+    - Cheaper, less flexible alternative [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html),
+      70$USD, [130$ with GPS and battery at Robot Shop](https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery?qd=c71a67155c4fec187b2b07ee9a7af9f3).
+    - [1W solar repeater build](https://meshcore.ca/hardware/repeater-solar-1w-diy-build/) from Ottawa, 300$+, requires some
+      soldering and tools
 
+-   ⎇ **Kit**: [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)
+
+    ---
+    
+    [![HELTEC v4](../../assets/WiFi-LoRa-32-V4-4.png)](https://heltec.org/project/wifi-lora-32-v4/)
+
+    Ceci est un kit de base pour les hackers, rouler des robots ou si
+    vous êtes vraiment cassés.
+
+    Le v4 vient sans boitier, alors il faut faire une [impression
+    3D](#cases), or choisir le [v3](https://heltec.org/project/wifi-lora-32-v3/). Choisissez bien la fréquence 902-928MHz.
+    
+    Vous devez fournir l'alimentation via USB, n'importe quel chargeur
+    USB-C conviendra, a besoin d'une app, par exemple sur votre
+    téléphone
+
+    20-30$USD.
+    
+    :material-chart-line: **Alternatives**:
+    
+    - SeeedStudio [XIAO ESP32S3 & `Wio-SX1262` Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html) is 11$USD, but
+      without a display or case.
+    - RAK [WisBlock RAK4631](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) is 25-62$USD, is more powerful and
+      uses less power
+  
 </div>
 
 !!! tip
-
-    We do not recommend standalone devices, in general. They're niche
-    devices that might have their use case, but they typically use
-    more battery and power than normal devices (as they are often
-    based on ESP32 device) and are hard to use.
-    
-    This is particularly true of Reticulum and Meshcore, for which the
-    standalone interfaces are far less advanced and much harder to use
-    than Meshtastic, which is already not very intuitive.
     
     If you're just starting, just get the cheapest device you can get
     your hand on quickly, it's 50$. Plug it into your phone, a USB
@@ -136,11 +154,17 @@ computer to operate.
 
 !!! success
  
+    - [SeeedStudio Wio Tracker L1
+    Pro](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html):
+    1.3" OLED, 3D-Printed Casing, 2000mAh battery, GPS, nRF5284 /
+    SX1262, 4-way joystick, menu button, reset button, power switch, 3 LEDs
+    43$USD, [62$ at Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
+
     - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket): GNSS, 1.3" OLED, acceleration sensor, power
       button, 3200mAh battery, USB-C powered, 100$
     - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): 200x200 e-ink
-      display, NRF52840, GPS, BT 5.0, no wifi, only two
-      buttons, NFC, 850mAh battery, temperature/pressure sensor, 55$USD
+      display, NRF52840, GPS, BT 5.0, no wifi, two buttons, no power
+      button, NFC, 850mAh battery, temperature/pressure sensor, 55$USD
     - cheap [Aliexpress Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
     - [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, cheap, - 40℃ ~ 100℃,
       WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button (hidden under the
@@ -157,6 +181,13 @@ computer to operate.
       1000 mAh battery, IP66 rating, two buttons, status LED,
       magnetic USB pogo charging, nRF52840/SX1262, GPS, 92 x 59 x 7.5
       mm, 40$USD
+    - [SeeedStudio SenseCAP Card Tracker T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) (40$USD)
+      IP65, 700mAh battery, nRF52840/LR1110, GPS, 85 * 55 * 6.5 mm,
+      32g, -20℃ to +60℃ operation, buzzer, magnetic pogo pins USB charging, 40$USD, anarcat managed get [this one in a boot loop](https://anarc.at/services/meshtastic/#bricked) 
+      but eventually recovered. Nice and portable, waterproof. See
+      [this guide for how to use that single button](https://wiki.seeedstudio.com/sensecap_t1000_e_meshcore/#button),
+      in particular use triple-click to turn off the buzzer.
+
 
 !!! example "In testing"
 
@@ -164,29 +195,16 @@ computer to operate.
       nRF52840, 1200mAh battery, 1.54" e-ink display, GPS, BLE, RP-SMA,
       -10~50°C, 54$USD, [89$CAD at Muzi](https://muzi.works/products/elecrow-thinknode-m1), similar to the Lilygo T-Echo, but has a better battery
 
-    - [SeeedStudio Wio Tracker L1
-    Pro](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html):
-    1.3" OLED, 3D-Printed Casing, 2000mAh battery, GPS, nRF5284 /
-    SX1262, 4-way joystick, menu button, reset/power switch, 3 LEDs
-    43$USD, [62$ at Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
-
-    - [SeeedStudio SenseCAP Card Tracker T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) (40$USD)
-      IP65, 700mAh battery, nRF52840/LR1110, GPS, 85 * 55 * 6.5 mm,
-      32g, buzzer, magnetic pogo pins USB charging, 40$USD, anarcat managed get [this one in a boot loop](https://anarc.at/services/meshtastic/#bricked) 
-      but eventually recovered. Nice and portable, waterproof. See
-      [this guide for how to use that single button](https://wiki.seeedstudio.com/sensecap_t1000_e_meshcore/#button),
-      in particular use triple-click to turn off the buzzer.
-
 !!! question "Untested"
-
-    - [T-Deck Pro](https://lilygo.cc/products/t-deck-pro): 3.1" e-ink touch screen, 4G module, WiFi 2.4GHz,
-      BLE 5, GPS, TF Card, mic, speaker, keypad, see also the [T5 e-paper
-      s3 pro](https://lilygo.cc/products/t5-e-paper-s3-pro)
 
     - [Muzi](https://muzi.works/) has builds on top of the Heltec, e.g. [this H2T](https://muzi.works/products/h2t-complete-device-heltec-t114-with-gps-running-meshtastic)
       (137CAD) made with a Heltec T114, [this R1 Neo](https://muzi.works/products/r1-neo-complete-meshtastic-device) (123CAD) is
       similar to the WisMesh Pocket, but smaller, better sealed, but more
       expensive
+    - [SenseCAP MeshTracker X1](https://www.seeedstudio.com/sensecap-meshtracker-x1-meshtastic-gps-tracker-p-6935.html): 
+      Next generation of the T1000-E. LR2021, IP66, USB-C connector,
+      1100mAh, claims 5 days battery, dual GPS, BT, 1 RGB LED, 2 buttons, -20 to 60℃
+      operation, 90*57*8 mm, 45g, 43$USD.
 
 <!-- !!! failure "Not working" -->
 
@@ -199,13 +217,89 @@ to operate.
 !!! success
 
     - [Heltec v4 prebuilt kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/): touch screen, 18650 flat-top
-      battery (tight, hard to remove), belt clip bulges the back cover,
-      can also serve as a "standalone" device because of the touch screen
+      battery (tight, hard to remove), belt clip bulges the back
+      cover.
     - [Lilygo T-Deck Plus](https://lilygo.cc/products/t-deck-plus-1) (80$): blackberry-like, standalone device
       with battery, keyboard, trackball, LCD display, 2000mAh battery,
-      BLE, WiFi, GPS, MicroSD card reader, microphone/speaker
+      BLE, WiFi, GPS, MicroSD card reader, microphone/speake. Note that
+      an order in March 2026 took 24 days to deliver.
+    - [Lilygo T-Lora Pager](https://lilygo.cc/products/t-lora-pager):
+      smaller, quirkier, 90$USD. Keyboard and wheel are unreliable,
+      and it has no touch scren. It's really cute though.
 
-Note that those devices depend on the proprietary Ripple firmware.
+!!! question "Untested"
+
+    - [T-Deck Pro](https://lilygo.cc/products/t-deck-pro): 3.1" e-ink touch screen, 4G module, WiFi 2.4GHz,
+      BLE 5, GPS, TF Card, mic, speaker, keypad, see also the [T5 e-paper
+      s3 pro](https://lilygo.cc/products/t5-e-paper-s3-pro).
+    - Elecrow M9, not yet released, similar to the D-Teck, LCD
+      display, no touch screen, real time clock, GPS, SD card, to be confirmed.
+    - [Attaky Mesh desk](https://shop.attaky.com/products/attaky_mesh_deck?variant=52819861537084): 
+      modular ESP32 kit with battery, SX1262 radio, GPS receiver, 48-keys
+      QWERTY keyboard, custom 1000 mAh battery, 68 × 97 × 29.8 mm,
+      157g ([data sheet](https://docs.attaky.com/docs/datasheets/builds/mesh-deck)),
+      240$USD, runs wadamesh
+    - [Tanmatsu cyberdeck](https://shop.nicolaielectronics.nl/shop/tanmatsu-9/tanmatsu-cyberdeck-3?attribute_values=1). 
+      ESP32-P4,  E22-900M22S LoRa radio, microSD card socket,
+      3D-printed case, QWERTY keyboard, 2500mAh Li-Po battery, audio
+      jack and speaker, expansion port, opensource, 100EUR, runs
+      wadamesh
+    - [Cardputer](https://shop.m5stack.com/products/cardputer-mesh-kit-for-meshtastic-esp32-s3?variant=48684913164545).
+      ESP32 handheld, 1.14" LCD, 56-key keyboard, 1750mAh lithium,
+      microphone, 1W speaker and audio jack, infrared, microSD, SX1262
+      expansion port, not supported by stock Meshcore firmware, but
+      many alternative firmware, for example: [`MultiMote/meshcore-cardputer-adv`](https://github.com/MultiMote/meshcore-cardputer-adv), [`sosprz/meshcore-cardputer-adv`](https://github.com/sosprz/meshcore-cardputer-adv), [`Stachugit/MeshCore-Cardputer-ADV`](https://github.com/Stachugit/MeshCore-Cardputer-ADV)
+
+Note that those devices depend on the proprietary Ripple firmware, but
+you can now try the [Wadamesh](https://wadamesh.com/) firmware as well, which is open
+source, and is *much* more intuitive and powerful. Its only downside
+is that it seems to be developed with the help of an LLM (Claude).
+
+### Cyberdecks
+
+A special kind of device that's worth its own section is the
+[cyberdeck](https://en.wikipedia.org/wiki/Cyberdeck). That's a custom-built device that often runs *more*
+than the basic firmware, sometimes a full (Linux) operating system
+which allows for more functionality than the basic standalone device.
+
+Typically, Cyberdecks are hand-crafted, but here we cheat a little and
+list pre-built devices or kits.
+
+The main thing that separates this from the above standalone devices is
+that they are more generic Linux computers with more capabilities than
+embedded devices above.
+
+!!! success
+
+    - Clockwork PI [uConsole](https://www.clockworkpi.com/uconsole).
+    wrapper around a Raspberry PI CM4, with modular expansion ports: 720p 5.0-inch IPS screen,
+    74-keys QWERTY keyboard with gaming buttons, 18650 battery
+    module, cellular modem, and a [third party SDR, LoRa, GPS, USB,
+    RTC, ethernet module](https://hackergadgets.com/products/uconsole-aio-v2?variant=47045380735150).
+
+!!! question "Untested"
+
+    - [Mecha Comet](https://mecha.so/comet#overview). pre-order as of July 2026, supports LoRa
+      through a M.2 connector, to be clarified.
+
+There there is a long list of small computers like the [MNT Reform](https://mntre.com/reform.html)
+[pocket](https://shop.mntre.com/products/mnt-pocket-reform) that are relatively normal computers, without necessarily
+any specific LoRa hardware. But you can still hook up a LoRa modem
+over USB, for example.
+
+In any case, you'll need software other than the stock (or
+third-party) firmware to talk on the mesh with those devices. The
+uconsole has its own [`meshcore-uconsole`](https://github.com/cwill747/meshcore-uconsole) firmware, for others
+there are various wrappers around the [Python library](https://blog.meshcore.io/2026/05/12/pymc-intro) (previously
+called `pyMC`, now called [openHop](https://github.com/openhop-dev)) like [`tui-meshcore`](https://github.com/guax/tui-meshcore).
+
+[This blog post](https://blog.meshcore.io/2026/05/12/pymc-intro) explains the `pyMC` project further and lists a
+couple of devices you can hookup to your computer directly:
+
+- Muzi works [NULLHOP MeshToad v3](https://muzi.works/products/nullhop-meshtoad-v3) (65CAD)
+- Elecrow [Mesh Tadpole SX1262 USB stick](https://www.elecrow.com/meshtadpole-sx1262-usb-stick.html) (19$USD)
+- MeshSmith [PiMesh-1W HAT](https://meshsmith.net/products/pimesh-1w) (60$USD, for a Raspberry Pi)
+- Zindello [Ultrapeater](https://zindello.com.au/ultrapeater/) (~66$USD, also for a Raspberry Pi)
 
 ## Repeaters
 
