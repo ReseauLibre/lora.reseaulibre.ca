@@ -243,6 +243,55 @@ you can now try the [Wadamesh](https://wadamesh.com/) firmware as well, which is
 source, and is *much* more intuitive and powerful. Its only downside
 is that it seems to be developed with the help of an LLM (Claude).
 
+### Cyberdecks
+
+A special kind of device that's worth its own section is the
+[cyberdeck](https://en.wikipedia.org/wiki/Cyberdeck). That's a custom-built device that often runs *more*
+than the basic firmware, sometimes a full (Linux) operating system
+which allows for more functionality than the basic standalone device.
+
+Typically, Cyberdecks are hand-crafted, but here we cheat a little and
+list pre-built devices or kits.
+
+The main thing that separates this from the above standalone devices is
+that they are more generic Linux computers with more capabilities than
+embedded devices above.
+
+!!! success
+
+    - Clockwork PI [uConsole](https://www.clockworkpi.com/uconsole).
+    wrapper around a Raspberry PI CM4, with modular expansion ports: 720p 5.0-inch IPS screen,
+    74-keys QWERTY keyboard with gaming buttons, 18650 battery
+    module, cellular modem, and a [third party SDR, LoRa, GPS, USB,
+    RTC, ethernet module](https://hackergadgets.com/products/uconsole-aio-v2?variant=47045380735150). Requires
+    the [`meshcore-uconsole`][] software.
+
+ [`meshcore-uconsole`]: https://github.com/cwill747/meshcore-uconsole
+
+!!! question "Untested"
+
+   - [Mecha Comet](https://mecha.so/comet#overview). pre-order as of July 2026, supports LoRa
+     through a M.2 connector, to be clarified.
+
+There there is a long list of small computers like the [MNT Reform](https://mntre.com/reform.html)
+[pocket](https://shop.mntre.com/products/mnt-pocket-reform) that are relatively normal computers, without necessarily
+any specific LoRa hardware. But you can still hook up a LoRa modem
+over USB, for example.
+
+In any case, you'll need software other than the stock (or
+third-party) firmware to talk on the mesh with those devices. The
+uconsole has its own [`meshcore-uconsole`][] firmware, for others
+there are various wrappers around the [Python library](https://blog.meshcore.io/2026/05/12/pymc-intro) (previously
+called `pyMC`, now called [openHop](https://github.com/openhop-dev)) like [`tui-meshcore`](https://github.com/guax/tui-meshcore).
+
+[This blog post](https://blog.meshcore.io/2026/05/12/pymc-intro) explains the `pyMC` project further and lists a
+couple of devices you can hookup to your computer directly:
+
+- Muzi works [NULLHOP MeshToad v3](https://muzi.works/products/nullhop-meshtoad-v3) (65CAD)
+- Elecrow [Mesh Tadpole SX1262 USB stick](https://www.elecrow.com/meshtadpole-sx1262-usb-stick.html) (19$USD)
+- MeshSmith [PiMesh-1W HAT](https://meshsmith.net/products/pimesh-1w) (60$USD, for a Raspberry Pi)
+- Zindello [Ultrapeater](https://zindello.com.au/ultrapeater/) (~66$USD, also for a Raspberry Pi)
+
 ## Repeaters
 
 Those are bulkier devices that are mounted on a mast or are used as a
