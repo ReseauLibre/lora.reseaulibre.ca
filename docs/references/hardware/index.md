@@ -278,10 +278,7 @@ embedded devices above.
     wrapper around a Raspberry PI CM4, with modular expansion ports: 720p 5.0-inch IPS screen,
     74-keys QWERTY keyboard with gaming buttons, 18650 battery
     module, cellular modem, and a [third party SDR, LoRa, GPS, USB,
-    RTC, ethernet module](https://hackergadgets.com/products/uconsole-aio-v2?variant=47045380735150). Requires
-    the [`meshcore-uconsole`][] software.
-
- [`meshcore-uconsole`]: https://github.com/cwill747/meshcore-uconsole
+    RTC, ethernet module](https://hackergadgets.com/products/uconsole-aio-v2?variant=47045380735150).
 
 !!! question "Untested"
 
@@ -295,7 +292,7 @@ over USB, for example.
 
 In any case, you'll need software other than the stock (or
 third-party) firmware to talk on the mesh with those devices. The
-uconsole has its own [`meshcore-uconsole`][] firmware, for others
+uconsole has its own [`meshcore-uconsole`](https://github.com/cwill747/meshcore-uconsole) firmware, for others
 there are various wrappers around the [Python library](https://blog.meshcore.io/2026/05/12/pymc-intro) (previously
 called `pyMC`, now called [openHop](https://github.com/openhop-dev)) like [`tui-meshcore`](https://github.com/guax/tui-meshcore).
 
