@@ -237,6 +237,21 @@ to operate.
       s3 pro](https://lilygo.cc/products/t5-e-paper-s3-pro).
     - Elecrow M9, not yet released, similar to the D-Teck, LCD
       display, no touch screen, real time clock, GPS, SD card, to be confirmed.
+    - [Attaky Mesh desk](https://shop.attaky.com/products/attaky_mesh_deck?variant=52819861537084): 
+      modular ESP32 kit with battery, SX1262 radio, GPS receiver, 48-keys
+      QWERTY keyboard, custom 1000 mAh battery, 68 × 97 × 29.8 mm,
+      157g ([data sheet](https://docs.attaky.com/docs/datasheets/builds/mesh-deck)),
+      240$USD, runs wadamesh
+    - [Tanmatsu cyberdeck](https://shop.nicolaielectronics.nl/shop/tanmatsu-9/tanmatsu-cyberdeck-3?attribute_values=1). 
+      ESP32-P4,  E22-900M22S LoRa radio, microSD card socket,
+      3D-printed case, QWERTY keyboard, 2500mAh Li-Po battery, audio
+      jack and speaker, expansion port, opensource, 100EUR, runs
+      wadamesh
+    - [Cardputer](https://shop.m5stack.com/products/cardputer-mesh-kit-for-meshtastic-esp32-s3?variant=48684913164545).
+      ESP32 handheld, 1.14" LCD, 56-key keyboard, 1750mAh lithium,
+      microphone, 1W speaker and audio jack, infrared, microSD, SX1262
+      expansion port, not supported by stock Meshcore firmware, but
+      many alternative firmware, for example: [`MultiMote/meshcore-cardputer-adv`](https://github.com/MultiMote/meshcore-cardputer-adv), [`sosprz/meshcore-cardputer-adv`](https://github.com/sosprz/meshcore-cardputer-adv), [`Stachugit/MeshCore-Cardputer-ADV`](https://github.com/Stachugit/MeshCore-Cardputer-ADV)
 
 Note that those devices depend on the proprietary Ripple firmware, but
 you can now try the [Wadamesh](https://wadamesh.com/) firmware as well, which is open
