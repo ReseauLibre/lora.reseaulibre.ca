@@ -285,8 +285,8 @@ embedded devices above.
 
 !!! question "Untested"
 
-   - [Mecha Comet](https://mecha.so/comet#overview). pre-order as of July 2026, supports LoRa
-     through a M.2 connector, to be clarified.
+    - [Mecha Comet](https://mecha.so/comet#overview). pre-order as of July 2026, supports LoRa
+      through a M.2 connector, to be clarified.
 
 There there is a long list of small computers like the [MNT Reform](https://mntre.com/reform.html)
 [pocket](https://shop.mntre.com/products/mnt-pocket-reform) that are relatively normal computers, without necessarily
