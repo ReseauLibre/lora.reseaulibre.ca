@@ -1755,6 +1755,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Standalone">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cyberdecks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cyberdecks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2157,12 +2174,72 @@ to operate.</p>
   s3 pro</a>.</li>
 <li>Elecrow M9, not yet released, similar to the D-Teck, LCD
   display, no touch screen, real time clock, GPS, SD card, to be confirmed.</li>
+<li><a href="https://shop.attaky.com/products/attaky_mesh_deck?variant=52819861537084">Attaky Mesh desk</a>: 
+  modular ESP32 kit with battery, SX1262 radio, GPS receiver, 48-keys
+  QWERTY keyboard, custom 1000 mAh battery, 68 × 97 × 29.8 mm,
+  157g (<a href="https://docs.attaky.com/docs/datasheets/builds/mesh-deck">data sheet</a>),
+  240$USD, runs wadamesh</li>
+<li><a href="https://shop.nicolaielectronics.nl/shop/tanmatsu-9/tanmatsu-cyberdeck-3?attribute_values=1">Tanmatsu cyberdeck</a>. 
+  ESP32-P4,  E22-900M22S LoRa radio, microSD card socket,
+  3D-printed case, QWERTY keyboard, 2500mAh Li-Po battery, audio
+  jack and speaker, expansion port, opensource, 100EUR, runs
+  wadamesh</li>
+<li><a href="https://shop.m5stack.com/products/cardputer-mesh-kit-for-meshtastic-esp32-s3?variant=48684913164545">Cardputer</a>.
+  ESP32 handheld, 1.14" LCD, 56-key keyboard, 1750mAh lithium,
+  microphone, 1W speaker and audio jack, infrared, microSD, SX1262
+  expansion port, not supported by stock Meshcore firmware, but
+  many alternative firmware, for example: <a href="https://github.com/MultiMote/meshcore-cardputer-adv"><code>MultiMote/meshcore-cardputer-adv</code></a>, <a href="https://github.com/sosprz/meshcore-cardputer-adv"><code>sosprz/meshcore-cardputer-adv</code></a>, <a href="https://github.com/Stachugit/MeshCore-Cardputer-ADV"><code>Stachugit/MeshCore-Cardputer-ADV</code></a></li>
 </ul>
 </div>
 <p>Note that those devices depend on the proprietary Ripple firmware, but
 you can now try the <a href="https://wadamesh.com/">Wadamesh</a> firmware as well, which is open
 source, and is <em>much</em> more intuitive and powerful. Its only downside
 is that it seems to be developed with the help of an LLM (Claude).</p>
+<h3 id="cyberdecks">Cyberdecks<a class="headerlink" href="#cyberdecks" title="Permanent link">&para;</a></h3>
+<p>A special kind of device that's worth its own section is the
+<a href="https://en.wikipedia.org/wiki/Cyberdeck">cyberdeck</a>. That's a custom-built device that often runs <em>more</em>
+than the basic firmware, sometimes a full (Linux) operating system
+which allows for more functionality than the basic standalone device.</p>
+<p>Typically, Cyberdecks are hand-crafted, but here we cheat a little and
+list pre-built devices or kits.</p>
+<p>The main thing that separates this from the above standalone devices is
+that they are more generic Linux computers with more capabilities than
+embedded devices above.</p>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<ul>
+<li>Clockwork PI <a href="https://www.clockworkpi.com/uconsole">uConsole</a>.
+wrapper around a Raspberry PI CM4, with modular expansion ports: 720p 5.0-inch IPS screen,
+74-keys QWERTY keyboard with gaming buttons, 18650 battery
+module, cellular modem, and a <a href="https://hackergadgets.com/products/uconsole-aio-v2?variant=47045380735150">third party SDR, LoRa, GPS, USB,
+RTC, ethernet module</a>. Requires
+the [<code>meshcore-uconsole</code>][] software.</li>
+</ul>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Untested</p>
+</div>
+<ul>
+<li><a href="https://mecha.so/comet#overview">Mecha Comet</a>. pre-order as of July 2026, supports LoRa
+     through a M.2 connector, to be clarified.</li>
+</ul>
+<p>There there is a long list of small computers like the <a href="https://mntre.com/reform.html">MNT Reform</a>
+<a href="https://shop.mntre.com/products/mnt-pocket-reform">pocket</a> that are relatively normal computers, without necessarily
+any specific LoRa hardware. But you can still hook up a LoRa modem
+over USB, for example.</p>
+<p>In any case, you'll need software other than the stock (or
+third-party) firmware to talk on the mesh with those devices. The
+uconsole has its own [<code>meshcore-uconsole</code>][] firmware, for others
+there are various wrappers around the <a href="https://blog.meshcore.io/2026/05/12/pymc-intro">Python library</a> (previously
+called <code>pyMC</code>, now called <a href="https://github.com/openhop-dev">openHop</a>) like <a href="https://github.com/guax/tui-meshcore"><code>tui-meshcore</code></a>.</p>
+<p><a href="https://blog.meshcore.io/2026/05/12/pymc-intro">This blog post</a> explains the <code>pyMC</code> project further and lists a
+couple of devices you can hookup to your computer directly:</p>
+<ul>
+<li>Muzi works <a href="https://muzi.works/products/nullhop-meshtoad-v3">NULLHOP MeshToad v3</a> (65CAD)</li>
+<li>Elecrow <a href="https://www.elecrow.com/meshtadpole-sx1262-usb-stick.html">Mesh Tadpole SX1262 USB stick</a> (19$USD)</li>
+<li>MeshSmith <a href="https://meshsmith.net/products/pimesh-1w">PiMesh-1W HAT</a> (60$USD, for a Raspberry Pi)</li>
+<li>Zindello <a href="https://zindello.com.au/ultrapeater/">Ultrapeater</a> (~66$USD, also for a Raspberry Pi)</li>
+</ul>
 <h2 id="repeaters">Repeaters<a class="headerlink" href="#repeaters" title="Permanent link">&para;</a></h2>
 <p>Those are bulkier devices that are mounted on a mast or are used as a
 back-haul, possibly with a special <a href="#antennas">antenna</a>. The devices may or
@@ -2449,7 +2526,7 @@ you for various reasons:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="July 24, 2026 15:20:54 UTC">2026-07-24 15:20:54</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="July 28, 2026 17:57:35 UTC">2026-07-28 17:57:35</span>
   </span>
 
     
