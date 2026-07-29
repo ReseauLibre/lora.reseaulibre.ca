@@ -208,6 +208,11 @@ computer to operate.
       Next generation of the T1000-E. LR2021, IP66, USB-C connector,
       1100mAh, claims 5 days battery, dual GPS, BT, 1 RGB LED, 2 buttons, -20 to 60℃
       operation, 90*57*8 mm, 45g, 43$USD.
+    - [Meshtiny](https://meshtiny.com/product/meshtiny/): tiny
+      companion, nRF52840, SX1262, OLED, Buzzer, user, reset button,
+      power switch, 3-way encoder button, two LEDs, 250mAh Battery, 60$USD
+    - [GAT562 Meshtastic Tracker](https://shop.mtoolstec.com/product/gat562-mesh-tracker):
+      nRF52840/SX1262, 60g, 2500mAh battery, GPS, 1.3-inch TFT screen, [some open designs](https://github.com/quhyhao/GAT562)
 
 <!-- !!! failure "Not working" -->
 
@@ -450,7 +455,8 @@ We have experience with this:
   in [this technical review](https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi). In practice, it's still a great
   antenna, a "great bang for the buck" according to the Ottawa folks,
   and that the antenna is closer to 3dBi. Watch out for cheap
-  knock-offs, [Muzi Works sells a real one for 25CAD](https://muzi.works/products/alfa-outdoor-antenna).
+  knock-offs, [Muzi Works sells a real one for 25CAD](https://muzi.works/products/alfa-outdoor-antenna), [My Needle
+  Store (30$CAD)](https://myneedlestore.com/product/alfa-network-aoa-915-5acm-915-mhz-dipole-antenna-for-helium-iot-applications/) is local, untested
 
 - [`SYMITANT58`](https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL) (25$CAD Amazon)
 

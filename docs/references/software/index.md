@@ -14,6 +14,7 @@ to outline.
 - [`rupertdev/meshcore-prometheus-exporter`](https://github.com/rupertdev/meshcore-prometheus-exporter): same, Python
 - [`pyMC-dev/pyMC_Repeater`](https://github.com/pyMC-dev/pyMC_Repeater): Python-based repeaters
 - [`meshcorrode`](https://github.com/Fingel/meshcorrode/): partial Rust re-implementation
+- [Meshcore Ninja](https://meshcore.ninja/): directory of meshcore resources
 
 # Other
 
