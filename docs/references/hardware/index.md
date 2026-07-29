@@ -252,7 +252,7 @@ to operate.
       3D-printed case, QWERTY keyboard, 2500mAh Li-Po battery, audio
       jack and speaker, expansion port, opensource, 100EUR, runs
       wadamesh
-    - [Cardputer](https://shop.m5stack.com/products/cardputer-mesh-kit-for-meshtastic-esp32-s3?variant=48684913164545).
+    - [M5 Cardputer Adv](https://shop.m5stack.com/products/cardputer-mesh-kit-for-meshtastic-esp32-s3?variant=48684913164545).
       ESP32 handheld, 1.14" LCD, 56-key keyboard, 1750mAh lithium,
       microphone, 1W speaker and audio jack, infrared, microSD, SX1262
       expansion port, not supported by stock Meshcore firmware, but
@@ -289,6 +289,9 @@ embedded devices above.
 
     - [Mecha Comet](https://mecha.so/comet#overview). pre-order as of July 2026, supports LoRa
       through a M.2 connector, to be clarified.
+    - M5 (who made the Cardputer Adv above) also made a [Cardputer zero](https://shop.m5stack.com/pages/m5-cardputerzero) 
+      which is a real Raspberry Pi underneath, while still being
+      compatible with the [Cap LoRa 1262](https://shop.m5stack.com/products/cap-lora-1262-for-cardputer-adv-sx1262-atgm336h)
 
 There there is a long list of small computers like the [MNT Reform](https://mntre.com/reform.html)
 [pocket](https://shop.mntre.com/products/mnt-pocket-reform) that are relatively normal computers, without necessarily
