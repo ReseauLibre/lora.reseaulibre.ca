@@ -284,6 +284,9 @@ embedded devices above.
     74-keys QWERTY keyboard with gaming buttons, 18650 battery
     module, cellular modem, and a [third party SDR, LoRa, GPS, USB,
     RTC, ethernet module](https://hackergadgets.com/products/uconsole-aio-v2?variant=47045380735150).
+    [Video review](https://youtu.be/oN9zw3lzSVc) says the built-in
+    WiFi antenna is not great but can be modified with a 3D printer,
+    and that the trackball is not great. 6-7h runtime, half with a SDR.
 
 !!! question "Untested"
 
