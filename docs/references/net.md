@@ -97,6 +97,10 @@ Hosted by VE2CL, log by anarcat.
 
 13 contacts.
 
+Announcements:
+
+- [Mesh night next week](../news/posts/2026-07-28-aug-mesh-night.md)
+
 ### 2026-07-22
 
 | time  | call sign               | name           | location           | hops |
