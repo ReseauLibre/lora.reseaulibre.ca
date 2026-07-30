@@ -75,6 +75,28 @@ the network?](../guides/faq.md#how-many-nodes-in-the-network) FAQ.
 
 We keep track of past nets here.
 
+### 2026-07-29
+
+| time  | call sign              | name     | location        | hops |
+|-------|------------------------|----------|-----------------|------|
+| 21:00 | Mad Jap                | Claude   | Marieville      |      |
+| 21:01 | T MeshPocket           | Tristan  | Tétraultville   |      |
+| 21:01 | VE2CCK                 | Erik     | Vieux Longueuil |      |
+| 21:02 | VE2FXO                 | Charles  | Ville-Émard     |      |
+| 21:02 | OOZE                   | Zoé      | Verdun          |      |
+| 21:03 | Pleb                   |          | Greenfield Park |      |
+| 21:04 | anarcat                |          | Petite Italie   |      |
+| 21:05 | RL Mobile              |          | Brossard        |      |
+| 21:06 | Oots                   |          | Villeray        |      |
+| 21:06 | YUL-Ste-Julie-Carlitos | Carlitos | Ste-Julie       |      |
+| 21:08 | Mme Minou              | Cat      | Hochelaga       |      |
+| 21:11 | MG V4-mini             | Marc     | Terrebonne      |      |
+| 21:12 | VA2VQ                  |          | Beloeil         |      |
+
+Hosted by VE2CL, log by anarcat.
+
+13 contacts.
+
 ### 2026-07-22
 
 | time  | call sign               | name           | location           | hops |
