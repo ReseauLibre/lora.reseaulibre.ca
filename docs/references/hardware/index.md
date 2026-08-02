@@ -511,20 +511,6 @@ The SenseCAP Solar Node P1 can be upgraded with an Alfa antenna
 easily, but needs some sort of adapter because the stock connectors
 are SMA-based.
 
-=== "Connector"
-
-    ![](../../assets/sensecap-p1-alfa-connector.jpg){align=right width=300}
-    
-    This connector works well: it is a SMA to N converter that fits
-    above the stock pigtail. The connector is sold at [Addison](https://addison-electronique.com/).
-    
-    It also raises the antenna a little higher which is good because
-    it clears the solar panel better. The only downside is it
-    introduces some loss compared to a pigtail only solution.
-    
-    Note that we have had problems with this connector, where packets
-    would only be sent out and not received correctly.
-
 === "Pigtail"
 
     ![](../../assets/sensecap-p1-alfa.jpg){align=right width=300}
@@ -539,6 +525,22 @@ are SMA-based.
     This [20 cm pigtail from Muzi Works](https://muzi.works/products/rp-sma-to-type-n-cable-20-cm) works, but is a little short:
     you can only install it on the hole nearest to the router instead of
     the further one, as shown on the image here.
+
+=== "Connector"
+
+    ![](../../assets/sensecap-p1-alfa-connector.jpg){align=right width=300}
+    
+    This is a SMA to N converter that fits
+    above the stock pigtail sold at [Addison](https://addison-electronique.com/).
+    
+    It also raises the antenna a little higher which is good because
+    it clears the solar panel better. But it introduces some loss
+    compared to a pigtail.
+    
+    !!! warning
+
+        We have had problems with this connector, where packets
+        would only be sent out and not received correctly.
 
 ## Resellers
 
