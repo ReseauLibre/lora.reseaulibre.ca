@@ -137,8 +137,9 @@ a pretty good Linux desktop app called [Meshy](https://codeberg.org/sesivany/mes
     publish their source code and require a subscription or a 10 second
     wait time for certain features.
     
-    You can work around some of those problems by installin the [open
-    app](https://github.com/zjs81/meshcore-open) which requires going through [Obtainium](https://obtainium.imranr.dev/) on Android or
+    You can work around some of those problems by installing the [open
+    app](https://github.com/zjs81/meshcore-open)
+    which requires going through [Obtainium](https://obtainium.imranr.dev/) on Android or
     [test flight](https://github.com/zjs81/meshcore-open/issues/375). It's a little complicated, so don't venture there
     unless you get frustrated with the official apps. The open app
     also lacks a few features from the official one, namely:
@@ -150,6 +151,9 @@ a pretty good Linux desktop app called [Meshy](https://codeberg.org/sesivany/mes
      - [Regions support](https://github.com/zjs81/meshcore-open/issues/120)
      - [Channel utilization display](https://github.com/zjs81/meshcore-open/issues/312)
      - [User blocking support](https://github.com/zjs81/meshcore-open/issues/340)
+
+    Note that an [active fork](https://github.com/HDDen/meshcore-open/tree/rename-mco-advanced)
+    fixes many of those issues.
 
 To connect your phone to the device, you need to find the right device
 in your list, which can be challenging if you are in an environment
