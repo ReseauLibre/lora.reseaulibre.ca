@@ -89,6 +89,7 @@ We keep track of past nets here.
 | 21:10 | scoates                |           | Foulab                   | 1    |
 | 21:11 | littlesquid            |           | Foulab                   | 1    |
 | 21:13 | Oots                   |           | Villeray                 | 7    |
+| 21:15 | F843B8B1               |           | Foulab                   | 1    |
 | 21:15 | VE2TIK                 | Jonathan  | Foulab                   | 3    |
 | 21:16 | VE2CCK                 | Érik      | Longueuil                | 4    |
 | 18:04 | MESHCOCO               |           | 1986                     | 1    |
@@ -110,7 +111,7 @@ realized the dream of going around the mountain!!
 
 Observed:
 
-- 23 contacts (a record!)
+- 26 contacts (a record!)
 - most distance record (marieville - sté)
 - most vintage / exotic hardware record (Tandy Color 3 with a custom
   expansion card)
