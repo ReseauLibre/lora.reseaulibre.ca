@@ -169,12 +169,6 @@ computer to operate.
       display, NRF52840, GPS, BT 5.0, no wifi, two buttons, no power
       button, NFC, 850mAh battery, temperature/pressure sensor, 55$USD
     - cheap [Aliexpress Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
-    - [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, cheap, - 40℃ ~ 100℃,
-      WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button (hidden under the
-      daughterboard, press both to enter JTAG so you can flash, requires
-      opening the case and removing the daughterboard), 22x23x57mm, 37g,
-      exposed GPIO ports, no battery, 20$. Good candidate for the
-      cheapest kit.
     - Seeedstudio [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, - 40℃ ~
       100℃, WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm,
       37g, exposed GPIO ports, cheap (20$), does not ship with
@@ -398,6 +392,13 @@ The devices here generally do not have a battery.
       NRF5280, might be cheaper [at AliExpress](https://www.aliexpress.com/item/1005011870647672.html)
     - the [RAK19003 base kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) (28$) is more expensive, but less
       power-hungry than the Heltec
+    - [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html):
+      barebones board, tiny, cheap,
+      WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button (hidden under the
+      daughterboard, press both to enter JTAG so you can flash, requires
+      opening the case and removing the daughterboard), - 40℃ ~ 100℃, 22x23x57mm, 37g,
+      exposed GPIO ports, no battery, 20$. Probably the cheapest and
+      smallest kit all around.
 
 !!! example "In testing"
 
