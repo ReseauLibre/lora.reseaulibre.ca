@@ -35,13 +35,11 @@ minute intervals, as LoRa is lossy and some folks might not see all
 messages. If you are on a busy segment, you can also say:
 
 ```
-Reminder: LoRa only handles about one message per second,
-globally. Wait for silence before speaking.
+Reminder: LoRa only handles about one message per second, globally. Wait for silence before speaking.
 ```
 
 ```
-Rappel: LoRa est globalement limité à environ un message
-par seconde. Attendez un silence avant de parler.
+Rappel: LoRa est globalement limité à environ un message par seconde. Attendez un silence avant de parler.
 ```
 
 Respond to every check-in that you receive and include their name and
@@ -74,6 +72,50 @@ the network?](../guides/faq.md#how-many-nodes-in-the-network) FAQ.
 ## Net control log
 
 We keep track of past nets here.
+
+### 2026-08-05
+
+| time  | call sign              | name      | location                 | hops |
+|-------|------------------------|-----------|--------------------------|------|
+| 21:00 | Mad Jap                | Claude    | Marieville               | 3    |
+| 21:02 | VE2FXO                 | Charles   | Ville-Émard              | 2    |
+| 21:02 | Argo / YUL             |           | Hochelaga                | 4    |
+| 21:03 | Smog                   |           | Rosemère                 | 5    |
+| 21:03 | Key-Kesey              | Guillaume | Rosemont                 | 4    |
+| 21:03 | YUL-Ste-Julie-Carlitos | Carlitos  | Ste-Julie                | 3    |
+| 21:04 | MG V4-mini             | Marc      | Terrebonne               | 4    |
+| 21:06 | MmeMinou               | Cat       | Hochelaga                | 4    |
+| 21:07 | YUL-Phil               |           | Foulab                   | 1    |
+| 21:10 | scoates                |           | Foulab                   | 1    |
+| 21:11 | littlesquid            |           | Foulab                   | 1    |
+| 21:13 | Oots                   |           | Villeray                 | 7    |
+| 21:15 | VE2TIK                 | Jonathan  | Foulab                   | 3    |
+| 21:16 | VE2CCK                 | Érik      | Longueuil                | 4    |
+| 18:04 | MESHCOCO               |           | 1986                     | 1    |
+| 21:22 | YUL-AllyCatMC          |           | NDG                      | 2    |
+| 21:23 | dwild                  | Dominic   | Mont-Saint-Hilaire       | 6    |
+| 21:26 | MeshCourte             |           | Villeray                 | 7    |
+| 21:27 | pogo                   |           | St-Émilie-de-l'Énergie   | 6    |
+| 21:28 | VA2MVR                 |           |                          | 6    |
+| 21:29 | Kernel V4              | Boris     | Verdun                   | 3    |
+| 21:30 | VA2DG                  | Daniel    | Saint-Jean-sur-Richelieu | 3    |
+| 21:36 | VA2LLX                 | Luc       | Greenfield Park          | 4    |
+| 21:37 | VE2IES                 |           | Verdun                   | 1    |
+| 21:39 | BCoreHome              |           | St-Lazare                | 4    |
+
+hosted by anarcat, exceptionnally from Foulab during mesh night! last
+time this was attempted, no contact was made, which shows we
+significantly improved coverage south of the mountain, and finally
+realized the dream of going around the mountain!!
+
+Observed:
+
+- 23 contacts (a record!)
+- most distance record (marieville - sté)
+- most vintage / exotic hardware record (Tandy Color 3 with a custom
+  expansion card)
+- [208 nodes in the official map](https://map.meshcore.io/?zoom=7&lat=45.7100&lon=-72.6416)
+- [153 repeaters in MeshMapper](https://yul.meshmapper.net/leaderboard.php)
 
 ### 2026-07-29
 
