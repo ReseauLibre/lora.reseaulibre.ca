@@ -6,6 +6,7 @@ to outline.
 - [`meshcore-cli`](https://github.com/meshcore-dev/meshcore-cli): official CLI interface
 - [`Meshy`](https://codeberg.org/sesivany/meshy): Linux desktop client
 - [`taedryn/mesh-citadel`](https://github.com/taedryn/mesh-citadel): BBS
+- [`Mesh-America/supply-drop-bbs`](https://github.com/Mesh-America/supply-drop-bbs): another BBS, non-free license
 - [`jkingsman/Remote-Terminal-for-MeshCore`](https://github.com/jkingsman/Remote-Terminal-for-MeshCore): remote web interface
 - [`Cyclenerd/meshcore-bot`](https://github.com/Cyclenerd/meshcore-bot)
 - [`agessaman/meshcore-bot`](https://github.com/agessaman/meshcore-bot)
