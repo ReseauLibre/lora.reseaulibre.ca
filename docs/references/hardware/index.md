@@ -252,6 +252,12 @@ to operate.
       expansion port, not supported by stock Meshcore firmware, but
       many alternative firmware, for example: [`MultiMote/meshcore-cardputer-adv`](https://github.com/MultiMote/meshcore-cardputer-adv), [`sosprz/meshcore-cardputer-adv`](https://github.com/sosprz/meshcore-cardputer-adv), [`Stachugit/MeshCore-Cardputer-ADV`](https://github.com/Stachugit/MeshCore-Cardputer-ADV)
 
+!!! warning
+
+    - The [Seeedstudio Sensecap Indicator](https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html)
+      looks like a nice device for home/office setups, but it is [not
+      supported by Meshcore](https://github.com/meshcore-dev/MeshCore/issues/879)
+
 Note that those devices depend on the proprietary Ripple firmware, but
 you can now try the [Wadamesh](https://wadamesh.com/) firmware as well, which is open
 source, and is *much* more intuitive and powerful. Its only downside
@@ -358,7 +364,8 @@ many not have batteries.
 
     - [SenseCAP M2 indoor
       gateway](https://mappingnetwork.ca/products/sensecap-m2-indoor-gateway-lorawan-us915):
-      cheaper alternative to teh WisMesh?
+      likely not supported by Meshcore given the MT7628 and SX1302
+      chipsets, see [this feature request](https://github.com/meshcore-dev/MeshCore/issues/3211)
 
     - [AliExpress 5W Heltec
     kit](https://www.aliexpress.com/item/1005010224488993.html),
