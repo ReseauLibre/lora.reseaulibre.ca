@@ -73,6 +73,27 @@ the network?](../guides/faq.md#how-many-nodes-in-the-network) FAQ.
 
 We keep track of past nets here.
 
+### 2026-06-12
+
+| time  | call sign    | name            | location                | hops |
+|-------|--------------|-----------------|-------------------------|------|
+| 21:00 | VE2CL        | Marc            | La prairie              | 3    |
+| 21:04 | Mad Jap      | Claure          | Marieville              | 5    |
+| 21:04 | anarcat      |                 | petite italie           |      |
+| 21:06 | Va2VQ        | Louis-Philippe  | Beloeil                 | 7    |
+| 2106? |              | JS              | Delson                  |      |
+| 2107  | CECREVIER    | Charles-Etienne | St-Blaise-Sur-Richelieu |      |
+| 2108  | MmeMinou     | Catherine       | Hochelaga               |      |
+| 2109  | Zivior       | Xavier          | Ville-Marie             |      |
+| 2113  | Johnputer    | JP              | Cartierville            |      |
+| 2117  | VA2LLX-C01   | Luce            |                         |      |
+| 21:18 | G Live       | Matthieu        | Petite-Patrie           |      |
+| 21:22 | T MeshPocket |                 | Tetraultville           |      |
+
+hosted by v2fxo, logging by anarcat.
+
+Observed 12 contacts, did not find the time to check maps.
+
 ### 2026-08-05
 
 | time  | call sign              | name      | location                 | hops |
