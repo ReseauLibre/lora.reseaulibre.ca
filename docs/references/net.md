@@ -73,11 +73,30 @@ the network?](../guides/faq.md#how-many-nodes-in-the-network) FAQ.
 
 We keep track of past nets here.
 
+### 2026-08-19
+
+| time  | call sign              | name          | location        | hops |
+|-------|------------------------|---------------|-----------------|------|
+| 21:01 | VE2CL                  | Cédric        | La Prairie      | 7    |
+| 21:01 | Argon                  |               | Montréal        | 3    |
+| 21:01 | YUL-Ste-Julie-Carlitos | Carlitos      | Saint-Julie     | 3    |
+| 21:00 | VE2FXO                 | Charles       | Ville-Émard     | 5    |
+| 21:03 | MV V4-Mini             | Marc          | Terrebonne      | 5    |
+| 21:07 | VE2CCK                 | Éric          | Vieux Longueuil | 2    |
+| 21:11 | VA2DIZ                 | Cat/Mme Minou | Hochelaga       | 2    |
+| 21:15 | JOhnputer              | JP            | Cartierville    | 4    |
+
+Observed:
+
+- 8 contacts
+- [200 nodes in the official map](https://map.meshcore.io/?zoom=7&lat=45.7100&lon=-72.6416)
+- [163 repeaters in MeshMapper](https://yul.meshmapper.net/leaderboard.php)
+
 ### 2026-06-12
 
 | time  | call sign    | name            | location                | hops |
 |-------|--------------|-----------------|-------------------------|------|
-| 21:00 | VE2CL        | Marc            | La prairie              | 3    |
+| 21:00 | VE2CL        | Cédric          | La prairie              | 3    |
 | 21:04 | Mad Jap      | Claure          | Marieville              | 5    |
 | 21:04 | anarcat      |                 | petite italie           |      |
 | 21:06 | Va2VQ        | Louis-Philippe  | Beloeil                 | 7    |
