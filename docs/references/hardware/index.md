@@ -208,21 +208,22 @@ computer to operate.
 
 <!-- !!! failure "Not working" -->
 
-!!! failure
+!!! warning
 
-    - The [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket)
-      looks nice at first glance: a RAK 4631 kit with GNSS, 1.3" OLED, acceleration sensor, power
-      button, 3200mAh battery, USB-C powered. Battery life excellent. 
+     - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket)
+    
+         Looks nice at first glance: a RAK 4631 kit with GNSS, 1.3" OLED, acceleration sensor, power
+         button, 3200mAh battery, USB-C powered. Battery life excellent.
       
-      But it's expensive (100$USD) especially for the build quality:
-      the 3D print is bad, board mounting pins can get broken off (but
-      can be superglued back in) and the power switch is too close to
-      the battery pouch which can perforate the pouch which is a **fire
-      hazard**.
-      
-      **DO NOT BUY THIS DEVICE, FIRE HAZARD**. If you want a RAK4631
-      kit, buy the RAK kit (it's a great chipset!) and get a 3D print
-      elsewhere, for example [our DIY buid](#diy-build-on-top-of-the-rak-kit).
+         But it's expensive (100$USD) especially for the build quality:
+         the 3D print is bad, board mounting pins can get broken off (but
+         can be superglued back in) and the power switch is too close to
+         the battery pouch which can perforate the pouch which is a **fire
+         hazard**.
+          
+          **DO NOT BUY THIS DEVICE, FIRE HAZARD**. If you want a RAK4631
+          kit, buy the RAK kit (it's a great chipset!) and get a 3D print
+          elsewhere, for example [our DIY buid](#diy-build-on-top-of-the-rak-kit).
 
 ## Standalone
 
