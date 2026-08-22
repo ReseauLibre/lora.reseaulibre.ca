@@ -163,8 +163,6 @@ computer to operate.
     SX1262, 4-way joystick, menu button, reset button, power switch, 3 LEDs
     43$USD, [62$ at Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
 
-    - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket): GNSS, 1.3" OLED, acceleration sensor, power
-      button, 3200mAh battery, USB-C powered, 100$
     - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): 200x200 e-ink
       display, NRF52840, GPS, BT 5.0, no wifi, two buttons, no power
       button, NFC, 850mAh battery, temperature/pressure sensor, 55$USD
@@ -209,6 +207,22 @@ computer to operate.
       nRF52840/SX1262, 60g, 2500mAh battery, GPS, 1.3-inch TFT screen, [some open designs](https://github.com/quhyhao/GAT562)
 
 <!-- !!! failure "Not working" -->
+
+!!! failure
+
+    - The [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket)
+      looks nice at first glance: a RAK 4631 kit with GNSS, 1.3" OLED, acceleration sensor, power
+      button, 3200mAh battery, USB-C powered. Battery life excellent. 
+      
+      But it's expensive (100$USD) especially for the build quality:
+      the 3D print is bad, board mounting pins can get broken off (but
+      can be superglued back in) and the power switch is too close to
+      the battery pouch which can perforate the pouch which is a **fire
+      hazard**.
+      
+      **DO NOT BUY THIS DEVICE, FIRE HAZARD**. If you want a RAK4631
+      kit, buy the RAK kit (it's a great chipset!) and get a 3D print
+      elsewhere, for example [our DIY buid](#diy-build-on-top-of-the-rak-kit).
 
 ## Standalone
 
