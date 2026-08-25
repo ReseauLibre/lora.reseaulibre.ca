@@ -20,15 +20,15 @@ from 19h to 21h.
     address is 3150 Jean-Brillant ([Google Maps link](https://maps.app.goo.gl/68PGSCCXcJUjXEAFA)).
 
 We invite everyone who currently operates[^1] a relay in the [greater
-Montreal area](https://yul.meshmapper.net/), whether it is Meshcore, Meshtastic, or Reticulum, to
+Montreal area](https://yul.meshmapper.net/), whether it is MeshCore, Meshtastic, or Reticulum, to
 join us to talk about how we organise.
 
 [^1]: For now, we consider a "relay operator" to be a person who is
     currently responsible for the operation of a device which repeats
     signal for other devices. This includes essentially every
-    Meshtastic device out there, Meshcore repeaters, and Reticulum
+    Meshtastic device out there, MeshCore repeaters, and Reticulum
     transport nodes. But intent matters: we're happy to welcome you if
-    you haven't setup your Meshcore repeater or Reticulum transport node
+    you haven't setup your MeshCore repeater or Reticulum transport node
     just yet but are almost there, but we're less interested if you're
     "just" experimenting with Meshtastic to connect devices in your
     backyard. But defining this is exactly why we need to have that
@@ -45,7 +45,7 @@ We have had a few informal meetups at Mesh night (and there is
 [Mesh Day](https://calendrier.constellationmtl.net/event/matc-presents-jour-de-mesh-day-2) coming up) but this event is different.
 
 We have lots of people excited about the mesh, setting up Meshtastic,
-Meshcore, Reticulum devices all over the city, yet we barely know who
+MeshCore, Reticulum devices all over the city, yet we barely know who
 to talk with when there's a problem.
 
 We have communication channels all over the place: Matrix, Discord,
@@ -75,7 +75,7 @@ create a regular space where those kind of discussions can happen.
 6. **Platform choices**:
     - communications: Matrix, Discord, Telegram, Facebook, etc?
     - web:  `montrealmesh.ca`, `lora.reseaulibre.ca`, `meshcore.ca`?
-    - LoRa: Meshtastic, Meshcore, Reticulum?
+    - LoRa: Meshtastic, MeshCore, Reticulum?
 7. **Next meeting**
 
 This first meeting is held in person, to solidify the physicality of

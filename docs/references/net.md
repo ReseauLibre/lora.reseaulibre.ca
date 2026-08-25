@@ -215,7 +215,7 @@ Announces:
 
 - Thank you to VE2CL to have covered for the net during my vacations,
   congratulations on the (previous) 20 check-in record
-- Meshcore [needs your help](https://blog.meshcore.io/2026/07/04/help-us-save-meshcore): the trademark issue is going legal,
+- MeshCore [needs your help](https://blog.meshcore.io/2026/07/04/help-us-save-meshcore): the trademark issue is going legal,
   and they are fundraiding.
 - New [Wadamesh firmware](https://wadamesh.com/) standalone companions like the Lilygo
   T-Deck, T-Lora or the Heltec v4 expansion kit
@@ -307,8 +307,8 @@ Largest net so far:
 
 Operated from `anarcat3`, a WisMesh pocket companion operated from the
 Meshy app, and `anarcat1`, a T-Echo companion operated from the
-Meshcore Open app, connected to YUL-Little-Italy, a SenseCAP P1. The
-original hop counts published here were from the Meshcore open app
+MeshCore Open app, connected to YUL-Little-Italy, a SenseCAP P1. The
+original hop counts published here were from the MeshCore open app
 which has a [bug displaying multi-byte
 messages](https://github.com/zjs81/meshcore-open/issues/367), and have
 been removed.
@@ -345,7 +345,7 @@ This net broke essentially all previous records:
 
 Last Meshtastic net. 
 
-First Meshcore net.
+First MeshCore net.
 
 No contact on either.
 

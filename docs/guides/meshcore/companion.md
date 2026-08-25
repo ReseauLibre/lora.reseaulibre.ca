@@ -1,6 +1,6 @@
 # Companion guide
 
-This guide should help you configure a Meshcore "companion", which you
+This guide should help you configure a MeshCore "companion", which you
 need to communicate with other people on the mesh.
 
 Companions *must* be able to talk with a repeater connected to the
@@ -14,7 +14,7 @@ Pick a device in [our hardware review notes](../../references/hardware/index.md#
 hardware list](https://meshtastic.org/docs/hardware/devices/)[^1].
 
 [^1]: Meshtastic-supported device are *often* (but not always!) also
-      working under Meshcore.
+      working under MeshCore.
 
 It's cheap! Expect to pay 50$CAD for a starter kit or 100$CAD for a
 good companion.
@@ -31,7 +31,7 @@ good companion.
 <!-- update both at once -->
 
 Now you own a [LoRa](https://en.wikipedia.org/wiki/LoRa) transceiver, congratulations! The next step is
-to make sure it runs Meshcore by installing firmware on it, and that
+to make sure it runs MeshCore by installing firmware on it, and that
 you can talk to the device, typically by installing an app on your
 phone.
 
@@ -56,7 +56,7 @@ connecting to the following website.
 Your web browser must support the [Web Serial API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility), which includes
 Chrome (and derivatives) and Firefox 151 or later.
 
-You *may* skip this step if it comes flashed with Meshcore already.
+You *may* skip this step if it comes flashed with MeshCore already.
 
 Connect your device to your computer using a USB cable. Note that for
 some USB-C cables, you might need to flip the cable over for the
@@ -84,7 +84,7 @@ work. Here are examples:
 
 !!! bug "Proprietary software warning"
 
-    While most Meshcore firmware is free software (the
+    While most MeshCore firmware is free software (the
     [`meshcore-dev/MeshCore`
     repository](https://github.com/meshcore-dev/MeshCore), the [T-Deck
     firmware is
@@ -102,7 +102,7 @@ During first boot, the device will display the message:
 If you're flashing an already configured device, you should backup
 before flashing it.
 
-On the Meshcore you want to:
+On the MeshCore you want to:
 
  1. go into Settings (the "gear" icon)
  2. go into `Export Config`
@@ -110,7 +110,7 @@ On the Meshcore you want to:
  4. hit the check mark
  5. save the file somewhere safe
 
-Normally, flashing a Meshcore device with a newer version should be
+Normally, flashing a MeshCore device with a newer version should be
 safe and your settings should be kept, but it's always good to backup
 your configuration anyways, and this can be used to copy your
 configuration to another device as well.
@@ -133,7 +133,7 @@ a pretty good Linux desktop app called [Meshy](https://codeberg.org/sesivany/mes
 
 !!! bug "Proprietary software warning"
 
-    The official Meshcore app is [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) that do not
+    The official MeshCore app is [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) that do not
     publish their source code and require a subscription or a 10 second
     wait time for certain features.
     
@@ -185,7 +185,7 @@ preset, but you should also pick a display name.
 
 !!! warning
 
-    Some Meshcore configurations exposes your location by default on devices which have
+    Some MeshCore configurations exposes your location by default on devices which have
     a GPS device! To work around this problem, you can disable the GPS
     or reduce the [coordinates
     precision](https://wiki.openstreetmap.org/wiki/Precision_of_coordinates),

@@ -5,8 +5,8 @@
     As of [April
     2026](../news/posts/2026-05-02-meshtastic-deprecated.md),
     Meshtastic is deprecated in the Montreal mesh. We are now focusing
-    on building Meshcore infrastructure, see our [Getting started with
-    Meshcore](meshcore/index.md) guide instead and [Why not
+    on building MeshCore infrastructure, see our [Getting started with
+    MeshCore](meshcore/index.md) guide instead and [Why not
     Meshtastic?](faq.md#why-not-meshtastic)
 
 Getting started with running a Meshtastic relay is easy. You need to
@@ -27,7 +27,7 @@ few kilometres without even setting up a special antenna or location.
     routing in Meshtastic. Every message from a device includes that
     address which is unique and cannot be changed, see [this feature
     request][] for details. This is a bit like [IMEI identifiers on
-    phones][]. Meshcore and Reticulum do not suffer from this issue.
+    phones][]. MeshCore and Reticulum do not suffer from this issue.
 
 [this feature request]: https://github.com/meshtastic/firmware/discussions/5007
 [IMEI identifiers on phones]: https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity

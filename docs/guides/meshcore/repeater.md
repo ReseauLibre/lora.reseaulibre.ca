@@ -1,6 +1,6 @@
 # Repeater guide
 
-This guide should help you configure a Meshcore "repeater", which
+This guide should help you configure a MeshCore "repeater", which
 makes the mesh grow. You might not need a repeater, look at the
 [coverage map](../../references/maps.md) to see if there's coverage in your area.
 
@@ -15,7 +15,7 @@ Pick a device in [our hardware review notes](../../references/hardware/index.md)
 hardware list](https://meshtastic.org/docs/hardware/devices/)[^1].
 
 [^1]: Meshtastic-supported device are *often* (but not always!) also
-      working under Meshcore.
+      working under MeshCore.
 
 It's cheap! Expect to pay 50$CAD for a development kit, 150$CAD for a
 decent solar relay.
@@ -32,7 +32,7 @@ decent solar relay.
 <!-- update both at once -->
 
 Now you own a [LoRa](https://en.wikipedia.org/wiki/LoRa) transceiver, congratulations! The next step is
-to make sure it runs Meshcore by installing firmware on it, and that
+to make sure it runs MeshCore by installing firmware on it, and that
 you can talk to the device, typically by installing an app on your
 phone.
 
@@ -49,7 +49,7 @@ connecting to the following website.
 Your web browser must support the [Web Serial API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility), which includes
 Chrome (and derivatives) and Firefox 151 or later.
 
-You *may* skip this step if it comes flashed with Meshcore already.
+You *may* skip this step if it comes flashed with MeshCore already.
 
 Connect your device to your computer using a USB cable. Note that for
 some USB-C cables, you might need to flip the cable over for the
@@ -169,7 +169,7 @@ can be performed over Bluetooth later.
 
 !!! warning
 
-    Some Meshcore configurations exposes your location by default on devices which have
+    Some MeshCore configurations exposes your location by default on devices which have
     a GPS device! To work around this problem, you can disable the GPS
     or reduce the [coordinates
     precision](https://wiki.openstreetmap.org/wiki/Precision_of_coordinates),

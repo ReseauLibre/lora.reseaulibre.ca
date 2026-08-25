@@ -1,6 +1,6 @@
 # Channel configuration
 
-If you want to go a little further, you should know that Meshcore
+If you want to go a little further, you should know that MeshCore
 supports the concept of "channels" which are essentially different
 communities separated by their own private keys.
 

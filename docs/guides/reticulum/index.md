@@ -1,7 +1,7 @@
 # Getting starting with Reticulum
 
 [Reticulum](https://reticulum.community/) is an advanced mesh networking protocol that is more
-secure, flexible, powerful, but also less easy to use than Meshcore
+secure, flexible, powerful, but also less easy to use than MeshCore
 and Meshtastic.
 
 This page aims at providing a guide to get started with Reticulum. It
@@ -13,23 +13,23 @@ If you know a little where you're going, start at [RNS](rns.md).
 
     This is an **advanced** guide and assumes more prior knowledge
     than our other guides normally do. Reticulum is a powerful, but
-    much more complex stack than Meshcore or Meshtastic, so this guide
+    much more complex stack than MeshCore or Meshtastic, so this guide
     is harder to follow.
     
     It's also incomplete. It is represents notes of our successes on
     various aspects of our research and development on Reticulum.
     
     Most people doing mesh networking in Montreal are currently on
-    Meshcore, so you should probably see our [Getting started with
-    Meshcore](meshcore.md) guide instead and [Why not
+    MeshCore, so you should probably see our [Getting started with
+    MeshCore](meshcore.md) guide instead and [Why not
     Reticulum?](../faq.md#why-not-reticulum).
 
 ## Picking the right tool
 
 There are various ways to get started with Reticulum. Contrarily to
-Meshcore and Meshtastic, Reticulum supports multiple physical medium
+MeshCore and Meshtastic, Reticulum supports multiple physical medium
 including LoRa, of course, but also HF radios, Bluetooth, or
-TCP/IP. We have even ran Reticulum over Meshcore and Meshtastic!
+TCP/IP. We have even ran Reticulum over MeshCore and Meshtastic!
 
 This guide covers the following tools:
 
@@ -82,7 +82,7 @@ Reticulum, as it can get confusing quickly.
 - **[Interface](https://markqvist.github.io/Reticulum/manual/interfaces.html)**: a specific back end for Reticulum, for example LoRa, WiFi,
   TCP, Bluetooth[^1], ham radio
 - **[Transport](https://markqvist.github.io/Reticulum/manual/understanding.html#reticulum-transport)**: a node that relays traffic for other. A "transport node",
-  for example, is roughly equivalent to a "repeater" in Meshcore. For
+  for example, is roughly equivalent to a "repeater" in MeshCore. For
   LoRa, typically comprises an embedded device (e.g. a Heltec) running
   RNode (below) and a computer (e.g. a Raspberry Pi) running RNS or
   some other application. Without a "transport node", devices can
@@ -90,21 +90,21 @@ Reticulum, as it can get confusing quickly.
   multiple hops.
 - **[RNode](https://unsigned.io/rnode/)**: the stock Reticulum firmware that allows you to talk
   with other peers over LoRa, and that you flash on embedded devices
-  (e.g. a Heltec). Different than Meshcore or Meshtastic firmware in
+  (e.g. a Heltec). Different than MeshCore or Meshtastic firmware in
   that it does not work standalone; it requires software on an
   attached computer to send and receive messages or route
   traffic. Think of it like an old-school [modem](https://en.wikipedia.org/wiki/Modem).
 - **[microReticulum](https://github.com/attermann/microReticulum_Firmware)**: a re-implementation of the Reticulum stack designed
   to fit in embedded devices (e.g. a Heltec). Essentially a RNode that
-  can act also as a transport node.[^2] Equivalent to a Meshcore repeater.
+  can act also as a transport node.[^2] Equivalent to a MeshCore repeater.
 - **[announcement](https://markqvist.github.io/Reticulum/manual/understanding.html#public-key-announcements)**: a message sent over an interface that is used to
   establish routing with transport nodes. roughly equivalent to an
-  "advert" in Meshcore. Here is a [good video explaining how announces
+  "advert" in MeshCore. Here is a [good video explaining how announces
   work](https://www.youtube.com/watch?app=desktop&v=PFRS_Fqk2Go) and the [propagation simulator](https://rns.moscow/announce-sim.html) from Moscow
 - **[identity](https://markqvist.github.io/Reticulum/manual/understanding.html#understanding-identities)**: an address in the Reticulum routing system. Roughly
-  equivalent to the "public key" in Meshcore or the MAC address in
+  equivalent to the "public key" in MeshCore or the MAC address in
   Meshtastic, except that the full identity is used for routing
-  (whereas only a few bytes are used in Meshcore).
+  (whereas only a few bytes are used in MeshCore).
 - [**LXMF**](https://github.com/markqvist/lxmf): Lightweight Extensible Message Format. The reference chat
   implementation built on top of Reticulum. Does not support groups,
   only point to point messaging. Think of it like Signal if Reticulum
@@ -118,7 +118,7 @@ Reticulum, as it can get confusing quickly.
 
 [^1]: note that here, Bluetooth is used for communicating between
   devices, in a mesh network, not just for an application to control a
-  device like we do in Meshcore and Meshtastic, which do *not* support
+  device like we do in MeshCore and Meshtastic, which do *not* support
   running a mesh over Bluetooth like Reticulum does.
 
 [^2]: [microReticulum](https://github.com/attermann/microReticulum) is technically just a C++ re-implementation

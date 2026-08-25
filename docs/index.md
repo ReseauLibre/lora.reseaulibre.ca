@@ -26,7 +26,7 @@
     ---
 
     We are currently focused on [LoRa](https://en.wikipedia.org/wiki/LoRa) protocols and especially
-    [Meshcore](https://meshcore.io/), [Reticulum](https://reticulum.network/), [Meshtastic](https://meshtastic.org/) and [amateur
+    [MeshCore](https://meshcore.io/), [Reticulum](https://reticulum.network/), [Meshtastic](https://meshtastic.org/) and [amateur
     radio](https://en.wikipedia.org/wiki/Amateur_radio).
 
 -   :octicons-sun-16: **Why**
@@ -43,7 +43,7 @@
     ---
     
     Follow the [:octicons-arrow-right-24: Getting started with
-    Meshcore guide](guides/meshcore/companion.md) and join us, or consult
+    MeshCore guide](guides/meshcore/companion.md) and join us, or consult
     our [growing reference documentation](references/index.md).
 
 -   :octicons-question-16: **Other questions?**

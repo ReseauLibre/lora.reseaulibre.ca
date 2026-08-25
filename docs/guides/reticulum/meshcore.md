@@ -1,25 +1,25 @@
-# Tunneling Reticulum over Meshcore
+# Tunneling Reticulum over MeshCore
 
 Amazingly, because Reticulum can route over essentially anything, you
-can route Reticulum traffic over Meshcore meshes.
+can route Reticulum traffic over MeshCore meshes.
 
 !!! example "Advanced users only!"
 
     This is a particularly exotic Reticulum configuration. 
     
-    We are not sure this is a good idea. It might flood the Meshcore
+    We are not sure this is a good idea. It might flood the MeshCore
     mesh, for example. So far, there seems to be only moderate (2x)
     amplification in traffic so we're continuing to experiment. but we
     do not recommend people adopt this, generally.
     
-    Meshcore people typically frown upon Meshcore being bridged across
+    MeshCore people typically frown upon MeshCore being bridged across
     regions or with other networks, and might consider such use to be hostile.
 
     Finally, if you're just getting started with Reticulum, this one
     will be particularly confusing, just skip this section.
 
 During the May 2026 mesh night at Foulab, we have successfully routed
-Reticulum messages over a local LoRa link with two Meshcore companions
+Reticulum messages over a local LoRa link with two MeshCore companions
 connected over serial.
 
 We are using [this fork of the `RNS_Over_MeshCore` interface](https://github.com/slack-t/RNS_Over_MeshCore). To
@@ -104,14 +104,14 @@ clients, using a common, public channel.
     The above instructions are correct and should work, but you will
     fail if you copy directly from upstream.
 
-In the above configuration, we connect RNS to a Meshcore companion
+In the above configuration, we connect RNS to a MeshCore companion
 over "serial" (USB) and specify the given port. It *may* be
 `/dev/ttyACM0` as well on some devices. It might be possible to make
 this work with Bluetooth as well, but we found serial to be much
 easier.
 
 For this to work, you need to have a "companion" flashed with
-Meshcore. You can follow our [Meshcore flashing guide](../meshcore/companion.md#flash-the-firmware-on-the-device), just make
+MeshCore. You can follow our [MeshCore flashing guide](../meshcore/companion.md#flash-the-firmware-on-the-device), just make
 sure you pick "serial" and not "Bluetooth".
 
 !!! bug
@@ -138,7 +138,7 @@ and so on.
 
 ## Other references
 
-Two conversations about doing the reverse, that is routing Meshcore
+Two conversations about doing the reverse, that is routing MeshCore
 over Reticulum:
 
 - [RFC: Reticulum Network Stack as a Decentralized Backhaul Layer for

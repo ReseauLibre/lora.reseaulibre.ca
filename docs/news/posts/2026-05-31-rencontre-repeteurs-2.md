@@ -25,15 +25,15 @@ participation, on Jitsi:
 But we prefer if you could show up in person.
 
 We invite everyone who currently operates[^1] a relay in the [greater
-Montreal area](https://yul.meshmapper.net/), whether it is Meshcore, Meshtastic, or Reticulum, to
+Montreal area](https://yul.meshmapper.net/), whether it is MeshCore, Meshtastic, or Reticulum, to
 join us to talk about how we organise.
 
 [^1]: For now, we consider a "relay operator" to be a person who is
     currently responsible for the operation of a device which repeats
     signal for other devices. This includes essentially every
-    Meshtastic device out there, Meshcore repeaters, and Reticulum
+    Meshtastic device out there, MeshCore repeaters, and Reticulum
     transport nodes. But intent matters: we're happy to welcome you if
-    you haven't setup your Meshcore repeater or Reticulum transport node
+    you haven't setup your MeshCore repeater or Reticulum transport node
     just yet but are almost there, but we're less interested if you're
     "just" experimenting with Meshtastic to connect devices in your
     backyard.
@@ -65,9 +65,9 @@ Réseau Libre is a project that has existed for more than a decade
 (2010), before LoRa (2015), Reticulum ([2018](https://unsigned.io/articles/2018_06_30_15-kilometre-ssh-link-with-rnode.html)), Meshtastic ([2020](https://en.wikipedia.org/wiki/Meshtastic)) and
 MeshCore ([2024](https://en.wikipedia.org/wiki/MeshCore)). This project existed, and still exists with a
 certain baggage and [history](../../history.md) that is probably not well known by a
-large number of people currently contributing to Meshcore.
+large number of people currently contributing to MeshCore.
 
-Réseau Libre is not Meshcore Canada, Québec, or even Montréal. The
+Réseau Libre is not MeshCore Canada, Québec, or even Montréal. The
 project never had the pretense to be the *sole* mesh project in
 Montreal, even. It is an experimentation and research project,
 particularly associated with free software and social justice.
@@ -94,7 +94,7 @@ common project, a community.
     
      1. proposal: Réseau Libre continue on Matrix
      2. proposal: Réseau Libre continue on `lora.reseaulibre.ca`
-     3. proposal: Réseau Libre continue on Meshcore, researches
+     3. proposal: Réseau Libre continue on MeshCore, researches
         Reticulum
      4. proposal: Réseau Libre organises by in-person meetings,
         exceptionally online if necessary, using free and open tools

@@ -1,6 +1,6 @@
 # Software index
 
-A collection of Meshcore-related software we find interesting enough
+A collection of MeshCore-related software we find interesting enough
 to outline.
 
 - [`meshcore-cli`](https://github.com/meshcore-dev/meshcore-cli): official CLI interface
@@ -15,7 +15,7 @@ to outline.
 - [`rupertdev/meshcore-prometheus-exporter`](https://github.com/rupertdev/meshcore-prometheus-exporter): same, Python
 - [`pyMC-dev/pyMC_Repeater`](https://github.com/pyMC-dev/pyMC_Repeater): Python-based repeaters
 - [`meshcorrode`](https://github.com/Fingel/meshcorrode/): partial Rust re-implementation
-- [Meshcore Ninja](https://meshcore.ninja/): directory of meshcore resources
+- [MeshCore Ninja](https://meshcore.ninja/): directory of MeshCore resources
 
 # Other
 

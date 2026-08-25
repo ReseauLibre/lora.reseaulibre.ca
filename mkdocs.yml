@@ -14,7 +14,7 @@ nav:
     - Contact: contact.md
     - FAQ: guides/faq.md
   - Guides:
-    - Meshcore:
+    - MeshCore:
       - guides/meshcore/index.md
       - guides/meshcore/companion.md
       - guides/meshcore/channels.md

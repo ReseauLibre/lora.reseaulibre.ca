@@ -73,7 +73,7 @@ it fails (and let us know):
 
     Leave the other settings untouched.
 
- 3. download the right firmware for your device in the [Meshcore web
+ 3. download the right firmware for your device in the [MeshCore web
     flasher interface](https://flasher.meshcore.io), make sure you pick the `.zip` file!
 
  4. connect to the device command-line, which should be accessible
@@ -106,7 +106,7 @@ it fails (and let us know):
 If you don't own an Android phone or want to avoid proprietary
 software, or generally are not a fan of installing apps and upgrading
 software with your thumbs, you can use a Linux computer (and, in fact,
-a small device like a Raspberri Pi) to (remotely!) upgrade a device
+a small device like a Raspberry Pi) to (remotely!) upgrade a device
 "over the air" (OTA).
 
 This guide is based on the code written by the Slovakian crew who gave
@@ -135,7 +135,7 @@ Start at step 2 if you already have the application installed.
         cd nrf_dfu_py
         python dfu_gui.py
 
- 3. download the right firmware for your device in the [Meshcore web
+ 3. download the right firmware for your device in the [MeshCore web
     flasher interface](https://flasher.meshcore.io), make sure you pick the `.zip` file!
 
  4. connect to the device command-line, which should be accessible
