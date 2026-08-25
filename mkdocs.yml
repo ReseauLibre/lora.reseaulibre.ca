@@ -19,6 +19,7 @@ nav:
       - guides/meshcore/companion.md
       - guides/meshcore/channels.md
       - guides/meshcore/repeater.md
+      - guides/meshcore/upgrades.md
     - Reticulum:
       - guides/reticulum/index.md
       - guides/reticulum/rns.md

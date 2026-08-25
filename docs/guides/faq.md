@@ -97,10 +97,10 @@ Links used to extract those numbers:
 
 Typically, devices can be safely upgraded by flashing them with the
 new version. For Meshcore, follow the [Flash the firmware on the
-device](meshcore/companion.md#flash-the-firmware-on-the-device) instructions and, if you have the device properly
-configured, the [OTA upgrades](meshcore/repeater.md#ota-upgrades).
+device](meshcore/companion.md#flash-the-firmware-on-the-device) instructions if you can connect the device with a USB cable
+or see the [upgrades instructions](meshcore/upgrades.md) for more advanced instructions.
 
-To be on the safer side, it's always a good time to perform a backup.
+To be on the safer side, it's always a good time to [perform a backup](companion.md#backing-up-before-flashing)..
 
 Just make sure to avoid doing an "erase"!
 
