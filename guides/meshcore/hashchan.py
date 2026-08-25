@@ -6,7 +6,7 @@ import sys
 
 
 def compute_mc_hash(name: str) -> bytes:
-    """compute the hash of a Meshcore channel
+    """compute the hash of a MeshCore channel
 
     A meshcore channel hash is based on the SHA256 checksum digest of
     the UTF-8 encoded byte string of the channel name, truncated to 16

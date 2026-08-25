@@ -36,7 +36,7 @@
     
     
       
-        <title>Tunneling Reticulum over Meshcore - Réseau Libre</title>
+        <title>Tunneling Reticulum over MeshCore - Réseau Libre</title>
       
     
     
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tunneling Reticulum over Meshcore
+              Tunneling Reticulum over MeshCore
             
           </span>
         </div>
@@ -702,7 +702,7 @@
   <span class="md-ellipsis">
     
   
-    Meshcore
+    MeshCore
   
 
     
@@ -724,7 +724,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Meshcore
+    MeshCore
   
 
           </label>
@@ -1006,7 +1006,7 @@
   <span class="md-ellipsis">
     
   
-    Tunneling Reticulum over Meshcore
+    Tunneling Reticulum over MeshCore
   
 
     
@@ -1024,7 +1024,7 @@
   <span class="md-ellipsis">
     
   
-    Tunneling Reticulum over Meshcore
+    Tunneling Reticulum over MeshCore
   
 
     
@@ -1207,6 +1207,8 @@
       
         
           
+        
+      
         
       
         
@@ -1692,6 +1694,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../references/log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Net control log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../references/other/" class="md-nav__link">
         
   
@@ -1839,23 +1869,23 @@
   
 
 
-<h1 id="tunneling-reticulum-over-meshcore">Tunneling Reticulum over Meshcore<a class="headerlink" href="#tunneling-reticulum-over-meshcore" title="Permanent link">&para;</a></h1>
+<h1 id="tunneling-reticulum-over-meshcore">Tunneling Reticulum over MeshCore<a class="headerlink" href="#tunneling-reticulum-over-meshcore" title="Permanent link">&para;</a></h1>
 <p>Amazingly, because Reticulum can route over essentially anything, you
-can route Reticulum traffic over Meshcore meshes.</p>
+can route Reticulum traffic over MeshCore meshes.</p>
 <div class="admonition example">
 <p class="admonition-title">Advanced users only!</p>
 <p>This is a particularly exotic Reticulum configuration. </p>
-<p>We are not sure this is a good idea. It might flood the Meshcore
+<p>We are not sure this is a good idea. It might flood the MeshCore
 mesh, for example. So far, there seems to be only moderate (2x)
 amplification in traffic so we're continuing to experiment. but we
 do not recommend people adopt this, generally.</p>
-<p>Meshcore people typically frown upon Meshcore being bridged across
+<p>MeshCore people typically frown upon MeshCore being bridged across
 regions or with other networks, and might consider such use to be hostile.</p>
 <p>Finally, if you're just getting started with Reticulum, this one
 will be particularly confusing, just skip this section.</p>
 </div>
 <p>During the May 2026 mesh night at Foulab, we have successfully routed
-Reticulum messages over a local LoRa link with two Meshcore companions
+Reticulum messages over a local LoRa link with two MeshCore companions
 connected over serial.</p>
 <p>We are using <a href="https://github.com/slack-t/RNS_Over_MeshCore">this fork of the <code>RNS_Over_MeshCore</code> interface</a>. To
 install it, we clone it and deploy the file in place:</p>
@@ -1929,13 +1959,13 @@ change the type to:</p>
 <p>The above instructions are correct and should work, but you will
 fail if you copy directly from upstream.</p>
 </div>
-<p>In the above configuration, we connect RNS to a Meshcore companion
+<p>In the above configuration, we connect RNS to a MeshCore companion
 over "serial" (USB) and specify the given port. It <em>may</em> be
 <code>/dev/ttyACM0</code> as well on some devices. It might be possible to make
 this work with Bluetooth as well, but we found serial to be much
 easier.</p>
 <p>For this to work, you need to have a "companion" flashed with
-Meshcore. You can follow our <a href="../../meshcore/companion/#flash-the-firmware-on-the-device">Meshcore flashing guide</a>, just make
+MeshCore. You can follow our <a href="../../meshcore/companion/#flash-the-firmware-on-the-device">MeshCore flashing guide</a>, just make
 sure you pick "serial" and not "Bluetooth".</p>
 <div class="admonition bug">
 <p class="admonition-title">Bug</p>
@@ -1956,7 +1986,7 @@ sys.path.insert(0, &quot;/home/anarcat/.venvs/reticulum/lib/python3.13/site-pack
 an announce (see below), see each other, and exchange text messages
 and so on.</p>
 <h2 id="other-references">Other references<a class="headerlink" href="#other-references" title="Permanent link">&para;</a></h2>
-<p>Two conversations about doing the reverse, that is routing Meshcore
+<p>Two conversations about doing the reverse, that is routing MeshCore
 over Reticulum:</p>
 <ul>
 <li><a href="https://github.com/meshcore-dev/MeshCore/discussions/1736">RFC: Reticulum Network Stack as a Decentralized Backhaul Layer for
@@ -1986,7 +2016,7 @@ over Reticulum:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 20, 2026 03:28:45 UTC">2026-06-20 03:28:45</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="August 25, 2026 01:56:50 UTC">2026-08-25 01:56:50</span>
   </span>
 
     
