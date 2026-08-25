@@ -100,7 +100,7 @@ new version. For MeshCore, follow the [Flash the firmware on the
 device](meshcore/companion.md#flash-the-firmware-on-the-device) instructions if you can connect the device with a USB cable
 or see the [upgrades instructions](meshcore/upgrades.md) for more advanced instructions.
 
-To be on the safer side, it's always a good time to [perform a backup](companion.md#backing-up-before-flashing)..
+To be on the safer side, it's always a good time to [perform a backup](meshcore/companion.md#backing-up-before-flashing).
 
 Just make sure to avoid doing an "erase"!
 
