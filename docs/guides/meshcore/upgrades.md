@@ -161,6 +161,10 @@ Start at step 2 if you already have the application installed.
 
  8. click `START UPDATE`
 
+The update takes about a minute and will look like this:
+
+![Working Linux desktop OTA upgrade screenshot](Screenshot_20260824_210934-nrf_dfu_py.png)
+
 ### Linux (command line)
 
 You can also do this from the command line. The command is simple and
