@@ -1,4 +1,4 @@
-personal_ws-1.1 en 217 
+personal_ws-1.1 en 220 
 AEAD
 AES
 APRS
@@ -97,10 +97,10 @@ Maubot
 McGill
 Meowlnir
 Mercier
-MeshMapper
-MeshOS
 MeshCore
 MeshCore's
+MeshMapper
+MeshOS
 Meshmapper
 Meshsense
 Meshtastic
@@ -137,6 +137,7 @@ Reddit
 Riseup
 Rivière
 RobotShop
+Rokland
 Rosemont
 Réseau
 SHA
@@ -171,6 +172,7 @@ WIP
 WebRTC
 Webhooks
 Whatsapp
+Wio
 WisBlock
 WisMesh
 XIAO
@@ -181,6 +183,7 @@ YYYY
 Yagi
 Zensical
 anarcat
+anarcat's
 backhaul
 collinear
 cooldown

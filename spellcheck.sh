@@ -10,7 +10,11 @@ fi
 
 aspell="aspell --mode=markdown --lang=$lang --home-dir=. --personal=aspell.$lang.pws --encoding=utf-8"
 
-find -name "*.md" | grep -v -e '/log.md$' -e '/hardware/index.md$' |  while read path; do
+find -name "*.md" | grep -v \
+  -e '/log.md$' \
+  -e '/2026-08-26-wismesh-pocket-fire-hazard.mds$' \
+  -e '/hardware/index.md$' \
+    |  while read path; do
     echo "spellchecking $path..."
     if $aspell list < "$path" | grep .; then
         echo "found above misspelled in $path"

@@ -1,14 +1,14 @@
 ---
 date:
   created: 2026-08-26
-title: Fire hazard on the Wismesh Pocket
+title: Fire hazard on the WisMesh Pocket
 categories:
   - announcements
 ---
 
 <figure markdown="span">
 ![link text](PXL_20260822_030912186.MP.jpg){ width=250 }
-  <figcaption>A Wismesh Pocket V2</figcaption>
+  <figcaption>A WisMesh Pocket V2</figcaption>
 </figure>
 
 <figure class="inline end" markdown="span">
@@ -16,14 +16,14 @@ categories:
   <figcaption>Perforated battery pouch with a bulge</figcaption>
 </figure>
 
-This is a public service annoncement concerning the [WisMesh Pocket
+This is a public service announcement concerning the [WisMesh Pocket
 V2](https://store.rakwireless.com/products/wismesh-pocket) as sold by RAK Wireless. We have on-hands experience with two
 devices that exhibit premature wear and tear of the battery pouch due
 to what seems to be a design flaw. 
 
 !!! warning
 
-    We have reasons to believe Wismesh Pocket V2 devices present a
+    We have reasons to believe WisMesh Pocket V2 devices present a
     fire hazard and need to be immediately inspected for internal damage.
 
 <!-- more -->
@@ -59,7 +59,7 @@ you find any anomaly.
 
 <figure class="inline end" markdown="span">
 ![link text](PXL_20260822_023107609.jpg)
-  <figcaption>An opened Wismesh Pocket with a small scratch (on the right) mirroring
+  <figcaption>An opened WisMesh Pocket with a small scratch (on the right) mirroring
   the location of the power switch (on the left)</figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ switch scratches the pouch which can puncture. In anarcat's case, it
 only showed some small scratches, but for Sean, the battery pouch was
 actually perforated and inflated.
 
-We feel this is a serious flaw in the Wismesh Pocket V2 design. The
+We feel this is a serious flaw in the WisMesh Pocket V2 design. The
 case should be a little bit thicker to leave room for the battery and
 the power switch.
 
@@ -90,13 +90,13 @@ and they sent a replacement device.
 Then we contacted RAK Wireless with the following question while
 writing this (on 2026-08-26):
 
-> Subject: fire hazard in wismesh pocket v2
+> Subject: fire hazard in WisMesh pocket v2
 > 
-> I have concerns with the design of the wismesh pocket v2. i believe the power switch scratches against the battery pouch which can lead to being punctured and, ultimately, fire or explosion.
+> I have concerns with the design of the WisMesh pocket v2. i believe the power switch scratches against the battery pouch which can lead to being punctured and, ultimately, fire or explosion.
 > 
 > a colleague of mine already had a device returned with Rokland, but i believe the problem is not a simple case of replacing a device, but a fundamental design flaw.
 > 
-> i am about to publish an article about this for the local montreal mesh community.
+> i am about to publish an article about this for the local Montreal mesh community.
 > 
 > are you aware of this design flaw? are there plans to do a recall of those devices?
 > 
@@ -120,9 +120,9 @@ But clearly the prints are not solid enough to withstand casual use:
 this device was anarcat's daily driver for less than a year before
 first switching to a Lilygo T-Echo and then a Wio Tracker L1 Pro.
 
-For now we strongly discourage everyone from getting a Wismesh Pocket
+For now we strongly discourage everyone from getting a WisMesh Pocket
 until this situation is clarified.
 
 Other RAK Wireless products are, as far as we know, not plagued with
 similar design flaws. We warmly recommend the RAK Solar Mini repeater,
-the Wismesh Tag, and the 4631 kits for DIY builds!
+the WisMesh Tag, and the 4631 kits for DIY builds!
