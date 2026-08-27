@@ -14,11 +14,12 @@ nav:
     - Contact: contact.md
     - FAQ: guides/faq.md
   - Guides:
-    - Meshcore:
+    - MeshCore:
       - guides/meshcore/index.md
       - guides/meshcore/companion.md
       - guides/meshcore/channels.md
       - guides/meshcore/repeater.md
+      - guides/meshcore/upgrades.md
     - Reticulum:
       - guides/reticulum/index.md
       - guides/reticulum/rns.md
@@ -43,6 +44,7 @@ nav:
         - Meta: meta.md
     - references/neighbours.md
     - references/net.md
+    - references/log.md
     - references/other.md
     - Code de conduite: code.md
   - News: news/index.md

@@ -1,6 +1,6 @@
-# Meshcore guides
+# MeshCore guides
 
-There are two ways of configuring a Meshcore device, and so we have
+There are two ways of configuring a MeshCore device, and so we have
 two guides:
 
 - a **[companion guide](companion.md)**: this a "client" to the mesh, that needs a repeater
@@ -23,9 +23,9 @@ in the FAQ.
 - [Official site](https://meshcore.io/)
 - [Wiki](https://deepwiki.com/meshcore-dev/MeshCore)
 - [Awesome MeshCore](https://github.com/samuk/awesome-meshcore)
-- [Meshcore Canada](https://meshcore.ca/), and [forum](https://forum.meshcore.ca/)
+- [MeshCore Canada](https://meshcore.ca/), and [forum](https://forum.meshcore.ca/)
 - [our Matrix room](https://matrix.to/#/#reseaulibre-meshcore:matrix.org)
 - [Ripple firmware user guide](https://files.liamcottle.net/MeshCore/Documentation/Ripple_User_Guide.pdf)
-- [Netherlands guide on how Meshcore routing works](https://www.localmesh.nl/en/meshcore-routing-algorithms/)
+- [Netherlands guide on how MeshCore routing works](https://www.localmesh.nl/en/meshcore-routing-algorithms/)
 
 See also our [software reference](../../references/software/index.md) for a list of related programs.

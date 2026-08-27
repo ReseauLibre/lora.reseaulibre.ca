@@ -10,8 +10,8 @@ tags:
     As of [April
     2026](../news/posts/2026-05-02-meshtastic-deprecated.md),
     Meshtastic is deprecated in the Montreal mesh. We are now focusing
-    on building Meshcore infrastructure, see our [Getting started with
-    Meshcore](meshcore/index.md) guide instead and [Why not
+    on building MeshCore infrastructure, see our [Getting started with
+    MeshCore](meshcore/index.md) guide instead and [Why not
     Meshtastic?](faq.md#why-not-meshtastic)
 
 Getting started with running a Meshtastic relay is easy. You need to
@@ -33,7 +33,7 @@ few kilometres without even setting up a special antenna or location.
     routing in Meshtastic. Every message from a device includes that
     address which is unique and cannot be changed, see [this feature
     request][] for details. This is a bit like [IMEI identifiers on
-    phones][]. Meshcore and Reticulum do not suffer from this issue.
+    phones][]. MeshCore and Reticulum do not suffer from this issue.
 
 [this feature request]: https://github.com/meshtastic/firmware/discussions/5007
 [IMEI identifiers on phones]: https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity
@@ -55,7 +55,7 @@ C'est pas cher! Attendez vous à payer 50$CAD pour un kit de base, et
 ### Logiciel
 
 Une fois que vous disposez du matériel, vous devez le faire fonctionner. En général, vous
-[téléchargez une application sur votre téléphone](https://meshtastic.org/downloads/) ([Android](https://meshtastic.org/docs/software/android/installation/), [iOS](https://meshtastic.org/docs/software/apple/installation/)) et
+[téléchargez une application sur votre téléphone](https://meshtastic.org/downloads/) et
 contrôlez l'appareil via Bluetooth. Il existe également un [client en ligne de commande
 ](https://meshtastic.org/docs/software/python/cli/), un [client web](https://meshtastic.org/docs/software/web-client/) et [bien d'autres encore](https://meshtastic.org/docs/software/).
 

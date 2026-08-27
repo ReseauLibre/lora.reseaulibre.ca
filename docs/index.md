@@ -37,7 +37,7 @@ un [réseau "mesh"](https://fr.wikipedia.org/wiki/R%C3%A9seau_maill%C3%A9) dans 
     ---
 
     Nous travaillons pour l'instant sur les protocoles [LoRa](https://en.wikipedia.org/wiki/LoRa) et en
-    particulier [Meshcore](https://meshcore.co.uk/), [Meshtastic](https://meshtastic.org/), [Reticulum](https://reticulum.network/) et la
+    particulier [MeshCore](https://meshcore.co.uk/), [Meshtastic](https://meshtastic.org/), [Reticulum](https://reticulum.network/) et la
     [radio amateur](https://en.wikipedia.org/wiki/Amateur_radio).
 
 -   :octicons-sun-16: **Why**
@@ -54,7 +54,7 @@ un [réseau "mesh"](https://fr.wikipedia.org/wiki/R%C3%A9seau_maill%C3%A9) dans 
 
     ---
     
-    Suivez le [guide "Débuter avec Meshcore"](guides/meshcore/companion.md) et
+    Suivez le [:octicons-arrow-right-24: guide "Débuter avec MeshCore"](guides/meshcore/companion.md) et
     joignez-vous à nous, ou consultez notre
     [documentation](references/index.md).
 

@@ -28,7 +28,7 @@ Mais nous préférons si vous pouviez vous présenter en personne.
  [pavillon Lionel Groulx]: https://www.openstreetmap.org/relation/2109148
 
 Nous invitons tout le monde qui opère[^1] un relais dans la [grande
-région de Montréal][], qu'il soit Meshcore, Meshtastic, or Reticulum, à
+région de Montréal][], qu'il soit MeshCore, Meshtastic, or Reticulum, à
 se joindre à nous pour discuter de comment on s'organise!
 
  [grande région de Montréal]: https://yul.meshmapper.net/
@@ -36,10 +36,10 @@ se joindre à nous pour discuter de comment on s'organise!
 [^1]: Pour l'instant, considère comme un "opérateur·trice de relais"
     toute personne qui "opère" un appareil qui retransmet un signal
     pour d'autres appareils. Ceci inclus en fait tout appareil
-    Meshtastic, les "repeaters" Meshcore, et les "transport node"
+    Meshtastic, les "repeaters" MeshCore, et les "transport node"
     Reticulum. Mais c'est l'intention qui compte ici: nous sommes
     heureux de vous accueillir si vous n'avez pas encore réussi à
-    installer votre répéteur Meshcore ou node de transport Reticulum,
+    installer votre répéteur MeshCore ou node de transport Reticulum,
     mais nous sommes moins enthousiastes si vous opérez "seulement"
     avec Meshtastic pour connecter des appareils dans votre
     cour.
@@ -62,7 +62,7 @@ d'énergie dans l'air.
 Le mesh night continue également, il y a une rencontre ce mercredi le 3
 Juin, au Foulab, de 19:00 à 22:00. Là nous parlerons et
 expérimenterons avec les technologies maillées telles que Meshtastic,
-Meshcore et Reticulum. Le [Foulab se trouve][] à la [Suite 33B, 999 du
+MeshCore et Reticulum. Le [Foulab se trouve][] à la [Suite 33B, 999 du
 Collège, Montréal, Quebec, Canada, H4C 2S3][] ([lien Google maps][]).
 
  [Foulab se trouve]: https://foulab.org//location/
@@ -75,9 +75,9 @@ Réseau Libre est un projet qui existe depuis plus de dix ans (2012),
 avant LoRa (2015), Reticulum ([2018](https://unsigned.io/articles/2018_06_30_15-kilometre-ssh-link-with-rnode.html)), Meshtastic ([2020](https://en.wikipedia.org/wiki/Meshtastic)) et
 MeshCore ([2024](https://en.wikipedia.org/wiki/MeshCore)). Ce projet a existé, et existe toujours avec un
 certain bagage et une [historique](../../history.md) qui est probablement inconnu
-d'une bonne partie des gens qui contribuent présentement à Meshcore.
+d'une bonne partie des gens qui contribuent présentement à MeshCore.
 
-Réseau Libre n'est pas Meshcore Canada, Québec, ou même Montréal. Le projet
+Réseau Libre n'est pas MeshCore Canada, Québec, ou même Montréal. Le projet
 n'a jamais eu la prétention d'être le *seul* mesh de Montréal,
 même. C'est un projet d'expérimentation et de recherche,
 particulièrement attaché au logiciel libre et à la justice sociale.
@@ -103,7 +103,7 @@ de converger sur un projet commun, une communauté.
     
      1. proposition: Réseau Libre continue sur Matrix
      2. proposition: Réseau Libre continue sur `lora.reseaulibre.ca`
-     3. proposition: Réseau Libre continue sur Meshcore, recherche
+     3. proposition: Réseau Libre continue sur MeshCore, recherche
         Reticulum
      4. proposition: Réseau Libre s'organise par des rencontres en
         personnes, exceptionnellement en ligne si nécessaire, avec des

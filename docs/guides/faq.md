@@ -23,7 +23,7 @@ have pretty good coverage and might not need an extra repeater, which
 might add noise.
 
 A good rule of thumb is to setup a non-repeating device (a "companion"
-in Meshcore) and see if you see other repeaters. If you can
+in MeshCore) and see if you see other repeaters. If you can
 communicate with others, you don't need to install a relay.
 
 ### Do I need something on my roof?
@@ -73,7 +73,7 @@ nodes on any given day, but we don't have good metrics of this.
 We're trying to keep track of how many relays we see on [the maps](../references/maps.md),
 over time:
 
-| Date       | Meshcore | Meshtastic |
+| Date       | MeshCore | Meshtastic |
 |------------|----------|------------|
 | 2026-03-18 | 3-25     | 23-51      |
 | 2026-04-24 | 17-47    | ~25        |
@@ -81,28 +81,32 @@ over time:
 | 2026-05-27 | 66-89    | 22-34      |
 | 2026-06-10 | 97-114   | 16-29      |
 | 2026-06-17 | 104-129  | 16-26      |
+| 2026-07-22 | 145-197  | N/A        |
+| 2026-08-05 | 153-208  | N/A        |
+| 2028-08-15 | 164-197  | 9-22       |
+| 2028-08-20 | 163-200  | 9-15       |
 
 Links used to extract those numbers:
 
 - Meshtastic: [high](https://meshtastic.liamcottle.net/?lat=45.744526980468436&lng=285.7461547851563&zoom=8), [low](https://meshmap.net/), [lowest](https://map.mt.gt/)
-- Meshcore: [high](https://map.meshcore.io/?zoom=8&lat=45.6486&lon=-72.9767), [low](https://yul.meshmapper.net/leaderboard.php)
+- MeshCore: [high](https://map.meshcore.io/?zoom=8&lat=45.6486&lon=-72.9767), [low](https://yul.meshmapper.net/leaderboard.php)
 
 ## Software
 
 ### How do I upgrade?
 
 Typically, devices can be safely upgraded by flashing them with the
-new version. For Meshcore, follow the [Flash the firmware on the
-device](meshcore/companion.md#flash-the-firmware-on-the-device) instructions and, if you have the device properly
-configured, the [OTA upgrades](meshcore/repeater.md#ota-upgrades).
+new version. For MeshCore, follow the [Flash the firmware on the
+device](meshcore/companion.md#flash-the-firmware-on-the-device) instructions if you can connect the device with a USB cable
+or see the [upgrades instructions](meshcore/upgrades.md) for more advanced instructions.
 
-To be on the safer side, it's always a good time to perform a backup.
+To be on the safer side, it's always a good time to [perform a backup](meshcore/companion.md#backing-up-before-flashing).
 
 Just make sure to avoid doing an "erase"!
 
 ### Is this legal?
 
-Yes. LoRa transmitters (used by Meshcore, Meshtastic, and optionally
+Yes. LoRa transmitters (used by MeshCore, Meshtastic, and optionally
 by Reticulum) use the [ISM radio bands](https://en.wikipedia.org/wiki/ISM_radio_band), specifically centered
 around 915MHz.
 
@@ -114,9 +118,9 @@ protocol on its own hardware, for example.
 
 ### Are my messages secret?
 
-#### In Meshcore
+#### In MeshCore
 
-Yes. Messages in Meshcore are encrypted with [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) in ECB mode
+Yes. Messages in MeshCore are encrypted with [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) in ECB mode
 which has a [number of issues](https://github.com/meshcore-dev/MeshCore/issues/259) like leaking pattern information
 (the [Penguin attack](https://github.com/robertdavidgraham/ecb-penguin)) and length. But generally it's considered to
 be stronger than Meshtastic as it does include replay attack
@@ -187,7 +191,7 @@ Wait a little while; relays periodically announce themselves and you
 should eventually see some relays.
 
 Make sure you configured your device with the right settings, see our
-[Meshcore](meshcore/companion.md#configuration) and [Meshtastic](meshtastic.md#parametres) settings.
+[MeshCore](meshcore/companion.md#configuration) and [Meshtastic](meshtastic.md#settings) settings.
 
 Try to say hi and ask if anyone can read you. People might pick up the
 message only much later and respond. Keep your device open.
@@ -197,19 +201,19 @@ Try to bring your device higher up or outside.
 Look at the [maps](../references/maps.md) to see if there are relays in your
 neighbourhood.
 
-If you're using Meshtastic, consider switching to Meshcore. We've
+If you're using Meshtastic, consider switching to MeshCore. We've
 found Meshtastic reliability to be extremely poor; while it eventually
 manages to transmit relay telemetry across the mesh, we are not able
-to communicate reliably, while so far the Meshcore mesh has been much
+to communicate reliably, while so far the MeshCore mesh has been much
 more reliable.
 
 Try to [ask for help](../contact.md)!
 
 ### Is there a user manual for this GUI?
 
-#### Meshcore
+#### MeshCore
 
-Liam Cottle wrote a [Meshcore quick start guide](https://files.liamcottle.net/MeshCore/Documentation/MeshCore_Quick_Start_Guide.pdf) for the
+Liam Cottle wrote a [MeshCore quick start guide](https://files.liamcottle.net/MeshCore/Documentation/MeshCore_Quick_Start_Guide.pdf) for the
 proprietary app.
 
 #### Meshtastic
@@ -287,10 +291,10 @@ We now have a [guide on getting started with Reticulum](reticulum/index.md) as w
 
 But Reticulum, while being more advanced in terms of routing and
 cryptography, lacks the "ready-made" aspect of the other protocols. You can,
-today, buy a [hardware preinstalled with Meshtastic or Meshcore](../references/hardware/index.md) and it just
+today, buy a [hardware preinstalled with Meshtastic or MeshCore](../references/hardware/index.md) and it just
 works, without anything else. Reticulum is just not there
 yet, although projects like [Ratdeck](https://github.com/ratspeak/ratdeck) are approaching the
-capabilities of Meshtastic and Meshcore in terms of running standalone
+capabilities of Meshtastic and MeshCore in terms of running standalone
 routers, and [Columba](https://columba.network/) has tremendously improved the mobile experience.
 
 Reticulum has also [switched to a in-house, non-free license in April
@@ -299,7 +303,7 @@ repository is a "[public mirror](https://github.com/markqvist/Reticulum/blob/mas
 elsewhere".
 
 Right now the focus is on organizing the mesh that already exists on
-the island, and that is mostly made up of Meshtastic and Meshcore nodes. Reticulum
+the island, and that is mostly made up of Meshtastic and MeshCore nodes. Reticulum
 could be a backhaul for the network or the future of the network,
 we'll see!
 
@@ -317,14 +321,14 @@ that one could reliably communicate over the mesh.
 There might still be interesting use cases for Meshtastic: for smaller
 communities, it just works, and it's somewhat easier to use.
 
-Meshtastic is also free software, more so than Meshcore, for example:
+Meshtastic is also free software, more so than MeshCore, for example:
 software and firmware are all free software, and documentation is
-pretty good. Those are all lessons Meshcore should take a lesson
+pretty good. Those are all lessons MeshCore should take a lesson
 from. The on-boarding is fantastic as well.
 
 Meshtastic have built a great product and tool chain. They have blazed
 the way towards people creating mesh networks all across the
-planet. But given that Meshcore also has a routing companion now, it's
+planet. But given that MeshCore also has a routing companion now, it's
 not clear to us there's still a use case for Meshtastic anymore.
 
 ### Why LongFast?
@@ -344,20 +348,20 @@ conversation about this.
 
 Ultimately, we do not believe this would have helped the Meshtastic
 mesh and instead, we're focusing more on an "infrastructure" approach
-with Meshcore.
+with MeshCore.
 
-### Why Meshcore?
+### Why MeshCore?
 
-We're slowly experimenting with Meshcore more and more! When we first
+We're slowly experimenting with MeshCore more and more! When we first
 started working on LoRa in 2025, there were significantly more
-Meshtastic than Meshcore relays across the world, but as of April
+Meshtastic than MeshCore relays across the world, but as of April
 2026, that trend has reversed, and wildly.
 
 There are now country-wide meshes in the UK and large parts of Europe,
 including Germany and the Netherlands. The [Puget mesh](https://pugetmesh.org/meshcore/) seem on
 their way to connect Vancouver to California.
 
-With Meshcore, there is a distinction between routers and clients. And
+With MeshCore, there is a distinction between routers and clients. And
 while mesh "purists" might feel this is a tragic treason of
 fundamental principles, mesh veterans know that a mesh is just another
 piece of infrastructure. There is necessarily some level of
@@ -365,7 +369,7 @@ organization (and chaos) in a mesh, and the sooner we realize and
 acknowledge those power structures, the sooner we can avoid
 [The Tyranny of Structurelessness](https://www.jofreeman.com/joreen/tyranny.htm) ([Wikipedia](https://en.wikipedia.org/wiki/The_Tyranny_of_Structurelessness)).
 
-The stronger distinction between the device roles in Meshcore forces a
+The stronger distinction between the device roles in MeshCore forces a
 more deliberate approach in building necessary infrastructure. With
 [over a dozen device roles](https://meshtastic.org/docs/configuration/radio/device/), this is one of Meshtastic's weak
 point. Even after months of experimentation with Meshtastic, who
@@ -373,22 +377,22 @@ really knows [how to chose the right device role](https://meshtastic.org/blog/ch
 reading that blog post?
 
 Security is a bit of a mixed bag (see below), but it feels like
-Meshcore's cryptographic design is slightly more solid than Meshtastic
+MeshCore's cryptographic design is slightly more solid than Meshtastic
 utterly trivial design. There is some authentication to thwart replay
 attacks, something which Meshtastic still struggles with. It is far
 from being as solid as Reticulum, which is closer to Signal in terms
 of security properties, but it's a bit of a "worse is better" in this
-case: Meshcore's simpler cryptographic design means it's lighter to
-implement and there are already lots of devices that can run Meshcore
+case: MeshCore's simpler cryptographic design means it's lighter to
+implement and there are already lots of devices that can run MeshCore
 firmware, while Reticulum is still struggling to embed on a few.
 
 In March 2026, we said we'd "scale the mesh when we get there". A
 month later, it already feels like we're there since, as we said,
 "this might come sooner than we think".
 
-### Why not Meshcore?
+### Why not MeshCore?
 
-There *are* serious problems with Meshcore, that said, that make us a
+There *are* serious problems with MeshCore, that said, that make us a
 little uncomfortable with its massive adoption.
 
 Regarding encryption, [this blog post](https://jacksbrain.com/2026/01/a-hitchhiker-s-guide-to-meshcore-cryptography/) seems to indicate issues
@@ -400,20 +404,20 @@ encryption with nonce persistence" in a backwards compatible way,
 which is encouraging, but a year later, the effort doesn't seem to
 have realized significant progress yet.
 
-Furthermore, while some of the Meshcore software is free, the
-[official Meshcore apps](https://meshcore.io/#download) are non-free and a lot of [firmware is
-proprietary](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#57-q-is-meshcore-open-source). There are a [number of third-party applications](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#514-q-are-there-are-projects-built-around-meshcore),
-including an [open app](https://github.com/zjs81/meshcore-open) but Meshcore is generally not as close to
+Furthermore, while some of the MeshCore software is free, the
+[official MeshCore apps](https://meshcore.io/#download) are non-free and a lot of [firmware is
+proprietary](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#57-q-is-meshcore-open-source). There are a [number of third-party applications](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#514-q-are-there-projects-built-around-meshcore),
+including an [open app](https://github.com/zjs81/meshcore-open) but MeshCore is generally not as close to
 open source ethos as Meshtastic, or Reticulum.
 
 For example, the main discussion channel for Reticulum is, of course,
-on Matrix. Virtually everything Meshcore is on Discord instead, a
+on Matrix. Virtually everything MeshCore is on Discord instead, a
 [controversial commercial chat provider](https://en.wikipedia.org/wiki/Discord#Criticisms_and_controversies), a closed platform with
 [questionable monetization strategies](https://en.wikipedia.org/wiki/Discord#Monetization) that is one IPO away from a
 Slack-style rug-pull. The local mesh is trying to pull people towards
 Matrix through bridging and advocacy, but it's an upward slope.
 
-Finally, the way routing works in Meshcore is that the path is encoded
+Finally, the way routing works in MeshCore is that the path is encoded
 in packets in clear text. This means an attacker watching the mesh can
 tell where, generally, you are. On a normal communication (say, when
 you're home), your packets will go through a certain repeater and
@@ -421,7 +425,7 @@ then, if you move around, your packets will go through a different
 repeater.
 
 While there's an aspect of this that's inherent to any radio
-communication, it's particularly tricky with Meshcore because those
+communication, it's particularly tricky with MeshCore because those
 paths are encoded in the packet itself, which travels of course much
 further than the local LoRa range. Meshtastic doesn't share that
 problem as much since it's mostly flood-routed. Reticulum doesn't have
@@ -441,10 +445,10 @@ protection against unreasonable search and seizure.
 Also known as "Why are you not on Telegram, Discord, Whatsapp,
 Facebook, XMPP, or whatever?"
 
-Obviously, the Meshcore community is organised a mostly through
+Obviously, the MeshCore community is organised a mostly through
 Discord, and we're not there. We are on Matrix is because we were
-already there before Meshcore existed, and we are not just about
-Meshcore.
+already there before MeshCore existed, and we are not just about
+MeshCore.
 
 Some people claim there are more people on Discord than Matrix in
 general, but we dispute those claims.[^1]
@@ -471,7 +475,7 @@ general, but we dispute those claims.[^1]
       * Discord: 90M+ "daily active users" (according to
       [discord.com](https://discord.com/company)), 150M MAU in 2024,
       [according to Wikipedia](https://en.wikipedia.org/wiki/Discord)
-      * Meshcore: [46,546 devices world wide](https://map.meshcore.io/)
+      * MeshCore: [46,546 devices world wide](https://map.meshcore.io/)
 
     So, if actual numbers of users were a real criteria for picking a
     platform, people would organise primarily on Facebook or Telegram
@@ -573,7 +577,8 @@ We're using the defaults!
 
 - MeshCore: "US/Canada" preset (910.525 MHz, 62.5 kHz, SF7, CR5)
 - Meshtastic: "US" preset, LongFast (906.875 MHz, 250kHz, SF 11, CR5)
-- Reticulum: "Ottawa" preset (914.875 MHz, 125 kHz, SF7, CR7)
+- Reticulum: modified "Ottawa" preset (914.875 MHz, 125 kHz, SF9, CR7,
+  note that Ottawa uses SF7)
 
 For Reticulum, there is less standardization on those settings, so
 people often pick arbitrary numbers. Obviously, avoid the frequencies

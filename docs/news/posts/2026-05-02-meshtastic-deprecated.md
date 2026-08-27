@@ -6,24 +6,24 @@ categories:
   - announcements
 ---
 
-Meshtastic abandonné en faveur de Meshcore.
+Meshtastic abandonné en faveur de MeshCore.
 
 <!-- more -->
 
 ---
 
-Aujourd'hui, Meshcore a dépassé Meshtastic en nombre d'appareils
+Aujourd'hui, MeshCore a dépassé Meshtastic en nombre d'appareils
 visibles dans la grande région de Montréal. Bien que ça puisse être
 une métrique douteuse, il est assez évident en regardant les cartes
-actuelles de [Meshcore](https://map.meshcore.io/?zoom=8&lat=45.8594&lon=-73.1580) et [Meshtastic](https://meshmap.net/) que Meshcore a bien
+actuelles de [MeshCore](https://map.meshcore.io/?zoom=8&lat=45.8594&lon=-73.1580) et [Meshtastic](https://meshmap.net/) que MeshCore a bien
 dépassé Meshtastic en nombres absolus.
 
-Aujourd'hui, il y a 54 appareils Meshcore et tout au plus 29 appareils
+Aujourd'hui, il y a 54 appareils MeshCore et tout au plus 29 appareils
 Meshtastic sur ces cartes.
 
-L'année dernière, Meshcore n'existait pas vraiment.
+L'année dernière, MeshCore n'existait pas vraiment.
 
-Fin 2025, j'ai installé mon premier compagnon Meshcore, et je ne
+Fin 2025, j'ai installé mon premier compagnon MeshCore, et je ne
 voyais aucun relais. En fait, je ne me souviens pas s'il y avait
 réellement même un seul relais à Montréal il y a quelques mois.
 
@@ -36,19 +36,19 @@ montrait des appareils aussi loin que Burlington au Vermont! Et
 parfois, on voyait des messages de là-bas. Mais je n'ai jamais
 réellement eu une conversation sur Meshtastic.
 
-Maintenant, avec près d'une douzaine de relais Meshcore visible de mon
+Maintenant, avec près d'une douzaine de relais MeshCore visible de mon
 toit, je sens déjà que le mesh est plus fiable. Ce n'est qu'une
-intuition, à ce stade, mais je sens déjà que Meshcore a une approche
+intuition, à ce stade, mais je sens déjà que MeshCore a une approche
 plus délibérée, centrée sur créer des infrastructures qui vont mieux
 s'adapter que l'approche plus informelle que Meshtastic.
 
 Donc, je le déclare: laissons de côté Meshtastic et concentrons nous
-sur d'autres technologies. Présentement, Meshcore semble
+sur d'autres technologies. Présentement, MeshCore semble
 définitivement avoir ce momentum.
 
 Mais gardons un oeil sur Reticulum également! Les microcodes basés sur
 micro-Reticulum, qui embarquent une node de transport complète sur les
-mêmes micro-controlleurs utilisés pour Meshcore et Meshtastic, sont
+mêmes micro-controlleurs utilisés pour MeshCore et Meshtastic, sont
 maintenant une réalité. On n'atteint toujours pas la même facilité de
 déploiement, mais on devra certainement garder un oeil sur ce projet
 utopiste!

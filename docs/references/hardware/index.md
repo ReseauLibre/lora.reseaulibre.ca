@@ -139,7 +139,7 @@ We have those categories:
 
     We tested those devices, and we recommend against using them entirely.
 
-Note that the devices are rated for compliance with Meshcore for the
+Note that the devices are rated for compliance with MeshCore for the
 moment, but should generally also work with Meshtastic. 
 
 Reticulum support is spottier, and not explicitly covered here. Each
@@ -160,18 +160,10 @@ computer to operate.
     SX1262, 4-way joystick, menu button, reset button, power switch, 3 LEDs
     43$USD, [62$ at Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
 
-    - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket): GNSS, 1.3" OLED, acceleration sensor, power
-      button, 3200mAh battery, USB-C powered, 100$
     - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): 200x200 e-ink
       display, NRF52840, GPS, BT 5.0, no wifi, two buttons, no power
       button, NFC, 850mAh battery, temperature/pressure sensor, 55$USD
     - cheap [Aliexpress Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
-    - [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, cheap, - 40℃ ~ 100℃,
-      WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button (hidden under the
-      daughterboard, press both to enter JTAG so you can flash, requires
-      opening the case and removing the daughterboard), 22x23x57mm, 37g,
-      exposed GPIO ports, no battery, 20$. Good candidate for the
-      cheapest kit.
     - Seeedstudio [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, - 40℃ ~
       100℃, WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm,
       37g, exposed GPIO ports, cheap (20$), does not ship with
@@ -205,8 +197,28 @@ computer to operate.
       Next generation of the T1000-E. LR2021, IP66, USB-C connector,
       1100mAh, claims 5 days battery, dual GPS, BT, 1 RGB LED, 2 buttons, -20 to 60℃
       operation, 90*57*8 mm, 45g, 43$USD.
+    - [Meshtiny](https://meshtiny.com/product/meshtiny/): tiny
+      companion, nRF52840, SX1262, OLED, Buzzer, user, reset button,
+      power switch, 3-way encoder button, two LEDs, 250mAh Battery, 60$USD
 
 <!-- !!! failure "Not working" -->
+
+!!! warning
+
+     - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket)
+    
+         Looks nice at first glance: a RAK 4631 kit with GNSS, 1.3" OLED, acceleration sensor, power
+         button, 3200mAh battery, USB-C powered. Battery life excellent.
+      
+         But it's expensive (100$USD) especially for the build quality:
+         the 3D print is bad, board mounting pins can get broken off (but
+         can be superglued back in) and the power switch is too close to
+         the battery pouch which can perforate the pouch which is a **fire
+         hazard**.
+          
+          **DO NOT BUY THIS DEVICE, FIRE HAZARD**. If you want a RAK4631
+          kit, buy the RAK kit (it's a great chipset!) and get a 3D print
+          elsewhere, for example [our DIY buid](#diy-build-on-top-of-the-rak-kit).
 
 ## Standalone
 
@@ -244,11 +256,17 @@ to operate.
       3D-printed case, QWERTY keyboard, 2500mAh Li-Po battery, audio
       jack and speaker, expansion port, opensource, 100EUR, runs
       wadamesh
-    - [Cardputer](https://shop.m5stack.com/products/cardputer-mesh-kit-for-meshtastic-esp32-s3?variant=48684913164545).
+    - [M5 Cardputer Adv](https://shop.m5stack.com/products/cardputer-mesh-kit-for-meshtastic-esp32-s3?variant=48684913164545).
       ESP32 handheld, 1.14" LCD, 56-key keyboard, 1750mAh lithium,
       microphone, 1W speaker and audio jack, infrared, microSD, SX1262
-      expansion port, not supported by stock Meshcore firmware, but
+      expansion port, not supported by stock MeshCore firmware, but
       many alternative firmware, for example: [`MultiMote/meshcore-cardputer-adv`](https://github.com/MultiMote/meshcore-cardputer-adv), [`sosprz/meshcore-cardputer-adv`](https://github.com/sosprz/meshcore-cardputer-adv), [`Stachugit/MeshCore-Cardputer-ADV`](https://github.com/Stachugit/MeshCore-Cardputer-ADV)
+
+!!! warning
+
+    - The [Seeedstudio Sensecap Indicator](https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html)
+      looks like a nice device for home/office setups, but it is [not
+      supported by MeshCore](https://github.com/meshcore-dev/MeshCore/issues/879)
 
 Note that those devices depend on the proprietary Ripple firmware, but
 you can now try the [Wadamesh](https://wadamesh.com/) firmware as well, which is open
@@ -276,11 +294,17 @@ embedded devices above.
     74-keys QWERTY keyboard with gaming buttons, 18650 battery
     module, cellular modem, and a [third party SDR, LoRa, GPS, USB,
     RTC, ethernet module](https://hackergadgets.com/products/uconsole-aio-v2?variant=47045380735150).
+    [Video review](https://youtu.be/oN9zw3lzSVc) says the built-in
+    WiFi antenna is not great but can be modified with a 3D printer,
+    and that the trackball is not great. 6-7h runtime, half with a SDR.
 
 !!! question "Untested"
 
     - [Mecha Comet](https://mecha.so/comet#overview). pre-order as of July 2026, supports LoRa
       through a M.2 connector, to be clarified.
+    - M5 (who made the Cardputer Adv above) also made a [Cardputer zero](https://shop.m5stack.com/pages/m5-cardputerzero) 
+      which is a real Raspberry Pi underneath, while still being
+      compatible with the [Cap LoRa 1262](https://shop.m5stack.com/products/cap-lora-1262-for-cardputer-adv-sx1262-atgm336h)
 
 There there is a long list of small computers like the [MNT Reform](https://mntre.com/reform.html)
 [pocket](https://shop.mntre.com/products/mnt-pocket-reform) that are relatively normal computers, without necessarily
@@ -350,7 +374,8 @@ many not have batteries.
 
     - [SenseCAP M2 indoor
       gateway](https://mappingnetwork.ca/products/sensecap-m2-indoor-gateway-lorawan-us915):
-      cheaper alternative to teh WisMesh?
+      likely not supported by MeshCore given the MT7628 and SX1302
+      chipsets, see [this feature request](https://github.com/meshcore-dev/MeshCore/issues/3211)
 
     - [AliExpress 5W Heltec
     kit](https://www.aliexpress.com/item/1005010224488993.html),
@@ -384,6 +409,13 @@ The devices here generally do not have a battery.
       NRF5280, might be cheaper [at AliExpress](https://www.aliexpress.com/item/1005011870647672.html)
     - the [RAK19003 base kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) (28$) is more expensive, but less
       power-hungry than the Heltec
+    - [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html):
+      barebones board, tiny, cheap,
+      WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button (hidden under the
+      daughterboard, press both to enter JTAG so you can flash, requires
+      opening the case and removing the daughterboard), - 40℃ ~ 100℃, 22x23x57mm, 37g,
+      exposed GPIO ports, no battery, 20$. Probably the cheapest and
+      smallest kit all around.
 
 !!! example "In testing"
 
@@ -421,7 +453,7 @@ On top of 3D-printing the case, you need to also buy:
  - 4 × M3 nuts
  - 2 × M2.5 screws (*not* part of the above kit, [length unclear](https://www.printables.com/model/286664-rak19003-micro-case-for-meshtastic/comments/2516182),
    [here are M2.5x6mm](https://abra-electronics.com/hardware/metric-hardware-round-phillips-head-screws/1968p-machine-screw-m2.5-6mm-length-phillips-25-pack.html) or [this kit](https://abra-electronics.com/hardware/metric-hardware-kits/screws-bolts/repair-kit-for-eyeglasses-watches-screws-and-nuts-caps-m1m2m2.5-stainless.html))
- - 1 × battery ([Amazon](https://www.amazon.com/gp/product/B091FKGW8H), possibly the same as [Abra](https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/1578-ada-lithium-ion-polymer-battery-37v-500mah-1578-ada.html),
+ - 1 × battery (maybe this one from [Abra](https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/1578-ada-lithium-ion-polymer-battery-37v-500mah-1578-ada.html),
    optional?)
  - there's also an optional [battery cutoff switch](https://www.amazon.com/gp/product/B086L2GPGX), couldn't find
    an [equivalent on Abra](https://abra-electronics.com/electromechanical/switches/pushbutton-switches/)
@@ -447,7 +479,8 @@ We have experience with this:
   in [this technical review](https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi). In practice, it's still a great
   antenna, a "great bang for the buck" according to the Ottawa folks,
   and that the antenna is closer to 3dBi. Watch out for cheap
-  knock-offs, [Muzi Works sells a real one for 25CAD](https://muzi.works/products/alfa-outdoor-antenna).
+  knock-offs, [Muzi Works sells a real one for 25CAD](https://muzi.works/products/alfa-outdoor-antenna), [My Needle
+  Store (30$CAD)](https://myneedlestore.com/product/alfa-network-aoa-915-5acm-915-mhz-dipole-antenna-for-helium-iot-applications/) is local, untested
 
 - [`SYMITANT58`](https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL) (25$CAD Amazon)
 
@@ -496,20 +529,6 @@ The SenseCAP Solar Node P1 can be upgraded with an Alfa antenna
 easily, but needs some sort of adapter because the stock connectors
 are SMA-based.
 
-=== "Connector"
-
-    ![](../../assets/sensecap-p1-alfa-connector.jpg){align=right width=300}
-    
-    This connector works well: it is a SMA to N converter that fits
-    above the stock pigtail. The connector is sold at [Addison](https://addison-electronique.com/).
-    
-    It also raises the antenna a little higher which is good because
-    it clears the solar panel better. The only downside is it
-    introduces some loss compared to a pigtail only solution.
-    
-    Note that we have had problems with this connector, where packets
-    would only be sent out and not received correctly.
-
 === "Pigtail"
 
     ![](../../assets/sensecap-p1-alfa.jpg){align=right width=300}
@@ -524,6 +543,22 @@ are SMA-based.
     This [20 cm pigtail from Muzi Works](https://muzi.works/products/rp-sma-to-type-n-cable-20-cm) works, but is a little short:
     you can only install it on the hole nearest to the router instead of
     the further one, as shown on the image here.
+
+=== "Connector"
+
+    ![](../../assets/sensecap-p1-alfa-connector.jpg){align=right width=300}
+    
+    This is a SMA to N converter that fits
+    above the stock pigtail sold at [Addison](https://addison-electronique.com/).
+    
+    It also raises the antenna a little higher which is good because
+    it clears the solar panel better. But it introduces some loss
+    compared to a pigtail.
+    
+    !!! warning
+
+        We have had problems with this connector, where packets
+        would only be sent out and not received correctly.
 
 ## Resellers
 

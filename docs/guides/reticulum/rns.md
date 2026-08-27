@@ -84,7 +84,6 @@ If you do not have local partner to play with, add a couple interfaces
 (perhaps those that look the closest to you) from one of those lists
 of public entry points:
 
-- [`reticulum.community`](https://reticulum.community/connect.html)
 - [`directory.rns.recipes`](https://directory.rns.recipes/)
 - [`rmap.world`](https://rmap.world/)
 
@@ -114,7 +113,7 @@ the internet to route with other Reticulum users.
     the moment.
 
 So yes, this is cheating. Let's try a "real" interface, LoRa, the same
-medium used by Meshtastic and Meshcore.
+medium used by Meshtastic and MeshCore.
 
 ### RNode
 
@@ -132,8 +131,8 @@ Firmware](https://github.com/markqvist/RNode_Firmware) originally supported only
 [community edition](https://github.com/liberatedsystems/RNode_Firmware_CE) came out with [support for many more](https://github.com/liberatedsystems/RNode_Firmware_CE#supported-products-and-boards).
 
 Thankfully, flashing those devices is rather easy. You can use [Liam
-Cottle's web-based flasher](https://liamcottle.github.io/rnode-flasher/) (also known for his Meshcore
-work). Note that if you're used to Meshtastic or Meshcore flashers,
+Cottle's web-based flasher](https://liamcottle.github.io/rnode-flasher/) (also known for his MeshCore
+work). Note that if you're used to Meshtastic or MeshCore flashers,
 the Reticulum one is a little less intuitive: you first need to
 download the firmware, then select it after downloading it.
 
@@ -216,10 +215,10 @@ join the Reticulum mesh in Montreal use those frequencies:
 
     See also our [discussion of frequencies in the FAQ](../faq.md#which-radio-frequencies-are-you-using).
 
-### Meshcore tunneling
+### MeshCore tunneling
 
-We can run Reticulum over Meshcore! See our [Tunneling Reticulum over
-Meshcore](meshcore.md).
+We can run Reticulum over MeshCore! See our [Tunneling Reticulum over
+MeshCore](meshcore.md).
 
 ## Basic RNS tools
 
@@ -298,9 +297,9 @@ To see the adverts we have received:
 To *send* adverts is a little more complicated, because *now* you need
 to pick one of the clients listed in the first section.
 
-The trick here is that adverts, like in Meshcore and Meshtastic, are
+The trick here is that adverts, like in MeshCore and Meshtastic, are
 bound to an identity, but contrarily to those two-site, the identity is not
-tied to keys on the device (in Meshcore) or the hardware ("MAC")
+tied to keys on the device (in MeshCore) or the hardware ("MAC")
 address of the device (in Meshtastic).
 
 The keys reside on the computer or mobile operating the interface! So

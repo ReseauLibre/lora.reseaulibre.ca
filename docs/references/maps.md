@@ -13,7 +13,7 @@ below for other maps.
 <iframe src="https://yul.meshmapper.net/embed.php?lat=45.508545&amp;lon=-73.589824&amp;zoom=10&amp;geofence=0&amp;" width="100%" height="500px" style="border:0;" loading="lazy" allowfullscreen>
   </iframe>
 
-## Meshcore
+## MeshCore
 
 - [official map](https://map.meshcore.io/), see [this link for Montreal](https://map.meshcore.io/?zoom=11&lat=45.5951&lon=-73.5294), which shows
   about 14-25 relays in the greater Montreal area as of 2026-03-18
@@ -33,7 +33,7 @@ below for other maps.
 - [Liam Cottle's map](https://meshtastic.liamcottle.net/), similar to `meshmap.net`, but more details in
   the per-node reports, based on MQTT reports to
   `mqtt.meshtastic.liamcottle.net`, powerful map (now advertising
-  Meshcore), sees about 51 nodes in the Montreal area
+  MeshCore), sees about 51 nodes in the Montreal area
   as of 2026-03-18
 - [Canada mesh map](https://map.mt.gt/), also based on the `meshmap.net` software and the
   official MQTT server, but with the `msh/CA` prefix (as opposed to

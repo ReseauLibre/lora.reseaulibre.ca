@@ -7,8 +7,7 @@ of the [official list](https://meshtastic.org/docs/software/).
 
 Those are programs that run on a phone or tablet:
 
-- official [Android app](https://meshtastic.org/docs/category/android-app/), also [shipped on F-Droid](https://f-droid.org/packages/com.geeksville.mesh/)
-- official [iOS app](https://meshtastic.org/docs/software/apple/installation/)
+- official [app](https://meshtastic.org/downloads//), also [shipped on F-Droid](https://f-droid.org/packages/com.geeksville.mesh/)
 
 Note that those won't work without a LoRa transmitter, to which you
 typically connect over Bluetooth.
@@ -54,7 +53,7 @@ A "bridge" is a service that will connect Meshtastic to another
 service or network.
 
 - [official home assistant bridge](https://github.com/meshtastic/home-assistant), untested
-- [Meshcore to Meshtastic relay](https://meshnard.com/mesh/mt-mc_relay): source of the `[MT<>MC]`
+- [MeshCore to Meshtastic relay](https://meshnard.com/mesh/mt-mc_relay): source of the `[MT<>MC]`
   messages you might have seen in the wild
 - [`IceNet-01/meshtastic-bridge`](https://github.com/IceNet-01/meshtastic-bridge): Meshtastic to Meshtastic
   bridge to forward between channels, Prometheus, MQTT, and Home
@@ -69,7 +68,7 @@ service or network.
 - [`jeremiah-k/meshtastic-matrix-relay`](https://github.com/jeremiah-k/meshtastic-matrix-relay): [Matrix](https://matrix.org) bridge, see the
   [Matrix bridge documentation](bots.md#usage) for more usage tips
 - [`AkitaEngineering/Akita-Meshtastic-Meshcore-Bridge`](https://github.com/AkitaEngineering/Akita-Meshtastic-Meshcore-Bridge): another
-  generic bridge, named after Meshcore, but really aimed at
+  generic bridge, named after MeshCore, but really aimed at
   bridging Meshtastic with other tools, untested
 - [`cpatulea/matterbridge`](https://github.com/cpatulea/matterbridge): [fork of Matterbridge](https://github.com/42wim/matterbridge/compare/master...cpatulea:matterbridge:master) ([itself
   unmaintained](https://github.com/42wim/matterbridge/issues/2251)) that [posts messages](https://codeberg.org/foulab/foubot2/commit/f1e79507cdff83bd5ee88b05168f45240e434f8f) from the Meshtastic

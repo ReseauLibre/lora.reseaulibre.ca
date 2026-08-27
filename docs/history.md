@@ -102,16 +102,16 @@ summer of 2025 at which point there are hardly a dozen nodes over the
 entire city, without significant coverage.
 
 Unbeknownst to the Montreal folks, the [Ottawa Mesh](https://ottawamesh.ca/) is also
-working towards their own Meshtastic/Meshcore mesh, with a [presence
-of about 50 Meshcore repeaters](https://github.com/MrAlders0n/MeshCore-GOME/commit/3726cfd1764f52c61d6f450beefe9f1ddf500db2).
+working towards their own Meshtastic/MeshCore mesh, with a [presence
+of about 50 MeshCore repeaters](https://github.com/MrAlders0n/MeshCore-GOME/commit/3726cfd1764f52c61d6f450beefe9f1ddf500db2).
 
 Shortly after, the Montreal network grows organically and starts to
 gain critical mass, with about 60 to 100 relays in the spring of 2026,
 at which point <https://lora.reseaulibre.ca> is brought online (in
 February 2026) and [added](https://github.com/meshtastic/meshtastic/pull/2281) to the Meshtastic local groups list.
 
-In spring 2026, there are 150 Meshcore repeaters in Ottawa, thousands
-on the US west coast, about 20,000 Meshcore repeaters worldwide, and
+In spring 2026, there are 150 MeshCore repeaters in Ottawa, thousands
+on the US west coast, about 20,000 MeshCore repeaters worldwide, and
 roughly the same number of Meshtastic MQTT relays, although those
 numbers should all be taken with a grain of salt.
 

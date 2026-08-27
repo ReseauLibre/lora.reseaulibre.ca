@@ -1,6 +1,6 @@
 # Repeater guide
 
-This guide should help you configure a Meshcore "repeater", which
+This guide should help you configure a MeshCore "repeater", which
 makes the mesh grow. You might not need a repeater, look at the
 [coverage map](../../references/maps.md) to see if there's coverage in your area.
 
@@ -15,7 +15,7 @@ Pick a device in [our hardware review notes](../../references/hardware/index.md)
 hardware list](https://meshtastic.org/docs/hardware/devices/)[^1].
 
 [^1]: Meshtastic-supported device are *often* (but not always!) also
-      working under Meshcore.
+      working under MeshCore.
 
 It's cheap! Expect to pay 50$CAD for a development kit, 150$CAD for a
 decent solar relay.
@@ -32,7 +32,7 @@ decent solar relay.
 <!-- update both at once -->
 
 Now you own a [LoRa](https://en.wikipedia.org/wiki/LoRa) transceiver, congratulations! The next step is
-to make sure it runs Meshcore by installing firmware on it, and that
+to make sure it runs MeshCore by installing firmware on it, and that
 you can talk to the device, typically by installing an app on your
 phone.
 
@@ -49,7 +49,7 @@ connecting to the following website.
 Your web browser must support the [Web Serial API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility), which includes
 Chrome (and derivatives) and Firefox 151 or later.
 
-You *may* skip this step if it comes flashed with Meshcore already.
+You *may* skip this step if it comes flashed with MeshCore already.
 
 Connect your device to your computer using a USB cable. Note that for
 some USB-C cables, you might need to flip the cable over for the
@@ -149,77 +149,7 @@ This should take only a short time and reboot the device.
 
 #### OTA upgrades
 
-!!! example "Advanced users only"
-
-    Over-the-air (OTA) upgrades are risky and should be used only if
-    remote access is inconvenient, or if you have a secondary device
-    to run a first test run on.
-    
-    Beginners shouldn't need to follow those instructions.
-    
-    You should also *not* do your initial flash over the air, it's not
-    worth it! 
-    
-    Only use this for upgrades and *only* if you performed the above
-    [Bootloader OTA fix](#boot-loader-ota-fix)!
-
-Once your device is correctly flashed for OTA (over the air) upgrades,
-you should be able to perform upgrades remotely, by following [this
-official guide](https://blog.meshcore.io/2026/04/02/nrf-ota-update) or the [Ottawa Mesh guide](https://ottawamesh.ca/meshcore/update-repeater-ota/). A few tips:
-
- - if you have a custom Android firmware, you might not have access to
-   the App store and the [nRF Device Firmware Update app](https://play.google.com/store/apps/details?id=no.nordicsemi.android.dfu&hl=en_US). You can
-   add [this GitHub repository](https://github.com/nordicsemi/Android-DFU-Library) to Obtainium instead, which works fine.
-
- - you *must* change the settings in the app before flashing the
-   upgrade, if you get a timeout, it's because the settings are wrong.
-
- - flashing over Bluetooth is slow, we're seeing 3KB/s transfer speeds
-
-Here is a full procedure, but see the official or Ottawa mesh guide if
-it fails (and let us know):
-
- 1. install the [nRF Device Firmware Update app](https://play.google.com/store/apps/details?id=no.nordicsemi.android.dfu&hl=en_US) ([source code](https://github.com/nordicsemi/Android-DFU-Library)
-    which can be installed through Obtainium)
-
- 2. configure the right settings in the app which is called `DFU`:
- 
-     - Packet receipts notification - **ON**
-     - Number of packets - **8**
-     - Request high MTU (Android only) - **OFF**
-     - Disable resume - **ON**
-     - Prepare object delay - **0 ms**
-     - Force scanning - **ON**
-
-    Leave the other settings untouched.
-
- 3. download the right firmware for your device in the [Meshcore web
-    flasher interface](https://flasher.meshcore.io), make sure you pick the `.zip` file!
-
- 4. connect to the device command-line, which should be accessible
-    over the LoRa management interface
-
- 5. type the following magic command:
-
-        start ota
-
-    This will show the Bluetooth MAC address of your device, which can
-    be used to identify it below.
-
- 6. back in the app, start the update, by tapping `Select` and picking
-    the `.zip` file you downloaded earlier
-
- 7. select the device which should show up as something like
-    `SENSECAP_SOLAR_OTA` and also show the MAC address above
-
- 8. press start
-
-    This will go through various steps. If you have messed up the
-    settings, it will like timeout at the `DFU initialized`
-    step. Otherwise it should show a progress bar and transfer rate
-    after that.
-
- 9. you're done!
+See [upgrades](upgrades.md).
 
 ### Backing up before flashing
 
@@ -239,7 +169,7 @@ can be performed over Bluetooth later.
 
 !!! warning
 
-    Some Meshcore configurations exposes your location by default on devices which have
+    Some MeshCore configurations exposes your location by default on devices which have
     a GPS device! To work around this problem, you can disable the GPS
     or reduce the [coordinates
     precision](https://wiki.openstreetmap.org/wiki/Precision_of_coordinates),
@@ -256,7 +186,7 @@ You need to at least:
 - **Admin password**: set a [strong password](https://anarc.at/blog/2017-02-18-passwords-entropy/) and save it to your
   password manager for remote administration
 - **Path hash mode**: pick `3-byte (2)`, see [multi-byte path
-  routing](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#39-q-what-is-multi-byte-support--what-do-1-byte-2-byte-3-byte-adverts-and-messages-mean) for details
+  routing](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#39-q-what-is-multibyte-support-what-do-1-byte-2-byte-3-byte-adverts-and-messages-mean) for details
 - **Send an advert!** by default, repeaters do automatically send
   adverts, but it can take *hours*, during which time your companion
   won't see the repeater! so do send one manually
