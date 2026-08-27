@@ -2,6 +2,59 @@
 
 This is the log for the various "[net](net.md)" operated here.
 
+We log the following fields:
+
+- time
+- call sign
+- name
+- location 
+- hops
+
+## 2026-08-26
+
+| time  | call sign     | name                   | location        | hops |
+|-------|---------------|------------------------|-----------------|------|
+| 21:01 | Mad Jap       | Claude                 | Marieville      | 3    |
+| 21:01 | Further       |                        | Rosemont        | 2    |
+| 21:01 | Oots          |                        | Villeray        | 3    |
+| 21:02 | Argon / YUL   |                        | Hochelaga       | 4    |
+| 21:02 | VE2CL-V4      | Charles                |                 | 6    |
+| 21:03 | Pleb          |                        | Greenfield Park | 5    |
+| 21:03 | T MeshPocket  |                        |                 | 4    |
+| 21:03 | 17B9A258      |                        | Hochelaga       | 4    |
+| 21:04 | anarcat       |                        | Petite Italie   | 7    |
+| 21:05 | Carlitos      | YUL-Ste-Julie-Carlitos | Ste-Julie       | 4    |
+| 21:06 | MG V4-mini    | Marc                   | Terrebonne      | 2    |
+| 21:06 | bob_caribou   |                        | St-Ambroise     | 9    |
+| 21:07 |               | MmeMinou/Cat           | Hochelaga       | 3    |
+| 21:08 | Smog          |                        | Rosemère        | 4    |
+| 21:09 | Johnputer     |                        | Cartierville    | 3    |
+| 21:11 | Vanfax        | Simon                  | Longueuil       | 4    |
+| 21:13 | MeshCourte    | Patrick                | Villeray        | 2    |
+| 21:15 | grostonymobil |                        |                 | 4    |
+|       |               |                        |                 |      |
+
+animation de VE2FXO, log de anarcat. hops counts tels que vus par
+anarcat, sauf lui-même tel que vu par ve2fxo.
+
+Observed:
+
+- 18 contacts
+- [207 nodes in the official map](https://map.meshcore.io/?zoom=7&lat=45.7100&lon=-72.6416)
+- [169 repeaters in MeshMapper](https://yul.meshmapper.net/leaderboard.php)
+
+Annonces:
+
+- nouvelles mises à jour aux applications Meshcore, Meshcore Open, et
+  Meshcore Open advanced
+- problèmes avec https://analyzer.montrealmesh.ca/ pendant ~24h, qui
+  se sont résolus pendant le réseau
+- avis de sécurité important: les wismesh pocket v2 ont un problème de
+  conception qui est un risque d'incendie! pour vérifier, ouvrir le
+  boîtier et regarder en bas à droite de la batterie pour des signes
+  d'usures, il y a une friction entre la batterie et l'interrupteur
+  qui peut briser la batterie. une annonce plus détaillée viendra.
+
 ## 2026-08-19
 
 | time  | call sign              | name          | location        | hops |
