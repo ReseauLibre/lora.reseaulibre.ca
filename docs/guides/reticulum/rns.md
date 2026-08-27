@@ -84,7 +84,6 @@ If you do not have local partner to play with, add a couple interfaces
 (perhaps those that look the closest to you) from one of those lists
 of public entry points:
 
-- [`reticulum.community`](https://reticulum.community/connect.html)
 - [`directory.rns.recipes`](https://directory.rns.recipes/)
 - [`rmap.world`](https://rmap.world/)
 

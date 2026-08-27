@@ -406,7 +406,7 @@ have realized significant progress yet.
 
 Furthermore, while some of the MeshCore software is free, the
 [official MeshCore apps](https://meshcore.io/#download) are non-free and a lot of [firmware is
-proprietary](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#57-q-is-meshcore-open-source). There are a [number of third-party applications](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#514-q-are-there-are-projects-built-around-meshcore),
+proprietary](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#57-q-is-meshcore-open-source). There are a [number of third-party applications](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#514-q-are-there-projects-built-around-meshcore),
 including an [open app](https://github.com/zjs81/meshcore-open) but MeshCore is generally not as close to
 open source ethos as Meshtastic, or Reticulum.
 

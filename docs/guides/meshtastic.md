@@ -49,7 +49,7 @@ decent solar relay.
 ## Software
 
 Once you have some hardware, you need to operate it. Typically, you
-[download an app on your phone](https://meshtastic.org/downloads/) ([Android](https://meshtastic.org/docs/software/android/installation/), [iOS](https://meshtastic.org/docs/software/apple/installation/)) and
+[download an app on your phone](https://meshtastic.org/downloads/) and
 control the device over Bluetooth or a USB cable. Some devices can
 also be controlled over WiFi or wired network. There is also a
 [command line client](https://meshtastic.org/docs/software/python/cli/), a [web client](https://meshtastic.org/docs/software/web-client/), and [lots more](https://meshtastic.org/docs/software/).

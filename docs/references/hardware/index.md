@@ -203,8 +203,6 @@ computer to operate.
     - [Meshtiny](https://meshtiny.com/product/meshtiny/): tiny
       companion, nRF52840, SX1262, OLED, Buzzer, user, reset button,
       power switch, 3-way encoder button, two LEDs, 250mAh Battery, 60$USD
-    - [GAT562 Meshtastic Tracker](https://shop.mtoolstec.com/product/gat562-mesh-tracker):
-      nRF52840/SX1262, 60g, 2500mAh battery, GPS, 1.3-inch TFT screen, [some open designs](https://github.com/quhyhao/GAT562)
 
 <!-- !!! failure "Not working" -->
 
@@ -458,7 +456,7 @@ On top of 3D-printing the case, you need to also buy:
  - 4 × M3 nuts
  - 2 × M2.5 screws (*not* part of the above kit, [length unclear](https://www.printables.com/model/286664-rak19003-micro-case-for-meshtastic/comments/2516182),
    [here are M2.5x6mm](https://abra-electronics.com/hardware/metric-hardware-round-phillips-head-screws/1968p-machine-screw-m2.5-6mm-length-phillips-25-pack.html) or [this kit](https://abra-electronics.com/hardware/metric-hardware-kits/screws-bolts/repair-kit-for-eyeglasses-watches-screws-and-nuts-caps-m1m2m2.5-stainless.html))
- - 1 × battery ([Amazon](https://www.amazon.com/gp/product/B091FKGW8H), possibly the same as [Abra](https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/1578-ada-lithium-ion-polymer-battery-37v-500mah-1578-ada.html),
+ - 1 × battery (maybe this one from [Abra](https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/1578-ada-lithium-ion-polymer-battery-37v-500mah-1578-ada.html),
    optional?)
  - there's also an optional [battery cutoff switch](https://www.amazon.com/gp/product/B086L2GPGX), couldn't find
    an [equivalent on Abra](https://abra-electronics.com/electromechanical/switches/pushbutton-switches/)
