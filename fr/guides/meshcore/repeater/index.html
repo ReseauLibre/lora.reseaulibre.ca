@@ -18,7 +18,7 @@
         <link rel="prev" href="../channels/">
       
       
-        <link rel="next" href="../../reticulum/">
+        <link rel="next" href="../upgrades/">
       
       
         
@@ -680,6 +680,8 @@
       
         
       
+        
+      
     
     
     
@@ -702,7 +704,7 @@
   <span class="md-ellipsis">
     
   
-    Meshcore
+    MeshCore
   
 
     
@@ -724,7 +726,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Meshcore
+    MeshCore
   
 
           </label>
@@ -1002,6 +1004,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../upgrades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Upgrades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1153,7 +1183,7 @@
   <span class="md-ellipsis">
     
   
-    Tunneling Reticulum over Meshcore
+    Tunneling Reticulum over MeshCore
   
 
     
@@ -1305,6 +1335,8 @@
       
         
           
+        
+      
         
       
         
@@ -1790,6 +1822,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../references/log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Net control log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../references/other/" class="md-nav__link">
         
   
@@ -2066,7 +2126,7 @@
 
 
 <h1 id="repeater-guide">Repeater guide<a class="headerlink" href="#repeater-guide" title="Permanent link">&para;</a></h1>
-<p>This guide should help you configure a Meshcore "repeater", which
+<p>This guide should help you configure a MeshCore "repeater", which
 makes the mesh grow. You might not need a repeater, look at the
 <a href="../../../references/maps/">coverage map</a> to see if there's coverage in your area.</p>
 <p>If there's a nearby repeater and you don't see it with your companion,
@@ -2088,7 +2148,7 @@ that transmits without an antenna can damage itself!</p>
 <!-- update both at once -->
 
 <p>Now you own a <a href="https://en.wikipedia.org/wiki/LoRa">LoRa</a> transceiver, congratulations! The next step is
-to make sure it runs Meshcore by installing firmware on it, and that
+to make sure it runs MeshCore by installing firmware on it, and that
 you can talk to the device, typically by installing an app on your
 phone.</p>
 <h3 id="flash-the-firmware-on-the-device">Flash the firmware on the device<a class="headerlink" href="#flash-the-firmware-on-the-device" title="Permanent link">&para;</a></h3>
@@ -2100,7 +2160,7 @@ connecting to the following website.</p>
 <p><a href="https://flasher.meshcore.io">https://flasher.meshcore.io</a></p>
 <p>Your web browser must support the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility">Web Serial API</a>, which includes
 Chrome (and derivatives) and Firefox 151 or later.</p>
-<p>You <em>may</em> skip this step if it comes flashed with Meshcore already.</p>
+<p>You <em>may</em> skip this step if it comes flashed with MeshCore already.</p>
 <p>Connect your device to your computer using a USB cable. Note that for
 some USB-C cables, you might need to flip the cable over for the
 connection to work. A good hint is whether the device is charging or
@@ -2194,87 +2254,7 @@ the device in the remote location:</p>
 </ol>
 <p>This should take only a short time and reboot the device.</p>
 <h4 id="ota-upgrades">OTA upgrades<a class="headerlink" href="#ota-upgrades" title="Permanent link">&para;</a></h4>
-<div class="admonition example">
-<p class="admonition-title">Advanced users only</p>
-<p>Over-the-air (OTA) upgrades are risky and should be used only if
-remote access is inconvenient, or if you have a secondary device
-to run a first test run on.</p>
-<p>Beginners shouldn't need to follow those instructions.</p>
-<p>You should also <em>not</em> do your initial flash over the air, it's not
-worth it! </p>
-<p>Only use this for upgrades and <em>only</em> if you performed the above
-<a href="#boot-loader-ota-fix">Bootloader OTA fix</a>!</p>
-</div>
-<p>Once your device is correctly flashed for OTA (over the air) upgrades,
-you should be able to perform upgrades remotely, by following <a href="https://blog.meshcore.io/2026/04/02/nrf-ota-update">this
-official guide</a> or the <a href="https://ottawamesh.ca/meshcore/update-repeater-ota/">Ottawa Mesh guide</a>. A few tips:</p>
-<ul>
-<li>
-<p>if you have a custom Android firmware, you might not have access to
-   the App store and the <a href="https://play.google.com/store/apps/details?id=no.nordicsemi.android.dfu&amp;hl=en_US">nRF Device Firmware Update app</a>. You can
-   add <a href="https://github.com/nordicsemi/Android-DFU-Library">this GitHub repository</a> to Obtainium instead, which works fine.</p>
-</li>
-<li>
-<p>you <em>must</em> change the settings in the app before flashing the
-   upgrade, if you get a timeout, it's because the settings are wrong.</p>
-</li>
-<li>
-<p>flashing over Bluetooth is slow, we're seeing 3KB/s transfer speeds</p>
-</li>
-</ul>
-<p>Here is a full procedure, but see the official or Ottawa mesh guide if
-it fails (and let us know):</p>
-<ol>
-<li>
-<p>install the <a href="https://play.google.com/store/apps/details?id=no.nordicsemi.android.dfu&amp;hl=en_US">nRF Device Firmware Update app</a> (<a href="https://github.com/nordicsemi/Android-DFU-Library">source code</a>
-    which can be installed through Obtainium)</p>
-</li>
-<li>
-<p>configure the right settings in the app which is called <code>DFU</code>:</p>
-<ul>
-<li>Packet receipts notification - <strong>ON</strong></li>
-<li>Number of packets - <strong>8</strong></li>
-<li>Request high MTU (Android only) - <strong>OFF</strong></li>
-<li>Disable resume - <strong>ON</strong></li>
-<li>Prepare object delay - <strong>0 ms</strong></li>
-<li>Force scanning - <strong>ON</strong></li>
-</ul>
-<p>Leave the other settings untouched.</p>
-</li>
-<li>
-<p>download the right firmware for your device in the <a href="https://flasher.meshcore.io">Meshcore web
-    flasher interface</a>, make sure you pick the <code>.zip</code> file!</p>
-</li>
-<li>
-<p>connect to the device command-line, which should be accessible
-    over the LoRa management interface</p>
-</li>
-<li>
-<p>type the following magic command:</p>
-<div class="highlight"><pre><span></span><code>start ota
-</code></pre></div>
-<p>This will show the Bluetooth MAC address of your device, which can
-be used to identify it below.</p>
-</li>
-<li>
-<p>back in the app, start the update, by tapping <code>Select</code> and picking
-    the <code>.zip</code> file you downloaded earlier</p>
-</li>
-<li>
-<p>select the device which should show up as something like
-    <code>SENSECAP_SOLAR_OTA</code> and also show the MAC address above</p>
-</li>
-<li>
-<p>press start</p>
-<p>This will go through various steps. If you have messed up the
-settings, it will like timeout at the <code>DFU initialized</code>
-step. Otherwise it should show a progress bar and transfer rate
-after that.</p>
-</li>
-<li>
-<p>you're done!</p>
-</li>
-</ol>
+<p>See <a href="../upgrades/">upgrades</a>.</p>
 <h3 id="backing-up-before-flashing">Backing up before flashing<a class="headerlink" href="#backing-up-before-flashing" title="Permanent link">&para;</a></h3>
 <p>You <em>might</em> want to backup the router configuration before flashing,
 but this is less critical than the companion as there's less
@@ -2288,7 +2268,7 @@ procedure</a>.</p>
 can be performed over Bluetooth later.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Some Meshcore configurations exposes your location by default on devices which have
+<p>Some MeshCore configurations exposes your location by default on devices which have
 a GPS device! To work around this problem, you can disable the GPS
 or reduce the <a href="https://wiki.openstreetmap.org/wiki/Precision_of_coordinates">coordinates
 precision</a>,
@@ -2304,7 +2284,7 @@ for repeaters.</p>
   and it will interfere with routing</li>
 <li><strong>Admin password</strong>: set a <a href="https://anarc.at/blog/2017-02-18-passwords-entropy/">strong password</a> and save it to your
   password manager for remote administration</li>
-<li><strong>Path hash mode</strong>: pick <code>3-byte (2)</code>, see <a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#39-q-what-is-multi-byte-support--what-do-1-byte-2-byte-3-byte-adverts-and-messages-mean">multi-byte path
+<li><strong>Path hash mode</strong>: pick <code>3-byte (2)</code>, see <a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#39-q-what-is-multibyte-support-what-do-1-byte-2-byte-3-byte-adverts-and-messages-mean">multi-byte path
   routing</a> for details</li>
 <li><strong>Send an advert!</strong> by default, repeaters do automatically send
   adverts, but it can take <em>hours</em>, during which time your companion
@@ -2407,7 +2387,7 @@ blazer!</p>
 <ol>
 <li id="fn:1">
 <p>Meshtastic-supported device are <em>often</em> (but not always!) also
-  working under Meshcore.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+  working under MeshCore.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -2433,7 +2413,7 @@ blazer!</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 21, 2026 04:41:43 UTC">2026-06-21 04:41:43</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="August 25, 2026 01:56:50 UTC">2026-08-25 01:56:50</span>
   </span>
 
     
@@ -2495,13 +2475,13 @@ blazer!</p>
         
         
           
-          <a href="../../reticulum/" class="md-footer__link md-footer__link--next" aria-label="Next: Getting starting with Reticulum">
+          <a href="../upgrades/" class="md-footer__link md-footer__link--next" aria-label="Next: Upgrades">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Getting starting with Reticulum
+                Upgrades
               </div>
             </div>
             <div class="md-footer__button md-icon">

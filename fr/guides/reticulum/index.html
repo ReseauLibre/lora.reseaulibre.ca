@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://lora.reseaulibre.ca/fr/guides/reticulum/">
       
       
-        <link rel="prev" href="../meshcore/repeater/">
+        <link rel="prev" href="../meshcore/upgrades/">
       
       
         <link rel="next" href="rns/">
@@ -678,6 +678,8 @@
       
         
       
+        
+      
     
     
     
@@ -700,7 +702,7 @@
   <span class="md-ellipsis">
     
   
-    Meshcore
+    MeshCore
   
 
     
@@ -722,7 +724,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Meshcore
+    MeshCore
   
 
           </label>
@@ -801,6 +803,34 @@
     
   
     Repeater guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meshcore/upgrades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Upgrades
   
 
     
@@ -967,7 +997,7 @@
   <span class="md-ellipsis">
     
   
-    Tunneling Reticulum over Meshcore
+    Tunneling Reticulum over MeshCore
   
 
     
@@ -1119,6 +1149,8 @@
       
         
           
+        
+      
         
       
         
@@ -1604,6 +1636,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../references/log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Net control log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../references/other/" class="md-nav__link">
         
   
@@ -1792,7 +1852,7 @@
 
 <h1 id="getting-starting-with-reticulum">Getting starting with Reticulum<a class="headerlink" href="#getting-starting-with-reticulum" title="Permanent link">&para;</a></h1>
 <p><a href="https://reticulum.community/">Reticulum</a> is an advanced mesh networking protocol that is more
-secure, flexible, powerful, but also less easy to use than Meshcore
+secure, flexible, powerful, but also less easy to use than MeshCore
 and Meshtastic.</p>
 <p>This page aims at providing a guide to get started with Reticulum. It
 is based off the <a href="https://markqvist.github.io/Reticulum/manual/gettingstartedfast.html">official manual</a> and first hand experience.</p>
@@ -1801,20 +1861,20 @@ is based off the <a href="https://markqvist.github.io/Reticulum/manual/gettingst
 <p class="admonition-title">Advanced users only</p>
 <p>This is an <strong>advanced</strong> guide and assumes more prior knowledge
 than our other guides normally do. Reticulum is a powerful, but
-much more complex stack than Meshcore or Meshtastic, so this guide
+much more complex stack than MeshCore or Meshtastic, so this guide
 is harder to follow.</p>
 <p>It's also incomplete. It is represents notes of our successes on
 various aspects of our research and development on Reticulum.</p>
 <p>Most people doing mesh networking in Montreal are currently on
-Meshcore, so you should probably see our <a href="meshcore/">Getting started with
-Meshcore</a> guide instead and <a href="../faq/#why-not-reticulum">Why not
+MeshCore, so you should probably see our <a href="meshcore/">Getting started with
+MeshCore</a> guide instead and <a href="../faq/#why-not-reticulum">Why not
 Reticulum?</a>.</p>
 </div>
 <h2 id="picking-the-right-tool">Picking the right tool<a class="headerlink" href="#picking-the-right-tool" title="Permanent link">&para;</a></h2>
 <p>There are various ways to get started with Reticulum. Contrarily to
-Meshcore and Meshtastic, Reticulum supports multiple physical medium
+MeshCore and Meshtastic, Reticulum supports multiple physical medium
 including LoRa, of course, but also HF radios, Bluetooth, or
-TCP/IP. We have even ran Reticulum over Meshcore and Meshtastic!</p>
+TCP/IP. We have even ran Reticulum over MeshCore and Meshtastic!</p>
 <p>This guide covers the following tools:</p>
 <ul>
 <li><a href="rns/">RNS</a>: base routing layer, supports announcements, routing
@@ -1862,7 +1922,7 @@ Reticulum, as it can get confusing quickly.</p>
 <li><strong><a href="https://markqvist.github.io/Reticulum/manual/interfaces.html">Interface</a></strong>: a specific back end for Reticulum, for example LoRa, WiFi,
   TCP, Bluetooth<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, ham radio</li>
 <li><strong><a href="https://markqvist.github.io/Reticulum/manual/understanding.html#reticulum-transport">Transport</a></strong>: a node that relays traffic for other. A "transport node",
-  for example, is roughly equivalent to a "repeater" in Meshcore. For
+  for example, is roughly equivalent to a "repeater" in MeshCore. For
   LoRa, typically comprises an embedded device (e.g. a Heltec) running
   RNode (below) and a computer (e.g. a Raspberry Pi) running RNS or
   some other application. Without a "transport node", devices can
@@ -1870,21 +1930,21 @@ Reticulum, as it can get confusing quickly.</p>
   multiple hops.</li>
 <li><strong><a href="https://unsigned.io/rnode/">RNode</a></strong>: the stock Reticulum firmware that allows you to talk
   with other peers over LoRa, and that you flash on embedded devices
-  (e.g. a Heltec). Different than Meshcore or Meshtastic firmware in
+  (e.g. a Heltec). Different than MeshCore or Meshtastic firmware in
   that it does not work standalone; it requires software on an
   attached computer to send and receive messages or route
   traffic. Think of it like an old-school <a href="https://en.wikipedia.org/wiki/Modem">modem</a>.</li>
 <li><strong><a href="https://github.com/attermann/microReticulum_Firmware">microReticulum</a></strong>: a re-implementation of the Reticulum stack designed
   to fit in embedded devices (e.g. a Heltec). Essentially a RNode that
-  can act also as a transport node.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> Equivalent to a Meshcore repeater.</li>
+  can act also as a transport node.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> Equivalent to a MeshCore repeater.</li>
 <li><strong><a href="https://markqvist.github.io/Reticulum/manual/understanding.html#public-key-announcements">announcement</a></strong>: a message sent over an interface that is used to
   establish routing with transport nodes. roughly equivalent to an
-  "advert" in Meshcore. Here is a <a href="https://www.youtube.com/watch?app=desktop&amp;v=PFRS_Fqk2Go">good video explaining how announces
+  "advert" in MeshCore. Here is a <a href="https://www.youtube.com/watch?app=desktop&amp;v=PFRS_Fqk2Go">good video explaining how announces
   work</a> and the <a href="https://rns.moscow/announce-sim.html">propagation simulator</a> from Moscow</li>
 <li><strong><a href="https://markqvist.github.io/Reticulum/manual/understanding.html#understanding-identities">identity</a></strong>: an address in the Reticulum routing system. Roughly
-  equivalent to the "public key" in Meshcore or the MAC address in
+  equivalent to the "public key" in MeshCore or the MAC address in
   Meshtastic, except that the full identity is used for routing
-  (whereas only a few bytes are used in Meshcore).</li>
+  (whereas only a few bytes are used in MeshCore).</li>
 <li><a href="https://github.com/markqvist/lxmf"><strong>LXMF</strong></a>: Lightweight Extensible Message Format. The reference chat
   implementation built on top of Reticulum. Does not support groups,
   only point to point messaging. Think of it like Signal if Reticulum
@@ -1928,7 +1988,7 @@ Reticulum, as it can get confusing quickly.</p>
 <li id="fn:1">
 <p>note that here, Bluetooth is used for communicating between
   devices, in a mesh network, not just for an application to control a
-  device like we do in Meshcore and Meshtastic, which do <em>not</em> support
+  device like we do in MeshCore and Meshtastic, which do <em>not</em> support
   running a mesh over Bluetooth like Reticulum does.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
@@ -1962,7 +2022,7 @@ we link to that instead of microReticulum directly.&#160;<a class="footnote-back
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 20, 2026 03:42:10 UTC">2026-06-20 03:42:10</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="August 25, 2026 01:56:50 UTC">2026-08-25 01:56:50</span>
   </span>
 
     
@@ -2007,7 +2067,7 @@ we link to that instead of microReticulum directly.&#160;<a class="footnote-back
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../meshcore/repeater/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Repeater guide">
+          <a href="../meshcore/upgrades/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Upgrades">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2017,7 +2077,7 @@ we link to that instead of microReticulum directly.&#160;<a class="footnote-back
                 Previous
               </span>
               <div class="md-ellipsis">
-                Repeater guide
+                Upgrades
               </div>
             </div>
           </a>

@@ -1,0 +1,3427 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Expériences mesh à Montréal">
+      
+      
+        <meta name="author" content="Anarcat and others">
+      
+      
+        <link rel="canonical" href="https://lora.reseaulibre.ca/fr/references/log/">
+      
+      
+        <link rel="prev" href="../net/">
+      
+      
+        <link rel="next" href="../other/">
+      
+      
+        
+          <link rel="alternate" href="/" hreflang="en">
+        
+          <link rel="alternate" href="/fr/" hreflang="fr">
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../assets/logo.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Net control log - Réseau Libre</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#net-control-log" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Réseau Libre" class="md-header__button md-logo" aria-label="Réseau Libre" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Réseau Libre
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Net control log
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/fr/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://codeberg.org/reseaulibre/lora-reseaulibre-ca" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Codeberg
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  À propos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guides/meshcore/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Références
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../news/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Nouvelles
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Réseau Libre" class="md-nav__button md-logo" aria-label="Réseau Libre" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    Réseau Libre
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://codeberg.org/reseaulibre/lora-reseaulibre-ca" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Codeberg
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    À propos
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    À propos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../values/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Valeurs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histoire
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../guides/meshcore/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MeshCore
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    MeshCore
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/meshcore/companion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Companion guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/meshcore/channels/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Channel configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/meshcore/repeater/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repeater guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/meshcore/upgrades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Upgrades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../guides/reticulum/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reticulum
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reticulum
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/reticulum/rns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Networking with RNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/reticulum/lxmf-cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chat with LXMF-CLI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/reticulum/meshcore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tunneling Reticulum over MeshCore
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/reticulum/rtnode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transport nodes and microReticulum
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/meshtastic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meshtastic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matrix
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Références
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Références
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../hardware/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matériel
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Matériel
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/antennas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Antenna theory and practice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/batteries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Batteries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/power/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Power
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../software/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logiciel
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Logiciel
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/meshtastic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meshtastic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software/bots/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bots and bridges
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../meta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../neighbours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Voisins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../net/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Weekly net procedures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Net control log
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Net control log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2026-08-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-08-26
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-08-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-08-19
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-06-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-06-12
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-08-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-08-05
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-07-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-29
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-07-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-22
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-06-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-06-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-06-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-06-10
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-05-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-05-27
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-05-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-05-20
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-05-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-05-13
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-04-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-04-15
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-03-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-03-25
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../other/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autres guides et critiques
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code de conduite
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../news/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nouvelles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2026-08-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-08-26
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-08-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-08-19
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-06-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-06-12
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-08-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-08-05
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-07-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-29
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-07-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-22
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-06-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-06-17
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-06-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-06-10
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-05-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-05-27
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-05-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-05-20
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-05-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-05-13
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-04-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-04-15
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-03-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-03-25
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/references/log.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="net-control-log">Net control log<a class="headerlink" href="#net-control-log" title="Permanent link">&para;</a></h1>
+<p>This is the log for the various "<a href="../net/">net</a>" operated here.</p>
+<p>We log the following fields:</p>
+<ul>
+<li>time</li>
+<li>call sign</li>
+<li>name</li>
+<li>location </li>
+<li>hops</li>
+</ul>
+<h2 id="2026-08-26">2026-08-26<a class="headerlink" href="#2026-08-26" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>time</th>
+<th>call sign</th>
+<th>name</th>
+<th>location</th>
+<th>hops</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21:01</td>
+<td>Mad Jap</td>
+<td>Claude</td>
+<td>Marieville</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:01</td>
+<td>Further</td>
+<td></td>
+<td>Rosemont</td>
+<td>2</td>
+</tr>
+<tr>
+<td>21:01</td>
+<td>Oots</td>
+<td></td>
+<td>Villeray</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:02</td>
+<td>Argon / YUL</td>
+<td></td>
+<td>Hochelaga</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:02</td>
+<td>VE2CL-V4</td>
+<td>Charles</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>21:03</td>
+<td>Pleb</td>
+<td></td>
+<td>Greenfield Park</td>
+<td>5</td>
+</tr>
+<tr>
+<td>21:03</td>
+<td>T MeshPocket</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:03</td>
+<td>17B9A258</td>
+<td></td>
+<td>Hochelaga</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:04</td>
+<td>anarcat</td>
+<td></td>
+<td>Petite Italie</td>
+<td>7</td>
+</tr>
+<tr>
+<td>21:05</td>
+<td>Carlitos</td>
+<td>YUL-Ste-Julie-Carlitos</td>
+<td>Ste-Julie</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:06</td>
+<td>MG V4-mini</td>
+<td>Marc</td>
+<td>Terrebonne</td>
+<td>2</td>
+</tr>
+<tr>
+<td>21:06</td>
+<td>bob_caribou</td>
+<td></td>
+<td>St-Ambroise</td>
+<td>9</td>
+</tr>
+<tr>
+<td>21:07</td>
+<td></td>
+<td>MmeMinou/Cat</td>
+<td>Hochelaga</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:08</td>
+<td>Smog</td>
+<td></td>
+<td>Rosemère</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:09</td>
+<td>Johnputer</td>
+<td></td>
+<td>Cartierville</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:11</td>
+<td>Vanfax</td>
+<td>Simon</td>
+<td>Longueuil</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:13</td>
+<td>MeshCourte</td>
+<td>Patrick</td>
+<td>Villeray</td>
+<td>2</td>
+</tr>
+<tr>
+<td>21:15</td>
+<td>grostonymobil</td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>animation de VE2FXO, log de anarcat. hops counts tels que vus par
+anarcat, sauf lui-même tel que vu par ve2fxo.</p>
+<p>Observed:</p>
+<ul>
+<li>18 contacts</li>
+<li><a href="https://map.meshcore.io/?zoom=7&amp;lat=45.7100&amp;lon=-72.6416">207 nodes in the official map</a></li>
+<li><a href="https://yul.meshmapper.net/leaderboard.php">169 repeaters in MeshMapper</a></li>
+</ul>
+<p>Annonces:</p>
+<ul>
+<li>nouvelles mises à jour aux applications Meshcore, Meshcore Open, et
+  Meshcore Open advanced</li>
+<li>problèmes avec https://analyzer.montrealmesh.ca/ pendant ~24h, qui
+  se sont résolus pendant le réseau</li>
+<li>avis de sécurité important: les wismesh pocket v2 ont un problème de
+  conception qui est un risque d'incendie! pour vérifier, ouvrir le
+  boîtier et regarder en bas à droite de la batterie pour des signes
+  d'usures, il y a une friction entre la batterie et l'interrupteur
+  qui peut briser la batterie. une annonce plus détaillée viendra.</li>
+<li>mesh night la semaine prochaine!</li>
+</ul>
+<h2 id="2026-08-19">2026-08-19<a class="headerlink" href="#2026-08-19" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>time</th>
+<th>call sign</th>
+<th>name</th>
+<th>location</th>
+<th>hops</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21:01</td>
+<td>VE2CL</td>
+<td>Cédric</td>
+<td>La Prairie</td>
+<td>7</td>
+</tr>
+<tr>
+<td>21:01</td>
+<td>Argon</td>
+<td></td>
+<td>Montréal</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:01</td>
+<td>YUL-Ste-Julie-Carlitos</td>
+<td>Carlitos</td>
+<td>Saint-Julie</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:00</td>
+<td>VE2FXO</td>
+<td>Charles</td>
+<td>Ville-Émard</td>
+<td>5</td>
+</tr>
+<tr>
+<td>21:03</td>
+<td>MV V4-Mini</td>
+<td>Marc</td>
+<td>Terrebonne</td>
+<td>5</td>
+</tr>
+<tr>
+<td>21:07</td>
+<td>VE2CCK</td>
+<td>Éric</td>
+<td>Vieux Longueuil</td>
+<td>2</td>
+</tr>
+<tr>
+<td>21:11</td>
+<td>VA2DIZ</td>
+<td>Cat/Mme Minou</td>
+<td>Hochelaga</td>
+<td>2</td>
+</tr>
+<tr>
+<td>21:15</td>
+<td>JOhnputer</td>
+<td>JP</td>
+<td>Cartierville</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>Observed:</p>
+<ul>
+<li>8 contacts</li>
+<li><a href="https://map.meshcore.io/?zoom=7&amp;lat=45.7100&amp;lon=-72.6416">200 nodes in the official map</a></li>
+<li><a href="https://yul.meshmapper.net/leaderboard.php">163 repeaters in MeshMapper</a></li>
+</ul>
+<h2 id="2026-06-12">2026-06-12<a class="headerlink" href="#2026-06-12" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>time</th>
+<th>call sign</th>
+<th>name</th>
+<th>location</th>
+<th>hops</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21:00</td>
+<td>VE2CL</td>
+<td>Cédric</td>
+<td>La prairie</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:04</td>
+<td>Mad Jap</td>
+<td>Claure</td>
+<td>Marieville</td>
+<td>5</td>
+</tr>
+<tr>
+<td>21:04</td>
+<td>anarcat</td>
+<td></td>
+<td>petite italie</td>
+<td></td>
+</tr>
+<tr>
+<td>21:06</td>
+<td>Va2VQ</td>
+<td>Louis-Philippe</td>
+<td>Beloeil</td>
+<td>7</td>
+</tr>
+<tr>
+<td>2106?</td>
+<td></td>
+<td>JS</td>
+<td>Delson</td>
+<td></td>
+</tr>
+<tr>
+<td>2107</td>
+<td>CECREVIER</td>
+<td>Charles-Etienne</td>
+<td>St-Blaise-Sur-Richelieu</td>
+<td></td>
+</tr>
+<tr>
+<td>2108</td>
+<td>MmeMinou</td>
+<td>Catherine</td>
+<td>Hochelaga</td>
+<td></td>
+</tr>
+<tr>
+<td>2109</td>
+<td>Zivior</td>
+<td>Xavier</td>
+<td>Ville-Marie</td>
+<td></td>
+</tr>
+<tr>
+<td>2113</td>
+<td>Johnputer</td>
+<td>JP</td>
+<td>Cartierville</td>
+<td></td>
+</tr>
+<tr>
+<td>2117</td>
+<td>VA2LLX-C01</td>
+<td>Luce</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>21:18</td>
+<td>G Live</td>
+<td>Matthieu</td>
+<td>Petite-Patrie</td>
+<td></td>
+</tr>
+<tr>
+<td>21:22</td>
+<td>T MeshPocket</td>
+<td></td>
+<td>Tetraultville</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>hosted by v2fxo, logging by anarcat.</p>
+<p>Observed 12 contacts, did not find the time to check maps.</p>
+<h2 id="2026-08-05">2026-08-05<a class="headerlink" href="#2026-08-05" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>time</th>
+<th>call sign</th>
+<th>name</th>
+<th>location</th>
+<th>hops</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21:00</td>
+<td>Mad Jap</td>
+<td>Claude</td>
+<td>Marieville</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:02</td>
+<td>VE2FXO</td>
+<td>Charles</td>
+<td>Ville-Émard</td>
+<td>2</td>
+</tr>
+<tr>
+<td>21:02</td>
+<td>Argo / YUL</td>
+<td></td>
+<td>Hochelaga</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:03</td>
+<td>Smog</td>
+<td></td>
+<td>Rosemère</td>
+<td>5</td>
+</tr>
+<tr>
+<td>21:03</td>
+<td>Key-Kesey</td>
+<td>Guillaume</td>
+<td>Rosemont</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:03</td>
+<td>YUL-Ste-Julie-Carlitos</td>
+<td>Carlitos</td>
+<td>Ste-Julie</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:04</td>
+<td>MG V4-mini</td>
+<td>Marc</td>
+<td>Terrebonne</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:06</td>
+<td>MmeMinou</td>
+<td>Cat</td>
+<td>Hochelaga</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:07</td>
+<td>YUL-Phil</td>
+<td></td>
+<td>Foulab</td>
+<td>1</td>
+</tr>
+<tr>
+<td>21:10</td>
+<td>scoates</td>
+<td></td>
+<td>Foulab</td>
+<td>1</td>
+</tr>
+<tr>
+<td>21:11</td>
+<td>littlesquid</td>
+<td></td>
+<td>Foulab</td>
+<td>1</td>
+</tr>
+<tr>
+<td>21:13</td>
+<td>Oots</td>
+<td></td>
+<td>Villeray</td>
+<td>7</td>
+</tr>
+<tr>
+<td>21:15</td>
+<td>F843B8B1</td>
+<td></td>
+<td>Foulab</td>
+<td>1</td>
+</tr>
+<tr>
+<td>21:15</td>
+<td>VE2TIK</td>
+<td>Jonathan</td>
+<td>Foulab</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:16</td>
+<td>VE2CCK</td>
+<td>Érik</td>
+<td>Longueuil</td>
+<td>4</td>
+</tr>
+<tr>
+<td>18:04</td>
+<td>MESHCOCO</td>
+<td></td>
+<td>1986</td>
+<td>1</td>
+</tr>
+<tr>
+<td>21:22</td>
+<td>YUL-AllyCatMC</td>
+<td></td>
+<td>NDG</td>
+<td>2</td>
+</tr>
+<tr>
+<td>21:23</td>
+<td>dwild</td>
+<td>Dominic</td>
+<td>Mont-Saint-Hilaire</td>
+<td>6</td>
+</tr>
+<tr>
+<td>21:26</td>
+<td>MeshCourte</td>
+<td></td>
+<td>Villeray</td>
+<td>7</td>
+</tr>
+<tr>
+<td>21:27</td>
+<td>pogo</td>
+<td></td>
+<td>St-Émilie-de-l'Énergie</td>
+<td>6</td>
+</tr>
+<tr>
+<td>21:28</td>
+<td>VA2MVR</td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>21:29</td>
+<td>Kernel V4</td>
+<td>Boris</td>
+<td>Verdun</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:30</td>
+<td>VA2DG</td>
+<td>Daniel</td>
+<td>Saint-Jean-sur-Richelieu</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:36</td>
+<td>VA2LLX</td>
+<td>Luc</td>
+<td>Greenfield Park</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:37</td>
+<td>VE2IES</td>
+<td></td>
+<td>Verdun</td>
+<td>1</td>
+</tr>
+<tr>
+<td>21:39</td>
+<td>BCoreHome</td>
+<td></td>
+<td>St-Lazare</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>hosted by anarcat, exceptionnally from Foulab during mesh night! last
+time this was attempted, no contact was made, which shows we
+significantly improved coverage south of the mountain, and finally
+realized the dream of going around the mountain!!</p>
+<p>Observed:</p>
+<ul>
+<li>26 contacts (a record!)</li>
+<li>most distance record (marieville - sté)</li>
+<li>most vintage / exotic hardware record (Tandy Color 3 with a custom
+  expansion card)</li>
+<li><a href="https://map.meshcore.io/?zoom=7&amp;lat=45.7100&amp;lon=-72.6416">208 nodes in the official map</a></li>
+<li><a href="https://yul.meshmapper.net/leaderboard.php">153 repeaters in MeshMapper</a></li>
+</ul>
+<h2 id="2026-07-29">2026-07-29<a class="headerlink" href="#2026-07-29" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>time</th>
+<th>call sign</th>
+<th>name</th>
+<th>location</th>
+<th>hops</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21:00</td>
+<td>Mad Jap</td>
+<td>Claude</td>
+<td>Marieville</td>
+<td></td>
+</tr>
+<tr>
+<td>21:01</td>
+<td>T MeshPocket</td>
+<td>Tristan</td>
+<td>Tétraultville</td>
+<td></td>
+</tr>
+<tr>
+<td>21:01</td>
+<td>VE2CCK</td>
+<td>Erik</td>
+<td>Vieux Longueuil</td>
+<td></td>
+</tr>
+<tr>
+<td>21:02</td>
+<td>VE2FXO</td>
+<td>Charles</td>
+<td>Ville-Émard</td>
+<td></td>
+</tr>
+<tr>
+<td>21:02</td>
+<td>OOZE</td>
+<td>Zoé</td>
+<td>Verdun</td>
+<td></td>
+</tr>
+<tr>
+<td>21:03</td>
+<td>Pleb</td>
+<td></td>
+<td>Greenfield Park</td>
+<td></td>
+</tr>
+<tr>
+<td>21:04</td>
+<td>anarcat</td>
+<td></td>
+<td>Petite Italie</td>
+<td></td>
+</tr>
+<tr>
+<td>21:05</td>
+<td>RL Mobile</td>
+<td></td>
+<td>Brossard</td>
+<td></td>
+</tr>
+<tr>
+<td>21:06</td>
+<td>Oots</td>
+<td></td>
+<td>Villeray</td>
+<td></td>
+</tr>
+<tr>
+<td>21:06</td>
+<td>YUL-Ste-Julie-Carlitos</td>
+<td>Carlitos</td>
+<td>Ste-Julie</td>
+<td></td>
+</tr>
+<tr>
+<td>21:08</td>
+<td>Mme Minou</td>
+<td>Cat</td>
+<td>Hochelaga</td>
+<td></td>
+</tr>
+<tr>
+<td>21:11</td>
+<td>MG V4-mini</td>
+<td>Marc</td>
+<td>Terrebonne</td>
+<td></td>
+</tr>
+<tr>
+<td>21:12</td>
+<td>VA2VQ</td>
+<td></td>
+<td>Beloeil</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Hosted by VE2CL, log by anarcat.</p>
+<p>13 contacts.</p>
+<p>Announcements:</p>
+<ul>
+<li><a href="../../news/2026/07/28/mesh-night-dao%C3%BBt/">Mesh night next week</a></li>
+</ul>
+<h2 id="2026-07-22">2026-07-22<a class="headerlink" href="#2026-07-22" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>time</th>
+<th>call sign</th>
+<th>name</th>
+<th>location</th>
+<th>hops</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21:00</td>
+<td><code>oots</code></td>
+<td></td>
+<td>Villeray</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:00</td>
+<td><code>VE2CCK</code></td>
+<td>erik</td>
+<td>Vieux Longueuil</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:00</td>
+<td><code>MG-V4-mini</code></td>
+<td>Marc</td>
+<td>Terrebonne</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:00</td>
+<td><code>VA2LW</code></td>
+<td>Emils</td>
+<td>Verdun</td>
+<td>5</td>
+</tr>
+<tr>
+<td>21:01</td>
+<td><code>OOZE</code></td>
+<td></td>
+<td>Verdun</td>
+<td>6</td>
+</tr>
+<tr>
+<td>21:01</td>
+<td><code>MeshCourte</code></td>
+<td>Patrick</td>
+<td>Villeray</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:01</td>
+<td><code>Kernel V4</code></td>
+<td>Boris</td>
+<td>Verdun</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:01</td>
+<td><code>Yaya</code></td>
+<td></td>
+<td>Île Perrot</td>
+<td>5</td>
+</tr>
+<tr>
+<td>21:03</td>
+<td><code>VE2CL-V4</code></td>
+<td>Cédric</td>
+<td>La Prairie</td>
+<td>6</td>
+</tr>
+<tr>
+<td>21:03</td>
+<td><code>SbMo_USB</code></td>
+<td>Simon</td>
+<td>Mile End</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:03</td>
+<td><code>VE2UM</code></td>
+<td></td>
+<td>Saint-Hubert</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:04</td>
+<td><code>Mad Jap</code></td>
+<td>Claude</td>
+<td>Marieville</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:05</td>
+<td><code>YHU-MRV-1</code></td>
+<td>François</td>
+<td>Marieville</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:07</td>
+<td><code>grenscientist</code></td>
+<td>Yannick</td>
+<td>Verdun</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:10</td>
+<td><code>Further</code></td>
+<td></td>
+<td>Rosemont</td>
+<td>2</td>
+</tr>
+<tr>
+<td>21:13</td>
+<td><code>VA2VQ</code></td>
+<td>Louis-Philippe</td>
+<td>Beloeil</td>
+<td>6</td>
+</tr>
+<tr>
+<td>21:16</td>
+<td><code>dwild</code></td>
+<td>Dominic</td>
+<td>Mont-Saint-Hilaire</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:17</td>
+<td><code>VE2XJS</code></td>
+<td>Jean-Sébastien</td>
+<td>Delson</td>
+<td>5</td>
+</tr>
+<tr>
+<td>21:22</td>
+<td><code>RL Mobile</code></td>
+<td></td>
+<td>Greenfield Park</td>
+<td>6</td>
+</tr>
+<tr>
+<td>21:23</td>
+<td><code>Pleb</code></td>
+<td></td>
+<td>Greenfield Park</td>
+<td>7</td>
+</tr>
+<tr>
+<td>21:28</td>
+<td><code>MeshAnt</code></td>
+<td></td>
+<td>Villeray</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:51</td>
+<td><code>YUL-SteJulie_Carlitos</code></td>
+<td>Carlitos</td>
+<td>Saint-Julie</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>Announces:</p>
+<ul>
+<li>Thank you to VE2CL to have covered for the net during my vacations,
+  congratulations on the (previous) 20 check-in record</li>
+<li>MeshCore <a href="https://blog.meshcore.io/2026/07/04/help-us-save-meshcore">needs your help</a>: the trademark issue is going legal,
+  and they are fundraiding.</li>
+<li>New <a href="https://wadamesh.com/">Wadamesh firmware</a> standalone companions like the Lilygo
+  T-Deck, T-Lora or the Heltec v4 expansion kit</li>
+<li>Mesh night in two weeks, first Wednesday of the month, at Foulab</li>
+</ul>
+<p>Observed:</p>
+<ul>
+<li>22 participants (more than the previous record at 20)</li>
+<li><a href="https://map.meshcore.io/?zoom=7&amp;lat=45.7100&amp;lon=-72.6416">197 nodes in the official map</a></li>
+<li><a href="https://yul.meshmapper.net/leaderboard.php">145 repeaters in MeshMapper</a></li>
+</ul>
+<h2 id="2026-06-17">2026-06-17<a class="headerlink" href="#2026-06-17" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>time</th>
+<th>call sign</th>
+<th>location</th>
+<th>hops</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21:00</td>
+<td><code>Oots</code></td>
+<td>Villeray</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:02</td>
+<td><code>Cédric</code></td>
+<td>La Prairie</td>
+<td>6</td>
+</tr>
+<tr>
+<td>21:02</td>
+<td><code>Erik</code></td>
+<td>Vieux Longueuil</td>
+<td>2</td>
+</tr>
+<tr>
+<td>21:03</td>
+<td><code>Mad Jap</code></td>
+<td>Marieville</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:05</td>
+<td><code>SbMo</code></td>
+<td>Mile End</td>
+<td>3-4</td>
+</tr>
+<tr>
+<td>21:07</td>
+<td><code>Johnputer</code></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:10</td>
+<td><code>VE2XJS</code></td>
+<td>Delson</td>
+<td>5</td>
+</tr>
+<tr>
+<td>21:11</td>
+<td><code>VariaLFliP</code></td>
+<td>Saint-Laurent</td>
+<td>5</td>
+</tr>
+<tr>
+<td>21:13</td>
+<td><code>Carlitos</code></td>
+<td>Sainte-Julie</td>
+<td>4</td>
+</tr>
+<tr>
+<td>21:13</td>
+<td><code>Daniel</code></td>
+<td>Saint-Jean</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:15</td>
+<td><code>Normand</code></td>
+<td>Saint-Hubert</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:15</td>
+<td><code>VE2IES</code></td>
+<td>Verdun</td>
+<td>3</td>
+</tr>
+<tr>
+<td>21:22</td>
+<td><code>Stef</code></td>
+<td>Longueuil</td>
+<td>2-3</td>
+</tr>
+<tr>
+<td>21:41</td>
+<td><code>Massimo</code></td>
+<td>Greenfield Park</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>Longueuil repeater <a href="https://yul.meshmapper.net/?repeater=BF%2C45.53836%2C-73.45851"><code>VE2RSM</code></a> came online and drastically improved
+hop counts and coverage on the south shore.</p>
+<p>Observed:</p>
+<ul>
+<li>13 participants (more than the previous record at 11)</li>
+<li>109 repeaters in the past week</li>
+<li>77 companions</li>
+<li>10 rooms</li>
+<li><a href="https://map.meshcore.io/?zoom=7&amp;lat=45.7100&amp;lon=-72.6416">129 nodes in the official map</a></li>
+<li><a href="https://yul.meshmapper.net/leaderboard.php">104 repeaters in MeshMapper</a></li>
+</ul>
+<h2 id="2026-06-10">2026-06-10<a class="headerlink" href="#2026-06-10" title="Permanent link">&para;</a></h2>
+<p>Largest net so far, again:</p>
+<table>
+<thead>
+<tr>
+<th>time</th>
+<th>call sign</th>
+<th>location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21:00</td>
+<td><code>oots</code></td>
+<td>Villeray</td>
+</tr>
+<tr>
+<td>21:00</td>
+<td><code>uconsole -VE2CKK</code></td>
+<td>Longueuil</td>
+</tr>
+<tr>
+<td>21:00</td>
+<td><code>K836</code></td>
+<td>Petite-Patrie</td>
+</tr>
+<tr>
+<td>21:01</td>
+<td><code>anarcat</code></td>
+<td>Petite-Italie</td>
+</tr>
+<tr>
+<td>21:02</td>
+<td><code>VA2SM</code></td>
+<td>Candiac</td>
+</tr>
+<tr>
+<td>21:02</td>
+<td><code>Carlitos</code></td>
+<td>Sainte-Julie</td>
+</tr>
+<tr>
+<td>21:03</td>
+<td><code>MadJap</code></td>
+<td>Marieville</td>
+</tr>
+<tr>
+<td>21:04</td>
+<td><code>MeshCourte</code></td>
+<td>Villeray</td>
+</tr>
+<tr>
+<td>21:07</td>
+<td><code>VE2CL</code></td>
+<td>La Prairie</td>
+</tr>
+<tr>
+<td>21:20</td>
+<td><code>DIR Hochelaga</code></td>
+<td>Hochelaga</td>
+</tr>
+<tr>
+<td>21:36</td>
+<td><code>FoxRook</code></td>
+<td>Laval</td>
+</tr>
+</tbody>
+</table>
+<p>Usual host was late, SbMo took the above check-ins, then anarcat tried
+to pick up again, only to rehash mostly the same people needlessly. :)</p>
+<p>The Marieville record still holds, but we beat the number of
+participants record (11, previously 7).</p>
+<p>Observed:</p>
+<ul>
+<li>11 participants (above)</li>
+<li>100 repeaters</li>
+<li>66 companions</li>
+<li>9 rooms</li>
+<li><a href="https://map.meshcore.io/?zoom=7&amp;lat=45.7100&amp;lon=-72.6416">114 nodes in the official map</a></li>
+<li><a href="https://yul.meshmapper.net/leaderboard.php">97 repeaters in MeshMapper</a></li>
+</ul>
+<h2 id="2026-05-27">2026-05-27<a class="headerlink" href="#2026-05-27" title="Permanent link">&para;</a></h2>
+<p>Largest net so far:</p>
+<table>
+<thead>
+<tr>
+<th>time</th>
+<th>call sign</th>
+<th>location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21:01</td>
+<td><code>K386</code></td>
+<td>Petite-Patrie</td>
+</tr>
+<tr>
+<td>21:01</td>
+<td><code>Arthur</code></td>
+<td>Villeray</td>
+</tr>
+<tr>
+<td>21:03</td>
+<td><code>LobbyCycliste</code></td>
+<td>Centre-Sud</td>
+</tr>
+<tr>
+<td>21:05</td>
+<td><code>1D19F8FD</code></td>
+<td>Mercier</td>
+</tr>
+<tr>
+<td>21:05</td>
+<td><code>Mad Jap</code></td>
+<td>Marieville</td>
+</tr>
+<tr>
+<td>21:12</td>
+<td><code>Guillaume</code></td>
+<td>Rosemont</td>
+</tr>
+<tr>
+<td>21:13</td>
+<td><code>SbMo</code></td>
+<td>Mile-end</td>
+</tr>
+</tbody>
+</table>
+<p>Operated from <code>anarcat3</code>, a WisMesh pocket companion operated from the
+Meshy app, and <code>anarcat1</code>, a T-Echo companion operated from the
+MeshCore Open app, connected to YUL-Little-Italy, a SenseCAP P1. The
+original hop counts published here were from the MeshCore open app
+which has a <a href="https://github.com/zjs81/meshcore-open/issues/367">bug displaying multi-byte
+messages</a>, and have
+been removed.</p>
+<p>Observed:</p>
+<ul>
+<li>7 participants (above)</li>
+<li>3 non-participants sending text messages in Public or another #room</li>
+<li>54 repeaters</li>
+<li>17 companions</li>
+<li>4 rooms</li>
+<li><a href="https://map.meshcore.io/?zoom=7&amp;lat=45.7100&amp;lon=-72.6416">89 nodes in the official map</a></li>
+<li><a href="https://yul.meshmapper.net/leaderboard.php">66 repeaters in MeshMapper</a></li>
+</ul>
+<p>This net broke essentially all previous records:</p>
+<ul>
+<li>distance (Marieville, 58.14km)</li>
+<li>participants (7)</li>
+<li>number of repeaters (54!), etc</li>
+</ul>
+<h2 id="2026-05-20">2026-05-20<a class="headerlink" href="#2026-05-20" title="Permanent link">&para;</a></h2>
+<ul>
+<li>4 contacts:</li>
+<li>Rivière-des-Prairies</li>
+<li>Villeray</li>
+<li>Petite-Patrie</li>
+<li>Brossard</li>
+</ul>
+<h2 id="2026-05-13">2026-05-13<a class="headerlink" href="#2026-05-13" title="Permanent link">&para;</a></h2>
+<p>21:26, one contact (K386, Petite Patrie).</p>
+<h2 id="2026-04-15">2026-04-15<a class="headerlink" href="#2026-04-15" title="Permanent link">&para;</a></h2>
+<p>Last Meshtastic net. </p>
+<p>First MeshCore net.</p>
+<p>No contact on either.</p>
+<h2 id="2026-03-25">2026-03-25<a class="headerlink" href="#2026-03-25" title="Permanent link">&para;</a></h2>
+<p>Meshtastic. 22:52. One contact: "DIR Rooftop", unclear
+(just the string "2️⃣"), no location.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="August 27, 2026 01:34:00 UTC">2026-08-27 01:34:00</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 26, 2026 03:05:08 UTC">2026-03-26 03:05:08</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../net/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Weekly net procedures">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Weekly net procedures
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../other/" class="md-footer__link md-footer__link--next" aria-label="Next: Autres guides et critiques">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Autres guides et critiques
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyleft &copy; CC-BY-SA 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://matrix.to/#/#reseaulibre-space:matrix.org" target="_blank" rel="noopener" title="Matrix chat" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.632.55v22.9H2.28V24H0V0h2.28v.55zm7.043 7.26v1.157h.033a3.3 3.3 0 0 1 1.117-1.024c.433-.245.936-.365 1.5-.365q.81.002 1.481.314c.448.208.785.582 1.02 1.108q.382-.562 1.034-.992.651-.43 1.546-.43.679 0 1.26.167c.388.11.716.286.993.53.276.245.489.559.646.951q.229.587.23 1.417v5.728h-2.349V11.52q0-.43-.032-.812a1.8 1.8 0 0 0-.18-.66 1.1 1.1 0 0 0-.438-.448q-.292-.165-.785-.166-.498 0-.803.189a1.4 1.4 0 0 0-.48.499 2 2 0 0 0-.231.696 5.6 5.6 0 0 0-.06.785v4.768h-2.35v-4.8q.002-.38-.018-.752a2.1 2.1 0 0 0-.143-.688 1.05 1.05 0 0 0-.415-.503c-.194-.125-.476-.19-.854-.19q-.168 0-.439.074c-.18.051-.36.143-.53.282a1.64 1.64 0 0 0-.439.595q-.18.39-.18 1.02v4.966H5.46V7.81zm15.693 15.64V.55H21.72V0H24v24h-2.28v-.55z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://codeberg.org/reseaulibre/lora-reseaulibre-ca" target="_blank" rel="noopener" title="Source code" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.999.747A11.974 11.974 0 0 0 0 12.75c0 2.254.635 4.465 1.833 6.376L11.837 6.19c.072-.092.251-.092.323 0l4.178 5.402h-2.992l.065.239h3.113l.882 1.138h-3.674l.103.374h3.86l.777 1.003h-4.358l.135.483h4.593l.695.894h-5.038l.165.589h5.326l.609.785h-5.717l.182.65h6.038l.562.727h-6.397l.183.65h6.717A12 12 0 0 0 24 12.75 11.977 11.977 0 0 0 11.999.747m3.654 19.104.182.65h5.326c.173-.204.353-.433.513-.65zm.385 1.377.18.65h3.563c.233-.198.485-.428.712-.65zm.383 1.377.182.648h1.203c.356-.204.685-.412 1.042-.648z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://grebedoc.dev" target="_blank" rel="noopener" title="Hosted on grebedoc" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 2s-7.64-.37-13.66 7.88C3.72 16.21 2 22 2 22l1.94-1c1.44-2.5 2.19-3.53 3.6-5 2.53.74 5.17.65 7.46-2-2-.56-3.6-.43-5.96-.19C11.69 12 13.5 11.6 16 12l1-2c-1.8-.34-3-.37-4.78.04C14.19 8.65 15.56 7.87 18 8l1.21-1.93c-1.56-.11-2.5.06-4.29.5 1.61-1.46 3.08-2.12 5.22-2.25 0 0 1.05-1.89 1.86-2.32"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "content.action.edit", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

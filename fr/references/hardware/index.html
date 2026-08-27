@@ -671,6 +671,8 @@
       
         
       
+        
+      
     
     
     
@@ -693,7 +695,7 @@
   <span class="md-ellipsis">
     
   
-    Meshcore
+    MeshCore
   
 
     
@@ -715,7 +717,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Meshcore
+    MeshCore
   
 
           </label>
@@ -794,6 +796,34 @@
     
   
     Repeater guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/meshcore/upgrades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Upgrades
   
 
     
@@ -958,7 +988,7 @@
   <span class="md-ellipsis">
     
   
-    Tunneling Reticulum over Meshcore
+    Tunneling Reticulum over MeshCore
   
 
     
@@ -1112,6 +1142,8 @@
       
         
           
+        
+      
         
       
         
@@ -1602,6 +1634,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Net control log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../other/" class="md-nav__link">
         
   
@@ -2071,7 +2131,7 @@ understand the note on the device.</p>
 <p class="admonition-title">Not working</p>
 <p>We tested those devices, and we recommend against using them entirely.</p>
 </div>
-<p>Note that the devices are rated for compliance with Meshcore for the
+<p>Note that the devices are rated for compliance with MeshCore for the
 moment, but should generally also work with Meshtastic. </p>
 <p>Reticulum support is spottier, and not explicitly covered here. Each
 software project has their own list of compatible hardware which we do
@@ -2091,19 +2151,11 @@ SX1262, 4-way joystick, menu button, reset button, power switch, 3 LEDs
 43$USD, <a href="https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94">62$ at Robotshop</a></p>
 </li>
 <li>
-<p><a href="https://store.rakwireless.com/products/wismesh-pocket">WisMesh Pocket V2</a>: GNSS, 1.3" OLED, acceleration sensor, power
-  button, 3200mAh battery, USB-C powered, 100$</p>
-</li>
-<li><a href="https://lilygo.cc/products/t-echo-lilygo">T-Echo</a>: 200x200 e-ink
+<p><a href="https://lilygo.cc/products/t-echo-lilygo">T-Echo</a>: 200x200 e-ink
   display, NRF52840, GPS, BT 5.0, no wifi, two buttons, no power
-  button, NFC, 850mAh battery, temperature/pressure sensor, 55$USD</li>
+  button, NFC, 850mAh battery, temperature/pressure sensor, 55$USD</p>
+</li>
 <li>cheap <a href="https://www.aliexpress.com/item/1005010640444191.html">Aliexpress Heltec v4 kit, 43CAD</a></li>
-<li><a href="https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html">XIAO ESP32S3 &amp; Wio-SX1262 Kit</a>: tiny, cheap, - 40℃ ~ 100℃,
-  WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button (hidden under the
-  daughterboard, press both to enter JTAG so you can flash, requires
-  opening the case and removing the daughterboard), 22x23x57mm, 37g,
-  exposed GPIO ports, no battery, 20$. Good candidate for the
-  cheapest kit.</li>
 <li>Seeedstudio <a href="https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html">XIAO ESP32S3 &amp; Wio-SX1262 Kit</a>: tiny, - 40℃ ~
   100℃, WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm,
   37g, exposed GPIO ports, cheap (20$), does not ship with
@@ -2140,10 +2192,31 @@ SX1262, 4-way joystick, menu button, reset button, power switch, 3 LEDs
   Next generation of the T1000-E. LR2021, IP66, USB-C connector,
   1100mAh, claims 5 days battery, dual GPS, BT, 1 RGB LED, 2 buttons, -20 to 60℃
   operation, 90*57*8 mm, 45g, 43$USD.</li>
+<li><a href="https://meshtiny.com/product/meshtiny/">Meshtiny</a>: tiny
+  companion, nRF52840, SX1262, OLED, Buzzer, user, reset button,
+  power switch, 3-way encoder button, two LEDs, 250mAh Battery, 60$USD</li>
 </ul>
 </div>
 <!-- !!! failure "Not working" -->
 
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul>
+<li>
+<p><a href="https://store.rakwireless.com/products/wismesh-pocket">WisMesh Pocket V2</a></p>
+<p>Looks nice at first glance: a RAK 4631 kit with GNSS, 1.3" OLED, acceleration sensor, power
+ button, 3200mAh battery, USB-C powered. Battery life excellent.</p>
+<p>But it's expensive (100$USD) especially for the build quality:
+ the 3D print is bad, board mounting pins can get broken off (but
+ can be superglued back in) and the power switch is too close to
+ the battery pouch which can perforate the pouch which is a <strong>fire
+ hazard</strong>.</p>
+<p><strong>DO NOT BUY THIS DEVICE, FIRE HAZARD</strong>. If you want a RAK4631
+  kit, buy the RAK kit (it's a great chipset!) and get a 3D print
+  elsewhere, for example <a href="#diy-build-on-top-of-the-rak-kit">our DIY buid</a>.</p>
+</li>
+</ul>
+</div>
 <h2 id="standalone">Standalone<a class="headerlink" href="#standalone" title="Permanent link">&para;</a></h2>
 <p>Those are day-to-day use device, can you can easily carry in a pocket
 or a pouch. They have a battery and do <em>not</em> need a phone or computer
@@ -2181,11 +2254,19 @@ to operate.</p>
   3D-printed case, QWERTY keyboard, 2500mAh Li-Po battery, audio
   jack and speaker, expansion port, opensource, 100EUR, runs
   wadamesh</li>
-<li><a href="https://shop.m5stack.com/products/cardputer-mesh-kit-for-meshtastic-esp32-s3?variant=48684913164545">Cardputer</a>.
+<li><a href="https://shop.m5stack.com/products/cardputer-mesh-kit-for-meshtastic-esp32-s3?variant=48684913164545">M5 Cardputer Adv</a>.
   ESP32 handheld, 1.14" LCD, 56-key keyboard, 1750mAh lithium,
   microphone, 1W speaker and audio jack, infrared, microSD, SX1262
-  expansion port, not supported by stock Meshcore firmware, but
+  expansion port, not supported by stock MeshCore firmware, but
   many alternative firmware, for example: <a href="https://github.com/MultiMote/meshcore-cardputer-adv"><code>MultiMote/meshcore-cardputer-adv</code></a>, <a href="https://github.com/sosprz/meshcore-cardputer-adv"><code>sosprz/meshcore-cardputer-adv</code></a>, <a href="https://github.com/Stachugit/MeshCore-Cardputer-ADV"><code>Stachugit/MeshCore-Cardputer-ADV</code></a></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul>
+<li>The <a href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html">Seeedstudio Sensecap Indicator</a>
+  looks like a nice device for home/office setups, but it is <a href="https://github.com/meshcore-dev/MeshCore/issues/879">not
+  supported by MeshCore</a></li>
 </ul>
 </div>
 <p>Note that those devices depend on the proprietary Ripple firmware, but
@@ -2209,7 +2290,10 @@ embedded devices above.</p>
 wrapper around a Raspberry PI CM4, with modular expansion ports: 720p 5.0-inch IPS screen,
 74-keys QWERTY keyboard with gaming buttons, 18650 battery
 module, cellular modem, and a <a href="https://hackergadgets.com/products/uconsole-aio-v2?variant=47045380735150">third party SDR, LoRa, GPS, USB,
-RTC, ethernet module</a>.</li>
+RTC, ethernet module</a>.
+<a href="https://youtu.be/oN9zw3lzSVc">Video review</a> says the built-in
+WiFi antenna is not great but can be modified with a 3D printer,
+and that the trackball is not great. 6-7h runtime, half with a SDR.</li>
 </ul>
 </div>
 <div class="admonition question">
@@ -2217,6 +2301,9 @@ RTC, ethernet module</a>.</li>
 <ul>
 <li><a href="https://mecha.so/comet#overview">Mecha Comet</a>. pre-order as of July 2026, supports LoRa
   through a M.2 connector, to be clarified.</li>
+<li>M5 (who made the Cardputer Adv above) also made a <a href="https://shop.m5stack.com/pages/m5-cardputerzero">Cardputer zero</a> 
+  which is a real Raspberry Pi underneath, while still being
+  compatible with the <a href="https://shop.m5stack.com/products/cap-lora-1262-for-cardputer-adv-sx1262-atgm336h">Cap LoRa 1262</a></li>
 </ul>
 </div>
 <p>There there is a long list of small computers like the <a href="https://mntre.com/reform.html">MNT Reform</a>
@@ -2286,7 +2373,8 @@ many not have batteries.</p>
 <li>
 <p><a href="https://mappingnetwork.ca/products/sensecap-m2-indoor-gateway-lorawan-us915">SenseCAP M2 indoor
   gateway</a>:
-  cheaper alternative to teh WisMesh?</p>
+  likely not supported by MeshCore given the MT7628 and SX1302
+  chipsets, see <a href="https://github.com/meshcore-dev/MeshCore/issues/3211">this feature request</a></p>
 </li>
 <li>
 <p><a href="https://www.aliexpress.com/item/1005010224488993.html">AliExpress 5W Heltec
@@ -2318,6 +2406,13 @@ really be used in production as they lack a proper case.</p>
   NRF5280, might be cheaper <a href="https://www.aliexpress.com/item/1005011870647672.html">at AliExpress</a></li>
 <li>the <a href="https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158">RAK19003 base kit</a> (28$) is more expensive, but less
   power-hungry than the Heltec</li>
+<li><a href="https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html">XIAO ESP32S3 &amp; Wio-SX1262 Kit</a>:
+  barebones board, tiny, cheap,
+  WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button (hidden under the
+  daughterboard, press both to enter JTAG so you can flash, requires
+  opening the case and removing the daughterboard), - 40℃ ~ 100℃, 22x23x57mm, 37g,
+  exposed GPIO ports, no battery, 20$. Probably the cheapest and
+  smallest kit all around.</li>
 </ul>
 </div>
 <div class="admonition example">
@@ -2355,7 +2450,7 @@ there.</p>
 <li>4 × M3 nuts</li>
 <li>2 × M2.5 screws (<em>not</em> part of the above kit, <a href="https://www.printables.com/model/286664-rak19003-micro-case-for-meshtastic/comments/2516182">length unclear</a>,
    <a href="https://abra-electronics.com/hardware/metric-hardware-round-phillips-head-screws/1968p-machine-screw-m2.5-6mm-length-phillips-25-pack.html">here are M2.5x6mm</a> or <a href="https://abra-electronics.com/hardware/metric-hardware-kits/screws-bolts/repair-kit-for-eyeglasses-watches-screws-and-nuts-caps-m1m2m2.5-stainless.html">this kit</a>)</li>
-<li>1 × battery (<a href="https://www.amazon.com/gp/product/B091FKGW8H">Amazon</a>, possibly the same as <a href="https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/1578-ada-lithium-ion-polymer-battery-37v-500mah-1578-ada.html">Abra</a>,
+<li>1 × battery (maybe this one from <a href="https://abra-electronics.com/batteries-holders/batteries-polymer-lithium-ion/1578-ada-lithium-ion-polymer-battery-37v-500mah-1578-ada.html">Abra</a>,
    optional?)</li>
 <li>there's also an optional <a href="https://www.amazon.com/gp/product/B086L2GPGX">battery cutoff switch</a>, couldn't find
    an <a href="https://abra-electronics.com/electromechanical/switches/pushbutton-switches/">equivalent on Abra</a></li>
@@ -2377,7 +2472,8 @@ practice, see the <a href="antennas/">Antennas</a> section.</p>
   in <a href="https://antennatestlab.com/helium-network-antenna-reviews/alpha-network-ada-915-5acm-helium-antenna-5dbi">this technical review</a>. In practice, it's still a great
   antenna, a "great bang for the buck" according to the Ottawa folks,
   and that the antenna is closer to 3dBi. Watch out for cheap
-  knock-offs, <a href="https://muzi.works/products/alfa-outdoor-antenna">Muzi Works sells a real one for 25CAD</a>.</p>
+  knock-offs, <a href="https://muzi.works/products/alfa-outdoor-antenna">Muzi Works sells a real one for 25CAD</a>, <a href="https://myneedlestore.com/product/alfa-network-aoa-915-5acm-915-mhz-dipole-antenna-for-helium-iot-applications/">My Needle
+  Store (30$CAD)</a> is local, untested</p>
 </li>
 <li>
 <p><a href="https://www.amazon.ca/Fiberglass-Antenna-Hotspot-Directional-Sensecap/dp/B09F31P1PL"><code>SYMITANT58</code></a> (25$CAD Amazon)</p>
@@ -2425,18 +2521,8 @@ touch on <em>all</em> the connectors from the guide.</p>
 <p>The SenseCAP Solar Node P1 can be upgraded with an Alfa antenna
 easily, but needs some sort of adapter because the stock connectors
 are SMA-based.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Connector</label><label for="__tabbed_1_2">Pigtail</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Pigtail</label><label for="__tabbed_1_2">Connector</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block">
-<p><img align="right" alt="" src="../../assets/sensecap-p1-alfa-connector.jpg" width="300" /></p>
-<p>This connector works well: it is a SMA to N converter that fits
-above the stock pigtail. The connector is sold at <a href="https://addison-electronique.com/">Addison</a>.</p>
-<p>It also raises the antenna a little higher which is good because
-it clears the solar panel better. The only downside is it
-introduces some loss compared to a pigtail only solution.</p>
-<p>Note that we have had problems with this connector, where packets
-would only be sent out and not received correctly.</p>
-</div>
 <div class="tabbed-block">
 <p><img align="right" alt="" src="../../assets/sensecap-p1-alfa.jpg" width="300" /></p>
 <p>For this, you need a 30cm N to RP-SMA pigtail connector.</p>
@@ -2447,6 +2533,19 @@ socket. </p>
 <p>This <a href="https://muzi.works/products/rp-sma-to-type-n-cable-20-cm">20 cm pigtail from Muzi Works</a> works, but is a little short:
 you can only install it on the hole nearest to the router instead of
 the further one, as shown on the image here.</p>
+</div>
+<div class="tabbed-block">
+<p><img align="right" alt="" src="../../assets/sensecap-p1-alfa-connector.jpg" width="300" /></p>
+<p>This is a SMA to N converter that fits
+above the stock pigtail sold at <a href="https://addison-electronique.com/">Addison</a>.</p>
+<p>It also raises the antenna a little higher which is good because
+it clears the solar panel better. But it introduces some loss
+compared to a pigtail.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>We have had problems with this connector, where packets
+would only be sent out and not received correctly.</p>
+</div>
 </div>
 </div>
 </div>
@@ -2522,7 +2621,7 @@ you for various reasons:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="July 28, 2026 18:24:48 UTC">2026-07-28 18:24:48</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="August 27, 2026 16:11:13 UTC">2026-08-27 16:11:13</span>
   </span>
 
     
