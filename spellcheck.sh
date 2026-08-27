@@ -12,7 +12,7 @@ aspell="aspell --mode=markdown --lang=$lang --home-dir=. --personal=aspell.$lang
 
 find -name "*.md" | grep -v \
   -e '/log.md$' \
-  -e '/2026-08-26-wismesh-pocket-fire-hazard.mds$' \
+  -e '/2026-08-26-wismesh-pocket-fire-hazard.md$' \
   -e '/hardware/index.md$' \
     |  while read path; do
     echo "spellchecking $path..."
