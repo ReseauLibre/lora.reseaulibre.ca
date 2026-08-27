@@ -32,7 +32,6 @@ We log the following fields:
 | 21:11 | Vanfax        | Simon                  | Longueuil       | 4    |
 | 21:13 | MeshCourte    | Patrick                | Villeray        | 2    |
 | 21:15 | grostonymobil |                        |                 | 4    |
-|       |               |                        |                 |      |
 
 animation de VE2FXO, log de anarcat. hops counts tels que vus par
 anarcat, sauf lui-même tel que vu par ve2fxo.
@@ -54,6 +53,7 @@ Annonces:
   boîtier et regarder en bas à droite de la batterie pour des signes
   d'usures, il y a une friction entre la batterie et l'interrupteur
   qui peut briser la batterie. une annonce plus détaillée viendra.
+- mesh night la semaine prochaine!
 
 ## 2026-08-19
 
