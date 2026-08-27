@@ -7,8 +7,7 @@ of the [official list](https://meshtastic.org/docs/software/).
 
 Those are programs that run on a phone or tablet:
 
-- official [Android app](https://meshtastic.org/docs/category/android-app/), also [shipped on F-Droid](https://f-droid.org/packages/com.geeksville.mesh/)
-- official [iOS app](https://meshtastic.org/docs/software/apple/installation/)
+- official [app](https://meshtastic.org/downloads//), also [shipped on F-Droid](https://f-droid.org/packages/com.geeksville.mesh/)
 
 Note that those won't work without a LoRa transmitter, to which you
 typically connect over Bluetooth.
