@@ -18,7 +18,7 @@ https://foulab.org/news/events-may-2026/ -->
 
 <!-- more -->
 
-So join us at Foulab on September 2nd from 19:00 to 22:00. We will be
+So join us at Foulab on September 2 from 19:00 to 22:00. We will be
 talking about and experimenting with radio and mesh networking
 technologies such as Reticulum, MeshCore and Meshtastic.
 
