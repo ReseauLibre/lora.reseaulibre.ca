@@ -102,13 +102,17 @@ During first boot, the device will display the message:
 If you're flashing an already configured device, you should backup
 before flashing it.
 
-On the MeshCore you want to:
+On the MeshCore application you want to:
 
  1. go into Settings (the "gear" icon)
  2. go into `Export Config`
  3. hit `Select All`
  4. hit the check mark
  5. save the file somewhere safe
+
+For repeaters, you want to use the <https://config.meshcore.io/> site
+and "Export" the current configuration. This will download a file you
+can later "Import" through the same interface to restore.
 
 Normally, flashing a MeshCore device with a newer version should be
 safe and your settings should be kept, but it's always good to backup
