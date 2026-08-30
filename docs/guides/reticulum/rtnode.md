@@ -99,12 +99,19 @@ rnprobe rnstransport.probe 9ad54088c8f19b2782fda5f63057b378
 The positive result should say Valid Reply and then info on the LoRa connection, like this:
 
 ```
+Valid reply from <9ad54088c8f19b2782fda5f63057b378>
 Round-trip time is 877.41 milliseconds over 1 hop [RSSI -46 dBm] [SNR 10.25 dB] [Link Quality 100.0%]
+
+Sent 1, received 1, packet loss 0.0%
 ```
 
 If it fails, you will see:
 
     Path request timed out
+
+or:
+
+    Probe timed out
 
 Unless the two devices are extremely far away (think "kilometers") or
 close (think "on top of each other"), this is most likely due to a
@@ -120,6 +127,36 @@ the same parameters, they will both display their settings on boot.
     
     It is also possible to remotely manage the device *over LoRa* (!)
     through that console file.
+
+### Details of the probe mechanism
+
+When you run `rnsprobe`, it first writes:
+
+    Path to <9ad54088c8f19b2782fda5f63057b378> requested ⢁
+
+That last funny rune is a little spinner that animates for a while. In
+this step, RNS tried to figure out the path to the destination. If
+this is a fresh new probe, it doesn't actually know where to send the
+packets, and will not actually send the probe until it figures that
+out (and, yes, even if you have only a single interface).
+
+If path discovery fails, you will see:
+
+    Path request timed out
+
+If the remote confirms its presence, then `rnsprobe` will switch to
+actually sending the probe packet, at which point it will show:
+
+    Sent probe 1 (16 bytes) to <9ad54088c8f19b2782fda5f63057b378>
+
+If it fails at that point, it will show:
+
+    Probe timed out
+    Sent 1, received 0, packet loss 100.0%
+
+This can happen if a device that was previously reachable (so path
+discovery succeeded in the past) became unreachable. This can happen
+if the device moved out of range or is somehow disabled, for example.
 
 ## Future work
 
