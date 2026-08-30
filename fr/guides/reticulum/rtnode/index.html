@@ -36,7 +36,7 @@
     
     
       
-        <title>Transport nodes and microReticulum - Réseau Libre</title>
+        <title>Transport nodes - Réseau Libre</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#transport-nodes-and-microreticulum" class="md-skip">
+        <a href="#transport-nodes" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Transport nodes and microReticulum
+              Transport nodes
             
           </span>
         </div>
@@ -1027,6 +1027,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transport nodes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1034,7 +1052,7 @@
   <span class="md-ellipsis">
     
   
-    Transport nodes and microReticulum
+    Transport nodes
   
 
     
@@ -1043,6 +1061,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Future work
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other firmware
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1779,6 +1860,58 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Future work
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other firmware
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1802,7 +1935,7 @@
   
 
 
-<h1 id="transport-nodes-and-microreticulum">Transport nodes and microReticulum<a class="headerlink" href="#transport-nodes-and-microreticulum" title="Permanent link">&para;</a></h1>
+<h1 id="transport-nodes">Transport nodes<a class="headerlink" href="#transport-nodes" title="Permanent link">&para;</a></h1>
 <p>All of the above is about "clients", in the sense that most of the
 software is geared towards new users, and rightly so.</p>
 <p>But we did not talk much about routing, which is a core tenant of mesh
@@ -1813,12 +1946,103 @@ computer, it makes this all inconvenient to host on your rooftop.</p>
 <p>Thankfully people figured out a solution to this problem and starting
 expanding RNode to support routing, into something called an RTNode,
 for "Reticulum Transport Node".</p>
-<p>Cleeyv wrote an <a href="https://rns.recipes/forum/build-guides/how-to-install-and-test-the-rtnode-firmware">excellent guide on how to setup the RTNode
-firmware</a>, which we'll defer to.</p>
-<p>Our only addition is that we had to put the device in upload mode, by
-holding the "BOOT" (actually labeled <code>PGR</code> on the board) button while
-pressing "RESET" (<code>RST</code>), before running the <code>flash.py</code> command.</p>
-<p>See also those firmware projects:</p>
+<p>What follows is a shorter version of Cleeyv's <a href="https://rns.recipes/forum/build-guides/how-to-install-and-test-the-rtnode-firmware">excellent guide on how
+to setup the RTNode firmware on Heltec device</a>, which we revise
+here to include other devices. The following procedure was tested on a
+<a href="https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini">RAK WisMesh Repeater Mini</a>.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p>You will be installing the <a href="https://github.com/attermann/microReticulum_Firmware/"><code>attermann/microReticulum_firmware</code></a>
+from GitHub. This assumes you already have <a href="../rns/">RNS</a> installed on a
+Linux computer and are familiar with the command-line. </p>
+<p>Then follow those steps:</p>
+<ol>
+<li>
+<p>connect the device with a USB cable to the computer</p>
+</li>
+<li>
+<p>if you have data on the device, <a href="meshcore/companion.md#backing-up-before-flashing">perform a backup</a></p>
+</li>
+<li>
+<p>deploy the firmware with:</p>
+<div class="highlight"><pre><span></span><code>rnodeconf --clear-cache
+rnodeconf --autoinstall --fw-url https://github.com/attermann/microReticulum_Firmware/releases/
+</code></pre></div>
+<p>The <code>rnodeconf --clear-cache</code> is optional and required only if you
+have previously installed another RNode firmware with the same name.</p>
+<p>The <code>--autoinstall</code> process is similar to the one we have
+documented in the <a href="#rnode">RNS documentation</a> in that it will walk you
+through a series of prompts before flashing the firmware. Make
+sure you pick the right frequency band (currently 915MHz).</p>
+</li>
+<li>
+<p>At this point, the firmware in place is only like a normal RNode
+    in that it's essentially a modem, and does not yet relay
+    packets. For that, you need to switch it to "Transport mode".</p>
+<div class="highlight"><pre><span></span><code>rnodeconf --tnc --freq 914875000 --bw 125000 --sf 9 --cr 7 --txp 17 /dev/ttyACM0
+</code></pre></div>
+<p>If you get an error like:</p>
+<div class="highlight"><pre><span></span><code>[22:30:19] [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: &#39;/dev/ttyACM0&#39;
+</code></pre></div>
+<p>It's possible the device reconnected under a different serial
+port, try changing to, say, <code>/dev/ttyACM1</code> You can list your
+terminal devices with:</p>
+<div class="highlight"><pre><span></span><code>ls /dev/tty*
+</code></pre></div>
+<p>Another possibility is <code>/dev/ttyUSB0</code>, for example. It is <em>not</em>
+<code>/dev/ttyS0</code> or <code>/dev/tty0</code>, those are internal ports in Linux
+that are not your external serial ports, ignore those.</p>
+<p>If you can't find the port, it's possible the device is
+disconnected somehow, but that would be surprising if the
+<code>--autoinstall</code> step succeeded.</p>
+</li>
+<li>
+<p>reboot the device, by pushing the reset pin</p>
+</li>
+</ol>
+<h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
+<p>To see if the node works, you must connect to it over serial with <a href="https://github.com/tio/tio"><code>tio</code></a>:</p>
+<div class="highlight"><pre><span></span><code>tio /dev/ttyACM0 -t | stdbuf -i0 -o0 -e0 strings -w | awk &#39;{print $0&quot;\r&quot;}&#39;
+</code></pre></div>
+<p>This will show a series of cryptic messages, look for one like:</p>
+<div class="highlight"><pre><span></span><code>00:10:56.503 [NOT] Transport instance will respond to probe requests on &lt;9ad54088c8f19b2782fda5f63057b378&gt;
+</code></pre></div>
+<p>Save this line so that the hash can be referred back to later in the test. Then make sure to close the tio session by typing <kbd>ctrl-t</kbd> and then <kbd>q</kbd> because leaving it open can cause problems later.</p>
+<p>Then you will need another Reticulum device to probe the above to see
+if it really responds. For this, we will use another computer with
+<a href="../rns/">RNS</a> installed. You <em>could</em> use the same device, but make sur
+<code>rnsd</code> is started with the right port, which will be different than
+the one used for the RTNode!</p>
+<p>Run this command to confirm a Reticulum connection over LoRa between RNS on your computer with an RNode interface to the RTNode and back:</p>
+<div class="highlight"><pre><span></span><code>rnprobe rnstransport.probe 9ad54088c8f19b2782fda5f63057b378
+</code></pre></div>
+<p>The positive result should say Valid Reply and then info on the LoRa connection, like this:</p>
+<div class="highlight"><pre><span></span><code>Round-trip time is 877.41 milliseconds over 1 hop [RSSI -46 dBm] [SNR 10.25 dB] [Link Quality 100.0%]
+</code></pre></div>
+<p>If it fails, you will see:</p>
+<div class="highlight"><pre><span></span><code>Path request timed out
+</code></pre></div>
+<p>Unless the two devices are extremely far away (think "kilometers") or
+close (think "on top of each other"), this is most likely due to a
+mismatch in the LoRa parameters. Check both sides to see if they use
+the same parameters, they will both display their settings on boot.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Upstream provides a <code>console.html</code> file that can be loaded in a
+browser with the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility">Web Serial API</a>
+(e.g. Chrome, Firefox 151 or later) to provide a more complete and
+intuitive interface to the device, undocumented here for now.</p>
+<p>It is also possible to remotely manage the device <em>over LoRa</em> (!)
+through that console file.</p>
+</div>
+<h2 id="future-work">Future work<a class="headerlink" href="#future-work" title="Permanent link">&para;</a></h2>
+<p>We do not have a good procedure for testing the actual "transport"
+part of the transport node here. All we did is test that the device
+responds to probe, but that does not mean it is correctly relaying
+packets, which is not necessarily a given.</p>
+<p><a href="https://rns.recipes/forum/build-guides/how-to-install-and-test-the-rtnode-firmware">Cleeyv's guide</a> provides a <a href="https://rns.recipes/forum/build-guides/how-to-install-and-test-the-rtnode-firmware#post-124">transport test</a> which you should
+try for now.</p>
+<h2 id="other-firmware">Other firmware<a class="headerlink" href="#other-firmware" title="Permanent link">&para;</a></h2>
+<p>Those are the transport firmware projects we are currently aware of:</p>
 <ul>
 <li><a href="https://github.com/attermann/microReticulum_Firmware"><code>attermann/microReticulum_Firmware</code></a>: RNode firmware integrating
   the <a href="https://github.com/attermann/microReticulum">microReticulum</a> stack which implements a full transport node
@@ -1850,7 +2074,7 @@ pressing "RESET" (<code>RST</code>), before running the <code>flash.py</code> co
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 20, 2026 03:42:10 UTC">2026-06-20 03:42:10</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="August 30, 2026 03:38:13 UTC">2026-08-30 03:38:13</span>
   </span>
 
     
