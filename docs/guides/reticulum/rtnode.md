@@ -158,6 +158,11 @@ This can happen if a device that was previously reachable (so path
 discovery succeeded in the past) became unreachable. This can happen
 if the device moved out of range or is somehow disabled, for example.
 
+## Known issues
+
+- for RAK 4631 boards, the battery voltage readings are always
+  reported as zero, so you do not get to monitor battery levels
+
 ## Future work
 
 We do not have a good procedure for testing the actual "transport"
