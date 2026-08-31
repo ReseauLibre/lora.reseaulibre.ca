@@ -184,3 +184,4 @@ Those are the transport firmware projects we are currently aware of:
   console commands, 200 entry routing table with SNR tracking,
   integration with [`Rathole`](https://github.com/ratspeak/rathole)
 - [untested Ethernet gateway firmware](https://rns.recipes/forum/showcase/rnode-over-ethernet-rak4631-rak13800-ethernet-module)
+- [`PRNS`](https://reticulum.rs/) - Rust-based rewrite, LLM-coded, human-reviewed
