@@ -82,9 +82,13 @@ following:
   on the location (SF8 for urban, denser networks and SF10 for
   regions, sparser networks), still unsettled
 - argued about large language models
-- may devices were backed up, reflashed, tested, monitored and demo'd,
-  including the infamous [fire hazard previously announced here](2026-08-26-wismesh-pocket-fire-hazard.md),
-  [Wadamesh](https://wadamesh.com/), [Meshy](https://codeberg.org/sesivany/meshy), a word, but no demo or test, on the
+- discussed problems with people deliberately creating collisions on
+  public key hashes to have cute repeater names and how to communicate
+  about this problem (announcement coming)
+- many devices were backed up, reflashed, tested, monitored and
+  demo'd, including the infamous [fire hazard previously announced
+  here](2026-08-26-wismesh-pocket-fire-hazard.md), a raspberry pi MeshCore firmware, [Wadamesh](https://wadamesh.com/),
+  [Meshy](https://codeberg.org/sesivany/meshy), [Meshterm](https://discord.gg/AZwe5Uvb3S) a word, but no demo or test, on the
   multi-firmware [`bmorcelli/Launcher`](https://bmorcelli.github.io/Launcher) project allowing multiple
   firmwares to be installed concurrently on a Lilygo T-Deck
 
