@@ -145,3 +145,12 @@ over Reticulum:
   MeshCore](https://github.com/meshcore-dev/MeshCore/discussions/1736)
 - [MeshCore–Reticulum Bridge Node: Technical Specification v5](https://github.com/samuk/Reticulum/blob/master/docs/meshcore-bridge.md), the
   spec behind [`CoreNet`](https://github.com/artbotterell/CoreNet)
+
+Other implementations:
+
+- [RNS Gateway](https://github.com/genemichael/rns-gateway) - an embedded firmware that does both a
+  micro-Reticulum *and* a MeshCore implementation on a single radio
+- RNS Gateway reuses the wire format of
+  [comms-engineer/RNS_Over_Meshcore](https://github.com/comms-engineer/RNS_Over_Meshcore) which is *also* a fork of
+  [`RNS_Over_Meshtastic`](https://github.com/landandair/RNS_Over_Meshtastic) like the project we used here, but a
+  *different* fork

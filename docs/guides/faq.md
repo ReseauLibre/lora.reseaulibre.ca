@@ -8,6 +8,27 @@ Here are a couple of questions we have frequently been asked.
 
 ## General
 
+### What is a mesh network?
+
+> A [mesh network](https://en.wikipedia.org/wiki/Mesh_networking) is a network topology in which the
+> infrastructure nodes (i.e., bridges, switches, and other
+> infrastructure devices) connect directly, dynamically and
+> non-hierarchically to as many other nodes as possible and cooperate
+> with one another to efficiently route data to and from hosts. 
+> 
+> Mesh topology may be contrasted with conventional star/tree network
+> topologies in which the bridges/switches are directly linked to only
+> a small subset of other bridges/switches, and the links between
+> these infrastructure neighbours are hierarchical.
+>
+> -- [Wikipedia](https://en.wikipedia.org/wiki/Mesh_networking), 2026
+
+Mesh networks have a rich and long [history](../history.md) but the mesh, as far
+as we're currently concerned, is protocols like [Meshcore](https://meshcore.io/),
+[Meshtastic](https://meshtastic.org/), or [Reticulum](https://reticulum.network/), mostly done over [LoRa](https://en.wikipedia.org/wiki/LoRa) except
+for Reticulum which supports other interfaces like WiFi, Bluetooth,
+ham radio links or the regular Internet.
+
 ### Should I install a relay?
 
 Most likely, yes. Even if you don't think you reach other nodes, you

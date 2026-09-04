@@ -13,8 +13,7 @@ un [réseau "mesh"](https://fr.wikipedia.org/wiki/R%C3%A9seau_maill%C3%A9) dans 
 
     ---
     
-    Nous construisons un
-    [mesh](https://en.wikipedia.org/wiki/Mesh_networking) ou "réseau
+    Nous construisons un [mesh](guides/faq.md#what-is-a-mesh-network) ou "réseau
     maillé" dans la région de Montréal: un réseau de communication
     décentralisé à basse puissance.
 
@@ -36,9 +35,9 @@ un [réseau "mesh"](https://fr.wikipedia.org/wiki/R%C3%A9seau_maill%C3%A9) dans 
 
     ---
 
-    Nous travaillons pour l'instant sur les protocoles [LoRa](https://en.wikipedia.org/wiki/LoRa) et en
-    particulier [MeshCore](https://meshcore.co.uk/), [Meshtastic](https://meshtastic.org/), [Reticulum](https://reticulum.network/) et la
-    [radio amateur](https://en.wikipedia.org/wiki/Amateur_radio).
+    Nous travaillons pour l'instant sur le protocole [MeshCore](guides/meshcore/index.md)
+    mais expérimentons également avec [Reticulum](https://reticulum.network/) et la [radio
+    amateur](https://en.wikipedia.org/wiki/Amateur_radio) mais aussi (précédemment) [Meshtastic](guides/meshtastic.md).
 
 -   :octicons-sun-16: **Why**
 
@@ -74,11 +73,11 @@ modifier le site par le [dépôt Git](https://codeberg.org/anarcat/lora-reseauli
 # Carte MeshCore
 
 Cette carte montre les répétitrices qui répondent aux sondes sur le
-mesh MeshCore, grâce au [projet MeshMapper](https://wiki.meshmapper.net/).
+mesh MeshCore, grâce au [projet MeshMapper](https://wiki.meshmapper.net/), voir nos [voisins](references/neighbours.md).
 
 <!-- update the iframe in maps.md when updating this -->
 <iframe src="https://yul.meshmapper.net/embed.php?lat=45.508545&amp;lon=-73.589824&amp;zoom=10&amp;geofence=0&amp;fail_grid=0" width="100%" height="500px" style="border:0;" loading="lazy" allowfullscreen>
   </iframe>
 
 Voir aussi la [section Cartes](references/maps.md) pour d'autres cartes.
-
+<

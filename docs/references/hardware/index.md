@@ -219,6 +219,8 @@ computer to operate.
           **DO NOT BUY THIS DEVICE, FIRE HAZARD**. If you want a RAK4631
           kit, buy the RAK kit (it's a great chipset!) and get a 3D print
           elsewhere, for example [our DIY buid](#diy-build-on-top-of-the-rak-kit).
+          
+          See [this news article for details](../../news/posts/2026-08-26-wismesh-pocket-fire-hazard.md)
 
 ## Standalone
 

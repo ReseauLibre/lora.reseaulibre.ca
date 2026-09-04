@@ -126,3 +126,27 @@ until this situation is clarified.
 Other RAK Wireless products are, as far as we know, not plagued with
 similar design flaws. We warmly recommend the RAK Solar Mini repeater,
 the WisMesh Tag, and the 4631 kits for DIY builds!
+
+## Timeline
+
+- 2026-08-13T09:50-04:00: Sean notices issues with the power switch
+  being unreliable
+- 2026-08-20T15:17-04:00: Sean notices the swollen battery, requests
+  pictures from the community
+- 2026-08-20T19:22-04:00: Sean shares first pictures of swollen
+  battery
+- 2026-08-21T22:32-04:00: anarcat shares pictures of his battery
+- 2026-08-21T22:35-04:00: Sean identifies scratches on anarcat's
+  pictures
+- 2026-08-21T22:45-04:00: Sean contacted Rokland for support
+- 2026-08-21T23:07-04:00: anarcat publishes a [first warning](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/commit/ff66243e506b972304786cfa32681d3974753743)
+- 2026-08-24: Rokland confirms the battery is dangerous and should be
+  disposed of properly, and that they will send a new unit
+- 2026-08-26T22:04:06-04:00: anarcat contacts RAK Wireless about the issue
+- 2026-08-26T22:47:47-04:00: RAK requests pictures
+- 2026-08-26T23:39:58-04:00: anarcat provides pictures
+- 2026-08-27T11:19:51-04:00: anarcat publishes this article
+- 2026-08-27T11:27:22-04:00: anarcat sends article to RAK
+- 2026-08-28T09:16-04:00: anarcat [republishes on Mastodon](https://kolektiva.social/@Anarcat/117173310682114492), with
+  extra pictures and explanations
+- 2026-08-28T11:50:35-04:00: RAK confirms reception
