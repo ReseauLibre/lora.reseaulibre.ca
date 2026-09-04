@@ -55,7 +55,7 @@ following:
   happening
 - participated in the Reticulum hacking as well by sending text
   messages with LXMF (think Signal), browsing Nomad pages (think
-  Gopher/Gemini) and joining a RRC (think IRC over Reticulum) channel
+  Gopher/Gemini) and joining a [RRC](https://reticulum.miraheze.org/wiki/RRC) (think IRC over Reticulum) channel
   over Nomad net (yes, that impossible to use client, what do you mean
   <kbd>control-d</kdb> to send, this is not `cat(1)`)
 - monitored the airwaves with an software-defined radios like the
