@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#notes" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1756,6 +1761,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1814,7 +1821,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              1 min read
+                              2 min read
                             
                           </span>
                         </div>
@@ -1846,8 +1853,10 @@
   
 
 
-  <h1>Mesh night in September</h1>
-
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Now with notes!</p>
+</div>
 <p>You know the drill!</p>
 <p>Every month, <a href="https://foulab.org/">Foulab</a>, the Montreal hacker space, holds a mesh
 night the first Wednesday of the month, and this month is
@@ -1862,6 +1871,49 @@ technologies such as Reticulum, MeshCore and Meshtastic.</p>
 questions, but we'll also be hacking together!.</p>
 <p>Foulab's <a href="https://foulab.org/location/">location</a> is <a href="https://www.openstreetmap.org/node/717702812">Suite 33B, 999 du Collège, Montréal,
 Québec, Canada, H4C 2S3</a> (<a href="https://www.google.com/maps/place/999+Rue+du+Coll%C3%A8ge,+Montr%C3%A9al,+QC+H4C+2S2,+Canada">Google maps</a>). </p>
+<h1 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h1>
+<p>About 15-20 people showed up during the night. I (anarcat) noticed the
+following:</p>
+<ul>
+<li>Tony demo'd <a href="https://reticulum.rs/">PRNS</a> with groups, LoRa - Bluetooth -
+  Bluetooth - Lora bridge with groups for isolation. PRNS has a button
+  interface, no remote configuration options yet</li>
+<li>demo was done using, among other devices, a <a href="https://heltec.org/project/meshtower/">Heltec Meshtower v2</a>
+  a beautiful (if a little pricier) solar repeater with a NRF chipset,
+  a solid-looking metal casing (which require some hacking at the
+  screws to close correctly), and a built-in N connector, from the Ali
+  Express store, which had staunch supporters</li>
+<li><a href="https://scoat.es/@sean/117207646077486927">reflashed a relunctant RAK board</a> using Pi Pico Zero, a debug
+  probe, many fingers holding things together because we don't want to
+  solder stuff permanently and me barely understanding what's
+  happening</li>
+<li>participated in the Reticulum hacking as well by sending text
+  messages with LXMF (think Signal), browsing Nomad pages (think
+  Gopher/Gemini) and joining a RRC (think IRC over Reticulum) channel
+  over Nomad net (yes, that impossible to use client, what do you mean
+  <kbd>control-d</kdb> to send, this is not <code>cat(1)</code>)</li>
+<li>monitored the airwaves with an software-defined radios like the
+  RTL-SDR and a <a href="https://opensourcesdrlab.com/products/clifford-heath-hackrf-one-with-portapack-h4m?VariantsId=10177">Portapack HackRF One</a>, with <a href="https://www.gqrx.dk/">gqrx</a> on Mac and
+  Linux</li>
+<li>witnessed the (presumably) smallest Android 13 cell phone, the
+  <a href="https://en.wikipedia.org/wiki/Unihertz_Jelly_series">Jelly Star</a> which seems to be deliberately designed to be
+  annoying to use, a thing which its owner was very happy about
+  because he was spending less time on his phone</li>
+<li>understood that I can hook up my LoRa transport node with the rest
+  of the internet-wide Reticulum backbone without flooding LoRa, using
+  a <a href="https://reticulum.network/manual/interfaces.html#interfaces-modes">different interface mode</a> (<a href="https://reticulum.miraheze.org/wiki/Interface#Modes">wiki</a>, <a href="https://rns.moscow/announce-sim.html">simulator</a>),
+  probably in <a href="https://reticulum.miraheze.org/wiki/Interface#access_point"><code>access_point</code></a> (or <code>internal</code> if i eventually want
+  to bridge with other LoRa networks) mode for the LoRa relay, and
+  <a href="https://reticulum.miraheze.org/wiki/Interface#boundary"><code>boundary</code></a> for the internet side (but I kind of just made this
+  up while writing this and god this is complicated right now, and
+  don't trust this until it turns into a proper <a href="../../guides/index.md">guide</a>)</li>
+<li>may devices were backed up, reflashed, tested, monitored and demo'd,
+  including the infamous <a href="../../26/fire-hazard-on-the-wismesh-pocket/">fire hazard previously announced here</a></li>
+</ul>
+<p>I'm considering making more frequent notes like this of mesh nights so
+people remember what happened and see what we do there. </p>
+<p>If I forgot anything, let me know. Next time, I'll setup a pad so
+people can note down there stuff.</p>
 
 
 
@@ -1884,7 +1936,7 @@ Québec, Canada, H4C 2S3</a> (<a href="https://www.google.com/maps/place/999+Rue
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="August 30, 2026 03:47:15 UTC">2026-08-30 03:47:15</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="September 4, 2026 02:42:52 UTC">2026-09-04 02:42:52</span>
   </span>
 
     
