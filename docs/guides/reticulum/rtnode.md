@@ -29,7 +29,7 @@ Then follow those steps:
 
  1. connect the device with a USB cable to the computer
  
- 2. if you have data on the device, [perform a backup](meshcore/companion.md#backing-up-before-flashing)
+ 2. if you have data on the device, [perform a backup](../meshcore/companion.md#backing-up-before-flashing)
 
  2. deploy the firmware with:
 
@@ -172,6 +172,110 @@ packets, which is not necessarily a given.
 
 [Cleeyv's guide](https://rns.recipes/forum/build-guides/how-to-install-and-test-the-rtnode-firmware) provides a [transport test](https://rns.recipes/forum/build-guides/how-to-install-and-test-the-rtnode-firmware#post-124) which you should
 try for now.
+
+```
+anarcat@dorothea:~$ tio -a latest  -e -t | stdbuf -i0 -o0 -e0 strings -w | awk '{print $0"\r"}'
+[22:56:24.175] tio 3.9
+[22:56:24.175] Press ctrl-t q to quit
+[22:56:24.292] Connected to /dev/ttyACM0
+[22:56:24.425] 
+00:00:05.507 [---] Registering filesystem...
+00:00:05.507 [---] Listing filesystem...
+00:00:05.510 [---]   eeprom
+00:00:05.512 [---]   adafruit:
+00:00:05.515 [---]     bond_prph:
+00:00:05.519 [---]     bond_cntr:
+00:00:05.523 [---]   config:
+00:00:05.527 [---]   transport_identity
+00:00:05.531 [---]   path_store:
+00:00:05.538 [---]     index.dat
+00:00:05.542 [---]     seg0.dat
+00:00:05.548 [---]   known_store:
+00:00:05.556 [---]     index.dat
+00:00:05.562 [---]     seg0.dat
+00:00:05.568 [---]   hashlist_store:
+00:00:05.576 [---]     index.dat
+00:00:05.582 [---]     seg0.dat
+00:00:05.586 [---]   time_offset
+00:00:05.588 [---] 
+00:00:05.588 [---] Initializing Provisioning subsystem...
+00:00:06.040 [VRB] 
+00:00:06.041 [VRB] Starting RNS...
+[22:56:24.959] 
+00:00:06.041 [---] 
+00:00:06.041 [---] Registering LoRA Interface...
+00:00:06.049 [---] Transport: Registering interface 337b0aea851f05a0ba0e7c2f9b2fdd1c38b74b2fa290b8ef05b11518a4625485 Interface[LoRaInterface]
+00:00:06.063 [---] LoRaInterface hash: 337b0aea851f05a0ba0e7c2f9b2fdd1c38b74b2fa290b8ef05b11518a4625485
+00:00:06.064 [---] 
+00:00:06.065 [---] Creating Reticulum instance...
+00:00:06.067 [---] Initializing RNG...
+00:00:06.072 [---] RNG initial random value: 1145324612
+00:00:06.073 [INF] Total SRAM: 188464 bytes
+00:00:06.074 [INF] Free SRAM: 35568 bytes
+00:00:06.074 [INF] Total flash: 28672 bytes
+00:00:06.077 [INF] Free flash: 24576 bytes
+00:00:06.089 [DBG] Read time offset of 655458 from file
+00:11:01.549 [DBG] Writing time offset of 661549 to file ./time_offset
+00:11:01.944 [INF] Starting Provisioning...
+00:11:01.944 [INF] Starting Transport...
+00:11:01.945 [INF] Transport starting...
+00:11:01.947 [VRB] No cache directory, creating...
+00:11:02.078 [DBG] Checking for transport identity...
+00:11:02.081 [---] Reading identity key from storage...
+00:11:02.312 [---] Identity::update_hashes: hash: a6762dc46c4ea9391819670c526559cb
+00:11:02.314 [VRB] Loaded Transport Identity from storage
+00:11:02.331 [---] Destination::Destination: hash: 6b9f66014d9853faab220fba47d02761
+00:11:02.339 [---] Transport: Registering destination {Destination:6b9f66014d9853faab220fba47d02761}
+00:11:02.344 [DBG] Created transport-specific path request destination 6b9f66014d9853faab220fba47d02761
+00:11:02.363 [---] Destination::Destination: hash: 91bf0910267b59b0e864e0d4c91602ca
+00:11:02.373 [---] Transport: Registering destination {Destination:91bf0910267b59b0e864e0d4c91602ca}
+00:11:02.377 [DBG] Created transport-specific tunnel synthesize destination 91bf0910267b59b0e864e0d4c91602ca
+00:11:02.399 [---] Destination::Destination: hash: 262a240ac31073c84da930f1e27299a8
+00:11:02.409 [---] Transport: Registering destination {Destination:262a240ac31073c84da930f1e27299a8}
+00:11:02.434 [NOT] Enabled remote management on <{Destination:262a240ac31073c84da930f1e27299a8}>
+00:11:02.437 [NOT] Enabled remote provisioning on <{Destination:262a240ac31073c84da930f1e27299a8}>
+00:11:02.440 [INF] Transport mode is enabled
+00:11:02.443 [INF] FileSystem available: 24320 bytes
+00:11:02.444 [---] Initializing path table store...
+00:11:02.475 [---] Initializing known destinations store...
+00:11:02.517 [---] Initializing packet hashlist store...
+00:11:02.555 [DBG] Transport::read_tunnel_table
+00:11:02.576 [---] Destination::Destination: hash: 9ad54088c8f19b2782fda5f63057b378
+00:11:02.586 [---] Transport: Registering destination {Destination:9ad54088c8f19b2782fda5f63057b378}
+00:11:02.589 [DBG] Created probe responder destination 9ad54088c8f19b2782fda5f63057b378
+00:11:02.593 [NOT] Transport instance will respond to probe requests on <9ad54088c8f19b2782fda5f63057b378>
+00:11:02.596 [VRB] Transport instance {Identity:a6762dc46c4ea9391819670c526559cb} started
+00:11:02.617 [---] Destination::Destination: hash: ada18160d14a8224b8cbfe320957789e
+00:11:02.626 [---] Transport: Registering destination {Destination:ada18160d14a8224b8cbfe320957789e}
+00:11:02.653 [NOT] Announcing NomadNet site "microReticulum Node [65C7C15AC9C4]" at destination <ada18160d14a8224b8cbfe320957789e>
+00:11:02.657 [---] Destination::announce: announcing destination...
+00:11:02.817 [---] Destination::announce: sending announce packet...
+00:11:02.818 [---] Packet::send: sending packet...
+00:11:02.819 [---] Packet::pack: packing packet...
+00:11:02.824 [---] Packet::pack: destination hash: ada18160d14a8224b8cbfe320957789e
+00:11:02.836 [---] Packet::pack: packed packet of size 201 bytes
+00:11:02.837 [---] Transport::outbound()
+00:11:02.839 [---] Transport::outbound: destination=ada18160d14a8224b8cbfe320957789e hops=0
+00:11:02.843 [---] Transport::outbound: Path to destination is unknown
+00:11:02.845 [---] Transport::outbound: Checking interface Interface[LoRaInterface]
+00:11:02.846 [---] Transport::outbound: Packet has no attached interface
+00:11:02.847 [---] Transport::outbound: Packet transmission allowed
+00:11:03.365 [---] Transport::transmit()
+00:11:03.370 [---] LoRaInterface.send_outgoing: (201 bytes) data: 0100ada18160d14a8224b8cbfe320957789e009b3dc93e8a8bbfdf71185e1a72b1b4e56fc81d399c87712c5090f45730bd8d34ddea2439ef235181ad69ea8718deff656be0ac734d0c3e873ec084fb9f7ecef6213e6311bcec54ab4fde4dc
+00:11:03.373 [---] LoRaInterface.send_outgoing: adding packet to outgoing queue...
+00:11:03.374 [---] Packet::send: successfully sent packet!!!
+00:11:03.375 [---] 
+00:11:03.375 [---] RNS is READY!
+00:11:03.375 [---] 
+00:11:03.376 [---] RNS transport mode is ENABLED
+00:11:03.376 [---] Frequency: 914875000 Hz
+00:11:03.377 [---] Bandwidth: 125000 Hz
+00:11:03.378 [---] Spreading Factor: 9
+00:11:03.378 [---] Coding Rate: 7
+00:11:03.379 [---] TX Power: 17 dBm
+00:11:03.380 [---] 
+00:11:03.380 [---] RNS Transport is READY!
+```
 
 ## Other firmware
 
