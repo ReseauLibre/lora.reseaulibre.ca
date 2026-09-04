@@ -72,7 +72,7 @@ following:
   to bridge with other LoRa networks) mode for the LoRa relay, and
   [`boundary`](https://reticulum.miraheze.org/wiki/Interface#boundary) for the internet side (but I kind of just made this
   up while writing this and god this is complicated right now, and
-  don't trust this until it turns into a proper [guide](../../guides/index.md))
+  don't trust this until it turns into a proper [guide](../../guides/meshcore/index.md))
 - may devices were backed up, reflashed, tested, monitored and demo'd,
   including the infamous [fire hazard previously announced here](2026-08-26-wismesh-pocket-fire-hazard.md)
 
