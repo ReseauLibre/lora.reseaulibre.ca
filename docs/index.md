@@ -6,7 +6,7 @@
 
     ---
     
-    We are building a [mesh network](https://en.wikipedia.org/wiki/Mesh_networking) in the greater Montreal area:
+    We are building a [mesh network](guides/faq.md#what-is-a-mesh-network) in the greater Montreal area:
     a decentralized, low-power communication network.
     
     The goal is to communicate without the internet and without the
