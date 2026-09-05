@@ -28,7 +28,7 @@ We know about the follow channels currently in use[^1]:
 | `#habs`               | `e570409412b40c123b4ab787351ab30b` | `5XBAlBK0DBI7SreHNRqzCw==` | Far from real time game updates and gossip                       |
 | `#bots`               | `0d24f5830b449668b8c221759b6c50d2` | `DST1gwtElmi4wiF1m2xQ0g==` | Where to run bots, a bot replies to `test` and `ping`there       |
 | `#betabots`           | `964072df07723403a611c5cec6d6db95` | `lkBy3wdyNAOmEcXOxtbblQ==` | Run bots here before joining `#bots`, to test                    |
-| `#testing`            | `cde5e82cf515647dcb547a79a4f065d1` | `zeXoLPUVZH3LVHp5pPBl0Q==` | A message that just says `test`? send it here or `#test`         |
+| `#test`               | `9cd8fcf22a47333b591d96a2b848b73f` | `nNj88ipHMztZHZaiuEi3Pw==` | A message that just says `test`? send it here or `#testing`      |
 | `#devtest`            | `0fd265aa14c00829af942771c742176e` | `D9JlqhTACCmvlCdxx0IXbg==` | To test messages while developing, do *not* answer messages here |
 | `#ceuxquimarchemoyen` | `751be125eb7d167e07a95603c9e9a5dd` | `dRvhJet9Fn4HqVYDyeml3Q==` | Another test channel for people who have trouble                 |
 
