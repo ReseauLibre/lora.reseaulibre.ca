@@ -18,11 +18,11 @@ def main():
     if len(sys.argv) <= 1:
         exit("usage: %s [ CHANNEL_NAME ... ]" % sys.argv[0])
 
-    print("| Name | Hexadecimal secret key | Base64 secret key | Purpose |")
-    print("| ---- | ---------------------- | ----------------- | ------- |")
+    print("| Name | Purpose | Hexadecimal secret key | Base64 secret key |")
+    print("| ---- | ------- | ---------------------- | ----------------- |")
     for name in sys.argv[1:]:
         binary = compute_mc_hash(name)
-        print(f"| `{name}` | `{binary.hex()}` | `{base64.b64encode(binary).decode("ascii")}` | |")
+        print(f"| `{name}` | | `{binary.hex()}` | `{base64.b64encode(binary).decode("ascii")}` |")
 
 
 if __name__ == "__main__":
