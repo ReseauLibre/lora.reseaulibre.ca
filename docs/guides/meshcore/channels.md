@@ -17,7 +17,7 @@ messages sent will be visible to an attacker.
 
 We know about the follow channels currently in use[^1]:
 
-| Name                  | Hex Key                            | Base64                     | Purpose                                                          |
+| Name                  | Hexadecimal secret key             | Base64 secret key          | Purpose                                                          |
 |-----------------------|------------------------------------|----------------------------|------------------------------------------------------------------|
 | Public                | `8b3387e9c5cdea6ac9e5edbaa115cd72` | `izOH6cXN6mrJ5e26oRXNcg==` | General conversations                                            |
 | `#911`                | `907a3dd4b73b9d1324b4d6c83425c186` | `kHo91Lc7nRMktNbINCXBhg==` | Emergency communications (french)                                |
