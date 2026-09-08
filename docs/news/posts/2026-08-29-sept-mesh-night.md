@@ -57,7 +57,7 @@ following:
   messages with LXMF (think Signal), browsing Nomad pages (think
   Gopher/Gemini) and joining a [RRC](https://reticulum.miraheze.org/wiki/RRC) (think IRC over Reticulum) channel
   over Nomad net (yes, that impossible to use client, what do you mean
-  <kbd>control-d</kdb> to send, this is not `cat(1)`), also found out
+  <kbd>control-d</kbd> to send, this is not `cat(1)`), also found out
   (but not tested) [`weechat-rrc`](https://github.com/l5yth/weechat-rrc)
 - monitored the airwaves with an software-defined radios like the
   RTL-SDR and a [Portapack HackRF One](https://opensourcesdrlab.com/products/clifford-heath-hackrf-one-with-portapack-h4m?VariantsId=10177), with [gqrx](https://www.gqrx.dk/) on Mac and
