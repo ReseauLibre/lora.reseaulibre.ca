@@ -224,14 +224,20 @@ details.
 
     You can also perform this configuration over the command line:
     
-    ```
-    set freq 910.525
-    set bw 62.5
-    set sf 7
-    set cr 5
-    set name YUL-Area
-    set path.hash.mode 2
-    ```
+        set radio 910.525,62.5,7,5
+        set name YUL-Area
+        set path.hash.mode 2
+        password $STRONG_PASSWORD_SEE_ABOVE
+        reboot
+
+    You can access the command line through the web interface or the
+    `meshcore-cli` command:
+    
+        meshcore-cli -r -s /dev/ttyACM0
+    
+    Then send an advert:
+    
+        advert
 
 ### Repeaters can lose track of time
 
