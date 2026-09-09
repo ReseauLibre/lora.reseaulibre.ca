@@ -158,20 +158,9 @@ This can happen if a device that was previously reachable (so path
 discovery succeeded in the past) became unreachable. This can happen
 if the device moved out of range or is somehow disabled, for example.
 
-## Known issues
+### Console output example
 
-- for RAK 4631 boards, the battery voltage readings are always
-  reported as zero, so you do not get to monitor battery levels
-
-## Future work
-
-We do not have a good procedure for testing the actual "transport"
-part of the transport node here. All we did is test that the device
-responds to probe, but that does not mean it is correctly relaying
-packets, which is not necessarily a given.
-
-[Cleeyv's guide](https://rns.recipes/forum/build-guides/how-to-install-and-test-the-rtnode-firmware) provides a [transport test](https://rns.recipes/forum/build-guides/how-to-install-and-test-the-rtnode-firmware#post-124) which you should
-try for now.
+This is the output on my repeater, when booting:
 
 ```
 anarcat@dorothea:~$ tio -a latest  -e -t | stdbuf -i0 -o0 -e0 strings -w | awk '{print $0"\r"}'
@@ -276,6 +265,21 @@ anarcat@dorothea:~$ tio -a latest  -e -t | stdbuf -i0 -o0 -e0 strings -w | awk '
 00:11:03.380 [---] 
 00:11:03.380 [---] RNS Transport is READY!
 ```
+
+## Known issues
+
+- for RAK 4631 boards, the battery voltage readings are always
+  reported as zero, so you do not get to monitor battery levels
+
+## Future work
+
+We do not have a good procedure for testing the actual "transport"
+part of the transport node here. All we did is test that the device
+responds to probe, but that does not mean it is correctly relaying
+packets, which is not necessarily a given.
+
+[Cleeyv's guide](https://rns.recipes/forum/build-guides/how-to-install-and-test-the-rtnode-firmware) provides a [transport test](https://rns.recipes/forum/build-guides/how-to-install-and-test-the-rtnode-firmware#post-124) which you should
+try for now.
 
 ## Other firmware
 
