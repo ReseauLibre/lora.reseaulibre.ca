@@ -10,6 +10,20 @@ We log the following fields:
 - location 
 - hops
 
+## 2026-09-09
+
+No contacts made. People were receiving me, and I could see the
+responses on the observers, but I received at most 3 messages, no
+replies from bots, very unreliable.
+
+Could be an issue with the repeater setup at home that changed.
+
+Observed:
+
+- 0 contacts (!)
+- [223 nodes in the official map](https://map.meshcore.io/?zoom=7&lat=45.7100&lon=-72.6416)
+- [189 repeaters in MeshMapper](https://yul.meshmapper.net/leaderboard.php)
+
 ## 2026-08-26
 
 | time  | call sign     | name                   | location        | hops |
