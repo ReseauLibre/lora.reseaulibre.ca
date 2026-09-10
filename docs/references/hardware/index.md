@@ -383,11 +383,18 @@ many not have batteries.
       likely not supported by MeshCore given the MT7628 and SX1302
       chipsets, see [this feature request](https://github.com/meshcore-dev/MeshCore/issues/3211)
 
-    - [AliExpress 5W Heltec
-    kit](https://www.aliexpress.com/item/1005010224488993.html),
-    [25W](https://www.aliexpress.com/item/1005006633080419.html), be
-    careful as sometimes they sell a Heltec v4.2 instead of a v4.3,
-    and that has problems, better to buy the Heltec separately
+    - [Heltec MeshTower V2](https://heltec.org/project/meshtower/?attribute_lora-band=902%7E928MHZ&attribute_tx-power=30dBm&attribute_need-gps-sensor=No):
+      3 x 2800mA 18650 batteries , 10W solar, 1W SX1262 LoRa
+      transceiver, Nordic nRF52840 Bluetooth, no WiFi, pre-installed
+      with Meshtastic, wall-mount kit that could be modded for a pole
+      mount with clamps, N connector, ships with 5dB antenna,
+      enclosure IP66 79.5 x 125 x 51.5 mm, not counting the antenna
+      and sockets, solar panel is 340 x 220mm, antenna 40cm
+
+    - [AliExpress 5W Heltec kit](https://www.aliexpress.com/item/1005010224488993.html),
+      [25W](https://www.aliexpress.com/item/1005006633080419.html), be
+      careful as sometimes they sell a Heltec v4.2 instead of a v4.3,
+      and that has problems, better to buy the Heltec separately
 
 ### Mounts
 
