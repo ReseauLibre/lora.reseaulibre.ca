@@ -378,11 +378,6 @@ many not have batteries.
       and possibly other firmware, so configuration still has to go
       through Bluetooth, serial or WiFi.
 
-    - [SenseCAP M2 indoor
-      gateway](https://mappingnetwork.ca/products/sensecap-m2-indoor-gateway-lorawan-us915):
-      likely not supported by MeshCore given the MT7628 and SX1302
-      chipsets, see [this feature request](https://github.com/meshcore-dev/MeshCore/issues/3211)
-
     - [Heltec MeshTower V2](https://heltec.org/project/meshtower/?attribute_lora-band=902%7E928MHZ&attribute_tx-power=30dBm&attribute_need-gps-sensor=No):
       3 x 2800mA 18650 batteries , 10W solar, 1W SX1262 LoRa
       transceiver, Nordic nRF52840 Bluetooth, no WiFi, pre-installed
@@ -395,6 +390,14 @@ many not have batteries.
       [25W](https://www.aliexpress.com/item/1005006633080419.html), be
       careful as sometimes they sell a Heltec v4.2 instead of a v4.3,
       and that has problems, better to buy the Heltec separately
+
+!!! failure "Not working"
+
+    - [SenseCAP M2 indoor
+      gateway](https://mappingnetwork.ca/products/sensecap-m2-indoor-gateway-lorawan-us915):
+      not supported by MeshCore given the MT7628 and SX1302
+      chipsets, see [this feature request](https://github.com/meshcore-dev/MeshCore/issues/3211)
+      (similar to other LoRaWAN devices)
 
 ### Mounts
 
