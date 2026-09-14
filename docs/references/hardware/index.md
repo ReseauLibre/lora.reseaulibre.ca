@@ -403,7 +403,7 @@ many not have batteries.
 
 Base stations will typically be mounted on rooftops or poles.
 
-The [Ottawa Mesh docs](https://ottawamesh.ca/hardware/repeater-mounting-options/) have great documentation and examples for
+The [Ottawa Mesh](https://ottawamesh.ca/hardware/repeater-mounting-options/) and [WNY MeshCore](https://wnymeshcore.org/guides/repeater-setup) have great documentation and examples for
 this.
 
 ## Development boards
