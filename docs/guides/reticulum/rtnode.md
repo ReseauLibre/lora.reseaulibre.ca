@@ -306,6 +306,19 @@ anarcat@dorothea:~$ tio -a latest  -e -t | stdbuf -i0 -o0 -e0 strings -w | awk '
 05-10:28:31.014 [---] Packet::send: successfully sent packet!!!
 ```
 
+Then I added my primary and LXMF Nomadnet identities as "Remote
+Management Allowed" through the `console.html` in Transport Config,
+uReticulum General Config. I am not sure which one grants me access,
+but it's read-only anyways for now so it does not matter much. There
+is some [API contraption](https://github.com/attermann/ReticulumAPI) that allows one to glue the HTML console
+with LoRa but I haven't tested it.
+
+To save changes, the "save namespace" is at the top, then "commit
+all", then reboot.
+
+I have mistakenly "cleared provisionning" instead of saving, that's
+not the right button.
+
 ## Known issues
 
 - for RAK 4631 boards, the battery voltage readings are always
