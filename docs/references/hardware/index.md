@@ -120,11 +120,10 @@ We have those categories:
 > choices but "success" devices should be also considered 
 > recommended.
 
-!!! example "In testing"
-
-    We have our hands on those devices and are testing them. So far,
-    they work, but need more testing before they can be promoted to a
-    full "success".
+> [!EXAMPLE] In testing
+> We have our hands on those devices and are testing them. So far,
+> they work, but need more testing before they can be promoted to a
+> full "success".
 
 !!! question "Untested"
 
