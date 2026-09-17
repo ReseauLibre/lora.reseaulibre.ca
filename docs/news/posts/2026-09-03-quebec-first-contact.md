@@ -6,8 +6,8 @@ categories:
   - announcements
 ---
 
-We are seeing signs of the first contacts between Montréal and
-Québec. We have already been seeing announces from Ottawa and as far
+We are seeing signs of the [first contacts between Montréal and
+Québec](../../references/log.md#2026-09-16). We have already been seeing announces from Ottawa and as far
 as Toronto, Buffalo and Syracuse, but so far actual contacts have been
 limited: *sometime* tropospheric ducting would allow us to hold short
 conversations with Ottawa, but that's it.
