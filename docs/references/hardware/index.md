@@ -103,23 +103,22 @@ ourselves.
   
 </div>
 
-!!! tip
-    
-    If you're just starting, just get the cheapest device you can get
-    your hand on quickly, it's 50$. Plug it into your phone, a USB
-    charger or a battery, and get talking!
+> [!TIP]
+> If you're just starting, just get the cheapest device you can get
+> your hand on quickly, it's 50$. Plug it into your phone, a USB
+> charger or a battery, and get talking!
 
 ## How we classify devices
 
 We have those categories:
 
-!!! success
-
-    Those devices were successfully tested and used on a daily
-    basis. A select few of those end up being recommended above. 
-    We only "recommend" one device per category to simplify user's
-    choices but "success" devices should be also considered 
-    recommended.
+> [!SUCCESS]
+> 
+> Those devices were successfully tested and used on a daily
+> basis. A select few of those end up being recommended above. 
+> We only "recommend" one device per category to simplify user's
+> choices but "success" devices should be also considered 
+> recommended.
 
 !!! example "In testing"
 
@@ -132,11 +131,10 @@ We have those categories:
     Those devices are interesting, but we haven't lay our hands on
     them yet.
 
-!!! warning
-
-    We tested those devices, and there are serious caveats against
-    using them. Do not order one unless you know what you read an
-    understand the note on the device.
+> [!WARNING]
+> We tested those devices, and there are serious caveats against
+> using them. Do not order one unless you know what you read an
+> understand the note on the device.
 
 !!! failure "Not working"
 
@@ -155,34 +153,33 @@ Those are day-to-day use device, can you can easily carry in a pocket
 or a pouch. Those generally have a battery. They need a phone or
 computer to operate.
 
-!!! success
- 
-    - [SeeedStudio Wio Tracker L1
-    Pro](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html):
-    1.3" OLED, 3D-Printed Casing, 2000mAh battery, GPS, nRF5284 /
-    SX1262, 4-way joystick, menu button, reset button, power switch, 3
-    LEDs, RP-SMA connector,
-    43$USD, [62$ at Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
-
-    - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): 200x200 e-ink
-      display, NRF52840, GPS, BT 5.0, no wifi, two buttons, no power
-      button, NFC, 850mAh battery, temperature/pressure sensor, 55$USD
-    - cheap [Aliexpress Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
-    - Seeedstudio [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, - 40℃ ~
-      100℃, WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm,
-      37g, exposed GPIO ports, cheap (20$), does not ship with
-      Meshtastic firmware, needs full erase before reflash or gets
-      into a boot loop
-    - [RAK Wireless WisMesh Tag](https://store.rakwireless.com/products/wismesh-tag-meshtastic-gps-lora-tracker-ip66): 
-      1000 mAh battery, IP66 rating, two buttons, status LED,
-      magnetic USB pogo charging, nRF52840/SX1262, GPS, 92 x 59 x 7.5
-      mm, 40$USD
-    - [SeeedStudio SenseCAP Card Tracker T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) (40$USD)
-      IP65, 700mAh battery, nRF52840/LR1110, GPS, 85 * 55 * 6.5 mm,
-      32g, -20℃ to +60℃ operation, buzzer, magnetic pogo pins USB charging, 40$USD, anarcat managed get [this one in a boot loop](https://anarc.at/services/meshtastic/#bricked) 
-      but eventually recovered. Nice and portable, waterproof. See
-      [this guide for how to use that single button](https://wiki.seeedstudio.com/sensecap_t1000_e_meshcore/#button),
-      in particular use triple-click to turn off the buzzer.
+> [!SUCCESS]
+> - [SeeedStudio Wio Tracker L1
+> Pro](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html):
+> 1.3" OLED, 3D-Printed Casing, 2000mAh battery, GPS, nRF5284 /
+> SX1262, 4-way joystick, menu button, reset button, power switch, 3
+> LEDs, RP-SMA connector,
+> 43$USD, [62$ at Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
+> 
+> - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): 200x200 e-ink
+> display, NRF52840, GPS, BT 5.0, no wifi, two buttons, no power
+> button, NFC, 850mAh battery, temperature/pressure sensor, 55$USD
+> - cheap [Aliexpress Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
+> - Seeedstudio [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, - 40℃ ~
+> 100℃, WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm,
+> 37g, exposed GPIO ports, cheap (20$), does not ship with
+> Meshtastic firmware, needs full erase before reflash or gets
+> into a boot loop
+> - [RAK Wireless WisMesh Tag](https://store.rakwireless.com/products/wismesh-tag-meshtastic-gps-lora-tracker-ip66): 
+> 1000 mAh battery, IP66 rating, two buttons, status LED,
+> magnetic USB pogo charging, nRF52840/SX1262, GPS, 92 x 59 x 7.5
+> mm, 40$USD
+> - [SeeedStudio SenseCAP Card Tracker T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) (40$USD)
+> IP65, 700mAh battery, nRF52840/LR1110, GPS, 85 * 55 * 6.5 mm,
+> 32g, -20℃ to +60℃ operation, buzzer, magnetic pogo pins USB charging, 40$USD, anarcat managed get [this one in a boot loop](https://anarc.at/services/meshtastic/#bricked) 
+> but eventually recovered. Nice and portable, waterproof. See
+> [this guide for how to use that single button](https://wiki.seeedstudio.com/sensecap_t1000_e_meshcore/#button),
+> in particular use triple-click to turn off the buzzer.
 
 
 !!! example "In testing"
@@ -207,24 +204,21 @@ computer to operate.
 
 <!-- !!! failure "Not working" -->
 
-!!! warning
-
-     - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket)
-    
-         Looks nice at first glance: a RAK 4631 kit with GNSS, 1.3" OLED, acceleration sensor, power
-         button, 3200mAh battery, USB-C powered. Battery life excellent.
-      
-         But it's expensive (100$USD) especially for the build quality:
-         the 3D print is bad, board mounting pins can get broken off (but
-         can be superglued back in) and the power switch is too close to
-         the battery pouch which can perforate the pouch which is a **fire
-         hazard**.
-          
-          **DO NOT BUY THIS DEVICE, FIRE HAZARD**. If you want a RAK4631
-          kit, buy the RAK kit (it's a great chipset!) and get a 3D print
-          elsewhere, for example [our DIY buid](#diy-build-on-top-of-the-rak-kit).
-          
-          See [this news article for details](../../news/posts/2026-08-26-wismesh-pocket-fire-hazard.md)
+> [!WARNING]
+> - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket) Looks nice at first glance: a RAK 4631 kit with GNSS, 1.3" OLED, acceleration sensor, power
+>   button, 3200mAh battery, USB-C powered. Battery life excellent.
+> 
+>   But it's expensive (100$USD) especially for the build quality:
+>   the 3D print is bad, board mounting pins can get broken off (but
+>   can be superglued back in) and the power switch is too close to
+>   the battery pouch which can perforate the pouch which is a **fire
+>   hazard**.
+>
+>   **DO NOT BUY THIS DEVICE, FIRE HAZARD**. If you want a RAK4631
+>   kit, buy the RAK kit (it's a great chipset!) and get a 3D print
+>   elsewhere, for example [our DIY buid](#diy-build-on-top-of-the-rak-kit).
+> 
+>   See [this news article for details](../../news/posts/2026-08-26-wismesh-pocket-fire-hazard.md)
 
 ## Standalone
 
@@ -232,18 +226,17 @@ Those are day-to-day use device, can you can easily carry in a pocket
 or a pouch. They have a battery and do *not* need a phone or computer
 to operate.
 
-!!! success
-
-    - [Heltec v4 prebuilt kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/): touch screen, 18650 flat-top
-      battery (tight, hard to remove), belt clip bulges the back
-      cover.
-    - [Lilygo T-Deck Plus](https://lilygo.cc/products/t-deck-plus-1) (80$): blackberry-like, standalone device
-      with battery, keyboard, trackball, LCD display, 2000mAh battery,
-      BLE, WiFi, GPS, MicroSD card reader, microphone/speake. Note that
-      an order in March 2026 took 24 days to deliver.
-    - [Lilygo T-Lora Pager](https://lilygo.cc/products/t-lora-pager):
-      smaller, quirkier, 90$USD. Keyboard and wheel are unreliable,
-      and it has no touch scren. It's really cute though.
+> [!SUCCESS]
+> - [Heltec v4 prebuilt kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/): touch screen, 18650 flat-top
+> battery (tight, hard to remove), belt clip bulges the back
+> cover.
+> - [Lilygo T-Deck Plus](https://lilygo.cc/products/t-deck-plus-1) (80$): blackberry-like, standalone device
+> with battery, keyboard, trackball, LCD display, 2000mAh battery,
+> BLE, WiFi, GPS, MicroSD card reader, microphone/speake. Note that
+> an order in March 2026 took 24 days to deliver.
+> - [Lilygo T-Lora Pager](https://lilygo.cc/products/t-lora-pager):
+> smaller, quirkier, 90$USD. Keyboard and wheel are unreliable,
+> and it has no touch scren. It's really cute though.
 
 !!! question "Untested"
 
@@ -268,11 +261,10 @@ to operate.
       expansion port, not supported by stock MeshCore firmware, but
       many alternative firmware, for example: [`MultiMote/meshcore-cardputer-adv`](https://github.com/MultiMote/meshcore-cardputer-adv), [`sosprz/meshcore-cardputer-adv`](https://github.com/sosprz/meshcore-cardputer-adv), [`Stachugit/MeshCore-Cardputer-ADV`](https://github.com/Stachugit/MeshCore-Cardputer-ADV)
 
-!!! warning
-
-    - The [Seeedstudio Sensecap Indicator](https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html)
-      looks like a nice device for home/office setups, but it is [not
-      supported by MeshCore](https://github.com/meshcore-dev/MeshCore/issues/879)
+> [!WARNING]
+> - The [Seeedstudio Sensecap Indicator](https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html)
+> looks like a nice device for home/office setups, but it is [not
+> supported by MeshCore](https://github.com/meshcore-dev/MeshCore/issues/879)
 
 Note that those devices depend on the proprietary Ripple firmware, but
 you can now try the [Wadamesh](https://wadamesh.com/) firmware as well, which is open
@@ -293,16 +285,15 @@ The main thing that separates this from the above standalone devices is
 that they are more generic Linux computers with more capabilities than
 embedded devices above.
 
-!!! success
-
-    - Clockwork PI [uConsole](https://www.clockworkpi.com/uconsole).
-    wrapper around a Raspberry PI CM4, with modular expansion ports: 720p 5.0-inch IPS screen,
-    74-keys QWERTY keyboard with gaming buttons, 18650 battery
-    module, cellular modem, and a [third party SDR, LoRa, GPS, USB,
-    RTC, ethernet module](https://hackergadgets.com/products/uconsole-aio-v2?variant=47045380735150).
-    [Video review](https://youtu.be/oN9zw3lzSVc) says the built-in
-    WiFi antenna is not great but can be modified with a 3D printer,
-    and that the trackball is not great. 6-7h runtime, half with a SDR.
+> [!SUCCESS]
+> - Clockwork PI [uConsole](https://www.clockworkpi.com/uconsole).
+> wrapper around a Raspberry PI CM4, with modular expansion ports: 720p 5.0-inch IPS screen,
+> 74-keys QWERTY keyboard with gaming buttons, 18650 battery
+> module, cellular modem, and a [third party SDR, LoRa, GPS, USB,
+> RTC, ethernet module](https://hackergadgets.com/products/uconsole-aio-v2?variant=47045380735150).
+> [Video review](https://youtu.be/oN9zw3lzSVc) says the built-in
+> WiFi antenna is not great but can be modified with a 3D printer,
+> and that the trackball is not great. 6-7h runtime, half with a SDR.
 
 !!! question "Untested"
 
@@ -337,28 +328,26 @@ Those are bulkier devices that are mounted on a mast or are used as a
 back-haul, possibly with a special [antenna](#antennas). The devices may or
 many not have batteries.
 
-!!! success
-
-    - [WisMesh Solar Repeater
-      Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini):
-      solar, battery, mast or wall-mountable, cheaper than their full
-      repeater, 100$USD. Works through the night in summer time, needs testing
-      through winter.
-
-    - [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html): 70$USD, outdoors solar-powered relay
-      with 4x18650 **button-top**[^1] batteries, nRF4840, BT 5.0, 3 buttons, 5
-      LEDs, USB-C for debug, RP-SMA, [recommended by
-      `nyme.sh`](https://nyme.sh/faq/). Note that the base kit doesn't
-      ship with the actual batteries, or the GNSS device, for that you
-      need the [Pro
-      kit](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html)
-      which is 20$ more. Needs to be tested through night and
-      winter. Also sold at
-      [RobotShop
-      for
-      100CAD](https://ca.robotshop.com/products/sensecap-solar-node-p1-meshtastic-w-o-gps-battery),
-      [130$ with GPS and
-      battery](https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery?qd=c71a67155c4fec187b2b07ee9a7af9f3).
+> [!SUCCESS]
+> - [WisMesh Solar Repeater
+> Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini):
+> solar, battery, mast or wall-mountable, cheaper than their full
+> repeater, 100$USD. Works through the night in summer time, needs testing
+> through winter.
+> - [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html): 70$USD, outdoors solar-powered relay
+> with 4x18650 **button-top**[^1] batteries, nRF4840, BT 5.0, 3 buttons, 5
+> LEDs, USB-C for debug, RP-SMA, [recommended by
+> `nyme.sh`](https://nyme.sh/faq/). Note that the base kit doesn't
+> ship with the actual batteries, or the GNSS device, for that you
+> need the [Pro
+> kit](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html)
+> which is 20$ more. Needs to be tested through night and
+> winter. Also sold at
+> [RobotShop
+> for
+> 100CAD](https://ca.robotshop.com/products/sensecap-solar-node-p1-meshtastic-w-o-gps-battery),
+> [130$ with GPS and
+> battery](https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery?qd=c71a67155c4fec187b2b07ee9a7af9f3).
 
 [^1]: It's really important to get button-top batteries for the
       SenseCAP Solar node P1! Normal flat-top batteries won't connect
@@ -413,25 +402,24 @@ really be used in production as they lack a proper case.
 
 The devices here generally do not have a battery.
 
-!!! success
-
-    - [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)
-      ([v3](https://heltec.org/project/wifi-lora-32-v3/)) is the
-      cheapest option, v3 is 20$ (30$CAD) with the case, v4 doesn't
-      ship with a case (but no battery, and battery doesn't fit in the
-      case). one advantage Heltec has over the below RAK kits is that
-      you can connect to them over wifi, the downside is
-      they use more power because they are ESP32 based instead of
-      NRF5280, might be cheaper [at AliExpress](https://www.aliexpress.com/item/1005011870647672.html)
-    - the [RAK19003 base kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) (28$) is more expensive, but less
-      power-hungry than the Heltec
-    - [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html):
-      barebones board, tiny, cheap,
-      WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button (hidden under the
-      daughterboard, press both to enter JTAG so you can flash, requires
-      opening the case and removing the daughterboard), - 40℃ ~ 100℃, 22x23x57mm, 37g,
-      exposed GPIO ports, no battery, 20$. Probably the cheapest and
-      smallest kit all around.
+> [!SUCCESS]
+> - [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)
+> ([v3](https://heltec.org/project/wifi-lora-32-v3/)) is the
+> cheapest option, v3 is 20$ (30$CAD) with the case, v4 doesn't
+> ship with a case (but no battery, and battery doesn't fit in the
+> case). one advantage Heltec has over the below RAK kits is that
+> you can connect to them over wifi, the downside is
+> they use more power because they are ESP32 based instead of
+> NRF5280, might be cheaper [at AliExpress](https://www.aliexpress.com/item/1005011870647672.html)
+> - the [RAK19003 base kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) (28$) is more expensive, but less
+> power-hungry than the Heltec
+> - [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html):
+> barebones board, tiny, cheap,
+> WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button (hidden under the
+> daughterboard, press both to enter JTAG so you can flash, requires
+> opening the case and removing the daughterboard), - 40℃ ~ 100℃, 22x23x57mm, 37g,
+> exposed GPIO ports, no battery, 20$. Probably the cheapest and
+> smallest kit all around.
 
 !!! example "In testing"
 
@@ -484,10 +472,9 @@ Moved to its own page, see [Batteries](batteries.md).
 
 ## Antennas
 
-!!! tip
-
-    For a more in-depth discussion about antenna testing, theory and
-    practice, see the [Antennas](antennas.md) section.
+> [!TIP]
+> For a more in-depth discussion about antenna testing, theory and
+> practice, see the [Antennas](antennas.md) section.
 
 We have experience with this:
 
@@ -503,14 +490,12 @@ We have experience with this:
 - a similar (and currently cheaper) model is this [RF Explorer 800mm](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-930MHz-5-8dBi-800mm-p-5275.html)
   (10$USD from from SeeedStudio)
 
-
-!!! warning
-
-    The [antenna reports project](https://github.com/meshtastic/antenna-reports) warns against using a
-    [SeeedStudio 600mm](https://www.seeedstudio.com/Lora-Fiberglass-Antenna-860-930MHz-5dBi-600mm-p-4927.html)
-    antenna, particularly for non-US frequencies. While it is a different
-    antenna, it's unclear if the above RF Explorer has the same flaw, further
-    testing necessary.
+> [!WARNING]
+> The [antenna reports project](https://github.com/meshtastic/antenna-reports) warns against using a
+> [SeeedStudio 600mm](https://www.seeedstudio.com/Lora-Fiberglass-Antenna-860-930MHz-5dBi-600mm-p-4927.html)
+> antenna, particularly for non-US frequencies. While it is a different
+> antenna, it's unclear if the above RF Explorer has the same flaw, further
+> testing necessary.
 
 - Ottawa used the [8dB SeeedStudio 1300mm at 30$USD](https://www.seeedstudio.com/RF-Explorer-LoRa-Fiberglass-Antenna-Kit-902-928MHz-8dBi-1300mm-p-5278.html) ([Mouser](https://www.mouser.ca/ProductDetail/Seeed-Studio/318020693?qs=By6Nw2ByBD0kjpJjgHd0aQ%3D%3D),
   [130$ Digikey](https://www.digikey.ca/en/products/detail/seeed-technology-co-ltd/318020693/15976337?s=N4IgTCBcDaIMwEYAcAGMKBsBOOIC6AvkA), [85$ on sale at MN](https://mappingnetwork.ca/products/rakwireless-8dbi-fiberglass-antenna))
@@ -594,14 +579,12 @@ you for various reasons:
 - [Mapping Network][]: has a [good antenna collection](https://mappingnetwork.ca/collections/antennas) and other
   devices, particularly [LMR400 cabling](https://mappingnetwork.ca/products/lmr-400-ultraflex-coaxial-cable-n-female-rp-sma-male)
 
-!!! warning
-
-    We've had trouble with these:
-
-    - [Veshra](https://www.veshra.io/): more expensive, but local, possibly south shore (to be
-      confirmed); stocks antennas, batteries, Heltec, currently no
-      SeeedStudio, RAK, or ESP32 devices. Recent orders have failed,
-      some unanswered. Not recommended anymore.
+> [!WARNING]
+> We've had trouble with these:
+> - [Veshra](https://www.veshra.io/): more expensive, but local, possibly south shore (to be
+>   confirmed); stocks antennas, batteries, Heltec, currently no
+>   SeeedStudio, RAK, or ESP32 devices. Recent orders have failed,
+>   some unanswered. Not recommended anymore.
 
 ## Hacks
 

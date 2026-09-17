@@ -77,6 +77,12 @@ markdown_extensions:
   - pymdownx.keys
   # highlight with ==
   - pymdownx.mark
+  # make admonitions using a more standard blockquote
+  #
+  # this is actually cargo-culted from Zensical, material for mkdocs
+  # doesn't explicitly support this, but it works! 
+  - pymdownx.quotes:
+      callouts: true
   # turn (c) into ©, disabled: just use unicode directly
   # - pymdownx.smartsymbols
   - pymdownx.snippets
