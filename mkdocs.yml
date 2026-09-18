@@ -220,6 +220,8 @@ plugins:
               # obscure FAQ URL that came up for less than a day
               'guides/z_faq.md': 'guides/faq.md'
               'references/mmrelay.md': 'guides/matrix.md#bridging-matrix-and-meshtastic'
+              # convenience shortcut
+              '3byte.md': 'news/posts/2026-09-18-3-bytes-hash-mode.md'
 #   # a bunch more possible plugins
 #   # make a nice card for social media
 #   # requires cairosvg, not worth?
