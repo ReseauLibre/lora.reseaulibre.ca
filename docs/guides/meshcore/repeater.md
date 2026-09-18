@@ -189,21 +189,6 @@ You need to at least:
   adverts, but it can take *hours*, during which time your companion
   won't see the repeater! so do send one manually
 
-> [!TIP]
-> Many settings can be done over a serial port, if you're an
-> advanced user. You can connect to the serial port on Linux with
-> tio:
->
->     tio /dev/ttyUSB0
->
-> Then the above commands are:
->
->     set name YUL-Villeray
-> 
-> You can also connect to your devices with the [`meschore-cli`](https://github.com/meshcore-dev/meshcore-cli)
-> program. The full command line reference is [available in the
-> upstream documentation](https://docs.meshcore.io/cli_commands/).
-
 The "recommended USA / Canada" preset is, at the time of writing, the
 following settings:
 
@@ -225,14 +210,22 @@ details.
 >     password $STRONG_PASSWORD_SEE_ABOVE
 >     reboot
 >
+> Then send an advert:
+> 
+>     advert
+>
+> The full command line reference is [available in the
+> upstream documentation](https://docs.meshcore.io/cli_commands/).
+>
 > You can access the command line through the web interface or the
 > `meshcore-cli` command:
 > 
 >     meshcore-cli -r -s /dev/ttyACM0
 > 
-> Then send an advert:
-> 
->     advert
+> Or you can also connect over the serial port with a normal serial
+> console client:
+>
+>     tio /dev/ttyUSB0
 
 ### Repeaters can lose track of time
 
