@@ -122,6 +122,17 @@ With 10 hops, we are already reaching Quebec and believe that, with
 proper region management, we should be able to connect Ottawa and
 Quebec with a 21 hop limit.
 
+## Why not 2 bytes?
+
+We go with 3 bytes because 2 bytes is not enough either. With the
+birthday paradox, there's a 50% chance of a collision with 300
+repeaters.
+
+And while we're not quite there yet in Montreal strictly speaking (as
+of September 2026), we definitely have more than 300 repeaters if we
+count Ottawa (289), Trois-Rivières (37) and Québec (80), we definitely
+have more than 300 repeaters.
+
 ## Feedback and comments
 
 We welcome comments and feedback on this proposal through [our regular
