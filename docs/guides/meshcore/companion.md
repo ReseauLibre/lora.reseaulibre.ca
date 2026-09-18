@@ -177,8 +177,8 @@ preset, but you should also pick a display name.
   `YUL-Villeray`, `YUL-Parc-Extension`, etc
 - **Region**: do *not* set a region, as we currently do not use one,
   and it will interfere with routing
-- **Path hash mode**: pick `3-byte (2)` or `2-byte (1)`, see [this
-  question in the FAQ](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#393-q-how-do-i-change-my-companions-path-hash-size) and the tip below
+- **Path hash mode**: pick `3-byte (2)`, see [this announcement for an
+  explanation](../../news/posts/2026-09-18-3-bytes-hash-mode.md)
 
 > [!WARNING]
 > 
@@ -187,28 +187,6 @@ preset, but you should also pick a display name.
 > can disable the GPS or reduce the [coordinates precision](https://wiki.openstreetmap.org/wiki/Precision_of_coordinates), we
 > recommend two digits (~1km) for clients and 3 digits (~100m) for
 > repeaters.
-
-> [!TIP]
->
-> We are now telling users to set [multi-byte path routing](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#39-q-what-is-multibyte-support-what-do-1-byte-2-byte-3-byte-adverts-and-messages-mean)
-> even though upstream still doesn't recommend that. The upstream
-> rationale is that multibyte messages just get dropped by older
-> releases, but we have long passed that threshold. In fact, we
-> believe the mesh cannot function correctly with single-byte
-> repeaters, so every repeater *must* set a multibyte path hash
-> mode.
-> 
-> Setting a multibyte path hash mode on your companion should
-> improve the reliability of your direct messages (DMs). Because DMs
-> are *routed* (as opposed to channel messages and adverts that are
-> *flooded*), it is crucial that the right path is taken. In
-> single-byte configuration, that single byte is ambiguous and can
-> refer to multiple conflicting repeaters. So an advert you receive
-> that might tell you to go through a specific set of repeaters
-> might actually tell your companion to use a really bad route for a
-> contact.
-> 
-> If you're having trouble with DMs, try setting multibyte path hash mode!
 
 ### You made it! Say hi!
 

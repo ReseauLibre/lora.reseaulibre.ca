@@ -183,8 +183,8 @@ You need to at least:
   and it will interfere with routing
 - **Admin password**: set a [strong password](https://anarc.at/blog/2017-02-18-passwords-entropy/) and save it to your
   password manager for remote administration
-- **Path hash mode**: pick `3-byte (2)`, see [multi-byte path
-  routing](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#39-q-what-is-multibyte-support-what-do-1-byte-2-byte-3-byte-adverts-and-messages-mean) for details
+- **Path hash mode**: pick `3-byte (2)`, see [this announcement for an
+  explanation](../../news/posts/2026-09-18-3-bytes-hash-mode.md)
 - **Send an advert!** by default, repeaters do automatically send
   adverts, but it can take *hours*, during which time your companion
   won't see the repeater! so do send one manually
