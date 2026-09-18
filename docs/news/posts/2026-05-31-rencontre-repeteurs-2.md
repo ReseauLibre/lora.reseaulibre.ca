@@ -18,9 +18,8 @@ permettre une participation externe, sur Jitsi:
 
 <!-- more -->
 
-!!! important
-
-    Notez que le lien Jitsi ci-haut a été changé (au 2026-06-01).
+> [!IMPORTANT]
+> Notez que le lien Jitsi ci-haut a été changé (au 2026-06-01).
 
 Mais nous préférons si vous pouviez vous présenter en personne.
 

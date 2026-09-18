@@ -15,6 +15,7 @@ to outline.
 - [`jkingsman/Remote-Terminal-for-MeshCore`](https://github.com/jkingsman/Remote-Terminal-for-MeshCore): remote web interface
 - [`Cyclenerd/meshcore-bot`](https://github.com/Cyclenerd/meshcore-bot)
 - [`agessaman/meshcore-bot`](https://github.com/agessaman/meshcore-bot)
+- [`recrof/MeshCore-WeatherBot`](https://github.com/recrof/MeshCore-WeatherBot)
 - [`watsoncj/meshcore-stats`](https://github.com/watsoncj/meshcore-stats): Prometheus exporter for repeater
   telemetry, Golang
 - [`rupertdev/meshcore-prometheus-exporter`](https://github.com/rupertdev/meshcore-prometheus-exporter): same, Python

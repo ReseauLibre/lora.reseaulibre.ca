@@ -4,3 +4,4 @@ mkdocs-git-revision-date-localized-plugin
 #mkdocs-git-authors-plugin
 mkdocs-redirects
 mkdocs-rss-plugin
+pymdown-extensions>=10.20

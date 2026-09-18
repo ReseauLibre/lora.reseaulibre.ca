@@ -10,6 +10,46 @@ We log the following fields:
 - location 
 - hops
 
+## 2026-09-16
+
+| time  | call sign     | name      | location       | hops |
+|-------|---------------|-----------|----------------|------|
+| 21:00 | Mad Jap       | Claude    | Marieville     | 5    |
+| 21:00 | Oots          |           | Villeray       | 2    |
+| 21:00 | VA2HMD        |           | ?              | 9    |
+| 21:01 | Johnputer     | JP        | Cartierville   | 4    |
+| 21:05 | VE2CL         |           | La Prairie     | 5    |
+| 21:07 | VA2HST        | Jérôme    | Québec         | 11   |
+| 21:07 | Zivior        | Xavier    | Ville-Marie    | 5    |
+| 21:12 | VE2CCK        |           |                | 4    |
+| 21:13 | VA2OM         | Jean      | Trois-Rivières | 11   |
+| 21:16 | LOG.IC        | Martin    | Trois-Rivières | 5    |
+| 21:18 | VE2XDM        | Dominique | Sainte-Croix   | 6    |
+| 21:28 | grostonymobil | Anthony   | St-Gab         | 5    |
+| 21:32 | VA2DG         | Daniel    | St-Jean        | 5    |
+|       |               |           |                |      |
+
+Observed:
+
+- 13 contacts
+- [220 nodes in the official map](https://map.meshcore.io/?zoom=7&lat=45.7100&lon=-72.6416)
+- [201 repeaters in MeshMapper](https://yul.meshmapper.net/leaderboard.php) (new record)
+- furthest contact (Québec, 228km away!)
+
+## 2026-09-09
+
+No contacts made. People were receiving me, and I could see the
+responses on the observers, but I received at most 3 messages, no
+replies from bots, very unreliable.
+
+Could be an issue with the repeater setup at home that changed.
+
+Observed:
+
+- 0 contacts (!)
+- [223 nodes in the official map](https://map.meshcore.io/?zoom=7&lat=45.7100&lon=-72.6416)
+- [189 repeaters in MeshMapper](https://yul.meshmapper.net/leaderboard.php)
+
 ## 2026-08-26
 
 | time  | call sign     | name                   | location        | hops |

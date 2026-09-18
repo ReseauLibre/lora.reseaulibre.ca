@@ -5,14 +5,12 @@ tags:
 
 # Premiers pas avec Meshtastic
 
-!!! bug "Deprecated"
-
-    As of [April
-    2026](../news/posts/2026-05-02-meshtastic-deprecated.md),
-    Meshtastic is deprecated in the Montreal mesh. We are now focusing
-    on building MeshCore infrastructure, see our [Getting started with
-    MeshCore](meshcore/index.md) guide instead and [Why not
-    Meshtastic?](faq.md#why-not-meshtastic)
+> [!BUG] Deprecated
+>
+> As of [April 2026](../news/posts/2026-05-02-meshtastic-deprecated.md), Meshtastic is deprecated in the Montreal
+> mesh. We are now focusing on building MeshCore infrastructure, see
+> our [Getting started with MeshCore](meshcore/index.md) guide instead and [Why not
+> Meshtastic?](faq.md#why-not-meshtastic)
 
 Getting started with running a Meshtastic relay is easy. You need to
 buy some hardware, install an app, and tweak some settings.
@@ -20,20 +18,18 @@ buy some hardware, install an app, and tweak some settings.
 You can expect to communicate through text with other relays within a
 few kilometres without even setting up a special antenna or location.
 
-!!! avertissement
+> [!WARNING]
+> Meshtastic expose votre position par défaut sur les appareils
+> ayant une composante GPS ! Assurez vous que la
+> [précision de la position][Position precision] est réduite ou
+> réglez le [mode GPS][GPS mode] sur `DISABLED`.
 
-    Meshtastic expose votre position par défaut sur les appareils
-    ayant une composante GPS ! Assurez vous que la
-    [précision de la position][Position precision] est réduite ou
-    réglez le [mode GPS][GPS mode] sur `DISABLED`.
-
-!!! tip
-
-    Also keep in mind that the hardware address of devices is used
-    routing in Meshtastic. Every message from a device includes that
-    address which is unique and cannot be changed, see [this feature
-    request][] for details. This is a bit like [IMEI identifiers on
-    phones][]. MeshCore and Reticulum do not suffer from this issue.
+> [!TIP]
+> Also keep in mind that the hardware address of devices is used
+> routing in Meshtastic. Every message from a device includes that
+> address which is unique and cannot be changed, see [this feature
+> request][] for details. This is a bit like [IMEI identifiers on
+> phones][]. MeshCore and Reticulum do not suffer from this issue.
 
 [this feature request]: https://github.com/meshtastic/firmware/discussions/5007
 [IMEI identifiers on phones]: https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity
@@ -46,11 +42,10 @@ Choisissez un appareil dans [notre liste d'appareils](../references/hardware/ind
 C'est pas cher! Attendez vous à payer 50$CAD pour un kit de base, et
 150$CAD pour un relai solaire.
 
-!!! Conseil
-
-    Si l'appareil que vous avez choisi est équipé d'une antenne amovible, veillez à
-    la connecter avant de mettre l'appareil sous tension. Une radio
-    qui émet sans antenne peut s'endommager !
+> [!TIP]
+> Si l'appareil que vous avez choisi est équipé d'une antenne amovible, veillez à
+> la connecter avant de mettre l'appareil sous tension. Une radio
+> qui émet sans antenne peut s'endommager !
 
 ### Logiciel
 
@@ -69,10 +64,9 @@ D'autres [projets](../references/software/index.md) sont également documentés 
 
 Cette section décrit les différents paramètres que nous recommandons dans l'application Meshtastic.
 
-!!! info
-
-    Les deux paramètres ci-dessous sont essentiels pour se connecter au réseau maillé. Si
-    ils ne sont pas configurés correctement, vous ne pourrez rien voir.
+> [!INFO]
+> Les deux paramètres ci-dessous sont essentiels pour se connecter au réseau maillé. Si
+> ils ne sont pas configurés correctement, vous ne pourrez rien voir.
 
 | Paramètre          | Valeur       | Remarque                                                                                                                          |
 |------------------|-------------|------------------------------------------------------------------ -------------------------------------------------------------|
@@ -82,19 +76,19 @@ Cette section décrit les différents paramètres que nous recommandons dans l'a
  [Région]: https://meshtastic.org/docs/configuration/radio/lora/#region
  [Préréglage du modem]: https://meshtastic.org/docs/overview/radio-settings/#presets
 
-!!! note "Optionnel"
-
-    Ces paramètres sont facultatifs, mais recommandés.
-
-    | Setting                    | Value       | Note                                                                                                                              |
-    |----------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------|
-    | [Bluetooth][]: PIN         | (aléatoire)    | remplacez le [PIN par défaut][] par une valeur aléatoire et conservez-la dans votre gestionnaire de mots de passe                                              |
-    | [Device][]:  [Role][]      | `CLIENT`    | envisagez `CLIENT_BASE` si vous utilisez un relais, ne modifiez pas le rôle sans avoir lu le guide [Choisir le bon rôle pour votre appareil][Choosing The Right Device Role]     |
-    | [LoRa][]: [Ignore MQTT][]  | `true`      |  cela empêche le trafic provenant du maillage plus large d'entrer dans le   réseau et réduit le bruit global.                                     |
-    | [LoRa][]: [Max hops][]     | 3           | default. you *can* raise this if you really think it might help you reach further, but we generally advise against it |
-    | [Position][]: [GPS Mode][] | `DISABLE`   | ou réduisez la [Précision de la position][Position precision] dans la [Configuration du canal][Channel configuration], sinon vous divulguez votre position au réseau par défaut[^1] |
-    | [User][]: "Short Name"     | (arbitraire) |  4 caractères maximum, choisissez un nom facile à retenir, c'est ce qui sera visible sur la carte et dans les chats                                 |
-    | User: "Long Name"          | (arbitraire) | choisissez un nom utile, mais pas offensant, les opérateurs radioamateurs peuvent définir leur indicatif d'appel ici                                            |
+> [!NOTE] Optionnel
+>
+> Ces paramètres sont facultatifs, mais recommandés.
+> 
+> | Setting                    | Value       | Note                                                                                                                              |
+> |----------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------|
+> | [Bluetooth][]: PIN         | (aléatoire)    | remplacez le [PIN par défaut][] par une valeur aléatoire et conservez-la dans votre gestionnaire de mots de passe                                              |
+> | [Device][]:  [Role][]      | `CLIENT`    | envisagez `CLIENT_BASE` si vous utilisez un relais, ne modifiez pas le rôle sans avoir lu le guide [Choisir le bon rôle pour votre appareil][Choosing The Right Device Role]     |
+> | [LoRa][]: [Ignore MQTT][]  | `true`      |  cela empêche le trafic provenant du maillage plus large d'entrer dans le   réseau et réduit le bruit global.                                     |
+> | [LoRa][]: [Max hops][]     | 3           | default. you *can* raise this if you really think it might help you reach further, but we generally advise against it |
+> | [Position][]: [GPS Mode][] | `DISABLE`   | ou réduisez la [Précision de la position][Position precision] dans la [Configuration du canal][Channel configuration], sinon vous divulguez votre position au réseau par défaut[^1] |
+> | [User][]: "Short Name"     | (arbitraire) |  4 caractères maximum, choisissez un nom facile à retenir, c'est ce qui sera visible sur la carte et dans les chats                                 |
+> | User: "Long Name"          | (arbitraire) | choisissez un nom utile, mais pas offensant, les opérateurs radioamateurs peuvent définir leur indicatif d'appel ici                                            |
 
 [^1]: Note that setting it to `NOT_PRESENT` will also improve boot time on devices without GPS.
 
@@ -143,24 +137,22 @@ meshtastic --set-owner "you only live once"
 meshtastic --set-owner-short yolo
 ```
 
-!!! bug
+> [!BUG]
+> Note that the order of commands matter here. Some configuration,
+> like `device.role CLIENT` will reboot the device, and will make
+> further commands fail. That is why the setting is last here. Using
+> a config file solves that problem entirely, as all settings are
+> set at once.
 
-    Note that the order of commands matter here. Some configuration,
-    like `device.role CLIENT` will reboot the device, and will make
-    further commands fail. That is why the setting is last here. Using
-    a config file solves that problem entirely, as all settings are
-    set at once.
-
-!!! tip
-
-    You should really set a random PIN here, not 123456, because that
-    is the [stupidiest combination ever](https://www.youtube.com/watch?v=LcHnf7VQuhc). You can
-    generate such a "random" pin with:
-    
-        shuf -i 100000-1000000 -n 1
-
-    Also please change away from the "yolo" user above, otherwise
-    we'll get confused quick as yo who "yolo" is.
+> [!TIP]
+> You should really set a random PIN here, not 123456, because that
+> is the [stupidiest combination ever](https://www.youtube.com/watch?v=LcHnf7VQuhc). You can
+> generate such a "random" pin with:
+>
+>     shuf -i 100000-1000000 -n 1
+> 
+> Also please change away from the "yolo" user above, otherwise
+> we'll get confused quick as yo who "yolo" is.
 
 This can of course also be done in a configuration file that we'll
 call `recommended.yaml`:
@@ -181,14 +173,13 @@ owner: you only live once
 owner_short: yolo
 ```
 
-!!! tip
-
-    Note that you *can* set the `CLIENT_BASE` role as well but your `meshtastic`
-    command might not know about it so you need to specify it as an
-    magic number:
-
-        meshtastic --set device.role 12
-
-Once you're done, you might want to backup your configuration with:
-
-    meshtastic --export-config > backup.yaml
+> [!TIP]
+> Note that you *can* set the `CLIENT_BASE` role as well but your `meshtastic`
+> command might not know about it so you need to specify it as an
+> magic number:
+>
+>     meshtastic --set device.role 12
+>
+> Once you're done, you might want to backup your configuration with:
+> 
+>     meshtastic --export-config > backup.yaml

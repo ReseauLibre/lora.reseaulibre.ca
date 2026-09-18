@@ -19,11 +19,10 @@ hardware list](https://meshtastic.org/docs/hardware/devices/)[^1].
 It's cheap! Expect to pay 50$CAD for a starter kit or 100$CAD for a
 good companion.
 
-!!! tip
-
-    If the device you picked comes with a removable antenna, make sure
-    you connect the antenna before powering up the device. A radio
-    that transmits without an antenna can damage itself!
+> [!TIP]
+> If the device you picked comes with a removable antenna, make sure
+> you connect the antenna before powering up the device. A radio
+> that transmits without an antenna can damage itself!
 
 ## Software
 
@@ -45,13 +44,13 @@ connecting to the following website.
 
 <https://flasher.meshcore.io>
 
-!!! tip
-
-    If you picked a standalone companion like the Lilygo T-Deck or
-    T-Lora pager, or the Heltec v4 expansion kit, you might want to
-    take a look at [Wadamesh](https://www.wadamesh.com/) as well. The
-    stock firmware GUI (Ripple) is hard to use and proprietary, while
-    Wadamsh is free software, although coded with the Claude LLM.
+> [!TIP]
+>
+> If you picked a standalone companion like the Lilygo T-Deck or
+> T-Lora pager, or the Heltec v4 expansion kit, you might want to take
+> a look at [Wadamesh](https://www.wadamesh.com/) as well. The stock firmware GUI (Ripple) is
+> hard to use and proprietary, while Wadamsh is free software,
+> although coded with the Claude LLM.
 
 Your web browser must support the [Web Serial API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility), which includes
 Chrome (and derivatives) and Firefox 151 or later.
@@ -75,21 +74,17 @@ work. Here are examples:
 - RAK: double-click the reset button will bring it in "DFU" mode, but
   the web flasher should also be able to do that automatically.
 
-!!! important
+> [!IMPORTANT]
+> You will  have the option to flash a "Bluetooth" of "Serial"
+> companion. You should typically choose "Bluetooth" unless you want
+> to connect to the device over the USB cable. Those are exclusive:
+> a Bluetooth device cannot be accessed over serial and vice-versa.
 
-    You will  have the option to flash a "Bluetooth" of "Serial"
-    companion. You should typically choose "Bluetooth" unless you want
-    to connect to the device over the USB cable. Those are exclusive:
-    a Bluetooth device cannot be accessed over serial and vice-versa.
-
-!!! bug "Proprietary software warning"
-
-    While most MeshCore firmware is free software (the
-    [`meshcore-dev/MeshCore`
-    repository](https://github.com/meshcore-dev/MeshCore), the [T-Deck
-    firmware is
-    proprietary](https://docs.meshcore.io/faq/#57-q-is-meshcore-open-source). [Awesome
-    MeshCore lists a few alternatives](https://github.com/samuk/awesome-meshcore#free-and-open-source-firmware).
+> [!BUG] Proprietary software warning
+> 
+> While most MeshCore firmware is free software (the
+> [`meshcore-dev/MeshCore` repository](https://github.com/meshcore-dev/MeshCore), the [T-Deck firmware is
+> proprietary](https://docs.meshcore.io/faq/#57-q-is-meshcore-open-source). [Awesome MeshCore lists a few alternatives](https://github.com/samuk/awesome-meshcore#free-and-open-source-firmware).
 
 During first boot, the device will display the message:
 
@@ -135,29 +130,27 @@ You can try that from your computer with a web browser by using [Liam
 Cottle's](https://app.meshcore.nz/) web app. There are also [iOS and Android versions](https://meshcore.io/#download) and
 a pretty good Linux desktop app called [Meshy](https://codeberg.org/sesivany/meshy).
 
-!!! bug "Proprietary software warning"
-
-    The official MeshCore app is [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) that do not
-    publish their source code and require a subscription or a 10 second
-    wait time for certain features.
-    
-    You can work around some of those problems by installing the [open
-    app](https://github.com/zjs81/meshcore-open)
-    which requires going through [Obtainium](https://obtainium.imranr.dev/) on Android or
-    [test flight](https://github.com/zjs81/meshcore-open/issues/375). It's a little complicated, so don't venture there
-    unless you get frustrated with the official apps. The open app
-    also lacks a few features from the official one, namely:
-    
-     - [full multibyte support](https://github.com/zjs81/meshcore-open/issues/367)
-     - [support for changing the Blutooth PIN](https://github.com/zjs81/meshcore-open/issues/431)
-     - [Google Play Store](https://github.com/zjs81/meshcore-open/issues/323) and [F-Droid](https://github.com/zjs81/meshcore-open/issues/113) releases
-     - [Reactions are non-standard](https://github.com/zjs81/meshcore-open/issues/109)
-     - [Regions support](https://github.com/zjs81/meshcore-open/issues/120)
-     - [Channel utilization display](https://github.com/zjs81/meshcore-open/issues/312)
-     - [User blocking support](https://github.com/zjs81/meshcore-open/issues/340)
-
-    Note that an [active fork](https://github.com/HDDen/meshcore-open/tree/rename-mco-advanced)
-    fixes many of those issues.
+> [!BUG] Proprietary software warning
+>
+> The official MeshCore app is [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) that do not
+> publish their source code and require a subscription or a 10 second
+> wait time for certain features.
+> 
+> You can work around some of those problems by installing the [open
+> app](https://github.com/zjs81/meshcore-open) which requires going through [Obtainium](https://obtainium.imranr.dev/) on Android or
+> [test flight](https://github.com/zjs81/meshcore-open/issues/375). It's a little complicated, so don't venture there
+> unless you get frustrated with the official apps. The open app also
+> lacks a few features from the official one, namely:
+> 
+>  - [full multibyte support](https://github.com/zjs81/meshcore-open/issues/367) (fixed)
+>  - [support for changing the Blutooth PIN](https://github.com/zjs81/meshcore-open/issues/431)
+>  - [Google Play Store](https://github.com/zjs81/meshcore-open/issues/323) and [F-Droid](https://github.com/zjs81/meshcore-open/issues/113) releases
+>  - [Reactions are non-standard](https://github.com/zjs81/meshcore-open/issues/109)
+>  - [Regions support](https://github.com/zjs81/meshcore-open/issues/120) (fixed)
+>  - [Channel utilization display](https://github.com/zjs81/meshcore-open/issues/312)
+>  - [User blocking support](https://github.com/zjs81/meshcore-open/issues/340)
+> 
+> Note that an [active fork](https://github.com/HDDen/meshcore-open/tree/rename-mco-advanced) fixes many of those issues.
 
 To connect your phone to the device, you need to find the right device
 in your list, which can be challenging if you are in an environment
@@ -184,39 +177,16 @@ preset, but you should also pick a display name.
   `YUL-Villeray`, `YUL-Parc-Extension`, etc
 - **Region**: do *not* set a region, as we currently do not use one,
   and it will interfere with routing
-- **Path hash mode**: pick `3-byte (2)` or `2-byte (1)`, see [this
-  question in the FAQ](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#393-q-how-do-i-change-my-companions-path-hash-size) and the tip below
+- **Path hash mode**: pick `3-byte (2)`, see [this announcement for an
+  explanation](../../news/posts/2026-09-18-3-bytes-hash-mode.md)
 
-!!! warning
-
-    Some MeshCore configurations exposes your location by default on devices which have
-    a GPS device! To work around this problem, you can disable the GPS
-    or reduce the [coordinates
-    precision](https://wiki.openstreetmap.org/wiki/Precision_of_coordinates),
-    we recommend two digits (~1km) for clients and 3 digits (~100m)
-    for repeaters.
-
-!!! tip
-
-    We are now telling users to set [multi-byte path routing](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#39-q-what-is-multibyte-support-what-do-1-byte-2-byte-3-byte-adverts-and-messages-mean)
-    even though upstream still doesn't recommend that. The upstream
-    rationale is that multibyte messages just get dropped by older
-    releases, but we have long passed that threshold. In fact, we
-    believe the mesh cannot function correctly with single-byte
-    repeaters, so every repeater *must* set a multibyte path hash
-    mode.
-    
-    Setting a multibyte path hash mode on your companion should
-    improve the reliability of your direct messages (DMs). Because DMs
-    are *routed* (as opposed to channel messages and adverts that are
-    *flooded*), it is crucial that the right path is taken. In
-    single-byte configuration, that single byte is ambiguous and can
-    refer to multiple conflicting repeaters. So an advert you receive
-    that might tell you to go through a specific set of repeaters
-    might actually tell your companion to use a really bad route for a
-    contact.
-    
-    If you're having trouble with DMs, try setting multibyte path hash mode!
+> [!WARNING]
+> 
+> Some MeshCore configurations exposes your location by default on
+> devices which have a GPS device! To work around this problem, you
+> can disable the GPS or reduce the [coordinates precision](https://wiki.openstreetmap.org/wiki/Precision_of_coordinates), we
+> recommend two digits (~1km) for clients and 3 digits (~100m) for
+> repeaters.
 
 ### You made it! Say hi!
 

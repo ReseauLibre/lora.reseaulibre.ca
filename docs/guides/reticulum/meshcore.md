@@ -3,20 +3,19 @@
 Amazingly, because Reticulum can route over essentially anything, you
 can route Reticulum traffic over MeshCore meshes.
 
-!!! example "Advanced users only!"
-
-    This is a particularly exotic Reticulum configuration. 
-    
-    We are not sure this is a good idea. It might flood the MeshCore
-    mesh, for example. So far, there seems to be only moderate (2x)
-    amplification in traffic so we're continuing to experiment. but we
-    do not recommend people adopt this, generally.
-    
-    MeshCore people typically frown upon MeshCore being bridged across
-    regions or with other networks, and might consider such use to be hostile.
-
-    Finally, if you're just getting started with Reticulum, this one
-    will be particularly confusing, just skip this section.
+>[!EXAMPLE] Advanced users only!
+> This is a particularly exotic Reticulum configuration. 
+> 
+> We are not sure this is a good idea. It might flood the MeshCore
+> mesh, for example. So far, there seems to be only moderate (2x)
+> amplification in traffic so we're continuing to experiment. but we
+> do not recommend people adopt this, generally.
+> 
+> MeshCore people typically frown upon MeshCore being bridged across
+> regions or with other networks, and might consider such use to be hostile.
+> 
+> Finally, if you're just getting started with Reticulum, this one
+> will be particularly confusing, just skip this section.
 
 During the May 2026 mesh night at Foulab, we have successfully routed
 Reticulum messages over a local LoRa link with two MeshCore companions
@@ -31,12 +30,10 @@ git clone https://github.com/slack-t/RNS_Over_MeshCore
 ln -s RNS_Over_MeshCore/Interface/MeshcoreInterface.py .
 ```
 
-!!! note
-
-    There is also this other implementation:
-    [`scottrhoyt/rns-meshcore-interface`](https://github.com/scottrhoyt/rns-meshcore-interface)
-    that has not been tested and is likely incompatible.
-
+> [!NOTE]
+> There is also this other implementation:
+> [`scottrhoyt/rns-meshcore-interface`](https://github.com/scottrhoyt/rns-meshcore-interface)
+> that has not been tested and is likely incompatible.
 
 Then we add the interface to the RNS configuration file in
 `~/.reticulum/config`:
@@ -88,21 +85,20 @@ unfounded since Reticulum encrypts traffic before injecting into the
 transport. Instead, we favor instead broad compatibility across
 clients, using a common, public channel.
 
-!!! bug
-
-    Pay close attention to the `type` line above. In the upstream
-    documentation, it says to use:
-    
-        type = MeshCoreInterface
-    
-    But the filename is `MeshcoreInterface.py`, which will make
-    loading file. This is case sensitive! So either rename the file or
-    change the type to:
-    
-        type = MeshcoreInterface
-    
-    The above instructions are correct and should work, but you will
-    fail if you copy directly from upstream.
+> [!BUG]
+> Pay close attention to the `type` line above. In the upstream
+> documentation, it says to use:
+>
+>     type = MeshCoreInterface
+> 
+> But the filename is `MeshcoreInterface.py`, which will make
+> loading file. This is case sensitive! So either rename the file or
+> change the type to:
+> 
+>     type = MeshcoreInterface
+> 
+> The above instructions are correct and should work, but you will
+> fail if you copy directly from upstream.
 
 In the above configuration, we connect RNS to a MeshCore companion
 over "serial" (USB) and specify the given port. It *may* be
@@ -114,23 +110,22 @@ For this to work, you need to have a "companion" flashed with
 MeshCore. You can follow our [MeshCore flashing guide](../meshcore/companion.md#flash-the-firmware-on-the-device), just make
 sure you pick "serial" and not "Bluetooth".
 
-!!! bug
-
-    Some applications like MeshChatX will fail to load the `meshcore`
-    library because it cannot be found. This is often related to the
-    sandboxing some of those applications.
-    
-    One workaround is to install the Debian package instead.
-    
-    Or it's also possible to hijack the load path inside the interface
-    itself.
-    
-    We have had success adding something similar to this to the top of
-    the interface Python file (`MeshcoreInterface.py`):
-    
-        import sys
-        sys.path.insert(0, "/usr/lib/python3/dist-packages/")
-        sys.path.insert(0, "/home/anarcat/.venvs/reticulum/lib/python3.13/site-packages/")
+> [!BUG]
+> Some applications like MeshChatX will fail to load the `meshcore`
+> library because it cannot be found. This is often related to the
+> sandboxing some of those applications.
+>
+> One workaround is to install the Debian package instead.
+>
+> Or it's also possible to hijack the load path inside the interface
+> itself.
+>
+> We have had success adding something similar to this to the top of
+> the interface Python file (`MeshcoreInterface.py`):
+>
+>     import sys
+>     sys.path.insert(0, "/usr/lib/python3/dist-packages/")
+>     sys.path.insert(0, "/home/anarcat/.venvs/reticulum/lib/python3.13/site-packages/")
 
 If both endpoints are configured this way, they should be able to send
 an announce (see below), see each other, and exchange text messages

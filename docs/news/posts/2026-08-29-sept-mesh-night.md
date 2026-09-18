@@ -7,16 +7,15 @@ categories:
   - events
 ---
 
-!!! success
-
-    Maintenant avec des notes (en anglais)!
-
 Vous connaissez le refrain!
 
 Chaque mois, [Foulab][], le "hacker space" de Montréal, tient une
 soirée "mesh" et ce mois-ci n'y fait pas exception!
 
  [Foulab]: https://foulab.org/
+
+> [!SUCCESS]
+> Maintenant avec des notes (en anglais)!
 
 <!-- more -->
 
@@ -53,16 +52,18 @@ following:
   happening
 - participated in the Reticulum hacking as well by sending text
   messages with LXMF (think Signal), browsing Nomad pages (think
-  Gopher/Gemini) and joining a RRC (think IRC over Reticulum) channel
+  Gopher/Gemini) and joining a [RRC](https://reticulum.miraheze.org/wiki/RRC) (think IRC over Reticulum) channel
   over Nomad net (yes, that impossible to use client, what do you mean
-  <kbd>control-d</kdb> to send, this is not `cat(1)`)
+  <kbd>control-d</kbd> to send, this is not `cat(1)`), also found out
+  (but not tested) [`weechat-rrc`](https://github.com/l5yth/weechat-rrc)
 - monitored the airwaves with an software-defined radios like the
   RTL-SDR and a [Portapack HackRF One](https://opensourcesdrlab.com/products/clifford-heath-hackrf-one-with-portapack-h4m?VariantsId=10177), with [gqrx](https://www.gqrx.dk/) on Mac and
   Linux
 - witnessed the (presumably) smallest Android 13 cell phone, the
   [Jelly Star](https://en.wikipedia.org/wiki/Unihertz_Jelly_series) which seems to be deliberately designed to be
   annoying to use, a thing which its owner was very happy about
-  because he was spending less time on his phone
+  because he was spending less time on his phone, "it's a piece of
+  shit and I love it"
 - understood that I can hook up my LoRa transport node with the rest
   of the internet-wide Reticulum backbone without flooding LoRa, using
   a [different interface mode](https://reticulum.network/manual/interfaces.html#interfaces-modes) ([wiki](https://reticulum.miraheze.org/wiki/Interface#Modes), [simulator](https://rns.moscow/announce-sim.html)),
@@ -71,8 +72,22 @@ following:
   [`boundary`](https://reticulum.miraheze.org/wiki/Interface#boundary) for the internet side (but I kind of just made this
   up while writing this and god this is complicated right now, and
   don't trust this until it turns into a proper [guide](../../guides/meshcore/index.md))
-- may devices were backed up, reflashed, tested, monitored and demo'd,
-  including the infamous [fire hazard previously announced here](2026-08-26-wismesh-pocket-fire-hazard.md)
+- debated the various possible LoRa settings we could pick for
+  Reticulum in Montreal, either staying with the Ottawa standard
+  (914.875 MHz, 125 kHz, SF7, CR7) which we modified to SF9, or
+  switching to the more commonly used SF8 or SF10, or both, depending
+  on the location (SF8 for urban, denser networks and SF10 for
+  regions, sparser networks), still unsettled
+- argued about large language models
+- discussed problems with people deliberately creating collisions on
+  public key hashes to have cute repeater names and how to communicate
+  about this problem (announcement coming)
+- many devices were backed up, reflashed, tested, monitored and
+  demo'd, including the infamous [fire hazard previously announced
+  here](2026-08-26-wismesh-pocket-fire-hazard.md), a raspberry pi MeshCore firmware, [Wadamesh](https://wadamesh.com/),
+  [Meshy](https://codeberg.org/sesivany/meshy), [Meshterm](https://discord.gg/AZwe5Uvb3S) a word, but no demo or test, on the
+  multi-firmware [`bmorcelli/Launcher`](https://bmorcelli.github.io/Launcher) project allowing multiple
+  firmwares to be installed concurrently on a Lilygo T-Deck
 
 I'm considering making more frequent notes like this of mesh nights so
 people remember what happened and see what we do there. 

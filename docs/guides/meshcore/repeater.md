@@ -20,11 +20,10 @@ hardware list](https://meshtastic.org/docs/hardware/devices/)[^1].
 It's cheap! Expect to pay 50$CAD for a development kit, 150$CAD for a
 decent solar relay.
 
-!!! tip
-
-    If the device you picked comes with a removable antenna, make sure
-    you connect the antenna before powering up the device. A radio
-    that transmits without an antenna can damage itself!
+> [!TIP]
+> If the device you picked comes with a removable antenna, make sure
+> you connect the antenna before powering up the device. A radio
+> that transmits without an antenna can damage itself!
 
 ## Software
 
@@ -68,24 +67,23 @@ work. Here are examples:
 - RAK: double-click the reset button will bring it in "DFU" mode, but
   the web flasher should also be able to do that automatically.
 
-!!! bug
-
-    We have had trouble flashing RAK4631 device. You can:
-    
-     1. download the `U2F` file
-     2. put the device in "DFU" mode
-     3. mount it
-     4. copy the file on the disk
-     5. unmount
-
-    This can also be done automatically with this
-    [reflashtic](https://gitlab.com/anarcat/scripts/-/blob/main/reflashtic.py?ref_type=heads)
-    command:
-    
-        reflashtic.py --pmount -i RAK_4631_companion_radio_ble-v1.15.0-dee3e26.uf2
-
-    The [`adafruit-nrfutil`](https://github.com/adafruit/Adafruit_nRF52_nrfutil)
-    command can also apparently be used for this.
+> [!BUG]
+> We have had trouble flashing RAK4631 device. You can:
+>
+>  1. download the `U2F` file
+>  2. put the device in "DFU" mode
+>  3. mount it
+>  4. copy the file on the disk
+>  5. unmount
+>
+> This can also be done automatically with this
+> [reflashtic](https://gitlab.com/anarcat/scripts/-/blob/main/reflashtic.py?ref_type=heads)
+> command:
+>  
+>     reflashtic.py --pmount -i RAK_4631_companion_radio_ble-v1.15.0-dee3e26.uf2
+>
+> The [`adafruit-nrfutil`](https://github.com/adafruit/Adafruit_nRF52_nrfutil) command can also apparently be used for
+> this.
 
 During first boot, the device will display the message, if it has a display:
 
@@ -118,9 +116,10 @@ off. This will help reduce the noise on the mesh.
 
 #### Boot loader OTA fix
 
-!!! example "Advanced users only"
-
-    This section is a little more advanced and not required for beginners.
+> [!EXAMPLE] Advanced users only
+>
+> This section is a little more advanced and not required for
+> beginners.
 
 You might want to flash upgrades "over the air" (OTA) if your device
 is in a hard to reach location. There are problems with built-in
@@ -167,14 +166,13 @@ procedure](companion.md#backing-up-before-flashing).
 A repeater is configured through a [web interface](https://config.meshcore.io/). *Some* settings
 can be performed over Bluetooth later.
 
-!!! warning
-
-    Some MeshCore configurations exposes your location by default on devices which have
-    a GPS device! To work around this problem, you can disable the GPS
-    or reduce the [coordinates
-    precision](https://wiki.openstreetmap.org/wiki/Precision_of_coordinates),
-    we recommend two digits (~1km) for clients and 3 digits (~100m)
-    for repeaters.
+> [!WARNING] 
+>
+> Some MeshCore configurations exposes your location by default on
+> devices which have a GPS device! To work around this problem, you
+> can disable the GPS or reduce the [coordinates precision](https://wiki.openstreetmap.org/wiki/Precision_of_coordinates), we
+> recommend two digits (~1km) for clients and 3 digits (~100m) for
+> repeaters.
 
 You need to at least:
 
@@ -185,28 +183,11 @@ You need to at least:
   and it will interfere with routing
 - **Admin password**: set a [strong password](https://anarc.at/blog/2017-02-18-passwords-entropy/) and save it to your
   password manager for remote administration
-- **Path hash mode**: pick `3-byte (2)`, see [multi-byte path
-  routing](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#39-q-what-is-multibyte-support-what-do-1-byte-2-byte-3-byte-adverts-and-messages-mean) for details
+- **Path hash mode**: pick `3-byte (2)`, see [this announcement for an
+  explanation](../../news/posts/2026-09-18-3-bytes-hash-mode.md)
 - **Send an advert!** by default, repeaters do automatically send
   adverts, but it can take *hours*, during which time your companion
   won't see the repeater! so do send one manually
-
-!!! tip
-
-    Many settings can be done over a serial port, if you're an
-    advanced user. You can connect to the serial port on Linux with
-    tio:
-    
-        tio /dev/ttyUSB0
-
-    Then the above commands are:
-    
-        set name YUL-Villeray
-    
-    You can also connect to your devices with the
-    [`meschore-cli`](https://github.com/meshcore-dev/meshcore-cli)
-    program. The full command line reference is [available in the
-    upstream documentation](https://docs.meshcore.io/cli_commands/).
 
 The "recommended USA / Canada" preset is, at the time of writing, the
 following settings:
@@ -220,18 +201,31 @@ But you shouldn't need to write those down by hands, generally. Just
 pick the recommended preset. See [the frequencies question](../faq.md#which-radio-frequencies-are-you-using) for
 details.
 
-!!! tip
-
-    You can also perform this configuration over the command line:
-    
-    ```
-    set freq 910.525
-    set bw 62.5
-    set sf 7
-    set cr 5
-    set name YUL-Area
-    set path.hash.mode 2
-    ```
+> [!TIP]
+> You can also perform this configuration over the command line:
+>
+>     set radio 910.525,62.5,7,5
+>     set name YUL-Area
+>     set path.hash.mode 2
+>     password $STRONG_PASSWORD_SEE_ABOVE
+>     reboot
+>
+> Then send an advert:
+> 
+>     advert
+>
+> The full command line reference is [available in the
+> upstream documentation](https://docs.meshcore.io/cli_commands/).
+>
+> You can access the command line through the web interface or the
+> `meshcore-cli` command:
+> 
+>     meshcore-cli -r -s /dev/ttyACM0
+> 
+> Or you can also connect over the serial port with a normal serial
+> console client:
+>
+>     tio /dev/ttyUSB0
 
 ### Repeaters can lose track of time
 
