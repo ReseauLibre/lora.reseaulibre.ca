@@ -18,9 +18,8 @@ participation, on Jitsi:
 
 <https://meet.jit.si/moderated/7166e3ba08dc351aea738c80fe797bcd8555ffcfeb74b31ec26e90e2008d2ef8>
 
-!!! important
-
-    Note that the Jitsi link above has changed on 2026-06-01.
+> [!IMPORTANT]
+> Note that the Jitsi link above has changed on 2026-06-01.
 
 But we prefer if you could show up in person.
 

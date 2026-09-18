@@ -92,10 +92,9 @@ have lower capacity than normal Lithium-ion batteries.
 You might also want to have a charger if you deal with a lot of 18650
 batteries.
 
-!!! warning
-
-    Do *not* try to charge 18650 batteries in a normal "AA" battery
-    charger! They won't fit and it won't work.
+> [!WARNING]
+> Do *not* try to charge 18650 batteries in a normal "AA" battery
+> charger! They won't fit and it won't work.
 
 You don't need a charger for a single device: devices normally come
 with their own charge controller and can charge over whatever power

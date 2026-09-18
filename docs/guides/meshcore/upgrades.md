@@ -19,21 +19,20 @@ trickier because they are often harder to reach physically. If you
 
 ## OTA upgrades
 
-!!! example "Advanced users only"
+> [!EXAMPLE] Advanced users only
+> 
+> Over-the-air (OTA) upgrades are risky and should be used only if
+> remote access is inconvenient, or if you have a secondary device to
+> run a first test run on.
+> 
+> Beginners shouldn't need to follow those instructions.
+> 
+> You should also *not* do your initial flash over the air, it's not
+> worth it!
 
-    Over-the-air (OTA) upgrades are risky and should be used only if
-    remote access is inconvenient, or if you have a secondary device
-    to run a first test run on.
-    
-    Beginners shouldn't need to follow those instructions.
-    
-    You should also *not* do your initial flash over the air, it's not
-    worth it! 
-
-!!! warning
-
-    Only use this for upgrades and *only* if you performed the above
-    [Bootloader OTA fix](repeater.md#boot-loader-ota-fix)!
+> [!WARNING]
+> Only use this for upgrades and *only* if you performed the above
+> [Bootloader OTA fix](repeater.md#boot-loader-ota-fix)!
 
 Once your device is [correctly flashed for OTA (over the air) upgrades](repeater.md#boot-loader-ota-fix),
 you should be able to perform upgrades remotely. This is typically
@@ -182,7 +181,6 @@ You can also target multiple devices, customize retries, etc. See the
 The URL comes from the [`flasher.meshcore.io`](https://flasher.meshcore.io) site, and should be
 updated to follow the release you want to flash.
 
-!!! warning
-
-    This is untested. The GUI version was done and works and the
-    command line likely works similarly well.
+> [!WARNING]
+> This is untested. The GUI version was done and works and the
+> command line likely works similarly well.

@@ -9,20 +9,20 @@ is based off the [official manual](https://markqvist.github.io/Reticulum/manual/
 
 If you know a little where you're going, start at [RNS](rns.md).
 
-!!! example "Advanced users only"
-
-    This is an **advanced** guide and assumes more prior knowledge
-    than our other guides normally do. Reticulum is a powerful, but
-    much more complex stack than MeshCore or Meshtastic, so this guide
-    is harder to follow.
-    
-    It's also incomplete. It is represents notes of our successes on
-    various aspects of our research and development on Reticulum.
-    
-    Most people doing mesh networking in Montreal are currently on
-    MeshCore, so you should probably see our [Getting started with
-    MeshCore](meshcore.md) guide instead and [Why not
-    Reticulum?](../faq.md#why-not-reticulum).
+> [!EXAMPLE] Advanced users only
+>
+> This is an **advanced** guide and assumes more prior knowledge
+> than our other guides normally do. Reticulum is a powerful, but
+> much more complex stack than MeshCore or Meshtastic, so this guide
+> is harder to follow.
+>
+> It's also incomplete. It is represents notes of our successes on
+> various aspects of our research and development on Reticulum.
+>
+> Most people doing mesh networking in Montreal are currently on
+> MeshCore, so you should probably see our [Getting started with
+> MeshCore](meshcore.md) guide instead and [Why not
+> Reticulum?](../faq.md#why-not-reticulum).
 
 ## Picking the right tool
 

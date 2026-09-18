@@ -21,10 +21,9 @@ V2](https://store.rakwireless.com/products/wismesh-pocket) as sold by RAK Wirele
 devices that exhibit premature wear and tear of the battery pouch due
 to what seems to be a design flaw. 
 
-!!! warning
-
-    We have reasons to believe WisMesh Pocket V2 devices present a
-    fire hazard and need to be immediately inspected for internal damage.
+> [!WARNING]
+> We have reasons to believe WisMesh Pocket V2 devices present a
+> fire hazard and need to be immediately inspected for internal damage.
 
 <!-- more -->
 

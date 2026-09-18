@@ -3,23 +3,20 @@
 RNS is the [base Reticulum software](https://github.com/markqvist/Reticulum/), still developed by the
 original founder of the Reticulum project.
 
-!!! bug "Proprietary software warning"
-
-    Unfortunately, Reticulum now ships [with a non-free license](https://github.com/markqvist/Reticulum/discussions/781#discussioncomment-13209632) which
-    has [stalled the Debian packaging effort](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1101959) but also lead to the
-    proliferation of [other implementations](https://reticulum.miraheze.org/wiki/Implementations). 
-    
-    [RetiNet](https://codeberg.org/skyguy/retinet) seems to be the
-    direct descendent, a fork of RNS before the license
-    change. [rsReticulum](https://github.com/ratspeak/rsReticulum)
-    seems pretty advanced as well, and so is
-    [leviculum](https://codeberg.org/Lew_Palm/leviculum). There are
-    also other implementations by military startups we will not
-    glorify here.
-
-    Since most people still use the reference implementation, and that
-    others derive from it generally stay compatible, this guide
-    follows the reference implementation.
+> [!BUG] Proprietary software warning
+>
+> Unfortunately, Reticulum now ships [with a non-free license](https://github.com/markqvist/Reticulum/discussions/781#discussioncomment-13209632)
+> which has [stalled the Debian packaging effort](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1101959) but also lead to
+> the proliferation of [other implementations](https://reticulum.miraheze.org/wiki/Implementations).
+>
+> [RetiNet](https://codeberg.org/skyguy/retinet) seems to be the direct descendent, a fork of RNS before
+> the license change. [rsReticulum](https://github.com/ratspeak/rsReticulum) seems pretty advanced as well,
+> and so is [leviculum](https://codeberg.org/Lew_Palm/leviculum). There are also other implementations by
+> military startups we will not glorify here.
+>
+> Since most people still use the reference implementation, and that
+> others derive from it generally stay compatible, this guide follows
+> the reference implementation.
 
 ## Installation and configuration
 
@@ -98,19 +95,17 @@ Here is an example interface:
 This configuration will tell Reticulum to connect to the given host on
 the internet to route with other Reticulum users.
 
-!!! note
-
-    Yes, we know, this is kind of cheating: we're not really doing a
-    local mesh in this case, and are routing over the Internet
-    instead. But Reticulum is a mixed medium system: it considers the
-    possibility of using the internet a *feature* and happily uses
-    TCP/IP or LoRa. We show this example to allow you to test the
-    system without having LoRa neighbours, which might not be
-    available.
-    
-    In our defence, the above configuration is actually *not*
-    functional as `example.com` does not run a reticulum interface at
-    the moment.
+> [!NOTE]
+>
+> Yes, we know, this is kind of cheating: we're not really doing a
+> local mesh in this case, and are routing over the Internet
+> instead. But Reticulum is a mixed medium system: it considers the
+> possibility of using the internet a *feature* and happily uses
+> TCP/IP or LoRa. We show this example to allow you to test the system
+> without having LoRa neighbours, which might not be available.
+>
+> In our defence, the above configuration is actually *not* functional
+> as `example.com` does not run a reticulum interface at the moment.
 
 So yes, this is cheating. Let's try a "real" interface, LoRa, the same
 medium used by Meshtastic and MeshCore.
@@ -180,23 +175,23 @@ The [full RNode interface configuration](https://markqvist.github.io/Reticulum/m
 
 Restart `rsnd` and it should try to connect to your RNode device!
 
-!!! example "Command line option"
-
-    If you are familiar with the command line, there is a program shipped
-    with RNS called `rnodeconf` allows you to flash those devices with
-    RNode in an interactive way, with:
-    
-        rnodeconf --autoinstall
-    
-    It will walk you through a series of prompts to flash your device.
-    
-    At some point, it will ask you for the device model. If you're
-    flashing a heltec it will tell you it is experimental, and you can
-    ignore it.
-    
-    It will ask you which region / band to use, make sure you pick the 915
-    MHz band. You will then be prompted for actual frequency,
-    bandwidth and power settings, see below for those.
+> [!EXAMPLE] Command line option
+>
+> If you are familiar with the command line, there is a program shipped
+> with RNS called `rnodeconf` allows you to flash those devices with
+> RNode in an interactive way, with:
+> 
+>     rnodeconf --autoinstall
+>
+> It will walk you through a series of prompts to flash your device.
+>
+> At some point, it will ask you for the device model. If you're
+> flashing a heltec it will tell you it is experimental, and you can
+> ignore it.
+> 
+> It will ask you which region / band to use, make sure you pick the
+> 915 MHz band. You will then be prompted for actual frequency,
+> bandwidth and power settings, see below for those.
 
 #### A note on frequency settings
 
@@ -209,11 +204,10 @@ join the Reticulum mesh in Montreal use those frequencies:
 - spread factor: SF7
 - coding rate: 4:7
 
-!!! note
-
-    Those are inspired by the [Ottawa settings](https://ottawamesh.ca/reticulum/reticulum-frequency-settings/#frequency-settings-for-reticulum).
-
-    See also our [discussion of frequencies in the FAQ](../faq.md#which-radio-frequencies-are-you-using).
+> [!NOTE]
+>
+> Those are inspired by the [Ottawa settings](https://ottawamesh.ca/reticulum/reticulum-frequency-settings/#frequency-settings-for-reticulum). See also our
+> [discussion of frequencies in the FAQ](../faq.md#which-radio-frequencies-are-you-using).
 
 ### MeshCore tunneling
 
@@ -280,11 +274,10 @@ In this case, you'll need to pick a different TCP interface. We
 purposefully do not provide a default here because we do not want to
 overwhelm a public interface.
 
-!!! tip
-
-    You *could* run such an interface for the local mesh! If you run
-    Linux, you would probably want to start by configuring a public
-    [backbone interface](https://markqvist.github.io/Reticulum/manual/interfaces.html#backbone-interface).
+> [!TIP]
+> You *could* run such an interface for the local mesh! If you run
+> Linux, you would probably want to start by configuring a public
+> [backbone interface](https://markqvist.github.io/Reticulum/manual/interfaces.html#backbone-interface).
 
 You can monitor the interfaces with:
 
@@ -305,13 +298,13 @@ address of the device (in Meshtastic).
 The keys reside on the computer or mobile operating the interface! So
 they depend on the application.
 
-!!! tip
-
-    You *can* technically send an announce by using the transport identity:
-
-        rnid -i .reticulum/storage/transport_identity -a
-
-    But we do not recommend doing this outside of the lab.
+> [!TIP]
+>
+> You *can* technically send an announce by using the transport identity:
+>
+>     rnid -i .reticulum/storage/transport_identity -a
+>
+> But we do not recommend doing this outside of the lab.
 
 Once you have peers, you can see the path to them with `rnpath`, which
 will show you how any hops, through which peer and which interface,

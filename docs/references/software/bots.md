@@ -65,11 +65,10 @@ There is now a [Matrix](https://matrix.org) bridge setup in the little Italy
 neighbourhood. I essentially followed [this quick start guide](https://github.com/jeremiah-k/meshtastic-matrix-relay/wiki/Getting-Started-With-Matrix-&-MM-Relay) and
 this [Docker guide](https://github.com/jeremiah-k/meshtastic-matrix-relay/blob/main/docs/DOCKER.md).
 
-!!! warning
-
-    Do *not* naively follow this guide! If you add another relay that
-    join the *same* room, you are likely going to create loops and
-    extra traffic to the mesh. Make your own room for your own bot!
+> [!WARNING]
+> Do *not* naively follow this guide! If you add another relay that
+> join the *same* room, you are likely going to create loops and
+> extra traffic to the mesh. Make your own room for your own bot!
 
 I first created a room in the Matrix space, then created a new account
 and invited it to the room. The room is currently fully open to the
@@ -199,10 +198,9 @@ Then edited the configuration:
  #    active: true
 ```
 
-!!! warning
-
-    Again, at this stage, do *not* use the above room
-    configuration. Pick your own room!
+> [!WARNING]
+> Again, at this stage, do *not* use the above room
+> configuration. Pick your own room!
 
 At this point, the container should be able to start:
 

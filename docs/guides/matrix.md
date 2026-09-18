@@ -166,18 +166,15 @@ Here is a [good guide on moderation tools](https://matrix-community-help.codesto
 Other people have been promoted to moderation roles as well. That has
 been done manually across all the rooms.
 
-!!! bug
-
-    Unfortunately, Matrix doesn't support syncing moderation status
-    across an entire space yet, see:
-
-    - [MSC3216: Synchronized access control for Spaces](https://github.com/matrix-org/matrix-spec-proposals/pull/3216)
-    - [MSC2962: Managing power levels via Spaces](https://github.com/matrix-org/matrix-spec-proposals/pull/2962)
-
-    We could also use a
-    [`communitybot`](https://github.com/williamkray/maubot-communitybot)
-    as an alternative, but then we'd still need to add it to all the
-    rooms anyways.
+> [!BUG]
+> Unfortunately, Matrix doesn't support syncing moderation status
+> across an entire space yet, see:
+>
+> - [MSC3216: Synchronized access control for Spaces](https://github.com/matrix-org/matrix-spec-proposals/pull/3216)
+> - [MSC2962: Managing power levels via Spaces](https://github.com/matrix-org/matrix-spec-proposals/pull/2962)
+>
+> We could also use a [`communitybot`](https://github.com/williamkray/maubot-communitybot) as an alternative, but then
+> we'd still need to add it to all the rooms anyways.
 
 [`asgard.chat`](https://asgard.chat/) possible alternative to Debian's Mjolnir, ran by the
 folks who do a lot of stuff in Matrix, people from the MSC core team,

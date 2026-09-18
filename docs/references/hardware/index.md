@@ -125,19 +125,18 @@ We have those categories:
 > they work, but need more testing before they can be promoted to a
 > full "success".
 
-!!! question "Untested"
-
-    Those devices are interesting, but we haven't lay our hands on
-    them yet.
+> [!QUESTION] Untested
+>
+> Those devices are interesting, but we haven't lay our hands on
+> them yet.
 
 > [!WARNING]
 > We tested those devices, and there are serious caveats against
 > using them. Do not order one unless you know what you read an
 > understand the note on the device.
 
-!!! failure "Not working"
-
-    We tested those devices, and we recommend against using them entirely.
+> [!FAILURE]
+> We tested those devices, and we recommend against using them entirely.
 
 Note that the devices are rated for compliance with MeshCore for the
 moment, but should generally also work with Meshtastic. 
@@ -180,28 +179,27 @@ computer to operate.
 > [this guide for how to use that single button](https://wiki.seeedstudio.com/sensecap_t1000_e_meshcore/#button),
 > in particular use triple-click to turn off the buzzer.
 
+> [!EXAMPLE] In testing
+>
+> - [Elecrow ThinkNode M1](https://www.elecrow.com/thinknode-m1-meshtastic-lora-signal-transceiver-powered-by-nrf52840-with-154-screen-support-gps.html):
+>   nRF52840, 1200mAh battery, 1.54" e-ink display, GPS, BLE, RP-SMA,
+>   -10~50°C, 54$USD, [89$CAD at Muzi](https://muzi.works/products/elecrow-thinknode-m1), similar to the Lilygo T-Echo, but has a better battery
 
-!!! example "In testing"
+> [!QUESTION] Untested
+>
+> - [Muzi](https://muzi.works/) has builds on top of the Heltec, e.g. [this H2T](https://muzi.works/products/h2t-complete-device-heltec-t114-with-gps-running-meshtastic)
+>   (137CAD) made with a Heltec T114, [this R1 Neo](https://muzi.works/products/r1-neo-complete-meshtastic-device) (123CAD) is
+>   similar to the WisMesh Pocket, but smaller, better sealed, but more
+>   expensive
+> - [SenseCAP MeshTracker X1](https://www.seeedstudio.com/sensecap-meshtracker-x1-meshtastic-gps-tracker-p-6935.html): 
+>   Next generation of the T1000-E. LR2021, IP66, USB-C connector,
+>   1100mAh, claims 5 days battery, dual GPS, BT, 1 RGB LED, 2 buttons, -20 to 60℃
+>   operation, 90*57*8 mm, 45g, 43$USD.
+> - [Meshtiny](https://meshtiny.com/product/meshtiny/): tiny
+>   companion, nRF52840, SX1262, OLED, Buzzer, user, reset button,
+>   power switch, 3-way encoder button, two LEDs, 250mAh Battery, 60$USD
 
-    - [Elecrow ThinkNode M1](https://www.elecrow.com/thinknode-m1-meshtastic-lora-signal-transceiver-powered-by-nrf52840-with-154-screen-support-gps.html):
-      nRF52840, 1200mAh battery, 1.54" e-ink display, GPS, BLE, RP-SMA,
-      -10~50°C, 54$USD, [89$CAD at Muzi](https://muzi.works/products/elecrow-thinknode-m1), similar to the Lilygo T-Echo, but has a better battery
-
-!!! question "Untested"
-
-    - [Muzi](https://muzi.works/) has builds on top of the Heltec, e.g. [this H2T](https://muzi.works/products/h2t-complete-device-heltec-t114-with-gps-running-meshtastic)
-      (137CAD) made with a Heltec T114, [this R1 Neo](https://muzi.works/products/r1-neo-complete-meshtastic-device) (123CAD) is
-      similar to the WisMesh Pocket, but smaller, better sealed, but more
-      expensive
-    - [SenseCAP MeshTracker X1](https://www.seeedstudio.com/sensecap-meshtracker-x1-meshtastic-gps-tracker-p-6935.html): 
-      Next generation of the T1000-E. LR2021, IP66, USB-C connector,
-      1100mAh, claims 5 days battery, dual GPS, BT, 1 RGB LED, 2 buttons, -20 to 60℃
-      operation, 90*57*8 mm, 45g, 43$USD.
-    - [Meshtiny](https://meshtiny.com/product/meshtiny/): tiny
-      companion, nRF52840, SX1262, OLED, Buzzer, user, reset button,
-      power switch, 3-way encoder button, two LEDs, 250mAh Battery, 60$USD
-
-<!-- !!! failure "Not working" -->
+<!-- > [!FAILURE] -->
 
 > [!WARNING]
 > - [WisMesh Pocket V2](https://store.rakwireless.com/products/wismesh-pocket) Looks nice at first glance: a RAK 4631 kit with GNSS, 1.3" OLED, acceleration sensor, power
@@ -237,28 +235,28 @@ to operate.
 > smaller, quirkier, 90$USD. Keyboard and wheel are unreliable,
 > and it has no touch scren. It's really cute though.
 
-!!! question "Untested"
-
-    - [T-Deck Pro](https://lilygo.cc/products/t-deck-pro): 3.1" e-ink touch screen, 4G module, WiFi 2.4GHz,
-      BLE 5, GPS, TF Card, mic, speaker, keypad, see also the [T5 e-paper
-      s3 pro](https://lilygo.cc/products/t5-e-paper-s3-pro).
-    - Elecrow M9, not yet released, similar to the D-Teck, LCD
-      display, no touch screen, real time clock, GPS, SD card, to be confirmed.
-    - [Attaky Mesh desk](https://shop.attaky.com/products/attaky_mesh_deck?variant=52819861537084): 
-      modular ESP32 kit with battery, SX1262 radio, GPS receiver, 48-keys
-      QWERTY keyboard, custom 1000 mAh battery, 68 × 97 × 29.8 mm,
-      157g ([data sheet](https://docs.attaky.com/docs/datasheets/builds/mesh-deck)),
-      240$USD, runs wadamesh
-    - [Tanmatsu cyberdeck](https://shop.nicolaielectronics.nl/shop/tanmatsu-9/tanmatsu-cyberdeck-3?attribute_values=1). 
-      ESP32-P4,  E22-900M22S LoRa radio, microSD card socket,
-      3D-printed case, QWERTY keyboard, 2500mAh Li-Po battery, audio
-      jack and speaker, expansion port, opensource, 100EUR, runs
-      wadamesh
-    - [M5 Cardputer Adv](https://shop.m5stack.com/products/cardputer-mesh-kit-for-meshtastic-esp32-s3?variant=48684913164545).
-      ESP32 handheld, 1.14" LCD, 56-key keyboard, 1750mAh lithium,
-      microphone, 1W speaker and audio jack, infrared, microSD, SX1262
-      expansion port, not supported by stock MeshCore firmware, but
-      many alternative firmware, for example: [`MultiMote/meshcore-cardputer-adv`](https://github.com/MultiMote/meshcore-cardputer-adv), [`sosprz/meshcore-cardputer-adv`](https://github.com/sosprz/meshcore-cardputer-adv), [`Stachugit/MeshCore-Cardputer-ADV`](https://github.com/Stachugit/MeshCore-Cardputer-ADV)
+> [!QUESTION] Untested
+>
+> - [T-Deck Pro](https://lilygo.cc/products/t-deck-pro): 3.1" e-ink touch screen, 4G module, WiFi 2.4GHz,
+>   BLE 5, GPS, TF Card, mic, speaker, keypad, see also the [T5 e-paper
+>   s3 pro](https://lilygo.cc/products/t5-e-paper-s3-pro).
+> - Elecrow M9, not yet released, similar to the D-Teck, LCD
+>   display, no touch screen, real time clock, GPS, SD card, to be confirmed.
+> - [Attaky Mesh desk](https://shop.attaky.com/products/attaky_mesh_deck?variant=52819861537084): 
+>   modular ESP32 kit with battery, SX1262 radio, GPS receiver, 48-keys
+>   QWERTY keyboard, custom 1000 mAh battery, 68 × 97 × 29.8 mm,
+>   157g ([data sheet](https://docs.attaky.com/docs/datasheets/builds/mesh-deck)),
+>   240$USD, runs wadamesh
+> - [Tanmatsu cyberdeck](https://shop.nicolaielectronics.nl/shop/tanmatsu-9/tanmatsu-cyberdeck-3?attribute_values=1). 
+>   ESP32-P4,  E22-900M22S LoRa radio, microSD card socket,
+>   3D-printed case, QWERTY keyboard, 2500mAh Li-Po battery, audio
+>   jack and speaker, expansion port, opensource, 100EUR, runs
+>   wadamesh
+> - [M5 Cardputer Adv](https://shop.m5stack.com/products/cardputer-mesh-kit-for-meshtastic-esp32-s3?variant=48684913164545).
+>   ESP32 handheld, 1.14" LCD, 56-key keyboard, 1750mAh lithium,
+>   microphone, 1W speaker and audio jack, infrared, microSD, SX1262
+>   expansion port, not supported by stock MeshCore firmware, but
+>   many alternative firmware, for example: [`MultiMote/meshcore-cardputer-adv`](https://github.com/MultiMote/meshcore-cardputer-adv), [`sosprz/meshcore-cardputer-adv`](https://github.com/sosprz/meshcore-cardputer-adv), [`Stachugit/MeshCore-Cardputer-ADV`](https://github.com/Stachugit/MeshCore-Cardputer-ADV)
 
 > [!WARNING]
 > - The [Seeedstudio Sensecap Indicator](https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html)
@@ -294,13 +292,12 @@ embedded devices above.
 > WiFi antenna is not great but can be modified with a 3D printer,
 > and that the trackball is not great. 6-7h runtime, half with a SDR.
 
-!!! question "Untested"
-
-    - [Mecha Comet](https://mecha.so/comet#overview). pre-order as of July 2026, supports LoRa
-      through a M.2 connector, to be clarified.
-    - M5 (who made the Cardputer Adv above) also made a [Cardputer zero](https://shop.m5stack.com/pages/m5-cardputerzero) 
-      which is a real Raspberry Pi underneath, while still being
-      compatible with the [Cap LoRa 1262](https://shop.m5stack.com/products/cap-lora-1262-for-cardputer-adv-sx1262-atgm336h)
+> [!QUESTION] Untested
+> - [Mecha Comet](https://mecha.so/comet#overview). pre-order as of July 2026, supports LoRa
+>   through a M.2 connector, to be clarified.
+> - M5 (who made the Cardputer Adv above) also made a [Cardputer zero](https://shop.m5stack.com/pages/m5-cardputerzero) 
+>   which is a real Raspberry Pi underneath, while still being
+>   compatible with the [Cap LoRa 1262](https://shop.m5stack.com/products/cap-lora-1262-for-cardputer-adv-sx1262-atgm336h)
 
 There there is a long list of small computers like the [MNT Reform](https://mntre.com/reform.html)
 [pocket](https://shop.mntre.com/products/mnt-pocket-reform) that are relatively normal computers, without necessarily
@@ -328,64 +325,50 @@ back-haul, possibly with a special [antenna](#antennas). The devices may or
 many not have batteries.
 
 > [!SUCCESS]
-> - [WisMesh Solar Repeater
-> Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini):
-> solar, battery, mast or wall-mountable, cheaper than their full
-> repeater, 100$USD. Works through the night in summer time, needs testing
-> through winter.
+> - [WisMesh Solar Repeater Mini](https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini):  solar, battery, mast or
+>   wall-mountable, cheaper than their full repeater, 100$USD. Works
+>   through the night in summer time, needs testing through winter.
 > - [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html): 70$USD, outdoors solar-powered relay
-> with 4x18650 **button-top**[^1] batteries, nRF4840, BT 5.0, 3 buttons, 5
-> LEDs, USB-C for debug, RP-SMA, [recommended by
-> `nyme.sh`](https://nyme.sh/faq/). Note that the base kit doesn't
-> ship with the actual batteries, or the GNSS device, for that you
-> need the [Pro
-> kit](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html)
-> which is 20$ more. Needs to be tested through night and
-> winter. Also sold at
-> [RobotShop
-> for
-> 100CAD](https://ca.robotshop.com/products/sensecap-solar-node-p1-meshtastic-w-o-gps-battery),
-> [130$ with GPS and
-> battery](https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery?qd=c71a67155c4fec187b2b07ee9a7af9f3).
+>   with 4x18650 **button-top**[^1] batteries, nRF4840, BT 5.0, 3
+>   buttons, 5 LEDs, USB-C for debug, RP-SMA, [recommended by
+>   `nyme.sh`](https://nyme.sh/faq/). Note that the base kit doesn't ship with the actual
+>   batteries, or the GNSS device, for that you need the [Pro kit](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html)
+>   which is 20$ more. Needs to be tested through night and
+>   winter. Also sold at [RobotShop for  100CAD](https://ca.robotshop.com/products/sensecap-solar-node-p1-meshtastic-w-o-gps-battery), [130$ with GPS
+>   and battery](https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery?qd=c71a67155c4fec187b2b07ee9a7af9f3).
+>
+> [^1]: It's really important to get button-top batteries for the
+>       SenseCAP Solar node P1! Normal flat-top batteries won't connect
+>       correctly. Seriously consider buying it *with* batteries, as
+>       button-top batteries are often more expensive, which makes the
+>       RobotShop kit particularly attractive.
 
-[^1]: It's really important to get button-top batteries for the
-      SenseCAP Solar node P1! Normal flat-top batteries won't connect
-      correctly. Seriously consider buying it *with* batteries, as
-      button-top batteries are often more expensive, which makes the
-      RobotShop kit particularly attractive.
+> [!QUESTION] Untested
+>
+> - [WisMesh Solar Repeater](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater): solar, battery, mast-mountable, 
+>   300$, SenseCAP Solar Node P1 much cheaper.
+>
+> - [WisMesh Ethernet Gateway](https://store.rakwireless.com/products/wismesh-ethernet-gateway): no battery, no solar ([might be
+>   convertible](https://forum.rakwireless.com/t/ethernet-gateway-with-batteries-solar/14601), but ethernet and PoE, note that [management over
+>   Ethernet is not possible in Meshtastic](https://github.com/meshtastic/firmware/issues/2908) and possibly other
+>   firmware, so configuration still has to go through Bluetooth,
+>   serial or WiFi.
+>
+> - [Heltec MeshTower V2](https://heltec.org/project/meshtower/?attribute_lora-band=902%7E928MHZ&attribute_tx-power=30dBm&attribute_need-gps-sensor=No): 3 x 2800mA 18650 batteries , 10W solar,
+>   1W SX1262 LoRa transceiver, Nordic nRF52840 Bluetooth, no WiFi,
+>   pre-installed with Meshtastic, wall-mount kit that could be modded
+>   for a pole mount with clamps, N connector, ships with 5dB antenna,
+>   enclosure IP66 79.5 x 125 x 51.5 mm, not counting the antenna and
+>   sockets, solar panel is 340 x 220mm, antenna 40cm
+>
+> - [AliExpress 5W Heltec kit](https://www.aliexpress.com/item/1005010224488993.html), [25W](https://www.aliexpress.com/item/1005006633080419.html), be careful as sometimes
+>   they sell a Heltec v4.2 instead of a v4.3, and that has problems,
+>   better to buy the Heltec separately
 
-!!! question "Untested"
-
-    - [WisMesh Solar Repeater](https://store.rakwireless.com/products/wismesh-meshtastic-solar-repeater): solar, battery, mast-mountable, 
-      300$, SenseCAP Solar Node P1 much cheaper.
-
-    - [WisMesh Ethernet Gateway](https://store.rakwireless.com/products/wismesh-ethernet-gateway): no battery, no solar ([might be
-      convertible](https://forum.rakwireless.com/t/ethernet-gateway-with-batteries-solar/14601),
-      but ethernet and PoE, note that [management over Ethernet is not
-      possible in Meshtastic](https://github.com/meshtastic/firmware/issues/2908)
-      and possibly other firmware, so configuration still has to go
-      through Bluetooth, serial or WiFi.
-
-    - [Heltec MeshTower V2](https://heltec.org/project/meshtower/?attribute_lora-band=902%7E928MHZ&attribute_tx-power=30dBm&attribute_need-gps-sensor=No):
-      3 x 2800mA 18650 batteries , 10W solar, 1W SX1262 LoRa
-      transceiver, Nordic nRF52840 Bluetooth, no WiFi, pre-installed
-      with Meshtastic, wall-mount kit that could be modded for a pole
-      mount with clamps, N connector, ships with 5dB antenna,
-      enclosure IP66 79.5 x 125 x 51.5 mm, not counting the antenna
-      and sockets, solar panel is 340 x 220mm, antenna 40cm
-
-    - [AliExpress 5W Heltec kit](https://www.aliexpress.com/item/1005010224488993.html),
-      [25W](https://www.aliexpress.com/item/1005006633080419.html), be
-      careful as sometimes they sell a Heltec v4.2 instead of a v4.3,
-      and that has problems, better to buy the Heltec separately
-
-!!! failure "Not working"
-
-    - [SenseCAP M2 indoor
-      gateway](https://mappingnetwork.ca/products/sensecap-m2-indoor-gateway-lorawan-us915):
-      not supported by MeshCore given the MT7628 and SX1302
-      chipsets, see [this feature request](https://github.com/meshcore-dev/MeshCore/issues/3211)
-      (similar to other LoRaWAN devices)
+> [!FAILURE]
+> - [SenseCAP M2 indoor gateway](https://mappingnetwork.ca/products/sensecap-m2-indoor-gateway-lorawan-us915): not supported by MeshCore given
+>   the MT7628 and SX1302 chipsets, see [this feature request](https://github.com/meshcore-dev/MeshCore/issues/3211)
+>   (similar to other LoRaWAN devices)
 
 ### Mounts
 
@@ -402,37 +385,39 @@ really be used in production as they lack a proper case.
 The devices here generally do not have a battery.
 
 > [!SUCCESS]
-> - [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)
-> ([v3](https://heltec.org/project/wifi-lora-32-v3/)) is the
-> cheapest option, v3 is 20$ (30$CAD) with the case, v4 doesn't
-> ship with a case (but no battery, and battery doesn't fit in the
-> case). one advantage Heltec has over the below RAK kits is that
-> you can connect to them over wifi, the downside is
-> they use more power because they are ESP32 based instead of
-> NRF5280, might be cheaper [at AliExpress](https://www.aliexpress.com/item/1005011870647672.html)
+>
+> - [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/) ([v3](https://heltec.org/project/wifi-lora-32-v3/)) is the cheapest option, v3 is 20$
+>   (30$CAD) with the case, v4 doesn't ship with a case (but no
+>   battery, and battery doesn't fit in the case). one advantage
+>   Heltec has over the below RAK kits is that you can connect to them
+>   over wifi, the downside is they use more power because they are
+>   ESP32 based instead of NRF5280, might be cheaper [at
+>   AliExpress](https://www.aliexpress.com/item/1005011870647672.html)
+>
 > - the [RAK19003 base kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) (28$) is more expensive, but less
-> power-hungry than the Heltec
-> - [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html):
-> barebones board, tiny, cheap,
-> WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button (hidden under the
-> daughterboard, press both to enter JTAG so you can flash, requires
-> opening the case and removing the daughterboard), - 40℃ ~ 100℃, 22x23x57mm, 37g,
-> exposed GPIO ports, no battery, 20$. Probably the cheapest and
-> smallest kit all around.
+>   power-hungry than the Heltec
+>
+> - [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html): barebones board, tiny, cheap,
+>   WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button (hidden under the
+>   daughterboard, press both to enter JTAG so you can flash, requires
+>   opening the case and removing the daughterboard), - 40℃ ~ 100℃,
+>   22x23x57mm, 37g, exposed GPIO ports, no battery, 20$. Probably the
+>   cheapest and smallest kit all around.
 
-!!! example "In testing"
+> [!EXAMPLE] In testing
+>
+> - [XIAO nRF52840 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-nRF52840-Wio-SX1262-Kit-for-Meshtastic-p-6400.html): even tinier, nRF52840,
+>   Semtech SX1262, NFC, BT, -40°C ~ 65°C, 22 x 21 x 17.8mm. Probably
+>   the smallest kit you can get. Reset button hard to reach.
 
-    - [XIAO nRF52840 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-nRF52840-Wio-SX1262-Kit-for-Meshtastic-p-6400.html): even tinier, nRF52840,
-      Semtech SX1262, NFC, BT, -40°C ~ 65°C, 22 x 21 x 17.8mm. Probably
-      the smallest kit you can get. Reset button hard to reach.
-
-!!! question "Untested"
-
-    - [T-Beam Supreme](https://lilygo.cc/products/t-beam-supreme?variant=43067944173749): 1.3" OLED display, 18650 battery socket,
-      magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, ESP32, 52$, the [T-Beam
-      SoftRF](https://lilygo.cc/products/t-beam-softrf?variant=43170158477493) is similar but without a display and cheaper, 30$USD
-    - [Heltec Vision Master E290](https://heltec.org/project/vision-master-e290/): eink dev
-      board, ESP32S3 SX1262, 20$USD 180 days display, WiFi, BT
+> [!QUESTION] Untested
+>
+> - [T-Beam Supreme](https://lilygo.cc/products/t-beam-supreme?variant=43067944173749): 1.3" OLED display, 18650 battery socket,
+>   magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, ESP32, 52$, the [T-Beam
+>   SoftRF](https://lilygo.cc/products/t-beam-softrf?variant=43170158477493) is similar but without a display and cheaper, 30$USD
+>
+> - [Heltec Vision Master E290](https://heltec.org/project/vision-master-e290/): eink dev
+>   board, ESP32S3 SX1262, 20$USD 180 days display, WiFi, BT
 
 ### Cases
 
@@ -555,10 +540,10 @@ are SMA-based.
     it clears the solar panel better. But it introduces some loss
     compared to a pigtail.
     
-    !!! warning
-
-        We have had problems with this connector, where packets
-        would only be sent out and not received correctly.
+    > [!WARNING]
+    >
+    > We have had problems with this connector, where packets
+    > would only be sent out and not received correctly.
 
 ## Resellers
 

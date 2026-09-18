@@ -47,12 +47,11 @@ well.
 
 ## Theory and testing
 
-!!! abstract
-
-    This is a rather theoretical section about antenna
-    design. You probably don't need to know about this: just use the
-    antenna that ships with your device or buy a more powerful antenna
-    from the recommended list and you'll be fine.
+> [!ABSTRACT]
+> This is a rather theoretical section about antenna
+> design. You probably don't need to know about this: just use the
+> antenna that ships with your device or buy a more powerful antenna
+> from the recommended list and you'll be fine.
 
 Note that there is an antenna is "tuned" to a specific frequency, or
 more precisely to the "wavelength" of the frequency, which is an

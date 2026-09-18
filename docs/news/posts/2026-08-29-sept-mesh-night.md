@@ -7,9 +7,8 @@ categories:
   - events
 ---
 
-!!! success
-
-    Now with notes!
+> [!SUCCESS]
+> Now with notes!
 
 You know the drill!
 

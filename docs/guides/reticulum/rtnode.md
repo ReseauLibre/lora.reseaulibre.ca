@@ -118,15 +118,14 @@ close (think "on top of each other"), this is most likely due to a
 mismatch in the LoRa parameters. Check both sides to see if they use
 the same parameters, they will both display their settings on boot.
 
-!!! tip
-
-    Upstream provides a `console.html` file that can be loaded in a
-    browser with the [Web Serial API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility)
-    (e.g. Chrome, Firefox 151 or later) to provide a more complete and
-    intuitive interface to the device, undocumented here for now.
-    
-    It is also possible to remotely manage the device *over LoRa* (!)
-    through that console file.
+> [!TIP]
+> Upstream provides a `console.html` file that can be loaded in a
+> browser with the [Web Serial API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility)
+> (e.g. Chrome, Firefox 151 or later) to provide a more complete and
+> intuitive interface to the device, undocumented here for now.
+>
+> It is also possible to remotely manage the device *over LoRa* (!)
+> through that console file.
 
 ### Details of the probe mechanism
 

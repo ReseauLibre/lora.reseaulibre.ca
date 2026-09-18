@@ -13,11 +13,10 @@ from 19h to 21h.
 
 <!-- more -->
 
-!!! important
-
-    Note that this is *not* at Polytechnique as previously indicated. It's
-    close to Université de Montréal and Côte-des-Neiges métro! The exact
-    address is 3150 Jean-Brillant ([Google Maps link](https://maps.app.goo.gl/68PGSCCXcJUjXEAFA)).
+> [!IMPORTANT]
+> Note that this is *not* at Polytechnique as previously indicated. It's
+> close to Université de Montréal and Côte-des-Neiges métro! The exact
+> address is 3150 Jean-Brillant ([Google Maps link](https://maps.app.goo.gl/68PGSCCXcJUjXEAFA)).
 
 We invite everyone who currently operates[^1] a relay in the [greater
 Montreal area](https://yul.meshmapper.net/), whether it is MeshCore, Meshtastic, or Reticulum, to

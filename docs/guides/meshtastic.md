@@ -1,13 +1,11 @@
 # Getting started with Meshtastic
 
-!!! bug "Deprecated"
-
-    As of [April
-    2026](../news/posts/2026-05-02-meshtastic-deprecated.md),
-    Meshtastic is deprecated in the Montreal mesh. We are now focusing
-    on building MeshCore infrastructure, see our [Getting started with
-    MeshCore](meshcore/index.md) guide instead and [Why not
-    Meshtastic?](faq.md#why-not-meshtastic)
+> [!BUG] Deprecated
+>
+> As of [April 2026](../news/posts/2026-05-02-meshtastic-deprecated.md), Meshtastic is deprecated in the Montreal
+> mesh. We are now focusing on building MeshCore infrastructure, see
+> our [Getting started with MeshCore](meshcore/index.md) guide instead and [Why not
+> Meshtastic?](faq.md#why-not-meshtastic)
 
 Getting started with running a Meshtastic relay is easy. You need to
 buy some hardware, install an app, and tweak some settings.
@@ -15,22 +13,20 @@ buy some hardware, install an app, and tweak some settings.
 You can expect to communicate through text with other relays within a
 few kilometres without even setting up a special antenna or location.
 
-!!! warning
+> [!WARNING]
+> Meshtastic exposes your location by default on devices which have
+> a GPS device! Make sure the [Position precision][] is reduced or
+> set the [GPS Mode][] to `DISABLED`.
 
-    Meshtastic exposes your location by default on devices which have
-    a GPS device! Make sure the [Position precision][] is reduced or
-    set the [GPS Mode][] to `DISABLED`.
-
-!!! tip
-
-    Also keep in mind that the hardware address of devices is used
-    routing in Meshtastic. Every message from a device includes that
-    address which is unique and cannot be changed, see [this feature
-    request][] for details. This is a bit like [IMEI identifiers on
-    phones][]. MeshCore and Reticulum do not suffer from this issue.
-
-[this feature request]: https://github.com/meshtastic/firmware/discussions/5007
-[IMEI identifiers on phones]: https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity
+> [!TIP]
+> Also keep in mind that the hardware address of devices is used
+> routing in Meshtastic. Every message from a device includes that
+> address which is unique and cannot be changed, see [this feature
+> request][] for details. This is a bit like [IMEI identifiers on
+> phones][]. MeshCore and Reticulum do not suffer from this issue.
+> 
+> [this feature request]: https://github.com/meshtastic/firmware/discussions/5007
+> [IMEI identifiers on phones]: https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity
 
 ## Hardware
 
@@ -40,11 +36,10 @@ hardware list](https://meshtastic.org/docs/hardware/devices/).
 It's cheap! Expect to pay 50$CAD for a starter kit, 150$CAD for a
 decent solar relay.
 
-!!! tip
-
-    If the device you picked comes with a removable antenna, make sure
-    you connect the antenna before powering up the device. A radio
-    that transmits without an antenna can damage itself!
+> [!TIP]
+> If the device you picked comes with a removable antenna, make sure
+> you connect the antenna before powering up the device. A radio
+> that transmits without an antenna can damage itself!
 
 ## Software
 
@@ -66,11 +61,10 @@ documented in our [software index](../references/software/index.md).
 This section describes various settings we advise in the Meshtastic
 app.
 
-!!! info
-
-    The two settings below are crucial to connect to the mesh. If
-    those are not configured properly, you will not be able to talk to
-    anyone else.
+> [!INFO]
+> The two settings below are crucial to connect to the mesh. If
+> those are not configured properly, you will not be able to talk to
+> anyone else.
 
 | Setting          | Value       | Note                                                                                                                          |
 |------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -80,19 +74,19 @@ app.
  [Region]: https://meshtastic.org/docs/configuration/radio/lora/#region
  [Modem preset]: https://meshtastic.org/docs/overview/radio-settings/#presets
 
-!!! note "Optional"
-
-    Those settings are optional, but recommended.
-
-    | Setting                    | Value       | Note                                                                                                                              |
-    |----------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------|
-    | [Bluetooth][]: PIN         | (random)    | change the [default PIN][] to some random value and keep it in your password manager                                              |
-    | [Device][]:  [Role][]      | `CLIENT`    | consider `CLIENT_BASE` if you run a relay, don't change the role without reading the [Choosing The Right Device Role][] guide     |
-    | [LoRa][]: [Ignore MQTT][]  | `true`      | this keeps traffic from the wider mesh from entering the network and reduces overall noise.                                     |
-    | [LoRa][]: [Max hops][]     | 3           | default. you *can* raise this if you really think it might help you reach further, but we generally advise against it |
-    | [Position][]: [GPS Mode][] | `DISABLE`   | or reduce the [Position precision][] in the [Channel configuration][], otherwise you leak your position to the network by default[^1] |
-    | [User][]: "Short Name"     | (arbitrary) | only 4 characters, set to something easy to remember, this is what's visible on the map and chats                                 |
-    | User: "Long Name"          | (arbitrary) | set to something useful, but not offensive, ham operators can set their call sign here                                            |
+> [!NOTE] Optional
+>
+> Those settings are optional, but recommended.
+> 
+> | Setting                    | Value       | Note                                                                                                                              |
+> |----------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------|
+> | [Bluetooth][]: PIN         | (random)    | change the [default PIN][] to some random value and keep it in your password manager                                              |
+> | [Device][]:  [Role][]      | `CLIENT`    | consider `CLIENT_BASE` if you run a relay, don't change the role without reading the [Choosing The Right Device Role][] guide     |
+> | [LoRa][]: [Ignore MQTT][]  | `true`      | this keeps traffic from the wider mesh from entering the network and reduces overall noise.                                     |
+> | [LoRa][]: [Max hops][]     | 3           | default. you *can* raise this if you really think it might help you reach further, but we generally advise against it |
+> | [Position][]: [GPS Mode][] | `DISABLE`   | or reduce the [Position precision][] in the [Channel configuration][], otherwise you leak your position to the network by default[^1] |
+> | [User][]: "Short Name"     | (arbitrary) | only 4 characters, set to something easy to remember, this is what's visible on the map and chats                                 |
+> | User: "Long Name"          | (arbitrary) | set to something useful, but not offensive, ham operators can set their call sign here                                            |
 
 [^1]: Note that setting it to `NOT_PRESENT` will also improve boot time on devices without GPS.
 
@@ -141,24 +135,22 @@ meshtastic --set-owner "you only live once"
 meshtastic --set-owner-short yolo
 ```
 
-!!! bug
+> [!BUG]
+> Note that the order of commands matter here. Some configuration,
+> like `device.role CLIENT` will reboot the device, and will make
+> further commands fail. That is why the setting is last here. Using
+> a config file solves that problem entirely, as all settings are
+> set at once.
 
-    Note that the order of commands matter here. Some configuration,
-    like `device.role CLIENT` will reboot the device, and will make
-    further commands fail. That is why the setting is last here. Using
-    a config file solves that problem entirely, as all settings are
-    set at once.
-
-!!! tip
-
-    You should really set a random PIN here, not 123456, because that
-    is the [stupidiest combination ever](https://www.youtube.com/watch?v=LcHnf7VQuhc). You can
-    generate such a "random" pin with:
-    
-        shuf -i 100000-1000000 -n 1
-
-    Also please change away from the "yolo" user above, otherwise
-    we'll get confused quick as yo who "yolo" is.
+> [!TIP]
+> You should really set a random PIN here, not 123456, because that
+> is the [stupidiest combination ever](https://www.youtube.com/watch?v=LcHnf7VQuhc). You can
+> generate such a "random" pin with:
+>
+>     shuf -i 100000-1000000 -n 1
+> 
+> Also please change away from the "yolo" user above, otherwise
+> we'll get confused quick as yo who "yolo" is.
 
 This can of course also be done in a configuration file that we'll
 call `recommended.yaml`:
@@ -179,14 +171,13 @@ owner: you only live once
 owner_short: yolo
 ```
 
-!!! tip
-
-    Note that you *can* set the `CLIENT_BASE` role as well but your `meshtastic`
-    command might not know about it so you need to specify it as an
-    magic number:
-
-        meshtastic --set device.role 12
-
-Once you're done, you might want to backup your configuration with:
-
-    meshtastic --export-config > backup.yaml
+> [!TIP]
+> Note that you *can* set the `CLIENT_BASE` role as well but your `meshtastic`
+> command might not know about it so you need to specify it as an
+> magic number:
+>
+>     meshtastic --set device.role 12
+>
+> Once you're done, you might want to backup your configuration with:
+> 
+>     meshtastic --export-config > backup.yaml
