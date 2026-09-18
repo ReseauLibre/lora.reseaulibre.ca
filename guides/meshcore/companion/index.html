@@ -2061,10 +2061,10 @@ connecting to the following website.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>If you picked a standalone companion like the Lilygo T-Deck or
-T-Lora pager, or the Heltec v4 expansion kit, you might want to
-take a look at <a href="https://www.wadamesh.com/">Wadamesh</a> as well. The
-stock firmware GUI (Ripple) is hard to use and proprietary, while
-Wadamsh is free software, although coded with the Claude LLM.</p>
+T-Lora pager, or the Heltec v4 expansion kit, you might want to take
+a look at <a href="https://www.wadamesh.com/">Wadamesh</a> as well. The stock firmware GUI (Ripple) is
+hard to use and proprietary, while Wadamsh is free software,
+although coded with the Claude LLM.</p>
 </div>
 <p>Your web browser must support the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility">Web Serial API</a>, which includes
 Chrome (and derivatives) and Firefox 151 or later.</p>
@@ -2098,11 +2098,8 @@ a Bluetooth device cannot be accessed over serial and vice-versa.</p>
 <div class="admonition bug">
 <p class="admonition-title">Proprietary software warning</p>
 <p>While most MeshCore firmware is free software (the
-<a href="https://github.com/meshcore-dev/MeshCore"><code>meshcore-dev/MeshCore</code>
-repository</a>, the <a href="https://docs.meshcore.io/faq/#57-q-is-meshcore-open-source">T-Deck
-firmware is
-proprietary</a>. <a href="https://github.com/samuk/awesome-meshcore#free-and-open-source-firmware">Awesome
-MeshCore lists a few alternatives</a>.</p>
+<a href="https://github.com/meshcore-dev/MeshCore"><code>meshcore-dev/MeshCore</code> repository</a>, the <a href="https://docs.meshcore.io/faq/#57-q-is-meshcore-open-source">T-Deck firmware is
+proprietary</a>. <a href="https://github.com/samuk/awesome-meshcore#free-and-open-source-firmware">Awesome MeshCore lists a few alternatives</a>.</p>
 </div>
 <p>During first boot, the device will display the message:</p>
 <div class="highlight"><pre><span></span><code>Loading...
@@ -2144,22 +2141,20 @@ a pretty good Linux desktop app called <a href="https://codeberg.org/sesivany/me
 publish their source code and require a subscription or a 10 second
 wait time for certain features.</p>
 <p>You can work around some of those problems by installing the <a href="https://github.com/zjs81/meshcore-open">open
-app</a>
-which requires going through <a href="https://obtainium.imranr.dev/">Obtainium</a> on Android or
+app</a> which requires going through <a href="https://obtainium.imranr.dev/">Obtainium</a> on Android or
 <a href="https://github.com/zjs81/meshcore-open/issues/375">test flight</a>. It's a little complicated, so don't venture there
-unless you get frustrated with the official apps. The open app
-also lacks a few features from the official one, namely:</p>
+unless you get frustrated with the official apps. The open app also
+lacks a few features from the official one, namely:</p>
 <ul>
-<li><a href="https://github.com/zjs81/meshcore-open/issues/367">full multibyte support</a></li>
+<li><a href="https://github.com/zjs81/meshcore-open/issues/367">full multibyte support</a> (fixed)</li>
 <li><a href="https://github.com/zjs81/meshcore-open/issues/431">support for changing the Blutooth PIN</a></li>
 <li><a href="https://github.com/zjs81/meshcore-open/issues/323">Google Play Store</a> and <a href="https://github.com/zjs81/meshcore-open/issues/113">F-Droid</a> releases</li>
 <li><a href="https://github.com/zjs81/meshcore-open/issues/109">Reactions are non-standard</a></li>
-<li><a href="https://github.com/zjs81/meshcore-open/issues/120">Regions support</a></li>
+<li><a href="https://github.com/zjs81/meshcore-open/issues/120">Regions support</a> (fixed)</li>
 <li><a href="https://github.com/zjs81/meshcore-open/issues/312">Channel utilization display</a></li>
 <li><a href="https://github.com/zjs81/meshcore-open/issues/340">User blocking support</a></li>
 </ul>
-<p>Note that an <a href="https://github.com/HDDen/meshcore-open/tree/rename-mco-advanced">active fork</a>
-fixes many of those issues.</p>
+<p>Note that an <a href="https://github.com/HDDen/meshcore-open/tree/rename-mco-advanced">active fork</a> fixes many of those issues.</p>
 </div>
 <p>To connect your phone to the device, you need to find the right device
 in your list, which can be challenging if you are in an environment
@@ -2181,37 +2176,16 @@ preset, but you should also pick a display name.</p>
   <code>YUL-Villeray</code>, <code>YUL-Parc-Extension</code>, etc</li>
 <li><strong>Region</strong>: do <em>not</em> set a region, as we currently do not use one,
   and it will interfere with routing</li>
-<li><strong>Path hash mode</strong>: pick <code>3-byte (2)</code> or <code>2-byte (1)</code>, see <a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#393-q-how-do-i-change-my-companions-path-hash-size">this
-  question in the FAQ</a> and the tip below</li>
+<li><strong>Path hash mode</strong>: pick <code>3-byte (2)</code>, see <a href="../../../news/2026/09/18/please-use-3-bytes-routing/">this announcement for an
+  explanation</a></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Some MeshCore configurations exposes your location by default on devices which have
-a GPS device! To work around this problem, you can disable the GPS
-or reduce the <a href="https://wiki.openstreetmap.org/wiki/Precision_of_coordinates">coordinates
-precision</a>,
-we recommend two digits (~1km) for clients and 3 digits (~100m)
-for repeaters.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>We are now telling users to set <a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#39-q-what-is-multibyte-support-what-do-1-byte-2-byte-3-byte-adverts-and-messages-mean">multi-byte path routing</a>
-even though upstream still doesn't recommend that. The upstream
-rationale is that multibyte messages just get dropped by older
-releases, but we have long passed that threshold. In fact, we
-believe the mesh cannot function correctly with single-byte
-repeaters, so every repeater <em>must</em> set a multibyte path hash
-mode.</p>
-<p>Setting a multibyte path hash mode on your companion should
-improve the reliability of your direct messages (DMs). Because DMs
-are <em>routed</em> (as opposed to channel messages and adverts that are
-<em>flooded</em>), it is crucial that the right path is taken. In
-single-byte configuration, that single byte is ambiguous and can
-refer to multiple conflicting repeaters. So an advert you receive
-that might tell you to go through a specific set of repeaters
-might actually tell your companion to use a really bad route for a
-contact.</p>
-<p>If you're having trouble with DMs, try setting multibyte path hash mode!</p>
+<p>Some MeshCore configurations exposes your location by default on
+devices which have a GPS device! To work around this problem, you
+can disable the GPS or reduce the <a href="https://wiki.openstreetmap.org/wiki/Precision_of_coordinates">coordinates precision</a>, we
+recommend two digits (~1km) for clients and 3 digits (~100m) for
+repeaters.</p>
 </div>
 <h3 id="you-made-it-say-hi">You made it! Say hi!<a class="headerlink" href="#you-made-it-say-hi" title="Permanent link">&para;</a></h3>
 <p>At this point, your companion should be properly configured.</p>
@@ -2251,7 +2225,7 @@ the weather like, etc. Be kind, reply to people, participate!</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="August 30, 2026 03:38:30 UTC">2026-08-30 03:38:30</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="September 18, 2026 15:46:53 UTC">2026-09-18 15:46:53</span>
   </span>
 
     

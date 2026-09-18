@@ -2131,7 +2131,7 @@ using them. Do not order one unless you know what you read an
 understand the note on the device.</p>
 </div>
 <div class="admonition failure">
-<p class="admonition-title">Not working</p>
+<p class="admonition-title">Failure</p>
 <p>We tested those devices, and we recommend against using them entirely.</p>
 </div>
 <p>Note that the devices are rated for compliance with MeshCore for the
@@ -2156,25 +2156,25 @@ LEDs, RP-SMA connector,
 </li>
 <li>
 <p><a href="https://lilygo.cc/products/t-echo-lilygo">T-Echo</a>: 200x200 e-ink
-  display, NRF52840, GPS, BT 5.0, no wifi, two buttons, no power
-  button, NFC, 850mAh battery, temperature/pressure sensor, 55$USD</p>
+display, NRF52840, GPS, BT 5.0, no wifi, two buttons, no power
+button, NFC, 850mAh battery, temperature/pressure sensor, 55$USD</p>
 </li>
 <li>cheap <a href="https://www.aliexpress.com/item/1005010640444191.html">Aliexpress Heltec v4 kit, 43CAD</a></li>
 <li>Seeedstudio <a href="https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html">XIAO ESP32S3 &amp; Wio-SX1262 Kit</a>: tiny, - 40℃ ~
-  100℃, WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm,
-  37g, exposed GPIO ports, cheap (20$), does not ship with
-  Meshtastic firmware, needs full erase before reflash or gets
-  into a boot loop</li>
+100℃, WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm,
+37g, exposed GPIO ports, cheap (20$), does not ship with
+Meshtastic firmware, needs full erase before reflash or gets
+into a boot loop</li>
 <li><a href="https://store.rakwireless.com/products/wismesh-tag-meshtastic-gps-lora-tracker-ip66">RAK Wireless WisMesh Tag</a>: 
-  1000 mAh battery, IP66 rating, two buttons, status LED,
-  magnetic USB pogo charging, nRF52840/SX1262, GPS, 92 x 59 x 7.5
-  mm, 40$USD</li>
+1000 mAh battery, IP66 rating, two buttons, status LED,
+magnetic USB pogo charging, nRF52840/SX1262, GPS, 92 x 59 x 7.5
+mm, 40$USD</li>
 <li><a href="https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html">SeeedStudio SenseCAP Card Tracker T1000-E</a> (40$USD)
-  IP65, 700mAh battery, nRF52840/LR1110, GPS, 85 * 55 * 6.5 mm,
-  32g, -20℃ to +60℃ operation, buzzer, magnetic pogo pins USB charging, 40$USD, anarcat managed get <a href="https://anarc.at/services/meshtastic/#bricked">this one in a boot loop</a> 
-  but eventually recovered. Nice and portable, waterproof. See
-  <a href="https://wiki.seeedstudio.com/sensecap_t1000_e_meshcore/#button">this guide for how to use that single button</a>,
-  in particular use triple-click to turn off the buzzer.</li>
+IP65, 700mAh battery, nRF52840/LR1110, GPS, 85 * 55 * 6.5 mm,
+32g, -20℃ to +60℃ operation, buzzer, magnetic pogo pins USB charging, 40$USD, anarcat managed get <a href="https://anarc.at/services/meshtastic/#bricked">this one in a boot loop</a> 
+but eventually recovered. Nice and portable, waterproof. See
+<a href="https://wiki.seeedstudio.com/sensecap_t1000_e_meshcore/#button">this guide for how to use that single button</a>,
+in particular use triple-click to turn off the buzzer.</li>
 </ul>
 </div>
 <div class="admonition example">
@@ -2201,26 +2201,23 @@ LEDs, RP-SMA connector,
   power switch, 3-way encoder button, two LEDs, 250mAh Battery, 60$USD</li>
 </ul>
 </div>
-<!-- !!! failure "Not working" -->
+<!-- > [!FAILURE] -->
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <ul>
-<li>
-<p><a href="https://store.rakwireless.com/products/wismesh-pocket">WisMesh Pocket V2</a></p>
-<p>Looks nice at first glance: a RAK 4631 kit with GNSS, 1.3" OLED, acceleration sensor, power
- button, 3200mAh battery, USB-C powered. Battery life excellent.</p>
+<li><a href="https://store.rakwireless.com/products/wismesh-pocket">WisMesh Pocket V2</a> Looks nice at first glance: a RAK 4631 kit with GNSS, 1.3" OLED, acceleration sensor, power
+  button, 3200mAh battery, USB-C powered. Battery life excellent.</li>
+</ul>
 <p>But it's expensive (100$USD) especially for the build quality:
- the 3D print is bad, board mounting pins can get broken off (but
- can be superglued back in) and the power switch is too close to
- the battery pouch which can perforate the pouch which is a <strong>fire
- hazard</strong>.</p>
+  the 3D print is bad, board mounting pins can get broken off (but
+  can be superglued back in) and the power switch is too close to
+  the battery pouch which can perforate the pouch which is a <strong>fire
+  hazard</strong>.</p>
 <p><strong>DO NOT BUY THIS DEVICE, FIRE HAZARD</strong>. If you want a RAK4631
   kit, buy the RAK kit (it's a great chipset!) and get a 3D print
   elsewhere, for example <a href="#diy-build-on-top-of-the-rak-kit">our DIY buid</a>.</p>
 <p>See <a href="../../news/2026/08/26/fire-hazard-on-the-wismesh-pocket/">this news article for details</a></p>
-</li>
-</ul>
 </div>
 <h2 id="standalone">Standalone<a class="headerlink" href="#standalone" title="Permanent link">&para;</a></h2>
 <p>Those are day-to-day use device, can you can easily carry in a pocket
@@ -2230,15 +2227,15 @@ to operate.</p>
 <p class="admonition-title">Success</p>
 <ul>
 <li><a href="https://heltec.org/project/wifi-lora-32-v4-expansion-housing/">Heltec v4 prebuilt kit, 50-60USD</a>: touch screen, 18650 flat-top
-  battery (tight, hard to remove), belt clip bulges the back
-  cover.</li>
+battery (tight, hard to remove), belt clip bulges the back
+cover.</li>
 <li><a href="https://lilygo.cc/products/t-deck-plus-1">Lilygo T-Deck Plus</a> (80$): blackberry-like, standalone device
-  with battery, keyboard, trackball, LCD display, 2000mAh battery,
-  BLE, WiFi, GPS, MicroSD card reader, microphone/speake. Note that
-  an order in March 2026 took 24 days to deliver.</li>
+with battery, keyboard, trackball, LCD display, 2000mAh battery,
+BLE, WiFi, GPS, MicroSD card reader, microphone/speake. Note that
+an order in March 2026 took 24 days to deliver.</li>
 <li><a href="https://lilygo.cc/products/t-lora-pager">Lilygo T-Lora Pager</a>:
-  smaller, quirkier, 90$USD. Keyboard and wheel are unreliable,
-  and it has no touch scren. It's really cute though.</li>
+smaller, quirkier, 90$USD. Keyboard and wheel are unreliable,
+and it has no touch scren. It's really cute though.</li>
 </ul>
 </div>
 <div class="admonition question">
@@ -2270,8 +2267,8 @@ to operate.</p>
 <p class="admonition-title">Warning</p>
 <ul>
 <li>The <a href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html">Seeedstudio Sensecap Indicator</a>
-  looks like a nice device for home/office setups, but it is <a href="https://github.com/meshcore-dev/MeshCore/issues/879">not
-  supported by MeshCore</a></li>
+looks like a nice device for home/office setups, but it is <a href="https://github.com/meshcore-dev/MeshCore/issues/879">not
+supported by MeshCore</a></li>
 </ul>
 </div>
 <p>Note that those devices depend on the proprietary Ripple firmware, but
@@ -2335,29 +2332,17 @@ many not have batteries.</p>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
 <ul>
-<li>
-<p><a href="https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini">WisMesh Solar Repeater
-  Mini</a>:
-  solar, battery, mast or wall-mountable, cheaper than their full
-  repeater, 100$USD. Works through the night in summer time, needs testing
-  through winter.</p>
-</li>
-<li>
-<p><a href="https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html">SenseCAP Solar Node P1</a>: 70$USD, outdoors solar-powered relay
-  with 4x18650 <strong>button-top</strong><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> batteries, nRF4840, BT 5.0, 3 buttons, 5
-  LEDs, USB-C for debug, RP-SMA, <a href="https://nyme.sh/faq/">recommended by
-  <code>nyme.sh</code></a>. Note that the base kit doesn't
-  ship with the actual batteries, or the GNSS device, for that you
-  need the <a href="https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html">Pro
-  kit</a>
+<li><a href="https://store.rakwireless.com/products/wishmesh-meshtastic-solar-repeater-mini">WisMesh Solar Repeater Mini</a>:  solar, battery, mast or
+  wall-mountable, cheaper than their full repeater, 100$USD. Works
+  through the night in summer time, needs testing through winter.</li>
+<li><a href="https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html">SenseCAP Solar Node P1</a>: 70$USD, outdoors solar-powered relay
+  with 4x18650 <strong>button-top</strong><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> batteries, nRF4840, BT 5.0, 3
+  buttons, 5 LEDs, USB-C for debug, RP-SMA, <a href="https://nyme.sh/faq/">recommended by
+  <code>nyme.sh</code></a>. Note that the base kit doesn't ship with the actual
+  batteries, or the GNSS device, for that you need the <a href="https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html">Pro kit</a>
   which is 20$ more. Needs to be tested through night and
-  winter. Also sold at
-  <a href="https://ca.robotshop.com/products/sensecap-solar-node-p1-meshtastic-w-o-gps-battery">RobotShop
-  for
-  100CAD</a>,
-  <a href="https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery?qd=c71a67155c4fec187b2b07ee9a7af9f3">130$ with GPS and
-  battery</a>.</p>
-</li>
+  winter. Also sold at <a href="https://ca.robotshop.com/products/sensecap-solar-node-p1-meshtastic-w-o-gps-battery">RobotShop for  100CAD</a>, <a href="https://ca.robotshop.com/products/sensecap-solar-node-p1-pro-for-meshtastic-w-gps-battery?qd=c71a67155c4fec187b2b07ee9a7af9f3">130$ with GPS
+  and battery</a>.</li>
 </ul>
 </div>
 <div class="admonition question">
@@ -2369,36 +2354,31 @@ many not have batteries.</p>
 </li>
 <li>
 <p><a href="https://store.rakwireless.com/products/wismesh-ethernet-gateway">WisMesh Ethernet Gateway</a>: no battery, no solar (<a href="https://forum.rakwireless.com/t/ethernet-gateway-with-batteries-solar/14601">might be
-  convertible</a>,
-  but ethernet and PoE, note that <a href="https://github.com/meshtastic/firmware/issues/2908">management over Ethernet is not
-  possible in Meshtastic</a>
-  and possibly other firmware, so configuration still has to go
-  through Bluetooth, serial or WiFi.</p>
+  convertible</a>, but ethernet and PoE, note that <a href="https://github.com/meshtastic/firmware/issues/2908">management over
+  Ethernet is not possible in Meshtastic</a> and possibly other
+  firmware, so configuration still has to go through Bluetooth,
+  serial or WiFi.</p>
 </li>
 <li>
-<p><a href="https://heltec.org/project/meshtower/?attribute_lora-band=902%7E928MHZ&amp;attribute_tx-power=30dBm&amp;attribute_need-gps-sensor=No">Heltec MeshTower V2</a>:
-  3 x 2800mA 18650 batteries , 10W solar, 1W SX1262 LoRa
-  transceiver, Nordic nRF52840 Bluetooth, no WiFi, pre-installed
-  with Meshtastic, wall-mount kit that could be modded for a pole
-  mount with clamps, N connector, ships with 5dB antenna,
-  enclosure IP66 79.5 x 125 x 51.5 mm, not counting the antenna
-  and sockets, solar panel is 340 x 220mm, antenna 40cm</p>
+<p><a href="https://heltec.org/project/meshtower/?attribute_lora-band=902%7E928MHZ&amp;attribute_tx-power=30dBm&amp;attribute_need-gps-sensor=No">Heltec MeshTower V2</a>: 3 x 2800mA 18650 batteries , 10W solar,
+  1W SX1262 LoRa transceiver, Nordic nRF52840 Bluetooth, no WiFi,
+  pre-installed with Meshtastic, wall-mount kit that could be modded
+  for a pole mount with clamps, N connector, ships with 5dB antenna,
+  enclosure IP66 79.5 x 125 x 51.5 mm, not counting the antenna and
+  sockets, solar panel is 340 x 220mm, antenna 40cm</p>
 </li>
 <li>
-<p><a href="https://www.aliexpress.com/item/1005010224488993.html">AliExpress 5W Heltec kit</a>,
-  <a href="https://www.aliexpress.com/item/1005006633080419.html">25W</a>, be
-  careful as sometimes they sell a Heltec v4.2 instead of a v4.3,
-  and that has problems, better to buy the Heltec separately</p>
+<p><a href="https://www.aliexpress.com/item/1005010224488993.html">AliExpress 5W Heltec kit</a>, <a href="https://www.aliexpress.com/item/1005006633080419.html">25W</a>, be careful as sometimes
+  they sell a Heltec v4.2 instead of a v4.3, and that has problems,
+  better to buy the Heltec separately</p>
 </li>
 </ul>
 </div>
 <div class="admonition failure">
-<p class="admonition-title">Not working</p>
+<p class="admonition-title">Failure</p>
 <ul>
-<li><a href="https://mappingnetwork.ca/products/sensecap-m2-indoor-gateway-lorawan-us915">SenseCAP M2 indoor
-  gateway</a>:
-  not supported by MeshCore given the MT7628 and SX1302
-  chipsets, see <a href="https://github.com/meshcore-dev/MeshCore/issues/3211">this feature request</a>
+<li><a href="https://mappingnetwork.ca/products/sensecap-m2-indoor-gateway-lorawan-us915">SenseCAP M2 indoor gateway</a>: not supported by MeshCore given
+  the MT7628 and SX1302 chipsets, see <a href="https://github.com/meshcore-dev/MeshCore/issues/3211">this feature request</a>
   (similar to other LoRaWAN devices)</li>
 </ul>
 </div>
@@ -2413,23 +2393,27 @@ really be used in production as they lack a proper case.</p>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
 <ul>
-<li><a href="https://heltec.org/project/wifi-lora-32-v4/">HELTEC v4</a>
-  (<a href="https://heltec.org/project/wifi-lora-32-v3/">v3</a>) is the
-  cheapest option, v3 is 20$ (30$CAD) with the case, v4 doesn't
-  ship with a case (but no battery, and battery doesn't fit in the
-  case). one advantage Heltec has over the below RAK kits is that
-  you can connect to them over wifi, the downside is
-  they use more power because they are ESP32 based instead of
-  NRF5280, might be cheaper <a href="https://www.aliexpress.com/item/1005011870647672.html">at AliExpress</a></li>
-<li>the <a href="https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158">RAK19003 base kit</a> (28$) is more expensive, but less
-  power-hungry than the Heltec</li>
-<li><a href="https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html">XIAO ESP32S3 &amp; Wio-SX1262 Kit</a>:
-  barebones board, tiny, cheap,
+<li>
+<p><a href="https://heltec.org/project/wifi-lora-32-v4/">HELTEC v4</a> (<a href="https://heltec.org/project/wifi-lora-32-v3/">v3</a>) is the cheapest option, v3 is 20$
+  (30$CAD) with the case, v4 doesn't ship with a case (but no
+  battery, and battery doesn't fit in the case). one advantage
+  Heltec has over the below RAK kits is that you can connect to them
+  over wifi, the downside is they use more power because they are
+  ESP32 based instead of NRF5280, might be cheaper <a href="https://www.aliexpress.com/item/1005011870647672.html">at
+  AliExpress</a></p>
+</li>
+<li>
+<p>the <a href="https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158">RAK19003 base kit</a> (28$) is more expensive, but less
+  power-hungry than the Heltec</p>
+</li>
+<li>
+<p><a href="https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html">XIAO ESP32S3 &amp; Wio-SX1262 Kit</a>: barebones board, tiny, cheap,
   WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button (hidden under the
   daughterboard, press both to enter JTAG so you can flash, requires
-  opening the case and removing the daughterboard), - 40℃ ~ 100℃, 22x23x57mm, 37g,
-  exposed GPIO ports, no battery, 20$. Probably the cheapest and
-  smallest kit all around.</li>
+  opening the case and removing the daughterboard), - 40℃ ~ 100℃,
+  22x23x57mm, 37g, exposed GPIO ports, no battery, 20$. Probably the
+  cheapest and smallest kit all around.</p>
+</li>
 </ul>
 </div>
 <div class="admonition example">
@@ -2443,11 +2427,15 @@ really be used in production as they lack a proper case.</p>
 <div class="admonition question">
 <p class="admonition-title">Untested</p>
 <ul>
-<li><a href="https://lilygo.cc/products/t-beam-supreme?variant=43067944173749">T-Beam Supreme</a>: 1.3" OLED display, 18650 battery socket,
+<li>
+<p><a href="https://lilygo.cc/products/t-beam-supreme?variant=43067944173749">T-Beam Supreme</a>: 1.3" OLED display, 18650 battery socket,
   magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, ESP32, 52$, the <a href="https://lilygo.cc/products/t-beam-softrf?variant=43170158477493">T-Beam
-  SoftRF</a> is similar but without a display and cheaper, 30$USD</li>
-<li><a href="https://heltec.org/project/vision-master-e290/">Heltec Vision Master E290</a>: eink dev
-  board, ESP32S3 SX1262, 20$USD 180 days display, WiFi, BT</li>
+  SoftRF</a> is similar but without a display and cheaper, 30$USD</p>
+</li>
+<li>
+<p><a href="https://heltec.org/project/vision-master-e290/">Heltec Vision Master E290</a>: eink dev
+  board, ESP32S3 SX1262, 20$USD 180 days display, WiFi, BT</p>
+</li>
 </ul>
 </div>
 <h3 id="cases">Cases<a class="headerlink" href="#cases" title="Permanent link">&para;</a></h3>
@@ -2584,13 +2572,11 @@ you for various reasons:</p>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>We've had trouble with these:</p>
-<ul>
-<li><a href="https://www.veshra.io/">Veshra</a>: more expensive, but local, possibly south shore (to be
+<p>We've had trouble with these:
+- <a href="https://www.veshra.io/">Veshra</a>: more expensive, but local, possibly south shore (to be
   confirmed); stocks antennas, batteries, Heltec, currently no
   SeeedStudio, RAK, or ESP32 devices. Recent orders have failed,
-  some unanswered. Not recommended anymore.</li>
-</ul>
+  some unanswered. Not recommended anymore.</p>
 </div>
 <h2 id="hacks">Hacks<a class="headerlink" href="#hacks" title="Permanent link">&para;</a></h2>
 <ul>
@@ -2638,7 +2624,7 @@ you for various reasons:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="September 14, 2026 18:34:48 UTC">2026-09-14 18:34:48</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="September 18, 2026 14:38:25 UTC">2026-09-18 14:38:25</span>
   </span>
 
     
