@@ -7,9 +7,6 @@ categories:
   - events
 ---
 
-> [!SUCCESS]
-> Now with notes!
-
 You know the drill!
 
 Every month, [Foulab][], the Montreal hacker space, holds a mesh
@@ -18,6 +15,9 @@ no exception!  <!-- post link when ready:
 https://foulab.org/news/events-may-2026/ -->
 
  [Foulab]: https://foulab.org/
+
+> [!SUCCESS]
+> Now with notes!
 
 <!-- more -->
 
