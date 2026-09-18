@@ -13,31 +13,32 @@ to use multi-byte routing, particularly if you have trouble with
 direct messages or remotely operating a repeater.
 
 One-byte repeaters are also at risk of being dropped from the
-MeshMapper map, and the new "Canada" preset should pre-configure your
+MeshMapper map. The new "Canada" preset should pre-configure your
 devices correctly.
 
-This announcement explains how to retrofit your devices and why we are
-making this change.
+This announcement explains how to configure your devices and why we
+are making this change.
 
 ## How do I configure 3-byte routing?
 
 The MeshCore project has introduced a new "Canada" preset which
-pre-selects 3-byte routing. If you are configuring a device (or
-existing!) using the latest firmware, just pick this preset and it
-will do the right the right thing.
+pre-selects 3-byte routing. If you configure a new (or existing!)
+device using the latest firmware, just pick the Canada preset and it
+will do the right thing.
 
 For older devices, see [this question in the FAQ](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#393-q-how-do-i-change-my-companions-path-hash-size) but generally,
-you need to configure the "Path hash mode" to "3 bytes (max 21 hops)",
-which can be also shown as "2 - 3 bytes". That setting used to be
-hidden behind a ", which "Experimental settings" section but is now a
-first level setting in the official application.
+you need to configure the `Path hash mode` to `3 bytes (max 21 hops)`,
+which can be also shown as `2 - 3 bytes`. That setting used to be
+hidden behind a `Experimental settings` section but is now a first
+level setting in the official application.
 
-On the command-line, use:
+You can also make the change through the command-line interface with
+the command:
 
     set path.hash.mode 2
 
-The value is a little confusing, 2 means 3 bytes, here are the
-possible values:
+The value is a little confusing, `2` here means `3 bytes`. Here are
+the possible values for the setting:
 
 | `path.hash.mode` | Advert path hash size |
 |------------------|-----------------------|
@@ -50,17 +51,19 @@ possible values:
 The MeshCore project still defaults to 1-byte for most regions, but
 *has* switched to 3 bytes for Canada. The upstream rationale for
 keeping the 1-byte default for other regions is that multibyte
-messages just get dropped by older releases, but we have long passed
-that threshold. In fact, we believe the mesh *cannot* function correctly
-with single-byte repeaters, so every repeater *must* set a multibyte
-path hash mode.
+messages just get dropped by releases before 1.14 (released in March
+2026). We believe a vast majority of routers on the local mesh are
+running that release or later.
 
-The fundamental issue with 1-byte routing is that one byte is a very
-small address space. There's at most 256 possible identifiers that fit
-in one byte. But because of the [birthday paradox](https://en.wikipedia.org/wiki/Birthday_problem), with only 20
-repeaters, there is a 50% chance of a clash.[^1] Raising this to two
-bytes only brings us to 300 repeaters, so we believe we need *at
-least* 3 bytes (which gives a 50% clash with ~4000 repeaters).
+We believe the mesh *cannot* function correctly with single-byte
+repeaters, so every repeater *must* set a multibyte path hash mode.
+
+The fundamental issue with 1-byte routing is that one byte is too
+small. There are 256 possible identifiers that fit in one byte. But
+because of the [birthday paradox](https://en.wikipedia.org/wiki/Birthday_problem), there is a 50% chance of a clash
+with only 20 repeaters.[^1] Raising this to two bytes only brings us
+to 300 repeaters, so we believe we need *at least* 3 bytes, which
+gives a 50% clash with ~4800 repeaters.
 
 [^1]: for math people, this is [OEIS sequence A033810](https://oeis.org/A033810), with
     `n=256` (`256 = 2**8`) instead of `n=365`. You can use the Python
@@ -73,15 +76,15 @@ least* 3 bytes (which gives a 50% clash with ~4000 repeaters).
         >>> A033810(2**24)
         4823
 
-Identifier clashes like this are causing all sorts of problems:
+Identity clashes cause all sorts of problems:
 
- 1. they make routing much harder to debug: when tracing a path to see
-    which repeaters a message took, we can get aberrations like a
+ 1. routing is much harder to debug: when tracing a path to see which
+    repeaters used by a given message, we can get aberrations like a
     message seemingly hopping hundreds of kilometers
 
- 2. they make direct messages nearly impossible: because clashes can
-    happen with as few as 20 repeaters, you are much more likely to
-    pick the wrong path for a direct message, or experience route
+ 2. direct messages are nearly impossible to route: because clashes
+    can happen with as few as 20 repeaters, you are much more likely
+    to pick the wrong path for a direct message, or experience route
     flapping, as conflicting paths are announced, which leads to
     direct messages being lost
 
@@ -90,18 +93,20 @@ multi-byte routing is used only when the *companion* sets it,
 single-byte companion experience the mesh as if it was entirely made
 of single-byte repeaters as well!
 
-So setting a multibyte path hash mode on your companion should improve
+So setting a multibyte path hash mode on your companion will improve
 the reliability of your direct messages (DMs). Because DMs are
 *routed* (as opposed to channel messages and adverts that are
-*flooded*), it is crucial that the right path is taken. In single-byte
-configuration, that single byte is ambiguous and can refer to multiple
-conflicting repeaters. So an advert you receive that might tell you to
-go through a specific set of repeaters might actually tell your
-companion to use a really bad route for a contact.
+*flooded*), it is crucial for messages to find the right path. In
+single-byte configuration, that byte is ambiguous and can refer to
+multiple conflicting repeaters. So an advert you receive that might
+tell you to go through a specific set of repeaters might actually tell
+your companion to use a really bad route for a contact.
 
-This applies to direct messages, but also remote operation of repeaters.
+This applies to direct messages, but also remote operation of
+repeaters, which operate similarly to direct messages, in that they
+are routed.
 
-If you're having trouble with DMs or repeater administration, try
+So if you're having trouble with DMs or repeater administration, try
 setting multibyte path hash mode!
 
 ## Won't this limit the size of the mesh and number of hops?
@@ -113,10 +118,9 @@ change. The setting in the official app says:
 - 2-byte (max 32 hops)
 - 3-byte (max 21 hops)
 
-We don't believe this to be a problem. Beyond 10-20 hops, the mesh
-gets *extremely* noisy and traffic rarely gets through. LoRa has
-limited bandwidth, and limiting the size of the mesh is a good
-thing. 
+We don't believe this to be a problem. Limiting the number of hops in
+the mesh is a good thing, because each hop exponentially raises the
+number of retransmissions, see [this post for details](https://forum.meshcore.ca/t/follow-up-from-salishmesh-swbc-experiences-how-to-deal-with-large-saturated-congested-meshes/38/7?u=anarcat).
 
 With 10 hops, we are already reaching Quebec and believe that, with
 proper region management, we should be able to connect Ottawa and
