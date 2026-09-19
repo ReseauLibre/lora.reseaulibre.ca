@@ -141,3 +141,6 @@ have more than 300 repeaters.
 
 We welcome comments and feedback on this proposal through [our regular
 contact points](../../contact.md) and the [merge request on Codeberg](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/13).
+
+This article is also available under the shorter URL
+<https://lora.reseaulibre.ca/3byte/> for sharing more easily on the mesh.
