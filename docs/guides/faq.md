@@ -129,13 +129,35 @@ Just make sure to avoid doing an "erase"!
 
 Yes. LoRa transmitters (used by MeshCore, Meshtastic, and optionally
 by Reticulum) use the [ISM radio bands](https://en.wikipedia.org/wiki/ISM_radio_band), specifically centered
-around 915MHz.
+around 915MHz, which is open to the public.
 
-Technically, the LoRa protocol itself is patented by the [Semtech
-corporation](https://en.wikipedia.org/wiki/Semtech), so there is a non-free aspect to this. It is, in any
-case, perfectly legal to *use* LoRa devices as a end-user, but this
+That said, the *way* MeshCore currently uses the band *might* be
+infringing on some regulations in Canada, specifically ISED's [section
+6.3.1](https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/devices-and-equipment/radio-equipment-standards/radio-standards-specifications-rss/rss-247-digital-transmission-systems-dtss-frequency-hopping-systems-fhss-and-licence-exempt-local#s6.3.1) of [RSS-247](https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/devices-and-equipment/radio-equipment-standards/radio-standards-specifications-rss/rss-247-digital-transmission-systems-dtss-frequency-hopping-systems-fhss-and-licence-exempt-local). There is a [far ranging debate happening
+right now in the USA](https://hackaday.com/2026/09/17/fcc-ism-rules-may-shatter-lora-mesh-communities/) which has similar regulations as Canada. This
+is also [discussed in a [MeshCore issue](https://github.com/meshcore-dev/MeshCore/issues/945). See also this [good
+technical explanation](https://beala.substack.com/p/the-fcc-want-me-to-use-more-bandwidth) of the regulation.
+
+For now, Ottawa and Montreal are taking a "wait-and-see" approach. We
+believe our use of the band is fair and respectful of the spirit of
+the law, if not the letter. We hope that ISED can see how useful mesh
+networks have become and that regulations can be adapted to reflect
+our use.
+
+A separate issue is patents: technically, the LoRa protocol itself is
+patented by the [Semtech corporation](https://en.wikipedia.org/wiki/Semtech), so it is proprietary. This
 means that someone might not have the right to re-implement the LoRa
 protocol on its own hardware, for example.
+
+However, [multiple](https://dl.acm.org/doi/10.1145/3546869) [reverse-engineering](https://www.epfl.ch/labs/tcl/wp-content/uploads/2020/02/Reverse_Eng_Report.pdf) efforts, including
+[SDR reimplementations](https://ieeexplore.ieee.org/document/9154273) have been performed, seemingly without
+legal impact. [This EPFL paper from 2020](https://www.epfl.ch/labs/tcl/wp-content/uploads/2020/02/Reverse_Eng_Report.pdf) shows that the LoRa
+protocol seems to be rather old [hamming codes](https://en.wikipedia.org/wiki/Hamming_code), which already
+existed long before (1950!) LoRa was patented. This would make
+Semtech's patent claims to be rather dubious.
+
+It seems, in any case, perfectly legal to *use* LoRa devices as a
+end-user, as far as patent law is concerned.
 
 ### Are my messages secret?
 
