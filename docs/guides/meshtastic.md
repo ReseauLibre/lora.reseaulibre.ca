@@ -141,18 +141,18 @@ meshtastic --set-owner-short yolo
 > Note that the order of commands matter here. Some configuration,
 > like `device.role CLIENT` will reboot the device, and will make
 > further commands fail. That is why the setting is last here. Using
-> a config file solves that problem entirely, as all settings are
+> a configuration file solves that problem entirely, as all settings are
 > set at once.
 
 > [!TIP]
 > You should really set a random PIN here, not 123456, because that
-> is the [stupidiest combination ever](https://www.youtube.com/watch?v=LcHnf7VQuhc). You can
+> is the [stupidest combination ever](https://www.youtube.com/watch?v=LcHnf7VQuhc). You can
 > generate such a "random" pin with:
 >
 >     shuf -i 100000-1000000 -n 1
 > 
-> Also please change away from the "yolo" user above, otherwise
-> we'll get confused quick as yo who "yolo" is.
+> Also please change away from the `YOLO` user above, otherwise
+> we'll get confused quick as to who `YOLO` is.
 
 This can of course also be done in a configuration file that we'll
 call `recommended.yaml`:

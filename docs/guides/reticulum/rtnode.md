@@ -82,11 +82,11 @@ This will show a series of cryptic messages, look for one like:
 00:10:56.503 [NOT] Transport instance will respond to probe requests on <9ad54088c8f19b2782fda5f63057b378>
 ```
 
-Save this line so that the hash can be referred back to later in the test. Then make sure to close the tio session by typing <kbd>ctrl-t</kbd> and then <kbd>q</kbd> because leaving it open can cause problems later.
+Save this line so that the hash can be referred back to later in the test. Then make sure to close the `tio` session by typing <kbd>ctrl-t</kbd> and then <kbd>q</kbd> because leaving it open can cause problems later.
 
 Then you will need another Reticulum device to probe the above to see
 if it really responds. For this, we will use another computer with
-[RNS](rns.md) installed. You *could* use the same device, but make sur
+[RNS](rns.md) installed. You *could* use the same device, but make sure
 `rnsd` is started with the right port, which will be different than
 the one used for the RTNode!
 
@@ -306,16 +306,16 @@ anarcat@dorothea:~$ tio -a latest  -e -t | stdbuf -i0 -o0 -e0 strings -w | awk '
 ```
 
 Then I added my primary and LXMF Nomadnet identities as "Remote
-Management Allowed" through the `console.html` in Transport Config,
-uReticulum General Config. I am not sure which one grants me access,
+Management Allowed" through the `console.html` in `Transport Config`,
+`uReticulum General Config`. I am not sure which one grants me access,
 but it's read-only anyways for now so it does not matter much. There
 is some [API contraption](https://github.com/attermann/ReticulumAPI) that allows one to glue the HTML console
 with LoRa but I haven't tested it.
 
-To save changes, the "save namespace" is at the top, then "commit
-all", then reboot.
+To save changes, the `save namespace` is at the top, then `commit
+all`s, then reboot.
 
-I have mistakenly "cleared provisionning" instead of saving, that's
+I have mistakenly `cleared provisioning` instead of saving, that's
 not the right button.
 
 ## Known issues

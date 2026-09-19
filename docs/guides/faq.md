@@ -24,7 +24,7 @@ Here are a couple of questions we have frequently been asked.
 > -- [Wikipedia](https://en.wikipedia.org/wiki/Mesh_networking), 2026
 
 Mesh networks have a rich and long [history](../history.md) but the mesh, as far
-as we're currently concerned, is protocols like [Meshcore](https://meshcore.io/),
+as we're currently concerned, is protocols like [MeshCore](https://meshcore.io/),
 [Meshtastic](https://meshtastic.org/), or [Reticulum](https://reticulum.network/), mostly done over [LoRa](https://en.wikipedia.org/wiki/LoRa) except
 for Reticulum which supports other interfaces like WiFi, Bluetooth,
 ham radio links or the regular Internet.
