@@ -146,9 +146,9 @@ a pretty good Linux desktop app called [Meshy](https://codeberg.org/sesivany/mes
 >  - [support for changing the Bluetooth PIN](https://github.com/zjs81/meshcore-open/issues/431)
 >  - [Google Play Store](https://github.com/zjs81/meshcore-open/issues/323) and [F-Droid](https://github.com/zjs81/meshcore-open/issues/113) releases
 >  - [Reactions are non-standard](https://github.com/zjs81/meshcore-open/issues/109)
->  - [Regions support](https://github.com/zjs81/meshcore-open/issues/120) (fixed)
->  - [Channel utilization display](https://github.com/zjs81/meshcore-open/issues/312)
->  - [User blocking support](https://github.com/zjs81/meshcore-open/issues/340)
+>  - [Regions support](https://github.com/zjs81/meshcore-open/issues/120) (fixed in fork)
+>  - [Channel utilization display](https://github.com/zjs81/meshcore-open/issues/312) (fixed)
+>  - [User blocking support](https://github.com/zjs81/meshcore-open/issues/340) (fixed in fork)
 > 
 > Note that an [active fork](https://github.com/HDDen/meshcore-open/tree/rename-mco-advanced) fixes many of those issues.
 
