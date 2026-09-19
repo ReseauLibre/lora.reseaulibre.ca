@@ -56,14 +56,14 @@ messages just get dropped by releases before 1.14 (released in March
 running that release or later.
 
 We believe the mesh *cannot* function correctly with single-byte
-repeaters, so every repeater *must* set a multibyte path hash mode.
+routing. Every repeater *must* set a multibyte path hash mode.
 
-The fundamental issue with 1-byte routing is that one byte is too
-small. There are 256 possible identifiers that fit in one byte. But
-because of the [birthday paradox](https://en.wikipedia.org/wiki/Birthday_problem), there is a 50% chance of a clash
-with only 20 repeaters.[^1] Raising this to two bytes only brings us
-to 300 repeaters, so we believe we need *at least* 3 bytes, which
-gives a 50% clash with ~4800 repeaters.
+The fundamental issue is that one byte is too short. One byte can only
+address 256 possible identifiers. Worse, because of the [birthday
+paradox](https://en.wikipedia.org/wiki/Birthday_problem), there is a 50% chance of a clash with only 20
+repeaters.[^1] Raising this to two bytes only brings the odds to 300
+repeaters, so we believe we need *at least* 3 bytes, which gives a 50%
+clash with about 4800 repeaters.
 
 [^1]: for math people, this is [OEIS sequence A033810](https://oeis.org/A033810), with
     `n=256` (`256 = 2**8`) instead of `n=365`. You can use the Python
@@ -88,7 +88,7 @@ Identity clashes cause all sorts of problems:
     flapping, as conflicting paths are announced, which leads to
     direct messages being lost
 
-But this applies not only to repeaters, but also companions. Because
+This applies not only to repeaters, but also companions. Because
 multi-byte routing is used only when the *companion* sets it,
 single-byte companion experience the mesh as if it was entirely made
 of single-byte repeaters as well!
@@ -96,11 +96,11 @@ of single-byte repeaters as well!
 So setting a multibyte path hash mode on your companion will improve
 the reliability of your direct messages (DMs). Because DMs are
 *routed* (as opposed to channel messages and adverts that are
-*flooded*), it is crucial for messages to find the right path. In
-single-byte configuration, that byte is ambiguous and can refer to
-multiple conflicting repeaters. So an advert you receive that might
-tell you to go through a specific set of repeaters might actually tell
-your companion to use a really bad route for a contact.
+*flooded*), multi-byte is crucial for messages to find the right
+path. In single-byte configuration, that byte is ambiguous and can
+refer to multiple conflicting repeaters. So an advert you receive
+might tell you to go through a specific set of repeaters that would be
+a really bad route for a contact, in a single-byte configuration.
 
 This applies to direct messages, but also remote operation of
 repeaters, which operate similarly to direct messages, in that they
@@ -122,8 +122,8 @@ We don't believe this to be a problem. Limiting the number of hops in
 the mesh is a good thing, because each hop exponentially raises the
 number of retransmissions, see [this post for details](https://forum.meshcore.ca/t/follow-up-from-salishmesh-swbc-experiences-how-to-deal-with-large-saturated-congested-meshes/38/7?u=anarcat).
 
-With 10 hops, we are already reaching Quebec and believe that, with
-proper region management, we should be able to connect Ottawa and
+With 10 hops, we are already [reaching Quebec](2026-09-03-quebec-first-contact.md). We believe that,
+with proper configuration, we should be able to connect Ottawa and
 Quebec with a 21 hop limit.
 
 ## Why not 2 bytes?
@@ -134,8 +134,7 @@ repeaters.
 
 And while we're not quite there yet in Montreal strictly speaking (as
 of September 2026), we definitely have more than 300 repeaters if we
-count Ottawa (289), Trois-Rivières (37) and Québec (80), we definitely
-have more than 300 repeaters.
+count Ottawa (289), Trois-Rivières (37) and Québec (80).
 
 ## Feedback and comments
 
