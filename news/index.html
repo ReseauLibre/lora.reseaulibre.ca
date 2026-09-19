@@ -1821,135 +1821,13 @@ MeshMapper map. The new "Canada" preset should pre-configure your
 devices correctly.</p>
 <p>This announcement explains how to configure your devices and why we
 are making this change.</p>
-<h3 id="how-do-i-configure-3-byte-routing"><a class="toclink" href="2026/09/18/please-use-3-bytes-routing/#how-do-i-configure-3-byte-routing">How do I configure 3-byte routing?</a></h3>
-<p>The MeshCore project has introduced a new "Canada" preset which
-pre-selects 3-byte routing. If you configure a new (or existing!)
-device using the latest firmware, just pick the Canada preset and it
-will do the right thing.</p>
-<p>For older devices, see <a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#393-q-how-do-i-change-my-companions-path-hash-size">this question in the FAQ</a> but generally,
-you need to configure the <code>Path hash mode</code> to <code>3 bytes (max 21 hops)</code>,
-which can be also shown as <code>2 - 3 bytes</code>. That setting used to be
-hidden behind a <code>Experimental settings</code> section but is now a first
-level setting in the official application.</p>
-<p>You can also make the change through the command-line interface with
-the command:</p>
-<div class="highlight"><pre><span></span><code>set path.hash.mode 2
-</code></pre></div>
-<p>The value is a little confusing, <code>2</code> here means <code>3 bytes</code>. Here are
-the possible values for the setting:</p>
-<table>
-<thead>
-<tr>
-<th><code>path.hash.mode</code></th>
-<th>Advert path hash size</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>1 byte (default)</td>
-</tr>
-<tr>
-<td>1</td>
-<td>2 bytes</td>
-</tr>
-<tr>
-<td>2</td>
-<td>3 bytes</td>
-</tr>
-</tbody>
-</table>
-<h3 id="why-3-byte-routing"><a class="toclink" href="2026/09/18/please-use-3-bytes-routing/#why-3-byte-routing">Why 3-byte routing?</a></h3>
-<p>The MeshCore project still defaults to 1-byte for most regions, but
-<em>has</em> switched to 3 bytes for Canada. The upstream rationale for
-keeping the 1-byte default for other regions is that multibyte
-messages just get dropped by releases before 1.14 (released in March
-2026). We believe a vast majority of routers on the local mesh are
-running that release or later.</p>
-<p>We believe the mesh <em>cannot</em> function correctly with single-byte
-routing. Every repeater <em>must</em> set a multibyte path hash mode.</p>
-<p>The fundamental issue is that one byte is too short. One byte can only
-address 256 possible identifiers. Worse, because of the <a href="https://en.wikipedia.org/wiki/Birthday_problem">birthday
-paradox</a>, there is a 50% chance of a clash with only 20
-repeaters.<sup id="fnref:1"><a class="footnote-ref" href="2026/09/18/please-use-3-bytes-routing/#fn:1">1</a></sup> Raising this to two bytes only brings the odds to 300
-repeaters, so we believe we need <em>at least</em> 3 bytes, which gives a 50%
-clash with about 4800 repeaters.</p>
-<p>Identity clashes cause all sorts of problems:</p>
-<ol>
-<li>
-<p>routing is much harder to debug: when tracing a path to see which
-    repeaters used by a given message, we can get aberrations like a
-    message seemingly hopping hundreds of kilometers</p>
-</li>
-<li>
-<p>direct messages are nearly impossible to route: because clashes
-    can happen with as few as 20 repeaters, you are much more likely
-    to pick the wrong path for a direct message, or experience route
-    flapping, as conflicting paths are announced, which leads to
-    direct messages being lost</p>
-</li>
-</ol>
-<p>This applies not only to repeaters, but also companions. Because
-multi-byte routing is used only when the <em>companion</em> sets it,
-single-byte companion experience the mesh as if it was entirely made
-of single-byte repeaters as well!</p>
-<p>So setting a multibyte path hash mode on your companion will improve
-the reliability of your direct messages (DMs). Because DMs are
-<em>routed</em> (as opposed to channel messages and adverts that are
-<em>flooded</em>), multi-byte is crucial for messages to find the right
-path. In single-byte configuration, that byte is ambiguous and can
-refer to multiple conflicting repeaters. So an advert you receive
-might tell you to go through a specific set of repeaters that would be
-a really bad route for a contact, in a single-byte configuration.</p>
-<p>This applies to direct messages, but also remote operation of
-repeaters, which operate similarly to direct messages, in that they
-are routed.</p>
-<p>So if you're having trouble with DMs or repeater administration, try
-setting multibyte path hash mode!</p>
-<h3 id="wont-this-limit-the-size-of-the-mesh-and-number-of-hops"><a class="toclink" href="2026/09/18/please-use-3-bytes-routing/#wont-this-limit-the-size-of-the-mesh-and-number-of-hops">Won't this limit the size of the mesh and number of hops?</a></h3>
-<p>Some might notice that the number of allowed hops is reduce by this
-change. The setting in the official app says:</p>
-<ul>
-<li>1-byte (max 64 hops)</li>
-<li>2-byte (max 32 hops)</li>
-<li>3-byte (max 21 hops)</li>
-</ul>
-<p>We don't believe this to be a problem. Limiting the number of hops in
-the mesh is a good thing, because each hop exponentially raises the
-number of retransmissions, see <a href="https://forum.meshcore.ca/t/follow-up-from-salishmesh-swbc-experiences-how-to-deal-with-large-saturated-congested-meshes/38/7?u=anarcat">this post for details</a>.</p>
-<p>With 10 hops, we are already <a href="2026/09/16/first-contacts-between-montr%C3%A9al-and-qu%C3%A9bec/">reaching Quebec</a>. We believe that,
-with proper configuration, we should be able to connect Ottawa and
-Quebec with a 21 hop limit.</p>
-<h3 id="why-not-2-bytes"><a class="toclink" href="2026/09/18/please-use-3-bytes-routing/#why-not-2-bytes">Why not 2 bytes?</a></h3>
-<p>We go with 3 bytes because 2 bytes is not enough either. With the
-birthday paradox, there's a 50% chance of a collision with 300
-repeaters.</p>
-<p>And while we're not quite there yet in Montreal strictly speaking (as
-of September 2026), we definitely have more than 300 repeaters if we
-count Ottawa (289), Trois-Rivières (37) and Québec (80).</p>
-<h3 id="feedback-and-comments"><a class="toclink" href="2026/09/18/please-use-3-bytes-routing/#feedback-and-comments">Feedback and comments</a></h3>
-<p>We welcome comments and feedback on this proposal through <a href="../contact/">our regular
-contact points</a> and the <a href="https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/13">merge request on Codeberg</a>.</p>
-<p>This article is also available under the shorter URL
-<a href="https://lora.reseaulibre.ca/3byte/">https://lora.reseaulibre.ca/3byte/</a> for sharing more easily on the mesh.</p>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p>for math people, this is <a href="https://oeis.org/A033810">OEIS sequence A033810</a>, with
-<code>n=256</code> (<code>256 = 2**8</code>) instead of <code>n=365</code>. You can use the Python
-code in that sequence to calculate the others:</p>
-<div class="highlight"><pre><span></span><code>&gt;&gt;&gt; A033810(2**8)
-20
-&gt;&gt;&gt; A033810(2**16)
-302
-&gt;&gt;&gt; A033810(2**24)
-4823
-</code></pre></div>
-<p><a class="footnote-backref" href="2026/09/18/please-use-3-bytes-routing/#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
+
+    
+      <nav class="md-post__action">
+        <a href="2026/09/18/please-use-3-bytes-routing/">
+          Continue reading
+        </a>
+      </nav>
     
     
   </div>
@@ -1984,21 +1862,14 @@ code in that sequence to calculate the others:</p>
   <div class="md-post__content md-typeset">
     <h2 id="first-contacts-between-montreal-and-quebec"><a class="toclink" href="2026/09/16/first-contacts-between-montr%C3%A9al-and-qu%C3%A9bec/">First contacts between Montréal and Québec</a></h2>
 <p>We are seeing signs of the <a href="../references/log/#2026-09-16">first contacts between Montréal and
-Québec</a>. We have already been seeing announces from Ottawa and as far
-as Toronto, Buffalo and Syracuse, but so far actual contacts have been
-limited: <em>sometime</em> tropospheric ducting would allow us to hold short
-conversations with Ottawa, but that's it.</p>
-<p>But it seems that we're also reaching up to Québec city and of course
-Trois-Rivières along with heroes up the mountains in Shawinigan,
-Saint-Émélie-de-l'Énergie, Saint-Gabriel-de-Brandon and
-Saint-Jean-de-Matha! Thank you for your work!</p>
-<p>We're also seeing signs of saturation on the network, with
-communications being less reliable than they were during
-<a href="../references/net/">networks</a>. </p>
-<p>We are working on a proposal to reduce the amount of telemetry and
-noise on the network, following best practices developed in other
-meshes like setting region-specific channels, loop detection and
-reduce announce periods, stay tuned!</p>
+Québec</a>.</p>
+
+    
+      <nav class="md-post__action">
+        <a href="2026/09/16/first-contacts-between-montr%C3%A9al-and-qu%C3%A9bec/">
+          Continue reading
+        </a>
+      </nav>
     
     
   </div>
