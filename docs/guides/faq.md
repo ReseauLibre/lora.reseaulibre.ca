@@ -83,8 +83,8 @@ kilometers or more, even from inside your house. A node on a rooftop
 can reach much further, easily a dozen kilometers, depending on how
 clear the view is.
 
-As of 2026-05-11, the [current record](https://yul.meshmapper.net/leaderboard.php) is 21.5km across Lac
-Saint-Louis, by [`YUL_Dorval-South`](https://yul.meshmapper.net/index.php?repeater=D0,45.43988,-73.73579).
+As of 2026-09-18, the [current record](https://yul.meshmapper.net/leaderboard.php) is 162.65 km between
+Shawinigan and Sutton, by [`Cité Énergie Shawi RP`](https://yul.meshmapper.net/index.php?repeater=8D%2C46.536533%2C-72.757591&preset=all).
 
 ### How many nodes in the network?
 
