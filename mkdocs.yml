@@ -122,21 +122,21 @@ theme:
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
-        name: Switch to light mode
+        name: Switch to system preference
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: amber
       toggle:
         icon: material/weather-night
-        name: Switch to dark mode
+        name: Switch to light mode
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: amber
       toggle:
         icon: material/weather-sunny
-        name: Switch to system preference
+        name: Switch to dark mode
   # the site is in english
   language: en
 
