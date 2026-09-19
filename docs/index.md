@@ -80,4 +80,3 @@ mesh MeshCore, grâce au [projet MeshMapper](https://wiki.meshmapper.net/), voir
   </iframe>
 
 Voir aussi la [section Cartes](references/maps.md) pour d'autres cartes.
-<
