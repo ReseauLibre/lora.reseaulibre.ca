@@ -128,7 +128,8 @@ means installing software on your phone.
 
 You can try that from your computer with a web browser by using [Liam
 Cottle's](https://app.meshcore.nz/) web app. There are also [iOS and Android versions](https://meshcore.io/#download) and
-a pretty good Linux desktop app called [Meshy](https://codeberg.org/sesivany/meshy).
+a pretty good Linux desktop app called [Meshy](https://codeberg.org/sesivany/meshy). Some Apple users
+might like the third-party [MeshCore One](https://github.com/Avi0n/MeshCoreOne) application.
 
 > [!BUG] Proprietary software warning
 >
@@ -146,9 +147,9 @@ a pretty good Linux desktop app called [Meshy](https://codeberg.org/sesivany/mes
 >  - [support for changing the Bluetooth PIN](https://github.com/zjs81/meshcore-open/issues/431)
 >  - [Google Play Store](https://github.com/zjs81/meshcore-open/issues/323) and [F-Droid](https://github.com/zjs81/meshcore-open/issues/113) releases
 >  - [Reactions are non-standard](https://github.com/zjs81/meshcore-open/issues/109)
->  - [Regions support](https://github.com/zjs81/meshcore-open/issues/120) (fixed)
->  - [Channel utilization display](https://github.com/zjs81/meshcore-open/issues/312)
->  - [User blocking support](https://github.com/zjs81/meshcore-open/issues/340)
+>  - [Regions support](https://github.com/zjs81/meshcore-open/issues/120) (fixed in fork)
+>  - [Channel utilization display](https://github.com/zjs81/meshcore-open/issues/312) (fixed)
+>  - [User blocking support](https://github.com/zjs81/meshcore-open/issues/340) (fixed in fork)
 > 
 > Note that an [active fork](https://github.com/HDDen/meshcore-open/tree/rename-mco-advanced) fixes many of those issues.
 
