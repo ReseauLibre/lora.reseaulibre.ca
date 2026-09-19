@@ -138,7 +138,7 @@ That said, the *way* MeshCore currently uses the band *might* be
 infringing on some regulations in Canada, specifically ISED's [section
 6.3.1](https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/devices-and-equipment/radio-equipment-standards/radio-standards-specifications-rss/rss-247-digital-transmission-systems-dtss-frequency-hopping-systems-fhss-and-licence-exempt-local#s6.3.1) of [RSS-247](https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/devices-and-equipment/radio-equipment-standards/radio-standards-specifications-rss/rss-247-digital-transmission-systems-dtss-frequency-hopping-systems-fhss-and-licence-exempt-local). There is a [far ranging debate happening
 right now in the USA](https://hackaday.com/2026/09/17/fcc-ism-rules-may-shatter-lora-mesh-communities/) which has similar regulations as Canada. This
-is also [discussed in a [MeshCore issue](https://github.com/meshcore-dev/MeshCore/issues/945). See also this [good
+is also discussed in a [MeshCore issue](https://github.com/meshcore-dev/MeshCore/issues/945). See also this [good
 technical explanation](https://beala.substack.com/p/the-fcc-want-me-to-use-more-bandwidth) of the regulation.
 
 For now, Ottawa and Montreal are taking a "wait-and-see" approach. We
