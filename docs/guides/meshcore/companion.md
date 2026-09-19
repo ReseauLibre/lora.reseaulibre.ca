@@ -49,7 +49,7 @@ connecting to the following website.
 > If you picked a standalone companion like the Lilygo T-Deck or
 > T-Lora pager, or the Heltec v4 expansion kit, you might want to take
 > a look at [Wadamesh](https://www.wadamesh.com/) as well. The stock firmware GUI (Ripple) is
-> hard to use and proprietary, while Wadamsh is free software,
+> hard to use and proprietary, while Wadamesh is free software,
 > although coded with the Claude LLM.
 
 Your web browser must support the [Web Serial API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility), which includes
@@ -142,8 +142,8 @@ a pretty good Linux desktop app called [Meshy](https://codeberg.org/sesivany/mes
 > unless you get frustrated with the official apps. The open app also
 > lacks a few features from the official one, namely:
 > 
->  - [full multibyte support](https://github.com/zjs81/meshcore-open/issues/367) (fixed)
->  - [support for changing the Blutooth PIN](https://github.com/zjs81/meshcore-open/issues/431)
+>  - [full multi-byte support](https://github.com/zjs81/meshcore-open/issues/367) (fixed)
+>  - [support for changing the Bluetooth PIN](https://github.com/zjs81/meshcore-open/issues/431)
 >  - [Google Play Store](https://github.com/zjs81/meshcore-open/issues/323) and [F-Droid](https://github.com/zjs81/meshcore-open/issues/113) releases
 >  - [Reactions are non-standard](https://github.com/zjs81/meshcore-open/issues/109)
 >  - [Regions support](https://github.com/zjs81/meshcore-open/issues/120) (fixed)

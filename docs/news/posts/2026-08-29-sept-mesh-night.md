@@ -40,15 +40,15 @@ Québec, Canada, H4C 2S3][] ([Google maps][]).
 About 15-20 people showed up during the night. I (anarcat) noticed the
 following:
 
-- Tony demo'd [PRNS](https://reticulum.rs/) with groups, LoRa - Bluetooth -
+- Tony demoed [PRNS](https://reticulum.rs/) with groups, LoRa - Bluetooth -
   Bluetooth - Lora bridge with groups for isolation. PRNS has a button
   interface, no remote configuration options yet
-- demo was done using, among other devices, a [Heltec Meshtower v2](https://heltec.org/project/meshtower/)
+- demo was done using, among other devices, a [Heltec MeshTower v2](https://heltec.org/project/meshtower/)
   a beautiful (if a little pricier) solar repeater with a NRF chipset,
   a solid-looking metal casing (which require some hacking at the
   screws to close correctly), and a built-in N connector, from the Ali
   Express store, which had staunch supporters
-- [reflashed a relunctant RAK board](https://scoat.es/@sean/117207646077486927) using Pi Pico Zero, a debug
+- [re-flashed a reluctant RAK board](https://scoat.es/@sean/117207646077486927) using Pi Pico Zero, a debug
   probe, many fingers holding things together because we don't want to
   solder stuff permanently and me barely understanding what's
   happening
@@ -84,12 +84,12 @@ following:
 - discussed problems with people deliberately creating collisions on
   public key hashes to have cute repeater names and how to communicate
   about this problem (announcement coming)
-- many devices were backed up, reflashed, tested, monitored and
-  demo'd, including the infamous [fire hazard previously announced
+- many devices were backed up, re-flashed, tested, monitored and
+  demoed, including the infamous [fire hazard previously announced
   here](2026-08-26-wismesh-pocket-fire-hazard.md), a raspberry pi MeshCore firmware, [Wadamesh](https://wadamesh.com/),
   [Meshy](https://codeberg.org/sesivany/meshy), [Meshterm](https://discord.gg/AZwe5Uvb3S) a word, but no demo or test, on the
   multi-firmware [`bmorcelli/Launcher`](https://bmorcelli.github.io/Launcher) project allowing multiple
-  firmwares to be installed concurrently on a Lilygo T-Deck
+  firmware to be installed concurrently on a Lilygo T-Deck
 
 I'm considering making more frequent notes like this of mesh nights so
 people remember what happened and see what we do there. 

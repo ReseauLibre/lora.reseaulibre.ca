@@ -32,7 +32,7 @@ trickier because they are often harder to reach physically. If you
 
 > [!WARNING]
 > Only use this for upgrades and *only* if you performed the above
-> [Bootloader OTA fix](repeater.md#boot-loader-ota-fix)!
+> [Boot loader OTA fix](repeater.md#boot-loader-ota-fix)!
 
 Once your device is [correctly flashed for OTA (over the air) upgrades](repeater.md#boot-loader-ota-fix),
 you should be able to perform upgrades remotely. This is typically

@@ -13,7 +13,7 @@ to use multi-byte routing, particularly if you have trouble with
 direct messages or remotely operating a repeater.
 
 One-byte repeaters are also at risk of being dropped from the
-MeshMapper map. The new "Canada" preset should pre-configure your
+MeshMapper map. The new "Canada" preset should configure your
 devices correctly.
 
 This announcement explains how to configure your devices and why we
@@ -24,7 +24,7 @@ are making this change.
 ## How do I configure 3-byte routing?
 
 The MeshCore project has introduced a new "Canada" preset which
-pre-selects 3-byte routing. If you configure a new (or existing!)
+selects 3-byte routing. If you configure a new (or existing!)
 device using the latest firmware, just pick the Canada preset and it
 will do the right thing.
 
@@ -52,13 +52,13 @@ the possible values for the setting:
 
 The MeshCore project still defaults to 1-byte for most regions, but
 *has* switched to 3 bytes for Canada. The upstream rationale for
-keeping the 1-byte default for other regions is that multibyte
+keeping the 1-byte default for other regions is that multi-byte
 messages just get dropped by releases before 1.14 (released in March
 2026). We believe a vast majority of routers on the local mesh are
 running that release or later.
 
 We believe the mesh *cannot* function correctly with single-byte
-routing. Every repeater *must* set a multibyte path hash mode.
+routing. Every repeater *must* set a multi-byte path hash mode.
 
 The fundamental issue is that one byte is too short. One byte can only
 address 256 possible identifiers. Worse, because of the [birthday
@@ -95,7 +95,7 @@ multi-byte routing is used only when the *companion* sets it,
 single-byte companion experience the mesh as if it was entirely made
 of single-byte repeaters as well!
 
-So setting a multibyte path hash mode on your companion will improve
+So setting a multi-byte path hash mode on your companion will improve
 the reliability of your direct messages (DMs). Because DMs are
 *routed* (as opposed to channel messages and adverts that are
 *flooded*), multi-byte is crucial for messages to find the right
@@ -109,7 +109,7 @@ repeaters, which operate similarly to direct messages, in that they
 are routed.
 
 So if you're having trouble with DMs or repeater administration, try
-setting multibyte path hash mode!
+setting multi-byte path hash mode!
 
 ## Won't this limit the size of the mesh and number of hops?
 
@@ -122,7 +122,7 @@ change. The setting in the official app says:
 
 We don't believe this to be a problem. Limiting the number of hops in
 the mesh is a good thing, because each hop exponentially raises the
-number of retransmissions, see [this post for details](https://forum.meshcore.ca/t/follow-up-from-salishmesh-swbc-experiences-how-to-deal-with-large-saturated-congested-meshes/38/7?u=anarcat).
+number of re-transmissions, see [this post for details](https://forum.meshcore.ca/t/follow-up-from-salishmesh-swbc-experiences-how-to-deal-with-large-saturated-congested-meshes/38/7?u=anarcat).
 
 With 10 hops, we are already [reaching Quebec](2026-09-03-quebec-first-contact.md). We believe that,
 with proper configuration, we should be able to connect Ottawa and

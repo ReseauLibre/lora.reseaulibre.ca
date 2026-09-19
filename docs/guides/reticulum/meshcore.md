@@ -111,9 +111,9 @@ MeshCore. You can follow our [MeshCore flashing guide](../meshcore/companion.md#
 sure you pick "serial" and not "Bluetooth".
 
 > [!BUG]
-> Some applications like MeshChatX will fail to load the `meshcore`
+> Some applications like `MeshChatX` will fail to load the `meshcore`
 > library because it cannot be found. This is often related to the
-> sandboxing some of those applications.
+> sandbox of some of those applications.
 >
 > One workaround is to install the Debian package instead.
 >
@@ -146,6 +146,6 @@ Other implementations:
 - [RNS Gateway](https://github.com/genemichael/rns-gateway) - an embedded firmware that does both a
   micro-Reticulum *and* a MeshCore implementation on a single radio
 - RNS Gateway reuses the wire format of
-  [comms-engineer/RNS_Over_Meshcore](https://github.com/comms-engineer/RNS_Over_Meshcore) which is *also* a fork of
+  [`comms-engineer/RNS_Over_Meshcore`](https://github.com/comms-engineer/RNS_Over_Meshcore) which is *also* a fork of
   [`RNS_Over_Meshtastic`](https://github.com/landandair/RNS_Over_Meshtastic) like the project we used here, but a
   *different* fork
