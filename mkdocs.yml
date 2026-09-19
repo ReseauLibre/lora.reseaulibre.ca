@@ -122,21 +122,21 @@ theme:
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
-        name: Mode automatique
+        name: Basculer en mode automatique
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: amber
       toggle:
         icon: material/weather-night
-        name: Mode clair
+        name: Basculer en mode clair
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: amber
       toggle:
         icon: material/weather-sunny
-        name: Mode sombre
+        name: Basculer en mode sombre
   # this is the french version
   language: fr
 
