@@ -128,7 +128,8 @@ means installing software on your phone.
 
 You can try that from your computer with a web browser by using [Liam
 Cottle's](https://app.meshcore.nz/) web app. There are also [iOS and Android versions](https://meshcore.io/#download) and
-a pretty good Linux desktop app called [Meshy](https://codeberg.org/sesivany/meshy).
+a pretty good Linux desktop app called [Meshy](https://codeberg.org/sesivany/meshy). Some Apple users
+might like the third-party [MeshCore One](https://github.com/Avi0n/MeshCoreOne) application.
 
 > [!BUG] Proprietary software warning
 >
