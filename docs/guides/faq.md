@@ -153,7 +153,7 @@ means that someone might not have the right to re-implement the LoRa
 protocol on its own hardware, for example.
 
 However, [multiple](https://dl.acm.org/doi/10.1145/3546869) [reverse-engineering](https://www.epfl.ch/labs/tcl/wp-content/uploads/2020/02/Reverse_Eng_Report.pdf) efforts, including
-[SDR reimplementations](https://ieeexplore.ieee.org/document/9154273) have been performed, seemingly without
+[SDR re-implementations](https://ieeexplore.ieee.org/document/9154273) have been performed, seemingly without
 legal impact. [This EPFL paper from 2020](https://www.epfl.ch/labs/tcl/wp-content/uploads/2020/02/Reverse_Eng_Report.pdf) shows that the LoRa
 protocol seems to be rather old [hamming codes](https://en.wikipedia.org/wiki/Hamming_code), which already
 existed long before (1950!) LoRa was patented. This would make
