@@ -1,73 +1,78 @@
 ---
 date:
   created: 2026-09-18
-title: Please use 3 bytes routing
+title: Prière d'utiliser le routage à 3 octets
 categories:
   - announcements
 ---
 
-In August, many repeater operators in the greater Montreal area
-started experimenting with [multi-byte path routing](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#39-q-what-is-multibyte-support-what-do-1-byte-2-byte-3-byte-adverts-and-messages-mean). We now
-strongly recommend that you configure your repeaters (and companions)
-to use multi-byte routing, particularly if you have trouble with
-direct messages or remotely operating a repeater.
+En août, plusieurs répéteurs de la grande région de Montréal ont
+commencé à expérimenter avec le [routage
+multi-octet](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#39-q-what-is-multibyte-support-what-do-1-byte-2-byte-3-byte-adverts-and-messages-mean). Nous recommandons fortement que vous configuriez vos
+répéteurs et compagnons pour utiliser le routage multi-octet,
+particulièrement si vous avez de la difficulté avec les messages privés
+ou l'opération à distance de vos relais.
 
-One-byte repeaters are also at risk of being dropped from the
-MeshMapper map. The new "Canada" preset should pre-configure your
-devices correctly.
+Les relais à un seul octet sont aussi à risque d'être retirés de la
+carte MeshMapper. Le nouveau réglage "Canada" permet de configurer son
+appareil correctement.
 
-This announcement explains how to configure your devices and why we
-are making this change.
+Cette annonce explique comment configurer son relais et pourquoi nous
+effectuons ce changement.
 
-## How do I configure 3-byte routing?
+## Comment configurer le routage à 3 octets?
 
-The MeshCore project has introduced a new "Canada" preset which
-pre-selects 3-byte routing. If you configure a new (or existing!)
-device using the latest firmware, just pick the Canada preset and it
-will do the right thing.
+Le project MeshCore a ajouté un réglage "Canada" qui sélectionne
+automatiquement le routage en 3 octets. Si vous configurez un appareil
+nouveau (ou existant) en utilisant le dernier firmware, choisissez le
+réglage "Canada" et votre appareil sera configuré correctement.
 
-For older devices, see [this question in the FAQ](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#393-q-how-do-i-change-my-companions-path-hash-size) but generally,
-you need to configure the `Path hash mode` to `3 bytes (max 21 hops)`,
-which can be also shown as `2 - 3 bytes`. That setting used to be
-hidden behind a `Experimental settings` section but is now a first
-level setting in the official application.
+Pour les appareils plus anciens, voir [cette question dans la FAQ](https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#393-q-how-do-i-change-my-companions-path-hash-size)
+mais généralement, il faut configurer le `Path hash mode` à `3 bytes
+(max 21 hops)`, qui est parfois présenté comme `2 - 3 bytes`. Ce
+réglage était auparavant caché derrière une section `Experimental
+settings` mais est maintenant visible plus directement dans
+l'application officielle.
 
-You can also make the change through the command-line interface with
-the command:
+Il est également possible de configurer un appareil en ligne de
+commande avec la commande:
 
     set path.hash.mode 2
 
-The value is a little confusing, `2` here means `3 bytes`. Here are
-the possible values for the setting:
+La valeur indiquée ici peut être égrante: `2` signifie en fait `3
+bytes`. Voici les réglages possibles pour le paramètre:
 
-| `path.hash.mode` | Advert path hash size |
-|------------------|-----------------------|
-| 0                | 1 byte (default)      |
-| 1                | 2 bytes               |
-| 2                | 3 bytes               |
+| `path.hash.mode` | Taille de l'annonce  |
+|------------------|----------------------|
+| 0                | 1 octet (par défaut) |
+| 1                | 2 octets             |
+| 2                | 3 octets             |
 
-## Why 3-byte routing?
+## Pourquoi un routage à 3 octets?
 
-The MeshCore project still defaults to 1-byte for most regions, but
-*has* switched to 3 bytes for Canada. The upstream rationale for
-keeping the 1-byte default for other regions is that multibyte
-messages just get dropped by releases before 1.14 (released in March
-2026). We believe a vast majority of routers on the local mesh are
-running that release or later.
+Le project MeshCore suggère encore le routage sur un octet par défaut
+dans la plupart des régions mais a basculé vers 3 octets au Canada. La
+logique présentée par le projet pour garder un octet est que les
+messages multi-octets sont ignorés par les répéteurs avec une version
+inférieur à 1.14 (sortie en mars 2026). Nous croyons que la vaste
+majorité des relais dans notre régions roulent une version plus
+récente et que ceci n'est pas un problème.
 
-We believe the mesh *cannot* function correctly with single-byte
-repeaters, so every repeater *must* set a multibyte path hash mode.
+Nous croyons que le mesh ne peut *pas* fonctionner correctement avec le
+routage sur un seul octet. Il *faut* donc configurer les relais en
+multi-octet.
 
-The fundamental issue with 1-byte routing is that one byte is too
-small. There are 256 possible identifiers that fit in one byte. But
-because of the [birthday paradox](https://en.wikipedia.org/wiki/Birthday_problem), there is a 50% chance of a clash
-with only 20 repeaters.[^1] Raising this to two bytes only brings us
-to 300 repeaters, so we believe we need *at least* 3 bytes, which
-gives a 50% clash with ~4800 repeaters.
+Le problème fondamental est que un octet, c'est trop court. Un octet
+permet d'adresser seulement 256 appareils différents. Pire, à cause du
+[paradoxe des anniversaires](https://fr.wikipedia.org/wiki/Paradoxe_des_anniversaires), il y a 50% de chances d'un conflit
+avec seulement 20 appareils![^1] Utiliser 2 octets garde la même
+chance avec 300 appareils, donc nous croyons qu'il faut les 3 octets,
+ce qui nous donne 50% de chance de conflit avec environ 4800 relais.
 
-[^1]: for math people, this is [OEIS sequence A033810](https://oeis.org/A033810), with
-    `n=256` (`256 = 2**8`) instead of `n=365`. You can use the Python
-    code in that sequence to calculate the others:
+[^1]: pour les boles en mathématiques, il s'agit de la [séquence OEIS
+    A033810](https://oeis.org/A033810), avec `n=256` (`256 = 2**8`) au lieu `n=365`. Vous
+    pouvez utiliser le code Python de la séquence pour arriver aux
+    chiffres ci-haut:
     
         >>> A033810(2**8)
         20
@@ -76,68 +81,74 @@ gives a 50% clash with ~4800 repeaters.
         >>> A033810(2**24)
         4823
 
-Identity clashes cause all sorts of problems:
+Les conflits d'identité causent toutes sortes de problèmes:
 
- 1. routing is much harder to debug: when tracing a path to see which
-    repeaters used by a given message, we can get aberrations like a
-    message seemingly hopping hundreds of kilometers
+ 1. le routage est plus difficile à diagnostiquer: quand on trace un
+    chemin pour déterminer quels relais sont utilisés pour un message,
+    on peut trouver des aberrations comme un message qui semble sauter
+    des centaines de kilomètres plusieurs fois.
 
- 2. direct messages are nearly impossible to route: because clashes
-    can happen with as few as 20 repeaters, you are much more likely
-    to pick the wrong path for a direct message, or experience route
-    flapping, as conflicting paths are announced, which leads to
-    direct messages being lost
+ 2. les messages directs sont pratiquement impossibles à router:
+    puisque les conflits peuvent arriver avec seulement 20 relais, il
+    est très fréquent qu'un mauvais chemin est choisi pour un message,
+    ou qu'une route "clignote", alors que des chemins ambigus sont
+    annoncés ce qui fait que les messages directs sont perdus
 
-But this applies not only to repeaters, but also companions. Because
-multi-byte routing is used only when the *companion* sets it,
-single-byte companion experience the mesh as if it was entirely made
-of single-byte repeaters as well!
+Ceci s'applique aux relais, mais aussi aux compagnons. Puisque le
+routage multi-octet est utilisé seulement si le *compagnon* le
+demande, les compagnons mono-octet utilisent le mesh comme s'il était
+entièrement construit relais mono-octets également!
 
-So setting a multibyte path hash mode on your companion will improve
-the reliability of your direct messages (DMs). Because DMs are
-*routed* (as opposed to channel messages and adverts that are
-*flooded*), it is crucial for messages to find the right path. In
-single-byte configuration, that byte is ambiguous and can refer to
-multiple conflicting repeaters. So an advert you receive that might
-tell you to go through a specific set of repeaters might actually tell
-your companion to use a really bad route for a contact.
+Régler un mode multi-octet sur votre compagnon va également améliorer
+la fiabilité de vos messages privés ("DMs"). Parce que les DMs sont
+*routés* (par opposition aux messages de canaux et annonces, qui sont
+*innondés*, ou "flooded"), le mode multi-octet est crucial pour
+trouver un bon chemin. En configuration mono-octet, cet octet est
+ambigu et peut référer à plusieurs relais en conflit. Donc une annonce
+reçu peut vous dire de passer par un ensemble de relais qui est en
+fait très mauvais pour votre contact, dans une configuration mono-octet.
 
-This applies to direct messages, but also remote operation of
-repeaters, which operate similarly to direct messages, in that they
-are routed.
+Ceci s'applique aux messages privés, mais aussi l'opération à distance
+des relais, qui opère de façon similaire aux DMs puisqu'ils sont
+routés.
 
-So if you're having trouble with DMs or repeater administration, try
-setting multibyte path hash mode!
+Donc, si vous avez des ennuis avec les DMs, ou la gestion des relais à
+distance, essayez d'utiliser le mode multi-octet!
 
-## Won't this limit the size of the mesh and number of hops?
+## Le multi-octet limite-t-il la taille du mesh?
 
-Some might notice that the number of allowed hops is reduce by this
-change. The setting in the official app says:
+Les plus assidus remarqueront que le nombre de sauts ("hops") est
+réduit par ce changement. La configuration dans l'application indique
+en effet:
 
-- 1-byte (max 64 hops)
-- 2-byte (max 32 hops)
-- 3-byte (max 21 hops)
+- `1-byte (max 64 hops)`
+- `2-byte (max 32 hops)`
+- `3-byte (max 21 hops)`
 
-We don't believe this to be a problem. Limiting the number of hops in
-the mesh is a good thing, because each hop exponentially raises the
-number of retransmissions, see [this post for details](https://forum.meshcore.ca/t/follow-up-from-salishmesh-swbc-experiences-how-to-deal-with-large-saturated-congested-meshes/38/7?u=anarcat).
+Nous ne croyons pas que ceci est un réel problème. Limiter le nombre
+de sauts dans le mesh est une *bonne chose*, parce que chaque saut
+augment exponentiellement le nombre de retransmission, voir [ce
+message pour les détails](https://forum.meshcore.ca/t/follow-up-from-salishmesh-swbc-experiences-how-to-deal-with-large-saturated-congested-meshes/38/7?u=anarcat).
 
-With 10 hops, we are already reaching Quebec and believe that, with
-proper region management, we should be able to connect Ottawa and
-Quebec with a 21 hop limit.
+Avec 10 sauts, nous avons [contact avec Québec](2026-09-03-quebec-first-contact.md). Nous croyons que,
+avec une bonne configuration, nous devrions être capables de connecter
+Ottawa et Québec sous la limite des 21 sauts.
 
-## Why not 2 bytes?
+## Pourquoi pas 2 octets?
 
-We go with 3 bytes because 2 bytes is not enough either. With the
-birthday paradox, there's a 50% chance of a collision with 300
-repeaters.
+Nous utilisons 3 octets parce que 2 octets n'est pas suffisant. Avec
+le paradoxe de l'anniversaire, il y a 50% de chance de conflit avec
+seulement 300 relais.
 
-And while we're not quite there yet in Montreal strictly speaking (as
-of September 2026), we definitely have more than 300 repeaters if we
-count Ottawa (289), Trois-Rivières (37) and Québec (80), we definitely
-have more than 300 repeaters.
+Et bien que Montréal n'ai pas techniquement passé ce stade (en
+Septembre 2026), nous avons définitivement plus de 300 relais en
+comptant Ottawa (289), Trois-Rivières (37) et Québec (80).
 
-## Feedback and comments
+## Commentaires et retours
 
-We welcome comments and feedback on this proposal through [our regular
-contact points](../../contact.md) and the [merge request on Codeberg](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/13).
+Nous apprécions vos commentaires et retours sur la proposition par nos
+[canaux de communication habituels](../../contact.md) et ce [merge request sur Codeberg](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/13).
+
+Cet article est également disponible sous l'URL court
+<https://lora.reseaulibre.ca/fr/3byte/> pour partager plus facilement
+sur le mesh.

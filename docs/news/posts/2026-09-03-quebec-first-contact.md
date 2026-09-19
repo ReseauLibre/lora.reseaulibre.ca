@@ -1,27 +1,30 @@
 ---
 date:
   created: 2026-09-16
-title: First contacts between Montréal and Québec
+title: Premiers contacts entre Montréal et Québec
 categories:
   - announcements
 ---
 
-We are seeing signs of the [first contacts between Montréal and
-Québec](../../references/log.md#2026-09-16). We have already been seeing announces from Ottawa and as far
-as Toronto, Buffalo and Syracuse, but so far actual contacts have been
-limited: *sometime* tropospheric ducting would allow us to hold short
-conversations with Ottawa, but that's it.
+Nous voyons les premiers signes de [contacts entre Montréal et
+Québec](../../references/log.md#2026-09-16). Nous voyions déjà des
+annonces de Ottawa et même aussi loin que Toronto, Buffalo et
+Syracuse, mais jusqu'à maintenant les réels contacts étaient
+limités. De la propagation troposphérique pouvait parfois nous
+permettre d'avoir des conversations sporadiques avec Ottawa, mais
+c'est tout.
 
-But it seems that we're also reaching up to Québec city and of course
-Trois-Rivières along with heroes up the mountains in Shawinigan,
-Saint-Émélie-de-l'Énergie, Saint-Gabriel-de-Brandon and
-Saint-Jean-de-Matha! Thank you for your work!
+Mais il semblerait que nous rejoignons maintenant Québec mais bien sûr aussi
+Trois-Rivières ainsi que les héros dans les montagnes à
+Saint-Émélie-de-l'Énergie, Saint-Gabriel-de-Brandon et
+Saint-Jean-de-Matha! Merci pour votre travail!
 
-We're also seeing signs of saturation on the network, with
-communications being less reliable than they were during
-[networks](../../references/net.md). 
+Nous voyons également des signes de saturation du réseau. Les
+communications sont des moins en moins fiables durant les
+[réseaux](../../references/net.md).
 
-We are working on a proposal to reduce the amount of telemetry and
-noise on the network, following best practices developed in other
-meshes like setting region-specific channels, loop detection and
-reduce announce periods, stay tuned!
+Nous travaillons à une proposition pour réduire la quantité de
+messages de télémetrie et de bruit sur le réseau, en suivant les
+meilleures pratiques des autres mesh en matière de détection de
+boucle, réduction des annonces, et des canaux par régions, restez à
+l'écoute!
