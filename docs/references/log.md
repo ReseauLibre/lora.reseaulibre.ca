@@ -27,7 +27,6 @@ We log the following fields:
 | 21:18 | VE2XDM        | Dominique | Sainte-Croix   | 6    |
 | 21:28 | grostonymobil | Anthony   | St-Gab         | 5    |
 | 21:32 | VA2DG         | Daniel    | St-Jean        | 5    |
-|       |               |           |                |      |
 
 Observed:
 
