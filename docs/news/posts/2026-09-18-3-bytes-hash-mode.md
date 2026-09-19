@@ -19,6 +19,8 @@ devices correctly.
 This announcement explains how to configure your devices and why we
 are making this change.
 
+<!-- more -->
+
 ## How do I configure 3-byte routing?
 
 The MeshCore project has introduced a new "Canada" preset which
