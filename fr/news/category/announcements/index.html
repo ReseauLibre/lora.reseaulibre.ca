@@ -1806,143 +1806,13 @@ carte MeshMapper. Le nouveau réglage "Canada" permet de configurer son
 appareil correctement.</p>
 <p>Cette annonce explique comment configurer son relais et pourquoi nous
 effectuons ce changement.</p>
-<h3 id="comment-configurer-le-routage-a-3-octets"><a class="toclink" href="../../2026/09/18/pri%C3%A8re-dutiliser-le-routage-%C3%A0-3-octets/#comment-configurer-le-routage-a-3-octets">Comment configurer le routage à 3 octets?</a></h3>
-<p>Le project MeshCore a ajouté un réglage "Canada" qui sélectionne
-automatiquement le routage en 3 octets. Si vous configurez un appareil
-nouveau (ou existant) en utilisant le dernier firmware, choisissez le
-réglage "Canada" et votre appareil sera configuré correctement.</p>
-<p>Pour les appareils plus anciens, voir <a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#393-q-how-do-i-change-my-companions-path-hash-size">cette question dans la FAQ</a>
-mais généralement, il faut configurer le <code>Path hash mode</code> à <code>3 bytes
-(max 21 hops)</code>, qui est parfois présenté comme <code>2 - 3 bytes</code>. Ce
-réglage était auparavant caché derrière une section <code>Experimental
-settings</code> mais est maintenant visible plus directement dans
-l'application officielle.</p>
-<p>Il est également possible de configurer un appareil en ligne de
-commande avec la commande:</p>
-<div class="highlight"><pre><span></span><code>set path.hash.mode 2
-</code></pre></div>
-<p>La valeur indiquée ici peut être égrante: <code>2</code> signifie en fait <code>3
-bytes</code>. Voici les réglages possibles pour le paramètre:</p>
-<table>
-<thead>
-<tr>
-<th><code>path.hash.mode</code></th>
-<th>Taille de l'annonce</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>1 octet (par défaut)</td>
-</tr>
-<tr>
-<td>1</td>
-<td>2 octets</td>
-</tr>
-<tr>
-<td>2</td>
-<td>3 octets</td>
-</tr>
-</tbody>
-</table>
-<h3 id="pourquoi-un-routage-a-3-octets"><a class="toclink" href="../../2026/09/18/pri%C3%A8re-dutiliser-le-routage-%C3%A0-3-octets/#pourquoi-un-routage-a-3-octets">Pourquoi un routage à 3 octets?</a></h3>
-<p>Le project MeshCore suggère encore le routage sur un octet par défaut
-dans la plupart des régions mais a basculé vers 3 octets au Canada. La
-logique présentée par le projet pour garder un octet est que les
-messages multi-octets sont ignorés par les répéteurs avec une version
-inférieur à 1.14 (sortie en mars 2026). Nous croyons que la vaste
-majorité des relais dans notre régions roulent une version plus
-récente et que ceci n'est pas un problème.</p>
-<p>Nous croyons que le mesh ne peut <em>pas</em> fonctionner correctement avec le
-routage sur un seul octet. Il <em>faut</em> donc configurer les relais en
-multi-octet.</p>
-<p>Le problème fondamental est que un octet, c'est trop court. Un octet
-permet d'adresser seulement 256 appareils différents. Pire, à cause du
-<a href="https://fr.wikipedia.org/wiki/Paradoxe_des_anniversaires">paradoxe des anniversaires</a>, il y a 50% de chances d'un conflit
-avec seulement 20 appareils!<sup id="fnref3:1"><a class="footnote-ref" href="../../2026/09/18/pri%C3%A8re-dutiliser-le-routage-%C3%A0-3-octets/#fn:1">1</a></sup> Utiliser 2 octets garde la même
-chance avec 300 appareils, donc nous croyons qu'il faut les 3 octets,
-ce qui nous donne 50% de chance de conflit avec environ 4800 relais.</p>
-<p>Les conflits d'identité causent toutes sortes de problèmes:</p>
-<ol>
-<li>
-<p>le routage est plus difficile à diagnostiquer: quand on trace un
-    chemin pour déterminer quels relais sont utilisés pour un message,
-    on peut trouver des aberrations comme un message qui semble sauter
-    des centaines de kilomètres plusieurs fois.</p>
-</li>
-<li>
-<p>les messages directs sont pratiquement impossibles à router:
-    puisque les conflits peuvent arriver avec seulement 20 relais, il
-    est très fréquent qu'un mauvais chemin est choisi pour un message,
-    ou qu'une route "clignote", alors que des chemins ambigus sont
-    annoncés ce qui fait que les messages directs sont perdus</p>
-</li>
-</ol>
-<p>Ceci s'applique aux relais, mais aussi aux compagnons. Puisque le
-routage multi-octet est utilisé seulement si le <em>compagnon</em> le
-demande, les compagnons mono-octet utilisent le mesh comme s'il était
-entièrement construit relais mono-octets également!</p>
-<p>Régler un mode multi-octet sur votre compagnon va également améliorer
-la fiabilité de vos messages privés ("DMs"). Parce que les DMs sont
-<em>routés</em> (par opposition aux messages de canaux et annonces, qui sont
-<em>innondés</em>, ou "flooded"), le mode multi-octet est crucial pour
-trouver un bon chemin. En configuration mono-octet, cet octet est
-ambigu et peut référer à plusieurs relais en conflit. Donc une annonce
-reçu peut vous dire de passer par un ensemble de relais qui est en
-fait très mauvais pour votre contact, dans une configuration mono-octet.</p>
-<p>Ceci s'applique aux messages privés, mais aussi l'opération à distance
-des relais, qui opère de façon similaire aux DMs puisqu'ils sont
-routés.</p>
-<p>Donc, si vous avez des ennuis avec les DMs, ou la gestion des relais à
-distance, essayez d'utiliser le mode multi-octet!</p>
-<h3 id="le-multi-octet-limite-t-il-la-taille-du-mesh"><a class="toclink" href="../../2026/09/18/pri%C3%A8re-dutiliser-le-routage-%C3%A0-3-octets/#le-multi-octet-limite-t-il-la-taille-du-mesh">Le multi-octet limite-t-il la taille du mesh?</a></h3>
-<p>Les plus assidus remarqueront que le nombre de sauts ("hops") est
-réduit par ce changement. La configuration dans l'application indique
-en effet:</p>
-<ul>
-<li><code>1-byte (max 64 hops)</code></li>
-<li><code>2-byte (max 32 hops)</code></li>
-<li><code>3-byte (max 21 hops)</code></li>
-</ul>
-<p>Nous ne croyons pas que ceci est un réel problème. Limiter le nombre
-de sauts dans le mesh est une <em>bonne chose</em>, parce que chaque saut
-augment exponentiellement le nombre de retransmission, voir <a href="https://forum.meshcore.ca/t/follow-up-from-salishmesh-swbc-experiences-how-to-deal-with-large-saturated-congested-meshes/38/7?u=anarcat">ce
-message pour les détails</a>.</p>
-<p>Avec 10 sauts, nous avons <a href="../../2026/09/16/premiers-contacts-entre-montr%C3%A9al-et-qu%C3%A9bec/">contact avec Québec</a>. Nous croyons que,
-avec une bonne configuration, nous devrions être capables de connecter
-Ottawa et Québec sous la limite des 21 sauts.</p>
-<h3 id="pourquoi-pas-2-octets"><a class="toclink" href="../../2026/09/18/pri%C3%A8re-dutiliser-le-routage-%C3%A0-3-octets/#pourquoi-pas-2-octets">Pourquoi pas 2 octets?</a></h3>
-<p>Nous utilisons 3 octets parce que 2 octets n'est pas suffisant. Avec
-le paradoxe de l'anniversaire, il y a 50% de chance de conflit avec
-seulement 300 relais.</p>
-<p>Et bien que Montréal n'ai pas techniquement passé ce stade (en
-Septembre 2026), nous avons définitivement plus de 300 relais en
-comptant Ottawa (289), Trois-Rivières (37) et Québec (80).</p>
-<h3 id="commentaires-et-retours"><a class="toclink" href="../../2026/09/18/pri%C3%A8re-dutiliser-le-routage-%C3%A0-3-octets/#commentaires-et-retours">Commentaires et retours</a></h3>
-<p>Nous apprécions vos commentaires et retours sur la proposition par nos
-<a href="../../../contact/">canaux de communication habituels</a> et ce <a href="https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/13">merge request sur Codeberg</a>.</p>
-<p>Cet article est également disponible sous l'URL court
-<a href="https://lora.reseaulibre.ca/fr/3byte/">https://lora.reseaulibre.ca/fr/3byte/</a> pour partager plus facilement
-sur le mesh.</p>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p>pour les boles en mathématiques, il s'agit de la <a href="https://oeis.org/A033810">séquence OEIS
-A033810</a>, avec <code>n=256</code> (<code>256 = 2**8</code>) au lieu <code>n=365</code>. Vous
-pouvez utiliser le code Python de la séquence pour arriver aux
-chiffres ci-haut:</p>
-<div class="highlight"><pre><span></span><code>&gt;&gt;&gt; A033810(2**8)
-20
-&gt;&gt;&gt; A033810(2**16)
-302
-&gt;&gt;&gt; A033810(2**24)
-4823
-</code></pre></div>
-<p><a class="footnote-backref" href="../../2026/09/18/pri%C3%A8re-dutiliser-le-routage-%C3%A0-3-octets/#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="../../2026/09/18/pri%C3%A8re-dutiliser-le-routage-%C3%A0-3-octets/#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="../../2026/09/18/pri%C3%A8re-dutiliser-le-routage-%C3%A0-3-octets/#fnref3:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
+
+    
+      <nav class="md-post__action">
+        <a href="../../2026/09/18/pri%C3%A8re-dutiliser-le-routage-%C3%A0-3-octets/">
+          Continue reading
+        </a>
+      </nav>
     
     
   </div>
@@ -1977,24 +1847,14 @@ chiffres ci-haut:</p>
   <div class="md-post__content md-typeset">
     <h2 id="premiers-contacts-entre-montreal-et-quebec"><a class="toclink" href="../../2026/09/16/premiers-contacts-entre-montr%C3%A9al-et-qu%C3%A9bec/">Premiers contacts entre Montréal et Québec</a></h2>
 <p>Nous voyons les premiers signes de <a href="../../../references/log/#2026-09-16">contacts entre Montréal et
-Québec</a>. Nous voyions déjà des
-annonces de Ottawa et même aussi loin que Toronto, Buffalo et
-Syracuse, mais jusqu'à maintenant les réels contacts étaient
-limités. De la propagation troposphérique pouvait parfois nous
-permettre d'avoir des conversations sporadiques avec Ottawa, mais
-c'est tout.</p>
-<p>Mais il semblerait que nous rejoignons maintenant Québec mais bien sûr aussi
-Trois-Rivières ainsi que les héros dans les montagnes à
-Saint-Émélie-de-l'Énergie, Saint-Gabriel-de-Brandon et
-Saint-Jean-de-Matha! Merci pour votre travail!</p>
-<p>Nous voyons également des signes de saturation du réseau. Les
-communications sont des moins en moins fiables durant les
-<a href="../../../references/net/">réseaux</a>.</p>
-<p>Nous travaillons à une proposition pour réduire la quantité de
-messages de télémetrie et de bruit sur le réseau, en suivant les
-meilleures pratiques des autres mesh en matière de détection de
-boucle, réduction des annonces, et des canaux par régions, restez à
-l'écoute!</p>
+Québec</a>. </p>
+
+    
+      <nav class="md-post__action">
+        <a href="../../2026/09/16/premiers-contacts-entre-montr%C3%A9al-et-qu%C3%A9bec/">
+          Continue reading
+        </a>
+      </nav>
     
     
   </div>

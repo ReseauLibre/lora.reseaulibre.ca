@@ -1922,7 +1922,7 @@ strongly recommend that you configure your repeaters (and companions)
 to use multi-byte routing, particularly if you have trouble with
 direct messages or remotely operating a repeater.</p>
 <p>One-byte repeaters are also at risk of being dropped from the
-MeshMapper map. The new "Canada" preset should pre-configure your
+MeshMapper map. The new "Canada" preset should configure your
 devices correctly.</p>
 <p>This announcement explains how to configure your devices and why we
 are making this change.</p>
@@ -1930,7 +1930,7 @@ are making this change.</p>
 
 <h2 id="how-do-i-configure-3-byte-routing">How do I configure 3-byte routing?<a class="headerlink" href="#how-do-i-configure-3-byte-routing" title="Permanent link">&para;</a></h2>
 <p>The MeshCore project has introduced a new "Canada" preset which
-pre-selects 3-byte routing. If you configure a new (or existing!)
+selects 3-byte routing. If you configure a new (or existing!)
 device using the latest firmware, just pick the Canada preset and it
 will do the right thing.</p>
 <p>For older devices, see <a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#393-q-how-do-i-change-my-companions-path-hash-size">this question in the FAQ</a> but generally,
@@ -1969,12 +1969,12 @@ the possible values for the setting:</p>
 <h2 id="why-3-byte-routing">Why 3-byte routing?<a class="headerlink" href="#why-3-byte-routing" title="Permanent link">&para;</a></h2>
 <p>The MeshCore project still defaults to 1-byte for most regions, but
 <em>has</em> switched to 3 bytes for Canada. The upstream rationale for
-keeping the 1-byte default for other regions is that multibyte
+keeping the 1-byte default for other regions is that multi-byte
 messages just get dropped by releases before 1.14 (released in March
 2026). We believe a vast majority of routers on the local mesh are
 running that release or later.</p>
 <p>We believe the mesh <em>cannot</em> function correctly with single-byte
-routing. Every repeater <em>must</em> set a multibyte path hash mode.</p>
+routing. Every repeater <em>must</em> set a multi-byte path hash mode.</p>
 <p>The fundamental issue is that one byte is too short. One byte can only
 address 256 possible identifiers. Worse, because of the <a href="https://en.wikipedia.org/wiki/Birthday_problem">birthday
 paradox</a>, there is a 50% chance of a clash with only 20
@@ -2000,7 +2000,7 @@ clash with about 4800 repeaters.</p>
 multi-byte routing is used only when the <em>companion</em> sets it,
 single-byte companion experience the mesh as if it was entirely made
 of single-byte repeaters as well!</p>
-<p>So setting a multibyte path hash mode on your companion will improve
+<p>So setting a multi-byte path hash mode on your companion will improve
 the reliability of your direct messages (DMs). Because DMs are
 <em>routed</em> (as opposed to channel messages and adverts that are
 <em>flooded</em>), multi-byte is crucial for messages to find the right
@@ -2012,7 +2012,7 @@ a really bad route for a contact, in a single-byte configuration.</p>
 repeaters, which operate similarly to direct messages, in that they
 are routed.</p>
 <p>So if you're having trouble with DMs or repeater administration, try
-setting multibyte path hash mode!</p>
+setting multi-byte path hash mode!</p>
 <h2 id="wont-this-limit-the-size-of-the-mesh-and-number-of-hops">Won't this limit the size of the mesh and number of hops?<a class="headerlink" href="#wont-this-limit-the-size-of-the-mesh-and-number-of-hops" title="Permanent link">&para;</a></h2>
 <p>Some might notice that the number of allowed hops is reduce by this
 change. The setting in the official app says:</p>
@@ -2023,7 +2023,7 @@ change. The setting in the official app says:</p>
 </ul>
 <p>We don't believe this to be a problem. Limiting the number of hops in
 the mesh is a good thing, because each hop exponentially raises the
-number of retransmissions, see <a href="https://forum.meshcore.ca/t/follow-up-from-salishmesh-swbc-experiences-how-to-deal-with-large-saturated-congested-meshes/38/7?u=anarcat">this post for details</a>.</p>
+number of re-transmissions, see <a href="https://forum.meshcore.ca/t/follow-up-from-salishmesh-swbc-experiences-how-to-deal-with-large-saturated-congested-meshes/38/7?u=anarcat">this post for details</a>.</p>
 <p>With 10 hops, we are already <a href="../../16/first-contacts-between-montr%C3%A9al-and-qu%C3%A9bec/">reaching Quebec</a>. We believe that,
 with proper configuration, we should be able to connect Ottawa and
 Quebec with a 21 hop limit.</p>
@@ -2079,7 +2079,7 @@ code in that sequence to calculate the others:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="September 19, 2026 02:21:00 UTC">2026-09-19 02:21:00</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="September 19, 2026 02:35:10 UTC">2026-09-19 02:35:10</span>
   </span>
 
     
