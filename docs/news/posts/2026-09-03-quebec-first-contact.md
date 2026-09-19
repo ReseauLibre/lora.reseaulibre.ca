@@ -7,12 +7,15 @@ categories:
 ---
 
 Nous voyons les premiers signes de [contacts entre Montréal et
-Québec](../../references/log.md#2026-09-16). Nous voyions déjà des
-annonces de Ottawa et même aussi loin que Toronto, Buffalo et
-Syracuse, mais jusqu'à maintenant les réels contacts étaient
-limités. De la propagation troposphérique pouvait parfois nous
-permettre d'avoir des conversations sporadiques avec Ottawa, mais
-c'est tout.
+Québec](../../references/log.md#2026-09-16). 
+
+<!-- more -->
+
+Nous voyions déjà des annonces de Ottawa et même aussi loin que
+Toronto, Buffalo et Syracuse, mais jusqu'à maintenant les réels
+contacts étaient limités. De la propagation troposphérique pouvait
+parfois nous permettre d'avoir des conversations sporadiques avec
+Ottawa, mais c'est tout.
 
 Mais il semblerait que nous rejoignons maintenant Québec mais bien sûr aussi
 Trois-Rivières ainsi que les héros dans les montagnes à

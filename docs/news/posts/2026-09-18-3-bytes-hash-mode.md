@@ -20,6 +20,8 @@ appareil correctement.
 Cette annonce explique comment configurer son relais et pourquoi nous
 effectuons ce changement.
 
+<!-- more -->
+
 ## Comment configurer le routage à 3 octets?
 
 Le project MeshCore a ajouté un réglage "Canada" qui sélectionne
