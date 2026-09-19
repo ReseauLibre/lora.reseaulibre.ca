@@ -18,6 +18,7 @@ https://blog.meshcore.io/2026/04/02/nrf-ota-update,200,1787855173
 https://blog.meshcore.io/2026/05/12/pymc-intro,200,1787855171
 https://blog.meshcore.io/2026/06/22/drone-ota,200,1787855173
 https://blog.meshcore.io/2026/07/04/help-us-save-meshcore,200,1787855172
+https://bmorcelli.github.io/Launcher,200,1789785395
 https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1101959,200,1787855174
 https://calendrier.constellationmtl.net/event/matc-presents-jour-de-mesh-day-2,200,1787855172
 https://cedamtl.org/,200,1787855172
@@ -69,6 +70,9 @@ https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/news/posts/
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/news/posts/2026-06-19-aug-mesh-night.md,200,1787855172
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/news/posts/2026-07-28-aug-mesh-night.md,200,1787855172
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/news/posts/2026-08-26-wismesh-pocket-fire-hazard.md,200,1787855172
+https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/news/posts/2026-08-29-sept-mesh-night.md,200,1789785394
+https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/news/posts/2026-09-03-quebec-first-contact.md,200,1789785394
+https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/news/posts/2026-09-18-3-bytes-hash-mode.md,200,1789785394
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/references/hardware/antennas.md,200,1787855170
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/references/hardware/batteries.md,200,1787855171
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/references/hardware/index.md,200,1787855171
@@ -83,6 +87,8 @@ https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/references/
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/references/software/index.md,200,1787855171
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/references/software/meshtastic.md,200,1787855170
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/values.md,200,1787855170
+https://codeberg.org/reseaulibre/lora-reseaulibre-ca/commit/ff66243e506b972304786cfa32681d3974753743,200,1789785394
+https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/13,200,1789785395
 https://codeberg.org/sesivany/meshy,200,1787855171
 https://codeberg.org/skyguy/retinet,200,1787855172
 https://codeberg.org/tpikonen/siltamesh,200,1787855171
@@ -97,6 +103,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatib
 https://diataxis.fr/,200,1787855170
 https://directory.rns.recipes/,200,1787855172
 https://discord.com/company,200,1787855173
+https://discord.gg/AZwe5Uvb3S,200,1789785395
 https://discord.gg/xSpMaErKk4,200,1787855170
 https://docs.attaky.com/docs/datasheets/builds/mesh-deck,200,1787855171
 https://docs.codeberg.org/ci/,200,1787855170
@@ -125,6 +132,7 @@ https://en.wikipedia.org/wiki/Amateur_radio,200,1787855171
 https://en.wikipedia.org/wiki/Amateur_radio_net,200,1787855171
 https://en.wikipedia.org/wiki/Anonymous_(hacker_group),200,1787855174
 https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System,200,1787855171
+https://en.wikipedia.org/wiki/Birthday_problem,200,1789785395
 https://en.wikipedia.org/wiki/BlackBerry,200,1787855171
 https://en.wikipedia.org/wiki/Bulletin_board_system,200,1787855172
 https://en.wikipedia.org/wiki/Certificate_authority,200,1787855170
@@ -178,6 +186,7 @@ https://en.wikipedia.org/wiki/Telegram_(software)#Criticism,200,1787855170
 https://en.wikipedia.org/wiki/The_Tyranny_of_Structurelessness,200,1787855173
 https://en.wikipedia.org/wiki/USB#Device_Firmware_Upgrade_mechanism,200,1787855173
 https://en.wikipedia.org/wiki/Ultra_high_frequency#United_States,200,1787855174
+https://en.wikipedia.org/wiki/Unihertz_Jelly_series,200,1789785394
 https://en.wikipedia.org/wiki/Universally_unique_identifier,200,1787855172
 https://en.wikipedia.org/wiki/World_wide_web,200,1787855170
 https://en.wikipedia.org/wiki/XMPP,200,1787855171
@@ -190,6 +199,7 @@ https://flasher.meshcore.io/,200,1787855173
 https://flasher.meshtastic.org/,200,1787855172
 https://forgejo.org/docs/latest/user/actions/advanced-features/#artifacts,200,1787855170
 https://forum.meshcore.ca/,200,1787855173
+https://forum.meshcore.ca/t/follow-up-from-salishmesh-swbc-experiences-how-to-deal-with-large-saturated-congested-meshes/38/7?u=anarcat,200,1789785395
 https://forum.rakwireless.com/t/ethernet-gateway-with-batteries-solar/14601,200,1787855171
 https://foulab.org/,200,1787855170
 https://foulab.org//location/,200,1787855170
@@ -200,6 +210,7 @@ https://fr.wikipedia.org/wiki/Anonymous_(collectif),200,1787855170
 https://fr.wikipedia.org/wiki/Hors_r%C3%A9seau,200,1787855170
 https://fr.wikipedia.org/wiki/Intersectionnalit%C3%A9,200,1787855170
 https://fr.wikipedia.org/wiki/Logiciel_libre,200,1787855170
+https://fr.wikipedia.org/wiki/Paradoxe_des_anniversaires,200,1789785395
 https://fr.wikipedia.org/wiki/R%C3%A9seau_maill%C3%A9,200,1787855170
 https://fr.wikipedia.org/wiki/Recherche-action,200,1787855170
 https://fr.wikipedia.org/wiki/Science_ouverte,200,1787855170
@@ -227,10 +238,13 @@ https://github.com/afourney/aprstastic,200,1787855172
 https://github.com/agessaman/meshcore-bot,200,1787855173
 https://github.com/archlinux/infrastructure/blob/master/docs/matrix.md,200,1787855176
 https://github.com/artbotterell/CoreNet,200,1787855175
+https://github.com/attermann/ReticulumAPI,200,1789785395
 https://github.com/attermann/microReticulum,200,1787855174
 https://github.com/attermann/microReticulum_Firmware,200,1787855174
+https://github.com/attermann/microReticulum_Firmware/,200,1789785395
 https://github.com/brianshea2/meshmap.net,200,1787855171
 https://github.com/caveman99,200,1787855170
+https://github.com/comms-engineer/RNS_Over_Meshcore,200,1789785395
 https://github.com/cordelster/mesh-metrics/,200,1787855172
 https://github.com/cpatulea/matterbridge,200,1787855172
 https://github.com/cwill747/meshcore-uconsole,200,1787855174
@@ -241,6 +255,7 @@ https://github.com/fr33n0w/lxmf-cli/blob/9ca50d00f67443e349346c7d9696e77b3a39abd
 https://github.com/fr33n0w/lxmf-cli/issues/4,200,1787855174
 https://github.com/fr33n0w/lxmf-cli/issues/5,200,1787855174
 https://github.com/fr33n0w/lxmf-cli/tree/main/plugins,200,1787855175
+https://github.com/genemichael/rns-gateway,200,1789785395
 https://github.com/geoffwhittington/meshtastic-bridge,200,1787855171
 https://github.com/guax/tui-meshcore,200,1787855174
 https://github.com/hacktegic/meshtastic-prometheus-exporter,200,1787855172
@@ -255,6 +270,8 @@ https://github.com/jkingsman/Remote-Terminal-for-MeshCore,200,1787855172
 https://github.com/jrl290/RTNode-HeltecV4,200,1787855178
 https://github.com/jrl290/Retichat-ios,200,1787855175
 https://github.com/kstrauser/frozenbbs,200,1787855171
+https://github.com/l5yth/weechat-rrc,200,1789785395
+https://github.com/landandair/RNS_Over_Meshtastic,200,1789785395
 https://github.com/liberatedsystems/RNode_Firmware_CE#supported-products-and-boards,200,1787855178
 https://github.com/liberatedsystems/RNode_Firmware_CE,200,1787855178
 https://github.com/lorien/awesome-reticulum,200,1787855176
@@ -307,6 +324,7 @@ https://github.com/ratspeak/microReticulum,200,1787855174
 https://github.com/ratspeak/ratdeck,200,1787855179
 https://github.com/ratspeak/rathole,200,1787855174
 https://github.com/ratspeak/rsReticulum,200,1787855175
+https://github.com/recrof/MeshCore-WeatherBot,200,1789785395
 https://github.com/recrof/nrf_dfu_py#2-command-line-interface-cli,200,1787855178
 https://github.com/recrof/nrf_dfu_py#installation,200,1787855178
 https://github.com/recrof/nrf_dfu_py#usage,200,1787855178
@@ -324,6 +342,7 @@ https://github.com/squidfunk/mkdocs-material/issues/4863,200,1787855171
 https://github.com/taedryn/mesh-citadel,200,1787855172
 https://github.com/tcivie/meshtastic-metrics-exporter,200,1787855172
 https://github.com/the-draupnir-project/Draupnir,200,1787855177
+https://github.com/tio/tio,200,1789785395
 https://github.com/ultrabug/mkdocs-static-i18n,200,1787855170
 https://github.com/ultrabug/mkdocs-static-i18n/issues/283,200,1787855171
 https://github.com/watsoncj/meshcore-stats,200,1787855173
@@ -349,6 +368,8 @@ https://hackaday.com/2023/09/15/new-lora-distance-record-830-miles/,200,17878551
 https://hackaday.io/project/194509-harbor-breeze-meshtastic-hack,200,1787855172
 https://hackergadgets.com/products/uconsole-aio-v2?variant=47045380735150,200,1787855171
 https://harukitoreda.github.io/Meshtastic-Experiments/,200,1787855172
+https://heltec.org/project/meshtower/,200,1789785395
+https://heltec.org/project/meshtower/?attribute_lora-band=902%7E928MHZ&attribute_tx-power=30dBm&attribute_need-gps-sensor=No,200,1789785396
 https://heltec.org/project/vision-master-e290/,200,1787855174
 https://heltec.org/project/wifi-lora-32-v3/,200,1787855172
 https://heltec.org/project/wifi-lora-32-v4-expansion-housing/,200,1787855170
@@ -359,6 +380,7 @@ https://interlinkradio.weebly.com/,200,1787855171
 https://jacksbrain.com/2026/01/a-hitchhiker-s-guide-to-meshcore-cryptography/,200,1787855174
 https://joinmatrix.org/,200,1787855172
 https://joinmatrix.org/guide/matrix-vs-discord/,200,1787855170
+https://kolektiva.social/@Anarcat/117173310682114492,200,1789785395
 https://koumbit.org/,200,1787855171
 https://liamcottle.github.io/rnode-flasher/,200,1787855172
 https://liguedesdroits.ca/appel-conjoint-au-retrait-du-projet-de-loi-c-22/,200,1787855173
@@ -376,9 +398,11 @@ https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca,200
 https://live.meshcore.ca/,200,1787855172
 https://livekit.com/,200,1787855172
 https://lora.reseaulibre.ca/,200,1787855172
+https://lora.reseaulibre.ca/3byte/,200,1789785395
 https://lora.reseaulibre.ca/code/,200,1787855173
 https://lora.reseaulibre.ca/contact/,200,1787855174
 https://lora.reseaulibre.ca/fr/,200,1787855170
+https://lora.reseaulibre.ca/fr/3byte/,200,1789785394
 https://lora.reseaulibre.ca/fr/code/,200,1787855171
 https://lora.reseaulibre.ca/fr/contact/,200,1787855170
 https://lora.reseaulibre.ca/fr/guides/faq/,200,1787855170
@@ -408,6 +432,9 @@ https://lora.reseaulibre.ca/fr/news/2026/06/11/notes-de-la-rencontre-r%C3%A9p%C3
 https://lora.reseaulibre.ca/fr/news/2026/06/19/mesh-night-de-juillet/,200,1787855171
 https://lora.reseaulibre.ca/fr/news/2026/07/28/mesh-night-dao%C3%BBt/,200,1787855171
 https://lora.reseaulibre.ca/fr/news/2026/08/26/fire-hazard-on-the-wismesh-pocket/,200,1787855171
+https://lora.reseaulibre.ca/fr/news/2026/08/29/mesh-night-de-septembre/,200,1789785394
+https://lora.reseaulibre.ca/fr/news/2026/09/16/premiers-contacts-entre-montr%C3%A9al-et-qu%C3%A9bec/,200,1789785394
+https://lora.reseaulibre.ca/fr/news/2026/09/18/pri%C3%A8re-dutiliser-le-routage-%C3%A0-3-octets/,200,1789785394
 https://lora.reseaulibre.ca/fr/news/archive/2026/,200,1787855171
 https://lora.reseaulibre.ca/fr/news/archive/2026/page/2/,200,1787855172
 https://lora.reseaulibre.ca/fr/news/category/announcements/,200,1787855172
@@ -454,9 +481,14 @@ https://lora.reseaulibre.ca/news/2026/05/31/june-11-repeater-meetup/,200,1787855
 https://lora.reseaulibre.ca/news/2026/06/19/mesh-night-in-july/,200,1787855174
 https://lora.reseaulibre.ca/news/2026/07/28/mesh-night-in-august/,200,1787855175
 https://lora.reseaulibre.ca/news/2026/08/26/fire-hazard-on-the-wismesh-pocket/,200,1787855174
+https://lora.reseaulibre.ca/news/2026/08/29/mesh-night-in-september/,200,1789785394
+https://lora.reseaulibre.ca/news/2026/09/16/first-contacts-between-montr%C3%A9al-and-qu%C3%A9bec/,200,1789785395
+https://lora.reseaulibre.ca/news/2026/09/18/please-use-3-bytes-routing/,200,1789785394
 https://lora.reseaulibre.ca/news/archive/2026/,200,1787855175
+https://lora.reseaulibre.ca/news/archive/2026/page/2/,200,1789785395
 https://lora.reseaulibre.ca/news/category/announcements/,200,1787855175
 https://lora.reseaulibre.ca/news/category/events/,200,1787855175
+https://lora.reseaulibre.ca/news/page/2/,200,1789785394
 https://lora.reseaulibre.ca/references/,200,1787855175
 https://lora.reseaulibre.ca/references/hardware/,200,1787855175
 https://lora.reseaulibre.ca/references/hardware/antennas/,200,1787855175
@@ -511,6 +543,7 @@ https://meet.element.io/8be4df61-93ca-11d2-aa0d-00e098032b8c,200,1787855172
 https://meet.jit.si/moderated/7166e3ba08dc351aea738c80fe797bcd8555ffcfeb74b31ec26e90e2008d2ef8,200,1787855172
 https://meshchatx.com/,200,1787855172
 https://meshcore.ca/,200,1787855173
+https://meshcore.ca/hardware/repeater-mounting-options/,200,1789785394
 https://meshcore.ca/hardware/repeater-solar-1w-diy-build/,200,1787855171
 https://meshcore.co.uk/,200,1787855170
 https://meshcore.io/#download,200,1787855173
@@ -586,7 +619,9 @@ https://nyme.sh/faq/,200,1787855171
 https://observer.gessaman.com/,200,1787855173
 https://observer.gessaman.com/docs.html,200,1787855173
 https://obtainium.imranr.dev/,200,1787855173
+https://oeis.org/A033810,200,1789785394
 https://openmedia.org/article/item/openmedia-to-secu-withdraw-bill-c-22-or-gut-its-surveillance-provisions,200,1787855173
+https://opensourcesdrlab.com/products/clifford-heath-hackrf-one-with-portapack-h4m?VariantsId=10177,200,1789785395
 https://ottawamesh.ca/,200,1787855170
 https://ottawamesh.ca/fr/meshcore/general-public-channels/,200,1787855173
 https://ottawamesh.ca/hardware/recommended-antenna/,200,1787855172
@@ -607,22 +642,30 @@ https://reticulum.community/,200,1787855173
 https://reticulum.miraheze.org/wiki/,200,1787855173
 https://reticulum.miraheze.org/wiki/Awesome_Reticulum,200,1787855172
 https://reticulum.miraheze.org/wiki/Implementations,200,1787855173
+https://reticulum.miraheze.org/wiki/Interface#Modes,200,1789785395
+https://reticulum.miraheze.org/wiki/Interface#access_point,200,1789785395
+https://reticulum.miraheze.org/wiki/Interface#boundary,200,1789785395
 https://reticulum.miraheze.org/wiki/LoRa_parameters,200,1787855174
 https://reticulum.miraheze.org/wiki/Propagation_node,200,1787855172
+https://reticulum.miraheze.org/wiki/RRC,200,1789785395
 https://reticulum.network/,200,1787855170
 https://reticulum.network/crypto.html,200,1787855173
 https://reticulum.network/manual/git.html,200,1787855172
 https://reticulum.network/manual/interfaces.html#auto-interface,200,1787855172
+https://reticulum.network/manual/interfaces.html#interfaces-modes,200,1789785394
+https://reticulum.rs/,200,1789785394
 https://riseup.net/,200,1787855171
 https://rns.fyi/,200,1787855171
 https://rns.moscow/announce-sim.html,200,1787855172
 https://rns.recipes/,200,1787855173
 https://rns.recipes/forum,200,1787855173
+https://rns.recipes/forum/build-guides/how-to-install-and-test-the-rtnode-firmware#post-124,200,1789785395
 https://rns.recipes/forum/build-guides/how-to-install-and-test-the-rtnode-firmware,200,1787855172
 https://rns.recipes/forum/help/anonymous-nodes-without-i2p,200,1787855173
 https://rns.recipes/forum/showcase/rnode-over-ethernet-rak4631-rak13800-ethernet-module,200,1787855172
 https://rrc.kc1awv.net/,200,1787855172
 https://salsa.debian.org/,200,1787855173
+https://scoat.es/@sean/117207646077486927,200,1789785394
 https://servers.joinmatrix.org/,200,1787855172
 https://shop.attaky.com/products/attaky_mesh_deck?variant=52819861537084,200,1787855171
 https://shop.m5stack.com/pages/m5-cardputerzero,200,1787855171
@@ -670,6 +713,7 @@ https://wiki.reseaulibre.ca/meetings/2012-05-16-decisions/,200,1787855170
 https://wiki.reseaulibre.ca/meetings/2015-01-08/,200,1787855172
 https://wiki.seeedstudio.com/sensecap_t1000_e_meshcore/#button,200,1787855171
 https://wiki.why2025.org/Badge/Fire_hazard,200,1787855170
+https://wnymeshcore.org/guides/repeater-setup,200,1789785395
 https://www.18650batterystore.com/,200,1787855170
 https://www.alfa.com.tw/products/aoa-915-5acm?variant=36473963020360,200,1787855171
 https://www.aliexpress.com/item/1005006633080419.html,200,1787855171
@@ -698,6 +742,7 @@ https://www.contributor-covenant.org/version/3/0/,200,1787855174
 https://www.contributor-covenant.org/version/3/0/code_of_conduct/,200,1787855170
 https://www.elecrow.com/meshtadpole-sx1262-usb-stick.html,200,1787855172
 https://www.elecrow.com/thinknode-m1-meshtastic-lora-signal-transceiver-powered-by-nrf52840-with-154-screen-support-gps.html,200,1787855172
+https://www.gqrx.dk/,200,1789785394
 https://www.heywhatsthat.com/,200,1787855171
 https://www.joanwestenberg.com/communities-are-not-fungible/,200,1787855174
 https://www.jofreeman.com/joreen/tyranny.htm,200,1787855174
