@@ -18,6 +18,8 @@
         <link rel="prev" href="../../26/fire-hazard-on-the-wismesh-pocket/">
       
       
+        <link rel="next" href="../../../09/16/premiers-contacts-entre-montr%C3%A9al-et-qu%C3%A9bec/">
+      
       
         
           <link rel="alternate" href="/" hreflang="en">
@@ -1821,7 +1823,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              2 min read
+                              3 min read
                             
                           </span>
                         </div>
@@ -1853,13 +1855,13 @@
   
 
 
+<p>Vous connaissez le refrain!</p>
+<p>Chaque mois, <a href="https://foulab.org/">Foulab</a>, le "hacker space" de Montréal, tient une
+soirée "mesh" et ce mois-ci n'y fait pas exception!</p>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
 <p>Maintenant avec des notes (en anglais)!</p>
 </div>
-<p>Vous connaissez le refrain!</p>
-<p>Chaque mois, <a href="https://foulab.org/">Foulab</a>, le "hacker space" de Montréal, tient une
-soirée "mesh" et ce mois-ci n'y fait pas exception!</p>
 <!-- more -->
 
 <p>Alors venez nous voir au Mesh Night, ce 2 septembre de 19:00 à 22:00. Nous
@@ -1887,16 +1889,18 @@ following:</p>
   happening</li>
 <li>participated in the Reticulum hacking as well by sending text
   messages with LXMF (think Signal), browsing Nomad pages (think
-  Gopher/Gemini) and joining a RRC (think IRC over Reticulum) channel
+  Gopher/Gemini) and joining a <a href="https://reticulum.miraheze.org/wiki/RRC">RRC</a> (think IRC over Reticulum) channel
   over Nomad net (yes, that impossible to use client, what do you mean
-  <kbd>control-d</kdb> to send, this is not <code>cat(1)</code>)</li>
+  <kbd>control-d</kbd> to send, this is not <code>cat(1)</code>), also found out
+  (but not tested) <a href="https://github.com/l5yth/weechat-rrc"><code>weechat-rrc</code></a></li>
 <li>monitored the airwaves with an software-defined radios like the
   RTL-SDR and a <a href="https://opensourcesdrlab.com/products/clifford-heath-hackrf-one-with-portapack-h4m?VariantsId=10177">Portapack HackRF One</a>, with <a href="https://www.gqrx.dk/">gqrx</a> on Mac and
   Linux</li>
 <li>witnessed the (presumably) smallest Android 13 cell phone, the
   <a href="https://en.wikipedia.org/wiki/Unihertz_Jelly_series">Jelly Star</a> which seems to be deliberately designed to be
   annoying to use, a thing which its owner was very happy about
-  because he was spending less time on his phone</li>
+  because he was spending less time on his phone, "it's a piece of
+  shit and I love it"</li>
 <li>understood that I can hook up my LoRa transport node with the rest
   of the internet-wide Reticulum backbone without flooding LoRa, using
   a <a href="https://reticulum.network/manual/interfaces.html#interfaces-modes">different interface mode</a> (<a href="https://reticulum.miraheze.org/wiki/Interface#Modes">wiki</a>, <a href="https://rns.moscow/announce-sim.html">simulator</a>),
@@ -1905,8 +1909,22 @@ following:</p>
   <a href="https://reticulum.miraheze.org/wiki/Interface#boundary"><code>boundary</code></a> for the internet side (but I kind of just made this
   up while writing this and god this is complicated right now, and
   don't trust this until it turns into a proper <a href="../../../../../guides/meshcore/">guide</a>)</li>
-<li>may devices were backed up, reflashed, tested, monitored and demo'd,
-  including the infamous <a href="../../26/fire-hazard-on-the-wismesh-pocket/">fire hazard previously announced here</a></li>
+<li>debated the various possible LoRa settings we could pick for
+  Reticulum in Montreal, either staying with the Ottawa standard
+  (914.875 MHz, 125 kHz, SF7, CR7) which we modified to SF9, or
+  switching to the more commonly used SF8 or SF10, or both, depending
+  on the location (SF8 for urban, denser networks and SF10 for
+  regions, sparser networks), still unsettled</li>
+<li>argued about large language models</li>
+<li>discussed problems with people deliberately creating collisions on
+  public key hashes to have cute repeater names and how to communicate
+  about this problem (announcement coming)</li>
+<li>many devices were backed up, reflashed, tested, monitored and
+  demo'd, including the infamous <a href="../../26/fire-hazard-on-the-wismesh-pocket/">fire hazard previously announced
+  here</a>, a raspberry pi MeshCore firmware, <a href="https://wadamesh.com/">Wadamesh</a>,
+  <a href="https://codeberg.org/sesivany/meshy">Meshy</a>, <a href="https://discord.gg/AZwe5Uvb3S">Meshterm</a> a word, but no demo or test, on the
+  multi-firmware <a href="https://bmorcelli.github.io/Launcher"><code>bmorcelli/Launcher</code></a> project allowing multiple
+  firmwares to be installed concurrently on a Lilygo T-Deck</li>
 </ul>
 <p>I'm considering making more frequent notes like this of mesh nights so
 people remember what happened and see what we do there. </p>
@@ -1934,7 +1952,7 @@ people can note down there stuff.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="September 4, 2026 03:25:02 UTC">2026-09-04 03:25:02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="September 18, 2026 14:39:43 UTC">2026-09-18 14:39:43</span>
   </span>
 
     
@@ -1998,6 +2016,22 @@ people can note down there stuff.</p>
             </div>
           </a>
         
+        
+          
+          <a href="../../../09/16/premiers-contacts-entre-montr%C3%A9al-et-qu%C3%A9bec/" class="md-footer__link md-footer__link--next" aria-label="Next: Premiers contacts entre Montréal et Québec">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Premiers contacts entre Montréal et Québec
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     

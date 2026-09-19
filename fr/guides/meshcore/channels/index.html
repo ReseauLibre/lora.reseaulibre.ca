@@ -1908,71 +1908,83 @@ messages sent will be visible to an attacker.</p>
 <thead>
 <tr>
 <th>Name</th>
-<th>Hex Key</th>
-<th>Base64</th>
 <th>Purpose</th>
+<th>Hexadecimal secret key</th>
+<th>Base64 secret key</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Public</td>
+<td>General conversations</td>
 <td><code>8b3387e9c5cdea6ac9e5edbaa115cd72</code></td>
 <td><code>izOH6cXN6mrJ5e26oRXNcg==</code></td>
-<td>General conversations</td>
-</tr>
-<tr>
-<td><code>#testing</code></td>
-<td><code>cde5e82cf515647dcb547a79a4f065d1</code></td>
-<td><code>zeXoLPUVZH3LVHp5pPBl0Q==</code></td>
-<td>Should be used for tests</td>
 </tr>
 <tr>
 <td><code>#911</code></td>
+<td>Emergency communications (french)</td>
 <td><code>907a3dd4b73b9d1324b4d6c83425c186</code></td>
 <td><code>kHo91Lc7nRMktNbINCXBhg==</code></td>
-<td>Emergency communications (french)</td>
 </tr>
 <tr>
 <td><code>#emergency</code></td>
+<td>Emergency communications (English)</td>
 <td><code>e1ad578d25108e344808f30dfdaaf926</code></td>
 <td><code>4a1XjSUQjjRICPMN/ar5Jg==</code></td>
-<td>Emergency communications (English)</td>
 </tr>
 <tr>
 <td><code>#meshcore-ops</code></td>
+<td>Operator coordination</td>
 <td><code>dd95f5167774c3967edee5c606bcad43</code></td>
 <td><code>3ZX1Fnd0w5Z+3uXGBrytQw==</code></td>
-<td>Operator coordination</td>
 </tr>
 <tr>
 <td><code>#montreal</code></td>
+<td>Montreal-specific traffic, see also <code>#ottawa</code></td>
 <td><code>0c4c03b5fbea5b80f89e2a2a16ed3f40</code></td>
 <td><code>DEwDtfvqW4D4nioqFu0/QA==</code></td>
-<td>Montreal-specific traffic, see also <code>#ottawa</code></td>
 </tr>
 <tr>
 <td><code>#wardriving</code></td>
+<td>Used by <a href="https://meshmapper.net/">Meshmapper</a> pings</td>
 <td><code>e3c26491e9cd321e3a6be50d57d54acf</code></td>
 <td><code>48JkkenNMh46a+UNV9VKzw==</code></td>
-<td>Used by <a href="https://meshmapper.net/">Meshmapper</a> pings</td>
 </tr>
 <tr>
 <td><code>#habs</code></td>
+<td>Far from real time game updates and gossip</td>
 <td><code>e570409412b40c123b4ab787351ab30b</code></td>
 <td><code>5XBAlBK0DBI7SreHNRqzCw==</code></td>
-<td>Far from real time game updates and gossip</td>
 </tr>
 <tr>
 <td><code>#bots</code></td>
+<td>Where to run bots, a bot replies to <code>test</code> and <code>ping</code>there</td>
 <td><code>0d24f5830b449668b8c221759b6c50d2</code></td>
 <td><code>DST1gwtElmi4wiF1m2xQ0g==</code></td>
-<td>Where to run bots, a bot replies to <code>test</code> and <code>ping</code>there</td>
+</tr>
+<tr>
+<td><code>#betabots</code></td>
+<td>Run bots here before joining <code>#bots</code>, to test</td>
+<td><code>964072df07723403a611c5cec6d6db95</code></td>
+<td><code>lkBy3wdyNAOmEcXOxtbblQ==</code></td>
+</tr>
+<tr>
+<td><code>#testing</code></td>
+<td>A message that just says <code>test</code>? send it here or <code>#test</code></td>
+<td><code>cde5e82cf515647dcb547a79a4f065d1</code></td>
+<td><code>zeXoLPUVZH3LVHp5pPBl0Q==</code></td>
+</tr>
+<tr>
+<td><code>#devtest</code></td>
+<td>To test messages while developing, do <em>not</em> answer messages here</td>
+<td><code>0fd265aa14c00829af942771c742176e</code></td>
+<td><code>D9JlqhTACCmvlCdxx0IXbg==</code></td>
 </tr>
 <tr>
 <td><code>#ceuxquimarchemoyen</code></td>
+<td>Another test channel for people who have trouble</td>
 <td><code>751be125eb7d167e07a95603c9e9a5dd</code></td>
 <td><code>dRvhJet9Fn4HqVYDyeml3Q==</code></td>
-<td>Another test channel for people who have trouble</td>
 </tr>
 </tbody>
 </table>
@@ -2021,7 +2033,7 @@ away with popping up the menu to select the <kbd>Enter</kbd> <kbd>#</kbd> option
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="August 25, 2026 01:56:50 UTC">2026-08-25 01:56:50</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="September 5, 2026 00:25:13 UTC">2026-09-05 00:25:13</span>
   </span>
 
     
