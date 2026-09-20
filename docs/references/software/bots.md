@@ -3,6 +3,17 @@
 This page documents various bots and bridges and how to configure
 them.
 
+We already have lots of new bots. Before setting up a new bot, please:
+
+- consider whether it's really useful: there might already be one bot
+  doing the same thing
+- answer only on a specific prefix like `!test` instead of `test`, to
+  avoid triggering needlessly
+- don't *answer* in a way that might trigger existing bots, to avoid
+  loops
+- document your bot here, or at least on some website
+- be responsive when people ask about your bot
+
 ## Known bots
 
 In this section, we attempt to document the bots known to operate in
