@@ -31,14 +31,15 @@ the greater Montréal area. Ideally, each bot should have:
 - Location: #bots
 - Status: online (2026-09-19)
 - Commands:
-  - `test`, responds with for example: `ack @[VE2CL-V4] | be1d1c,3a79a0,424242,3c7688,bfbeef (5 hops) | SNR: 10.75 dB | RSSI: -90 dBm | Received at: 21:03:17`
-  - `multitest`, responds with e.g.
 
-        @[T MeshPocket] found 3 unique path(s):
-        e8b3ad ┐
-        ├ 8e31d2
-        ├ bf61f2,bfbeef
-        └ c5ba0c,83a50f
+    - `test`, responds with for example: `ack @[VE2CL-V4] | be1d1c,3a79a0,424242,3c7688,bfbeef (5 hops) | SNR: 10.75 dB | RSSI: -90 dBm | Received at: 21:03:17`
+    - `multitest`, responds with e.g.
+
+            @[T MeshPocket] found 3 unique path(s):
+            e8b3ad ┐
+            ├ 8e31d2
+            ├ bf61f2,bfbeef
+            └ c5ba0c,83a50f
 
 ### YUL-Cartierville-bot
 
@@ -46,8 +47,8 @@ the greater Montréal area. Ideally, each bot should have:
 - Location: #bots
 - Status: online (2026-09-19)
 - Commands:
-  - `test`, responds with e.g. `@[anarcat-techo] ✅`
-  - `ping`, responds with `@[anarcat-techo] Pong! 🏓`
+    - `test`, responds with e.g. `@[anarcat-techo] ✅`
+    - `ping`, responds with `@[anarcat-techo] Pong! 🏓`
 
 ### GrosTonyMoni
 
@@ -55,7 +56,7 @@ the greater Montréal area. Ideally, each bot should have:
 - Location: #bots
 - Status: online (2026-09-19)
 - Commands:
-  - `test`, responds with `test reçue de St-Gabriel de Brandon`
+    - `test`, responds with `test reçue de St-Gabriel de Brandon`
 
 ### T Meshcomod
 
@@ -63,9 +64,9 @@ the greater Montréal area. Ideally, each bot should have:
 - Location: #bots
 - Status: online (2026-09-19)
 - Commands:
-  - `test`, responds with `🤖 Copy, @[Vanfax v4] @ 21:43
-Via 4 hops: a319b2→18fe10→bf61f2→e8b3ad`
-  - `help`, responds with `(1/3) Say 'help <command>' for details.
+    - `test`, responds with `🤖 Copy, @[Vanfax v4] @ 21:43
+  Via 4 hops: a319b2→18fe10→bf61f2→e8b3ad`
+    - `help`, responds with `(1/3) Say 'help <command>' for details.
 Commands: advert, announce, aqi (airquality), channels (channel), dice
 (roll), hamcall, hello` `(2/3) (hi/hey/+28), help (cmd/commands), joke (jokes/dadjoke/+10), mbx, moon, path (decode/route), ping (test), repeater (rp), schedule,`
 - Announces new prefix collisions: `Prefix collision: new repeater YOW_Conroy_Repeater shares prefix f0 with Rename_1, YUL-Ste-Julie-Rep2`
@@ -76,9 +77,11 @@ Commands: advert, announce, aqi (airquality), channels (channel), dice
 - Location: #bots
 - Status: unresponsive (2026-09-19)
 - Commands:
-  - `test`, responds with e.g. `🏓 @[VE2FXO-T-Echo]: test!
-📡 3 hops (2f52→c5ba→4444→b9bf)
-💬 ping • test • metar [iata] • clipboard`
+    - `test`, responds with e.g. 
+
+            🏓 @[VE2FXO-T-Echo]: test!
+            📡 3 hops (2f52→c5ba→4444→b9bf)
+            💬 ping • test • metar [iata] • clipboard`
 
 ### CECREVIER.CA/BOT
 
@@ -87,7 +90,7 @@ Commands: advert, announce, aqi (airquality), channels (channel), dice
 - Status: unresponsive (2026-09-19)
 - Homepage: https://cecrevier.ca/bot/
 - Commands:
-  - `test`, responds with e.g. `Vanfax v4: 2 hops: bf61f2>38f52c | clock offset +3s`
+    - `test`, responds with e.g. `Vanfax v4: 2 hops: bf61f2>38f52c | clock offset +3s`
 
 ### YUL-H2E-Ootserver
 
@@ -95,8 +98,8 @@ Commands: advert, announce, aqi (airquality), channels (channel), dice
 - Location: #meteo
 - Status: online (2026-09-19)
 - Commands:
-  - `!weather LOCATION`, responds with `Montréal: 12C, Clear sky`
-  - `!forecast LOCATION`, responds with `Pointe-Au-Pere 5d: | Sun 9/8C Broken | Mon 12/7C Light | Tue 12/9C Clear | Wed 12/9C Clear | Thu 13/11C Clear`
+    - `!weather LOCATION`, responds with `Montréal: 12C, Clear sky`
+    - `!forecast LOCATION`, responds with `Pointe-Au-Pere 5d: | Sun 9/8C Broken | Mon 12/7C Light | Tue 12/9C Clear | Wed 12/9C Clear | Thu 13/11C Clear`
 
 ## Bridging Matrix and Meshtastic
 
