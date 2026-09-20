@@ -101,6 +101,22 @@ Commands: advert, announce, aqi (airquality), channels (channel), dice
     - `!weather LOCATION`, responds with `Montréal: 12C, Clear sky`
     - `!forecast LOCATION`, responds with `Pointe-Au-Pere 5d: | Sun 9/8C Broken | Mon 12/7C Light | Tue 12/9C Clear | Wed 12/9C Clear | Thu 13/11C Clear`
 
+### MG V4-BOT
+
+- Owner: MG V4-mini
+- Location: #bots
+- Status: online (2026-09-19)
+- Commands: astronomy commands, see `mg help` for details, examples:
+    - `mg sun` responds with:
+
+            MG SUN (p1/2)
+            Now Az 302.2° Alt -25.6°
+            Nadir @ 00h48 In 3h18
+            Rise @ 06h39 Az 87.7° In 9h09
+            MG SUN (p2/2)
+            Max @ 12h47 Alt 45.2° In 15h18
+            Set @ 18h55 Az 272.0° In 21h26
+
 ## Bridging Matrix and Meshtastic
 
 A Matrix bridge was in operation on the LongFast channel. It has been
