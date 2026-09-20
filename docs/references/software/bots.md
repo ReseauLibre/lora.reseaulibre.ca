@@ -43,7 +43,7 @@ the greater Montréal area. Ideally, each bot should have:
 
 ### YUL-Cartierville-bot
 
-- Owner: ?
+- Owner: Johnputer
 - Location: #bots
 - Status: online (2026-09-19)
 - Commands:
@@ -60,7 +60,7 @@ the greater Montréal area. Ideally, each bot should have:
 
 ### T Meshcomod
 
-- Owner: ?
+- Owner: T Meshcomod?
 - Location: #bots
 - Status: online (2026-09-19)
 - Commands:
