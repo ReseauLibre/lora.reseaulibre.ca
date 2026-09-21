@@ -219,11 +219,22 @@ computer to operate.
 >
 >     See [this news article for details](../../news/posts/2026-08-26-wismesh-pocket-fire-hazard.md)
 
-## Standalone
+<a id="standalone">
+
+## Standalone & Cyberdecks
 
 Those are day-to-day use device, can you can easily carry in a pocket
 or a pouch. They have a battery and do *not* need a phone or computer
 to operate.
+
+We include here various [cyberdeck](https://en.wikipedia.org/wiki/Cyberdeck) devices which are typically
+home-made, custom-built devices that often runs *more* than LoRa
+firmware, sometimes a full operating system which allows for more
+functionality than a basic standalone device.
+
+Typically, Cyberdecks are hand-crafted, but here we cheat a little and
+list pre-built devices or kits. We encourage people to build their own
+devices and add them to the list!
 
 > [!SUCCESS]
 > - [Heltec v4 prebuilt kit, 50-60USD](https://heltec.org/project/wifi-lora-32-v4-expansion-housing/): touch screen, 18650 flat-top
@@ -265,24 +276,21 @@ to operate.
 > looks like a nice device for home/office setups, but it is [not
 > supported by MeshCore](https://github.com/meshcore-dev/MeshCore/issues/879)
 
-Note that those devices depend on the proprietary Ripple firmware, but
-you can now try the [Wadamesh](https://wadamesh.com/) firmware as well, which is open
-source, and is *much* more intuitive and powerful. Its only downside
-is that it seems to be developed with the help of an LLM (Claude).
+Note that some of the above devices depend on the proprietary Ripple
+firmware. But you can now try the [Wadamesh](https://wadamesh.com/) firmware as well,
+which is open source, and is *much* more intuitive and powerful. Its
+only downside is that it seems to be developed with the help of an LLM
+(Claude).
 
-### Cyberdecks
+### Non-LoRa devices
 
-A special kind of device that's worth its own section is the
-[cyberdeck](https://en.wikipedia.org/wiki/Cyberdeck). That's a custom-built device that often runs *more*
-than the basic firmware, sometimes a full (Linux) operating system
-which allows for more functionality than the basic standalone device.
+Here we also list more powerful machines than simple LoRa
+transmitters.
 
-Typically, Cyberdecks are hand-crafted, but here we cheat a little and
-list pre-built devices or kits.
-
-The main thing that separates this from the above standalone devices is
-that they are more generic Linux computers with more capabilities than
-embedded devices above.
+The main thing that separates this from the above standalone devices
+is that they are more generic Linux computers with more capabilities
+than embedded devices above and typically do *not* ship with a
+built-in LoRa transceiver, which is often a separate add-on.
 
 > [!SUCCESS]
 > - Clockwork PI [uConsole](https://www.clockworkpi.com/uconsole).
@@ -301,13 +309,20 @@ embedded devices above.
 >   which is a real Raspberry Pi underneath, while still being
 >   compatible with the [Cap LoRa 1262](https://shop.m5stack.com/products/cap-lora-1262-for-cardputer-adv-sx1262-atgm336h)
 
-There there is a long list of small computers like the [MNT Reform](https://mntre.com/reform.html)
-[pocket](https://shop.mntre.com/products/mnt-pocket-reform) that are relatively normal computers, without necessarily
-any specific LoRa hardware. But you can still hook up a LoRa modem
-over USB, for example.
+There there also is a long list of small devices that are relatively
+normal computers, without any special LoRa hardware built-in or
+available as a third-party devices. People still use those by hooking
+up a LoRa transceiver over USB, for example:
+
+> [!QUESTION] Untested
+> - [Pocketterm 35](https://www.waveshare.com/pocketterm35.htm), some retrofit a [XIAO ESP32S3 & Wio-SX1262
+>   Kit](https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html) over USB inside
+> - [MNT Reform](https://mntre.com/reform.html) [pocket](https://shop.mntre.com/products/mnt-pocket-reform), [LoRa card still at the idea stage](https://community.mnt.re/t/wifi-card-with-lora/4330)
+> - [Framework](https://frame.work) community working on a [LoRa module](https://community.frame.work/t/lora-expansion-card/47976)
 
 In any case, you'll need software other than the stock (or
-third-party) firmware to talk on the mesh with those devices. The
+third-party) firmware to talk on the mesh with some of those devices,
+particularly if the LoRa transceiver is *not* connected over USB. The
 uconsole has its own [`meshcore-uconsole`](https://github.com/cwill747/meshcore-uconsole) firmware, for others
 there are various wrappers around the [Python library](https://blog.meshcore.io/2026/05/12/pymc-intro) (previously
 called `pyMC`, now called [openHop](https://github.com/openhop-dev)) like [`tui-meshcore`](https://github.com/guax/tui-meshcore).
