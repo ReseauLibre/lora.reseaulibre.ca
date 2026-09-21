@@ -38,6 +38,14 @@ set direct.txdelay 0.5
 
 TODO: rxdelay? https://docs.meshcore.io/cli_commands/#experimental-view-or-change-the-processing-delay-for-received-traffic
 
+## Who?
+
+Those settings have been tested by the following operators and
+repeaters:
+
+- anarcat: YUL-Little-Italy, YUL-Poly, YUL-IDS
+- YOUR NAME HERE!
+
 ## Why?
 
 We are growing fast. In January, there were essentially no MeshCore
