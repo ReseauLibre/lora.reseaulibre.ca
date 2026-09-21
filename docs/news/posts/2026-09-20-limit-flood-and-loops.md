@@ -43,7 +43,7 @@ TODO: rxdelay? https://docs.meshcore.io/cli_commands/#experimental-view-or-chang
 Those settings have been tested by the following operators and
 repeaters:
 
-- anarcat: YUL-Little-Italy, YUL-Poly, YUL-IDS
+- anarcat: YUL-Little-Italy
 - Smog: YMX-J6Y
 - Oots: YUL-H2E-Observer
 
