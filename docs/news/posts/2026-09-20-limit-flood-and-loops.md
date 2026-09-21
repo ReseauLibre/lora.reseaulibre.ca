@@ -1,20 +1,21 @@
 ---
 date:
   created: 2026-09-12
-title: optimizing the Montreal mesh
+title: Please limit adverts, loops and floods
 categories:
-  - Drafts
+  - announcements
 ---
 
-After discussion with key operators in Montreal and its greater area,
-we are suggesting you make the following changes to your repeaters:
+After discussion and testing with key operators in Montreal and its
+greater area, we strongly encourage you to make the following changes
+to your repeaters:
 
 - [Loop detection](https://docs.meshcore.io/cli_commands/#view-or-change-this-nodes-loop-detection): `moderate`, defaults to `off`
 - [Zero hop advert interval](https://docs.meshcore.io/cli_commands/#view-or-change-the-zero-hop-advert-interval): `240` (minutes, defaults to `60`)
 - [Flood advert interval](https://docs.meshcore.io/cli_commands/#view-or-change-the-flood-advert-interval): `47` (hours, defaults to `12`)
 - [Number of hops for a flood message](https://docs.meshcore.io/cli_commands/#limit-the-number-of-hops-for-a-flood-message): `16` (defaults to `64`)
 
-On the command-line, the following is equivalent to setting the above:
+On the command-line, the equivalent is the following commands:
 
 ```
 set loop.detect moderate
@@ -37,7 +38,7 @@ set direct.txdelay 0.5
 
 TODO: rxdelay? https://docs.meshcore.io/cli_commands/#experimental-view-or-change-the-processing-delay-for-received-traffic
 
-# Why?
+## Why?
 
 We are growing fast. In January, there were essentially no MeshCore
 repeaters in Montreal, but since then we have passed the 100 (June)
@@ -51,7 +52,7 @@ immediate fine-tuning we can do to improve our capacity.
 
 So let's look at each setting in turn and see how it helps us.
 
-## Loop detection
+### Loop detection
 
 By default, MeshCore has no loop detection which means it's
 technically possible for a packet to route back onto itself. In March,
@@ -64,7 +65,7 @@ two-byte repeaters to still work in case of conflicts. The change
 *will* impact single-byte routes over conflicting repeaters, so we
 encourage companions to start switching to at least 2-byte.
 
-## Advert limits
+### Advert limits
 
 The other three settings ([Zero hop advert interval](https://docs.meshcore.io/cli_commands/#view-or-change-the-zero-hop-advert-interval), [Flood advert
 interval](https://docs.meshcore.io/cli_commands/#view-or-change-the-flood-advert-interval) and [Number of hops for a flood message](https://docs.meshcore.io/cli_commands/#limit-the-number-of-hops-for-a-flood-message)) are all
@@ -90,3 +91,43 @@ week. It's set to four days minus one hour to creep the flood time by
 one hour every day, to avoid having repeaters always flooding at the
 same time every day.
 
+Looking at the [analytics](https://dev.meshcore.ca/?iata=YUL&tab=Analytics&range=30d), we spend a *lot* of airtime (16%, or
+one out of six packets!)  doing adverts. As of this writing
+(2026-09-20), we have had this number of packets in the last 30 days:
+
+| Payload type      | Count   | Ratio | Note                       |
+|-------------------|---------|-------|----------------------------|
+| Group text        | 271664  | 26%   | Channel messages, good.    |
+| Request           | 262860  | 25%   | Unexpected, see below      |
+| Advert            | 188927  | 16%   | What we want to fix!       |
+| Text message      | 87445   | 8%    | Direct messages            |
+| Response          | 84382   | 8%    | Related to Request         |
+| Control           | 60127   | 6%    |
+| Anonymous request | 43458   | 4%    |
+| Path              | 42249   | 4%    |
+| Others            | ~10000  | ~1%   |
+| **TOTAL**         | 1051112 | 98%   | Forgive the rounding error |
+
+## What about regions?
+
+Regions are... more complicated. They require more in-depth, perhaps
+breaking changes to people's configuration and are not currently
+widely in use. The above settings have been tested on actual repeaters
+and are known to be safe, and will improve the mesh.
+
+## What about those requests?
+
+While writing the "Advert limits" section documentation above, we
+actually found out a large amount of traffic on the mesh was,
+surprisingly, of the payload type ["request"](https://docs.meshcore.io/payloads/#request).
+
+While we would *love* to fix that problem too, we currently do not
+know exactly what is causing this or how to fix it. We are *hoping*
+that people [switching to 3-byte routing](2026-09-18-3-bytes-hash-mode.md) will help with reducing
+the number of such packets that *flood* the network, that said.
+
+## Feedback and comments
+
+In any case, suggestions welcome!
+We welcome comments and feedback on this proposal through [our regular
+contact points](../../contact.md) and the [merge request on Codeberg](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/TODO).
