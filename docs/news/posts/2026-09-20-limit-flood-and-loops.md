@@ -44,7 +44,8 @@ Those settings have been tested by the following operators and
 repeaters:
 
 - anarcat: YUL-Little-Italy, YUL-Poly, YUL-IDS
-- YOUR NAME HERE!
+- Smog: YMX-J6Y
+- Oots: YUL-H2E-Observer
 
 ## Why?
 
