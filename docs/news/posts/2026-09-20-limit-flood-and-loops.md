@@ -45,7 +45,7 @@ repeaters:
 
 - anarcat: YUL-Little-Italy
 - Smog: YMX-J6Y
-- Oots: YUL-H2E-Observer
+- Oots: YUL-Villeray/Garnier
 
 ## Why?
 
