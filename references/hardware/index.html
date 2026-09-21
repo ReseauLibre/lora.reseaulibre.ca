@@ -1807,22 +1807,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#standalone" class="md-nav__link">
+  <a href="#standalone-cyberdecks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Standalone
+        Standalone &amp; Cyberdecks
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Standalone">
+    <nav class="md-nav" aria-label="Standalone &amp; Cyberdecks">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cyberdecks" class="md-nav__link">
+  <a href="#non-lora-devices" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cyberdecks
+        Non-LoRa devices
       
     </span>
   </a>
@@ -2201,28 +2201,39 @@ in particular use triple-click to turn off the buzzer.</li>
   power switch, 3-way encoder button, two LEDs, 250mAh Battery, 60$USD</li>
 </ul>
 </div>
-<!-- > [!FAILURE] -->
+<!-- > [!WARNING] -->
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<div class="admonition failure">
+<p class="admonition-title">Failure</p>
 <ul>
-<li><a href="https://store.rakwireless.com/products/wismesh-pocket">WisMesh Pocket V2</a> Looks nice at first glance: a RAK 4631 kit with GNSS, 1.3" OLED, acceleration sensor, power
-  button, 3200mAh battery, USB-C powered. Battery life excellent.</li>
-</ul>
+<li>
+<p><a href="https://store.rakwireless.com/products/wismesh-pocket">WisMesh Pocket V2</a> Looks nice at first glance: a RAK 4631 kit
+    with GNSS, 1.3" OLED, acceleration sensor, power button, 3200mAh
+    battery, USB-C powered. Battery life excellent.</p>
 <p>But it's expensive (100$USD) especially for the build quality:
-  the 3D print is bad, board mounting pins can get broken off (but
-  can be superglued back in) and the power switch is too close to
-  the battery pouch which can perforate the pouch which is a <strong>fire
-  hazard</strong>.</p>
+the 3D print is bad, board mounting pins can get broken off (but
+can be superglued back in) and the power switch is too close to
+the battery pouch which can perforate the pouch which is a <strong>fire
+hazard</strong>.</p>
 <p><strong>DO NOT BUY THIS DEVICE, FIRE HAZARD</strong>. If you want a RAK4631
-  kit, buy the RAK kit (it's a great chipset!) and get a 3D print
-  elsewhere, for example <a href="#diy-build-on-top-of-the-rak-kit">our DIY buid</a>.</p>
+kit, buy the RAK kit (it's a great chipset!) and get a 3D print
+elsewhere, for example <a href="#diy-build-on-top-of-the-rak-kit">our DIY buid</a>.</p>
 <p>See <a href="../../news/2026/08/26/fire-hazard-on-the-wismesh-pocket/">this news article for details</a></p>
+</li>
+</ul>
 </div>
-<h2 id="standalone">Standalone<a class="headerlink" href="#standalone" title="Permanent link">&para;</a></h2>
+<p><a id="standalone"></p>
+<h2 id="standalone-cyberdecks">Standalone &amp; Cyberdecks<a class="headerlink" href="#standalone-cyberdecks" title="Permanent link">&para;</a></h2>
 <p>Those are day-to-day use device, can you can easily carry in a pocket
 or a pouch. They have a battery and do <em>not</em> need a phone or computer
 to operate.</p>
+<p>We include here various <a href="https://en.wikipedia.org/wiki/Cyberdeck">cyberdeck</a> devices which are typically
+home-made, custom-built devices that often runs <em>more</em> than LoRa
+firmware, sometimes a full operating system which allows for more
+functionality than a basic standalone device.</p>
+<p>Typically, Cyberdecks are hand-crafted, but here we cheat a little and
+list pre-built devices or kits. We encourage people to build their own
+devices and add them to the list!</p>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
 <ul>
@@ -2271,20 +2282,18 @@ looks like a nice device for home/office setups, but it is <a href="https://gith
 supported by MeshCore</a></li>
 </ul>
 </div>
-<p>Note that those devices depend on the proprietary Ripple firmware, but
-you can now try the <a href="https://wadamesh.com/">Wadamesh</a> firmware as well, which is open
-source, and is <em>much</em> more intuitive and powerful. Its only downside
-is that it seems to be developed with the help of an LLM (Claude).</p>
-<h3 id="cyberdecks">Cyberdecks<a class="headerlink" href="#cyberdecks" title="Permanent link">&para;</a></h3>
-<p>A special kind of device that's worth its own section is the
-<a href="https://en.wikipedia.org/wiki/Cyberdeck">cyberdeck</a>. That's a custom-built device that often runs <em>more</em>
-than the basic firmware, sometimes a full (Linux) operating system
-which allows for more functionality than the basic standalone device.</p>
-<p>Typically, Cyberdecks are hand-crafted, but here we cheat a little and
-list pre-built devices or kits.</p>
-<p>The main thing that separates this from the above standalone devices is
-that they are more generic Linux computers with more capabilities than
-embedded devices above.</p>
+<p>Note that some of the above devices depend on the proprietary Ripple
+firmware. But you can now try the <a href="https://wadamesh.com/">Wadamesh</a> firmware as well,
+which is open source, and is <em>much</em> more intuitive and powerful. Its
+only downside is that it seems to be developed with the help of an LLM
+(Claude).</p>
+<h3 id="non-lora-devices">Non-LoRa devices<a class="headerlink" href="#non-lora-devices" title="Permanent link">&para;</a></h3>
+<p>Here we also list more powerful machines than simple LoRa
+transmitters.</p>
+<p>The main thing that separates this from the above standalone devices
+is that they are more generic Linux computers with more capabilities
+than embedded devices above and typically do <em>not</em> ship with a
+built-in LoRa transceiver, which is often a separate add-on.</p>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
 <ul>
@@ -2308,15 +2317,26 @@ and that the trackball is not great. 6-7h runtime, half with a SDR.</li>
   compatible with the <a href="https://shop.m5stack.com/products/cap-lora-1262-for-cardputer-adv-sx1262-atgm336h">Cap LoRa 1262</a></li>
 </ul>
 </div>
-<p>There there is a long list of small computers like the <a href="https://mntre.com/reform.html">MNT Reform</a>
-<a href="https://shop.mntre.com/products/mnt-pocket-reform">pocket</a> that are relatively normal computers, without necessarily
-any specific LoRa hardware. But you can still hook up a LoRa modem
-over USB, for example.</p>
+<p>There there also is a long list of small devices that are relatively
+normal computers, without any special LoRa hardware built-in or
+available as a third-party devices. People still use those by hooking
+up a LoRa transceiver over USB, for example:</p>
+<div class="admonition question">
+<p class="admonition-title">Untested</p>
+<ul>
+<li><a href="https://www.waveshare.com/pocketterm35.htm">Pocketterm 35</a>, some retrofit a <a href="https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html">XIAO ESP32S3 &amp; Wio-SX1262
+  Kit</a> over USB inside</li>
+<li><a href="https://mntre.com/reform.html">MNT Reform</a> <a href="https://shop.mntre.com/products/mnt-pocket-reform">pocket</a>, <a href="https://community.mnt.re/t/wifi-card-with-lora/4330">LoRa card still at the idea stage</a></li>
+<li><a href="https://frame.work">Framework</a> community working on a <a href="https://community.frame.work/t/lora-expansion-card/47976">LoRa module</a></li>
+</ul>
+</div>
 <p>In any case, you'll need software other than the stock (or
-third-party) firmware to talk on the mesh with those devices. The
+third-party) firmware to talk on the mesh with some of those devices,
+particularly if the LoRa transceiver is <em>not</em> connected over USB. The
 uconsole has its own <a href="https://github.com/cwill747/meshcore-uconsole"><code>meshcore-uconsole</code></a> firmware, for others
 there are various wrappers around the <a href="https://blog.meshcore.io/2026/05/12/pymc-intro">Python library</a> (previously
-called <code>pyMC</code>, now called <a href="https://github.com/openhop-dev">openHop</a>) like <a href="https://github.com/guax/tui-meshcore"><code>tui-meshcore</code></a>.</p>
+called <code>pyMC</code>, now called <a href="https://github.com/openhop-dev">openHop</a>) like <a href="https://github.com/guax/tui-meshcore"><code>tui-meshcore</code></a> and
+our very own, Johnputer's <a href="https://meshterm.net">Meshterm</a>.</p>
 <p><a href="https://blog.meshcore.io/2026/05/12/pymc-intro">This blog post</a> explains the <code>pyMC</code> project further and lists a
 couple of devices you can hookup to your computer directly:</p>
 <ul>
@@ -2624,7 +2644,7 @@ you for various reasons:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="September 19, 2026 01:09:58 UTC">2026-09-19 01:09:58</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="September 21, 2026 01:26:45 UTC">2026-09-21 01:26:45</span>
   </span>
 
     
