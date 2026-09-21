@@ -325,7 +325,8 @@ third-party) firmware to talk on the mesh with some of those devices,
 particularly if the LoRa transceiver is *not* connected over USB. The
 uconsole has its own [`meshcore-uconsole`](https://github.com/cwill747/meshcore-uconsole) firmware, for others
 there are various wrappers around the [Python library](https://blog.meshcore.io/2026/05/12/pymc-intro) (previously
-called `pyMC`, now called [openHop](https://github.com/openhop-dev)) like [`tui-meshcore`](https://github.com/guax/tui-meshcore).
+called `pyMC`, now called [openHop](https://github.com/openhop-dev)) like [`tui-meshcore`](https://github.com/guax/tui-meshcore) and
+our very own, Johnputer's [Meshterm](https://meshterm.net).
 
 [This blog post](https://blog.meshcore.io/2026/05/12/pymc-intro) explains the `pyMC` project further and lists a
 couple of devices you can hookup to your computer directly:
