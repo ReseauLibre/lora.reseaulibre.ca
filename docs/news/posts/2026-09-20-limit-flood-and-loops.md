@@ -46,6 +46,8 @@ repeaters:
 - anarcat: YUL-Little-Italy
 - Smog: YMX-J6Y
 - Oots: YUL-Villeray/Garnier
+- VA2DG: VA2DGR Repeater
+- Johnputer: YUL-Cartierville, YUL-UpperSalaberry
 
 ## Why?
 
