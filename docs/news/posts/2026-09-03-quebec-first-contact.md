@@ -23,7 +23,7 @@ Saint-Jean-de-Matha! Thank you for your work!
 
 We're also seeing signs of saturation on the network, with
 communications being less reliable than they were during
-[networks](../../references/net.md). 
+[networks](../../guides/net.md). 
 
 We are working on a proposal to reduce the amount of telemetry and
 noise on the network, following best practices developed in other

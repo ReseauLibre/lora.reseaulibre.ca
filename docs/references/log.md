@@ -1,6 +1,6 @@
 # Net control log
 
-This is the log for the various "[net](net.md)" operated here.
+This is the log for the various "[net](../guides/net.md)" operated here.
 
 We log the following fields:
 
