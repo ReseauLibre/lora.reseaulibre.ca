@@ -13,6 +13,7 @@ nav:
     - history.md
     - Contact: contact.md
     - FAQ: guides/faq.md
+    - Code of Conduct: code.md
   - Guides:
     - MeshCore:
       - guides/meshcore/index.md
@@ -46,7 +47,6 @@ nav:
     - references/net.md
     - references/log.md
     - references/other.md
-    - Code of Conduct: code.md
   - News: news/index.md
 markdown_extensions:
   # Python Markdown
@@ -210,11 +210,6 @@ plugins:
               # redirects thinks it doesn't exist, boooouuuh.
               'events.md': 'news/index.md'
               'blog/index.md': 'news/index.md'
-              # this was used for a couple of days, eventually maybe
-              # we'll use a overview page for the multiple
-              # technologies instead. like "you want $this? pick
-              # meshtastic. you want $that? pick reticulum" and so on.
-              'guides/index.md': 'guides/meshcore/index.md'
               # the hardware page is really a reference more than a guide
               'guides/hardware.md': 'references/hardware/index.md'
               # obscure FAQ URL that came up for less than a day

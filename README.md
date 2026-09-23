@@ -112,6 +112,39 @@ differs between the two because the `site_url` needs the `fr` suffix.
 The last step will require you to setup a remote to your own fork if
 you don't have access to the repository.
 
+## Structure
+
+The documentation is structured partly following the [Diataxis
+method](https://diataxis.fr/) where we separate introduction and in-depth material in
+separate sections. We try to have at least a section (the [guides](guides/index.md),
+but also the "about" menu) that assume as little prior knowledge as
+possible, in opposition to the more in-depth and "dump everything
+there" [references](references/index.md) section.
+
+In guides, instructions are clear, direct, quick and to the
+point.
+
+> [!NOTE]
+> Some instructions can diverge from that path, but they marked
+> clearly with an [admonition](https://squidfunk.github.io/mkdocs-material/reference/admonitions/), like here.
+
+## Links and navigation
+
+The navigation menus are maintained by hand in the `mkdocs.yml`
+file. The build will warn if a file is added to the repository without
+being added to the `nav` dictionary there. Heed those warnings and
+properly add files to the structure. An exception is the blog posts
+which don't need to be individually added.
+
+Each page should somehow be reachable from the front page, but not
+necessarily as a direct link. Each *section* should be linked there,
+and then each page should be listed in each section.
+
+It's a bit cumbersome, but it makes it easier to find pages when
+navigation is less visible, for example on mobile or other renderings
+of the site. (For example, the Reticulum Micron rendering doesn't
+replicate the navigation menus at all and can *only* rely on in-page navigation.)
+
 ## Link checks
 
 The `checklinks` job uses the [Lychee link checker](https://github.com/lycheeverse/lychee/) to check the
@@ -127,6 +160,10 @@ further.
 
 Links truly being mismatched by Lychee can be added to the
 `.lycheeignore` file.
+
+The link checker does *not* enforce the constraint of linking every
+section from the front page and section pages mentioned in the
+previous section, but it should.
 
 ## Spell checking
 
@@ -327,3 +364,36 @@ installation and are not compatible with many images.
 ## Matrix commit bot
 
 Moved to [our Matrix guide](https://lora.reseaulibre.ca/guides/matrix#commit-bot).
+
+## Reticulum publishing
+
+Efforts are under way to publish the site as a Nomadnet Micron site,
+which would make it accessible natively under [Reticulum](guides/reticulum/index.md). The goal
+is to rebuild the site into Micron pages at every push, through
+continuous integration.
+
+So far two separate experiments have started:
+
+ 1. an incomplete [Pandoc output format](https://github.com/jgm/pandoc/issues/11851): this has mostly stopped
+    because Pandoc is much stricter than `mkdocs` in the Markdown
+    format it accepts, and fundamentally renders the site
+    differently. We also haven't implemented *all* the endpoints yet,
+    and have lost focus because of...
+
+ 2. the [`md2mu` converter](https://gitlab.com/anarcat/scripts/-/blob/main/md2mu.py?ref_type=heads) which reuses the [Markdown parser](https://github.com/markqvist/Reticulum/blob/master/RNS/Utilities/rngit/util.py)
+    Mark wrote for [`rngit`](https://reticulum.network/manual/git.html) and, while it is not a correct (or
+    even complete) Markdown implementation, it currently renders
+    better than the above
+
+The correct way to regenerate the Micron site looks like this:
+
+    cd docs/
+    python ~/bin/md2mu.py . -d ~/Projects/nomadnet-pages/
+
+Then point `nomadnet` at the `/home/anarcat/Projects/nomadnet-pages`
+directory. And no, `nomadnet` does not support the `~` expansion, so
+it really needs to be the absolute path there.
+
+The Reticulum version assumes every page is accessible without the
+navigation, as the conversion doesn't currently replicate the
+navigation menus (and, perhaps, shouldn't).

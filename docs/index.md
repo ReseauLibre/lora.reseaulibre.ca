@@ -19,7 +19,8 @@
     We are a group of makers, tech enthusiasts and amateur radio operators dedicated to the deployment and support of off-grid communication.
 
     We are part of a larger planet-wide effort at rethinking
-    fundamental communication systems and industrial society.
+    fundamental communication systems and industrial society. See also
+    our [history](history.md) and [code of conduct](code.md).
     
 -   :octicons-share-android-16: **How**
 
@@ -27,7 +28,10 @@
 
     We are currently focused on [MeshCore](guides/meshcore/index.md) but are experimenting
     with [Reticulum](guides/reticulum/index.md) and amateur radio, but also (previously)
-    [Meshtastic](guides/meshtastic.md) .
+    [Meshtastic](guides/meshtastic.md).
+    
+    Follow our extensive [guides](guides/index.md) and [reference](references/index.md) documentation
+    and keep up with the [news](news/index.md)
 
 -   :octicons-sun-16: **Why**
 
@@ -36,7 +40,8 @@
     Our mission is to provide community-owned resilient communication
     infrastructure for disaster recovery and the local communities.
     
-    We also want to learn, teach, share knowledge and collaborate.
+    We also want to learn, teach, share knowledge and collaborate, see
+    also our [values](values.md).
 
 -   :octicons-flame-16: **Getting started**
 
@@ -57,7 +62,7 @@
 
 This site aims at documenting the project and our knowledge. You can
 change this site through the [Git repository](https://codeberg.org/anarcat/lora-reseaulibre-ca) and by hitting the
-"edit" icon on any page.
+"edit" icon on any page. See also [how this site is built](meta.md).
 
 # MeshCore map
 
