@@ -29,8 +29,10 @@ a "few minuets" to show up, see [this troubleshooting section
 otherwise](https://docs.codeberg.org/codeberg-pages/troubleshooting/#my-content-is-not-updated).
 
 The site was originally built on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) but eventually
-switched to [Zensical](https://zensical.org/), then back to mkdocs-material to get the
-blog working. See their [authoring guide](https://squidfunk.github.io/mkdocs-material/reference/) for more information.
+switched to [Zensical](https://zensical.org/), then back to mkdocs-material because
+[blog](https://github.com/zensical/backlog/issues/30) (fixed) and [RSS](https://github.com/zensical/backlog/issues/27) support are missing.
+
+See the [authoring guide](https://squidfunk.github.io/mkdocs-material/reference/) for more information on formatting the contents.
 
 ## Copyright
 
