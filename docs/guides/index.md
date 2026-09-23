@@ -8,7 +8,7 @@ for multiple mesh protocols and tools.
 > If you're looking for [hardware listings](../references/hardware/index.md), you'll find that in the
 > [references](../references/index.md) along with other documentation.
 
-- [Meshcore](meshcore/index.md): most popular alternative, solid mesh in Montreal, if
+- [MeshCore](meshcore/index.md): most popular alternative, solid mesh in Montreal, if
   you're new, **start here**
 - [Reticulum](reticulum/index.md): currently being tested and researched, if you're
   looking for a **more secure and flexible solution** that works over

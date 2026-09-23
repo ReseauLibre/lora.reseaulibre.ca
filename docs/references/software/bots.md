@@ -25,10 +25,10 @@ the greater Montréal area. Ideally, each bot should have:
 - a homepage (where, ideally, source code is available)
 - an overview of supported commands
 
-### EL-Bot
+### `EL-Bot`
 
-- Owner: EL
-- Location: #bots
+- Owner: `EL`
+- Location: `#bots`
 - Status: online (2026-09-19)
 - Commands:
 
@@ -41,27 +41,27 @@ the greater Montréal area. Ideally, each bot should have:
             ├ bf61f2,bfbeef
             └ c5ba0c,83a50f
 
-### YUL-Cartierville-bot
+### `YUL-Cartierville-bot`
 
-- Owner: Johnputer
-- Location: #bots
+- Owner: `Johnputer`
+- Location: `#bots`
 - Status: online (2026-09-19)
 - Commands:
     - `test`, responds with e.g. `@[anarcat-techo] ✅`
     - `ping`, responds with `@[anarcat-techo] Pong! 🏓`
 
-### GrosTonyMoni
+### `GrosTonyMoni`
 
-- Owner: GrosTonyMobil
-- Location: #bots
+- Owner: `GrosTonyMobil`
+- Location: `#bots`
 - Status: online (2026-09-19)
 - Commands:
     - `test`, responds with `test reçue de St-Gabriel de Brandon`
 
-### T Meshcomod
+### `T Meshcomod`
 
-- Owner: T Meshcomod?
-- Location: #bots
+- Owner: `T Meshcomod`
+- Location: `#bots`
 - Status: online (2026-09-19)
 - Commands:
     - `test`, responds with `🤖 Copy, @[Vanfax v4] @ 21:43
@@ -71,10 +71,10 @@ Commands: advert, announce, aqi (airquality), channels (channel), dice
 (roll), hamcall, hello` `(2/3) (hi/hey/+28), help (cmd/commands), joke (jokes/dadjoke/+10), mbx, moon, path (decode/route), ping (test), repeater (rp), schedule,`
 - Announces new prefix collisions: `Prefix collision: new repeater YOW_Conroy_Repeater shares prefix f0 with Rename_1, YUL-Ste-Julie-Rep2`
 
-### YUL-Bois-Franc-Bot
+### `YUL-Bois-Franc-Bot`
 
 - Owner: ?
-- Location: #bots
+- Location: `#bots`
 - Status: unresponsive (2026-09-19)
 - Commands:
     - `test`, responds with e.g. 
@@ -83,28 +83,28 @@ Commands: advert, announce, aqi (airquality), channels (channel), dice
             📡 3 hops (2f52→c5ba→4444→b9bf)
             💬 ping • test • metar [iata] • clipboard`
 
-### CECREVIER.CA/BOT
+### `CECREVIER.CA/BOT`
 
 - Owner: ?
-- Location: #bots
+- Location: `#bots`
 - Status: unresponsive (2026-09-19)
 - Homepage: https://cecrevier.ca/bot/
 - Commands:
     - `test`, responds with e.g. `Vanfax v4: 2 hops: bf61f2>38f52c | clock offset +3s`
 
-### YUL-H2E-Ootserver
+### `YUL-H2E-Ootserver`
 
-- Owner: Oots
-- Location: #meteo
+- Owner: `Oots`
+- Location: `#meteo`
 - Status: online (2026-09-19)
 - Commands:
     - `!weather LOCATION`, responds with `Montréal: 12C, Clear sky`
     - `!forecast LOCATION`, responds with `Pointe-Au-Pere 5d: | Sun 9/8C Broken | Mon 12/7C Light | Tue 12/9C Clear | Wed 12/9C Clear | Thu 13/11C Clear`
 
-### MG V4-BOT
+### `MG V4-BOT`
 
-- Owner: MG V4-mini
-- Location: #bots
+- Owner: `MG V4-mini`
+- Location: `#bots`
 - Status: online (2026-09-19)
 - Commands: astronomy commands, see `mg help` for details, examples:
     - `mg sun` responds with:
