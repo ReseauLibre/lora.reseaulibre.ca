@@ -10,6 +10,43 @@ We log the following fields:
 - location 
 - hops
 
+## 2026-09-23
+
+First net fully in 3 bytes.
+
+| time  | call sign        | name   | location         | hops |
+|-------|------------------|--------|------------------|------|
+| 21:00 | Mad Jap          | Claude | Marieville       | 6    |
+| 21:00 | Oots             |        | Villeray         | 2    |
+| 21:01 | Zivior-t1000     | Xavier | Ville-Marie      | 5    |
+| 21:02 | LOG.IC           | Martin | Trois-Rivières   | 3    |
+| 21:02 | Muddy            |        | Old Ottawa South | 7    |
+| 21:03 | Argon            |        | Hochelaga        | 4    |
+| 21:04 | Tuppy McMeshface |        | ?                | 6    |
+| 21:04 | ItsMeVino        |        | Nepean / Ottawa  | 8    |
+| 21:06 | Johnputer        | JP     | Cartierville     | 4    |
+| 21:08 | MG V4-mini       | Marc   | Terrebonne       | 3    |
+| 21:10 | VE2CL-V4         | Cédric | La Prairie       | 4    |
+| 21:11 | VE2CCK           | Erik   | Vieux Longueuil  | 3    |
+| 21:19 | Pleb             |        | Greenfield Park  | 4    |
+| 21:28 | VA2HMD           | Dave   | St-Jean          | 7    |
+
+Observed:
+
+- 14 contacts
+- in #bots: CromulentPager and ottobot (both first)
+- in #testing: Wassup?, thanktheory
+- first contacts with Ottawa during the net
+- [227 nodes in the official map](https://map.meshcore.io/?zoom=7&lat=45.7100&lon=-72.6416)
+- [203 repeaters in MeshMapper](https://yul.meshmapper.net/leaderboard.php) (new record)
+
+Announces:
+
+- [Meshterm](https://meshterm.net/) public release
+- [Please use 3 bytes routing](../news/posts/2026-09-18-3-bytes-hash-mode.md)
+- [First contacts between Montréal and Québec](../news/posts/2026-09-03-quebec-first-contact.md)
+- [draft: Please limit adverts, loops and floods #14](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/14)
+
 ## 2026-09-16
 
 | time  | call sign     | name      | location       | hops |
