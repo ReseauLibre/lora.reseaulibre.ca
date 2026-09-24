@@ -71,6 +71,8 @@ Observed:
 - [220 nodes in the official map](https://map.meshcore.io/?zoom=7&lat=45.7100&lon=-72.6416)
 - [201 repeaters in MeshMapper](https://yul.meshmapper.net/leaderboard.php) (new record)
 - furthest contact (Québec, 228km away!)
+- second repeater was removed, which seems to have solved interference
+  problems
 
 ## 2026-09-09
 
@@ -78,7 +80,9 @@ No contacts made. People were receiving me, and I could see the
 responses on the observers, but I received at most 3 messages, no
 replies from bots, very unreliable.
 
-Could be an issue with the repeater setup at home that changed.
+Could be an issue with the repeater setup at home that
+changed. Specifically, a RAK Solar Mini repeater was mounted below the
+Sensecap P1 Pro on the mast, and it is belived it was causing interference.
 
 Observed:
 
