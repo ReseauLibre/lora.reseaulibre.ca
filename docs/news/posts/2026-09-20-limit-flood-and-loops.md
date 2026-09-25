@@ -148,4 +148,4 @@ the number of such packets that *flood* the network, that said.
 
 In any case, we welcome comments and feedback on this proposal through
 [our regular contact points](../../contact.md) and the [merge request on
-Codeberg](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/TODO).
+Codeberg](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/14).
