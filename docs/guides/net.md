@@ -73,7 +73,7 @@ or:
 bienvenue sur le mesh NOM! N hops.
 ```
 
-Write down each contact in the [log](log.md).
+Write down each contact in the [log](../references/log.md).
 
 At the end of the net, check out with:
 
@@ -81,11 +81,11 @@ At the end of the net, check out with:
 Net Control checking out after N contacts.
 ```
 
-Upload the [log](log.md) and publish a link to it on the mesh and the [chat channel](../contact.md).
+Upload the [log](../references/log.md) and publish a link to it on the mesh and the [chat channel](../contact.md).
 
 While you're there, review the node count in the [How many nodes in
 the network?](../guides/faq.md#how-many-nodes-in-the-network) FAQ.
 
 ## Net control log
 
-We keep track of past nets in the [log](log.md).
+We keep track of past nets in the [log](../references/log.md).

@@ -9,11 +9,23 @@ tags:
 
 This is the source code for the new Montreal Mesh website, currently
 hosted at <https://lora.reseaulibre.ca> and backed by Codeberg at
-<https://codeberg.org/anarcat/lora-reseaulibre-ca/>.
+<https://codeberg.org/reseaulibre/lora-reseaulibre-ca/>.
 
 This README file documents the git repository and how to make changes
 to the site. The actual site contents are in the `docs/` directory of
-the [git repository](https://codeberg.org/anarcat/lora-reseaulibre-ca/) or on [lora.reseaulibre.ca](https://lora.reseaulibre.ca).
+the [git repository](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/) or on [lora.reseaulibre.ca](https://lora.reseaulibre.ca).
+
+## Mirrors
+
+The git repository is primarily hosted on Codeberg, but has multiple
+mirrors:
+
+- Codeberg: <https://codeberg.org/reseaulibre/lora-reseaulibre-ca/>
+- sourcehut: <https://git.sr.ht/~anarcat/lora.reseaulibre.ca>
+- GitLab: <https://gitlab.com/reseaulibre/lora.reseaulibre.ca>
+
+Those are synchronized automatically on push in Codeberg or, if
+Codeberg is unavailable, manually.
 
 ## Contributing
 
@@ -34,8 +46,10 @@ a "few minuets" to show up, see [this troubleshooting section
 otherwise](https://docs.codeberg.org/codeberg-pages/troubleshooting/#my-content-is-not-updated).
 
 The site was originally built on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) but eventually
-switched to [Zensical](https://zensical.org/), then back to mkdocs-material to get the
-blog working. See their [authoring guide](https://squidfunk.github.io/mkdocs-material/reference/) for more information.
+switched to [Zensical](https://zensical.org/), then back to mkdocs-material because
+[blog](https://github.com/zensical/backlog/issues/30) (fixed) and [RSS](https://github.com/zensical/backlog/issues/27) support are missing.
+
+See the [authoring guide](https://squidfunk.github.io/mkdocs-material/reference/) for more information on formatting the contents.
 
 ## Copyright
 
@@ -117,6 +131,39 @@ differs between the two because the `site_url` needs the `fr` suffix.
 The last step will require you to setup a remote to your own fork if
 you don't have access to the repository.
 
+## Structure
+
+The documentation is structured partly following the [Diataxis
+method](https://diataxis.fr/) where we separate introduction and in-depth material in
+separate sections. We try to have at least a section (the [guides](guides/index.md),
+but also the "about" menu) that assume as little prior knowledge as
+possible, in opposition to the more in-depth and "dump everything
+there" [references](references/index.md) section.
+
+In guides, instructions are clear, direct, quick and to the
+point.
+
+> [!NOTE]
+> Some instructions can diverge from that path, but they marked
+> clearly with an [admonition](https://squidfunk.github.io/mkdocs-material/reference/admonitions/), like here.
+
+## Links and navigation
+
+The navigation menus are maintained by hand in the `mkdocs.yml`
+file. The build will warn if a file is added to the repository without
+being added to the `nav` dictionary there. Heed those warnings and
+properly add files to the structure. An exception is the blog posts
+which don't need to be individually added.
+
+Each page should somehow be reachable from the front page, but not
+necessarily as a direct link. Each *section* should be linked there,
+and then each page should be listed in each section.
+
+It's a bit cumbersome, but it makes it easier to find pages when
+navigation is less visible, for example on mobile or other renderings
+of the site. (For example, the Reticulum Micron rendering doesn't
+replicate the navigation menus at all and can *only* rely on in-page navigation.)
+
 ## Link checks
 
 The `checklinks` job uses the [Lychee link checker](https://github.com/lycheeverse/lychee/) to check the
@@ -132,6 +179,10 @@ further.
 
 Links truly being mismatched by Lychee can be added to the
 `.lycheeignore` file.
+
+The link checker does *not* enforce the constraint of linking every
+section from the front page and section pages mentioned in the
+previous section, but it should.
 
 ## Spell checking
 
@@ -252,7 +303,7 @@ It allows for pushing arbitrary content to the site.
 A first push is done with:
 
 ```
-curl https://grebedoc.dev/ -X PUT -H "Host: lora.reseaulibre.ca" -H "Authorization: Pages $GIT_PAGES_PASSWORD" --data "https://codeberg.org/anarcat/lora-reseaulibre-ca.git"
+curl https://grebedoc.dev/ -X PUT -H "Host: lora.reseaulibre.ca" -H "Authorization: Pages $GIT_PAGES_PASSWORD" --data "https://codeberg.org/reseaulibre/lora-reseaulibre-ca.git"
 ```
 
 The `Authorization` header might not be necessary since we're passing
@@ -332,3 +383,36 @@ installation and are not compatible with many images.
 ## Matrix commit bot
 
 Moved to [our Matrix guide](https://lora.reseaulibre.ca/guides/matrix#commit-bot).
+
+## Reticulum publishing
+
+Efforts are under way to publish the site as a Nomadnet Micron site,
+which would make it accessible natively under [Reticulum](guides/reticulum/index.md). The goal
+is to rebuild the site into Micron pages at every push, through
+continuous integration.
+
+So far two separate experiments have started:
+
+ 1. an incomplete [Pandoc output format](https://github.com/jgm/pandoc/issues/11851): this has mostly stopped
+    because Pandoc is much stricter than `mkdocs` in the Markdown
+    format it accepts, and fundamentally renders the site
+    differently. We also haven't implemented *all* the endpoints yet,
+    and have lost focus because of...
+
+ 2. the [`md2mu` converter](https://gitlab.com/anarcat/scripts/-/blob/main/md2mu.py?ref_type=heads) which reuses the [Markdown parser](https://github.com/markqvist/Reticulum/blob/master/RNS/Utilities/rngit/util.py)
+    Mark wrote for [`rngit`](https://reticulum.network/manual/git.html) and, while it is not a correct (or
+    even complete) Markdown implementation, it currently renders
+    better than the above
+
+The correct way to regenerate the Micron site looks like this:
+
+    cd docs/
+    python ~/bin/md2mu.py . -d ~/Projects/nomadnet-pages/
+
+Then point `nomadnet` at the `/home/anarcat/Projects/nomadnet-pages`
+directory. And no, `nomadnet` does not support the `~` expansion, so
+it really needs to be the absolute path there.
+
+The Reticulum version assumes every page is accessible without the
+navigation, as the conversion doesn't currently replicate the
+navigation menus (and, perhaps, shouldn't).

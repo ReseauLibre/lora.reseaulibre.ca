@@ -1,4 +1,4 @@
-personal_ws-1.1 en 253 
+personal_ws-1.1 en 256 
 AEAD
 AES
 APRS
@@ -38,6 +38,7 @@ DMs
 DNS
 Delson
 Dennet
+Diataxis
 Digikey
 Draupnir
 ECB
@@ -132,6 +133,7 @@ OLSR
 OTA
 Obtainium
 PRNS
+Pandoc
 Patrie
 Pico
 Pointe
@@ -242,6 +244,7 @@ reachability
 reflashtic
 socio
 solarpunk
+sourcehut
 systemd
 th
 topologies

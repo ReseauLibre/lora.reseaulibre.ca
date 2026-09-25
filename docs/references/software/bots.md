@@ -1,6 +1,121 @@
 # Bots and bridges
 
-This page documents various bots and bridges and how to configure them.
+This page documents various bots and bridges and how to configure
+them.
+
+We already have lots of new bots. Before setting up a new bot, please:
+
+- consider whether it's really useful: there might already be one bot
+  doing the same thing
+- answer only on a specific prefix like `!test` instead of `test`, to
+  avoid triggering needlessly
+- don't *answer* in a way that might trigger existing bots, to avoid
+  loops
+- document your bot here, or at least on some website
+- be responsive when people ask about your bot
+
+## Known bots
+
+In this section, we attempt to document the bots known to operate in
+the greater Montréal area. Ideally, each bot should have:
+
+- an owner
+- a location
+- whether it is still operational (and when that was checked)
+- a homepage (where, ideally, source code is available)
+- an overview of supported commands
+
+### `EL-Bot`
+
+- Owner: `EL`
+- Location: `#bots`
+- Status: online (2026-09-19)
+- Commands:
+
+    - `test`, responds with for example: `ack @[VE2CL-V4] | be1d1c,3a79a0,424242,3c7688,bfbeef (5 hops) | SNR: 10.75 dB | RSSI: -90 dBm | Received at: 21:03:17`
+    - `multitest`, responds with e.g.
+
+            @[T MeshPocket] found 3 unique path(s):
+            e8b3ad ┐
+            ├ 8e31d2
+            ├ bf61f2,bfbeef
+            └ c5ba0c,83a50f
+
+### `YUL-Cartierville-bot`
+
+- Owner: `Johnputer`
+- Location: `#bots`
+- Status: online (2026-09-19)
+- Commands:
+    - `test`, responds with e.g. `@[anarcat-techo] ✅`
+    - `ping`, responds with `@[anarcat-techo] Pong! 🏓`
+
+### `GrosTonyMoni`
+
+- Owner: `GrosTonyMobil`
+- Location: `#bots`
+- Status: online (2026-09-19)
+- Commands:
+    - `test`, responds with `test reçue de St-Gabriel de Brandon`
+
+### `T Meshcomod`
+
+- Owner: `T Meshcomod`
+- Location: `#bots`
+- Status: online (2026-09-19)
+- Commands:
+    - `test`, responds with `🤖 Copy, @[Vanfax v4] @ 21:43
+  Via 4 hops: a319b2→18fe10→bf61f2→e8b3ad`
+    - `help`, responds with `(1/3) Say 'help <command>' for details.
+Commands: advert, announce, aqi (airquality), channels (channel), dice
+(roll), hamcall, hello` `(2/3) (hi/hey/+28), help (cmd/commands), joke (jokes/dadjoke/+10), mbx, moon, path (decode/route), ping (test), repeater (rp), schedule,`
+- Announces new prefix collisions: `Prefix collision: new repeater YOW_Conroy_Repeater shares prefix f0 with Rename_1, YUL-Ste-Julie-Rep2`
+
+### `YUL-Bois-Franc-Bot`
+
+- Owner: ?
+- Location: `#bots`
+- Status: unresponsive (2026-09-19)
+- Commands:
+    - `test`, responds with e.g. 
+
+            🏓 @[VE2FXO-T-Echo]: test!
+            📡 3 hops (2f52→c5ba→4444→b9bf)
+            💬 ping • test • metar [iata] • clipboard`
+
+### `CECREVIER.CA/BOT`
+
+- Owner: ?
+- Location: `#bots`
+- Status: unresponsive (2026-09-19)
+- Homepage: https://cecrevier.ca/bot/
+- Commands:
+    - `test`, responds with e.g. `Vanfax v4: 2 hops: bf61f2>38f52c | clock offset +3s`
+
+### `YUL-H2E-Ootserver`
+
+- Owner: `Oots`
+- Location: `#meteo`
+- Status: online (2026-09-19)
+- Commands:
+    - `!weather LOCATION`, responds with `Montréal: 12C, Clear sky`
+    - `!forecast LOCATION`, responds with `Pointe-Au-Pere 5d: | Sun 9/8C Broken | Mon 12/7C Light | Tue 12/9C Clear | Wed 12/9C Clear | Thu 13/11C Clear`
+
+### `MG V4-BOT`
+
+- Owner: `MG V4-mini`
+- Location: `#bots`
+- Status: online (2026-09-19)
+- Commands: astronomy commands, see `mg help` for details, examples:
+    - `mg sun` responds with:
+
+            MG SUN (p1/2)
+            Now Az 302.2° Alt -25.6°
+            Nadir @ 00h48 In 3h18
+            Rise @ 06h39 Az 87.7° In 9h09
+            MG SUN (p2/2)
+            Max @ 12h47 Alt 45.2° In 15h18
+            Set @ 18h55 Az 272.0° In 21h26
 
 ## Bridging Matrix and Meshtastic
 

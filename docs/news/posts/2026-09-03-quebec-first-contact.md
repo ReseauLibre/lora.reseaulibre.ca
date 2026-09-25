@@ -24,7 +24,7 @@ Saint-Jean-de-Matha! Merci pour votre travail!
 
 Nous voyons également des signes de saturation du réseau. Les
 communications sont des moins en moins fiables durant les
-[réseaux](../../references/net.md).
+[réseaux](../../guides/net.md).
 
 Nous travaillons à une proposition pour réduire la quantité de
 messages de télémetrie et de bruit sur le réseau, en suivant les

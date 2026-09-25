@@ -31,23 +31,28 @@ un [réseau "mesh"](https://fr.wikipedia.org/wiki/R%C3%A9seau_maill%C3%A9) dans 
     fondements de nos systèmes de communication et l'organisation de
     la société industrielle.
     
+    Voir aussi notre [historique](history.md) et [code de
+    conduite](code.md).
+    
 -   :octicons-share-android-16: **How**
 
     ---
 
-    Nous travaillons pour l'instant sur le protocole [MeshCore](guides/meshcore/index.md)
-    mais expérimentons également avec [Reticulum](https://reticulum.network/) et la [radio
+    Nous travaillons pour l'instant sur le protocole [MeshCore](guides/meshcore/index.md) 
+    mais expérimentons également avec [Reticulum](guides/reticulum/index.md) et la [radio
     amateur](https://en.wikipedia.org/wiki/Amateur_radio) mais aussi (précédemment) [Meshtastic](guides/meshtastic.md).
+
+    Suivi nos [guides](guides/index.md) et documentation de
+    [référence](references/index.md) et suivez no [nouvelles](news/index.md).
 
 -   :octicons-sun-16: **Why**
 
     ---
-
     Notre mission est de fournir des communications robustes pour la
     reprise après sinistre, les urgences et les communautés locales.
     
     Nous cherchons à apprendre, enseigner, partager nos connaissances
-    et collaborer.
+    et collaborer, voir aussi nos [valeurs](values.md).
 
 -   :octicons-flame-16: **Pour commencer**
 
@@ -67,8 +72,8 @@ un [réseau "mesh"](https://fr.wikipedia.org/wiki/R%C3%A9seau_maill%C3%A9) dans 
 </div>
 
 Ce site vise à documenter le projet et nos connaissances. Vous pouvez
-modifier le site par le [dépôt Git](https://codeberg.org/anarcat/lora-reseaulibre-ca) et en cliquant le bouton
-"éditer" sur une page.
+modifier le site par le [dépôt Git](https://codeberg.org/reseaulibre/lora-reseaulibre-ca) et en cliquant le bouton
+"éditer" sur une page. Voir aussi [comment ce site fonctionne](meta.md).
 
 # Carte MeshCore
 

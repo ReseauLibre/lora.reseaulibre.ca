@@ -55,4 +55,4 @@ et la rencontre Réseau Libre, le jeudi de la semaine suivant Mesh night.
 ## Signaler un problème
 
 Si vous trouvez un problème dans ce site web, ou échouez à utiliser
-une des options ci-haut, [signalez le bogue](https://codeberg.org/anarcat/lora-reseaulibre-ca/issues/new).
+une des options ci-haut, [signalez le bogue](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/issues/new).

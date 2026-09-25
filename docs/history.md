@@ -126,7 +126,7 @@ censorship are pervasive on all those platforms. The internet is
 present, and the challenges are tremendous.
 
 But what is sure is that 2026 brings a lot of momentum, and the future
-is unwritten. What was left as a dead experiment has been revived, and
+is unwritten (or [being written](news/index.md)). What was left as a dead experiment has been revived, and
 we will always have [hope](https://godspeedyoublackemperor.bandcamp.com/album/f-a).
 
 — anarcat, 2026-03-25

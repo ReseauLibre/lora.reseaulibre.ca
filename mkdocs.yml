@@ -13,7 +13,9 @@ nav:
     - Histoire: history.md
     - Contact: contact.md
     - FAQ: guides/faq.md
+    - Code de conduite: code.md
   - Guides:
+    - guides/index.md
     - MeshCore:
       - guides/meshcore/index.md
       - guides/meshcore/companion.md
@@ -27,6 +29,7 @@ nav:
       - guides/reticulum/meshcore.md
       - guides/reticulum/rtnode.md
     - Meshtastic: guides/meshtastic.md
+    - guides/net.md
     - Matrix: guides/matrix.md
     - FAQ: guides/faq.md
   - Références:
@@ -43,10 +46,8 @@ nav:
         - references/maps.md
         - Meta: meta.md
     - references/neighbours.md
-    - references/net.md
     - references/log.md
     - references/other.md
-    - Code de conduite: code.md
   - News: news/index.md
 markdown_extensions:
   # Python Markdown
@@ -212,16 +213,12 @@ plugins:
               # redirects thinks it doesn't exist, boooouuuh.
               'events.md': 'news/index.md'
               'blog/index.md': 'news/index.md'
-              # this was used for a couple of days, eventually maybe
-              # we'll use a overview page for the multiple
-              # technologies instead. like "you want $this? pick
-              # meshtastic. you want $that? pick reticulum" and so on.
-              'guides/index.md': 'guides/meshcore/index.md'
               # the hardware page is really a reference more than a guide
               'guides/hardware.md': 'references/hardware/index.md'
               # obscure FAQ URL that came up for less than a day
               'guides/z_faq.md': 'guides/faq.md'
               'references/mmrelay.md': 'guides/matrix.md#bridging-matrix-and-meshtastic'
+              'references/net.md': 'guides/net.md'
               # convenience shortcut
               '3byte.md': 'news/posts/2026-09-18-3-bytes-hash-mode.md'
 #   # a bunch more possible plugins

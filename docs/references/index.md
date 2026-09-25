@@ -4,6 +4,10 @@ This section contains more theoretical knowledge and documentation
 that will typically not be fully read from top to bottom but
 *consulted*.
 
+> [!TIP]
+> If you're new here or just want to get started, you more likely want
+> to read up on our [Guides](../guides/index.md) instead.
+
 We cover a bunch of topics here, namely:
 
 - [Hardware](hardware/index.md): more in-depth review and inventory of
