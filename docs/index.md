@@ -61,7 +61,7 @@
 </div>
 
 This site aims at documenting the project and our knowledge. You can
-change this site through the [Git repository](https://codeberg.org/anarcat/lora-reseaulibre-ca) and by hitting the
+change this site through the [Git repository](https://codeberg.org/reseaulibre/lora-reseaulibre-ca) and by hitting the
 "edit" icon on any page. See also [how this site is built](meta.md).
 
 # MeshCore map

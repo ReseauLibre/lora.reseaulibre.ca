@@ -44,4 +44,4 @@ night.
 ## Issues
 
 If you find an issue with this website, or fail to use all the above
-options, [file an issue](https://codeberg.org/anarcat/lora-reseaulibre-ca/issues/new).
+options, [file an issue](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/issues/new).

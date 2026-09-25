@@ -4,11 +4,11 @@
 
 This is the source code for the new Montreal Mesh website, currently
 hosted at <https://lora.reseaulibre.ca> and backed by Codeberg at
-<https://codeberg.org/anarcat/lora-reseaulibre-ca/>.
+<https://codeberg.org/reseaulibre/lora-reseaulibre-ca/>.
 
 This README file documents the git repository and how to make changes
 to the site. The actual site contents are in the `docs/` directory of
-the [git repository](https://codeberg.org/anarcat/lora-reseaulibre-ca/) or on [lora.reseaulibre.ca](https://lora.reseaulibre.ca).
+the [git repository](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/) or on [lora.reseaulibre.ca](https://lora.reseaulibre.ca).
 
 ## Mirrors
 
@@ -298,7 +298,7 @@ It allows for pushing arbitrary content to the site.
 A first push is done with:
 
 ```
-curl https://grebedoc.dev/ -X PUT -H "Host: lora.reseaulibre.ca" -H "Authorization: Pages $GIT_PAGES_PASSWORD" --data "https://codeberg.org/anarcat/lora-reseaulibre-ca.git"
+curl https://grebedoc.dev/ -X PUT -H "Host: lora.reseaulibre.ca" -H "Authorization: Pages $GIT_PAGES_PASSWORD" --data "https://codeberg.org/reseaulibre/lora-reseaulibre-ca.git"
 ```
 
 The `Authorization` header might not be necessary since we're passing
