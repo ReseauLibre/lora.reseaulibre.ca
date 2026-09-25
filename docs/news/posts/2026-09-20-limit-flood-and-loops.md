@@ -1,23 +1,24 @@
 ---
 date:
   created: 2026-09-25
-title: Please limit adverts, loops and floods
+title: Prière de limiter les annonces, boucles et "floods"
 categories:
   - announcements
 ---
 
-Things are moving fast in the mesh!
+Ça bouge sur le mesh!
 
-After discussion and testing with key operators in Montreal and its
-greater area, we strongly encourage you to make the following changes
-to your repeaters:
+Après des discussions et tests avec plusieurs personnes clé à
+Montréal et ses environs, nous vous encourageons fortement à faire les
+changement suivants sur vos répéteurs:
 
-- [Loop detection](https://docs.meshcore.io/cli_commands/#view-or-change-this-nodes-loop-detection): `moderate`, defaults to `off`
-- [Zero hop advert interval](https://docs.meshcore.io/cli_commands/#view-or-change-the-zero-hop-advert-interval): `240` (minutes, defaults to `60`)
-- [Flood advert interval](https://docs.meshcore.io/cli_commands/#view-or-change-the-flood-advert-interval): `47` (hours, defaults to `12`)
-- [Number of hops for a flood message](https://docs.meshcore.io/cli_commands/#limit-the-number-of-hops-for-a-flood-message): `16` (defaults to `64`)
 
-On the command-line, the equivalent is the following commands:
+- [Loop detection](https://docs.meshcore.io/cli_commands/#view-or-change-this-nodes-loop-detection): `moderate`, `off` par défaut
+- [Zero hop advert interval](https://docs.meshcore.io/cli_commands/#view-or-change-the-zero-hop-advert-interval): `240` (en minutes, `60` par défaut)
+- [Flood advert interval](https://docs.meshcore.io/cli_commands/#view-or-change-the-flood-advert-interval): `47` (en heures, `12` par défaut)
+- [Number of hops for a flood message](https://docs.meshcore.io/cli_commands/#limit-the-number-of-hops-for-a-flood-message): `16` (`64` par défaut)
+
+Sur la ligne de commande, c'est équivalent aux commandes suivantes:
 
 ```
 set loop.detect moderate
@@ -26,26 +27,26 @@ set flood.advert.interval 47
 set flood.max 16
 ```
 
-For repeaters with many neighbors (30-50), we also advise raising `txdelay`
+Pour les répéteurs avec plusieurs voisins (30-50), nous conseillons
+également d'augmenter le `txdelay`:
 
-- [Re-transmit delay for flood traffic](https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-flood-traffic): `1` (defaults to `0.5`)
-- [Re-transmit delay for direct traffic](https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-direct-traffic): `0.5` (defaults to `0.2`)
+- [Re-transmit delay for flood traffic](https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-flood-traffic): `1` (`0.5` par défaut)
+- [Re-transmit delay for direct traffic](https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-direct-traffic): `0.5` (`0.2` par défaut)
 
-Command-line equivalent:
+Commandes équivalentes:
 
 ```
 set txdelay 1
 set direct.txdelay 0.5
 ```
 
-We do not currently have a recommendation on changing [`rxdelay`]( https://docs.meshcore.io/cli_commands/#experimental-view-or-change-the-processing-delay-for-received-traffic).
+Nous ne recommandons pas présentement de changer le [`rxdelay`]( https://docs.meshcore.io/cli_commands/#experimental-view-or-change-the-processing-delay-for-received-traffic).
 
 <!-- more -->
 
-## Who?
+## Qui?
 
-Those settings have been tested by the following operators and
-repeaters:
+Ces réglages ont été testés par les opérateurs-trices et répéteurs suivants:
 
 - `anarcat`: `YUL-Little-Italy`
 - Smog: `YMX-J6Y`
@@ -53,99 +54,105 @@ repeaters:
 - `VA2DG`: `VA2DGR Repeater`
 - `Johnputer`: `YUL-Cartierville`, `YUL-UpperSalaberry`
 
-## Why?
+## Pourquoi?
 
-We are growing fast. In January, there were essentially no MeshCore
-repeaters in Montreal, but since then we have passed the 100 (June)
-then 200 (August) repeater mark quickly. We are on the verge of
-connecting all the way from Ottawa to Québec city, which would bring
-the total number of repeaters closer to a thousand.
+On grandit vite! En Janvier, il n'y avait essentiellement aucun
+répéteur MeshCore à Montréal, mais nous avons depuis passé le cap des
+100 (en juinx) puis 200 (août) rapidement. Nous sommes sur le point de
+connecter Ottawa et Québec, ce qui nous amènerait à environ un millier
+de répéteurs.
 
-And while we should eventually think about how to segment this traffic
-with regions, that is a more complex and controversial topic than some
-immediate fine-tuning we can do to improve our capacity.
+Et bien qu'il faut éventuellement réfléchir à comment segmenter le
+réseau en régions, ceci est un projet plus complexe et controversé que
+les quelques modifications proposées ici pour améliorer notre capacité.
 
-So let's look at each setting in turn and see how it helps us.
+Voyons donc chaque réglage à tour de rôle et comment ils nous aident.
 
-### Loop detection
+### Détection de boucles
 
-By default, MeshCore has no loop detection which means it's
-technically possible for a packet to route back onto itself. In March,
-[MeshCore 1.14 introduced loop detection](https://buymeacoffee.com/ripplebiz/path-diagnostics-improvements) but did not turn it on by
-default.
+Par défaut, MeshCore n'a pas de détection de boucle, ce qui signifie
+qu'il est techniquement possible pour un paquet de repasser par un
+point déjà visité. En Mars, [MeshCore 1.14 a introduit la détection de
+boucle](https://buymeacoffee.com/ripplebiz/path-diagnostics-improvements) mais ne l'a pas activé par défaut.
 
-With more widespread adoption of multi-byte hash mode, we believe it
-is a safe setting: the setting was picked because we want people using
-two-byte repeaters to still work in case of conflicts. The change
-*will* impact single-byte routes over conflicting repeaters, so we
-encourage companions to start switching to at least 2-byte.
+Avec une [adoption plus large des modes multi-octet](2026-09-18-3-bytes-hash-mode.md), nous croyons
+qu'il s'agit d'un réglage sans danger: le réglage a été choisi parce
+que nous voulons que les répéteurs à 2 octet fonctionnnent toujours en
+cas de conflit.
 
-### Advert limits
+Le changement aura un impact sur les répéteurs à simple octet qui sont
+en double, alors nous encourageons les compagnons à [passer en mode
+multi-octet](2026-09-18-3-bytes-hash-mode.md).
 
-The other three settings ([Zero hop advert interval](https://docs.meshcore.io/cli_commands/#view-or-change-the-zero-hop-advert-interval), [Flood advert
-interval](https://docs.meshcore.io/cli_commands/#view-or-change-the-flood-advert-interval) and [Number of hops for a flood message](https://docs.meshcore.io/cli_commands/#limit-the-number-of-hops-for-a-flood-message)) are all
-designed to reduce non-content traffic on the mesh.
+### Limiter les annonces
 
-Adverts are the single largest packet on the mesh and use the most
-airtime of any packet. And while they are nice in that they show us
-where repeaters are, they are not actually required for the mesh to
-function.
+Les trois autres réglages ([Zero hop advert interval](https://docs.meshcore.io/cli_commands/#view-or-change-the-zero-hop-advert-interval), [Flood advert
+interval](https://docs.meshcore.io/cli_commands/#view-or-change-the-flood-advert-interval) and [Number of hops for a flood message](https://docs.meshcore.io/cli_commands/#limit-the-number-of-hops-for-a-flood-message)) sont tous
+conçus pour limiter le trafic de télémétrie sur le mesh.
 
-Right now, adverts are flooding the UK and pacific northwest meshes
-right now, as they have passed a critical mass where the frequency of
-adverts times the number of repeaters essentially means the mesh is
-constantly relaying telemetry instead of content.
+Les annonces sont le plus gros paquet sur le mesh, et utilisent donc
+le plus grand temps d'antenne. Et bien qu'ils sont utiles parce qu'ils
+montrent où sont les répéteurs, ils ne sont en fait pas nécessaire
+pour faire fonctionner le mesh.
 
-The local (non-flood) advert interval was raised from one hour to six
-hours, to make sure companions would see local repeaters appear within
-their first day.
+Présentement, les annonces inondent les mesh du UK et du Pacific
+Northwest. Ils ont passé la masse critique où le produit du nombre de
+relais et de la fréquence d'annonce implique que le mesh relaient
+constamment de la télémétrie au lieu du contenu.
 
-The flood advert inter is raised from twice a day to once every *four*
-days, which still allows for building a good map over the course of a
-week. It's set to four days minus one hour to creep the flood time by
-one hour every day, to avoid having repeaters always flooding at the
-same time every day.
+L'intervalle d'annonce locale a été augmenté de une à six heures, pour
+s'assurer que les nouveaux compagnons voient les relais locaux
+apparaître durant le premier jour.
 
-Looking at the [analytics](https://dev.meshcore.ca/?iata=YUL&tab=Analytics&range=30d), we spend a *lot* of airtime (16%, or
-one out of six packets!)  doing adverts. As of this writing
-(2026-09-20), we have had this number of packets in the last 30 days:
+L'intervalle d'annonce "flood" (inondée?) pass de deux fois par jour à
+une fois tous les *quatre* jours, ce qui permet encore de construire
+une bonne carte du réseau sur une semaine. Elle est réglée à 4 jours
+moins une heure pour que l'heure d'annonce recule d'une heure chaque
+jour, pour éviter que les relais inondent toujours à la même heure
+chaque jour.
 
-| Payload type      | Count   | Ratio | Note                       |
-|-------------------|---------|-------|----------------------------|
-| Group text        | 271664  | 26%   | Channel messages, good.    |
-| Request           | 262860  | 25%   | Unexpected, see below      |
-| Advert            | 188927  | 16%   | What we want to fix!       |
-| Text message      | 87445   | 8%    | Direct messages            |
-| Response          | 84382   | 8%    | Related to Request         |
+En regardant les [métriques](https://dev.meshcore.ca/?iata=YUL&tab=Analytics&range=30d), on voit qu'on passe beaucoup de temps
+(16%, ou un paquet sur six!) à faire des annonces. Au moment d'écrire
+ces lignes (2026-09-20), nous avons ce nombre de paquets durant les
+dernier 30 jours:
+
+| Type              | Nombre  | Ratio | Note                                |
+|-------------------|---------|-------|-------------------------------------|
+| Group text        | 271664  | 26%   | Messages sur les canaux, bien.      |
+| Request           | 262860  | 25%   | Innattendu, voir ci-base            |
+| Advert            | 188927  | 16%   | Ce qu'on veut résoudre!             |
+| Text message      | 87445   | 8%    | Messages privés                     |
+| Response          | 84382   | 8%    | Relié aux "Request"                 |
 | Control           | 60127   | 6%    |
 | Anonymous request | 43458   | 4%    |
 | Path              | 42249   | 4%    |
 | Others            | ~10000  | ~1%   |
-| **TOTAL**         | 1051112 | 98%   | Forgive the rounding error |
+| **TOTAL**         | 1051112 | 98%   | Pardonnez l'erreur d'arrondissement |
 
-## What about regions?
+## Et que fait-on des régions?
 
-Regions are... more complicated. They require more in-depth, perhaps
-breaking changes to people's configuration and are not currently
-widely in use. The above settings have been tested on actual repeaters
-and are known to be safe, and will improve the mesh.
+Les régions sont... plus compliquées. Elles demandent des changements
+plus approfondis, possiblement en rupture, aux configurations et ne
+sont pas généralement utilisés. Les réglages ci-haut ont été testés
+sur des relais et sont connus comme étant sans danger, tout en
+améliorant le mesh.
 
-That said, there is a [new regions proposal being discussed](https://meshcore.ca/proposals/onqc-scopes/) which
-we will likely bring up here next.
+Ceci dit, il y a pésentement une [nouvelle proposition de régions en
+discussion](https://meshcore.ca/proposals/onqc-scopes/) que nous ramènerons ici bientôt.
 
-## What about those requests?
+## Et que faire des requêtes?
 
-While writing the "Advert limits" section documentation above, we
-actually found out a large amount of traffic on the mesh was,
-surprisingly, of the payload type ["request"](https://docs.meshcore.io/payloads/#request).
+En écrivant la section ci-haut, nous avons découvert avec surprise une
+grande quantité de trafic sur le mesh qui était du type
+["request"](https://docs.meshcore.io/payloads/#request).
 
-While we would *love* to fix that problem too, we currently do not
-know exactly what is causing this or how to fix it. We are *hoping*
-that people [switching to 3-byte routing](2026-09-18-3-bytes-hash-mode.md) will help with reducing
-the number of such packets that *flood* the network, that said.
+Nous aimerions régler ce problème également, mais nous ne savons pas
+quelle en est la cause, ou comment le résoudre. Nous espérons que de
+changer au [routage multi-octet](2026-09-18-3-bytes-hash-mode.md) va améliorer le nombre de paquets
+du genre qui vont inonder le réseau, ceci dit.
 
-## Feedback and comments
+## Commentaires
 
-In any case, we welcome comments and feedback on this proposal through
-[our regular contact points](../../contact.md) and the [merge request on
-Codeberg](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/14).
+Dans tous les cas, nous aimerions avoir vos commentaires sur cette
+proposition par nos [points de contact habituels](../../contact.md) et la [merge
+request sur Codeberg](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/14).
