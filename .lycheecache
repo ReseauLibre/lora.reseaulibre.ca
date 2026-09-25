@@ -21,6 +21,7 @@ https://blog.meshcore.io/2026/06/22/drone-ota,200,1787855173
 https://blog.meshcore.io/2026/07/04/help-us-save-meshcore,200,1787855172
 https://bmorcelli.github.io/Launcher,200,1789785395
 https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1101959,200,1787855174
+https://buymeacoffee.com/ripplebiz/path-diagnostics-improvements,200,1790353256
 https://calendrier.constellationmtl.net/event/matc-presents-jour-de-mesh-day-2,200,1787855172
 https://cedamtl.org/,200,1787855172
 https://chat.fedoraproject.org/,200,1787855173
@@ -41,6 +42,7 @@ https://codeberg.org/foulab/foubot2/commit/f1e79507cdff83bd5ee88b05168f45240e434
 https://codeberg.org/git-pages/action,200,1787855170
 https://codeberg.org/git-pages/git-pages-cli,200,1787855170
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca,200,1787855170
+https://codeberg.org/reseaulibre/lora-reseaulibre-ca/,200,1790353258
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/code.md,200,1787855170
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/contact.md,200,1787855169
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/guides/faq.md,200,1787855173
@@ -76,6 +78,7 @@ https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/news/posts/
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/news/posts/2026-08-29-sept-mesh-night.md,200,1789785394
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/news/posts/2026-09-03-quebec-first-contact.md,200,1789785394
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/news/posts/2026-09-18-3-bytes-hash-mode.md,200,1789785394
+https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/news/posts/2026-09-20-limit-flood-and-loops.md,200,1790353255
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/references/hardware/antennas.md,200,1787855170
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/references/hardware/batteries.md,200,1787855171
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/references/hardware/index.md,200,1787855171
@@ -91,6 +94,7 @@ https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/references/
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/references/software/meshtastic.md,200,1787855170
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/_edit/main/docs/values.md,200,1787855170
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/commit/ff66243e506b972304786cfa32681d3974753743,200,1789785394
+https://codeberg.org/reseaulibre/lora-reseaulibre-ca/issues/new,200,1790353255
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/13,200,1789785395
 https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/14,200,1790213628
 https://codeberg.org/sesivany/meshy,200,1787855171
@@ -105,6 +109,7 @@ https://creativecommons.org/licenses/by-sa/4.0/,200,1787855170
 https://dash.mt.gt/,200,1787855171
 https://debian.social/,200,1787855173
 https://deepwiki.com/meshcore-dev/MeshCore,200,1787855173
+https://dev.meshcore.ca/?iata=YUL&tab=Analytics&range=30d,200,1790353256
 https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API#browser_compatibility,200,1787855173
 https://diataxis.fr/,200,1787855170
 https://directory.rns.recipes/,200,1787855172
@@ -123,8 +128,16 @@ https://docs.codeberg.org/collaborating/resolve-conflicts/,200,1787855170
 https://docs.codeberg.org/git/clone-commit-via-web/#edit,200,1787855170
 https://docs.codeberg.org/integrations/matrix/,200,1787855172
 https://docs.fsfe.org/en/techdocs/matrix,200,1787855172
+https://docs.meshcore.io/cli_commands/#experimental-view-or-change-the-processing-delay-for-received-traffic,200,1790353256
+https://docs.meshcore.io/cli_commands/#limit-the-number-of-hops-for-a-flood-message,200,1790353256
+https://docs.meshcore.io/cli_commands/#view-or-change-the-flood-advert-interval,200,1790353256
+https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-direct-traffic,200,1790353256
+https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-flood-traffic,200,1790353256
+https://docs.meshcore.io/cli_commands/#view-or-change-the-zero-hop-advert-interval,200,1790353256
+https://docs.meshcore.io/cli_commands/#view-or-change-this-nodes-loop-detection,200,1790353256
 https://docs.meshcore.io/cli_commands/,200,1787855173
 https://docs.meshcore.io/faq/#57-q-is-meshcore-open-source,200,1787855173
+https://docs.meshcore.io/payloads/#request,200,1790353256
 https://element.debian.social/,200,1787855172
 https://element.io/en,200,1787855174
 https://en.wikipedia.org/wiki/18650_battery,200,1787855171
@@ -227,6 +240,7 @@ https://frame.work/,200,1790182317
 https://garrido.io/notes/caching-hugo-resources-in-forgejo-actions/,200,1787855170
 https://git.drkhsh.at/reticulum-exporter/,200,1787855172
 https://git.puscii.nl/yids/lr-squesh,200,1787855173
+https://git.sr.ht/~anarcat/lora.reseaulibre.ca,200,1790353256
 https://github.com/42wim/matterbridge/compare/master...cpatulea:matterbridge:master,200,1787855172
 https://github.com/42wim/matterbridge/issues/2251,200,1787855172
 https://github.com/Affirmatech/MeshSense,200,1787855171
@@ -378,6 +392,7 @@ https://gitlab.com/anarcat/scripts/-/blob/main/md2mu.py?ref_type=heads,200,17901
 https://gitlab.com/anarcat/scripts/-/blob/main/reflashtic.py?ref_type=heads,200,1787855171
 https://gitlab.com/kop316/gtk-meshtastic-client,200,1787855171
 https://gitlab.com/matrix-rss-bridge/matrix-rss-bridge,200,1787855173
+https://gitlab.com/reseaulibre/lora.reseaulibre.ca,200,1790353256
 https://godspeedyoublackemperor.bandcamp.com/album/f-a,200,1787855170
 https://grebedoc.dev/#own-domain,200,1787855170
 https://grebedoc.dev/,200,1787855169
@@ -507,6 +522,7 @@ https://lora.reseaulibre.ca/news/2026/08/26/fire-hazard-on-the-wismesh-pocket/,2
 https://lora.reseaulibre.ca/news/2026/08/29/mesh-night-in-september/,200,1789785394
 https://lora.reseaulibre.ca/news/2026/09/16/first-contacts-between-montr%C3%A9al-and-qu%C3%A9bec/,200,1789785395
 https://lora.reseaulibre.ca/news/2026/09/18/please-use-3-bytes-routing/,200,1789785394
+https://lora.reseaulibre.ca/news/2026/09/25/please-limit-adverts-loops-and-floods/,200,1790353255
 https://lora.reseaulibre.ca/news/archive/2026/,200,1787855175
 https://lora.reseaulibre.ca/news/archive/2026/page/2/,200,1789785395
 https://lora.reseaulibre.ca/news/category/announcements/,200,1787855175
@@ -568,6 +584,7 @@ https://meshchatx.com/,200,1787855172
 https://meshcore.ca/,200,1787855173
 https://meshcore.ca/hardware/repeater-mounting-options/,200,1789785394
 https://meshcore.ca/hardware/repeater-solar-1w-diy-build/,200,1787855171
+https://meshcore.ca/proposals/onqc-scopes/,200,1790353256
 https://meshcore.co.uk/,200,1787855170
 https://meshcore.io/#download,200,1787855173
 https://meshcore.io/,200,1787855173
