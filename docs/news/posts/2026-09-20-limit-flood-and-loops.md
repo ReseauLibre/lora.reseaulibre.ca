@@ -31,7 +31,7 @@ For repeaters with many neighbors (30-50), we also advise raising `txdelay`
 - [Re-transmit delay for flood traffic](https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-flood-traffic): `1` (defaults to `0.5`)
 - [Re-transmit delay for direct traffic](https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-direct-traffic): `0.5` (defaults to `0.2`)
 
-Command-line equivalent:
+Equivalent commands:
 
 ```
 set txdelay 1
@@ -74,7 +74,7 @@ technically possible for a packet to route back onto itself. In March,
 [MeshCore 1.14 introduced loop detection](https://buymeacoffee.com/ripplebiz/path-diagnostics-improvements) but did not turn it on by
 default.
 
-With more widespread adoption of multi-byte hash mode, we believe it
+With more widespread [adoption of multi-byte hash mode](2026-09-18-3-bytes-hash-mode.md), we believe it
 is a safe setting: the setting was picked because we want people using
 two-byte repeaters to still work in case of conflicts. The change
 *will* impact single-byte routes over conflicting repeaters, so we
@@ -86,8 +86,8 @@ The other three settings ([Zero hop advert interval](https://docs.meshcore.io/cl
 interval](https://docs.meshcore.io/cli_commands/#view-or-change-the-flood-advert-interval) and [Number of hops for a flood message](https://docs.meshcore.io/cli_commands/#limit-the-number-of-hops-for-a-flood-message)) are all
 designed to reduce non-content traffic on the mesh.
 
-Adverts are the single largest packet on the mesh and use the most
-airtime of any packet. And while they are nice in that they show us
+Adverts are the single largest packet on the mesh and so use the most
+airtime of any packet. And while they are useful in that they show us
 where repeaters are, they are not actually required for the mesh to
 function.
 
@@ -100,7 +100,7 @@ The local (non-flood) advert interval was raised from one hour to six
 hours, to make sure companions would see local repeaters appear within
 their first day.
 
-The flood advert inter is raised from twice a day to once every *four*
+The flood advert interval is raised from twice a day to once every *four*
 days, which still allows for building a good map over the course of a
 week. It's set to four days minus one hour to creep the flood time by
 one hour every day, to avoid having repeaters always flooding at the
