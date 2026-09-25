@@ -18,6 +18,7 @@ mirrors:
 - Codeberg: <https://codeberg.org/reseaulibre/lora-reseaulibre-ca/>
 - sourcehut: <https://git.sr.ht/~anarcat/lora.reseaulibre.ca>
 - GitLab: <https://gitlab.com/reseaulibre/lora.reseaulibre.ca>
+- GitHub: <https://github.com/ReseauLibre/lora.reseaulibre.ca>
 
 Those are synchronized automatically on push in Codeberg or, if
 Codeberg is unavailable, manually.
