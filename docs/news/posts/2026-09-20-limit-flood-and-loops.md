@@ -40,6 +40,8 @@ set direct.txdelay 0.5
 
 We do not currently have a recommendation on changing [rxdelay]( https://docs.meshcore.io/cli_commands/#experimental-view-or-change-the-processing-delay-for-received-traffic).
 
+<!-- more -->
+
 ## Who?
 
 Those settings have been tested by the following operators and
