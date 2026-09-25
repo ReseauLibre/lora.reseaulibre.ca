@@ -1792,6 +1792,72 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2026-09-25 00:00:00+00:00">September 25, 2026</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="category/announcements/" class="md-meta__link">announcements</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              4 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="please-limit-adverts-loops-and-floods"><a class="toclink" href="2026/09/25/please-limit-adverts-loops-and-floods/">Please limit adverts, loops and floods</a></h2>
+<p>Things are moving fast in the mesh!</p>
+<p>After discussion and testing with key operators in Montreal and its
+greater area, we strongly encourage you to make the following changes
+to your repeaters:</p>
+<ul>
+<li><a href="https://docs.meshcore.io/cli_commands/#view-or-change-this-nodes-loop-detection">Loop detection</a>: <code>moderate</code>, defaults to <code>off</code></li>
+<li><a href="https://docs.meshcore.io/cli_commands/#view-or-change-the-zero-hop-advert-interval">Zero hop advert interval</a>: <code>240</code> (minutes, defaults to <code>60</code>)</li>
+<li><a href="https://docs.meshcore.io/cli_commands/#view-or-change-the-flood-advert-interval">Flood advert interval</a>: <code>47</code> (hours, defaults to <code>12</code>)</li>
+<li><a href="https://docs.meshcore.io/cli_commands/#limit-the-number-of-hops-for-a-flood-message">Number of hops for a flood message</a>: <code>16</code> (defaults to <code>64</code>)</li>
+</ul>
+<p>On the command-line, the equivalent is the following commands:</p>
+<div class="highlight"><pre><span></span><code>set loop.detect moderate
+set advert.interval 240
+set flood.advert.interval 47
+set flood.max 16
+</code></pre></div>
+<p>For repeaters with many neighbors (30-50), we also advise raising <code>txdelay</code></p>
+<ul>
+<li><a href="https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-flood-traffic">Retransmit delay for flood traffic</a>: <code>1</code> (defaults to <code>0.5</code>)</li>
+<li><a href="https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-direct-traffic">Retransmit delay for direct traffic</a>: <code>0.5</code> (defaults to <code>0.2</code>)</li>
+</ul>
+<p>Command-line equivalent:</p>
+<div class="highlight"><pre><span></span><code>set txdelay 1
+set direct.txdelay 0.5
+</code></pre></div>
+<p>We do not currently have a recommendation on changing <a href="https://docs.meshcore.io/cli_commands/#experimental-view-or-change-the-processing-delay-for-received-traffic">rxdelay</a>.</p>
+
+    
+      <nav class="md-post__action">
+        <a href="2026/09/25/please-limit-adverts-loops-and-floods/">
+          Continue reading
+        </a>
+      </nav>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2026-09-18 00:00:00+00:00">September 18, 2026</time></li>
         
           <li class="md-meta__item">
@@ -2193,50 +2259,6 @@ from 19h to 21h. </p>
     
       <nav class="md-post__action">
         <a href="2026/05/02/deprecating-meshtastic-in-montreal/">
-          Continue reading
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2026-04-21 00:00:00+00:00">April 21, 2026</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/events/" class="md-meta__link">events</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              1 min read
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="mesh-night-and-day-in-may"><a class="toclink" href="2026/04/21/mesh-night-and-day-in-may/">Mesh night and day in May</a></h2>
-<p>Every month, <a href="https://foulab.org/">Foulab</a>, the Montreal hacker space, holds a mesh
-night the first Wednesday of the month, and this month is
-no exception!  <!-- post link when ready:
-https://foulab.org/news/events-may-2026/ --></p>
-
-    
-      <nav class="md-post__action">
-        <a href="2026/04/21/mesh-night-and-day-in-may/">
           Continue reading
         </a>
       </nav>

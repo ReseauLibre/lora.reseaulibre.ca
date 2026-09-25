@@ -1661,6 +1661,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#mirrors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mirrors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#contributing" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1990,6 +2001,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#mirrors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mirrors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#contributing" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2184,10 +2206,20 @@
 <p><a href="https://ci.codeberg.org/repos/16463"><img alt="Pipeline status" src="https://ci.codeberg.org/api/badges/16463/status.svg" /></a></p>
 <p>This is the source code for the new Montreal Mesh website, currently
 hosted at <a href="https://lora.reseaulibre.ca">https://lora.reseaulibre.ca</a> and backed by Codeberg at
-<a href="https://codeberg.org/anarcat/lora-reseaulibre-ca/">https://codeberg.org/anarcat/lora-reseaulibre-ca/</a>.</p>
+<a href="https://codeberg.org/reseaulibre/lora-reseaulibre-ca/">https://codeberg.org/reseaulibre/lora-reseaulibre-ca/</a>.</p>
 <p>This README file documents the git repository and how to make changes
 to the site. The actual site contents are in the <code>docs/</code> directory of
-the <a href="https://codeberg.org/anarcat/lora-reseaulibre-ca/">git repository</a> or on <a href="https://lora.reseaulibre.ca">lora.reseaulibre.ca</a>.</p>
+the <a href="https://codeberg.org/reseaulibre/lora-reseaulibre-ca/">git repository</a> or on <a href="https://lora.reseaulibre.ca">lora.reseaulibre.ca</a>.</p>
+<h2 id="mirrors">Mirrors<a class="headerlink" href="#mirrors" title="Permanent link">&para;</a></h2>
+<p>The git repository is primarily hosted on Codeberg, but has multiple
+mirrors:</p>
+<ul>
+<li>Codeberg: <a href="https://codeberg.org/reseaulibre/lora-reseaulibre-ca/">https://codeberg.org/reseaulibre/lora-reseaulibre-ca/</a></li>
+<li>sr.ht: <a href="https://git.sr.ht/~anarcat/lora.reseaulibre.ca">https://git.sr.ht/~anarcat/lora.reseaulibre.ca</a></li>
+<li>GitLab: <a href="https://gitlab.com/reseaulibre/lora.reseaulibre.ca">https://gitlab.com/reseaulibre/lora.reseaulibre.ca</a></li>
+</ul>
+<p>Those are synchronized automatically on push in Codeberg or, if
+Codeberg is unavailable, manually.</p>
 <h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h2>
 <p>If you want to participate here, agree with the <a href="../code/">Code of Conduct</a>
 (<a href="https://www.contributor-covenant.org/version/3/0/code_of_conduct/">Contributor Covenant 3.0 Code</a>), and edit the files in the
@@ -2418,7 +2450,7 @@ acceptable source for the site.</p>
 password manager as <code>grebedoc.dev</code>.</p>
 <p>It allows for pushing arbitrary content to the site.</p>
 <p>A first push is done with:</p>
-<div class="highlight"><pre><span></span><code>curl https://grebedoc.dev/ -X PUT -H &quot;Host: lora.reseaulibre.ca&quot; -H &quot;Authorization: Pages $GIT_PAGES_PASSWORD&quot; --data &quot;https://codeberg.org/anarcat/lora-reseaulibre-ca.git&quot;
+<div class="highlight"><pre><span></span><code>curl https://grebedoc.dev/ -X PUT -H &quot;Host: lora.reseaulibre.ca&quot; -H &quot;Authorization: Pages $GIT_PAGES_PASSWORD&quot; --data &quot;https://codeberg.org/reseaulibre/lora-reseaulibre-ca.git&quot;
 </code></pre></div>
 <p>The <code>Authorization</code> header might not be necessary since we're passing
 the git repository URL here.</p>
@@ -2530,7 +2562,7 @@ navigation menus (and, perhaps, shouldn't).</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="September 23, 2026 13:18:57 UTC">2026-09-23 13:18:57</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="September 25, 2026 16:13:59 UTC">2026-09-25 16:13:59</span>
   </span>
 
     
