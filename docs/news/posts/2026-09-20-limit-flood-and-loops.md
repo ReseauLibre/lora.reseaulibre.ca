@@ -1,10 +1,12 @@
 ---
 date:
-  created: 2026-09-12
+  created: 2026-09-25
 title: Please limit adverts, loops and floods
 categories:
   - announcements
 ---
+
+Things are moving fast in the mesh!
 
 After discussion and testing with key operators in Montreal and its
 greater area, we strongly encourage you to make the following changes
@@ -36,7 +38,7 @@ set txdelay 1
 set direct.txdelay 0.5
 ```
 
-TODO: rxdelay? https://docs.meshcore.io/cli_commands/#experimental-view-or-change-the-processing-delay-for-received-traffic
+We do not currently have a recommendation on changing [rxdelay]( https://docs.meshcore.io/cli_commands/#experimental-view-or-change-the-processing-delay-for-received-traffic).
 
 ## Who?
 
@@ -126,6 +128,9 @@ breaking changes to people's configuration and are not currently
 widely in use. The above settings have been tested on actual repeaters
 and are known to be safe, and will improve the mesh.
 
+That said, there is a [new regions proposal being discussed](https://meshcore.ca/proposals/onqc-scopes/) which
+we will likely bring up here next.
+
 ## What about those requests?
 
 While writing the "Advert limits" section documentation above, we
@@ -139,6 +144,6 @@ the number of such packets that *flood* the network, that said.
 
 ## Feedback and comments
 
-In any case, suggestions welcome!
-We welcome comments and feedback on this proposal through [our regular
-contact points](../../contact.md) and the [merge request on Codeberg](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/TODO).
+In any case, we welcome comments and feedback on this proposal through
+[our regular contact points](../../contact.md) and the [merge request on
+Codeberg](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/TODO).
