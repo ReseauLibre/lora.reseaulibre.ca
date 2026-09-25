@@ -10,6 +10,18 @@ This README file documents the git repository and how to make changes
 to the site. The actual site contents are in the `docs/` directory of
 the [git repository](https://codeberg.org/anarcat/lora-reseaulibre-ca/) or on [lora.reseaulibre.ca](https://lora.reseaulibre.ca).
 
+## Mirrors
+
+The git repository is primarily hosted on Codeberg, but has multiple
+mirrors:
+
+- Codeberg: <https://codeberg.org/reseaulibre/lora-reseaulibre-ca/>
+- sr.ht: <https://git.sr.ht/~anarcat/lora.reseaulibre.ca>
+- GitLab: <https://gitlab.com/reseaulibre/lora.reseaulibre.ca>
+
+Those are synchronized automatically on push in Codeberg or, if
+Codeberg is unavailable, manually.
+
 ## Contributing
 
 If you want to participate here, agree with the [Code of Conduct](code.md)
