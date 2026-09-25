@@ -28,8 +28,8 @@ set flood.max 16
 
 For repeaters with many neighbors (30-50), we also advise raising `txdelay`
 
-- [Retransmit delay for flood traffic](https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-flood-traffic): `1` (defaults to `0.5`)
-- [Retransmit delay for direct traffic](https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-direct-traffic): `0.5` (defaults to `0.2`)
+- [Re-transmit delay for flood traffic](https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-flood-traffic): `1` (defaults to `0.5`)
+- [Re-transmit delay for direct traffic](https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-direct-traffic): `0.5` (defaults to `0.2`)
 
 Command-line equivalent:
 
@@ -38,7 +38,7 @@ set txdelay 1
 set direct.txdelay 0.5
 ```
 
-We do not currently have a recommendation on changing [rxdelay]( https://docs.meshcore.io/cli_commands/#experimental-view-or-change-the-processing-delay-for-received-traffic).
+We do not currently have a recommendation on changing [`rxdelay`]( https://docs.meshcore.io/cli_commands/#experimental-view-or-change-the-processing-delay-for-received-traffic).
 
 <!-- more -->
 
@@ -47,11 +47,11 @@ We do not currently have a recommendation on changing [rxdelay]( https://docs.me
 Those settings have been tested by the following operators and
 repeaters:
 
-- anarcat: YUL-Little-Italy
-- Smog: YMX-J6Y
-- Oots: YUL-Villeray/Garnier
-- VA2DG: VA2DGR Repeater
-- Johnputer: YUL-Cartierville, YUL-UpperSalaberry
+- `anarcat`: `YUL-Little-Italy`
+- Smog: `YMX-J6Y`
+- `Oots`: `YUL-Villeray/Garnier`
+- `VA2DG`: `VA2DGR Repeater`
+- `Johnputer`: `YUL-Cartierville`, `YUL-UpperSalaberry`
 
 ## Why?
 

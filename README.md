@@ -16,7 +16,7 @@ The git repository is primarily hosted on Codeberg, but has multiple
 mirrors:
 
 - Codeberg: <https://codeberg.org/reseaulibre/lora-reseaulibre-ca/>
-- sr.ht: <https://git.sr.ht/~anarcat/lora.reseaulibre.ca>
+- sourcehut: <https://git.sr.ht/~anarcat/lora.reseaulibre.ca>
 - GitLab: <https://gitlab.com/reseaulibre/lora.reseaulibre.ca>
 
 Those are synchronized automatically on push in Codeberg or, if
