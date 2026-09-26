@@ -269,11 +269,15 @@ devices and add them to the list!
 >   3D-printed case, QWERTY keyboard, 2500mAh Li-Po battery, audio
 >   jack and speaker, expansion port, opensource, 100EUR, runs
 >   wadamesh
-> - [M5 Cardputer Adv](https://shop.m5stack.com/products/cardputer-mesh-kit-for-meshtastic-esp32-s3?variant=48684913164545).
->   ESP32 handheld, 1.14" LCD, 56-key keyboard, 1750mAh lithium,
->   microphone, 1W speaker and audio jack, infrared, microSD, SX1262
->   expansion port, not supported by stock MeshCore firmware, but
->   many alternative firmware, for example: [`MultiMote/meshcore-cardputer-adv`](https://github.com/MultiMote/meshcore-cardputer-adv), [`sosprz/meshcore-cardputer-adv`](https://github.com/sosprz/meshcore-cardputer-adv), [`Stachugit/MeshCore-Cardputer-ADV`](https://github.com/Stachugit/MeshCore-Cardputer-ADV)
+
+> - [M5 Cardputer Adv](https://shop.m5stack.com/products/cardputer-mesh-kit-for-meshtastic-esp32-s3?variant=48684913164545).  ESP32 handheld, 1.14" LCD, 56-key
+>   keyboard, 1750mAh lithium, microphone, 1W speaker and audio jack,
+>   infrared, microSD, SX1262 expansion port, not supported by stock
+>   MeshCore firmware, but many alternative firmware, for example:
+>   [`MultiMote/meshcore-cardputer-adv`](https://github.com/MultiMote/meshcore-cardputer-adv),
+>   [`sosprz/meshcore-cardputer-adv`](https://github.com/sosprz/meshcore-cardputer-adv),
+>   [`Stachugit/MeshCore-Cardputer-ADV`](https://github.com/Stachugit/MeshCore-Cardputer-ADV). [49$CAD at RobotShop](https://ca.robotshop.com/products/m5stack-cardputer-adv-esp32-s3?qd=e800f3a8670d6a524bbe51573ec18fd0),
+>   [21$CAD extra for the LoRa module](https://ca.robotshop.com/products/m5stack-cap-lora-1262-communication-module-for-cardputer-adv-sx1262-atgm336h?qd=5d07c3cdf2c5ad9995bfe62c10c1d5d1)
 
 > [!WARNING]
 > - The [Seeedstudio Sensecap Indicator](https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html)
