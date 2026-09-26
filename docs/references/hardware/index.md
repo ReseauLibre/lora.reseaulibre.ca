@@ -279,7 +279,7 @@ devices and add them to the list!
 >   [`Stachugit/MeshCore-Cardputer-ADV`](https://github.com/Stachugit/MeshCore-Cardputer-ADV). [49$CAD at RobotShop](https://ca.robotshop.com/products/m5stack-cardputer-adv-esp32-s3?qd=e800f3a8670d6a524bbe51573ec18fd0),
 >   [21$CAD extra for the LoRa module](https://ca.robotshop.com/products/m5stack-cap-lora-1262-communication-module-for-cardputer-adv-sx1262-atgm336h?qd=5d07c3cdf2c5ad9995bfe62c10c1d5d1)
 
-> [!WARNING]
+> [!FAILURE]
 > - The [Seeedstudio Sensecap Indicator](https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html)
 > looks like a nice device for home/office setups, but it is [not
 > supported by MeshCore](https://github.com/meshcore-dev/MeshCore/issues/879)
