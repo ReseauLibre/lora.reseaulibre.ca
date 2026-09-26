@@ -185,6 +185,15 @@ You need to at least:
   password manager for remote administration
 - **Path hash mode**: pick `3-byte (2)`, see [this announcement for an
   explanation](../../news/posts/2026-09-18-3-bytes-hash-mode.md)
+- Flood limits (see [this announcement for an explanation](../../news/posts/2026-09-20-limit-flood-and-loops.md)):
+    - [Loop detection](https://docs.meshcore.io/cli_commands/#view-or-change-this-nodes-loop-detection): `moderate`, defaults to `off`
+    - [Zero hop advert interval](https://docs.meshcore.io/cli_commands/#view-or-change-the-zero-hop-advert-interval): `240` (minutes, defaults to `60`)
+    - [Flood advert interval](https://docs.meshcore.io/cli_commands/#view-or-change-the-flood-advert-interval): `47` (hours, defaults to `12`)
+    - [Number of hops for a flood message](https://docs.meshcore.io/cli_commands/#limit-the-number-of-hops-for-a-flood-message): `16` (defaults to `64`)
+    - [Re-transmit delay for flood traffic](https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-flood-traffic): `1` (defaults to
+      `0.5`, only for busy repeaters with 30-50 neighbors)
+    - [Re-transmit delay for direct traffic](https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-direct-traffic): `0.5` (defaults to
+      `0.2`, only for busy repeaters with 30-50 neighbors)
 - **Send an advert!** by default, repeaters do automatically send
   adverts, but it can take *hours*, during which time your companion
   won't see the repeater! so do send one manually
@@ -206,8 +215,15 @@ details.
 >
 >     set radio 910.525,62.5,7,5
 >     set name YUL-Area
->     set path.hash.mode 2
 >     password $STRONG_PASSWORD_SEE_ABOVE
+>     set path.hash.mode 2
+>     set loop.detect moderate
+>     set advert.interval 240
+>     set flood.advert.interval 47
+>     set flood.max 16
+>     # for busy repeaters
+>     set txdelay 1
+>     set direct.txdelay 0.5
 >     reboot
 >
 > Then send an advert:
