@@ -43,6 +43,8 @@ A PVC mast was added to the J-pole as well.
 
 Antenna upgraded to a Alfa, Meshtastic repeater removed.
 
+![](../../assets/sensecap-p1-alfa.jpg)
+
 ### 2026-04-17
 
 Some time in the spring of 2026, two repeaters were deployed on the
