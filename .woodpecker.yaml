@@ -26,6 +26,7 @@ steps:
   build:
     image: zensical/zensical
     commands:
+      - apk add --no-cache git
       - pip install -r requirements.txt
       - zensical build
       - git fetch --all
