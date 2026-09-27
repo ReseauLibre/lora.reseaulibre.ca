@@ -24,13 +24,13 @@ when:
 
 steps:
   build:
-    image: squidfunk/mkdocs-material
+    image: zensical/zensical
     commands:
-      - pip install -r requirements.txt
-      - mkdocs build
+      - pip install -r requirements-zensical.txt
+      - zensical build
       - git fetch --all
       - git worktree add ../fr/ fr
-      - cd ../fr && mkdocs build -d ../$CI_REPO_NAME/site/fr
+      - cd ../fr && zensical build -d ../$CI_REPO_NAME/site/fr
 
   # this is still the legacy v2 pages systm
   #

@@ -1,7 +1,2 @@
-mkdocs
-mkdocs-material
-mkdocs-git-revision-date-localized-plugin
-#mkdocs-git-authors-plugin
-mkdocs-redirects
-mkdocs-rss-plugin
+zensical
 pymdown-extensions>=10.20
