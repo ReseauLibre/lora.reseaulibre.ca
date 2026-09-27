@@ -555,7 +555,10 @@ are SMA-based.
 
     This [20 cm pigtail from Muzi Works](https://muzi.works/products/rp-sma-to-type-n-cable-20-cm) works, but is a little short:
     you can only install it on the hole nearest to the router instead of
-    the further one, as shown on the image here.
+    the further one, as shown on the image here. [This pigtail from
+    Infinite
+    Cables](https://www.infinitecables.com/products/lmr-195-n-type-male-to-sma-rp-reverse-polarity-male-cable?_pos=6&_sid=8005049e3&_ss=r&variant=42809779683569)
+    should work better.
 
 === "Connector"
 
