@@ -101,23 +101,10 @@ theme:
   name: material
   logo: assets/logo.svg
   favicon: assets/logo.svg
-  features:
-    - navigation.footer
-    # - navigation.prune
-    # - navigation.sections
-    # - navigation.expand
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.top
-    # - navigation.tracking
-    - navigation.indexes
-    - content.action.edit  # Edit this page
-    # broken, it points to _raw, it's raw in codeberg
-    # - content.action.view  # View source of this page
-    # show footnotes as tooltips
-    - content.footnote.tooltips
   # disable the roboto font download from google
   font: false
+  # the site is in english
+  language: en
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -138,8 +125,21 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
-  # the site is in english
-  language: en
+  features:
+    - navigation.footer
+    # - navigation.prune
+    # - navigation.sections
+    # - navigation.expand
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    # - navigation.tracking
+    - navigation.indexes
+    - content.action.edit  # Edit this page
+    # broken, it points to _raw, it's raw in codeberg
+    # - content.action.view  # View source of this page
+    # show footnotes as tooltips
+    - content.footnote.tooltips
 
 # i thought this would help in translating it all, but it's not the
 # way: those are just fixed links.
