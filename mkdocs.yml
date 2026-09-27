@@ -45,6 +45,9 @@ nav:
         - references/software/bots.md
         - references/maps.md
         - Meta: meta.md
+    - Nodes:
+      - references/nodes/index.md
+      - references/nodes/*.md
     - references/neighbours.md
     - references/log.md
     - references/other.md
@@ -99,25 +102,13 @@ markdown_extensions:
   - pymdownx.tilde
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/logo.svg
   favicon: assets/logo.svg
-  features:
-    - navigation.footer
-    # - navigation.prune
-    # - navigation.sections
-    # - navigation.expand
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.top
-    # - navigation.tracking
-    - navigation.indexes
-    - content.action.edit  # Edit this page
-    # broken, it points to _raw, it's raw in codeberg
-    # - content.action.view  # View source of this page
-    # show footnotes as tooltips
-    - content.footnote.tooltips
   # disable the roboto font download from google
   font: false
+  # the site is in english
+  language: fr
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -137,9 +128,22 @@ theme:
       primary: amber
       toggle:
         icon: material/weather-sunny
-        name: Basculer en mode sombre
-  # this is the french version
-  language: fr
+        name: Switch to dark mode
+  features:
+    - navigation.footer
+    # - navigation.prune
+    # - navigation.sections
+    # - navigation.expand
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    # - navigation.tracking
+    - navigation.indexes
+    - content.action.edit  # Edit this page
+    # broken, it points to _raw, it's raw in codeberg
+    # - content.action.view  # View source of this page
+    # show footnotes as tooltips
+    - content.footnote.tooltips
 
 # i thought this would help in translating it all, but it's not the
 # way: those are just fixed links.
@@ -171,6 +175,8 @@ extra:
       link: /fr/
       lang: fr
 plugins:
+  - literate-nav:
+      nav_file: SUMMARY.md
   - search
   # blog posts
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/

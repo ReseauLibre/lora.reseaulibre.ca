@@ -149,32 +149,36 @@ or a pouch. Those generally have a battery. They need a phone or
 computer to operate.
 
 > [!SUCCESS]
-> - [SeeedStudio Wio Tracker L1
-> Pro](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html):
-> 1.3" OLED, 3D-Printed Casing, 2000mAh battery, GPS, nRF5284 /
-> SX1262, 4-way joystick, menu button, reset button, power switch, 3
-> LEDs, RP-SMA connector,
-> 43$USD, [62$ at Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
+>
+> - [SeeedStudio Wio Tracker L1 Pro](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html): 1.3" OLED, 3D-Printed Casing,
+> 2000mAh battery, GPS, nRF5284 / SX1262, 4-way joystick, menu button,
+> reset button, power switch, 3 LEDs, RP-SMA connector, 43$USD, [62$
+> at Robotshop](https://ca.robotshop.com/products/seeedstudio-wio-tracker-l1-pro-w-oled-3d-printed-casing?qd=db7541740aaa06e3d86db98e2079eb94)
 > 
-> - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): 200x200 e-ink
-> display, NRF52840, GPS, BT 5.0, no wifi, two buttons, no power
-> button, NFC, 850mAh battery, temperature/pressure sensor, 55$USD
+> - [T-Echo](https://lilygo.cc/products/t-echo-lilygo): 200x200 e-ink display, NRF52840, GPS, BT 5.0, no
+> wifi, two buttons, no power button, NFC, 850mAh battery,
+> temperature/pressure sensor, 55$USD
+>
 > - cheap [Aliexpress Heltec v4 kit, 43CAD](https://www.aliexpress.com/item/1005010640444191.html)
+>
 > - Seeedstudio [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-ESP32S3-for-Meshtastic-LoRa-with-3D-Printed-Enclosure-p-6314.html): tiny, - 40℃ ~
 > 100℃, WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button, 22x23x57mm,
-> 37g, exposed GPIO ports, cheap (20$), does not ship with
-> Meshtastic firmware, needs full erase before reflash or gets
-> into a boot loop
+> 37g, exposed GPIO ports, cheap (20$), does not ship with Meshtastic
+> firmware, needs full erase before reflash or gets into a boot loop,
+> [B/O at Robotshop](https://ca.robotshop.com/products/xiao-esp32s3-wio-sx1262-kit-w-3d-case-for-meshtastic-lora?qd=3cc2c0c060a1dc4dd4dd8048270c5374), SKU 113110064
+>
 > - [RAK Wireless WisMesh Tag](https://store.rakwireless.com/products/wismesh-tag-meshtastic-gps-lora-tracker-ip66): 
 > 1000 mAh battery, IP66 rating, two buttons, status LED,
 > magnetic USB pogo charging, nRF52840/SX1262, GPS, 92 x 59 x 7.5
 > mm, 40$USD
-> - [SeeedStudio SenseCAP Card Tracker T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) (40$USD)
-> IP65, 700mAh battery, nRF52840/LR1110, GPS, 85 * 55 * 6.5 mm,
-> 32g, -20℃ to +60℃ operation, buzzer, magnetic pogo pins USB charging, 40$USD, anarcat managed get [this one in a boot loop](https://anarc.at/services/meshtastic/#bricked) 
-> but eventually recovered. Nice and portable, waterproof. See
-> [this guide for how to use that single button](https://wiki.seeedstudio.com/sensecap_t1000_e_meshcore/#button),
-> in particular use triple-click to turn off the buzzer.
+>
+> - [SeeedStudio SenseCAP Card Tracker T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) (40$USD) IP65,
+> 700mAh battery, nRF52840/LR1110, GPS, 85 * 55 * 6.5 mm, 32g, -20℃ to
+> +60℃ operation, buzzer, magnetic pogo pins USB charging, 40$USD,
+> anarcat managed get [this one in a boot loop](https://anarc.at/services/meshtastic/#bricked) but eventually
+> recovered. Nice and portable, waterproof. See [this guide for how to
+> use that single button](https://wiki.seeedstudio.com/sensecap_t1000_e_meshcore/#button), in particular use triple-click to turn
+> off the buzzer. [59$ at RobotShop](https://ca.robotshop.com/products/sensecap-card-tracker-t1000-e-for-meshtastic?qd=ec66ede1b6862a40f0a68bd6e94ff683)
 
 > [!EXAMPLE] In testing
 >
@@ -262,13 +266,17 @@ devices and add them to the list!
 >   3D-printed case, QWERTY keyboard, 2500mAh Li-Po battery, audio
 >   jack and speaker, expansion port, opensource, 100EUR, runs
 >   wadamesh
-> - [M5 Cardputer Adv](https://shop.m5stack.com/products/cardputer-mesh-kit-for-meshtastic-esp32-s3?variant=48684913164545).
->   ESP32 handheld, 1.14" LCD, 56-key keyboard, 1750mAh lithium,
->   microphone, 1W speaker and audio jack, infrared, microSD, SX1262
->   expansion port, not supported by stock MeshCore firmware, but
->   many alternative firmware, for example: [`MultiMote/meshcore-cardputer-adv`](https://github.com/MultiMote/meshcore-cardputer-adv), [`sosprz/meshcore-cardputer-adv`](https://github.com/sosprz/meshcore-cardputer-adv), [`Stachugit/MeshCore-Cardputer-ADV`](https://github.com/Stachugit/MeshCore-Cardputer-ADV)
 
-> [!WARNING]
+> - [M5 Cardputer Adv](https://shop.m5stack.com/products/cardputer-mesh-kit-for-meshtastic-esp32-s3?variant=48684913164545).  ESP32 handheld, 1.14" LCD, 56-key
+>   keyboard, 1750mAh lithium, microphone, 1W speaker and audio jack,
+>   infrared, microSD, SX1262 expansion port, not supported by stock
+>   MeshCore firmware, but many alternative firmware, for example:
+>   [`MultiMote/meshcore-cardputer-adv`](https://github.com/MultiMote/meshcore-cardputer-adv),
+>   [`sosprz/meshcore-cardputer-adv`](https://github.com/sosprz/meshcore-cardputer-adv),
+>   [`Stachugit/MeshCore-Cardputer-ADV`](https://github.com/Stachugit/MeshCore-Cardputer-ADV). [49$CAD at RobotShop](https://ca.robotshop.com/products/m5stack-cardputer-adv-esp32-s3?qd=e800f3a8670d6a524bbe51573ec18fd0),
+>   [21$CAD extra for the LoRa module](https://ca.robotshop.com/products/m5stack-cap-lora-1262-communication-module-for-cardputer-adv-sx1262-atgm336h?qd=5d07c3cdf2c5ad9995bfe62c10c1d5d1)
+
+> [!FAILURE]
 > - The [Seeedstudio Sensecap Indicator](https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html)
 > looks like a nice device for home/office setups, but it is [not
 > supported by MeshCore](https://github.com/meshcore-dev/MeshCore/issues/879)
@@ -410,22 +418,24 @@ The devices here generally do not have a battery.
 >   AliExpress](https://www.aliexpress.com/item/1005011870647672.html)
 >
 > - the [RAK19003 base kit](https://store.rakwireless.com/products/wisblock-meshtastic-starter-kit?variant=43884035113158) (28$) is more expensive, but less
->   power-hungry than the Heltec
+>   power-hungry than the Heltec because of the NRF chipset
 >
-> - [XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html): barebones board, tiny, cheap,
->   WiFi 2.4GHz, BLE 5.0 / Mesh, reset/boot button (hidden under the
->   daughterboard, press both to enter JTAG so you can flash, requires
->   opening the case and removing the daughterboard), - 40℃ ~ 100℃,
->   22x23x57mm, 37g, exposed GPIO ports, no battery, 20$. Probably the
->   cheapest and smallest kit all around.
+> - [SeeedStudio XIAO nRF52840 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-nRF52840-Wio-SX1262-Kit-for-Meshtastic-p-6400.html): nRF52840, Semtech
+>   SX1262, barebones board, tiny, cheap, NFC, WiFi 2.4GHz, BLE 5.0 / Mesh,
+>   reset/boot button (hidden under the daughterboard, press both to
+>   enter JTAG so you can flash, requires opening the case and
+>   removing the daughterboard), -40°C ~ 65°C, 22 x 21 x 17.8mm. SKU
+>   102010710, not to be confused with the [ESP32 kit](https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html), [21.30$CAD
+>   at Robotshop](https://ca.robotshop.com/products/xiao-nrf52840-wio-sx1262-kit-for-meshtastic). [Not supported by Reticulum](https://reticulum.miraheze.org/wiki/Seeed_Studio_XIAO_nRF52840).
 
-> [!EXAMPLE] In testing
->
-> - [XIAO nRF52840 & Wio-SX1262 Kit](https://www.seeedstudio.com/XIAO-nRF52840-Wio-SX1262-Kit-for-Meshtastic-p-6400.html): even tinier, nRF52840,
->   Semtech SX1262, NFC, BT, -40°C ~ 65°C, 22 x 21 x 17.8mm. Probably
->   the smallest kit you can get. Reset button hard to reach.
+<!-- > [!EXAMPLE] In testing -->
 
 > [!QUESTION] Untested
+>
+> - [SeeedStudio XIAO ESP32S3 & Wio-SX1262 Kit](https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html): ESP32, Semtech
+>   SX1262, barebones board, tiny, cheap, WiFi 2.4GHz, BLE 5.0 / Mesh,
+>   reset/boot button), -40°C ~ 65°C, 22 x 21 x 17.8mm. SKU 102010611,
+>   not to be confused with the [NRF kit](https://www.seeedstudio.com/XIAO-nRF52840-Wio-SX1262-Kit-for-Meshtastic-p-6400.html), [18$CAD at Robotshop](https://ca.robotshop.com/products/xiao-esp32s3-wio-sx1262-kit-for-meshtastic-lora-1?qd=9ec23548b630b6199b042656976578b1)
 >
 > - [T-Beam Supreme](https://lilygo.cc/products/t-beam-supreme?variant=43067944173749): 1.3" OLED display, 18650 battery socket,
 >   magnetometer, 2.4GHz WiFi, BLE 5, GNSS, no case, ESP32, 52$, the [T-Beam
@@ -519,7 +529,7 @@ Other lists include:
 - [Official Meshtastic guide](https://meshtastic.org/docs/hardware/antennas/), which also refers to a [series of
   antenna reports](https://github.com/meshtastic/antenna-reports)
 - [`nyme.sh` recommendations](https://nyme.sh/faq/#what-antenna)
-- [Ottawa Mesh recommendations](https://ottawamesh.ca/hardware/recommended-antenna/)
+- [MeshCore Canada recommendations](https://meshcore.ca/hardware/recommended-antenna/#companion-antennas)
 
 [Mapping Network]: https://mappingnetwork.ca/
 

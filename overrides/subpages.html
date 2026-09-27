@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <!-- Add scripts that need to run before here -->
+  {{ super() }}
+  <!-- Add scripts that need to run afterwards here -->
+
+<strong>Children pages:</strong>
+
+<ul>
+  {% for ancestor in page.ancestors  %}
+  {% for child in ancestor.children %}
+  {% if child.url is startingwith page.url and child.url != page.url %}
+  <li><a href="../../{{ child.url | url }}">{{ child.title }}</a></li>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</ul>
+
+{% endblock %}

@@ -40,7 +40,7 @@ Then follow those steps:
     have previously installed another RNode firmware with the same name.
 
     The `--autoinstall` process is similar to the one we have
-    documented in the [RNS documentation](#rnode) in that it will walk you
+    documented in the [RNS documentation](rns.md#rnode) in that it will walk you
     through a series of prompts before flashing the firmware. Make
     sure you pick the right frequency band (currently 915MHz).
 
