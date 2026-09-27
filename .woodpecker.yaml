@@ -31,7 +31,8 @@ steps:
       - zensical build
       - git fetch --all
       - git worktree add ../fr/ fr
-      - cd ../fr && zensical build -d ../$CI_REPO_NAME/site/fr
+      - cd ../fr && zensical build
+      - mv site ../$CI_REPO_NAME/site/fr
 
   # this is still the legacy v2 pages systm
   #
