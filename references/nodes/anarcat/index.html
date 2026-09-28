@@ -1786,6 +1786,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#2026-09-27-regions-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026-09-27: regions test
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#2026-09-21-flood-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2203,6 +2214,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#2026-09-27-regions-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026-09-27: regions test
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#2026-09-21-flood-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2454,6 +2476,39 @@ now less important. Where the <a href="../../../guides/net/">weekly net</a> is r
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> find a way to have both repeaters installed without interference</li>
 </ul>
+<h3 id="2026-09-27-regions-test">2026-09-27: regions test<a class="headerlink" href="#2026-09-27-regions-test" title="Permanent link">&para;</a></h3>
+<p>Testing the <a href="https://meshcore.ca/proposals/onqc-scopes/">regions proposal</a>:</p>
+<div class="highlight"><pre><span></span><code>region def yul|* qc|* onqc|* can|* na
+region allowf *
+region default yul
+region save
+</code></pre></div>
+<p>Result:</p>
+<div class="highlight"><pre><span></span><code>&gt; region
+*^ F
+
+&gt; region def yul|* qc|* onqc|* can|* na
+*^ F
+ yul F
+ qc F
+ onqc F
+ can F
+ na F
+
+&gt; region allowf *
+OK
+&gt; region default yul
+ default scope is now yul
+&gt; region save
+OK
+&gt; region
+*^ F
+ yul F
+ qc F
+ onqc F
+ can F
+ na F
+</code></pre></div>
 <h3 id="2026-09-21-flood-configuration">2026-09-21: flood configuration<a class="headerlink" href="#2026-09-21-flood-configuration" title="Permanent link">&para;</a></h3>
 <p>Applied <a href="../../../news/2026/09/25/please-limit-adverts-loops-and-floods/">flood configuration</a> including <code>txdelay</code>, specifically:</p>
 <div class="highlight"><pre><span></span><code>set loop.detect moderate
