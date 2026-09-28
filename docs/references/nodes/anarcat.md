@@ -92,6 +92,8 @@ roof, Meshtastic and MeshCore.
 
 ## YUL-Poly
 
+![](yul-poly.jpg)
+
 ### Next steps
 
 - [ ] upgrade firmware (running 1.15?)
