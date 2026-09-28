@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Réseau Libre</title><description>Mesh networking experiments in Montréal</description><link>https://lora.reseaulibre.ca/</link><atom:link href="https://lora.reseaulibre.ca/feed_rss_created.xml" rel="self" type="application/rss+xml" /><managingEditor>Anarcat and others</managingEditor><docs>https://codeberg.org/reseaulibre/lora-reseaulibre-ca</docs><language>en</language><pubDate>Mon, 28 Sep 2026 20:47:55 +0000</pubDate><lastBuildDate>Mon, 28 Sep 2026 20:47:55 +0000</lastBuildDate><ttl>1440</ttl><generator>Zensical RSS</generator><item><title>New nodes showcase, mirrors, and theme</title><category>announcements</category><description>&lt;p&gt;A quick word to announce the new &lt;a href=&quot;../../references/nodes/index.md&quot;&gt;nodes section&lt;/a&gt; which features
+repeaters. There is one page per operator, and currently onl...&lt;/p&gt;</description><link>https://lora.reseaulibre.ca/news/2026/09/27/new-nodes-showcase-mirrors-and-theme/</link><source url="https://lora.reseaulibre.ca/feed_rss_created.xml">Réseau Libre</source><pubDate>Sun, 27 Sep 2026 21:04:04 +0000</pubDate><guid isPermaLink="true">https://lora.reseaulibre.ca/news/2026/09/27/new-nodes-showcase-mirrors-and-theme/</guid></item><item><title>Please use 3 bytes routing</title><category>announcements</category><description>&lt;p&gt;In August, many repeater operators in the greater Montreal area
+started experimenting with &lt;a href=&quot;https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md#39-q-what-is-multibyte-support-what-do-1-byte-2-byte-3-byte-adverts-and-messages-mean&quot;&gt;multi-byte path routing&lt;/a&gt;. We now
+strongly recommend that you configure your repeaters (and companions)
+to use multi-byte routing, particularly if you have trouble with
+direct messages or remotely operating a repeater.&lt;/p&gt;
+&lt;p&gt;One-byte repeaters are also at risk of being dropped from the
+MeshMapper map. The new &quot;Canada&quot; preset should configure your
+devices correctly.&lt;/p&gt;
+&lt;p&gt;This announcement explains how to configure your devices and why we
+are making this change.&lt;/p&gt;</description><link>https://lora.reseaulibre.ca/news/2026/09/18/please-use-3-bytes-routing/</link><source url="https://lora.reseaulibre.ca/feed_rss_created.xml">Réseau Libre</source><pubDate>Fri, 18 Sep 2026 15:46:53 +0000</pubDate><guid isPermaLink="true">https://lora.reseaulibre.ca/news/2026/09/18/please-use-3-bytes-routing/</guid></item><item><title>First contacts between Montréal and Québec</title><category>announcements</category><description>&lt;p&gt;We are seeing signs of the &lt;a href=&quot;../../references/log.md#2026-09-16&quot;&gt;first contacts between Montréal and
+Québec&lt;/a&gt;.&lt;/p&gt;</description><link>https://lora.reseaulibre.ca/news/2026/09/16/first-contacts-between-montr%C3%A9al-and-qu%C3%A9bec/</link><source url="https://lora.reseaulibre.ca/feed_rss_created.xml">Réseau Libre</source><pubDate>Thu, 17 Sep 2026 01:39:15 +0000</pubDate><guid isPermaLink="true">https://lora.reseaulibre.ca/news/2026/09/16/first-contacts-between-montr%C3%A9al-and-qu%C3%A9bec/</guid></item><item><title>Please limit adverts, loops and floods</title><category>announcements</category><description>&lt;p&gt;Things are moving fast in the mesh!&lt;/p&gt;
+&lt;p&gt;After discussion and testing with key operators in Montreal and its
+greater area, we strongly encourage you to make the following changes
+to your repeaters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.meshcore.io/cli_commands/#view-or-change-this-nodes-loop-detection&quot;&gt;Loop detection&lt;/a&gt;: &lt;code&gt;moderate&lt;/code&gt;, defaults to &lt;code&gt;off&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.meshcore.io/cli_commands/#view-or-change-the-zero-hop-advert-interval&quot;&gt;Zero hop advert interval&lt;/a&gt;: &lt;code&gt;240&lt;/code&gt; (minutes, defaults to &lt;code&gt;60&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.meshcore.io/cli_commands/#view-or-change-the-flood-advert-interval&quot;&gt;Flood advert interval&lt;/a&gt;: &lt;code&gt;47&lt;/code&gt; (hours, defaults to &lt;code&gt;12&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.meshcore.io/cli_commands/#limit-the-number-of-hops-for-a-flood-message&quot;&gt;Number of hops for a flood message&lt;/a&gt;: &lt;code&gt;16&lt;/code&gt; (defaults to &lt;code&gt;64&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On the command-line, the equivalent is the following commands:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;set loop.detect moderate
+set advert.interval 240
+set flood.advert.interval 47
+set flood.max 16&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;For repeaters with many neighbors (30-50), we also advise raising &lt;code&gt;txdelay&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-flood-traffic&quot;&gt;Re-transmit delay for flood traffic&lt;/a&gt;: &lt;code&gt;1&lt;/code&gt; (defaults to &lt;code&gt;0.5&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-direct-traffic&quot;&gt;Re-transmit delay for direct traffic&lt;/a&gt;: &lt;code&gt;0.5&lt;/code&gt; (defaults to &lt;code&gt;0.2&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Equivalent commands:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;set txdelay 1
+set direct.txdelay 0.5&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;We do not currently have a recommendation on changing &lt;a href=&quot;https://docs.meshcore.io/cli_commands/#experimental-view-or-change-the-processing-delay-for-received-traffic&quot;&gt;&lt;code&gt;rxdelay&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;</description><link>https://lora.reseaulibre.ca/news/2026/09/25/please-limit-adverts-loops-and-floods/</link><source url="https://lora.reseaulibre.ca/feed_rss_created.xml">Réseau Libre</source><pubDate>Mon, 14 Sep 2026 12:03:16 +0000</pubDate><guid isPermaLink="true">https://lora.reseaulibre.ca/news/2026/09/25/please-limit-adverts-loops-and-floods/</guid></item><item><title>Fire hazard on the WisMesh Pocket</title><category>announcements</category><description>&lt;figure markdown=&quot;span&quot;&gt;
+![link text](PXL_20260822_030912186.MP.jpg){ width=250 }
+  &lt;figcaption&gt;A WisMesh Pocket V2&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;inline end&quot; markdown=&quot;span&quot;&gt;
+    ![the bottom right of the perforated battery](wismesh-sean-perforated.png){ align=right width=200}
+  &lt;figcaption&gt;Perforated battery pouch with a bulge&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This is a public service announcement concerning the &lt;a href=&quot;https://store.rakwireless.com/products/wismesh-pocket&quot;&gt;WisMesh Pocket
+V2&lt;/a&gt; as sold by RAK Wireless. We have on-hands experience with two
+devices that exhibit premature wear and tear of the battery pouch due
+to what seems to be a design flaw. &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!WARNING]
+We have reasons to believe WisMesh Pocket V2 devices present a
+fire hazard and need to be immediately inspected for internal damage.&lt;/p&gt;
+&lt;/blockquote&gt;</description><link>https://lora.reseaulibre.ca/news/2026/08/26/fire-hazard-on-the-wismesh-pocket/</link><source url="https://lora.reseaulibre.ca/feed_rss_created.xml">Réseau Libre</source><pubDate>Thu, 27 Aug 2026 03:20:56 +0000</pubDate><guid isPermaLink="true">https://lora.reseaulibre.ca/news/2026/08/26/fire-hazard-on-the-wismesh-pocket/</guid></item><item><title>Mesh night in July</title><category>events</category><description>&lt;p&gt;Every month, &lt;a href=&quot;https://foulab.org/&quot;&gt;Foulab&lt;/a&gt;, the Montreal hacker space, holds a mesh
+night the first Wednesday of the month, and this month is
+no exception!  &lt;!-- post link when ready:
+https://foulab.org/news/events-may-2026/ --&gt;&lt;/p&gt;</description><link>https://lora.reseaulibre.ca/news/2026/06/19/mesh-night-in-july/</link><source url="https://lora.reseaulibre.ca/feed_rss_created.xml">Réseau Libre</source><pubDate>Sat, 20 Jun 2026 01:28:30 +0000</pubDate><guid isPermaLink="true">https://lora.reseaulibre.ca/news/2026/06/19/mesh-night-in-july/</guid></item><item><title>Mesh night in August</title><category>events</category><description>&lt;p&gt;Every month, &lt;a href=&quot;https://foulab.org/&quot;&gt;Foulab&lt;/a&gt;, the Montreal hacker space, holds a mesh
+night the first Wednesday of the month, and this month is
+no exception!  &lt;!-- post link when ready:
+https://foulab.org/news/events-may-2026/ --&gt;&lt;/p&gt;</description><link>https://lora.reseaulibre.ca/news/2026/07/28/mesh-night-in-august/</link><source url="https://lora.reseaulibre.ca/feed_rss_created.xml">Réseau Libre</source><pubDate>Sat, 20 Jun 2026 01:28:30 +0000</pubDate><guid isPermaLink="true">https://lora.reseaulibre.ca/news/2026/07/28/mesh-night-in-august/</guid></item><item><title>Mesh night in September</title><category>events</category><description>&lt;p&gt;You know the drill!&lt;/p&gt;
+&lt;p&gt;Every month, &lt;a href=&quot;https://foulab.org/&quot;&gt;Foulab&lt;/a&gt;, the Montreal hacker space, holds a mesh
+night the first Wednesday of the month, and this month is
+no exception!  &lt;!-- post link when ready:
+https://foulab.org/news/events-may-2026/ --&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!SUCCESS]
+Now with notes!&lt;/p&gt;
+&lt;/blockquote&gt;</description><link>https://lora.reseaulibre.ca/news/2026/08/29/mesh-night-in-september/</link><source url="https://lora.reseaulibre.ca/feed_rss_created.xml">Réseau Libre</source><pubDate>Sat, 20 Jun 2026 01:28:30 +0000</pubDate><guid isPermaLink="true">https://lora.reseaulibre.ca/news/2026/08/29/mesh-night-in-september/</guid></item><item><title>June 11 repeater meetup</title><category>events</category><description>&lt;p&gt;We will hold a second repeater meet up at room C-9019 of &lt;a href=&quot;https://www.openstreetmap.org/relation/2109148&quot;&gt;Lionel
+Groulx wing&lt;/a&gt; (3150 Jean-Brillant, &lt;a href=&quot;https://maps.app.goo.gl/68PGSCCXcJUjXEAFA&quot;&gt;Google Maps link&lt;/a&gt;) of
+Université de Montréal on Thursday June 11 from 19h to 21h.&lt;/p&gt;</description><link>https://lora.reseaulibre.ca/news/2026/05/31/june-11-repeater-meetup/</link><source url="https://lora.reseaulibre.ca/feed_rss_created.xml">Réseau Libre</source><pubDate>Mon, 01 Jun 2026 02:40:50 +0000</pubDate><guid isPermaLink="true">https://lora.reseaulibre.ca/news/2026/05/31/june-11-repeater-meetup/</guid></item><item><title>May 21st repeater meetup</title><category>events</category><description>&lt;p&gt;We will hold a Mesh Montreal repeater meet up at room C-9019 of
+&lt;a href=&quot;https://www.openstreetmap.org/relation/2109148&quot;&gt;Lionel Groulx wing&lt;/a&gt; of Université de Montréal on Thursday May 21st
+from 19h to 21h. &lt;/p&gt;</description><link>https://lora.reseaulibre.ca/news/2026/05/10/may-21st-repeater-meetup/</link><source url="https://lora.reseaulibre.ca/feed_rss_created.xml">Réseau Libre</source><pubDate>Mon, 11 May 2026 03:43:50 +0000</pubDate><guid isPermaLink="true">https://lora.reseaulibre.ca/news/2026/05/10/may-21st-repeater-meetup/</guid></item><item><title>Deprecating Meshtastic in Montreal</title><category>announcements</category><description>&lt;p&gt;Meshtastic deprecated in favor of MeshCore.&lt;/p&gt;</description><link>https://lora.reseaulibre.ca/news/2026/05/02/deprecating-meshtastic-in-montreal/</link><source url="https://lora.reseaulibre.ca/feed_rss_created.xml">Réseau Libre</source><pubDate>Thu, 30 Apr 2026 00:07:44 +0000</pubDate><guid isPermaLink="true">https://lora.reseaulibre.ca/news/2026/05/02/deprecating-meshtastic-in-montreal/</guid></item><item><title>Mesh night and day in May</title><category>events</category><description>&lt;p&gt;Every month, &lt;a href=&quot;https://foulab.org/&quot;&gt;Foulab&lt;/a&gt;, the Montreal hacker space, holds a mesh
+night the first Wednesday of the month, and this month is
+no exception!  &lt;!-- post link when ready:
+https://foulab.org/news/events-may-2026/ --&gt;&lt;/p&gt;</description><link>https://lora.reseaulibre.ca/news/2026/04/21/mesh-night-and-day-in-may/</link><source url="https://lora.reseaulibre.ca/feed_rss_created.xml">Réseau Libre</source><pubDate>Thu, 23 Apr 2026 20:08:54 +0000</pubDate><guid isPermaLink="true">https://lora.reseaulibre.ca/news/2026/04/21/mesh-night-and-day-in-may/</guid></item><item><title>April mesh night meeting</title><category>events</category><description>&lt;p&gt;Every month, &lt;a href=&quot;https://foulab.org/&quot;&gt;Foulab&lt;/a&gt;, the Montreal hacker space, holds a mesh
+night on every first Wednesday of the month, and this month is
+(probably) no exception!  &lt;!-- post link when ready:
+https://foulab.org/news/events-march-2026/ --&gt;&lt;/p&gt;
+&lt;p&gt;So let&apos;s meet at Foulab on April 1st from 19:00 to 22:00.&lt;/p&gt;
+&lt;p&gt;There will be a short meeting of Foulab&apos;s mesh committee, but you can
+also just join us to hack on things!&lt;/p&gt;</description><link>https://lora.reseaulibre.ca/news/2026/03/23/april-mesh-night-meeting/</link><source url="https://lora.reseaulibre.ca/feed_rss_created.xml">Réseau Libre</source><pubDate>Tue, 24 Mar 2026 03:36:45 +0000</pubDate><guid isPermaLink="true">https://lora.reseaulibre.ca/news/2026/03/23/april-mesh-night-meeting/</guid></item><item><title>Let&apos;s meet at Foulab&apos;s mesh night</title><category>events</category><description>&lt;p&gt;Every month, &lt;a href=&quot;https://foulab.org/&quot;&gt;Foulab&lt;/a&gt;, the Montreal hacker space,
+holds a mesh night, and &lt;a href=&quot;https://foulab.org/news/events-march-2026/&quot;&gt;this March is no exception&lt;/a&gt;.&lt;/p&gt;</description><link>https://lora.reseaulibre.ca/news/2026/03/04/lets-meet-at-foulabs-mesh-night/</link><source url="https://lora.reseaulibre.ca/feed_rss_created.xml">Réseau Libre</source><pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate><guid isPermaLink="true">https://lora.reseaulibre.ca/news/2026/03/04/lets-meet-at-foulabs-mesh-night/</guid></item></channel></rss>
