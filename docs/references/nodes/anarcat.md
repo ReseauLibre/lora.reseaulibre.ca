@@ -97,9 +97,10 @@ roof, Meshtastic and MeshCore.
 - [ ] upgrade firmware (running 1.15?)
 - [ ] OTA upgrade fix
 - [ ] verify configuration
+- [ ] regions configuration
 - [ ] add photo
 
-### 2026-09-27: floods configuration deployement
+### 2026-09-27: flood configuration
 
 After three days of repeated attempts and partial successes, the
 [flood configuration](../../news/posts/2026-09-20-limit-flood-and-loops.md) is considered to be deployed, including the
@@ -114,7 +115,8 @@ set txdelay 1
 set direct.txdelay 0.5
 ```
 
-But cannot be verified because the node is hard to reach.
+But cannot be verified because the node is hard to reach. Unclear
+which route is stable.
 
 ### 2026-05-07: initial deployment
 
