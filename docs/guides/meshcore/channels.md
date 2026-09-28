@@ -22,7 +22,7 @@ We know about the follow channels currently in use[^1]:
 | Public                | General conversations                                            | `8b3387e9c5cdea6ac9e5edbaa115cd72` | `izOH6cXN6mrJ5e26oRXNcg==` |
 | `#911`                | Emergency communications (french)                                | `907a3dd4b73b9d1324b4d6c83425c186` | `kHo91Lc7nRMktNbINCXBhg==` |
 | `#emergency`          | Emergency communications (English)                               | `e1ad578d25108e344808f30dfdaaf926` | `4a1XjSUQjjRICPMN/ar5Jg==` |
-| `#meshcore-ops`       | Operator coordination                                            | `dd95f5167774c3967edee5c606bcad43` | `3ZX1Fnd0w5Z+3uXGBrytQw==` |
+| `#operators`          | Operator coordination, previously `#meshcore-ops`                | `1d2c8ee2ee25af1c7a25f6eb6fbbf020` | `HSyO4u4lrxx6Jfbrb7vwIA==` |
 | `#montreal`           | Montreal-specific traffic, see also `#ottawa`                    | `0c4c03b5fbea5b80f89e2a2a16ed3f40` | `DEwDtfvqW4D4nioqFu0/QA==` |
 | `#wardriving`         | Used by [Meshmapper][] pings                                     | `e3c26491e9cd321e3a6be50d57d54acf` | `48JkkenNMh46a+UNV9VKzw==` |
 | `#habs`               | Far from real time game updates and gossip                       | `e570409412b40c123b4ab787351ab30b` | `5XBAlBK0DBI7SreHNRqzCw==` |
