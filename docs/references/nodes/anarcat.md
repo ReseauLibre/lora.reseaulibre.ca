@@ -133,10 +133,40 @@ a key repeater.
 - [ ] verify configuration
 - [ ] add photo
 
-### 2026-09-27: connection failures
+
+### 2026-09-27: flood and regions configuration
 
 YUL-Plateau-Ouest-R1 is now a key ("golden") repeater, but I am having
 trouble reaching it to deploy the [flood configuration](../../news/posts/2026-09-20-limit-flood-and-loops.md).
+
+The following configurations were performed, after many efforts:
+
+```
+set flood.max 16
+set flood.advert.interval 47
+set advert.interval 240
+set txdelay 1
+set direct.txdelay 0.5
+set loop.detect moderate
+```
+
+The regions configuration was, amazingly, also performed, on this
+older 1.15 firmware:
+
+```
+region put yul
+region put qc
+region put onqc
+region put can
+region put na
+region allowf *
+region default yul
+region save
+```
+
+Current version is `1.15.0-dee3e26 (Build: 19-Apr-2026)`.
+
+Working path seems to be `YUL-Little-Italy` - `YUL-Parc-Extension 17m`.
 
 ### 2026-05-24: initial deployment
 
