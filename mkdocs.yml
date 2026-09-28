@@ -161,6 +161,9 @@ extra:
     - icon: simple/matrix
       link: https://matrix.to/#/#reseaulibre-space:matrix.org
       name: Matrix chat
+    - icon: fontawesome/brands/mastodon
+      link: https://mastodon.radio/@reseaulibre
+      name: Mastodon
     - icon: simple/codeberg
       link: https://codeberg.org/reseaulibre/lora-reseaulibre-ca
       name: Source code
