@@ -9,6 +9,46 @@ now less important. Where the [weekly net](../../guides/net.md) is ran from.
 
 - [ ] find a way to have both repeaters installed without interference
 
+### 2026-09-27: regions test
+
+Testing the [regions proposal](https://meshcore.ca/proposals/onqc-scopes/):
+
+```
+region def yul|* qc|* onqc|* can|* na
+region allowf *
+region default yul
+region save
+```
+
+Result:
+
+```
+> region
+*^ F
+
+> region def yul|* qc|* onqc|* can|* na
+*^ F
+ yul F
+ qc F
+ onqc F
+ can F
+ na F
+
+> region allowf *
+OK
+> region default yul
+ default scope is now yul
+> region save
+OK
+> region
+*^ F
+ yul F
+ qc F
+ onqc F
+ can F
+ na F
+```
+
 ### 2026-09-21: flood configuration
 
 Applied [flood configuration](../../news/posts/2026-09-20-limit-flood-and-loops.md) including `txdelay`, specifically:
