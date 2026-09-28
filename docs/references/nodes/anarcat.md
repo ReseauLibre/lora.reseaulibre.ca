@@ -79,13 +79,13 @@ interference issues.
 
 A PVC mast was added to the J-pole as well.
 
-### 2026-05-03
+### 2026-05-03: Alfa upgrade
 
 Antenna upgraded to a Alfa, Meshtastic repeater removed.
 
 ![](../../assets/sensecap-p1-alfa.jpg)
 
-### 2026-04-17
+### 2026-04-17: initial deployment
 
 Some time in the spring of 2026, two repeaters were deployed on the
 roof, Meshtastic and MeshCore.
