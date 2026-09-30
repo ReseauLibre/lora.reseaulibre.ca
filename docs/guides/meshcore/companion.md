@@ -66,10 +66,12 @@ correctly.
 On many devices, you need to enter some special mode for flashing to
 work. Here are examples:
 
-- Heltec: hold the "program" (`PRG`) button while connecting
+- Heltec v3 and v4: hold the "program" (`PRG`) button while connecting
   the USB cable. For the Heltec v4, it will show up as a `JTAG`
   device. On the Heltec v3, it will show up as a `CP2102 USB to UART
   Bridge Controller`.
+
+- Heltec T114: double-click the reset button
 
 - RAK: double-click the reset button will bring it in "DFU" mode, but
   the web flasher should also be able to do that automatically.

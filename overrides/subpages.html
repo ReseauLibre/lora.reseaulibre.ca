@@ -12,7 +12,7 @@
   {% for ancestor in page.ancestors  %}
   {% for child in ancestor.children %}
   {% if child.url is startingwith page.url and child.url != page.url %}
-  <li><a href="../../{{ child.url | url }}">{{ child.title }}</a></li>
+  <li><a href="{{ child.url | url }}">{{ child.title }}</a></li>
   {% endif %}
   {% endfor %}
   {% endfor %}

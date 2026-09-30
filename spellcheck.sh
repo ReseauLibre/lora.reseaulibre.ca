@@ -14,6 +14,7 @@ find . -name "*.md" | grep -v \
   -e '/log.md$' \
   -e '/2026-08-26-wismesh-pocket-fire-hazard.md$' \
   -e '/hardware/index.md$' \
+  -e '/references/nodes/.*$' \
     | while read -r path; do
     echo "spellchecking $path..."
     if $aspell list < "$path" | grep .; then
