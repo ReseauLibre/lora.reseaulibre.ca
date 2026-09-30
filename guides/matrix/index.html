@@ -2262,7 +2262,9 @@ curl -XPOST --header 'Content-Type: application/json' \
 <div class="highlight"><pre><span></span><code>{"access_token":"mct_REDACTED_REDACTED","device_id":"E6aFv2IAri","user_id":"@rl-codeberg-webhook:matrix.org"}
 </code></pre></div>
 <p>Previous attempts at copying the access token from Element typically
-fail after 24 hours.</p>
+failed after 24 hours, and it seems the above approach is more robust,
+even though the Forgejo documentation suggests using those tokens
+works fine.</p>
 <p>This was done instead of setting up a dedicated bot like <a href="https://mau.bot/">Maubot</a>
 with its <a href="https://plugins.mau.bot/">numerous plugins</a> like a <a href="https://github.com/maubot/rss">RSS plugin</a>, or a <a href="https://github.com/jkhsjdhjs/maubot-webhook">webhook
 plugin</a>. There is also a <a href="https://gitlab.com/matrix-rss-bridge/matrix-rss-bridge">dedicated RSS bridge</a>.</p>
@@ -2287,10 +2289,11 @@ we'd still need to add it to all the rooms anyways.</p>
 <p><a href="https://asgard.chat/"><code>asgard.chat</code></a> possible alternative to Debian's Mjolnir, ran by the
 folks who do a lot of stuff in Matrix, people from the MSC core team,
 Draupnir, Meowlnir, Continuwuity and so on.</p>
-<p>Both run an open source bot called <a href="https://github.com/the-draupnir-project/Draupnir">Draupnir</a>. We could run our own
-to remove trust in other organisations, but it wouldn't resolve the
-primary goal of the bot which is to remove the single point of failure
-in the main room admin.</p>
+<p>Both run an open source bot called <a href="https://github.com/the-draupnir-project/Draupnir">Draupnir</a>, a fork of
+<a href="https://github.com/matrix-org/mjolnir">Mjolnir</a>.</p>
+<p>We could run our own to remove trust in other organisations, but it
+wouldn't resolve the primary goal of the bot which is to remove the
+single point of failure in the main room admin.</p>
 
 
 
