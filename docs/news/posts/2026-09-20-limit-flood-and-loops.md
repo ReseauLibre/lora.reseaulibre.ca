@@ -52,6 +52,7 @@ repeaters:
 - `Oots`: `YUL-Villeray/Garnier`
 - `VA2DG`: `VA2DGR Repeater`
 - `Johnputer`: `YUL-Cartierville`, `YUL-UpperSalaberry`
+- `MeshCourte`: `Villeray`, `Villeray-Nord`
 
 ## Why?
 
@@ -149,3 +150,6 @@ the number of such packets that *flood* the network, that said.
 In any case, we welcome comments and feedback on this proposal through
 [our regular contact points](../../contact.md) and the [merge request on
 Codeberg](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/14).
+
+This article is also available under the shorter URL
+<https://lora.reseaulibre.ca/floods/> for sharing more easily on the mesh.
