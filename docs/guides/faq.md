@@ -237,7 +237,7 @@ Wait a little while; relays periodically announce themselves and you
 should eventually see some relays.
 
 Make sure you configured your device with the right settings, see our
-[MeshCore](meshcore/companion.md#configuration) and [Meshtastic](meshtastic.md#settings) settings.
+[MeshCore](meshcore/companion.md#configuration) and [Meshtastic](meshtastic.md#parametres) settings.
 
 Try to say hi and ask if anyone can read you. People might pick up the
 message only much later and respond. Keep your device open.
