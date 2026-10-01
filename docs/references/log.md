@@ -10,7 +10,7 @@ We log the following fields:
 - location 
 - hops
 
-## 2026-10-01
+## 2026-09-30
 
 | time  | call sign              | name     | location         | hops |
 |-------|------------------------|----------|------------------|------|
