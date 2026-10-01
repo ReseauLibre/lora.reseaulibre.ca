@@ -4,31 +4,28 @@
         <loc>https://lora.reseaulibre.ca/fr/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/fr/values/</loc>
-      </url>
-      <url>
-        <loc>https://lora.reseaulibre.ca/fr/history/</loc>
+        <loc>https://lora.reseaulibre.ca/fr/code/</loc>
       </url>
       <url>
         <loc>https://lora.reseaulibre.ca/fr/contact/</loc>
       </url>
       <url>
+        <loc>https://lora.reseaulibre.ca/fr/guides/</loc>
+      </url>
+      <url>
         <loc>https://lora.reseaulibre.ca/fr/guides/faq/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/fr/code/</loc>
-      </url>
-      <url>
-        <loc>https://lora.reseaulibre.ca/fr/guides/</loc>
+        <loc>https://lora.reseaulibre.ca/fr/guides/matrix/</loc>
       </url>
       <url>
         <loc>https://lora.reseaulibre.ca/fr/guides/meshcore/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/fr/guides/meshcore/companion/</loc>
+        <loc>https://lora.reseaulibre.ca/fr/guides/meshcore/channels/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/fr/guides/meshcore/channels/</loc>
+        <loc>https://lora.reseaulibre.ca/fr/guides/meshcore/companion/</loc>
       </url>
       <url>
         <loc>https://lora.reseaulibre.ca/fr/guides/meshcore/repeater/</loc>
@@ -37,10 +34,13 @@
         <loc>https://lora.reseaulibre.ca/fr/guides/meshcore/upgrades/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/fr/guides/reticulum/</loc>
+        <loc>https://lora.reseaulibre.ca/fr/guides/meshtastic/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/fr/guides/reticulum/rns/</loc>
+        <loc>https://lora.reseaulibre.ca/fr/guides/net/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/guides/reticulum/</loc>
       </url>
       <url>
         <loc>https://lora.reseaulibre.ca/fr/guides/reticulum/lxmf-cli/</loc>
@@ -49,19 +49,82 @@
         <loc>https://lora.reseaulibre.ca/fr/guides/reticulum/meshcore/</loc>
       </url>
       <url>
+        <loc>https://lora.reseaulibre.ca/fr/guides/reticulum/rns/</loc>
+      </url>
+      <url>
         <loc>https://lora.reseaulibre.ca/fr/guides/reticulum/rtnode/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/fr/guides/meshtastic/</loc>
+        <loc>https://lora.reseaulibre.ca/fr/history/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/fr/guides/net/</loc>
+        <loc>https://lora.reseaulibre.ca/fr/meta/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/fr/guides/matrix/</loc>
+        <loc>https://lora.reseaulibre.ca/fr/news/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/fr/guides/faq/</loc>
+        <loc>https://lora.reseaulibre.ca/fr/news/2026/03/04/soir%C3%A9e-mesh-%C3%A0-foulab/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/2026/03/23/april-mesh-night-meeting/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/2026/04/21/mesh-nuit-et-jour-en-mai/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/2026/05/02/d%C3%A9pr%C3%A9cation-de-meshtastic-%C3%A0-montr%C3%A9al/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/2026/05/10/rencontre-r%C3%A9p%C3%A9teurs-le-21-mai/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/2026/05/22/notes-de-la-rencontre-r%C3%A9p%C3%A9teurs-du-21-mai-2026/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/2026/05/31/rencontre-r%C3%A9p%C3%A9teurs-le-11-juin/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/2026/06/11/notes-de-la-rencontre-r%C3%A9p%C3%A9teurs-du-11-juin-2026/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/2026/06/19/mesh-night-de-juillet/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/2026/07/28/mesh-night-dao%C3%BBt/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/2026/08/26/fire-hazard-on-the-wismesh-pocket/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/2026/08/29/mesh-night-de-septembre/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/2026/09/16/premiers-contacts-entre-montr%C3%A9al-et-qu%C3%A9bec/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/2026/09/18/pri%C3%A8re-dutiliser-le-routage-%C3%A0-3-octets/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/2026/09/25/pri%C3%A8re-de-limiter-les-annonces-boucles-et-floods/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/2026/09/27/new-nodes-showcase-mirrors-and-theme/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/archive/2026/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/archive/2026/page/2/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/category/announcements/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/category/events/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/news/page/2/</loc>
       </url>
       <url>
         <loc>https://lora.reseaulibre.ca/fr/references/</loc>
@@ -79,19 +142,13 @@
         <loc>https://lora.reseaulibre.ca/fr/references/hardware/power/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/fr/references/software/</loc>
-      </url>
-      <url>
-        <loc>https://lora.reseaulibre.ca/fr/references/software/meshtastic/</loc>
-      </url>
-      <url>
-        <loc>https://lora.reseaulibre.ca/fr/references/software/bots/</loc>
+        <loc>https://lora.reseaulibre.ca/fr/references/log/</loc>
       </url>
       <url>
         <loc>https://lora.reseaulibre.ca/fr/references/maps/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/fr/meta/</loc>
+        <loc>https://lora.reseaulibre.ca/fr/references/neighbours/</loc>
       </url>
       <url>
         <loc>https://lora.reseaulibre.ca/fr/references/nodes/</loc>
@@ -100,15 +157,18 @@
         <loc>https://lora.reseaulibre.ca/fr/references/nodes/anarcat/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/fr/references/neighbours/</loc>
-      </url>
-      <url>
-        <loc>https://lora.reseaulibre.ca/fr/references/log/</loc>
-      </url>
-      <url>
         <loc>https://lora.reseaulibre.ca/fr/references/other/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/fr/news/</loc>
+        <loc>https://lora.reseaulibre.ca/fr/references/software/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/references/software/bots/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/references/software/meshtastic/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/fr/values/</loc>
       </url>
 </urlset>

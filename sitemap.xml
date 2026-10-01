@@ -4,31 +4,28 @@
         <loc>https://lora.reseaulibre.ca/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/values/</loc>
-      </url>
-      <url>
-        <loc>https://lora.reseaulibre.ca/history/</loc>
+        <loc>https://lora.reseaulibre.ca/code/</loc>
       </url>
       <url>
         <loc>https://lora.reseaulibre.ca/contact/</loc>
       </url>
       <url>
+        <loc>https://lora.reseaulibre.ca/guides/</loc>
+      </url>
+      <url>
         <loc>https://lora.reseaulibre.ca/guides/faq/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/code/</loc>
-      </url>
-      <url>
-        <loc>https://lora.reseaulibre.ca/guides/</loc>
+        <loc>https://lora.reseaulibre.ca/guides/matrix/</loc>
       </url>
       <url>
         <loc>https://lora.reseaulibre.ca/guides/meshcore/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/guides/meshcore/companion/</loc>
+        <loc>https://lora.reseaulibre.ca/guides/meshcore/channels/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/guides/meshcore/channels/</loc>
+        <loc>https://lora.reseaulibre.ca/guides/meshcore/companion/</loc>
       </url>
       <url>
         <loc>https://lora.reseaulibre.ca/guides/meshcore/repeater/</loc>
@@ -37,10 +34,13 @@
         <loc>https://lora.reseaulibre.ca/guides/meshcore/upgrades/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/guides/reticulum/</loc>
+        <loc>https://lora.reseaulibre.ca/guides/meshtastic/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/guides/reticulum/rns/</loc>
+        <loc>https://lora.reseaulibre.ca/guides/net/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/guides/reticulum/</loc>
       </url>
       <url>
         <loc>https://lora.reseaulibre.ca/guides/reticulum/lxmf-cli/</loc>
@@ -49,19 +49,76 @@
         <loc>https://lora.reseaulibre.ca/guides/reticulum/meshcore/</loc>
       </url>
       <url>
+        <loc>https://lora.reseaulibre.ca/guides/reticulum/rns/</loc>
+      </url>
+      <url>
         <loc>https://lora.reseaulibre.ca/guides/reticulum/rtnode/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/guides/meshtastic/</loc>
+        <loc>https://lora.reseaulibre.ca/history/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/guides/net/</loc>
+        <loc>https://lora.reseaulibre.ca/meta/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/guides/matrix/</loc>
+        <loc>https://lora.reseaulibre.ca/news/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/guides/faq/</loc>
+        <loc>https://lora.reseaulibre.ca/news/2026/03/04/lets-meet-at-foulabs-mesh-night/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/2026/03/23/april-mesh-night-meeting/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/2026/04/21/mesh-night-and-day-in-may/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/2026/05/02/deprecating-meshtastic-in-montreal/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/2026/05/10/may-21st-repeater-meetup/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/2026/05/31/june-11-repeater-meetup/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/2026/06/19/mesh-night-in-july/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/2026/07/28/mesh-night-in-august/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/2026/08/26/fire-hazard-on-the-wismesh-pocket/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/2026/08/29/mesh-night-in-september/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/2026/09/16/first-contacts-between-montr%C3%A9al-and-qu%C3%A9bec/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/2026/09/18/please-use-3-bytes-routing/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/2026/09/25/please-limit-adverts-loops-and-floods/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/2026/09/27/new-nodes-showcase-mirrors-and-theme/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/archive/2026/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/archive/2026/page/2/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/category/announcements/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/category/events/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/news/page/2/</loc>
       </url>
       <url>
         <loc>https://lora.reseaulibre.ca/references/</loc>
@@ -79,19 +136,13 @@
         <loc>https://lora.reseaulibre.ca/references/hardware/power/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/references/software/</loc>
-      </url>
-      <url>
-        <loc>https://lora.reseaulibre.ca/references/software/meshtastic/</loc>
-      </url>
-      <url>
-        <loc>https://lora.reseaulibre.ca/references/software/bots/</loc>
+        <loc>https://lora.reseaulibre.ca/references/log/</loc>
       </url>
       <url>
         <loc>https://lora.reseaulibre.ca/references/maps/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/meta/</loc>
+        <loc>https://lora.reseaulibre.ca/references/neighbours/</loc>
       </url>
       <url>
         <loc>https://lora.reseaulibre.ca/references/nodes/</loc>
@@ -100,15 +151,18 @@
         <loc>https://lora.reseaulibre.ca/references/nodes/anarcat/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/references/neighbours/</loc>
-      </url>
-      <url>
-        <loc>https://lora.reseaulibre.ca/references/log/</loc>
-      </url>
-      <url>
         <loc>https://lora.reseaulibre.ca/references/other/</loc>
       </url>
       <url>
-        <loc>https://lora.reseaulibre.ca/news/</loc>
+        <loc>https://lora.reseaulibre.ca/references/software/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/references/software/bots/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/references/software/meshtastic/</loc>
+      </url>
+      <url>
+        <loc>https://lora.reseaulibre.ca/values/</loc>
       </url>
 </urlset>
