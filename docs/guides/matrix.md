@@ -149,7 +149,9 @@ On success, it replied with:
     {"access_token":"mct_REDACTED_REDACTED","device_id":"E6aFv2IAri","user_id":"@rl-codeberg-webhook:matrix.org"}
 
 Previous attempts at copying the access token from Element typically
-fail after 24 hours.
+failed after 24 hours, and it seems the above approach is more robust,
+even though the Forgejo documentation suggests using those tokens
+works fine.
 
 This was done instead of setting up a dedicated bot like [Maubot](https://mau.bot/)
 with its [numerous plugins](https://plugins.mau.bot/) like a [RSS plugin](https://github.com/maubot/rss), or a [webhook
@@ -180,7 +182,9 @@ been done manually across all the rooms.
 folks who do a lot of stuff in Matrix, people from the MSC core team,
 Draupnir, Meowlnir, Continuwuity and so on.
 
-Both run an open source bot called [Draupnir](https://github.com/the-draupnir-project/Draupnir). We could run our own
-to remove trust in other organisations, but it wouldn't resolve the
-primary goal of the bot which is to remove the single point of failure
-in the main room admin.
+Both run an open source bot called [Draupnir](https://github.com/the-draupnir-project/Draupnir), a fork of
+[Mjolnir](https://github.com/matrix-org/mjolnir).
+ 
+We could run our own to remove trust in other organisations, but it
+wouldn't resolve the primary goal of the bot which is to remove the
+single point of failure in the main room admin.

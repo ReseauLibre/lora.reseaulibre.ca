@@ -10,6 +10,39 @@ We log the following fields:
 - location 
 - hops
 
+## 2026-09-30
+
+| time  | call sign              | name     | location         | hops |
+|-------|------------------------|----------|------------------|------|
+| 20:59 | GAMMA                  |          | Le Gardeur       | 5    |
+| 21:00 | VE2CL-V4               | Cédric   | La Prairie       | 4    |
+| 21:02 | Oots                   |          | Villeray         | 1    |
+| 21:04 | MG V4-mini             | Marc     | Terrebonne       | 3    |
+| 21:08 | Johnputer              | JP       | Cartierville     | 3    |
+| 21:09 | Zivior                 | Xavier   | Ville-Marie      | 4    |
+| 21:11 | grostonymobil          | Anthony  | St-Gab           | 7    |
+| 21:18 | PEPQC                  |          | St-Zénon         | 3    |
+| 21:21 | LOG.IC 3R              | Martin   | Trois-Rivières   | 6    |
+| 21:29 | VE2EBM-2               |          | St-Anne-de-Sorel | 7    |
+| 21:35 | YUL-Ste-Julie-Carlitos | Carlitos | Ste-Julie        | 6    |
+
+Observed:
+
+- 10 contacts
+- first contacts with regions, reached people in Montreal over the
+  regions `onqc`, `qc` and `yul`, but no response from Ottawa
+- [232 nodes in the official map](https://map.meshcore.io/?zoom=7&lat=45.7100&lon=-72.6416)
+- [201 repeaters in MeshMapper](https://yul.meshmapper.net/leaderboard.php) (new record)
+
+Announces:
+
+- mesh night next week!
+- JP working on supporting the [Cardputer Zero](https://shop.m5stack.com/pages/m5-cardputerzero) in [Meshterm](https://meshterm.net/)
+- reminder of ongoing proposals:
+    - [Please use 3 bytes routing](../news/posts/2026-09-18-3-bytes-hash-mode.md)
+    - [Please limit adverts, loops and floods](../news/posts/2026-09-20-limit-flood-and-loops.md) (now official)
+    - [Regions proposal #15](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/15) (comments welcome)
+
 ## 2026-09-23
 
 First net fully in 3 bytes.

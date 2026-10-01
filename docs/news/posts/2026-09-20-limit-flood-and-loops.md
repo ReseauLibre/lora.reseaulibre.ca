@@ -53,6 +53,7 @@ Ces réglages ont été testés par les opérateurs-trices et répéteurs suivan
 - `Oots`: `YUL-Villeray/Garnier`
 - `VA2DG`: `VA2DGR Repeater`
 - `Johnputer`: `YUL-Cartierville`, `YUL-UpperSalaberry`
+- `MeshCourte`: `Villeray`, `Villeray-Nord`
 
 ## Pourquoi?
 
@@ -156,3 +157,7 @@ du genre qui vont inonder le réseau, ceci dit.
 Dans tous les cas, nous aimerions avoir vos commentaires sur cette
 proposition par nos [points de contact habituels](../../contact.md) et la [merge
 request sur Codeberg](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/14).
+
+Cet article est également disponible avec l'URL court
+<https://lora.reseaulibre.ca/fr/floods/> pour partager plus facilement
+sur le mesh.

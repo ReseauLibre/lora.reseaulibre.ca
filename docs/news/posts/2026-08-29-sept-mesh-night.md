@@ -33,7 +33,7 @@ Quebec, Canada, H4C 2S3][] ([Google maps][]).
 [Google maps]: https://www.google.com/maps/place/999+Rue+du+Coll%C3%A8ge,+Montr%C3%A9al,+QC+H4C+2S2,+Canada
 [Suite 33B, 999 du Collège, Montréal, Quebec, Canada, H4C 2S3]: https://www.openstreetmap.org/node/717702812
 
-# Notes
+## Notes
 
 About 15-20 people showed up during the night. I (anarcat) noticed the
 following:
