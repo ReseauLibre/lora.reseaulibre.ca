@@ -24,8 +24,7 @@ We log the following fields:
 | 21:18 | PEPQC                  |          | St-Zénon         | 3    |
 | 21:21 | LOG.IC 3R              | Martin   | Trois-Rivières   | 6    |
 | 21:29 | VE2EBM-2               |          | St-Anne-de-Sorel | 7    |
-| 21:35 | YUL-Ste-Julie-Carlitos | Carlitos | Ste-Julie        | 6   |
-|       |                        |          |                  |      |
+| 21:35 | YUL-Ste-Julie-Carlitos | Carlitos | Ste-Julie        | 6    |
 
 Observed:
 
