@@ -38,10 +38,11 @@ Observed:
 Announces:
 
 - mesh night next week!
+- JP working on supporting the [Cardputer Zero](https://shop.m5stack.com/pages/m5-cardputerzero) in [Meshterm](https://meshterm.net/)
 - reminder of ongoing proposals:
-  - [Please use 3 bytes routing](../news/posts/2026-09-18-3-bytes-hash-mode.md)
-  - [Please limit adverts, loops and floods](../news/posts/2026-09-20-limit-flood-and-loops.md) (now official)
-  - [Regions proposal #15](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/15) (comments welcome)
+    - [Please use 3 bytes routing](../news/posts/2026-09-18-3-bytes-hash-mode.md)
+    - [Please limit adverts, loops and floods](../news/posts/2026-09-20-limit-flood-and-loops.md) (now official)
+    - [Regions proposal #15](https://codeberg.org/reseaulibre/lora-reseaulibre-ca/pulls/15) (comments welcome)
 
 ## 2026-09-23
 
