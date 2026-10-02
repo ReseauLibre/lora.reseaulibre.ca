@@ -1,2 +1,4 @@
 zensical
 pymdown-extensions>=10.20
+mdx_truly_sane_lists
+mdx-breakless-lists
