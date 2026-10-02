@@ -111,8 +111,7 @@ markdown_extensions:
   # turn (c) into ©, disabled: just use unicode directly
   # - pymdownx.smartsymbols
   # include other files, glossary
-  # TODO: unused?
-  - pymdownx.snippets
+  # - pymdownx.snippets
   # required for annotations
   - pymdownx.superfences
   # tabs support, alternate style uses less javascript
