@@ -239,11 +239,9 @@ extra:
 plugins:
   # cross-reference across pages
   # - autorefs
-  # move navigation to .nav.yml, and more flexible
+  # move navigation to .nav.yml, more flexible than builtin
+  # we use literate-nav which is similar
   # - awesome-nav
-  - literate-nav:
-      nav_file: SUMMARY.md
-  - search
   # blog posts
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/
   # note that the blog plugin is incompatible with the i18n one, see:
@@ -254,8 +252,19 @@ plugins:
       categories_allowed:
         - events
         - announcements
+  # show page authors at the bottom
+  # disabled because for now we only have a single author
+  # - git-authors
+  # show git modification date, requires mkdocs-git-revision-date-localized-plugin
+  # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/
+  - git-revision-date-localized:
+      type: iso_datetime
+      enable_creation_date: true
   # for photo galleries?
   # - glightbox
+  # mostly to allow wildcards in navigation
+  - literate-nav:
+      nav_file: SUMMARY.md
   # per-directory .meta.yml file
   # - meta
   # minify and optimize plugins have no effect
@@ -272,14 +281,6 @@ plugins:
       categories:
         - categories
         - tags
-  # show page authors at the bottom
-  # disabled because for now we only have a single author
-  # - git-authors
-  # show git modification date, requires mkdocs-git-revision-date-localized-plugin
-  # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/
-  - git-revision-date-localized:
-      type: iso_datetime
-      enable_creation_date: true
   # set some redirects, requires mkdocs-redirects
   - redirects:
       redirect_maps:
@@ -296,6 +297,8 @@ plugins:
         # convenience shortcuts
         '3byte.md': 'news/posts/2026-09-18-3-bytes-hash-mode.md'
         'floods.md': 'news/posts/2026-09-20-limit-flood-and-loops.md'
+  # search support, client-side javascript blob
+  - search
   # social media cards
   # - social:
   #     cards_layout_options:
