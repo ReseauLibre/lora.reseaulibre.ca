@@ -3191,65 +3191,39 @@ already there before MeshCore existed, and we are not just about
 MeshCore.</p>
 <p>Some people claim there are more people on Discord than Matrix in
 general, but we dispute those claims.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
-<div class="highlight"><pre><span></span><code>  * Facebook: 3.07 billion MAU ("may be out of date")
-  * WhatsApp: 3.00B
-  * Instagram: 3.00B
-  * YouTube: 2.58B ("ad reach")
-  * TikTok: 1.99B ("ad reach")
-  * WeChat: 1.41B
-  * Telegram: 1B
-  * Messenger: 942 million ("may be misrepresented")
-  * Snapchat: 932M
-  * Reddit: 765M
-  * Matrix: 200M "users" ([according to
-  Element](https://element.io/en)), was [60M in
-  2022](https://www.theregister.com/on-prem/2022/07/15/matrix-messaging-service-leaps-60-million-user-barrier/1562103)
-  and [28M in 2021](https://www.youtube.com/watch?v=TzUfS08lMek&amp;t=265s)
-  * Signal: 70-100M users ([according to their CEO](https://tech-insider.org/signal-vs-telegram-2026/))
-  * Discord: 90M+ "daily active users" (according to
-  [discord.com](https://discord.com/company)), 150M MAU in 2024,
-  [according to Wikipedia](https://en.wikipedia.org/wiki/Discord)
-  * MeshCore: [46,546 devices world wide](https://map.meshcore.io/)
-
-So, if actual numbers of users were a real criteria for picking a
-platform, people would organise primarily on Facebook or Telegram
-(and indeed, lots of people are), but clearly not on Discord,
-which is primarily a gaming platform.
-
-The reality is people organize where they already are, and can't
-be moved around easily, because [communities are not fungible](https://www.joanwestenberg.com/communities-are-not-fungible/).
-</code></pre></div>
 <p>Compared to all those other platforms (with exceptions), Matrix has
 properties that are uniquely well suited to the mesh:</p>
 <ul>
-<li>Matrix is <strong>federated</strong>: everyone can run their own server, just like
-  the mesh (XMPP is also federated)</li>
-</ul>
-<ul>
-<li>Matrix is <strong>decentralized</strong>: if one server goes down, the other
-  servers keep operating normally</li>
-</ul>
-<ul>
-<li>Matrix is <strong>open</strong>: source code for most Matrix implementations
+<li>
+<p>Matrix is <strong>federated</strong>: everyone can run their own server, just like
+  the mesh (XMPP is also federated)</p>
+</li>
+<li>
+<p>Matrix is <strong>decentralized</strong>: if one server goes down, the other
+  servers keep operating normally</p>
+</li>
+<li>
+<p>Matrix is <strong>open</strong>: source code for most Matrix implementations
   (client and server) are open source, and the <a href="https://spec.matrix.org/latest/">specification</a> is
   collaboratively established among multiple stakeholders through
-  (XMPP is also open)</li>
-</ul>
-<ul>
-<li>Matrix is <strong>free</strong>: since anyone can run a server, most (if not all)
-  <a href="https://servers.joinmatrix.org/">servers</a> offer free accounts to anyone (see below)</li>
-</ul>
-<ul>
-<li>Matrix is <strong>bridged</strong>: there are <a href="https://matrix.org/ecosystem/bridges/">multiple bridges</a> to many other
+  (XMPP is also open)</p>
+</li>
+<li>
+<p>Matrix is <strong>free</strong>: since anyone can run a server, most (if not all)
+  <a href="https://servers.joinmatrix.org/">servers</a> offer free accounts to anyone (see below)</p>
+</li>
+<li>
+<p>Matrix is <strong>bridged</strong>: there are <a href="https://matrix.org/ecosystem/bridges/">multiple bridges</a> to many other
   platforms, it is the glue that will allow us to merge together all
   those disconnected communities from Discord, Telegram, Mattermost
-  and so on</li>
-</ul>
-<ul>
-<li>Matrix <strong>respects your privacy</strong>: while there are issues with data
+  and so on</p>
+</li>
+<li>
+<p>Matrix <strong>respects your privacy</strong>: while there are issues with data
   retention in any federated protocol, Matrix at least won't require
   your phone number (like Whatsapp, Telegram or, sometimes, Discord)
-  or deliberately spy on you</li>
+  or deliberately spy on you</p>
+</li>
 </ul>
 <p>The key aspect is this: Matrix rooms are decentralized. As long as
 your home server is reachable from the mesh, the Internet could go
@@ -3264,43 +3238,45 @@ works.</p>
 perfect. We explain a few of those issues so people are aware of the
 downsides and to preempt complaints about them:</p>
 <ul>
-<li><strong>Encryption</strong>. Matrix's end-to-end security is not as strong as
+<li>
+<p><strong>Encryption</strong>. Matrix's end-to-end security is not as strong as
   other platforms like Signal. Room membership is defined by the
   servers which have more power than they should. A lot of information
-  travels out of band, in clear text.</li>
-</ul>
-<ul>
-<li><strong>Encryption usability</strong>. Matrix infamously suffers from "cannot
+  travels out of band, in clear text.</p>
+</li>
+<li>
+<p><strong>Encryption usability</strong>. Matrix infamously suffers from "cannot
   decrypt message" kind of issues, where past message cannot be
   reliably read on all devices. This seems to be a high priority
-  for the Matrix team, and is less of an issue than before.</li>
-</ul>
-<ul>
-<li><strong>Interoperability</strong>. While Matrix is an open standard with strong
+  for the Matrix team, and is less of an issue than before.</p>
+</li>
+<li>
+<p><strong>Interoperability</strong>. While Matrix is an open standard with strong
   compatibility promises across multiple clients, the reality of this
   is that the compatibility across client is somewhat spotty. Not all
   features (like spaces, threading, or video) are implement across all
   clients, and certainly not in the same user interface, so it can be
   confusing to onboard people across multiple client
   implementations. It is best for users to use the flagship client
-  (Element) to avoid those issues.</li>
-</ul>
-<ul>
-<li><strong>Data retention</strong>. By default, federated rooms copy messages across
+  (Element) to avoid those issues.</p>
+</li>
+<li>
+<p><strong>Data retention</strong>. By default, federated rooms copy messages across
   every home server with a user connected to the room. This means that
   messages get retained across multiple servers which have different
   retention policies. Worse, the <em>defaults</em> are to keep messages
   forever, which affects <code>matrix.org</code>, so it is difficult to ensure
   automatic message expiry across the federation. Message redaction
-  <em>should</em> be better supported however.</li>
-</ul>
-<ul>
-<li><strong>Moderation</strong>. The Matrix protocol itself has mechanisms to redact
+  <em>should</em> be better supported however.</p>
+</li>
+<li>
+<p><strong>Moderation</strong>. The Matrix protocol itself has mechanisms to redact
   messages and ban users, but lacks large-scale moderation systems
   across rooms and the federation, which are typically handled by
   bots. This leads to abuse being sometimes more a problem on Matrix
   than on other platforms, although work is being done on that front
-  as well.</li>
+  as well.</p>
+</li>
 </ul>
 <p>Overall, we find that the benefits of using Matrix (federated,
 decentralized, open, free, bridged, respects your privacy) far
@@ -3348,7 +3324,34 @@ bands</a> of course, particularly if you are near a cell phone tower.</p>
 <li id="fn:1">
 <p>Here is a select number of social networks and their size in
 monthly active users, as of 2026-05-28, mostly from <a href="https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/">this 2025
-report</a> unless otherwise noted:&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+report</a> unless otherwise noted:</p>
+<ul>
+<li>Facebook: 3.07 billion MAU ("may be out of date")</li>
+<li>WhatsApp: 3.00B</li>
+<li>Instagram: 3.00B</li>
+<li>YouTube: 2.58B ("ad reach")</li>
+<li>TikTok: 1.99B ("ad reach")</li>
+<li>WeChat: 1.41B</li>
+<li>Telegram: 1B</li>
+<li>Messenger: 942 million ("may be misrepresented")</li>
+<li>Snapchat: 932M</li>
+<li>Reddit: 765M</li>
+<li>Matrix: 200M "users" (<a href="https://element.io/en">according to
+  Element</a>), was <a href="https://www.theregister.com/on-prem/2022/07/15/matrix-messaging-service-leaps-60-million-user-barrier/1562103">60M in
+  2022</a>
+  and <a href="https://www.youtube.com/watch?v=TzUfS08lMek&amp;t=265s">28M in 2021</a></li>
+<li>Signal: 70-100M users (<a href="https://tech-insider.org/signal-vs-telegram-2026/">according to their CEO</a>)</li>
+<li>Discord: 90M+ "daily active users" (according to
+  <a href="https://discord.com/company">discord.com</a>), 150M MAU in 2024,
+  <a href="https://en.wikipedia.org/wiki/Discord">according to Wikipedia</a></li>
+<li>MeshCore: <a href="https://map.meshcore.io/">46,546 devices world wide</a></li>
+</ul>
+<p>So, if actual numbers of users were a real criteria for picking a
+platform, people would organise primarily on Facebook or Telegram
+(and indeed, lots of people are), but clearly not on Discord,
+which is primarily a gaming platform.</p>
+<p>The reality is people organize where they already are, and can't
+be moved around easily, because <a href="https://www.joanwestenberg.com/communities-are-not-fungible/">communities are not fungible</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

@@ -2375,14 +2375,16 @@ correctly.</p>
 <p>On many devices, you need to enter some special mode for flashing to
 work. Here are examples:</p>
 <ul>
-<li>Heltec: hold the "program" (<code>PRG</code>) button while connecting
+<li>
+<p>Heltec: hold the "program" (<code>PRG</code>) button while connecting
   the USB cable. For the Heltec v4, it will show up as a <code>JTAG</code>
   device. On the Heltec v3, it will show up as a <code>CP2102 USB to UART
-  Bridge Controller</code>.</li>
-</ul>
-<ul>
-<li>RAK: double-click the reset button will bring it in "DFU" mode, but
-  the web flasher should also be able to do that automatically.</li>
+  Bridge Controller</code>.</p>
+</li>
+<li>
+<p>RAK: double-click the reset button will bring it in "DFU" mode, but
+  the web flasher should also be able to do that automatically.</p>
+</li>
 </ul>
 <div class="admonition bug">
 <p class="admonition-title">Bug</p>
@@ -2490,15 +2492,17 @@ repeaters.</p>
   password manager for remote administration</li>
 <li><strong>Path hash mode</strong>: pick <code>3-byte (2)</code>, see <a href="../../../news/2026/09/18/please-use-3-bytes-routing/">this announcement for an
   explanation</a></li>
-<li>Flood limits (see <a href="../../../news/2026/09/25/please-limit-adverts-loops-and-floods/">this announcement for an explanation</a>):
-    - <a href="https://docs.meshcore.io/cli_commands/#view-or-change-this-nodes-loop-detection">Loop detection</a>: <code>moderate</code>, defaults to <code>off</code>
-    - <a href="https://docs.meshcore.io/cli_commands/#view-or-change-the-zero-hop-advert-interval">Zero hop advert interval</a>: <code>240</code> (minutes, defaults to <code>60</code>)
-    - <a href="https://docs.meshcore.io/cli_commands/#view-or-change-the-flood-advert-interval">Flood advert interval</a>: <code>47</code> (hours, defaults to <code>12</code>)
-    - <a href="https://docs.meshcore.io/cli_commands/#limit-the-number-of-hops-for-a-flood-message">Number of hops for a flood message</a>: <code>16</code> (defaults to <code>64</code>)
-    - <a href="https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-flood-traffic">Re-transmit delay for flood traffic</a>: <code>1</code> (defaults to
-      <code>0.5</code>, only for busy repeaters with 30-50 neighbors)
-    - <a href="https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-direct-traffic">Re-transmit delay for direct traffic</a>: <code>0.5</code> (defaults to
-      <code>0.2</code>, only for busy repeaters with 30-50 neighbors)</li>
+<li>Flood limits (see <a href="../../../news/2026/09/25/please-limit-adverts-loops-and-floods/">this announcement for an explanation</a>):<ul>
+<li><a href="https://docs.meshcore.io/cli_commands/#view-or-change-this-nodes-loop-detection">Loop detection</a>: <code>moderate</code>, defaults to <code>off</code></li>
+<li><a href="https://docs.meshcore.io/cli_commands/#view-or-change-the-zero-hop-advert-interval">Zero hop advert interval</a>: <code>240</code> (minutes, defaults to <code>60</code>)</li>
+<li><a href="https://docs.meshcore.io/cli_commands/#view-or-change-the-flood-advert-interval">Flood advert interval</a>: <code>47</code> (hours, defaults to <code>12</code>)</li>
+<li><a href="https://docs.meshcore.io/cli_commands/#limit-the-number-of-hops-for-a-flood-message">Number of hops for a flood message</a>: <code>16</code> (defaults to <code>64</code>)</li>
+<li><a href="https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-flood-traffic">Re-transmit delay for flood traffic</a>: <code>1</code> (defaults to
+  <code>0.5</code>, only for busy repeaters with 30-50 neighbors)</li>
+<li><a href="https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-direct-traffic">Re-transmit delay for direct traffic</a>: <code>0.5</code> (defaults to
+  <code>0.2</code>, only for busy repeaters with 30-50 neighbors)</li>
+</ul>
+</li>
 <li><strong>Send an advert!</strong> by default, repeaters do automatically send
   adverts, but it can take <em>hours</em>, during which time your companion
   won't see the repeater! so do send one manually</li>
@@ -2559,31 +2563,31 @@ flasher</a> above, you need to do extra configuration here:</p>
 <ol>
 <li>
 <p>as above, setup the preset:</p>
-<div class="highlight"><pre><span></span><code>  set radio 910.525,62.5,7,5
+<div class="highlight"><pre><span></span><code>set radio 910.525,62.5,7,5
 </code></pre></div>
 </li>
 <li>
 <p>if setup as a repeater and you already have one of those, turn off
     repeat:</p>
-<div class="highlight"><pre><span></span><code>  set repeat off
+<div class="highlight"><pre><span></span><code>set repeat off
 </code></pre></div>
 </li>
 <li>
 <p>setup the right MQTT servers:</p>
-<div class="highlight"><pre><span></span><code>  set mqtt1.preset meshcore-ca-1
-  set mqtt2.preset meshcore-ca-2
-  set mqtt.iata YUL
+<div class="highlight"><pre><span></span><code>set mqtt1.preset meshcore-ca-1
+set mqtt2.preset meshcore-ca-2
+set mqtt.iata YUL
 </code></pre></div>
 </li>
 <li>
 <p>setup WiFi credentials:</p>
-<div class="highlight"><pre><span></span><code>  set wifi.ssid YourWiFiNetwork
-  set wifi.pwd YourWiFiPassword
+<div class="highlight"><pre><span></span><code>set wifi.ssid YourWiFiNetwork
+set wifi.pwd YourWiFiPassword
 </code></pre></div>
 </li>
 <li>
 <p>reboot:</p>
-<div class="highlight"><pre><span></span><code>  reboot
+<div class="highlight"><pre><span></span><code>reboot
 </code></pre></div>
 </li>
 </ol>

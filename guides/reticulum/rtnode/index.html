@@ -2248,36 +2248,36 @@ Linux computer and are familiar with the command-line. </p>
 </li>
 <li>
 <p>deploy the firmware with:</p>
-<div class="highlight"><pre><span></span><code>  rnodeconf --clear-cache
-  rnodeconf --autoinstall --fw-url https://github.com/attermann/microReticulum_Firmware/releases/
+<div class="highlight"><pre><span></span><code>rnodeconf --clear-cache
+rnodeconf --autoinstall --fw-url https://github.com/attermann/microReticulum_Firmware/releases/
 </code></pre></div>
 <p>The <code>rnodeconf --clear-cache</code> is optional and required only if you
-  have previously installed another RNode firmware with the same name.</p>
+have previously installed another RNode firmware with the same name.</p>
 <p>The <code>--autoinstall</code> process is similar to the one we have
-  documented in the <a href="../rns/#rnode">RNS documentation</a> in that it will walk you
-  through a series of prompts before flashing the firmware. Make
-  sure you pick the right frequency band (currently 915MHz).</p>
+documented in the <a href="../rns/#rnode">RNS documentation</a> in that it will walk you
+through a series of prompts before flashing the firmware. Make
+sure you pick the right frequency band (currently 915MHz).</p>
 </li>
 <li>
 <p>At this point, the firmware in place is only like a normal RNode
     in that it's essentially a modem, and does not yet relay
     packets. For that, you need to switch it to "Transport mode".</p>
-<div class="highlight"><pre><span></span><code>  rnodeconf --tnc --freq 914875000 --bw 125000 --sf 9 --cr 7 --txp 17 /dev/ttyACM0
+<div class="highlight"><pre><span></span><code>rnodeconf --tnc --freq 914875000 --bw 125000 --sf 9 --cr 7 --txp 17 /dev/ttyACM0
 </code></pre></div>
 <p>If you get an error like:</p>
-<div class="highlight"><pre><span></span><code>  [22:30:19] [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+<div class="highlight"><pre><span></span><code>[22:30:19] [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
 </code></pre></div>
 <p>It's possible the device reconnected under a different serial
-  port, try changing to, say, <code>/dev/ttyACM1</code> You can list your
-  terminal devices with:</p>
-<div class="highlight"><pre><span></span><code>  ls /dev/tty*
+port, try changing to, say, <code>/dev/ttyACM1</code> You can list your
+terminal devices with:</p>
+<div class="highlight"><pre><span></span><code>ls /dev/tty*
 </code></pre></div>
 <p>Another possibility is <code>/dev/ttyUSB0</code>, for example. It is <em>not</em>
-  <code>/dev/ttyS0</code> or <code>/dev/tty0</code>, those are internal ports in Linux
-  that are not your external serial ports, ignore those.</p>
+<code>/dev/ttyS0</code> or <code>/dev/tty0</code>, those are internal ports in Linux
+that are not your external serial ports, ignore those.</p>
 <p>If you can't find the port, it's possible the device is
-  disconnected somehow, but that would be surprising if the
-  <code>--autoinstall</code> step succeeded.</p>
+disconnected somehow, but that would be surprising if the
+<code>--autoinstall</code> step succeeded.</p>
 </li>
 <li>
 <p>reboot the device, by pushing the reset pin</p>

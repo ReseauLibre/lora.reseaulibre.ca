@@ -2211,16 +2211,18 @@ computer, or even <a href="https://blog.meshcore.io/2026/06/22/drone-ota">from a
 <p><a href="https://blog.meshcore.io/2026/04/02/nrf-ota-update">The official OTA guide</a> and the <a href="https://ottawamesh.ca/meshcore/update-repeater-ota/">Ottawa Mesh guide</a> use a
 proprietary Android app to flash an image remotely. A few tips:</p>
 <ul>
-<li>if you have a custom Android firmware, you might not have access to
+<li>
+<p>if you have a custom Android firmware, you might not have access to
    the App store and the <a href="https://play.google.com/store/apps/details?id=no.nordicsemi.android.dfu&amp;hl=en_US">nRF Device Firmware Update app</a>. You can
-   add <a href="https://github.com/nordicsemi/Android-DFU-Library">this GitHub repository</a> to Obtainium instead, which works fine.</li>
-</ul>
-<ul>
-<li>you <em>must</em> change the settings in the app before flashing the
-   upgrade, if you get a timeout, it's because the settings are wrong.</li>
-</ul>
-<ul>
-<li>flashing over Bluetooth is slow, we're seeing 3KB/s transfer speeds</li>
+   add <a href="https://github.com/nordicsemi/Android-DFU-Library">this GitHub repository</a> to Obtainium instead, which works fine.</p>
+</li>
+<li>
+<p>you <em>must</em> change the settings in the app before flashing the
+   upgrade, if you get a timeout, it's because the settings are wrong.</p>
+</li>
+<li>
+<p>flashing over Bluetooth is slow, we're seeing 3KB/s transfer speeds</p>
+</li>
 </ul>
 <p>Here is a full procedure, but see the official or Ottawa mesh guide if
 it fails (and let us know):</p>
@@ -2231,12 +2233,14 @@ it fails (and let us know):</p>
 </li>
 <li>
 <p>configure the right settings in the app which is called <code>DFU</code>:</p>
-<p>- Packet receipts notification - <strong>ON</strong>
-   - Number of packets - <strong>8</strong>
-   - Request high MTU (Android only) - <strong>OFF</strong>
-   - Disable resume - <strong>ON</strong>
-   - Prepare object delay - <strong>0 ms</strong>
-   - Force scanning - <strong>ON</strong></p>
+<ul>
+<li>Packet receipts notification - <strong>ON</strong></li>
+<li>Number of packets - <strong>8</strong></li>
+<li>Request high MTU (Android only) - <strong>OFF</strong></li>
+<li>Disable resume - <strong>ON</strong></li>
+<li>Prepare object delay - <strong>0 ms</strong></li>
+<li>Force scanning - <strong>ON</strong></li>
+</ul>
 <p>Leave the other settings untouched.</p>
 </li>
 <li>
@@ -2249,10 +2253,10 @@ it fails (and let us know):</p>
 </li>
 <li>
 <p>type the following magic command:</p>
-<div class="highlight"><pre><span></span><code>  start ota
+<div class="highlight"><pre><span></span><code>start ota
 </code></pre></div>
 <p>This will show the Bluetooth MAC address of your device, which can
-  be used to identify it below.</p>
+be used to identify it below.</p>
 </li>
 <li>
 <p>back in the app, start the update, by tapping <code>Select</code> and picking
@@ -2265,9 +2269,9 @@ it fails (and let us know):</p>
 <li>
 <p>press start</p>
 <p>This will go through various steps. If you have messed up the
-  settings, it will like timeout at the <code>DFU initialized</code>
-  step. Otherwise it should show a progress bar and transfer rate
-  after that.</p>
+settings, it will like timeout at the <code>DFU initialized</code>
+step. Otherwise it should show a progress bar and transfer rate
+after that.</p>
 </li>
 <li>
 <p>you're done!</p>
@@ -2287,22 +2291,22 @@ their <a href="https://github.com/recrof/nrf_dfu_py">desktop application</a> for
 <li>
 <p>install the application</p>
 <p>this can be done by cloning the <a href="https://github.com/recrof/nrf_dfu_py">repository</a> or installing the
-   binary. We'll assume you're familiar with git and will clone the
-   repository (otherwise follow the <a href="https://github.com/recrof/nrf_dfu_py#installation">upstream instructions</a>):</p>
-<div class="highlight"><pre><span></span><code>  git clone https://github.com/recrof/nrf_dfu_py
+ binary. We'll assume you're familiar with git and will clone the
+ repository (otherwise follow the <a href="https://github.com/recrof/nrf_dfu_py#installation">upstream instructions</a>):</p>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/recrof/nrf_dfu_py
 </code></pre></div>
 </li>
 <li>
 <p>install dependencies</p>
 <p>You might already have it installed through a package, on Debian
-   for example:</p>
-<div class="highlight"><pre><span></span><code>  sudo apt install python3-bleak python3-tk
+ for example:</p>
+<div class="highlight"><pre><span></span><code>sudo apt install python3-bleak python3-tk
 </code></pre></div>
 </li>
 <li>
 <p>launch the application</p>
-<div class="highlight"><pre><span></span><code>  cd nrf_dfu_py
-  python dfu_gui.py
+<div class="highlight"><pre><span></span><code>cd nrf_dfu_py
+python dfu_gui.py
 </code></pre></div>
 </li>
 <li>
@@ -2315,10 +2319,10 @@ their <a href="https://github.com/recrof/nrf_dfu_py">desktop application</a> for
 </li>
 <li>
 <p>type the following magic command:</p>
-<div class="highlight"><pre><span></span><code>  start ota
+<div class="highlight"><pre><span></span><code>start ota
 </code></pre></div>
 <p>This will show the Bluetooth MAC address of your device, which can
-  be used to identify it below.</p>
+be used to identify it below.</p>
 </li>
 <li>
 <p>back in the application, start the update, by hitting <code>Browse ZIP</code>
@@ -2331,7 +2335,7 @@ their <a href="https://github.com/recrof/nrf_dfu_py">desktop application</a> for
 <li>
 <p>review the settings</p>
 <p>Typically, the defaults Just Work, but you might want to review
-   the <a href="https://github.com/recrof/nrf_dfu_py#usage">upstream instructions</a>.</p>
+ the <a href="https://github.com/recrof/nrf_dfu_py#usage">upstream instructions</a>.</p>
 </li>
 <li>
 <p>click <code>START UPDATE</code></p>

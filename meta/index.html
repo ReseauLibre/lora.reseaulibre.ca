@@ -2487,36 +2487,36 @@ differs between the two because the <code>site_url</code> needs the <code>fr</co
 <ol>
 <li>
 <p>First pull the repository to have all branches up to date:</p>
-<div class="highlight"><pre><span></span><code>  git pull
+<div class="highlight"><pre><span></span><code>git pull
 </code></pre></div>
 </li>
 <li>
 <p>Switch to the translation branch:</p>
-<div class="highlight"><pre><span></span><code>  git switch fr
+<div class="highlight"><pre><span></span><code>git switch fr
 </code></pre></div>
 </li>
 <li>
 <p>Update it with the main branch:</p>
-<div class="highlight"><pre><span></span><code>  git merge main
+<div class="highlight"><pre><span></span><code>git merge main
 </code></pre></div>
 <p>If this is an update on an existing page, this will result in a
-  merge conflict. Don't panic.</p>
+merge conflict. Don't panic.</p>
 </li>
 <li>
 <p>Translate a given page:</p>
-<div class="highlight"><pre><span></span><code>  $EDITOR docs/foo.md
+<div class="highlight"><pre><span></span><code>$EDITOR docs/foo.md
 </code></pre></div>
 <p>If this is an existing page, you will need to resolve the merge
-  conflict. See the <a href="https://docs.codeberg.org/collaborating/resolve-conflicts/">Codeberg merge conflict instructions</a> for a
-  tutorial. When the conflict is resolved, you mark the file as
-  resolved with:</p>
-<div class="highlight"><pre><span></span><code>  git add docs/foo.md
+conflict. See the <a href="https://docs.codeberg.org/collaborating/resolve-conflicts/">Codeberg merge conflict instructions</a> for a
+tutorial. When the conflict is resolved, you mark the file as
+resolved with:</p>
+<div class="highlight"><pre><span></span><code>git add docs/foo.md
 </code></pre></div>
 </li>
 <li>
 <p>Commit the result and push:</p>
-<div class="highlight"><pre><span></span><code>  git commit -m'translate page foo'
-  git push
+<div class="highlight"><pre><span></span><code>git commit -m'translate page foo'
+git push
 </code></pre></div>
 </li>
 </ol>
