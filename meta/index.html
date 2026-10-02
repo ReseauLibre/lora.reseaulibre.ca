@@ -2305,6 +2305,95 @@
           
             <div class="md-content" data-md-component="content">
               
+                
+
+
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+      
+        
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../references/" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-path__item">
+        <a href="../references/software/" class="md-path__link">
+          
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -2398,36 +2487,36 @@ differs between the two because the <code>site_url</code> needs the <code>fr</co
 <ol>
 <li>
 <p>First pull the repository to have all branches up to date:</p>
-<div class="highlight"><pre><span></span><code>git pull
+<div class="highlight"><pre><span></span><code>  git pull
 </code></pre></div>
 </li>
 <li>
 <p>Switch to the translation branch:</p>
-<div class="highlight"><pre><span></span><code>git switch fr
+<div class="highlight"><pre><span></span><code>  git switch fr
 </code></pre></div>
 </li>
 <li>
 <p>Update it with the main branch:</p>
-<div class="highlight"><pre><span></span><code>git merge main
+<div class="highlight"><pre><span></span><code>  git merge main
 </code></pre></div>
 <p>If this is an update on an existing page, this will result in a
-merge conflict. Don't panic.</p>
+  merge conflict. Don't panic.</p>
 </li>
 <li>
 <p>Translate a given page:</p>
-<div class="highlight"><pre><span></span><code>$EDITOR docs/foo.md
+<div class="highlight"><pre><span></span><code>  $EDITOR docs/foo.md
 </code></pre></div>
 <p>If this is an existing page, you will need to resolve the merge
-conflict. See the <a href="https://docs.codeberg.org/collaborating/resolve-conflicts/">Codeberg merge conflict instructions</a> for a
-tutorial. When the conflict is resolved, you mark the file as
-resolved with:</p>
-<div class="highlight"><pre><span></span><code>git add docs/foo.md
+  conflict. See the <a href="https://docs.codeberg.org/collaborating/resolve-conflicts/">Codeberg merge conflict instructions</a> for a
+  tutorial. When the conflict is resolved, you mark the file as
+  resolved with:</p>
+<div class="highlight"><pre><span></span><code>  git add docs/foo.md
 </code></pre></div>
 </li>
 <li>
 <p>Commit the result and push:</p>
-<div class="highlight"><pre><span></span><code>git commit -m'translate page foo'
-git push
+<div class="highlight"><pre><span></span><code>  git commit -m'translate page foo'
+  git push
 </code></pre></div>
 </li>
 </ol>
@@ -2803,7 +2892,7 @@ navigation menus (and, perhaps, shouldn't).</p>
         
           
         
-      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.footer","navigation.tabs","navigation.tabs.sticky","navigation.top","navigation.indexes","content.action.edit","content.footnote.tooltips"],"redirect":"../redirect.json","search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["content.action.edit","content.footnote.tooltips","navigation.footer","navigation.indexes","navigation.tabs","navigation.tabs.sticky","navigation.top","navigation.path"],"redirect":"../redirect.json","search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../assets/javascripts/bundle.67a597eb.min.js"></script>
