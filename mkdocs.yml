@@ -53,16 +53,27 @@ nav:
     - references/other.md
   - News: news/index.md
 markdown_extensions:
-  # Python Markdown
+  # <abbr> tags, with say, *[HTML]: Hyper text...
   - abbr
+  # !!! admonitions, deprecated in favor of "github callouts" below
   - admonition
+  # attribute lists to blocks, used for buttons, tooltips, image
+  # alignment, grids, etc
   - attr_list
+  # definition lists, i.e. foo\n: bar
   - def_list
+  # [^1]: ...
   - footnotes
+  # allow markdown inside HTML, useful for grids, image captions, etc
   - md_in_html
+  # tables support
   - tables
+  # generate table of contents, with a permalink button next to
+  # titles
   - toc:
       permalink: true
+  # improve emphasis handling, more in line with commonmark:
+  # https://facelessuser.github.io/pymdown-extensions/extensions/betterem/
   - pymdownx.betterem:
       smart_enable: all
   # underline/superscript with ^
@@ -70,6 +81,7 @@ markdown_extensions:
   # collapsible admonitions
   - pymdownx.details
   # support for :emojis:
+  # https://facelessuser.github.io/pymdown-extensions/extensions/emoji/#default-emoji-indexes-twemoji
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -89,10 +101,12 @@ markdown_extensions:
       callouts: true
   # turn (c) into ©, disabled: just use unicode directly
   # - pymdownx.smartsymbols
+  # include other files, glossary
+  # TODO: unused?
   - pymdownx.snippets
   # required for annotations
   - pymdownx.superfences
-  # tabs support
+  # tabs support, alternate style uses less javascript
   - pymdownx.tabbed:
       alternate_style: true
   # tasks lists with - [ ]
@@ -137,6 +151,7 @@ theme:
     - content.footnote.tooltips
     # expand navigation by default
     # - navigation.expand
+    # prev/next link location
     - navigation.footer
     # allow index.md pages as section indexes
     - navigation.indexes
@@ -230,10 +245,11 @@ plugins:
         # convenience shortcuts
         '3byte.md': 'news/posts/2026-09-18-3-bytes-hash-mode.md'
         'floods.md': 'news/posts/2026-09-20-limit-flood-and-loops.md'
-#   # a bunch more possible plugins
-#   # make a nice card for social media
-#   # requires cairosvg, not worth?
-#   - social
-#   # page tagging
-#   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
-#   - tags
+  # social media cards
+  # - social:
+  #     cards_layout_options:
+  #       background_color: "#000000"
+  #       logo: docs/assets/icon.jpg
+  # page tagging
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
+  # - tags
