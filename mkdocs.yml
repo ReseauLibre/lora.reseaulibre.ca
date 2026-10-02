@@ -67,12 +67,13 @@ markdown_extensions:
   # allow markdown inside HTML, useful for grids, image captions, etc
   - md_in_html
   # support "this is a list\n1. list..."
-  - mdx_breakless_lists
+  #- mdx_breakless_lists
   # allow for sublists with only two indents, workaround upstream bug:
   # https://github.com/zensical/zensical/issues/453
-  - mdx_truly_sane_lists:
-      nested_indent: 2
-      truly_sane: true
+  # actually buggy when actually using 4 spaces lists
+  #- mdx_truly_sane_lists:
+  #    nested_indent: 2
+  #    truly_sane: true
   # tables support
   - tables
   # generate table of contents, with a permalink button next to
