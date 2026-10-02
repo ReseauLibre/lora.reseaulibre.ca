@@ -130,20 +130,27 @@ theme:
         icon: material/weather-sunny
         name: Switch to dark mode
   features:
-    - navigation.footer
-    # - navigation.prune
-    # - navigation.sections
-    # - navigation.expand
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.top
-    # - navigation.tracking
-    - navigation.indexes
     - content.action.edit  # Edit this page
     # broken, it points to _raw, it's raw in codeberg
     # - content.action.view  # View source of this page
     # show footnotes as tooltips
     - content.footnote.tooltips
+    # expand navigation by default
+    # - navigation.expand
+    - navigation.footer
+    # allow index.md pages as section indexes
+    - navigation.indexes
+    # use top tabs for navigation
+    - navigation.tabs
+    # make tabs stick to the viewport
+    - navigation.tabs.sticky
+    # back to top buttons
+    - navigation.top
+    # prune other sections from the HTML
+    # - navigation.prune
+    # make top-level sections "groups", degrades back to normal on
+    # mobile
+    # - navigation.sections
 
 # i thought this would help in translating it all, but it's not the
 # way: those are just fixed links.
