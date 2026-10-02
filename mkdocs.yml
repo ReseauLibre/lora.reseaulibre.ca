@@ -98,6 +98,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   # keyboard keys rendering with ++
   - pymdownx.keys
+  # TODO: hot links like #1234
+  #- pymdownx.magiclink
   # highlight with ==
   - pymdownx.mark
   # make admonitions using a more standard blockquote
@@ -116,6 +118,10 @@ markdown_extensions:
   # tabs support, alternate style uses less javascript
   - pymdownx.tabbed:
       alternate_style: true
+  # improved tab IDs, maybe not necesary
+  #    slugify: !!python/object/apply:pymdownx.slugs.slugify
+  #      kwds:
+  #        case: lower
   # tasks lists with - [ ]
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -151,28 +157,53 @@ theme:
         icon: material/weather-sunny
         name: Switch to dark mode
   features:
+    # - announce.dismiss
     - content.action.edit  # Edit this page
     # broken, it points to _raw, it's raw in codeberg
     # - content.action.view  # View source of this page
     # show footnotes as tooltips
     - content.footnote.tooltips
+    # link all content tabs together across all pages
+    # allows, for example, for a user to pick a OS in samples and
+    # stick to it across the site
+    # - content.tabs.link
+    # make fancier tooltips on mouseover
+    # - content.tooltips
+    # hide header when moving past
+    # - header.autohide
     # expand navigation by default
     # - navigation.expand
     # prev/next link location
     - navigation.footer
     # allow index.md pages as section indexes
     - navigation.indexes
+    # behave as a single page app
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
     # use top tabs for navigation
     - navigation.tabs
     # make tabs stick to the viewport
     - navigation.tabs.sticky
     # back to top buttons
     - navigation.top
+    # update URL bar with current section anchor
+    # - navigation.tracking
+    # breadcrubs
+    - navigation.path
     # prune other sections from the HTML
     # - navigation.prune
     # make top-level sections "groups", degrades back to normal on
     # mobile
     # - navigation.sections
+    # highligh matching search results in page
+    # - search.highlight
+    # allow deeplinks to search results, with a share button
+    # - search.share
+    # scroll sidebar to match position in table of contents
+    # - toc.follow
+    # merge table of contents with navigation
+    # - toc.integrate
 
 # i thought this would help in translating it all, but it's not the
 # way: those are just fixed links.
@@ -207,6 +238,10 @@ extra:
       link: /fr/
       lang: fr
 plugins:
+  # cross-reference across pages
+  # - autorefs
+  # move navigation to .nav.yml, and more flexible
+  # - awesome-nav
   - literate-nav:
       nav_file: SUMMARY.md
   - search
@@ -220,6 +255,16 @@ plugins:
       categories_allowed:
         - events
         - announcements
+  # for photo galleries?
+  # - glightbox
+  # per-directory .meta.yml file
+  # - meta
+  # minify and optimize plugins have no effect
+  # make the site work offline
+  # breaks "nice" links like /3byte/
+  #- offline
+  # download remote assets and serve localy
+  # - privacy
   # build an RSS feed, requires mkdocs-rss-plugin
   - rss:
       match_path: news/posts/.*
