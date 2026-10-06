@@ -8,7 +8,7 @@ tags:
 ## Chat
 
 On parle sur le mesh! Entre Villeray et le Plateau, il y a au moins un
-message par semaine.
+message par semaine, et un [réseau](guides/net.md) chaque mercredi à 21:00.
 
 Notre chat est dans la [salle Matrix
 `#reseaulibre:matrix.org`](https://matrix.to/#/#reseaulibre:matrix.org). Nous organisons ces salles dans un
@@ -26,6 +26,14 @@ Matrix](guides/matrix.md) pour plus de détails.
 
 Nous annonçons les évènement majeurs et rencontres à venir sur la
 liste [nouvelles](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca).
+
+## Social
+
+Nous sommes présents sur le Fédivers, spécifiquement sur le serveur
+[`mastodon.radio`](https://mastodon.radio/), en tant que [@reseaulibre@mastodon.radio](https://mastodon.radio/@reseaulibre).
+
+Nous publions également des évènements sur le serveur fédéré
+Mobilizon, en tan que [@reseaulibre@evenement.facil.services](https://evenement.facil.services/@reseaulibre).
 
 ## Rencontres
 

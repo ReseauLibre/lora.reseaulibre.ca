@@ -55,21 +55,6 @@ rooms, attics, and even cars or backpacks.
 But yes, if you *do* have access to a more elevated structure like a
 roof, tree or mast, it will reach farther.
 
-### What should I buy?
-
-It depends! In general, follow the [hardware reference](../references/hardware/index.md), which has devices we
-have actually tested.
-
-When in doubt, and starting, get a cheap one (e.g. [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)) and
-experiment.
-
-If you want to put something on your roof or outside, consider a
-self-contained solar node instead of running power all the way out
-there.
-
-See also our full [hardware reference](../references/hardware/index.md).
-
-
 ### How far can I communicate?
 
 As far as the eye can see.
@@ -227,6 +212,53 @@ Physical access to the devices also likely leads to full compromise as
 devices can generally be put in "DFU" ([Device firmware upgrade](https://en.wikipedia.org/wiki/USB#Device_Firmware_Upgrade_mechanism))
 mode relatively easily. Treat encryption keys from a physically
 compromised device to be equally compromised.
+
+## Hardware
+### What should I buy?
+
+It depends! In general, follow the [hardware reference](../references/hardware/index.md), which has devices we
+have actually tested.
+
+When in doubt, and starting, get a cheap one (e.g. [HELTEC v4](https://heltec.org/project/wifi-lora-32-v4/)) and
+experiment.
+
+If you want to put something on your roof or outside, consider a
+self-contained solar node instead of running power all the way out
+there.
+
+See also our full [hardware reference](../references/hardware/index.md).
+
+### Is this going to work in the winter?
+
+Contrary to popular belief, it seems like lithium-ion batteries [work
+fine below freezing](https://yycmesh.com/blog/cold-weather-charging) although we still need to confirm the Calgary results
+in Montreal in the 2026-2027 winter.
+
+The Calgary folks are using plain unprotected batteries below freezing
+without issues. For really remote relays that are difficult to
+service, they started using [LTO batteries](https://en.wikipedia.org/wiki/Lithium-titanate_battery) which are better suited
+to handle deep freeze -- we're talking -40℃ on mountaintop --
+conditions.
+
+Sodium-ion batteries are apparently more tolerant to cold as they can
+charge below freezing better. They do come in 18650 form factor, but
+have lower capacity than normal Lithium-ion batteries and are harder
+to find.
+
+The real answer here is we don't currently know how well the mesh will
+fare in the winter. Some relays are actually powered from the grid,
+others are way over capacity in terms of solar charging and battery
+power, and might survive fine. Others will fail to recharge and run
+out of batteries within a couple of weeks, or will have hardware
+failures due to the cold.
+
+On the other hand, when the leaves fall, radio signals travel better
+as well!
+
+So we assume at least part of the network will fail, but we'll keep
+*some* part of it operational.
+
+We'll see!
 
 ## Troubleshooting
 

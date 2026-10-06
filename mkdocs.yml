@@ -53,16 +53,35 @@ nav:
     - references/other.md
   - News: news/index.md
 markdown_extensions:
-  # Python Markdown
+  # <abbr> tags, with say, *[HTML]: Hyper text...
   - abbr
+  # !!! admonitions, deprecated in favor of "github callouts" below
   - admonition
+  # attribute lists to blocks, used for buttons, tooltips, image
+  # alignment, grids, etc
   - attr_list
+  # definition lists, i.e. foo\n: bar
   - def_list
+  # [^1]: ...
   - footnotes
+  # allow markdown inside HTML, useful for grids, image captions, etc
   - md_in_html
+  # support "this is a list\n1. list..."
+  #- mdx_breakless_lists
+  # allow for sublists with only two indents, workaround upstream bug:
+  # https://github.com/zensical/zensical/issues/453
+  # actually buggy when actually using 4 spaces lists
+  #- mdx_truly_sane_lists:
+  #    nested_indent: 2
+  #    truly_sane: true
+  # tables support
   - tables
+  # generate table of contents, with a permalink button next to
+  # titles
   - toc:
       permalink: true
+  # improve emphasis handling, more in line with commonmark:
+  # https://facelessuser.github.io/pymdown-extensions/extensions/betterem/
   - pymdownx.betterem:
       smart_enable: all
   # underline/superscript with ^
@@ -70,6 +89,7 @@ markdown_extensions:
   # collapsible admonitions
   - pymdownx.details
   # support for :emojis:
+  # https://facelessuser.github.io/pymdown-extensions/extensions/emoji/#default-emoji-indexes-twemoji
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -79,6 +99,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   # keyboard keys rendering with ++
   - pymdownx.keys
+  # TODO: hot links like #1234
+  # https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/#custom-repository-hosts
+  #- pymdownx.magiclink
   # highlight with ==
   - pymdownx.mark
   # make admonitions using a more standard blockquote
@@ -89,12 +112,17 @@ markdown_extensions:
       callouts: true
   # turn (c) into ©, disabled: just use unicode directly
   # - pymdownx.smartsymbols
-  - pymdownx.snippets
+  # include other files, glossary
+  # - pymdownx.snippets
   # required for annotations
   - pymdownx.superfences
-  # tabs support
+  # tabs support, alternate style uses less javascript
   - pymdownx.tabbed:
       alternate_style: true
+  # improved tab IDs, maybe not necesary
+  #    slugify: !!python/object/apply:pymdownx.slugs.slugify
+  #      kwds:
+  #        case: lower
   # tasks lists with - [ ]
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -130,20 +158,53 @@ theme:
         icon: material/weather-sunny
         name: Switch to dark mode
   features:
-    - navigation.footer
-    # - navigation.prune
-    # - navigation.sections
-    # - navigation.expand
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.top
-    # - navigation.tracking
-    - navigation.indexes
+    # - announce.dismiss
     - content.action.edit  # Edit this page
     # broken, it points to _raw, it's raw in codeberg
     # - content.action.view  # View source of this page
     # show footnotes as tooltips
     - content.footnote.tooltips
+    # link all content tabs together across all pages
+    # allows, for example, for a user to pick a OS in samples and
+    # stick to it across the site
+    # - content.tabs.link
+    # make fancier tooltips on mouseover
+    # - content.tooltips
+    # hide header when moving past
+    # - header.autohide
+    # expand navigation by default
+    # - navigation.expand
+    # prev/next link location
+    - navigation.footer
+    # allow index.md pages as section indexes
+    - navigation.indexes
+    # behave as a single page app
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # use top tabs for navigation
+    - navigation.tabs
+    # make tabs stick to the viewport
+    - navigation.tabs.sticky
+    # back to top buttons
+    - navigation.top
+    # update URL bar with current section anchor
+    # - navigation.tracking
+    # breadcrubs
+    - navigation.path
+    # prune other sections from the HTML
+    # - navigation.prune
+    # make top-level sections "groups", degrades back to normal on
+    # mobile
+    # - navigation.sections
+    # highligh matching search results in page
+    # - search.highlight
+    # allow deeplinks to search results, with a share button
+    # - search.share
+    # scroll sidebar to match position in table of contents
+    # - toc.follow
+    # merge table of contents with navigation
+    # - toc.integrate
 
 # i thought this would help in translating it all, but it's not the
 # way: those are just fixed links.
@@ -178,9 +239,11 @@ extra:
       link: /fr/
       lang: fr
 plugins:
-  - literate-nav:
-      nav_file: SUMMARY.md
-  - search
+  # cross-reference across pages
+  # - autorefs
+  # move navigation to .nav.yml, more flexible than builtin
+  # we use literate-nav which is similar
+  # - awesome-nav
   # blog posts
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/
   # note that the blog plugin is incompatible with the i18n one, see:
@@ -191,16 +254,6 @@ plugins:
       categories_allowed:
         - events
         - announcements
-  # tags are currently used to mark pages as needing translation or not
-  - tags
-  # build an RSS feed, requires mkdocs-rss-plugin
-  - rss:
-      match_path: news/posts/.*
-      date_from_meta:
-        as_creation: date
-      categories:
-        - categories
-        - tags
   # show page authors at the bottom
   # disabled because for now we only have a single author
   # - git-authors
@@ -209,6 +262,27 @@ plugins:
   - git-revision-date-localized:
       type: iso_datetime
       enable_creation_date: true
+  # for photo galleries?
+  # - glightbox
+  # mostly to allow wildcards in navigation
+  - literate-nav:
+      nav_file: SUMMARY.md
+  # per-directory .meta.yml file
+  # - meta
+  # minify and optimize plugins have no effect
+  # make the site work offline
+  # breaks "nice" links like /3byte/
+  #- offline
+  # download remote assets and serve localy
+  # - privacy
+  # build an RSS feed, requires mkdocs-rss-plugin
+  - rss:
+      match_path: news/posts/.*
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
   # set some redirects, requires mkdocs-redirects
   - redirects:
       redirect_maps:
@@ -225,10 +299,26 @@ plugins:
         # convenience shortcuts
         '3byte.md': 'news/posts/2026-09-18-3-bytes-hash-mode.md'
         'floods.md': 'news/posts/2026-09-20-limit-flood-and-loops.md'
-#   # a bunch more possible plugins
-#   # make a nice card for social media
-#   # requires cairosvg, not worth?
-#   - social
-#   # page tagging
-#   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
-#   - tags
+        'regions.md': 'news/posts/2026-09-28-regions.md'
+  # search support, client-side javascript blob
+  - search
+  # social media cards
+  - social:
+      cards_layout_options:
+        background_color: transparent
+  # each page can override the social cards in the frontmatter, and
+  # also respects the page "icon" and "description"
+  # ---
+  # social:
+  #   cards_layout_options:
+  #     background_color: blue             # Change background color
+  #     background_image: null             # Remove background image
+  #     logo: ...
+  # icon: material/emoticon-happy
+  # description: some extra text that will show up on the card
+  # ---
+  #
+  # page tagging
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
+  # tags are currently used to mark pages as needing translation or not
+  - tags
