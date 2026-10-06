@@ -302,10 +302,21 @@ plugins:
   # search support, client-side javascript blob
   - search
   # social media cards
-  # - social:
-  #     cards_layout_options:
-  #       background_color: "#000000"
-  #       logo: docs/assets/icon.jpg
+  - social:
+      cards_layout_options:
+        background_color: transparent
+  # each page can override the social cards in the frontmatter, and
+  # also respects the page "icon" and "description"
+  # ---
+  # social:
+  #   cards_layout_options:
+  #     background_color: blue             # Change background color
+  #     background_image: null             # Remove background image
+  #     logo: ...
+  # icon: material/emoticon-happy
+  # description: some extra text that will show up on the card
+  # ---
+  #
   # page tagging
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/
   # - tags
