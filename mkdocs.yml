@@ -299,6 +299,7 @@ plugins:
         # convenience shortcuts
         '3byte.md': 'news/posts/2026-09-18-3-bytes-hash-mode.md'
         'floods.md': 'news/posts/2026-09-20-limit-flood-and-loops.md'
+        'regions.md': 'news/posts/2026-09-28-regions.md'
   # search support, client-side javascript blob
   - search
   # social media cards
