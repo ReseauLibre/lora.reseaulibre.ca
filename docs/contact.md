@@ -3,7 +3,7 @@
 ## Chat
 
 We talk on the mesh! In little Italy, there are at least some
-messages every week.
+messages every week, and a [net](guides/net.md) every Wednesday at 21:00.
 
 We have real time chat in the [`#reseaulibre:matrix.org` Matrix
 room](https://matrix.to/#/#reseaulibre:matrix.org). We're organizing those many rooms in a wider
@@ -19,6 +19,13 @@ platforms[^1]. See our [Matrix guide](guides/matrix.md) for details.
 
 We announce major events and upcoming meetings on the [`nouvelles`](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca)
 mailing list.
+
+## Social
+
+We are also present on the Federation, specifically on the
+[`mastodon.radio`](https://mastodon.radio/) server, as [@reseaulibre@mastodon.radio](https://mastodon.radio/@reseaulibre).
+
+We also post events on a federated Mobilizon server, as [@reseaulibre@evenement.facil.services](https://evenement.facil.services/@reseaulibre).
 
 ## Meetups
 
