@@ -74,18 +74,7 @@ Those cell packs are more used in DIY kits or lab setups:
 
 ## Below freezing
 
-Contrary to popular belief, it seems like lithium-ion batteries [work
-fine below freezing](https://yycmesh.com/blog/cold-weather-charging) although we still need to confirm the results
-from the folks in Calgary ourselves. The Calgary folks are using plain
-unprotected batteries below freezing without issues.
-
-For really remote relays that are difficult to service, they started
-using [LTO batteries](https://en.wikipedia.org/wiki/Lithium-titanate_battery) which are better suited to handle deep freeze
--- we're talking -40℃ on mountaintop -- conditions.
-
-Sodium-ion batteries are apparently more tolerant to cold as they can
-charge below freezing better. They do come in 18650 form factor, but
-have lower capacity than normal Lithium-ion batteries.
+Moved to the FAQ, see [is this going to work in the winter?](../../guides/faq.md#is-this-going-to-work-in-the-winter).
 
 ## Charger
 
