@@ -8,7 +8,7 @@ tags:
 ## Chat
 
 On parle sur le mesh! Entre Villeray et le Plateau, il y a au moins un
-message par semaine, et un [réseau](guides/net.md) chaque mercredi à 21:00.
+message chaque jour, et un [réseau](guides/net.md) chaque mercredi à 21:00.
 
 Notre chat est dans la [salle Matrix
 `#reseaulibre:matrix.org`](https://matrix.to/#/#reseaulibre:matrix.org). Nous organisons ces salles dans un
