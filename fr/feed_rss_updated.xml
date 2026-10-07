@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Réseau Libre</title><description>Expériences mesh à Montréal</description><link>https://lora.reseaulibre.ca/fr/</link><atom:link href="https://lora.reseaulibre.ca/fr/feed_rss_updated.xml" rel="self" type="application/rss+xml" /><managingEditor>Anarcat and others</managingEditor><docs>https://codeberg.org/reseaulibre/lora-reseaulibre-ca</docs><language>fr</language><pubDate>Tue, 06 Oct 2026 21:20:01 +0000</pubDate><lastBuildDate>Tue, 06 Oct 2026 21:20:01 +0000</lastBuildDate><ttl>1440</ttl><generator>Zensical RSS</generator><item><title>Mesh night d&apos;octobre</title><category>events</category><description>&lt;p&gt;Vous connaissez la chanson!&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Réseau Libre</title><description>Expériences mesh à Montréal</description><link>https://lora.reseaulibre.ca/fr/</link><atom:link href="https://lora.reseaulibre.ca/fr/feed_rss_updated.xml" rel="self" type="application/rss+xml" /><managingEditor>Anarcat and others</managingEditor><docs>https://codeberg.org/reseaulibre/lora-reseaulibre-ca</docs><language>fr</language><pubDate>Wed, 07 Oct 2026 02:12:41 +0000</pubDate><lastBuildDate>Wed, 07 Oct 2026 02:12:41 +0000</lastBuildDate><ttl>1440</ttl><generator>Zensical RSS</generator><item><title>Prière de configurer les régions</title><category>announcements</category><description>&lt;p&gt;Ça bouge sur le mesh, encore!&lt;/p&gt;
+&lt;p&gt;Une nouvelle &lt;a href=&quot;https://meshcore.ca/proposals/onqc-scopes/#phase-1-repeater-setup&quot;&gt;proposition de MeshCore Canada a été publiée&lt;/a&gt;. Nous
+pensons que tous les relais de la province devraient l&apos;adopter pour
+réduire le bruit entre les régions. Il s&apos;agit d&apos;une proposition en
+plusieurs phases qui, au départ, n&apos;aura pas d&apos;impact significatif sur
+les usagers à part pour le traffic entre les régions, puisqu&apos;il risque
+de séparer Québec de Montréal, à moins qu&apos;une région soit assignée au
+canal de communication.&lt;/p&gt;
+&lt;p&gt;Ottawa a déjà commencé à déployer ceci et s&apos;est &lt;em&gt;déjà&lt;/em&gt; séparé du mesh
+de Montréal avec ce mécanisme.&lt;/p&gt;
+&lt;p&gt;Pour un relais dans la grande région de Montréal, prière d&apos;appliquer
+la configuration suivante:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;region def yul|* qc|* onqc|* can|* na
+region allowf *
+region default yul
+region save&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;D&apos;autres configurations ont requises pour des relais à Québec, ainsi
+que les relais limitrophes entre deux régions.&lt;/p&gt;
+&lt;p&gt;Voir plus bas pour d&apos;autres exemples et explications!&lt;/p&gt;</description><link>https://lora.reseaulibre.ca/fr/news/2026/10/06/pri%C3%A8re-de-configurer-les-r%C3%A9gions/</link><source url="https://lora.reseaulibre.ca/fr/feed_rss_updated.xml">Réseau Libre</source><pubDate>Wed, 07 Oct 2026 01:49:04 +0000</pubDate><guid isPermaLink="true">https://lora.reseaulibre.ca/fr/news/2026/10/06/pri%C3%A8re-de-configurer-les-r%C3%A9gions/</guid></item><item><title>Mesh night d&apos;octobre</title><category>events</category><description>&lt;p&gt;Vous connaissez la chanson!&lt;/p&gt;
 &lt;p&gt;Chaque mois, &lt;a href=&quot;https://foulab.org/&quot;&gt;Foulab&lt;/a&gt;, le &quot;hacker space&quot; de Montréal, tient une
 soirée &quot;mesh&quot; et ce mois-ci n&apos;y fait pas exception!&lt;/p&gt;</description><link>https://lora.reseaulibre.ca/fr/news/2026/09/30/mesh-night-doctobre/</link><source url="https://lora.reseaulibre.ca/fr/feed_rss_updated.xml">Réseau Libre</source><pubDate>Thu, 01 Oct 2026 02:04:14 +0000</pubDate><guid isPermaLink="true">https://lora.reseaulibre.ca/fr/news/2026/09/30/mesh-night-doctobre/</guid></item><item><title>Mesh night de septembre</title><category>events</category><description>&lt;p&gt;Vous connaissez le refrain!&lt;/p&gt;
 &lt;p&gt;Chaque mois, &lt;a href=&quot;https://foulab.org/&quot;&gt;Foulab&lt;/a&gt;, le &quot;hacker space&quot; de Montréal, tient une
