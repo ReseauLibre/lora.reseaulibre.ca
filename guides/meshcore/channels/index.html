@@ -912,6 +912,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#private-channels" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Private channels
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1993,6 +2004,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#private-channels" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Private channels
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2216,6 +2238,24 @@ away with popping up the menu to select the <kbd>Enter</kbd> <kbd>#</kbd> option
 <li><a href="https://pugetmesh.org/meshcore/">Puget mesh</a></li>
 <li><a href="https://www.meshcore.ch/channels/">Switzerland</a></li>
 </ul>
+<h2 id="private-channels">Private channels<a class="headerlink" href="#private-channels" title="Permanent link">&para;</a></h2>
+<p>All the above channels are, obviously, not really secret. First, they
+are documented here publicly, but also their private key is derived
+from the name of the channel which is a single, easy to guess word.</p>
+<p>Those spaces are not for private conversations! It's possible to have
+more private channels by creating a new channel with randomly
+generated key. The way to do this will vary according to the client,
+but generally, you absolutely want to let the software generate the
+key automatically, and <em>not</em> make one yourself, as otherwise you are
+likely going to create an easily guessable key.</p>
+<p>Then your next problem is to share the key across devices. If you use
+a phone app, you can share the key by scanning it with a bar code on
+some software. Otherwise you will need to copy the hexadecimal key
+between devices.</p>
+<p>You <em>may</em> send the key over a direct message. This has the important
+vulnerability that someone may "machine-in-the-middle" attack your
+connection and learn the key. But if you are in an isolated area, it
+can work relatively securely.</p>
 <div class="footnote">
 <hr />
 <ol>
