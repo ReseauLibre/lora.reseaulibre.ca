@@ -2493,16 +2493,24 @@ repeaters.</p>
 </div>
 <p>You need to at least:</p>
 <ul>
-<li><strong>Radio settings</strong>: "recommended USA / Canada"</li>
-<li><strong>Display name</strong>: your name,  <code>YUL-Area</code> for a repeater, for example
-  <code>YUL-Villeray</code>, <code>YUL-Parc-Extension</code>, etc</li>
-<li><strong>Region</strong>: do <em>not</em> set a region, as we currently do not use one,
-  and it will interfere with routing</li>
-<li><strong>Admin password</strong>: set a <a href="https://anarc.at/blog/2017-02-18-passwords-entropy/">strong password</a> and save it to your
-  password manager for remote administration</li>
-<li><strong>Path hash mode</strong>: pick <code>3-byte (2)</code>, see <a href="../../../news/2026/09/18/please-use-3-bytes-routing/">this announcement for an
-  explanation</a></li>
-<li>Flood limits (see <a href="../../../news/2026/09/25/please-limit-adverts-loops-and-floods/">this announcement for an explanation</a>):<ul>
+<li>
+<p><strong>Radio settings</strong>: "recommended USA / Canada"</p>
+</li>
+<li>
+<p><strong>Display name</strong>: your name,  <code>YUL-Area</code> for a repeater, for example
+  <code>YUL-Villeray</code>, <code>YUL-Parc-Extension</code>, etc</p>
+</li>
+<li>
+<p><strong>Admin password</strong>: set a <a href="https://anarc.at/blog/2017-02-18-passwords-entropy/">strong password</a> and save it to your
+  password manager for remote administration</p>
+</li>
+<li>
+<p><strong>Path hash mode</strong>: pick <code>3-byte (2)</code>, see <a href="../../../news/2026/09/18/please-use-3-bytes-routing/">this announcement for an
+  explanation</a></p>
+</li>
+<li>
+<p>Flood limits (see <a href="../../../news/2026/09/25/please-limit-adverts-loops-and-floods/">this announcement for an explanation</a>):</p>
+<ul>
 <li><a href="https://docs.meshcore.io/cli_commands/#view-or-change-this-nodes-loop-detection">Loop detection</a>: <code>moderate</code>, defaults to <code>off</code></li>
 <li><a href="https://docs.meshcore.io/cli_commands/#view-or-change-the-zero-hop-advert-interval">Zero hop advert interval</a>: <code>240</code> (minutes, defaults to <code>60</code>)</li>
 <li><a href="https://docs.meshcore.io/cli_commands/#view-or-change-the-flood-advert-interval">Flood advert interval</a>: <code>47</code> (hours, defaults to <code>12</code>)</li>
@@ -2513,9 +2521,20 @@ repeaters.</p>
   <code>0.2</code>, only for busy repeaters with 30-50 neighbors)</li>
 </ul>
 </li>
-<li><strong>Send an advert!</strong> by default, repeaters do automatically send
+<li>
+<p>Regions, typically by setting your local region like <code>yul</code>:</p>
+<div class="highlight"><pre><span></span><code>region def yul|* qc|* onqc|* can|* na
+region allowf *
+region default yul
+region save
+</code></pre></div>
+<p>See <a href="../../../news/2026/10/06/please-configure-regions/">this announcement for details</a>.</p>
+</li>
+<li>
+<p><strong>Send an advert!</strong> by default, repeaters do automatically send
   adverts, but it can take <em>hours</em>, during which time your companion
-  won't see the repeater! so do send one manually</li>
+  won't see the repeater! so do send one manually</p>
+</li>
 </ul>
 <p>The "recommended USA / Canada" preset is, at the time of writing, the
 following settings:</p>
