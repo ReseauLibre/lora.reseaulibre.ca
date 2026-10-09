@@ -31,3 +31,19 @@ Québec, Canada, H4C 2S3][] ([Google maps][]).
 [location]: https://foulab.org/location/
 [Google maps]: https://www.google.com/maps/place/999+Rue+du+Coll%C3%A8ge,+Montr%C3%A9al,+QC+H4C+2S2,+Canada
 [Suite 33B, 999 du Collège, Montréal, Québec, Canada, H4C 2S3]: https://www.openstreetmap.org/node/717702812
+
+# Notes
+
+Demos:
+
+- Meshterm on a picocalc, cardputer zero, uconsole
+- the [Biscuit](https://biscuitshop.us/pages/biscuit-pro) wardriving tool
+- PRNS flashing and configuring repeaters with a the [PRNS
+  controller GUI](https://github.com/tonycowan/PRNS-Controller), complete with remote management pre-provsioned
+
+Other:
+
+- anarcat helped someone get started on Heltec V4 TFT kits with
+  Wadamesh and MeshCore
+- someone worked on a Reticulum demo for the [MTL-ATC](https://mtl-atc.org/)
+- makers worked on restoring a PDP-11 and a Nextcube
