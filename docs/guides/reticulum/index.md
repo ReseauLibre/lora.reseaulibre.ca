@@ -152,3 +152,6 @@ Reticulum, as it can get confusing quickly.
   scratch by Mark in Reticulum
 - [`reti_socks_client`](https://codeberg.org/SkyGuy/reti_socks_client): SOCKS client for RNS, allows connection to
   Reticulum relays running over Tor, see also [this guide](https://rns.recipes/forum/help/anonymous-nodes-without-i2p)
+- [`partyline`](https://github.com/RFnexus/partyline): group voice calls, similar to Mumble, but over the
+  mesh, including low-bandwidth calls and compatibility with other
+  applications like Sideband and MeshChatX, see [this demo](https://www.youtube.com/watch?v=V9dvzzc2cW8)
