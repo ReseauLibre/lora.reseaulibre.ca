@@ -141,6 +141,7 @@ Reticulum, as it can get confusing quickly.
   routing protocol
 - the Moscow site has a [good propagation simulator](https://rns.moscow/announce-sim.html) showing how
   different modes affect propagation
+- [`reticulum.site`](https://reticulum.site/): web interface to Nomadnet pages
 - [our Matrix room](https://matrix.to/#/#reseaulibre-reticulum:matrix.org) and the [broader Matrix space](https://matrix.to/#/#rns-space:yatrix.org)
 
 ### Other software
