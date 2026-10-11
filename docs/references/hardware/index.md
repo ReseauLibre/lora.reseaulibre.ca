@@ -403,6 +403,14 @@ Base stations will typically be mounted on rooftops or poles.
 [MeshCore Canada](https://meshcore.ca/hardware/repeater-mounting-options/) and [WNY MeshCore](https://wnymeshcore.org/guides/repeater-setup) have great documentation and examples for
 this.
 
+Here's a list of mounts available in Canada:
+
+- Chimney mounts:
+  - [AMSKY6027 Y-Type Chimney Mount Set With 18 Foot Straps](https://www.radioworld.ca/product/sure-amsky6027/amsky6027-y-type-chimney-mount-set-with-18-foot-straps) ([radioworld.ca](https://www.radioworld.ca/))
+  - [Channel Master CM-3080 Chimney Kit for Antenna Installations](https://angelelectronics.ca/products/channel-master-cm-3080-chimney-kit-for-antenna-installations?_pos=1&_psq=chim&_psid=2e78de3aa&_ss=e) ([angelelectronics.ca](https://angelelectronics.ca/))
+- Tripods:
+  - [3 ft (90 cm) Tripod with 1.66 in (4.2 cm) Outer Diameter Mast](https://angelelectronics.ca/products/3-ft-90-cm-tripod-with-1-66-in-4-2-cm-outer-diameter-mast) ([angelelectronics.ca](https://angelelectronics.ca/))
+
 ## Development boards
 
 Those are bare-bones circuit boards that *work* standalone but cannot
