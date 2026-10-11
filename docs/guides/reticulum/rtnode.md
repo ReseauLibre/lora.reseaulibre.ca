@@ -339,7 +339,10 @@ Those are the transport firmware projects we are currently aware of:
 
 - [`attermann/microReticulum_Firmware`](https://github.com/attermann/microReticulum_Firmware): RNode firmware integrating
   the [microReticulum](https://github.com/attermann/microReticulum) stack which implements a full transport node
-  (documented above), see also the [Ratspeak fork](https://github.com/ratspeak/microReticulum)
+  (documented above), see also the [Ratspeak fork](https://github.com/ratspeak/microReticulum) and the
+  [ScotMesh fork](https://wiki.scotmesh.net/wiki/ScotMesh_microReticulum) which adds support for the SenseCap P1, battery
+  reporting, a Nomadnet management interface, map reporting, OTA
+  upgrades, and telemetry
 - [`RatTunnel`](https://github.com/hipstereclipse/rns-transport-wisblock1w) - used on the west coast on RAK solar nodes, with
   console commands, 200 entry routing table with SNR tracking,
   integration with [`Rathole`](https://github.com/ratspeak/rathole)
