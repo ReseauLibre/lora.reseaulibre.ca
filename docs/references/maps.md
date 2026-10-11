@@ -18,6 +18,9 @@ below for other maps.
 - <https://yul.meshmapper.net/> (also shown above) shows actual tested coverage from the
   [MeshMapper project](https://wiki.meshmapper.net/), which essentially allows users to "war
   drive" a real-time map of where repeaters can be reached, shows 6 nodes in Montreal
+- <https://carto.canadaverse.org/> live map giving an approximate
+  representation of how packets travel geographically, based on
+  observer data
 
 ## Meshtastic
 

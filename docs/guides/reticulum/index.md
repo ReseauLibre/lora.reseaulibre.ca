@@ -155,3 +155,10 @@ Reticulum, as it can get confusing quickly.
 - [`partyline`](https://github.com/RFnexus/partyline): group voice calls, similar to Mumble, but over the
   mesh, including low-bandwidth calls and compatibility with other
   applications like Sideband and MeshChatX, see [this demo](https://www.youtube.com/watch?v=V9dvzzc2cW8)
+- [`reticulum-tdeck`](https://github.com/varna9000/reticulum-tdeck): LXMF, Nomadnet, RRC client for the T-Deck
+- [`mercury`](https://github.com/Rhizomatica/mercury): software modem for HF/VHF/UHF links, compatible with
+  Reticulum
+- [`modem73`](https://github.com/RFnexus/modem73): software modem for HF/VHF/UHF links, apparently
+  more reliably than mercury, requires [`modem73interface`](https://github.com/RFnexus/modem73interface) to work
+  with Reticulum
+- [`rpp`](https://vvvvvvaria.org/~decentral1se/notes/rpp/): simple, standalone Nomadnet page publisher
