@@ -201,7 +201,7 @@ join the Reticulum mesh in Montreal use those frequencies:
 - frequency: 914.875 MHz
 - bandwidth: 125 kHz
 - power: 22 dB
-- spread factor: SF7
+- spread factor: SF9 (modified from Ottawa's SF7)
 - coding rate: 4:7
 
 > [!NOTE]
