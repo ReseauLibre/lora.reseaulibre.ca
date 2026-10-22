@@ -1801,6 +1801,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#2026-10-21-failed-net" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026-10-21: failed net
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#2026-09-27-regions-test" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2229,6 +2240,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#2026-10-21-failed-net" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2026-10-21: failed net
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#2026-09-27-regions-test" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -2573,9 +2595,33 @@
 <p>One of the first repeaters on the mesh! Originally a key repeater, but
 now less important. Where the <a href="../../../guides/net/">weekly net</a> is ran from.</p>
 <h3 id="next-steps">Next steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> find a way to have both repeaters installed without interference</li>
+<ul>
+<li>find a way to have both repeaters installed without interference</li>
+<li>consider turning the repeater into a companion</li>
 </ul>
+<h3 id="2026-10-21-failed-net">2026-10-21: failed net<a class="headerlink" href="#2026-10-21-failed-net" title="Permanent link">&para;</a></h3>
+<p>Net failed tonight, almost no reception. 90% error rate.</p>
+<p>Tried the following tweaks, little impact noted:</p>
+<div class="highlight"><pre><span></span><code>&gt; get rxdelay
+&gt; 0.0
+&gt; set rxdelay 10
+OK
+&gt; get txdelay
+&gt; 0.5
+&gt; set txdelay 2
+OK
+&gt; get loop.detect
+&gt; moderate
+&gt; set loop.detect strict
+OK
+&gt; get direct.txdelay
+&gt; 0.3
+&gt; set direct.txdelay 1
+OK
+&gt; get tx
+&gt; 22
+&gt; set tx 18
+</code></pre></div>
 <h3 id="2026-09-27-regions-test">2026-09-27: regions test<a class="headerlink" href="#2026-09-27-regions-test" title="Permanent link">&para;</a></h3>
 <p>Testing the <a href="https://meshcore.ca/proposals/onqc-scopes/">regions proposal</a>:</p>
 <div class="highlight"><pre><span></span><code>region def yul|* qc|* onqc|* can|* na
