@@ -2,31 +2,29 @@
 date:
   created: 2026-10-28
   actual:  2026-11-04
-title: November Mesh night
+title: Mesh night de november
 categories:
   - events
 ---
 
-# November 4th Mesh night
+# Mesh night le 4 novembre
 
-*It's the most wonderful time of the month!*
-
-Just like every month, we have a Mesh Night meetup on the first
-Wednesday of the month at [Foulab][], the Montreal hacker space.
+Comme à chaque mois, il y aura une soirée "mesh" au [Foulab][], le
+premier mercredi du mois.
 
  [Foulab]: https://foulab.org/
 
 <!-- more -->
 
-It's an informal meetup: people chat and work on radios and protocols
-like Reticulum, MeshCore and Meshtastic. Some folks also have devices
-for sale or demo projects.
+C'est une rencontre informelle: les gens discutent et travaillent sur
+des radios et protocoles comme Reticulum, MeshCore and
+Meshtastic. Certains ont aussi des appareils à vendre ou montrer.
 
-Beginners are welcome! We are happy to answer your questions, but note
-that many people will be busy with their own work as well!
+Les néophytes sont bienvenu·e·s, nous serons heureux de répondre à vos
+questions, mais notez que plusieurs seront occupés!
 
-So join us on November 4th from 19:00 to 22:00.
-Foulab's [location][] is [Suite 33B, 999 du Collège, Montréal, Québec,
+Joignez vous à nous le 4 novembre de 19:00 à 22:00. Le [Foulab se
+trouve][location] à la [Suite 33B, 999 du Collège, Montréal, Quebec,
 Canada, H4C 2S3][] ([Google maps][]).
 
 [location]: https://foulab.org/location/
