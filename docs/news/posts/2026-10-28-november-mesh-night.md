@@ -23,9 +23,12 @@ Meshtastic. Certains ont aussi des appareils à vendre ou montrer.
 Les néophytes sont bienvenu·e·s, nous serons heureux de répondre à vos
 questions, mais notez que plusieurs seront occupés!
 
-Joignez vous à nous le 4 novembre de 19:00 à 22:00. Le [Foulab se
-trouve][location] à la [Suite 33B, 999 du Collège, Montréal, Quebec,
-Canada, H4C 2S3][] ([Google maps][]).
+Joignez vous à nous le 4 novembre de 19:00 à 22:00.
+Le [Foulab se trouve][location] à la [Suite 33B, 999 du Collège,
+Montréal, Quebec, Canada, H4C 2S3][] ([Google maps][]). La sonnette
+est sur la droite, près de la petite lumière, si la porte est
+barrée. Il y a du stationnement derrière le bâtiment, accessible de la
+rue Richelieu.
 
 [location]: https://foulab.org/location/
 [Google maps]: https://www.google.com/maps/place/999+Rue+du+Coll%C3%A8ge,+Montr%C3%A9al,+QC+H4C+2S2,+Canada
