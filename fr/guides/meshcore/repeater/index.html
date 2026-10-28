@@ -30,7 +30,7 @@
       
       
       <link rel="icon" href="../../../assets/logo.svg">
-      <meta name="generator" content="zensical-0.0.71">
+      <meta name="generator" content="zensical-0.0.73">
     
     
       
@@ -41,7 +41,7 @@
       
         
       
-      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.e442bf79.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.4ab2de0c.min.css">
       
         
           
@@ -119,9 +119,10 @@
   <img src="../../../assets/logo.svg" alt="Réseau Libre">
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+    <label class="md-header__button md-icon" for="__drawer">
       
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+      <span class="md-visually-hidden">Navigation</span>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -209,9 +210,10 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search" aria-label="Recherche">
+        <label class="md-header__button md-icon" for="__search">
           
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+          <span class="md-visually-hidden">Recherche</span>
         </label>
         <div class="md-search" data-md-component="search" role="dialog" aria-label="Recherche">
   <button type="button" class="md-search__button">
@@ -2494,16 +2496,24 @@ repeaters.</p>
 </div>
 <p>You need to at least:</p>
 <ul>
-<li><strong>Radio settings</strong>: "recommended USA / Canada"</li>
-<li><strong>Display name</strong>: your name,  <code>YUL-Area</code> for a repeater, for example
-  <code>YUL-Villeray</code>, <code>YUL-Parc-Extension</code>, etc</li>
-<li><strong>Region</strong>: do <em>not</em> set a region, as we currently do not use one,
-  and it will interfere with routing</li>
-<li><strong>Admin password</strong>: set a <a href="https://anarc.at/blog/2017-02-18-passwords-entropy/">strong password</a> and save it to your
-  password manager for remote administration</li>
-<li><strong>Path hash mode</strong>: pick <code>3-byte (2)</code>, see <a href="../../../news/2026/09/18/pri%C3%A8re-dutiliser-le-routage-%C3%A0-3-octets/">this announcement for an
-  explanation</a></li>
-<li>Flood limits (see <a href="../../../news/2026/09/25/pri%C3%A8re-de-limiter-les-annonces-boucles-et-floods/">this announcement for an explanation</a>):<ul>
+<li>
+<p><strong>Radio settings</strong>: "recommended USA / Canada"</p>
+</li>
+<li>
+<p><strong>Display name</strong>: your name,  <code>YUL-Area</code> for a repeater, for example
+  <code>YUL-Villeray</code>, <code>YUL-Parc-Extension</code>, etc</p>
+</li>
+<li>
+<p><strong>Admin password</strong>: set a <a href="https://anarc.at/blog/2017-02-18-passwords-entropy/">strong password</a> and save it to your
+  password manager for remote administration</p>
+</li>
+<li>
+<p><strong>Path hash mode</strong>: pick <code>3-byte (2)</code>, see <a href="../../../news/2026/09/18/pri%C3%A8re-dutiliser-le-routage-%C3%A0-3-octets/">this announcement for an
+  explanation</a></p>
+</li>
+<li>
+<p>Flood limits (see <a href="../../../news/2026/09/25/pri%C3%A8re-de-limiter-les-annonces-boucles-et-floods/">this announcement for an explanation</a>):</p>
+<ul>
 <li><a href="https://docs.meshcore.io/cli_commands/#view-or-change-this-nodes-loop-detection">Loop detection</a>: <code>moderate</code>, defaults to <code>off</code></li>
 <li><a href="https://docs.meshcore.io/cli_commands/#view-or-change-the-zero-hop-advert-interval">Zero hop advert interval</a>: <code>240</code> (minutes, defaults to <code>60</code>)</li>
 <li><a href="https://docs.meshcore.io/cli_commands/#view-or-change-the-flood-advert-interval">Flood advert interval</a>: <code>47</code> (hours, defaults to <code>12</code>)</li>
@@ -2514,9 +2524,20 @@ repeaters.</p>
   <code>0.2</code>, only for busy repeaters with 30-50 neighbors)</li>
 </ul>
 </li>
-<li><strong>Send an advert!</strong> by default, repeaters do automatically send
+<li>
+<p>Regions, typically by setting your local region like <code>yul</code>:</p>
+<div class="highlight"><pre><span></span><code>region def yul|* qc|* onqc|* can|* na
+region allowf *
+region default yul
+region save
+</code></pre></div>
+<p>See <a href="../../../news/2026/10/06/pri%C3%A8re-de-configurer-les-r%C3%A9gions/">this announcement for details</a>.</p>
+</li>
+<li>
+<p><strong>Send an advert!</strong> by default, repeaters do automatically send
   adverts, but it can take <em>hours</em>, during which time your companion
-  won't see the repeater! so do send one manually</li>
+  won't see the repeater! so do send one manually</p>
+</li>
 </ul>
 <p>The "recommended USA / Canada" preset is, at the time of writing, the
 following settings:</p>
@@ -2772,7 +2793,7 @@ blazer!</p>
       <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["content.action.edit","content.footnote.tooltips","navigation.footer","navigation.indexes","navigation.tabs","navigation.tabs.sticky","navigation.top","navigation.path"],"redirect":"../../../redirect.json","search":"../../../assets/javascripts/workers/search.c47bb847.min.js","tags":null,"translations":{"clipboard.copied":"Copié dans le presse-papier","clipboard.copy":"Copier dans le presse-papier","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 de plus sur cette page","search.result.more.other":"# de plus sur cette page","search.result.none":"Aucun document trouvé","search.result.one":"1 document trouvé","search.result.other":"# documents trouvés","search.result.placeholder":"Taper pour démarrer la recherche","search.result.term.missing":"Non trouvé","select.version":"Sélectionner la version"},"version":null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.a2388154.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.77dd0ce9.min.js"></script>
       
     
   </body>
