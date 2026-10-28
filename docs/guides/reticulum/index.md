@@ -141,6 +141,7 @@ Reticulum, as it can get confusing quickly.
   routing protocol
 - the Moscow site has a [good propagation simulator](https://rns.moscow/announce-sim.html) showing how
   different modes affect propagation
+- [`reticulum.site`](https://reticulum.site/): web interface to Nomadnet pages
 - [our Matrix room](https://matrix.to/#/#reseaulibre-reticulum:matrix.org) and the [broader Matrix space](https://matrix.to/#/#rns-space:yatrix.org)
 
 ### Other software
@@ -152,3 +153,13 @@ Reticulum, as it can get confusing quickly.
   scratch by Mark in Reticulum
 - [`reti_socks_client`](https://codeberg.org/SkyGuy/reti_socks_client): SOCKS client for RNS, allows connection to
   Reticulum relays running over Tor, see also [this guide](https://rns.recipes/forum/help/anonymous-nodes-without-i2p)
+- [`partyline`](https://github.com/RFnexus/partyline): group voice calls, similar to Mumble, but over the
+  mesh, including low-bandwidth calls and compatibility with other
+  applications like Sideband and MeshChatX, see [this demo](https://www.youtube.com/watch?v=V9dvzzc2cW8)
+- [`reticulum-tdeck`](https://github.com/varna9000/reticulum-tdeck): LXMF, Nomadnet, RRC client for the T-Deck
+- [`mercury`](https://github.com/Rhizomatica/mercury): software modem for HF/VHF/UHF links, compatible with
+  Reticulum
+- [`modem73`](https://github.com/RFnexus/modem73): software modem for HF/VHF/UHF links, apparently
+  more reliably than mercury, requires [`modem73interface`](https://github.com/RFnexus/modem73interface) to work
+  with Reticulum
+- [`rpp`](https://vvvvvvaria.org/~decentral1se/notes/rpp/): simple, standalone Nomadnet page publisher

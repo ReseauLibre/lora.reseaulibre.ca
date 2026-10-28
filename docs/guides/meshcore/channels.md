@@ -55,3 +55,25 @@ See also the channels used in other communities:
 - [Puget mesh](https://pugetmesh.org/meshcore/)
 - [Switzerland](https://www.meshcore.ch/channels/)
 
+## Private channels
+
+All the above channels are, obviously, not really secret. First, they
+are documented here publicly, but also their private key is derived
+from the name of the channel which is a single, easy to guess word.
+
+Those spaces are not for private conversations! It's possible to have
+more private channels by creating a new channel with randomly
+generated key. The way to do this will vary according to the client,
+but generally, you absolutely want to let the software generate the
+key automatically, and *not* make one yourself, as otherwise you are
+likely going to create an easily guessable key.
+
+Then your next problem is to share the key across devices. If you use
+a phone app, you can share the key by scanning it with a bar code on
+some software. Otherwise you will need to copy the hexadecimal key
+between devices.
+
+You *may* send the key over a direct message. This has the important
+vulnerability that someone may "machine-in-the-middle" attack your
+connection and learn the key. But if you are in an isolated area, it
+can work relatively securely.

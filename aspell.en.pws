@@ -1,4 +1,4 @@
-personal_ws-1.1 en 256 
+personal_ws-1.1 en 259 
 AEAD
 AES
 APRS
@@ -47,6 +47,7 @@ EPFL
 FACIL
 FOSDEM
 FSFE
+Fediverse
 FluffyChat
 Forgejo
 Foulab
@@ -120,6 +121,7 @@ Meshtastic's
 Meshterm
 Meshy
 Mjolnir
+Mobilizon
 Montréal
 Muzi
 NHMesh
@@ -251,6 +253,7 @@ topologies
 traceroute
 tropospheric
 unmount
+unscoped
 webhook
 Émélie
 Île

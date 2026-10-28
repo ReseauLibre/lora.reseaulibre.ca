@@ -177,14 +177,16 @@ can be performed over Bluetooth later.
 You need to at least:
 
 - **Radio settings**: "recommended USA / Canada"
+
 - **Display name**: your name,  `YUL-Area` for a repeater, for example
   `YUL-Villeray`, `YUL-Parc-Extension`, etc
-- **Region**: do *not* set a region, as we currently do not use one,
-  and it will interfere with routing
+
 - **Admin password**: set a [strong password](https://anarc.at/blog/2017-02-18-passwords-entropy/) and save it to your
   password manager for remote administration
+
 - **Path hash mode**: pick `3-byte (2)`, see [this announcement for an
   explanation](../../news/posts/2026-09-18-3-bytes-hash-mode.md)
+
 - Flood limits (see [this announcement for an explanation](../../news/posts/2026-09-20-limit-flood-and-loops.md)):
     - [Loop detection](https://docs.meshcore.io/cli_commands/#view-or-change-this-nodes-loop-detection): `moderate`, defaults to `off`
     - [Zero hop advert interval](https://docs.meshcore.io/cli_commands/#view-or-change-the-zero-hop-advert-interval): `240` (minutes, defaults to `60`)
@@ -194,6 +196,16 @@ You need to at least:
       `0.5`, only for busy repeaters with 30-50 neighbors)
     - [Re-transmit delay for direct traffic](https://docs.meshcore.io/cli_commands/#view-or-change-the-retransmit-delay-factor-for-direct-traffic): `0.5` (defaults to
       `0.2`, only for busy repeaters with 30-50 neighbors)
+
+- Regions, typically by setting your local region like `yul`:
+
+        region def yul|* qc|* onqc|* can|* na
+        region allowf *
+        region default yul
+        region save
+
+    See [this announcement for details](../../news/posts/2026-09-28-regions.md).
+
 - **Send an advert!** by default, repeaters do automatically send
   adverts, but it can take *hours*, during which time your companion
   won't see the repeater! so do send one manually

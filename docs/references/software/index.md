@@ -12,8 +12,10 @@ to outline.
 
 - [`meshcore-cli`](https://github.com/meshcore-dev/meshcore-cli): official CLI interface
 - [`Meshy`](https://codeberg.org/sesivany/meshy): Linux desktop client
-- [`Meshterm`](https://meshterm.net/): Mac, Windows, Linux terminal-based MeshCore client
+- [`Meshterm`](https://meshterm.net/): Mac, Windows, Linux terminal-based MeshCore client,
+  vibe-coded
 - [`jkingsman/Remote-Terminal-for-MeshCore`](https://github.com/jkingsman/Remote-Terminal-for-MeshCore): remote web interface
+- [`mcIRC`](https://github.com/bclml/mcIRC): IRC-style desktop client inspired by mIRC, vibe-coded
 
 ## BBS
 
@@ -33,6 +35,7 @@ to outline.
 - [`rupertdev/meshcore-prometheus-exporter`](https://github.com/rupertdev/meshcore-prometheus-exporter): same, Python
 - [`pyMC-dev/pyMC_Repeater`](https://github.com/pyMC-dev/pyMC_Repeater): Python-based repeaters
 - [`meshcorrode`](https://github.com/Fingel/meshcorrode/): partial Rust re-implementation
+- [`meshcore-signal-tester`](https://github.com/kybl/meshcore-signal-tester): Android-based signal tester
 
 # Other lists
 
