@@ -7,7 +7,36 @@ now less important. Where the [weekly net](../../guides/net.md) is ran from.
 
 ### Next steps
 
-- [ ] find a way to have both repeaters installed without interference
+- find a way to have both repeaters installed without interference
+- consider turning the repeater into a companion
+
+### 2026-10-21: failed net
+
+Net failed tonight, almost no reception. 90% error rate.
+
+Tried the following tweaks, little impact noted:
+
+```
+> get rxdelay
+> 0.0
+> set rxdelay 10
+OK
+> get txdelay
+> 0.5
+> set txdelay 2
+OK
+> get loop.detect
+> moderate
+> set loop.detect strict
+OK
+> get direct.txdelay
+> 0.3
+> set direct.txdelay 1
+OK
+> get tx
+> 22
+> set tx 18
+```
 
 ### 2026-09-27: regions test
 

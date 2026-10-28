@@ -10,6 +10,27 @@ We log the following fields:
 - location 
 - hops
 
+## 2026-10-21
+
+No contacts made for the first 20 minutes.
+
+People were receiving me, and I could see the responses on the
+observers, but I received no messages at all during the net, no
+replies from bots, complete signal loss.
+
+The YUL-Little-Italy repeater was rebooted, and then only one contact
+was made.
+
+| time  | call sign | name | location    | hops |
+|-------|-----------|------|-------------|------|
+| 21:19 | VE2FXO    |      | Ville-Émard | 3    |
+
+Observed:
+
+- 1 contacts (!)
+- [232 nodes in the official map](https://map.meshcore.io/?zoom=7&lat=45.7100&lon=-72.6416)
+- [216 repeaters in MeshMapper](https://yul.meshmapper.net/leaderboard.php)
+
 ## 2026-09-30
 
 | time  | call sign              | name     | location         | hops |
