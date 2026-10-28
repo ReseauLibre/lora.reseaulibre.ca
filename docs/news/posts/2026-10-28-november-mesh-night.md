@@ -27,7 +27,10 @@ that many people will be busy with their own work as well!
 
 So join us on November 4th from 19:00 to 22:00.
 Foulab's [location][] is [Suite 33B, 999 du Collège, Montréal, Québec,
-Canada, H4C 2S3][] ([Google maps][]).
+Canada, H4C 2S3][] ([Google maps][]), near the St-Henri metro. Ring
+the bell on the right, near the little light, if the door is
+locked. There is some parking behind the building, accessible from the
+Richelieu street.
 
 [location]: https://foulab.org/location/
 [Google maps]: https://www.google.com/maps/place/999+Rue+du+Coll%C3%A8ge,+Montr%C3%A9al,+QC+H4C+2S2,+Canada
