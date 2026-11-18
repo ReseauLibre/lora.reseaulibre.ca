@@ -566,7 +566,7 @@ are SMA-based.
     the further one, as shown on the image here. [This pigtail from
     Infinite
     Cables](https://www.infinitecables.com/products/lmr-195-n-type-male-to-sma-rp-reverse-polarity-male-cable?_pos=6&_sid=8005049e3&_ss=r&variant=42809779683569)
-    should work better.
+    should work better, and so should [this Robotshop](https://ca.robotshop.com/products/seeedstudio-rf-cable-rp-sma-male-to-n-type-female-300mm).
 
 === "Connector"
 
