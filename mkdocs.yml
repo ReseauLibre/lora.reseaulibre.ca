@@ -193,7 +193,7 @@ theme:
     # breadcrubs
     - navigation.path
     # prune other sections from the HTML
-    # - navigation.prune
+    - navigation.prune
     # make top-level sections "groups", degrades back to normal on
     # mobile
     # - navigation.sections
